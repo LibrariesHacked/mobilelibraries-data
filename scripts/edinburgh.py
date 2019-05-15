@@ -17,7 +17,7 @@ def run():
     """Runs the main script"""
 
     mobiles = []
-    mobile_library = 'Edinburgh'
+    mobile_library = 'Edinburgh mobile'
 
     dates = {
         "Monday": "2019-04-08",
@@ -52,7 +52,7 @@ def run():
 
         data_table = stop_soup.find_all('table')[0]
         for row in data_table.find_all('tr'):
-            row_header = row.find('th').string
+            row_header = row.find('th').string.strip()
 
             if 'Day' in row_header:
                 times = row.find('td').contents[0]
@@ -61,16 +61,20 @@ def run():
                 times_matcher = re.compile('(\d*\.\d*)* - (\d*\.\d*)*')
                 times_matches = times_matcher.search(times)
                 arrival = times_matches.group(1)
-                departure = times_matches.group(2)
+                if arrival:
+                    arrival = arrival.replace('.', ':')
+                departure = times_matches.group(2).replace('.', ':')
+                if departure:
+                    departure = departure.replace('.', ':')
                 route = day
                 start = dates[day]
 
             if 'Address' in row_header:
-                address = data_table.find_all('tr')[1].find_all('td')[0].string
+                address = data_table.find_all('tr')[1].find_all('td')[0].string.strip()
 
             if 'Postcode' in row_header:
                 postcode = data_table.find_all(
-                    'tr')[1].find_all('td')[0].string
+                    'tr')[1].find_all('td')[0].string.strip()
 
         mobiles.append(
             [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
@@ -85,7 +89,7 @@ def run():
              'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
         for sto in mobiles:
             mob_writer.writerow(
-                ['Angus', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
+                ['Edinburgh', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
                  sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
 
 
