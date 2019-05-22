@@ -55,17 +55,51 @@ def run():
             row_header = row.find('th').string.strip()
 
             if 'Day' in row_header:
-                times = row.find('td').contents[0]
+                times = row.find('td').contents[0].replace('.', '')
                 day_matcher = re.compile('(Mon|Tues|Wednes|Thurs|Fri)')
                 day = day_matcher.search(times).group(1) + 'day'
-                times_matcher = re.compile('(\d*\.\d*)* - (\d*\.\d*)*')
-                times_matches = times_matcher.search(times)
-                arrival = times_matches.group(1)
-                if arrival:
-                    arrival = arrival.replace('.', ':')
-                departure = times_matches.group(2).replace('.', ':')
-                if departure:
-                    departure = departure.replace('.', ':')
+                times_matcher = re.compile('\d{1,4}')
+                times_matches = re.findall(times_matcher, times)
+                if len(times_matches) > 0:
+                    arrival = times_matches[0]
+                    arrival_hours = '00'
+                    arrival_mins = '00'
+                    if len(arrival) == 1:
+                        arrival_hours = arrival.rjust(2,'0')
+                    if len(arrival) == 2:
+                        arrival_hours = arrival
+                    if len(arrival) == 3:
+                        arrival_hours = arrival[0:1].rjust(2,'0')
+                        arrival_mins = arrival[1:3]
+                    if len(arrival) == 4:
+                        arrival_hours = arrival[0:2]
+                        arrival_mins = arrival[2:4]
+
+                    if int(arrival_hours) < 6:
+                        arrival_hours = int(arrival_hours) + 12
+
+                    arrival = str(arrival_hours) + ':' + arrival_mins
+
+                if len(times_matches) > 1:
+                    departure = times_matches[1]
+                    departure_hours = '00'
+                    departure_mins = '00'
+                    if len(departure) == 1:
+                        departure_hours = departure.rjust(2,'0')
+                    if len(departure) == 2:
+                        departure_hours = departure
+                    if len(departure) == 3:
+                        departure_hours = departure[0:1].rjust(2,'0')
+                        departure_mins = departure[1:3]
+                    if len(departure) == 4:
+                        departure_hours = departure[0:2]
+                        departure_mins = departure[2:4]
+
+                    if int(departure_hours) < 6:
+                        departure_hours = int(departure_hours) + 12
+
+                    departure = str(departure_hours) + ':' + departure_mins
+
                 route = day
                 start = dates[day]
 

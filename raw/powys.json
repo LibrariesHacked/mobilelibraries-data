@@ -1,0 +1,2270 @@
+[
+    {
+        "stop": "Abbeycwmhir",
+        "where": "Bryncamlo",
+        "time": "10:30am - 10:40am",
+        "when": "2nd Friday of the month",
+        "route": "SP5"
+    },
+    {
+        "stop": "Abbeycwmhir",
+        "where": "Mill Cottage",
+        "time": "10:50am - 11:05am",
+        "when": "2nd Friday of the month",
+        "route": "SP5"
+    },
+    {
+        "stop": "Abbeycwmhir",
+        "where": "Home Farm",
+        "time": "11:05am - 11:15am",
+        "when": "2nd Friday of the month",
+        "route": "SP5"
+    },
+    {
+        "stop": "Aberbechan",
+        "where": "Gatehouse",
+        "time": "9.30am-9.50am",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Aberbran",
+        "where": "Bus Shelter",
+        "time": "1:50pm - 2:05pm",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Abercegir",
+        "where": "Village",
+        "time": "2.05pm-2.25pm",
+        "when": "3rd Tuesday of the month",
+        "route": "N109"
+    },
+    {
+        "stop": "Abercrave",
+        "where": "Abercrave Seat",
+        "time": "11:20am - 11:35am",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Abercrave",
+        "where": "Welfare Hall",
+        "time": "11:45am - 12:15pm",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Aberedw",
+        "where": "Seven Stars",
+        "time": "11:40am - 11:55am",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Aberhosan",
+        "where": "Old post office",
+        "time": "12noon - 12:10pm",
+        "when": "2nd Thursday of the month",
+        "route": "N107"
+    },
+    {
+        "stop": "Aberhosan",
+        "where": "Village",
+        "time": "12:15pm - 12:30pm",
+        "when": "2nd Thursday of the month",
+        "route": "N107"
+    },
+    {
+        "stop": "Abergwesyn",
+        "where": "Old Post Office",
+        "time": "3:20pm - 3:40pm",
+        "when": "3rd Wednesday of the month",
+        "route": "SP7"
+    },
+    {
+        "stop": "Abermule",
+        "where": "Community centre",
+        "time": "1:55pm - 2:10pm",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Aberyscir",
+        "where": "",
+        "time": "1:20pm - 1:25pm",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Adfa",
+        "where": "Hedgerow",
+        "time": "11:10am - 11:20am",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Adfa",
+        "where": "Car park",
+        "time": "11:20am - 11:35am",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Arddleen",
+        "where": "Chapel",
+        "time": "2:30pm - 2:55pm",
+        "when": "2nd Wednesday of the month",
+        "route": "N106"
+    },
+    {
+        "stop": "Arddleen",
+        "where": "School",
+        "time": "3pm - 3:30pm",
+        "when": "2nd Wednesday of the month",
+        "route": "N106"
+    },
+    {
+        "stop": "Battle",
+        "where": "",
+        "time": "9:40am - 9:55am",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Beguildy",
+        "where": "Stores",
+        "time": "1pm - 1:25pm",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Belfont",
+        "where": "",
+        "time": "12:05pm - 12:30pm",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Berriew",
+        "where": "Church",
+        "time": "11:05am - 11:25am",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Berriew",
+        "where": "Glanyrafon estate",
+        "time": "11:30am - 12noon",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Bettws Cedewain",
+        "where": "Village hall",
+        "time": "9:55am - 10:25am",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Bont Dolgadfan",
+        "where": "Village",
+        "time": "11:40am - 12:10pm",
+        "when": "4th Friday of the month",
+        "route": "N116"
+    },
+    {
+        "stop": "Beulah",
+        "where": "The Walk",
+        "time": "1:50pm - 2:10pm",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Beulah",
+        "where": "Wylfa Cottage",
+        "time": "2:15pm - 2:30pm",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Bleddfa",
+        "where": "Hundred House Inn",
+        "time": "10:30am - 10:45am",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Boughrood",
+        "where": "Station Road",
+        "time": "2pm - 2:40pm",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Brecon",
+        "where": "Saline Close",
+        "time": "10:35am - 10:55am",
+        "when": "1st Tuesday of the month",
+        "route": "SP16"
+    },
+    {
+        "stop": "Brecon",
+        "where": "Prospect Close",
+        "time": "11:10am - 11:25am",
+        "when": "1st Tuesday of the month",
+        "route": "SP16"
+    },
+    {
+        "stop": "Brecon",
+        "where": "Pendre Gardens",
+        "time": "11:30am - 12:25pm",
+        "when": "1st Tuesday of the month",
+        "route": "SP16"
+    },
+    {
+        "stop": "Brecon",
+        "where": "Gwenllian Morgan Court",
+        "time": "2:05pm - 2:30pm",
+        "when": "1st Tuesday of the month",
+        "route": "SP16"
+    },
+    {
+        "stop": "Bronydd",
+        "where": "",
+        "time": "3pm - 3:30pm",
+        "when": "3rd Tuesday of the month",
+        "route": "SP3"
+    },
+    {
+        "stop": "Bronllys",
+        "where": "Garage",
+        "time": "1:40pm - 1:50pm",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Bronllys",
+        "where": "Neuadd Estate",
+        "time": "2pm - 2:25pm",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Brooks",
+        "where": "Factory cottage",
+        "time": "3:25pm - 3:40pm",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Brooks",
+        "where": "Swn y nant",
+        "time": "3:45pm - 4pm",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Bwlch",
+        "where": "Garage Estate",
+        "time": "9:15am - 9:30am",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Bwlch",
+        "where": "Church",
+        "time": "9:35am - 9:50am",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Bwlch",
+        "where": "Glasfryn Terrace",
+        "time": " 9:55am - 10:15am",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Bwlch y Cibau",
+        "where": "Kiosk",
+        "time": "10am - 10:15am",
+        "when": "2nd Friday of the month",
+        "route": "N108"
+    },
+    {
+        "stop": "Bwlch y Sarnau",
+        "where": "Village Hall",
+        "time": "11:30am - 12:05pm",
+        "when": "2nd Friday of the month",
+        "route": "SP5"
+    },
+    {
+        "stop": "Bwlchyffridd",
+        "where": "Village",
+        "time": "10:10am - 10:25am",
+        "when": "1st Wednesday of the month",
+        "route": "N102"
+    },
+    {
+        "stop": "Caehopkin",
+        "where": "Kiosk",
+        "time": "9:50am - 10:05am",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Caersws",
+        "where": "Maesyddinas",
+        "time": "2:30pm - 2:45pm",
+        "when": "1st Wednesday of the month",
+        "route": "N102"
+    },
+    {
+        "stop": "Caersws",
+        "where": "Maesydre",
+        "time": "2:50pm - 3:05pm",
+        "when": "1st Wednesday of the month",
+        "route": "N102"
+    },
+    {
+        "stop": "Caersws",
+        "where": "School",
+        "time": "3:10pm - 3:45pm",
+        "when": "1st Wednesday of the month",
+        "route": "N102"
+    },
+    {
+        "stop": "Caersws",
+        "where": "Upper green",
+        "time": "12:35pm - 12:45pm",
+        "when": "4th Wednesday of the month",
+        "route": "N114"
+    },
+    {
+        "stop": "Caerwnon Park",
+        "where": "",
+        "time": "10:15am - 11am",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Carno",
+        "where": "Community centre",
+        "time": "11:05am - 11:30am",
+        "when": "1st Wednesday of the month",
+        "route": "N102"
+    },
+    {
+        "stop": "Carno",
+        "where": "Cledan gardens",
+        "time": "11:35am - 11:55am",
+        "when": "1st Wednesday of the month",
+        "route": "N102"
+    },
+    {
+        "stop": "Carno",
+        "where": "Bronfynnon",
+        "time": "9:40am - 9:50am",
+        "when": "3rd Tuesday of the month",
+        "route": "N109"
+    },
+    {
+        "stop": "Castle Caereinion",
+        "where": "Maesgarmon",
+        "time": "2:50am - 3:20pm",
+        "when": "2nd Friday of the month",
+        "route": "N108"
+    },
+    {
+        "stop": "Cefn Coch",
+        "where": "Church hall",
+        "time": "12:15pm - 12:30pm",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Cefngorwydd",
+        "where": "",
+        "time": "12noon - 12:20pm",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Cefntwrch Farm",
+        "where": "",
+        "time": "2pm - 2:15pm",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Cemmaes",
+        "where": "Penrhos Arms",
+        "time": "10:45am - 11:10am",
+        "when": "3rd Tuesday of the month",
+        "route": "N109"
+    },
+    {
+        "stop": "Churchstoke",
+        "where": "Lay-by",
+        "time": "10:55am - 11:05am",
+        "when": "3rd Friday of the month",
+        "route": "N112"
+    },
+    {
+        "stop": "Churchstoke",
+        "where": "Crosslikey estate",
+        "time": "11:10am - 11:30am",
+        "when": "3rd Friday of the month",
+        "route": "N112"
+    },
+    {
+        "stop": "Churchstoke",
+        "where": "The Court house",
+        "time": "3:05pm - 4pm",
+        "when": "3rd Friday of the month",
+        "route": "N112"
+    },
+    {
+        "stop": "Churchstoke",
+        "where": "St Nicholas house",
+        "time": "4pm - 4:10pm",
+        "when": "3rd Friday of the month",
+        "route": "N112"
+    },
+    {
+        "stop": "Cilmery",
+        "where": "Ynys View",
+        "time": "10:15am - 10:30am",
+        "when": "3rd Wednesday of the month",
+        "route": "SP7"
+    },
+    {
+        "stop": "Clyro",
+        "where": "Castle Estate",
+        "time": "9:50am - 10:10am",
+        "when": "3rd Tuesday of the month",
+        "route": "SP3"
+    },
+    {
+        "stop": "Clatter",
+        "where": "Maesygenlli",
+        "time": "12noon - 12:15pm",
+        "when": "1st Wednesday of the month",
+        "route": "N102"
+    },
+    {
+        "stop": "Clyro",
+        "where": "Post Office",
+        "time": "10:15am - 10:30am",
+        "when": "3rd Tuesday of the month",
+        "route": "SP3"
+    },
+    {
+        "stop": "Coelbren",
+        "where": "Dol Henryd Bungalows",
+        "time": "10am - 10:20am",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Coelbren",
+        "where": "Welfare Hall",
+        "time": "10:25am - 11:10am",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Coelbren",
+        "where": "Brynawelon",
+        "time": " 11:15am - 11:25am",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Coelbren",
+        "where": "Llwyncelyn Terrace",
+        "time": "11:45am - 12noon",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Commins Coch",
+        "where": "Brynteg",
+        "time": "10am - 10:15am",
+        "when": "3rd Tuesday of the month",
+        "route": "N109"
+    },
+    {
+        "stop": "Commins Coch",
+        "where": "Gwalia",
+        "time": "10:25am - 10:35am",
+        "when": "3rd Tuesday of the month",
+        "route": "N109"
+    },
+    {
+        "stop": "Cradoc",
+        "where": "Notice Board",
+        "time": " 9:15am - 9:40am",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Crai",
+        "where": "Square",
+        "time": "11:20am - 11:55am",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Crew Green",
+        "where": "Melverley estate",
+        "time": "2:15pm - 2:30pm",
+        "when": "3rd Wednesday of the month",
+        "route": "N110"
+    },
+    {
+        "stop": "Crew Green",
+        "where": "Brynmawr estate",
+        "time": "2:35pm - 2:55pm",
+        "when": "3rd Wednesday of the month",
+        "route": "N110"
+    },
+    {
+        "stop": "Crew Green",
+        "where": "Maeshafren",
+        "time": "3pm - 3:45pm",
+        "when": "3rd Wednesday of the month",
+        "route": "N110"
+    },
+    {
+        "stop": "Crickadarn",
+        "where": "",
+        "time": "1pm - 1:15pm",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Crickhowell",
+        "where": "Maesffynnon",
+        "time": "10:30am - 11am",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Criggion",
+        "where": "Cross gates cottage",
+        "time": "12:30pm - 12:40pm",
+        "when": "3rd Wednesday of the month",
+        "route": "N110"
+    },
+    {
+        "stop": "Criggion",
+        "where": "Village hall",
+        "time": "1:40pm - 1:50pm",
+        "when": "3rd Wednesday of the month",
+        "route": "N110"
+    },
+    {
+        "stop": "Crossgates",
+        "where": "The Fron",
+        "time": " 2:25pm - 2:30pm",
+        "when": "2nd Tuesday of the month",
+        "route": "SP2"
+    },
+    {
+        "stop": "Crossgates",
+        "where": "Guidfa Meadows",
+        "time": " 2:35pm - 3pm",
+        "when": "2nd Tuesday of the month",
+        "route": "SP2"
+    },
+    {
+        "stop": "Crossways",
+        "where": "Lleast",
+        "time": "3:20pm - 3:30pm",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Cwm Belan",
+        "where": "Cottage",
+        "time": " 11:40am - 11:55am",
+        "when": "3rd Thursday of the month",
+        "route": "N111"
+    },
+    {
+        "stop": "Cwm Belan",
+        "where": "Bungalow",
+        "time": " 11:55am - 12:05am",
+        "when": "3rd Thursday of the month",
+        "route": "N111"
+    },
+    {
+        "stop": "Cwm Harry",
+        "where": "Windrush",
+        "time": " 10:30am - 10:50am",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Cwm Llinau",
+        "where": "Village",
+        "time": " 11:15am - 11:40am",
+        "when": "3rd Tuesday of the month",
+        "route": "N109"
+    },
+    {
+        "stop": "Cwmdu",
+        "where": "St Michael's Close",
+        "time": " 3pm - 3:15pm",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Cwmdu",
+        "where": "Felindre",
+        "time": "3:20pm - 3:45pm",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Cwmgiedd",
+        "where": "Dreflan",
+        "time": "3:20pm - 3:25pm",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Cwmgiedd",
+        "where": "Post Office",
+        "time": "3:30pm - 3:40pm",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Darowen",
+        "where": "Church",
+        "time": "2:35pm - 2:55pm",
+        "when": "3rd Tuesday of the month",
+        "route": "N109"
+    },
+    {
+        "stop": "Defynnog",
+        "where": "Old School",
+        "time": "10:45am - 11:15am",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Dernol Valley",
+        "where": "",
+        "time": "2:10pm - 2:25pm",
+        "when": "2nd Friday of the month",
+        "route": "SP5"
+    },
+    {
+        "stop": "Derwenlas",
+        "where": "Glynderwen",
+        "time": "10:15am - 10:30am",
+        "when": "2nd Thursday of the month",
+        "route": "N107"
+    },
+    {
+        "stop": "Derwenlas",
+        "where": "Chapel",
+        "time": "10:35am - 10:50am",
+        "when": "2nd Thursday of the month",
+        "route": "N107"
+    },
+    {
+        "stop": "Deytheur",
+        "where": "Oak Lea",
+        "time": "2pm - 2:10pm",
+        "when": "2nd Wednesday of the month",
+        "route": "N106"
+    },
+    {
+        "stop": "Dolanog",
+        "where": "	Post office",
+        "time": "10:35am - 10:45am",
+        "when": "1st Tuesday of the month",
+        "route": "N101"
+    },
+    {
+        "stop": "Dolau",
+        "where": "Craffryn",
+        "time": "10:15am - 10:20am",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Dolfach",
+        "where": "Pentre",
+        "time": "3pm - 3:15pm",
+        "when": "2nd Thursday of the month",
+        "route": "N107"
+    },
+    {
+        "stop": "Dolfor",
+        "where": "Dolfor Inn",
+        "time": "3:20pm - 3:40pm",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Dolyhir",
+        "where": "Village",
+        "time": "1:45pm - 2:10pm",
+        "when": "3rd Tuesday of the month",
+        "route": "SP3"
+    },
+    {
+        "stop": "Evenjobb",
+        "where": "The Harbour",
+        "time": "1:20pm - 1:45pm",
+        "when": "4th Monday of the month",
+        "route": "SP1"
+    },
+    {
+        "stop": "Erwood",
+        "where": "Top Estate",
+        "time": " 1:20pm - 1:40pm",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Erwood",
+        "where": "Police Station Row",
+        "time": "1:45pm - 1:50pm",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Felindre, Berriew",
+        "where": "Bridge",
+        "time": "3pm - 3:10pm",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Felindre, Llanidloes",
+        "where": "Estate",
+        "time": "2pm - 2:15pm",
+        "when": "3rd Thursday of the month",
+        "route": "N111"
+    },
+    {
+        "stop": "Felindre, Breconshire",
+        "where": "Village Hall",
+        "time": "10:50am - 11:20am",
+        "when": "4th Wednesday of the month",
+        "route": "SP10"
+    },
+    {
+        "stop": "Felinfach",
+        "where": "Notice Board",
+        "time": "3:35pm - 4:05pm",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Fforddlas",
+        "where": "",
+        "time": "11:30am - 11:45am",
+        "when": "4th Wednesday of the month",
+        "route": "SP10"
+    },
+    {
+        "stop": "Foel",
+        "where": "Pen-y-ddol",
+        "time": "1:45pm - 2:10pm",
+        "when": "1st Tuesday of the month",
+        "route": "N101"
+    },
+    {
+        "stop": "Forden",
+        "where": "Heritage green",
+        "time": "9:45am - 10am",
+        "when": "3rd Wednesday of the month",
+        "route": "N110"
+    },
+    {
+        "stop": "Forden",
+        "where": "Church",
+        "time": "10:30am - 10:45am",
+        "when": "3rd Wednesday of the month",
+        "route": "N110"
+    },
+    {
+        "stop": "Forge",
+        "where": "Kiosk",
+        "time": "11:05am - 11:20am",
+        "when": "2nd Thursday of the month",
+        "route": "N107"
+    },
+    {
+        "stop": "Four Crosses",
+        "where": "Llysrhysnant estate",
+        "time": "10:10am - 10:30am",
+        "when": "4th Tuesday of the month",
+        "route": "N113"
+    },
+    {
+        "stop": "Four Crosses",
+        "where": "Foxen manor",
+        "time": "2:50pm - 3:20pm",
+        "when": "4th Tuesday of the month",
+        "route": "N113"
+    },
+    {
+        "stop": "Garth",
+        "where": "The School",
+        "time": " 2:20pm - 3pm",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Garth",
+        "where": "The Mill",
+        "time": "3:05pm - 3:15pm",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Gladestry",
+        "where": "School",
+        "time": "1:10pm - 1:30pm",
+        "when": "3rd Tuesday of the month",
+        "route": "SP3"
+    },
+    {
+        "stop": "Glan-y-Nant",
+        "where": "Terrace",
+        "time": "2:20pm - 2:30pm",
+        "when": "3rd Thursday of the month",
+        "route": "N111"
+    },
+    {
+        "stop": "Glasbury",
+        "where": "Maesllwch Arms",
+        "time": "1:30pm - 1:55pm",
+        "when": "4th Wednesday of the month",
+        "route": "SP10"
+    },
+    {
+        "stop": "Glasbury",
+        "where": "Cwmbach",
+        "time": " 1pm - 1:25pm",
+        "when": "4th Wednesday of the month",
+        "route": "SP10"
+    },
+    {
+        "stop": "Glasbury",
+        "where": "Church",
+        "time": "2:35pm - 3pm",
+        "when": "4th Wednesday of the month",
+        "route": "SP10"
+    },
+    {
+        "stop": "Glasbury",
+        "where": "River View",
+        "time": "10:05am - 10:15am",
+        "when": "4th Wednesday of the month",
+        "route": "SP10"
+    },
+    {
+        "stop": "Glasbury",
+        "where": "Dan y Bryn",
+        "time": "10:20am - 10:40am",
+        "when": "4th Wednesday of the month",
+        "route": "SP10"
+    },
+    {
+        "stop": "Glascwm",
+        "where": "Village",
+        "time": " 3pm - 3:25pm",
+        "when": "4th Monday of the month",
+        "route": "SP1"
+    },
+    {
+        "stop": "Groesfordd",
+        "where": "Park Estate",
+        "time": "3:15pm - 3:40pm",
+        "when": "2nd Monday of the month",
+        "route": "SP15"
+    },
+    {
+        "stop": "Groesllwyd",
+        "where": "Chapel",
+        "time": "9:45am - 9:55am",
+        "when": "2nd Wednesday of the month",
+        "route": "N106"
+    },
+    {
+        "stop": "Guilsfield",
+        "where": "Rhoslan",
+        "time": "10:00am - 10:15am",
+        "when": "2nd Wednesday of the month",
+        "route": "N106"
+    },
+    {
+        "stop": "Guilsfield",
+        "where": "Chepstow avenue",
+        "time": "10:45am - 11am",
+        "when": "2nd Wednesday of the month",
+        "route": "N106"
+    },
+    {
+        "stop": "Guilsfield",
+        "where": "Acrefield drive",
+        "time": "11:05am - 11:35am",
+        "when": "2nd Wednesday of the month",
+        "route": "N106"
+    },
+    {
+        "stop": "Guilsfield",
+        "where": "Celyn close",
+        "time": "11:40am - 12noon",
+        "when": "2nd Wednesday of the month",
+        "route": "N106"
+    },
+    {
+        "stop": "Gwenddwr",
+        "where": "",
+        "time": "12:15pm - 12:30pm",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Gwernyfed",
+        "where": "Estate",
+        "time": "9:30am - 10am",
+        "when": "4th Wednesday of the month",
+        "route": "SP10"
+    },
+    {
+        "stop": "Hirnant",
+        "where": "Church",
+        "time": "1:45pm - 2pm",
+        "when": "4th Thursday of the month",
+        "route": "N115"
+    },
+    {
+        "stop": "Hirnant",
+        "where": "Tyn y wern",
+        "time": "2:10pm - 2:25pm",
+        "when": "4th Thursday of the month",
+        "route": "N115"
+    },
+    {
+        "stop": "Howey",
+        "where": "Mill View Close",
+        "time": "10:15am - 10:30am",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Howey",
+        "where": "Sunnyhaven Park",
+        "time": "10:35am - 11:20am",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Hundred House",
+        "where": "Car Park",
+        "time": " 2:20pm - 2:40pm",
+        "when": "4th Monday of the month",
+        "route": "SP1"
+    },
+    {
+        "stop": "Hyssington",
+        "where": "Village",
+        "time": " 1:15pm - 1:45pm",
+        "when": "3rd Friday of the month",
+        "route": "N112"
+    },
+    {
+        "stop": "Kerry",
+        "where": "Pentre",
+        "time": " 2:20pm - 2:35pm",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Kerry",
+        "where": "Square",
+        "time": " 2:40pm - 3:10pm",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Kinnerton",
+        "where": "Village Hall",
+        "time": "12:25pm - 12:45pm",
+        "when": "4th Monday of the month",
+        "route": "SP1"
+    },
+    {
+        "stop": "Knighton",
+        "where": "The Cottage Hospital",
+        "time": "11am - 11:10am",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Knighton",
+        "where": "Cottage Flats",
+        "time": " 11:15am - 11:30am",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Knucklas",
+        "where": "Glyndwr",
+        "time": "11:45am - 12noon",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Knucklas",
+        "where": "Bridge House",
+        "time": "12:05am - 12:25pm",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Libanus",
+        "where": "Church Layby",
+        "time": " 9:30am - 9:55am",
+        "when": "1st Tuesday of the month",
+        "route": "SP16"
+    },
+    {
+        "stop": "Libanus",
+        "where": "Old Post Office",
+        "time": "10am - 10:25am",
+        "when": "1st Tuesday of the month",
+        "route": "SP16"
+    },
+    {
+        "stop": "Llan",
+        "where": "Church",
+        "time": "11:25am - 11:35am",
+        "when": "4th Friday of the month",
+        "route": "N116"
+    },
+    {
+        "stop": "Llanafan Fawr",
+        "where": "Oak Field",
+        "time": "12:20pm - 12:40pm",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Llanafan Fawr",
+        "where": "Dolfan",
+        "time": "12:40pm - 1pm",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Llanbadarn Fynydd",
+        "where": "Garage",
+        "time": " 1:35pm - 1:50pm",
+        "when": "2nd Tuesday of the month",
+        "route": "SP2"
+    },
+    {
+        "stop": "Llanbedr",
+        "where": "St Peters Close",
+        "time": "11:35am - 11:50am",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Llanbedr",
+        "where": "Layby",
+        "time": "11:50am - 12noon",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Llanbedr",
+        "where": "Pontfaen",
+        "time": "12:05pm - 12:20pm",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Llanbister",
+        "where": "Glandorddu",
+        "time": "1:20pm - 1:50pm",
+        "when": "2nd Tuesday of the month",
+        "route": "SP2"
+    },
+    {
+        "stop": "Llanbister Road",
+        "where": "Rose Villa",
+        "time": "11:35am - 11:50am",
+        "when": "2nd Tuesday of the month",
+        "route": "SP2"
+    },
+    {
+        "stop": "Llanbrynmair",
+        "where": "Pandy",
+        "time": "2:40pm - 2:50pm",
+        "when": "2nd Thursday of the month",
+        "route": "N107"
+    },
+    {
+        "stop": "Llanbrynmair",
+        "where": "Tafolwern turn",
+        "time": "10am - 10:15am",
+        "when": "4th Friday of the month",
+        "route": "N116"
+    },
+    {
+        "stop": "Llanbrynmair",
+        "where": "Glanclegyr",
+        "time": "10:20am - 10:35am",
+        "when": "4th Friday of the month",
+        "route": "N116"
+    },
+    {
+        "stop": "Llanbrynmair",
+        "where": "Bungalows",
+        "time": "10:40am - 11:05am",
+        "when": "4th Friday of the month",
+        "route": "N116"
+    },
+    {
+        "stop": "Llanbrynmair",
+        "where": "Bryncoch",
+        "time": "11:10am - 11:20am",
+        "when": "4th Friday of the month",
+        "route": "N116"
+    },
+    {
+        "stop": "Llanddew",
+        "where": "Church",
+        "time": "1:30pm - 1:45pm",
+        "when": "1st Tuesday of the month",
+        "route": "SP16"
+    },
+    {
+        "stop": "Llanddewi",
+        "where": "Bungalows",
+        "time": "2pm - 2:15pm",
+        "when": "2nd Tuesday of the month",
+        "route": "SP2"
+    },
+    {
+        "stop": "Llanddewi",
+        "where": "Village Hall",
+        "time": "2:15pm - 2:20pm",
+        "when": "2nd Tuesday of the month",
+        "route": "SP2"
+    },
+    {
+        "stop": "Llandinam",
+        "where": "Village Hall",
+        "time": "2:45pm - 3:30pm",
+        "when": "4th Wednesday of the month",
+        "route": "N114"
+    },
+    {
+        "stop": "Llandrinio",
+        "where": "White gables",
+        "time": "1:30pm - 1:40pm",
+        "when": "4th Tuesday of the month",
+        "route": "N113"
+    },
+    {
+        "stop": "Llandrinio",
+        "where": "Punch bowl",
+        "time": "1:45pm - 1:55pm",
+        "when": "4th Tuesday of the month",
+        "route": "N113"
+    },
+    {
+        "stop": "Llandrinio",
+        "where": "Post office",
+        "time": "2:20pm - 2:30pm",
+        "when": "4th Tuesday of the month",
+        "route": "N113"
+    },
+    {
+        "stop": "Llandyssil",
+        "where": "Kiosk",
+        "time": "1:10pm - 1:30pm",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Llandyssil",
+        "where": "Brooklyn estate",
+        "time": "1:35pm - 1:50pm",
+        "when": "2nd Tuesday of the month",
+        "route": "N105"
+    },
+    {
+        "stop": "Llanerfyl",
+        "where": "Car Park",
+        "time": "3:30pm - 3:45pm",
+        "when": "1st Tuesday of the month",
+        "route": "N101"
+    },
+    {
+        "stop": "Llanfaredd",
+        "where": "Garth View",
+        "time": " 3:45pm - 3:55pm",
+        "when": "4th Monday of the month",
+        "route": "SP1"
+    },
+    {
+        "stop": "Llanfechain",
+        "where": "Car Park",
+        "time": "10:25pm - 10:45pm",
+        "when": "2nd Friday of the month",
+        "route": "N108"
+    },
+    {
+        "stop": "Llanfihangel",
+        "where": "Red Lion",
+        "time": "10:15am - 10:35am",
+        "when": "4th Monday of the month",
+        "route": "SP1"
+    },
+    {
+        "stop": "Llanfihangel Talyllyn",
+        "where": "Old Oak House",
+        "time": "11:25am - 11:50am",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Llanfihangel Nant Bran",
+        "where": "",
+        "time": "3:20pm - 3:40pm",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Llanfihangel-yng-Ngwynfa",
+        "where": "Bro Gwynfa",
+        "time": "11am - 11:15am",
+        "when": "1st Tuesday of the month",
+        "route": "N101"
+    },
+    {
+        "stop": "Llanfilo",
+        "where": "Church",
+        "time": "2:35pm - 3pm",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Llanfilo",
+        "where": "Cwrt y Plyfin",
+        "time": "3:10pm - 3:30pm",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Llanfrynach",
+        "where": "Square",
+        "time": "2:40pm - 3:05pm",
+        "when": "2nd Monday of the month",
+        "route": "SP15"
+    },
+    {
+        "stop": "Llangadfan",
+        "where": "Cwpan pinc ",
+        "time": "2:35pm - 3:05pm",
+        "when": "1st Tuesday of the month",
+        "route": "N101"
+    },
+    {
+        "stop": "Llangammarch Wells",
+        "where": "Bridge",
+        "time": "11:20am - 12:20pm",
+        "when": "3rd Wednesday of the month",
+        "route": "SP7"
+    },
+    {
+        "stop": "Llangammarch Wells",
+        "where": "Brynawelon",
+        "time": "10:45am - 11:15am",
+        "when": "3rd Wednesday of the month",
+        "route": "SP7"
+    },
+    {
+        "stop": "Llangasty",
+        "where": "Dan y Allt",
+        "time": "10am - 10:10am",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Llangattock",
+        "where": "Clos Ciliau",
+        "time": "1:45pm - 1:55pm",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Llangattock",
+        "where": "Lime Trees Avenue",
+        "time": "2pm - 2:10pm",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Llangedwyn",
+        "where": "Post Office",
+        "time": " 12:20pm - 12:40pm",
+        "when": "1st Thursday of the month",
+        "route": "N103"
+    },
+    {
+        "stop": "Llangenny",
+        "where": "Church",
+        "time": " 11:10am - 11:30am",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Llangorse",
+        "where": "Beacons View",
+        "time": "11:55am - 12noon",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Llangorse",
+        "where": "Maes y Felin",
+        "time": "12:05pm - 12:30pm",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Llangunllo",
+        "where": "Greyhound Inn",
+        "time": "10:30am - 11:15pm",
+        "when": "2nd Tuesday of the month",
+        "route": "SP2"
+    },
+    {
+        "stop": "Llangurig",
+        "where": "Village",
+        "time": " 12:15pm - 12:45pm",
+        "when": "3rd Thursday of the month",
+        "route": "N111"
+    },
+    {
+        "stop": "Llangynidr",
+        "where": "Pencommin",
+        "time": "10:40am - 11:10am",
+        "when": "2nd Monday of the month",
+        "route": "SP15"
+    },
+    {
+        "stop": "Llangynidr",
+        "where": "Blaen y Myarth",
+        "time": "11:15am - 11:30am",
+        "when": "2nd Monday of the month",
+        "route": "SP15"
+    },
+    {
+        "stop": "Llangynidr",
+        "where": "Post Office",
+        "time": "11:35am - 11:50am",
+        "when": "2nd Monday of the month",
+        "route": "SP15"
+    },
+    {
+        "stop": "Llangynidr",
+        "where": "Village Hall",
+        "time": "12:35am - 12:50am",
+        "when": "2nd Monday of the month",
+        "route": "SP15"
+    },
+    {
+        "stop": "Llangynidr",
+        "where": "Church Close",
+        "time": "12:55pm - 1pm",
+        "when": "2nd Monday of the month",
+        "route": "SP15"
+    },
+    {
+        "stop": "Llangynidr",
+        "where": "Beaufort Square",
+        "time": "1pm - 1:35pm",
+        "when": "2nd Monday of the month",
+        "route": "SP15"
+    },
+    {
+        "stop": "Llangynidr",
+        "where": "Caerporth",
+        "time": "1:40pm - 2:05pm",
+        "when": "2nd Monday of the month",
+        "route": "SP15"
+    },
+    {
+        "stop": "Llangynog",
+        "where": "Car park",
+        "time": "11:30am - 12noon",
+        "when": "4th Thursday of the month",
+        "route": "N115"
+    },
+    {
+        "stop": "Llangynog",
+        "where": "Parc Minafon",
+        "time": "12:05pm - 12:20pm",
+        "when": "4th Thursday of the month",
+        "route": "N115"
+    },
+    {
+        "stop": "Llanidloes",
+        "where": "Maes yr ysgol",
+        "time": "10:25am - 10:45am",
+        "when": "3rd Thursday of the month",
+        "route": "N111"
+    },
+    {
+        "stop": "Llanidloes",
+        "where": "Maesywennol",
+        "time": "10:50am - 11:30am",
+        "when": "3rd Thursday of the month",
+        "route": "N111"
+    },
+    {
+        "stop": "Llanigon",
+        "where": "Diddegi Estate",
+        "time": " 11:50pm - 12noon",
+        "when": "4th Wednesday of the month",
+        "route": "SP10"
+    },
+    {
+        "stop": "Llanrhaeadr ym mochnant",
+        "where": "Maes yr afon",
+        "time": " 10:10am - 10:30am",
+        "when": "1st Thursday of the month",
+        "route": "N103"
+    },
+    {
+        "stop": "Llanrhaeadr ym mochnant",
+        "where": "Gwalia",
+        "time": " 11am - 12noon",
+        "when": "1st Thursday of the month",
+        "route": "N103"
+    },
+    {
+        "stop": "Llansantffraid",
+        "where": "Maes y garreg",
+        "time": " 3:35pm - 3:45pm",
+        "when": "1st Thursday of the month",
+        "route": "N103"
+    },
+    {
+        "stop": "Llansantffraid",
+        "where": "Maes yr eglwys",
+        "time": " 3:45pm - 4pm",
+        "when": "1st Thursday of the month",
+        "route": "N103"
+    },
+    {
+        "stop": "Llansantffraid",
+        "where": "Football ground",
+        "time": "11:30am - 11:45am",
+        "when": "2nd Friday of the month",
+        "route": "N108"
+    },
+    {
+        "stop": "Llansilin",
+        "where": "Car Park",
+        "time": "12:50pm - 1:30pm",
+        "when": "1st Thursday of the month",
+        "route": "N103"
+    },
+    {
+        "stop": "Llanspyddid",
+        "where": "Heol St Cattwg",
+        "time": "3:35pm - 4:20pm",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Llanwddyn",
+        "where": "Community Centre",
+        "time": "11:30am - 11:50am",
+        "when": "1st Tuesday of the month",
+        "route": "N101"
+    },
+    {
+        "stop": "Llanwnog",
+        "where": "Maesyreglwys",
+        "time": "1:30pm - 1:50pm",
+        "when": "1st Wednesday of the month",
+        "route": "N102"
+    },
+    {
+        "stop": "Llanwrin",
+        "where": "Bro dulas",
+        "time": "1:30pm - 1:45pm",
+        "when": "3rd Tuesday of the month",
+        "route": "N109"
+    },
+    {
+        "stop": "Llanwrtyd Wells",
+        "where": "Old Church",
+        "time": "2pm - 2:15pm",
+        "when": "3rd Wednesday of the month",
+        "route": "SP7"
+    },
+    {
+        "stop": "Llanwrtyd Wells",
+        "where": "Cwm Irfon",
+        "time": "2:25pm - 2:40pm",
+        "when": "3rd Wednesday of the month",
+        "route": "SP7"
+    },
+    {
+        "stop": "Llanwrtyd Wells",
+        "where": "Penybont Farm",
+        "time": "2:50pm - 3:05pm",
+        "when": "3rd Wednesday of the month",
+        "route": "SP7"
+    },
+    {
+        "stop": "Llanwyddelan",
+        "where": "Erw las",
+        "time": "10:50am - 11:05am",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Llanymynech",
+        "where": "Dolphin car park",
+        "time": "11:05am - 11:30am",
+        "when": "4th Tuesday of the month",
+        "route": "N113"
+    },
+    {
+        "stop": "Llanymynech",
+        "where": "Carreghofa",
+        "time": "11:55am - 12noon",
+        "when": "4th Tuesday of the month",
+        "route": "N113"
+    },
+    {
+        "stop": "Llawryglyn",
+        "where": "Village",
+        "time": "1:45pm - 2pm",
+        "when": "4th Wednesday of the month",
+        "route": "N114"
+    },
+    {
+        "stop": "Llanyre",
+        "where": "Cortay Park",
+        "time": "3:10pm - 3:35pm",
+        "when": "2nd Tuesday of the month",
+        "route": "SP2"
+    },
+    {
+        "stop": "Llowes",
+        "where": "Bus Stop",
+        "time": "9:30am - 9:45am",
+        "when": "3rd Tuesday of the month",
+        "route": "SP3"
+    },
+    {
+        "stop": "Llwydiarth",
+        "where": "Post office",
+        "time": "12:05pm - 12:25pm",
+        "when": "1st Tuesday of the month",
+        "route": "N101"
+    },
+    {
+        "stop": "Llwynygog",
+        "where": "Village",
+        "time": "1:55pm - 2:10pm",
+        "when": "4th Friday of the month",
+        "route": "N116"
+    },
+    {
+        "stop": "Llyswen",
+        "where": "Bridge End",
+        "time": "2:45pm - 3pm",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Llyswen",
+        "where": "Church Lane",
+        "time": "3:05pm - 3:25pm",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Llyswen",
+        "where": "Llys Meillion",
+        "time": "3:30pm - 3:45pm",
+        "when": "4th Thursday of the month",
+        "route": "SP8"
+    },
+    {
+        "stop": "Lower Chapel, Castell Madoc",
+        "where": "",
+        "time": "11:30am - 11:45am",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Lower Cwmtwrch",
+        "where": "Heol Gleien",
+        "time": " 1:15pm - 1:35pm",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Lower Cwmtwrch",
+        "where": "Kiosk",
+        "time": "1:40pm - 1:50pm",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Lower Cwmtwrch",
+        "where": "Cwmphill Road",
+        "time": " 2:40pm - 2:50pm",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Manafon",
+        "where": "Peacevale",
+        "time": " 1:45pm - 2:05pm",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Meifod",
+        "where": "Cil bach",
+        "time": " 12noon - 12:15pm",
+        "when": "2nd Friday of the month",
+        "route": "N108"
+    },
+    {
+        "stop": "Meifod",
+        "where": "Car park",
+        "time": " 12:20pm - 1pm",
+        "when": "2nd Friday of the month",
+        "route": "N108"
+    },
+    {
+        "stop": "Melinbyrhedin",
+        "where": "Village",
+        "time": " 11:30am - 11:50am",
+        "when": "2nd Thursday of the month",
+        "route": "N107"
+    },
+    {
+        "stop": "Mellington",
+        "where": "Old school ",
+        "time": " 10:15am - 10:40am",
+        "when": "3rd Friday of the month",
+        "route": "N112"
+    },
+    {
+        "stop": "Merthyr Cynog",
+        "where": "",
+        "time": "10:30am - 10:45am",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Middletown",
+        "where": "Car park",
+        "time": "11:45am - 12noon",
+        "when": "3rd Wednesday of the month",
+        "route": "N110"
+    },
+    {
+        "stop": "Nantglas",
+        "where": "Shiloh",
+        "time": "2:55pm - 3:10pm",
+        "when": "2nd Friday of the month",
+        "route": "SP5"
+    },
+    {
+        "stop": "Nantygwreiddyn",
+        "where": "Layby",
+        "time": "2:35pm - 2:45pm",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "New Radnor",
+        "where": "Stores",
+        "time": "10:45am - 11:45am",
+        "when": "4th Monday of the month",
+        "route": "SP1"
+    },
+    {
+        "stop": "New Radnor",
+        "where": "Post Office",
+        "time": "11:45am - 12:10pm",
+        "when": "4th Monday of the month",
+        "route": "SP1"
+    },
+    {
+        "stop": "Newbridge on Wye",
+        "where": "Knapplands",
+        "time": "11:15am - 11:35am",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Newbridge on Wye",
+        "where": "Sychpant",
+        "time": "11:40am - 12noon",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Newchapel",
+        "where": "Top Pant ",
+        "time": "9:30am - 10am",
+        "when": "3rd Thursday of the month",
+        "route": "N111"
+    },
+    {
+        "stop": "Newchurch",
+        "where": "Kiosk",
+        "time": "12:40pm - 1:55pm",
+        "when": "3rd Tuesday of the month",
+        "route": "SP3"
+    },
+    {
+        "stop": "Newtown",
+        "where": "Llys Glanyrafon",
+        "time": "9:40am - 10am",
+        "when": "4th Wednesday of the month",
+        "route": "N114"
+    },
+    {
+        "stop": "Newtown",
+        "where": "Mill close",
+        "time": "10:05am - 10:20am",
+        "when": "4th Wednesday of the month",
+        "route": "N114"
+    },
+    {
+        "stop": "Newtown",
+        "where": "Llys Hafren",
+        "time": "10:55am - 11:10am",
+        "when": "4th Wednesday of the month",
+        "route": "N114"
+    },
+    {
+        "stop": "Norton",
+        "where": "Offa's Green",
+        "time": "1:30pm - 1:45pm",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Old Churchstoke",
+        "where": "Village",
+        "time": "2:35pm - 2:50pm",
+        "when": "3rd Friday of the month",
+        "route": "N112"
+    },
+    {
+        "stop": "Old Hall",
+        "where": "Tanhinon",
+        "time": "2:40pm - 3:05pm",
+        "when": "3rd Thursday of the month",
+        "route": "N111"
+    },
+    {
+        "stop": "Old Hall",
+        "where": "Glanhafren",
+        "time": "3:15pm - 3:30pm",
+        "when": "3rd Thursday of the month",
+        "route": "N111"
+    },
+    {
+        "stop": "Painscastle",
+        "where": "Village Hall",
+        "time": "10:45am - 11:10am",
+        "when": "3rd Tuesday of the month",
+        "route": "SP3"
+    },
+    {
+        "stop": "Painscastle",
+        "where": "Roast Ox Inn",
+        "time": "11:15am - 11:30am",
+        "when": "3rd Tuesday of the month",
+        "route": "SP3"
+    },
+    {
+        "stop": "Pantydwr",
+        "where": "Village",
+        "time": "12:40pm - 1pm",
+        "when": "2nd Friday of the month",
+        "route": "SP5"
+    },
+    {
+        "stop": "Pantyffridd",
+        "where": "Lower house farm",
+        "time": "2:10pm - 2:20pm",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Pantyffridd",
+        "where": "Talafon",
+        "time": "2:25pm - 2:40pm",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Penegoes",
+        "where": "Glancrewi",
+        "time": "2:10pm - 2:25pm",
+        "when": "2nd Thursday of the month",
+        "route": "N107"
+    },
+    {
+        "stop": "Pennant",
+        "where": "Pandy",
+        "time": "12:20pm - 12:40pm",
+        "when": "4th Friday of the month",
+        "route": "N116"
+    },
+    {
+        "stop": "Pennorth",
+        "where": "Chapel House",
+        "time": "9:35am - 9:55am",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Pentre Bach",
+        "where": "Tafarn",
+        "time": "2:45pm - 3:10pm",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Pentre'r Felin",
+        "where": "",
+        "time": "2:20pm - 2:35pm",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Penybont",
+        "where": "Middle House",
+        "time": "3:30pm - 3:35pm",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Penybont llanerch emrys",
+        "where": "Old New Inn",
+        "time": "2:50pm - 3:05pm",
+        "when": "1st Thursday of the month",
+        "route": "N103"
+    },
+    {
+        "stop": "Penybont llanerch emrys",
+        "where": "Four Crosses Farm",
+        "time": "3:10pm - 3:30pm",
+        "when": "1st Thursday of the month",
+        "route": "N103"
+    },
+    {
+        "stop": "Penybontfawr",
+        "where": "Car park",
+        "time": "10:25am - 10:55am",
+        "when": "4th Thursday of the month",
+        "route": "N115"
+    },
+    {
+        "stop": "Penybontfawr",
+        "where": "Old Smithy",
+        "time": "12:25pm - 12:50pm",
+        "when": "4th Thursday of the month",
+        "route": "N115"
+    },
+    {
+        "stop": "Penycae",
+        "where": "Heol Callwen",
+        "time": "9:45am - 10am",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Penycae",
+        "where": "Penycae Inn",
+        "time": "10:10am - 10:30am",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Penygarnedd",
+        "where": "Ty coch",
+        "time": "10:05am - 10:20am",
+        "when": "4th Thursday of the month",
+        "route": "N115"
+    },
+    {
+        "stop": "Penpont",
+        "where": "Lodge",
+        "time": "2:55pm - 3:30pm",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Pontdolgoch",
+        "where": "Stores",
+        "time": "1:15pm - 1:20pm",
+        "when": "1st Wednesday of the month",
+        "route": "N102"
+    },
+    {
+        "stop": "Pontneddfechan",
+        "where": "Vale View",
+        "time": "2pm - 2:10pm",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Pontneddfechan",
+        "where": "Min yr Awel",
+        "time": " 2:15pm - 2:45pm",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Pontneddfechan",
+        "where": "Coed i Rhaidyr",
+        "time": " 2:50pm - 2:55pm",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Pontneddfechan",
+        "where": "Brodawel",
+        "time": " 3pm - 3:30pm",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Pontrobert",
+        "where": "Old school house",
+        "time": " 10am - 10:15am",
+        "when": "1st Tuesday of the month",
+        "route": "N101"
+    },
+    {
+        "stop": "Pontyscir",
+        "where": "Court",
+        "time": " 1:30pm - 1:40pm",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Pool Quay",
+        "where": "Abbey close",
+        "time": " 9:40am - 9:50am",
+        "when": "4th Tuesday of the month",
+        "route": "N113"
+    },
+    {
+        "stop": "Presteigne",
+        "where": "Prestmede",
+        "time": " 2pm - 2:10pm",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Presteigne",
+        "where": "Beddoes View",
+        "time": " 2:15pm - 2:20pm",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Pwllgloyw",
+        "where": "Layby",
+        "time": " 11:50am - 12:15pm",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Rhayader",
+        "where": "Bryn Heulog",
+        "time": " 2:35pm - 2:45pm",
+        "when": "2nd Friday of the month",
+        "route": "SP5"
+    },
+    {
+        "stop": "Rockbridge",
+        "where": "",
+        "time": " 2:50pm - 3:05pm",
+        "when": "4th Tuesday of the month",
+        "route": "SP6"
+    },
+    {
+        "stop": "Sarn",
+        "where": "Springfields",
+        "time": " 9:25am - 9:50am",
+        "when": "3rd Friday of the month",
+        "route": "N112"
+    },
+    {
+        "stop": "Sennybridge",
+        "where": "Coedwaungar",
+        "time": "  9:25am - 10:15am",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Sennybridge",
+        "where": "Car Park",
+        "time": "10:20am - 10:40am",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Snead",
+        "where": "Broadway hall",
+        "time": "11:50am - 12noon",
+        "when": "3rd Friday of the month",
+        "route": "N112"
+    },
+    {
+        "stop": "St Harmon",
+        "where": "Sunn Inn",
+        "time": "1:35pm - 1:55pm",
+        "when": "2nd Friday of the month",
+        "route": "SP5"
+    },
+    {
+        "stop": "Staylittle",
+        "where": "Village",
+        "time": "2:15pm - 2:35pm",
+        "when": "4th Friday of the month",
+        "route": "N116"
+    },
+    {
+        "stop": "Stepaside",
+        "where": "Village",
+        "time": "11:40am - 12noon",
+        "when": "4th Wednesday of the month",
+        "route": "N114"
+    },
+    {
+        "stop": "Tal-y-bont",
+        "where": "Maesmawr Close",
+        "time": "9:30am - 9:55am",
+        "when": "2nd Monday of the month",
+        "route": "SP15"
+    },
+    {
+        "stop": "Talerddig",
+        "where": "Bakery",
+        "time": "3:10pm - 3:30pm",
+        "when": "3rd Tuesday of the month",
+        "route": "N109"
+    },
+    {
+        "stop": "Talyllyn",
+        "where": "Crobbstown",
+        "time": "10:30am - 10:50am",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Talyllyn",
+        "where": "Terrace Row",
+        "time": "11am - 11:20am",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Tirabad",
+        "where": "Dan yr Eppynt",
+        "time": "1:10pm - 1:30pm",
+        "when": "3rd Friday of the month",
+        "route": "SP9"
+    },
+    {
+        "stop": "Trebinshwn",
+        "where": "Cottage",
+        "time": "10:10am - 10:20am",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Trecastle",
+        "where": "Brynawelon",
+        "time": "1:20pm - 1:35pm",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Trecastle",
+        "where": "Maesyberllan",
+        "time": "1:40pm - 1:55pm",
+        "when": "1st Wednesday of the month",
+        "route": "SP11"
+    },
+    {
+        "stop": "Trefecca",
+        "where": "The Terrace",
+        "time": "1:15pm - 1:30pm",
+        "when": "1st Friday of the month",
+        "route": "SP18"
+    },
+    {
+        "stop": "Trefeglwys",
+        "where": "Village Hall",
+        "time": "2:10pm - 2:30pm",
+        "when": "4th Wednesday of the month",
+        "route": "N114"
+    },
+    {
+        "stop": "Trefnanney",
+        "where": "Waenfach",
+        "time": "1:15pm - 1:35pm",
+        "when": "2nd Wednesday of the month",
+        "route": "N106"
+    },
+    {
+        "stop": "Trefnanney",
+        "where": "Caer derw",
+        "time": "1:40pm - 1:55pm",
+        "when": "2nd Wednesday of the month",
+        "route": "N106"
+    },
+    {
+        "stop": "Tregynon",
+        "where": "Tan yr eglwys",
+        "time": "9:30am - 9:45am",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Tregynon",
+        "where": "Bungalows",
+        "time": "9:50am - 10:05am",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Tregynon",
+        "where": "Old Shop",
+        "time": "10:10am - 10:40am",
+        "when": "1st Friday of the month",
+        "route": "N104"
+    },
+    {
+        "stop": "Tretower",
+        "where": "St Johns Estate",
+        "time": " 2:20pm - 2:50pm",
+        "when": "2nd Thursday of the month",
+        "route": "SP17"
+    },
+    {
+        "stop": "Trewern",
+        "where": "Pentre Gwyn Estate",
+        "time": " 12:10pm - 12:20pm",
+        "when": "3rd Wednesday of the month",
+        "route": "N110"
+    },
+    {
+        "stop": "Upper Chapel",
+        "where": "Village",
+        "time": " 11am - 11:15am",
+        "when": "4th Friday of the month",
+        "route": "SP14"
+    },
+    {
+        "stop": "Upper Cwmtwrch",
+        "where": "Heol Gwys - Welfare Hall",
+        "time": " 1:55pm - 2:10pm",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Upper Cwmtwrch",
+        "where": "Heol Tredeg",
+        "time": "2:15pm - 2:30pm",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Welshpool",
+        "where": "Oldford close",
+        "time": " 3:30pm - 3:45pm",
+        "when": "4th Thursday of the month",
+        "route": "N115"
+    },
+    {
+        "stop": "White Grit",
+        "where": "Hollies",
+        "time": " 1:55pm - 2:05pm",
+        "when": "3rd Friday of the month",
+        "route": "N112"
+    },
+    {
+        "stop": "Ynyswen",
+        "where": "Ynyswen Bungalows",
+        "time": "10:35am - 10:50am",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Ynyswen",
+        "where": "Ynyswen Kiosk",
+        "time": "10:55am - 11:10am",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    },
+    {
+        "stop": "Ystradfellte",
+        "where": "Car Park",
+        "time": "1pm - 1:15pm",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Ystradfellte",
+        "where": "Filling Station",
+        "time": "1:20pm - 1:35pm",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Ystradfellte",
+        "where": "Lletty Drefydd",
+        "time": "1:40pm - 1:55pm",
+        "when": "2nd Wednesday of the month",
+        "route": "SP13"
+    },
+    {
+        "stop": "Ystradgynlais",
+        "where": "Ynys Uchaf",
+        "time": "3:45pm - 3:55pm",
+        "when": "1st Thursday of the month",
+        "route": "SP12"
+    }
+]
