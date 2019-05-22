@@ -81,7 +81,7 @@ def run():
                             arrival_hours = arrival[0:2]
                             arrival_mins = arrival[2:4]
 
-                        if int(arrival_hours) < 6:
+                        if int(arrival_hours) < 8:
                             arrival_hours = int(arrival_hours) + 12
 
                         arrival = str(arrival_hours) + ':' + arrival_mins
@@ -101,7 +101,7 @@ def run():
                             departure_hours = departure[0:2]
                             departure_mins = departure[2:4]
 
-                        if int(departure_hours) < 6:
+                        if int(departure_hours) < 8:
                             departure_hours = int(departure_hours) + 12
 
                         departure = str(departure_hours) + ':' + departure_mins
