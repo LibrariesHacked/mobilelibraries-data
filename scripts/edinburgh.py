@@ -17,7 +17,7 @@ def run():
     """Runs the main script"""
 
     mobiles = []
-    mobile_library = 'Edinburgh mobile'
+    mobile_library = 'Edinburgh'
 
     pages = [1, 2, 3, 4]
 
