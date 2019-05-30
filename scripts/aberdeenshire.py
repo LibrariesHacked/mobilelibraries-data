@@ -52,7 +52,7 @@ def run():
                     if key == 'Departure':
                         departure = val
                     if key == 'Week':
-                        week = val
+                        week = val.replace(' & ', '/').replace('Weeks ', '')
                     if key == 'Dates':
                         dates = val
 
@@ -64,7 +64,7 @@ def run():
                     start = date.strftime('%Y-%m-%d')
 
                 # calculated fields
-                route = mobile_library + ' ' + week + ' ' + day
+                route = mobile_library[0:1] + ' ' + day + ' ' + week
 
                 stop_array = stop_name.split(' - ')
                 community = stop_array[0]

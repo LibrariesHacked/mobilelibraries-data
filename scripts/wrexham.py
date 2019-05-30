@@ -18,7 +18,7 @@ def run():
     """Runs the main script"""
 
     mobiles = []
-    mobile_library = 'Wrexham'
+    mobile_library = 'Mobile 1'
 
     frequency = 'FREQ=WEEKLY;INTERVAL=3'
 

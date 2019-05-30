@@ -8,7 +8,6 @@ import csv
 DATA_SOURCE = '../raw/angus.geojson'
 DATA_OUTPUT = '../data/angus.csv'
 
-
 def run():
 
     mobiles = []
@@ -40,23 +39,26 @@ def run():
             easting = feature['properties']['grid_x']
             northing = feature['properties']['grid_y']
 
-            mobile_library = feature['properties']['vehicle']
+            mobile_library = feature['properties']['vehicle'].title()
+            route = feature['properties']['route'].title()
+            route = route.replace(mobile_library, '')
+
             day = feature['properties']['day'].rstrip('s')
 
             community = ''
-            stop_name = feature['properties']['location']
-            address = stop_name
+            stop_name = feature['properties']['location'].title()
+            address = stop_name.title()
             stop_split = stop_name.split(': ')
             
             if len(stop_split) > 1:
-                community = stop_split[0]
-                stop_name = stop_split[1]
+                community = stop_split[0].title()
+                stop_name = stop_split[1].title()
                 address = stop_name + ', ' + community
 
-            arrival = feature['properties']['time_arrive']
-            departure = feature['properties']['time_depart']
+            arrival = feature['properties']['time_arrive'].replace(':00Z', '')
+            departure = feature['properties']['time_depart'].replace(':00Z', '')
             
-            route = feature['properties']['route']
+            
 
             week = feature['properties']['week']
 
@@ -87,6 +89,5 @@ def run():
             mob_writer.writerow(
                 ['Angus', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
                  sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
-
 
 run()

@@ -17,7 +17,7 @@ def run():
     """Runs the main script"""
 
     mobiles = []
-    mobile_library = 'Edinburgh'
+    mobile_library = 'Mobile 1'
 
     pages = [1, 2, 3, 4]
 
@@ -130,6 +130,5 @@ def run():
             mob_writer.writerow(
                 ['Edinburgh', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
                  sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
-
 
 run()
