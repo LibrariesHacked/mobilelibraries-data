@@ -57,8 +57,6 @@ def run():
 
             arrival = feature['properties']['time_arrive'].replace(':00Z', '')
             departure = feature['properties']['time_depart'].replace(':00Z', '')
-            
-            
 
             week = feature['properties']['week']
 

@@ -13,6 +13,7 @@ WEBSITE = 'https://www.edinburgh.gov.uk/'
 DATA_SOURCE = 'directory/16/mobile_library_stops?page='
 DATA_OUTPUT = '../data/edinburgh.csv'
 
+
 def run():
     """Runs the main script"""
 
@@ -49,7 +50,8 @@ def run():
             departure = ''
             day = ''
             route = ''
-            location = stop_soup.find(id='map_marker_location_197').get('value')
+            location = stop_soup.find(
+                id='map_marker_location_197').get('value')
             longitude = location.split(',')[1]
             latitude = location.split(',')[0]
             timetable = WEBSITE + stop_url
@@ -71,11 +73,11 @@ def run():
                         arrival_hours = '00'
                         arrival_mins = '00'
                         if len(arrival) == 1:
-                            arrival_hours = arrival.rjust(2,'0')
+                            arrival_hours = arrival.rjust(2, '0')
                         if len(arrival) == 2:
                             arrival_hours = arrival
                         if len(arrival) == 3:
-                            arrival_hours = arrival[0:1].rjust(2,'0')
+                            arrival_hours = arrival[0:1].rjust(2, '0')
                             arrival_mins = arrival[1:3]
                         if len(arrival) == 4:
                             arrival_hours = arrival[0:2]
@@ -91,11 +93,11 @@ def run():
                         departure_hours = '00'
                         departure_mins = '00'
                         if len(departure) == 1:
-                            departure_hours = departure.rjust(2,'0')
+                            departure_hours = departure.rjust(2, '0')
                         if len(departure) == 2:
                             departure_hours = departure
                         if len(departure) == 3:
-                            departure_hours = departure[0:1].rjust(2,'0')
+                            departure_hours = departure[0:1].rjust(2, '0')
                             departure_mins = departure[1:3]
                         if len(departure) == 4:
                             departure_hours = departure[0:2]
@@ -117,8 +119,8 @@ def run():
 
             mobiles.append(
                 [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
-                day, arrival, departure, 'FREQ=WEEKLY', start, '', timetable
-                ])
+                 day, arrival, departure, 'FREQ=WEEKLY', start, '', timetable]
+            )
 
     with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
         mob_writer = csv.writer(out_csv, delimiter=',',
@@ -130,5 +132,6 @@ def run():
             mob_writer.writerow(
                 ['Edinburgh', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
                  sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
+
 
 run()
