@@ -33,7 +33,7 @@ def run():
                 coord_y = stop[1][0][0][0]
                 coord_x = stop[1][0][0][1]
 
-                stop_name = stop[5][0][1][0].replace('\n', '')
+                stop_name = stop[5][0][1][0].replace('\n', '').strip()
 
                 day = ''
                 start = ''
@@ -64,7 +64,7 @@ def run():
                     start = date.strftime('%Y-%m-%d')
 
                 # calculated fields
-                route = mobile_library[0:1] + ' ' + day + ' ' + week
+                route = mobile_library + ' ' + day + ' ' + week
 
                 stop_array = stop_name.split(' - ')
                 community = stop_array[0]
