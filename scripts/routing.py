@@ -97,8 +97,16 @@ def run():
                 for trip_idx, trip_item in enumerate(trips):
                     line = LineString(
                         res_data['features'][0]['geometry']['coordinates'][trip_item[0]:trip_item[1] + 1])
+
+                    route_list = [val for key, val in routes[route].items()]
                     geodata.append(
-                        {'origin_stop': trip_lookup[trip_idx]['origin_stop'], 'destination_stop': trip_lookup[trip_idx]['destination_stop'], 'route': route, 'geo': line})
+                        {
+                            'route': route,
+                            'mobile': route_list[0]['mobile'],
+                            'origin_stop': trip_lookup[trip_idx]['origin_stop'], 
+                            'destination_stop': trip_lookup[trip_idx]['destination_stop'], 
+                            'geo': line
+                        })
 
                 time.sleep(5)
 
