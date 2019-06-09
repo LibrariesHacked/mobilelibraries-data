@@ -12,6 +12,7 @@ API_KEY = '5b3ce3597851110001cf624860a035e0c0bf48c690561cefd3ff4769'
 STOP_DATA = '../data/aberdeenshire.csv'
 OUTPUT_DATA = '../data/aberdeenshire_routes.geojson'
 
+
 def run():
     """Runs the main script"""
 
@@ -63,15 +64,27 @@ def run():
             # Keep track of our trips for later
             if 'origin_stop' in trip_stops and 'destination_stop' not in trip_stops:
                 trip_stops['destination_stop'] = route_stop['stop']
+                trip_stops['destination_stop_longitude'] = route_stop['longitude']
+                trip_stops['destination_stop_latitude'] = route_stop['latitude']
             if 'origin_stop' not in trip_stops:
                 trip_stops['origin_stop'] = route_stop['stop']
+                trip_stops['origin_stop_longitude'] = route_stop['longitude']
+                trip_stops['origin_stop_latitude'] = route_stop['latitude']
             if 'origin_stop' in trip_stops and 'destination_stop' in trip_stops:
                 trip_lookup.append({
                     'origin_stop': trip_stops['origin_stop'],
-                    'destination_stop': trip_stops['destination_stop']
+                    'origin_stop_longitude': trip_stops['origin_stop_longitude'],
+                    'origin_stop_latitude': trip_stops['origin_stop_latitude'],
+                    'destination_stop': trip_stops['destination_stop'],
+                    'destination_stop_longitude': trip_stops['destination_stop_longitude'],
+                    'destination_stop_latitude': trip_stops['destination_stop_latitude']
                 })
                 trip_stops['origin_stop'] = route_stop['stop']
+                trip_stops['origin_stop_longitude'] = route_stop['longitude']
+                trip_stops['origin_stop_latitude'] = route_stop['latitude']
                 del trip_stops['destination_stop']
+                del trip_stops['destination_stop_longitude']
+                del trip_stops['destination_stop_latitude']
 
         # Only continue if there is more than one stop
         if len(routes[route]) > 1:
@@ -80,6 +93,7 @@ def run():
 
                 # In the properties are the indexes of the waypoints
                 waypoints = res_data['features'][0]['properties']['way_points']
+                segments = res_data['features'][0]['properties']['segments']
 
                 # We need to create an array of origin/destination index
                 trips = []
@@ -103,8 +117,14 @@ def run():
                         {
                             'route': route,
                             'mobile': route_list[0]['mobile'],
-                            'origin_stop': trip_lookup[trip_idx]['origin_stop'], 
-                            'destination_stop': trip_lookup[trip_idx]['destination_stop'], 
+                            'origin_stop': trip_lookup[trip_idx]['origin_stop'],
+                            'origin_stop_longitude': trip_lookup[trip_idx]['origin_stop_longitude'],
+                            'origin_stop_latitude': trip_lookup[trip_idx]['origin_stop_latitude'],
+                            'destination_stop': trip_lookup[trip_idx]['destination_stop'],
+                            'destination_stop_longitude': trip_lookup[trip_idx]['destination_stop_longitude'],
+                            'destination_stop_latitude': trip_lookup[trip_idx]['destination_stop_latitude'],
+                            'distance': segments[trip_idx]['distance'],
+                            'duration': segments[trip_idx]['duration'],
                             'geo': line
                         })
 

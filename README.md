@@ -8,6 +8,14 @@ Primarily scripts will be written in Python (v3).
 
 - [Python](https://www.python.org/)
 
+## Running scripts
+
+
+
+```
+ogr2ogr -f "CSV" aberdeenshire_routes.csv aberdeenshire_routes.geojson -lco GEOMETRY=AS_WKT
+```
+
 ## Authors
 
 * **Dave Rowe** - *Initial work* - [DaveBathnes](https://github.com/DaveBathnes)
