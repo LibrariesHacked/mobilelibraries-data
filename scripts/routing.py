@@ -1,6 +1,6 @@
 import csv
 import collections
-import urllib.request
+import requests
 import pandas as pd
 import geopandas
 import json
@@ -9,8 +9,8 @@ from shapely.geometry import Point
 from shapely.geometry import LineString
 
 API_KEY = '5b3ce3597851110001cf624860a035e0c0bf48c690561cefd3ff4769'
-STOP_DATA = '../data/aberdeenshire.csv'
-OUTPUT_DATA = '../data/aberdeenshire_routes.geojson'
+STOP_DATA = '../data/wrexham.csv'
+OUTPUT_DATA = '../data/wrexham_routes.geojson'
 
 
 def run():
@@ -88,8 +88,9 @@ def run():
 
         # Only continue if there is more than one stop
         if len(routes[route]) > 1:
-            with urllib.request.urlopen(url[:-1]) as response:
-                res_data = json.load(response)
+            res_data = requests.get(url[:-1]).json()
+
+            if 'error' not in res_data:
 
                 # In the properties are the indexes of the waypoints
                 waypoints = res_data['features'][0]['properties']['way_points']
@@ -109,6 +110,7 @@ def run():
                         destination = None
 
                 for trip_idx, trip_item in enumerate(trips):
+
                     line = LineString(
                         res_data['features'][0]['geometry']['coordinates'][trip_item[0]:trip_item[1] + 1])
 
@@ -128,7 +130,7 @@ def run():
                             'geo': line
                         })
 
-                time.sleep(5)
+            time.sleep(6)
 
     frame = pd.DataFrame(data=geodata)
     geodf = geopandas.GeoDataFrame(

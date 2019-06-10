@@ -82,6 +82,12 @@ def run():
 
                         if len(row.find_all('td')) == 3:
 
+                            address = row.find_all('td')[1].get_text().strip()
+                            community = ''
+                            stop_name = address.split(', ')[0]
+                            if len(address.split(', ')) > 1:
+                                community = address.split(', ')[1]
+
                             postcode = row.find_all('td')[2].get_text().strip()
                             postcode = ''.join(
                                 ch for ch in postcode if ch.isalnum())
@@ -96,6 +102,8 @@ def run():
                                 postcode = 'BT770BD'
                             if postcode == 'BT459PW':
                                 postcode = 'BT359PW'
+                            if postcode == 'BT222HN' and stop_name == 'Rathgill George Green Community Centre':
+                                postcode = 'BT197TZ'
 
                             if postcode and postcode != '':
 
@@ -108,15 +116,14 @@ def run():
 
                                 latitude = postcode_data['result']['latitude']
                                 longitude = postcode_data['result']['longitude']
+                                
+                                if stop_name == '​Montgomery Manor':
+                                    latitude = 54.657097
+                                    longitude = -5.632655
+                                if postcode == 'BT330SE' and stop_name == 'Lawnfield':
+                                    latitude = 54.206049
+                                    longitude = -5.894022
 
-                                # Now get other fields
-                                address = row.find_all(
-                                    'td')[1].get_text().strip()
-
-                                community = ''
-                                stop_name = address.split(', ')[0]
-                                if len(address.split(', ')) > 1:
-                                    community = address.split(', ')[1]
                                 arrival = '12:00'
                                 departure = '12:00'
                                 route = mobile_name + ' ' + day + ' ' + week_no
