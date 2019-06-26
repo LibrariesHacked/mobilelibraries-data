@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>New 2019 Mobile Library Route</name>
+    <description>West Dunbartonshire Libraries operate a mobile library service which provides for areas in our communities not in the vicinity of our libraries.</description>
+    <Style id="icon-seq2-0-0-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-0-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-0-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-0-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-0-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-1-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-1-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-1-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-1-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-1-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-2-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-2-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-2-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-2-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-2-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-3-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-3-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-3-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-3-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-3-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-4-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-4-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-4-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-4-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-4-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-5-FFD600-normal">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-5-FFD600-highlight">
+      <IconStyle>
+        <color>ff00d6ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-5-FFD600">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-5-FFD600-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-5-FFD600-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-1-0-F9A825-normal">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-7.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-1-0-F9A825-highlight">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-7.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-1-0-F9A825">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-1-0-F9A825-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-1-0-F9A825-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-1-1-F9A825-normal">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-1-1-F9A825-highlight">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-1-1-F9A825">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-1-1-F9A825-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-1-1-F9A825-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-1-2-F9A825-normal">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-9.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-1-2-F9A825-highlight">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-9.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-1-2-F9A825">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-1-2-F9A825-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-1-2-F9A825-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-1-3-F9A825-normal">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-10.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-1-3-F9A825-highlight">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-10.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-1-3-F9A825">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-1-3-F9A825-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-1-3-F9A825-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-2-0-0F9D58-labelson">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-11.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-2-1-0F9D58-labelson">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-12.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-2-2-0F9D58-labelson">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-13.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-2-3-0F9D58-labelson">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-14.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-2-4-0F9D58-labelson">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-15.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-2-5-0F9D58-labelson">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-16.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-3-0-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-17.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-3-1-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-18.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-3-2-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-19.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-3-3-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-20.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-3-4-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-21.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-3-5-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-22.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-4-0-880E4F-labelson">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-23.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-4-1-880E4F-labelson">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-24.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-4-2-880E4F-labelson">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-25.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-4-3-880E4F-labelson">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-26.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-4-4-880E4F-labelson">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-27.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-5-0-FF5252-labelson">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-28.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-5-1-FF5252-labelson">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-29.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-5-2-FF5252-labelson">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-30.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-5-3-FF5252-labelson">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-31.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-5-4-FF5252-labelson">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-32.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-5-5-FF5252-labelson">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-33.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-5-6-FF5252-labelson">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-34.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-6-0-7CB342-labelson">
+      <IconStyle>
+        <color>ff42b37c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-35.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-6-1-7CB342-labelson">
+      <IconStyle>
+        <color>ff42b37c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-36.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-6-2-7CB342-labelson">
+      <IconStyle>
+        <color>ff42b37c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-37.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-6-3-7CB342-labelson">
+      <IconStyle>
+        <color>ff42b37c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-38.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-6-4-7CB342-labelson">
+      <IconStyle>
+        <color>ff42b37c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-39.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-7-0-1A237E-labelson">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-40.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-7-1-1A237E-labelson">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-41.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-7-2-1A237E-labelson">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-42.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-7-3-1A237E-labelson">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-43.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-7-4-1A237E-labelson">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-44.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-7-5-1A237E-labelson">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-45.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-8-0-673AB7-labelson">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-46.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-8-1-673AB7-labelson">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-47.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-8-2-673AB7-labelson">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-48.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-8-3-673AB7-labelson">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-49.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-8-4-673AB7-labelson">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-50.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-8-5-673AB7-labelson">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-51.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-8-6-673AB7-labelson">
+      <IconStyle>
+        <color>ffb73a67</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-52.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-9-0-9C27B0-labelson">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-53.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-9-1-9C27B0-labelson">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-54.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-9-2-9C27B0-labelson">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-55.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-9-3-9C27B0-labelson">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-56.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-9-4-9C27B0-labelson">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-57.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-seq2-9-5-9C27B0-labelson">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-58.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Folder>
+      <name><![CDATA[Monday Morning - Bonhill & Haldane]]></name>
+      <Placemark>
+        <name>37 Ladyton</name>
+        <description>Monday morning 9:30 - 9:50am</description>
+        <styleUrl>#icon-seq2-0-0-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            -4.567379,55.979036,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>115 Ladyton</name>
+        <description>Monday morning 9:55 - 10:10am</description>
+        <styleUrl>#icon-seq2-0-1-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            -4.56687,55.979932,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[43 - 47 O'Hare]]></name>
+        <description>Monday morning 10:15 - 10:25am</description>
+        <styleUrl>#icon-seq2-0-2-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            -4.56515,55.981985,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>270 Pappert</name>
+        <description>Monday morning 10:30 - 10.50am</description>
+        <styleUrl>#icon-seq2-0-3-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            -4.556934,55.981116,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dumbain Road (at the flats)</name>
+        <description>Monday Morning - 11.00-11.20am</description>
+        <styleUrl>#icon-seq2-0-4-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5639718,56.0050581,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brown Street (at the shops)</name>
+        <description>Monday Morning 11.25-11.55am</description>
+        <styleUrl>#icon-seq2-0-5-FFD600</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5645404,56.0019746,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name><![CDATA[Monday Afternoon - Gartocharn & Lomondgate]]></name>
+      <Placemark>
+        <name>Gartocharn Lay-by</name>
+        <description>Monday afternoon 1:30 - 1:50pm</description>
+        <styleUrl>#icon-seq2-1-0-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            -4.524482,56.042822,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lagganbeg Caravan Park</name>
+        <description>Monday afternoon 2.00 - 2:30pm</description>
+        <styleUrl>#icon-seq2-1-1-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            -4.526482,56.052035,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Glenfinnan Drive (at playpark)</name>
+        <description>Monday afternoon 2.50 - 3.10pm</description>
+        <styleUrl>#icon-seq2-1-2-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            -4.562004,55.953095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Glenfinnan Drive (at layby)</name>
+        <description>Monday afternoon 2.50-3.10pm</description>
+        <styleUrl>#icon-seq2-1-3-F9A825</styleUrl>
+        <Point>
+          <coordinates>
+            -4.563961,55.9551767,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name><![CDATA[Tuesday Morning - Dumbarton (Brucehill & Castlehill)]]></name>
+      <Placemark>
+        <name>Methlan Park </name>
+        <description>Tuesday morning 9.20-9.40am</description>
+        <styleUrl>#icon-seq2-2-0-0F9D58-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5789385,55.9393435,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hill Street Square</name>
+        <description>Tuesday morning 9.45-10.05am</description>
+        <styleUrl>#icon-seq2-2-1-0F9D58-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.586513,55.9451567,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ardoch Cres (at nursery)</name>
+        <description>Tuesday morning 10.05-10.25</description>
+        <styleUrl>#icon-seq2-2-2-0F9D58-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5826399,55.9451446,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cardross Rd junction of Waverley Terr</name>
+        <description>Tuesday morning - 10.30-11.00am</description>
+        <styleUrl>#icon-seq2-2-3-0F9D58-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5984864,55.9487913,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>95 Hawthornhill Rd. (at shop)</name>
+        <description>Tuesday morning 11.10-11.30am</description>
+        <styleUrl>#icon-seq2-2-4-0F9D58-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5962655,55.9499687,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Quarryknowe (Phoenix)</name>
+        <description>Tuesday morning 11.35-11.55am</description>
+        <styleUrl>#icon-seq2-2-5-0F9D58-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5868778,55.9516027,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Tuesday Afternoon Dumbarton (Bellsmyre)</name>
+      <Placemark>
+        <name>Merkins Avenue (at the shops)</name>
+        <description>Tuesday Afternoon 1.00-1.20pm</description>
+        <styleUrl>#icon-seq2-3-0-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5532,55.9578375,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>No. 8 Glenside </name>
+        <description>Tuesday Afternoon 1.25-1.50pm</description>
+        <styleUrl>#icon-seq2-3-1-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5469344,55.955874,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oaktree Gardens</name>
+        <description>Tuesday afternoon 2.00-2.20pm</description>
+        <styleUrl>#icon-seq2-3-2-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5414412,55.93834,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>No 64 Maryfisher Cresc</name>
+        <description>Tuesday afternoon 2:25 - 2:45pm</description>
+        <styleUrl>#icon-seq2-3-3-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5461619,55.9380846,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Orissa Drive G82 1BN (Flats/playpark) </name>
+        <description>Tuesday afternoon 3:10 - 3:35pm</description>
+        <styleUrl>#icon-seq2-3-4-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5484364,55.9372103,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Almora Drive (at layby)</name>
+        <description>Tuesday afternoon 3:40 - 4:00pm</description>
+        <styleUrl>#icon-seq2-3-5-0288D1-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5462531,55.9375197,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Wednesday Morning - Clydebank</name>
+      <Placemark>
+        <name>Fleming Avenue (at shops)</name>
+        <description>Wednesday morning 9:20 - 9.40am</description>
+        <styleUrl>#icon-seq2-4-0-880E4F-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.387536,55.8980193,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Centre, 81 Braes Avenue</name>
+        <description>Wednesday Morning 9.40-10.30am</description>
+        <styleUrl>#icon-seq2-4-1-880E4F-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.3860233,55.9002148,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Andrew Drive (at Bowling club)</name>
+        <description>Wednesday morning 10.40-11.00am</description>
+        <styleUrl>#icon-seq2-4-2-880E4F-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.3932438,55.8985667,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>No 1 Kirkwood Ave </name>
+        <description>Wednesday Morning 11.10-11.30am</description>
+        <styleUrl>#icon-seq2-4-3-880E4F-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.386946,55.9033364,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ramillies Court</name>
+        <description>Wednesday morning  11.35-11.55am</description>
+        <styleUrl>#icon-seq2-4-4-880E4F-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.3935978,55.9047318,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Wednesday Afternoon  -Old Kilpatrick</name>
+      <Placemark>
+        <name>28 Freeland Road</name>
+        <description>Wednesday afternoon 1.05-1.25pm</description>
+        <styleUrl>#icon-seq2-5-0-FF5252-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.447124,55.9172094,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ashtree Court</name>
+        <description>Wednesday afternoon 1.30-1.50pm</description>
+        <styleUrl>#icon-seq2-5-1-FF5252-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.4575739,55.9237863,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Erskine View (Health Centre)</name>
+        <description>Wednesday afternoon 1.55-2.10pm</description>
+        <styleUrl>#icon-seq2-5-2-FF5252-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.460063,55.9244415,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>No 94 Thistleneuk </name>
+        <description>Wednesday afternoon 2.15-2.40am</description>
+        <styleUrl>#icon-seq2-5-3-FF5252-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.4565761,55.9253372,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dumbarton Road/Gavinburn Place</name>
+        <description>Wednesday afternoon 3.00-3.20pm</description>
+        <styleUrl>#icon-seq2-5-4-FF5252-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.4639146,55.9264552,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Roman Cresc (Oval)</name>
+        <description>Wednesday afternoon 3.20-3.40pm</description>
+        <styleUrl>#icon-seq2-5-5-FF5252-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.472546,55.9282795,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Roman Cresc (Lock ups)</name>
+        <description>Wednesday afternoon 3.40-4.00pm</description>
+        <styleUrl>#icon-seq2-5-6-FF5252-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.470191,55.9281893,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name><![CDATA[Thursday Morning - Alexandria & Dumbarton Sheltered Housing]]></name>
+      <Placemark>
+        <name>Manse Gardens</name>
+        <description>Thursday morning  9.30-9.50am</description>
+        <styleUrl>#icon-seq2-6-0-7CB342-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.568494,56.0031325,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Oakbank Sheltered Housing </name>
+        <description>Thursday morning 10.00-10.20am</description>
+        <styleUrl>#icon-seq2-6-1-7CB342-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.579491,55.9875079,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bridge Court, Sheltered Housing</name>
+        <description>Thursday morning 10.25-10.45am</description>
+        <styleUrl>#icon-seq2-6-2-7CB342-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5794213,55.984399,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Crosslet House Care Home</name>
+        <description>Thursday morning 10.55-11.25am</description>
+        <styleUrl>#icon-seq2-6-3-7CB342-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5427501,55.9466706,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Church Court Sheltered Housing</name>
+        <description>Thursday morning 11.35-11.55am</description>
+        <styleUrl>#icon-seq2-6-4-7CB342-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5684645,55.944637,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Thursday Afternoon - Milton, Dumbarton and Renton</name>
+      <Placemark>
+        <name>26 Colquhoun Road, Milton</name>
+        <description>Thursday afternoon 1.05-1.25pm</description>
+        <styleUrl>#icon-seq2-7-0-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5225424,55.9367025,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Clyde Court, Westbridgend</name>
+        <description>Thursday afternoon 1.40-2.00pm</description>
+        <styleUrl>#icon-seq2-7-1-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5773721,55.9452167,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>McFarlane Place</name>
+        <description>Thursday afternoon 2.15-2.35pm</description>
+        <styleUrl>#icon-seq2-7-2-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5826024,55.9740954,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hall Street </name>
+        <description>Thursday afternoon 2.55-3.15pm</description>
+        <styleUrl>#icon-seq2-7-3-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.584893,55.9678002,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Taylor Street at the playpark</name>
+        <description>Thursday afternoon 3.20-3.40pm</description>
+        <styleUrl>#icon-seq2-7-4-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5795178,55.963831,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Taylor Street\Johnstone Road</name>
+        <description>Thursday afternoon 3.40-4.00pm</description>
+        <styleUrl>#icon-seq2-7-5-1A237E-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5795071,55.9653728,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Friday Morning - Dalmuir and Faifley</name>
+      <Placemark>
+        <name>38 Melbourne Ave</name>
+        <description>Friday Morning 9.20-9.40am</description>
+        <styleUrl>#icon-seq2-8-0-673AB7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.4367064,55.9189949,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Myrtle Rd/Cedar Ave</name>
+        <description>Friday Morning  9.45-10.05am</description>
+        <styleUrl>#icon-seq2-8-1-673AB7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.4340992,55.9159648,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kirkoswald Drive at the co-op</name>
+        <description>Friday Morning 10.15-10.35am</description>
+        <styleUrl>#icon-seq2-8-2-673AB7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.3934798,55.9113349,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>40 Mossgiel Drive</name>
+        <description>Friday Morning 10.35-10.55am</description>
+        <styleUrl>#icon-seq2-8-3-673AB7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.397428,55.9119723,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>30 Melfort Avenue</name>
+        <description>Friday Morning 10.55-11.15am</description>
+        <styleUrl>#icon-seq2-8-4-673AB7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.3994987,55.9091039,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Faifley Road at the Deli</name>
+        <description>Friday Morning 11.25-11.45am</description>
+        <styleUrl>#icon-seq2-8-5-673AB7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.3854332,55.9287333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>No50 Abbeylands Road</name>
+        <description>Friday Morning 11.45-12.05pm</description>
+        <styleUrl>#icon-seq2-8-6-673AB7-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.3979269,55.9268219,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Friday Afternoon - Dumbarton east</name>
+      <Placemark>
+        <name>95 Dumbuie Avenue</name>
+        <description>Friday Afternoon 1.30-1.50pm</description>
+        <styleUrl>#icon-seq2-9-0-9C27B0-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5495629,55.9457635,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>38 Millburn Crescent</name>
+        <description>Friday Afternoon 1.50-2.10pm</description>
+        <styleUrl>#icon-seq2-9-1-9C27B0-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5510757,55.9452948,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>1 Dunbritton Road</name>
+        <description>Friday Afternoon 2.10-2.30pm</description>
+        <styleUrl>#icon-seq2-9-2-9C27B0-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5475137,55.9435104,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Corner of Highmains - Geils Quadrant</name>
+        <description>Friday Afternoon 2.35-2.55pm</description>
+        <styleUrl>#icon-seq2-9-3-9C27B0-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5431685,55.9421946,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>No 44 Dumbuck Crescent</name>
+        <description>Friday Afternoon 3.15-3.35pm</description>
+        <styleUrl>#icon-seq2-9-4-9C27B0-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.544735,55.9405422,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dumbuck Gardens at layby</name>
+        <description>Friday Afternoon 3.40-4.00pm</description>
+        <styleUrl>#icon-seq2-9-5-9C27B0-labelson</styleUrl>
+        <Point>
+          <coordinates>
+            -4.5482755,55.9395989,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
