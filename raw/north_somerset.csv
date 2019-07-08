@@ -1,0 +1,43 @@
+Route,Community,Location,Frequency,Day,Start,End,Date,X,Y
+Monday 1,Claverham,Chestnut Drive,2,Monday,11:10,11:30,2019-01-07,344624.2238,166220.2192
+Monday 1,Wrington,Broad Street,2,Monday,11:45,12:45,2019-01-07,346868.9252,162820.4224
+Monday 1,Backwell,Rodney Road Car Park,2,Monday,14:15,16:15,2019-01-07,348489.5827,168485.4708
+Tuesday 1,Bleadon,Church,2,Tuesday,10:20,11:20,2019-01-08,334105.1089,156918.5818
+Tuesday 1,Uphill,Uphill Way Car Park,2,Tuesday,11:30,12:30,2019-01-08,331637.4775,158477.8254
+Tuesday 1,Long Ashton,Community Centre,2,Tuesday,14:30,16:30,2019-01-08,353695,170362
+Wednesday 1,Winford,Bus stop,2,Wednesday,11:35,12:20,2019-01-09,353954.607,165172.799
+Wednesday 1,Redhill,Village Hall,2,Wednesday,12:35,12:55,2019-01-09,349708.8458,163265.9749
+Wednesday 1,Wrington,Broad Street,2,Wednesday,14:00,16:30,2019-01-09,346868.9252,162820.4224
+Thursday 1,Almondsbury,The Bowl Inn,2,Thursday,9.40,10:00,2019-01-10,360389,184134
+Thursday 1,Easter Compton,Fox Pub,2,Thursday,10:15,10:30,2019-01-10,357193,182452
+Thursday 1,Hallen,Hi Ways caravan park,2,Thursday,10:45,11:05,2019-01-10,354832,179802
+Thursday 1,Severn Beach,Abbot Road,2,Thursday,11:20,11:40,2019-01-10,354347,184300
+Thursday 1,Severn Beach,Salthouse Farm,2,Thursday,11:50,12:10,2019-01-10,354079,185528
+Thursday 1,Pilning,Cross Hands,2,Thursday,12:20,12:40,2019-01-10,355780,185019
+Thursday 1,Banwell,Car Park,2,Thursday,14:40,16:30,2019-01-10,339704.3052,159225.2915
+Friday 1,Long Ashton,Community Centre,2,Friday,9:30,11:30,2019-01-11,353695,170362
+Friday 1,Failand,Woodland Way,2,Friday,11:45,12:15,2019-01-11,351919.3302,171538.147
+Friday 1,Leigh Woods,Vicarage Road,2,Friday,13:30,13:50,2019-01-11,355895.0904,172902.4165
+Friday 1,Abbots Leigh,Church Road (by village hall),2,Friday,14:00,15:00,2019-01-11,354447.2,173983.8969
+Friday 1,Portbury,Priory Estate,2,Friday,15:10,16:00,2019-01-11,349849.1025,175434.6016
+Monday 2,Cleeve,Woodview,2,Monday,11:10,11:30,2019-01-14,345489.7903,165672.596
+Monday 2,Wrington,Broad Street,2,Monday,11:45,12:45,2019-01-14,346868.9252,162820.4224
+Monday 2,Backwell,Rodney Road Car Park,2,Monday,14:15,16:15,2019-01-14,348489.5827,168485.4708
+Tuesday 2,Kingston Seymour,Village Hall,2,Tuesday,11:10,12:40,2019-01-15,340057.9771,166902.344
+Tuesday 2,Long Ashton,Community Centre,2,Tuesday,14:30,16:30,2019-01-15,353695,170362
+Wednesday 2,Lulsgate,Coombe Dale,2,Wednesday,10:40,11:00,2019-01-16,351063.3197,165709.1855
+Wednesday 2,Felton,George and Dragon,2,Wednesday,11:05,11:25,2019-01-16,352161.1001,165521.7292()
+Wednesday 2,Regil,Regil Green,2,Wednesday,11:40,12:00,2019-01-16,353925.1474,162549.0201
+Wednesday 2,Butcombe,The Batch Crossroads,2,Wednesday,13:25,13:45,2019-01-16,351446.344,161683.008
+Wednesday 2,Wrington,Broad Street,2,Wednesday,14:00,16:30,2019-01-16,346868.9252,162820.4224
+Thursday 2,Langford,Old Post Office,2,Thursday,10:00,11:00,2019-01-16,346378.0802,160681.8845
+Thursday 2,Burrington,The Square,2,Thursday,11:10,11:55,2019-01-16,347927.8961,159363.352
+Thursday 2,Rickford,Waterfall,2,Thursday,12:00,12:30,2019-01-16,348707.3759,159261.851
+Thursday 2,Blagdon,Village Club Car Park,2,Thursday,13:35,14:35,2019-01-16,350073.7557,159141.1656
+Thursday 2,Blagdon,Junction Eastcroft/Score Lane,2,Thursday,14:40,15:40,2019-01-16,350458.998,158564.5606
+Thursday 2,Churchill,Doctor's Surgery Car Park,2,Thursday,16:00,16:45,2019-01-16,345180.9138,160520.3108
+Friday 2,Long Ashton,Community Centre,2,Friday,9:30,11:30,2019-01-17,353695,170362
+Friday 2,Hutton,Holm Road,2,Friday,13:30,16:30,2019-01-17,335070.2015,158986.7998
+Friday 2,Locking,Meadow Drive,2,Friday,14:50,15:35,2019-01-17,336539.1416,159823.3903
+Friday 2,Kewstoke/Sand Bay,Kewstoke Village Hall,2,Friday,15:55,16:15,2019-01-17,333225.8803,163614.865
+Friday 2,Wick St Lawrence,Church,2,Friday,16:30,16:50,2019-01-17,336647.1025,165419.6984
