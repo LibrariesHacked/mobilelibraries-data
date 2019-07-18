@@ -10,8 +10,6 @@ Primarily scripts will be written in Python (v3).
 
 ## Running scripts
 
-
-
 ```
 ogr2ogr -f "CSV" aberdeenshire_routes.csv aberdeenshire_routes.geojson -lco GEOMETRY=AS_WKT
 ```
