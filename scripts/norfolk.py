@@ -3,7 +3,9 @@ from datetime import datetime, timedelta
 import re
 import csv
 
+## Data extracted using https://maps.norfolk.gov.uk/arcgis/rest/services/layers_ext/where_i_live/MapServer/16/query?f=json&returnGeometry=true&spatialRel=esriSpatialRelIntersects&geometry={"xmin":0.1536,"ymin":52.3553,"xmax":0.9497,"ymax":52.9916,"spatialReference":{"wkid":4326,"latestWkid":4326}}&geometryType=esriGeometryEnvelope&inSR=4326&outFields=*&outSR=4326
 DATA_SOURCE_1 = '../raw/norfolk1.json'
+# Data extracted using https://maps.norfolk.gov.uk/arcgis/rest/services/layers_ext/where_i_live/MapServer/16/query?f=json&returnGeometry=true&spatialRel=esriSpatialRelIntersects&geometry={"xmin":0.9497,"ymin":52.3553,"xmax":1.7458,"ymax":52.9916,"spatialReference":{"wkid":4326,"latestWkid":4326}}&geometryType=esriGeometryEnvelope&inSR=4326&outFields=*&outSR=4326
 DATA_SOURCE_2 = '../raw/norfolk2.json'
 DATA_OUTPUT = '../data/norfolk.csv'
 DETAILS_RE = '^Mobile Library Route Number (\w+) will next visit (\D+), (.+) on (\d{1,2}\/\d{1,2}\/\d{1,4}) Arrival (\d{1,2}:?[0-5]?\d:[0-5]?\d) Departure (\d{1,2}:?[0-5]?\d:[0-5]?\d)'
@@ -53,8 +55,8 @@ def run():
 
         community = details_groups.group(2).title()
         date = datetime.strptime(details_groups.group(4), '%d/%m/%Y') - four_weeks
-        arrival = details_groups.group(5)
-        departure = details_groups.group(6)
+        arrival = details_groups.group(5)[0:5]
+        departure = details_groups.group(6)[0:5]
 
         address = stop_name + ', ' + community
         start = date.strftime('%Y-%m-%d')
