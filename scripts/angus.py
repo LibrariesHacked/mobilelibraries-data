@@ -15,8 +15,7 @@ def run():
         data = json.load(data_file)
 
         features = data['features']
-        timetable = 'http://www.angus.gov.uk/sites/angus-cms/files/2019-03/Mobile%20Library%20Route%20Timetable%20Mar%20-%20May%202019.pdf'
-        frequency = 2
+        timetable = 'https://www.angusalive.scot/media/1708/mobile20library20timetable20-20new20service.pdf'
 
         dates = {
             1: {
@@ -40,8 +39,6 @@ def run():
             northing = feature['properties']['grid_y']
 
             mobile_library = feature['properties']['vehicle'].title()
-            route = feature['properties']['route'].title()
-            route = route.replace(mobile_library, '')
 
             day = feature['properties']['day'].rstrip('s')
 
@@ -59,6 +56,8 @@ def run():
             departure = feature['properties']['time_depart'].replace(':00Z', '')
 
             week = feature['properties']['week']
+
+            route = mobile_library + ' ' + 'Week ' + str(week) + ' ' + day
 
             start = dates[week][day]
 
