@@ -2,8 +2,8 @@ organisation,mobile,route,community,stop,address,postcode,geox,geoy,day,arrival,
 York,Mobile,D1,Acaster Malbis,Mount. Pleasant,Acaster Malbis - Mount. Pleasant,,-1.1039098974590134,53.896277482208156,Thursday,10:00,10:45,FREQ=WEEKLY;INTERVAL=2,2019-09-12,,https://www.exploreyork.org.uk/mobile-library/
 York,Mobile,B2,Appletree Village,Meadlands,Appletree Village - Meadlands,,-1.0416133880512268,53.96396262028612,Tuesday,12:10,12:20,FREQ=WEEKLY;INTERVAL=2,2019-09-17,,https://www.exploreyork.org.uk/mobile-library/
 York,Mobile,D1,Askham Bryan,Pond,Askham Bryan Pond,,-1.1587800302860756,53.92909792897263,Thursday,11:05,11:15,FREQ=WEEKLY;INTERVAL=2,2019-09-12,,https://www.exploreyork.org.uk/mobile-library/
-York,Mobile,D1,Askham Richard,Rose and Crown,Askham Richard - Rose and Crown,,-1.1838403193542022,53.92457695656447,Thursday,11:25,11:55,FREQ=WEEKLY;INTERVAL=2,,,https://www.exploreyork.org.uk/mobile-library/
-York,Mobile,B2,Badger Hill,Yarburgh Way,Badger Hill - Yarburgh Way,,-1.0359596036656658,53.95350074498525,Tuesday,10:50,11:10,FREQ=WEEKLY;INTERVAL=2,,,https://www.exploreyork.org.uk/mobile-library/
+York,Mobile,D1,Askham Richard,Rose and Crown,Askham Richard - Rose and Crown,,-1.1838403193542022,53.92457695656447,Thursday,11:25,11:55,FREQ=WEEKLY;INTERVAL=2,2019-09-12,,https://www.exploreyork.org.uk/mobile-library/
+York,Mobile,B2,Badger Hill,Yarburgh Way,Badger Hill - Yarburgh Way,,-1.0359596036656658,53.95350074498525,Tuesday,10:50,11:10,FREQ=WEEKLY;INTERVAL=2,2019-09-17,,https://www.exploreyork.org.uk/mobile-library/
 York,Mobile,D2,Boroughbridge Road,Sandacre Court,Boroughbridge Road - Sandacre Court,,-1.11822411423676,53.964026347591215,Thursday,11:40,12:00,FREQ=WEEKLY;INTERVAL=2,2019-09-19,,https://www.exploreyork.org.uk/mobile-library/
 York,Mobile,C2,Burton Stone,Burton Stone,Burton Stone,,-1.0899374119128085,53.97392764644248,Wednesday,13:15,13:45,FREQ=WEEKLY;INTERVAL=2,2019-09-18,,https://www.exploreyork.org.uk/mobile-library/
 York,Mobile,B1,Crockey Hill,Crockey Hill,Crockey Hill,,-1.0502043491682589,53.90971379278713,Tuesday,11:25,11:35,FREQ=WEEKLY;INTERVAL=2,2019-09-24,,https://www.exploreyork.org.uk/mobile-library/
@@ -17,8 +17,8 @@ York,Mobile,E2,Elvington,Park,Elvington - Park,,-0.9523382081213713,53.924767030
 York,Mobile,B1,Heslington,Heslington Court,Heslington - Heslington Court,,-1.0426266086037181,53.94478210522349,Tuesday,12:00,12:20,FREQ=WEEKLY;INTERVAL=2,2019-09-24,,https://www.exploreyork.org.uk/mobile-library/
 York,Mobile,B1,Heslington,Memorial Cottages,Heslington - Memorial Cottages,,-1.0434343211485546,53.94344032047181,Tuesday,12:25,12:35,FREQ=WEEKLY;INTERVAL=2,2019-09-24,,https://www.exploreyork.org.uk/mobile-library/
 York,Mobile,B1,Heslington,Peel Close,Heslington - Peel Close,,-1.050414524148231,53.94265979380556,Tuesday,12:40,12:50,FREQ=WEEKLY;INTERVAL=2,2019-09-24,,https://www.exploreyork.org.uk/mobile-library/
-York,Mobile,D1,Hessay,Hessay,Hessay,,-1.2047305961285741,53.97344445502244,Thursday,12:40,12:50,FREQ=WEEKLY;INTERVAL=2,Thursday,2019-09-12,https://www.exploreyork.org.uk/mobile-library/
-York,Mobile,D2,Heworth Without,Community Centre,Heworth Without - Community Centre,,-1.062581396959803,53.970780181167775,Thursday,15:30,17:30,FREQ=WEEKLY;INTERVAL=2,,,https://www.exploreyork.org.uk/mobile-library/
+York,Mobile,D1,Hessay,Hessay,Hessay,,-1.2047305961285741,53.97344445502244,Thursday,12:40,12:50,FREQ=WEEKLY;INTERVAL=2,2019-09-12,,https://www.exploreyork.org.uk/mobile-library/
+York,Mobile,D2,Heworth Without,Community Centre,Heworth Without - Community Centre,,-1.062581396959803,53.970780181167775,Thursday,15:30,17:30,FREQ=WEEKLY;INTERVAL=2,2019-09-19,,https://www.exploreyork.org.uk/mobile-library/
 York,Mobile,B2,Heworth,Mistral Court,Heworth - Mistral Court,,-1.0705193286067651,53.97373598372437,Tuesday,12:55,13:15,FREQ=WEEKLY;INTERVAL=2,2019-09-17,,https://www.exploreyork.org.uk/mobile-library/
 York,Mobile,C2,Heworth,Langley House,Heworth - Langley House,,-1.0687751793840512,53.967853280985736,Wednesday,10:20,10:30,FREQ=WEEKLY;INTERVAL=2,2019-09-18,,https://www.exploreyork.org.uk/mobile-library/
 York,Mobile,C2,Heworth,Charles Moor,Heworth - Charles Moor,,-1.0593151951127937,53.97026930720214,Wednesday,10:35,10:55,FREQ=WEEKLY;INTERVAL=2,2019-09-18,,https://www.exploreyork.org.uk/mobile-library/
