@@ -1,4 +1,4 @@
-"""Web scrapes Ediburgh mobile library pages """
+"""Web scrapes Edinburgh mobile library pages """
 
 from urllib.parse import quote
 from datetime import datetime

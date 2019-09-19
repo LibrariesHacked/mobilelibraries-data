@@ -9,6 +9,7 @@ Primarily scripts will be written in Python (v3).
 - [Python](https://www.python.org/)
 
 ```
+pip install beautifulsoup4
 pip install requests
 ```
 
