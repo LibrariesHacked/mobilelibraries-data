@@ -54,8 +54,8 @@ def run():
         for stop in stop_list_soup.find_all('tr')[1:]:
 
             route = route_link['route']
-            community = stop.find_all('td')[2].string.strip()
-            stop_name = stop.find_all('td')[1].string.strip()
+            community = stop.find_all('td')[1].string.strip()
+            stop_name = stop.find_all('td')[2].string.strip()
             address = stop_name + ', ' + community
             postcode = ''
             longitude = ''
