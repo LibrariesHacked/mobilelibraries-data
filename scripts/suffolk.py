@@ -7,12 +7,16 @@ import os
 import csv
 import requests
 import re
+import time
 from bs4 import BeautifulSoup
 
 WEBSITE = 'https://www.suffolklibraries.co.uk/'
 ROUTES = 'mobiles-home/mobile-route-schedules/'
 DATA_OUTPUT = '../data/suffolk.csv'
+BOUNDS = '0.34,51.9321,1.7689,52.5502'
+NOM_URL='https://nominatim.openstreetmap.org/search?format=json&q='
 
+## Example request https://nominatim.openstreetmap.org/search?q=The Drift, Coney Weston&viewport=0.34,51.9321,1.7689,52.5502
 
 def run():
     """Runs the main script"""
@@ -67,10 +71,18 @@ def run():
             start = ''
             timetable = WEBSITE + route_link['href']
 
+            # Geocoding: get the lat/lng
+            geo_json = requests.get(NOM_URL + address + ', Suffolk, UK&countrycodes=gb&viewbox=' + BOUNDS).json()
+            if len(geo_json) > 0:
+                longitude = geo_json[0]['lon']
+                latitude = geo_json[0]['lat']
+
             mobiles.append(
                 [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
                  day, arrival, departure, 'FREQ=WEEKLY;INTERVAL=4', start, '', timetable]
             )
+            
+            time.sleep(6)
 
     with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
         mob_writer = csv.writer(out_csv, delimiter=',',
