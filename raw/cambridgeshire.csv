@@ -1,0 +1,386 @@
+Vehicle,Route,B,Day,StopNo,MainLocation,SecondaryLocation,Postcode,Freq,Easting,Northing,Arrive,Depart,stop duration,Stop Time,Stop Time (dec),Travel time
+CMOB,C2,1st,Tuesday,1,Horningsea,High Street,CB25 9JG,monthly,549269.61,262280.3,10:00:00,10:50:00,00:50:00,00:50:00,0.83,01:00:00
+CMOB,C2,1st,Tuesday,2,Fen Ditton,Wrights Close,CB5 8SY,monthly,548300.06,260896.35,11:00:00,11:15:00,00:15:00,00:15:00,0.25,00:10:00
+CMOB,C2,1st,Tuesday,3,Six Mile Bottom,Delamere Close,CB8 0UN,monthly,557852.61,256909.87,11:35:00,12:00:00,00:25:00,00:25:00,0.42,00:20:00
+CMOB,C2,1st,Tuesday,4,West Wratting,High Street,CB21 5LU,monthly,560465.56,252265.92,12:15:00,12:45:00,00:30:00,00:30:00,0.50,00:15:00
+CMOB,C2,1st,Tuesday,5,Weston Green,Post Office,CB21 5NT,monthly,562704.56,252215.78,13:50:00,14:15:00,00:25:00,00:25:00,0.42,01:05:00
+CMOB,C2,1st,Tuesday,6,Weston Colville,Mill Hill,CB21 5NY,monthly,562024.85,252915.45,14:20:00,14:50:00,00:30:00,00:30:00,0.50,00:05:00
+CMOB,C2,1st,Tuesday,7,Brinkley,High Street,CB8 0SF,monthly,563080.36,254670.2,15:00:00,16:00:00,01:00:00,01:00:00,1.00,00:10:00
+CMOB,C3,1st,Wednesday,1,Newnham,Pinehurst/Grange Road,CB3 9BH,monthly,543765.98,257932.17,09:30:00,10:15:00,00:45:00,00:45:00,0.75,17:30:00
+CMOB,C3,1st,Wednesday,2,Newnham,Larchfield/Gough Way,CB3 9LR,monthly,543504.44,257731.42,10:25:00,11:00:00,00:35:00,00:35:00,0.58,00:10:00
+CMOB,C3,1st,Wednesday,3,Newton,The Green,CB22 7PA,monthly,543766.67,249490.09,11:25:00,12:00:00,00:35:00,00:35:00,0.58,00:25:00
+CMOB,C3,1st,Wednesday,4,Thriplow,Middle Street / School Lane,SG8 7RH,monthly,543780.14,246684.12,12:10:00,12:35:00,00:25:00,00:25:00,0.42,00:10:00
+CMOB,C3,1st,Wednesday,5,Thriplow,Sheralds Croft Lane,SG8 7RB,monthly,543394.95,246624.4,12:40:00,13:00:00,00:20:00,00:20:00,0.33,00:05:00
+CMOB,C3,1st,Wednesday,6,Great Chishill,The Church,SG8 8SR,monthly,542301.02,238883.71,14:10:00,14:40:00,00:30:00,00:30:00,0.50,01:10:00
+CMOB,C3,1st,Wednesday,7,Heydon,Fowlmere Road,SG8 8PZ,monthly,543096.25,240351.64,14:45:00,15:15:00,00:30:00,00:30:00,0.50,00:05:00
+CMOB,C3,1st,Wednesday,8,Fowlmere,High Street,SG8 7SR,monthly,542250.28,245859.14,15:30:00,16:10:00,00:40:00,00:40:00,0.67,00:15:00
+CMOB,C4,1st,Thursday,1,Harlton,Bolton Way,CB23 1EZ,monthly,538489.02,252415.11,10:00:00,10:20:00,00:20:00,00:20:00,0.33,17:50:00
+CMOB,C4,1st,Thursday,2,Harlton,Lay-by,CB23 1ER,monthly,539103.61,252435.97,10:25:00,11:00:00,00:35:00,00:35:00,0.58,00:05:00
+CMOB,C4,1st,Thursday,3,Haslingfield,The Meadows,CB23 1JD,monthly,540648,252429,11:10:00,11:40:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C4,1st,Thursday,4,Haslingfield,Methodist Church,CB23 1JW,monthly,540518.53,252172.94,11:45:00,12:20:00,00:35:00,00:35:00,0.58,00:05:00
+CMOB,C4,1st,Thursday,5,Harston,The Limes,CB22 7QT,monthly,542701,251039.96,13:20:00,13:40:00,00:20:00,00:20:00,0.33,01:00:00
+CMOB,C4,1st,Thursday,6,Harston,Queens Close,CB22 7QW,monthly,543209.38,251373.33,13:45:00,14:20:00,00:35:00,00:35:00,0.58,00:05:00
+CMOB,C4,1st,Thursday,7,Hauxton,The Green,CB22 5HP,monthly,544010.99,252062.63,14:30:00,15:00:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C4,1st,Thursday,8,Trumpington,"Foster Road, Pavilion",CB2 9JT,monthly,544737.52,254838.98,15:15:00,16:00:00,00:45:00,00:45:00,0.75,00:15:00
+CMOB,C5,1st,Friday,1,Cambridge,Storeys House,CB3 0BZ,monthly,544368.74,259165.21,09:45:00,10:15:00,00:30:00,00:30:00,0.50,17:45:00
+CMOB,C5,1st,Friday,2,Barton,Roman Hill,CB23 7AX,monthly,541420.83,255657.43,10:35:00,10:55:00,00:20:00,00:20:00,0.33,00:20:00
+CMOB,C5,1st,Friday,3,Barton,Kings Grove,CB23 7AZ,monthly,540891.27,256008.47,11:00:00,11:40:00,00:40:00,00:40:00,0.67,00:05:00
+CMOB,C5,1st,Friday,4,Barton,Great Close,CB23 7BH,monthly,540733.62,255636.94,11:45:00,12:05:00,00:20:00,00:20:00,0.33,00:05:00
+CMOB,C5,1st,Friday,5,Barton,Allens Close,CB23 7BL,monthly,540919.13,255656.02,12:10:00,12:30:00,00:20:00,00:20:00,0.33,00:05:00
+CMOB,C5,1st,Friday,6,Grantchester,Stulpfield Road/Tabrum Close,CB3 9NL,monthly,543013.45,255642.96,12:40:00,13:10:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C5,1st,Friday,7,Coton,Footpath,CB3 7PX,monthly,541502.63,258767.34,14:00:00,14:35:00,00:35:00,00:35:00,0.58,00:50:00
+CMOB,C5,1st,Friday,8,Coton,St Peters Road,CB3 7PR,monthly,540716.12,258738.1,14:40:00,16:00:00,01:20:00,01:20:00,1.33,00:05:00
+CMOB,C8,2nd,Monday,1,Cambridge,Neville Road,CB1 3SW,monthly,547043.17,256699.33,09:45:00,10:20:00,00:35:00,00:35:00,0.58,17:45:00
+CMOB,C8,2nd,Monday,2,Cambridge,Brooklyn Court,CB1 7HF,monthly,547357.56,256466.17,10:25:00,10:55:00,00:30:00,00:30:00,0.50,00:05:00
+CMOB,C8,2nd,Monday,3,Cambridge,Normanhurst,CB1 7BJ,monthly,546532.29,256581.54,11:05:00,11:30:00,00:25:00,00:25:00,0.42,00:10:00
+CMOB,C8,2nd,Monday,4,Cambridge,Denis Wilson Court,CB2 8ES,monthly,545109.76,256005.78,11:40:00,12:10:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C8,2nd,Monday,5,Trumpington,Bishops Road,CB2 2NQ,monthly,544723.74,254330.03,12:20:00,12:50:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C8,2nd,Monday,6,Babraham,High Street,CB22 3AG,monthly,551321.87,250372.54,13:50:00,14:15:00,00:25:00,00:25:00,0.42,01:00:00
+CMOB,C8,2nd,Monday,7,Sawston,Chapelfield Way,CB22 3SY,monthly,548738.13,249631.5,14:25:00,14:50:00,00:25:00,00:25:00,0.42,00:10:00
+CMOB,C8,2nd,Monday,8,Sawston,Uffen Way,CB22 3BS,monthly,548041.68,249562.86,15:00:00,15:30:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C8,2nd,Monday,9,Great Shelford,Orchard Road,CB22 5AA,monthly,546608,252642,15:40:00,16:10:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C9,2nd,Tuesday,1,Linton,Flaxfields,CB21 4JG,monthly,556059.3,247102.43,10:00:00,11:00:00,01:00:00,01:00:00,1.00,17:50:00
+CMOB,C9,2nd,Tuesday,2,Camps End,Sangers Farm,CB21 4TR,monthly,561430.79,242487.26,11:25:00,11:40:00,00:15:00,00:15:00,0.25,00:25:00
+CMOB,C9,2nd,Tuesday,3,Shudy Camps,Main Street,CB21 4RA,monthly,561531.58,245011.9,11:50:00,12:05:00,00:15:00,00:15:00,0.25,00:10:00
+CMOB,C9,2nd,Tuesday,4,Castle Camps,Claydon Close,CB21 4TD,monthly,563353.19,243639.75,12:15:00,12:50:00,00:35:00,00:35:00,0.58,00:10:00
+CMOB,C9,2nd,Tuesday,5,Horseheath,Old Nurseries,CB21 4QR,monthly,561557.84,247056.19,14:00:00,14:40:00,00:40:00,00:40:00,0.67,01:10:00
+CMOB,C9,2nd,Tuesday,6,West Wickham,Streetley End,CB21 4RS,monthly,561653.57,248248.26,14:50:00,15:05:00,00:15:00,00:15:00,0.25,00:10:00
+CMOB,C9,2nd,Tuesday,7,West Wickham,Council Houses,CB21 4SB,monthly,561836.2,249526.31,15:15:00,15:30:00,00:15:00,00:15:00,0.25,00:10:00
+CMOB,C9,2nd & 4th,Tuesday,8,Balsham,Bandstand,CB21 5WA,twice monthly ,558606.1,250815.53,15:40:00,16:45:00,01:05:00,01:05:00,1.08,00:10:00
+CMOB,C10,2nd,Wednesday,1,Kennett,Dane Hill,CB8 7QG,monthly,569860.22,268114.97,10:00:00,10:15:00,00:15:00,00:15:00,0.25,17:15:00
+CMOB,C10,2nd,Wednesday,2,Chippenham,Village Hall,CB7 5PN,monthly,566137.21,270006.19,10:20:00,10:35:00,00:15:00,00:15:00,0.25,00:05:00
+CMOB,C10,2nd,Wednesday,3,Snailwell,Roman Way,CB8 7LT,monthly,564596.61,267496.09,10:40:00,11:00:00,00:20:00,00:20:00,0.33,00:05:00
+CMOB,C10,2nd,Wednesday,4,Fordham,Harry Palmer,CB7 5LZ,monthly,562534.54,270857.24,11:10:00,11:35:00,00:25:00,00:25:00,0.42,00:10:00
+CMOB,C10,2nd,Wednesday,5,Fordham,Mildenhall Road,CB7 5NR,monthly,564151.24,270842.68,11:45:00,12:05:00,00:20:00,00:20:00,0.33,00:10:00
+CMOB,C10,2nd,Wednesday,6,Isleham,Church Street,CB7 5RX,monthly,564288.13,274342.21,12:15:00,13:00:00,00:45:00,00:45:00,0.75,00:10:00
+CMOB,C10,2nd,Wednesday,7,Lode,Longmeadow,CB25 9HA,monthly,554463.99,262891.88,14:10:00,14:35:00,00:25:00,00:25:00,0.42,01:10:00
+CMOB,C10,2nd,Wednesday,8,Lode,Northfields,CB25 9EU,monthly,553635.17,262589.93,14:40:00,15:15:00,00:35:00,00:35:00,0.58,00:05:00
+CMOB,C10,2nd,Wednesday,9,Lode,Post Office,CB25 9EW,monthly,553363.8,262684.33,15:20:00,16:00:00,00:40:00,00:40:00,0.67,00:05:00
+CMOB,C10,2nd,Wednesday,10,Stow cum Quy,Wheelwright Close,CB25 9AN,monthly,552076.26,260518.79,16:10:00,16:30:00,00:20:00,00:20:00,0.33,00:10:00
+CMOB,C11,2nd,Thursday,1,Newnham,Lammas Court,CB3 9HY,monthly,544342.98,257367.78,09:40:00,10:35:00,00:55:00,00:55:00,0.92,17:10:00
+CMOB,C11,2nd,Thursday,2,Duxford Airfield,"Whitehall Gardens, Heathfield",CB22 4QJ,monthly,545647.64,246134.85,11:00:00,11:30:00,00:30:00,00:30:00,0.50,00:25:00
+CMOB,C11,2nd,Thursday,3,Whittlesford,Ascham Lane,CB22 4LX,monthly,546988.72,248016.59,11:40:00,12:00:00,00:20:00,00:20:00,0.33,00:10:00
+CMOB,C11,2nd,Thursday,4,Whittlesford,Lettice Martin Croft,CB22 4NS,monthly,547543.98,248387.83,12:05:00,12:30:00,00:25:00,00:25:00,0.42,00:05:00
+CMOB,C11,2nd,Thursday,5,Whittlesford,Royston Road,CB22 4NW,monthly,547990.76,247219.83,12:35:00,13:00:00,00:25:00,00:25:00,0.42,00:05:00
+CMOB,C11,2nd,Thursday,6,Foxton,Hillfields,CB22 6RX,monthly,541589.71,248104.52,14:00:00,14:30:00,00:30:00,00:30:00,0.50,01:00:00
+CMOB,C11,2nd,Thursday,7,Foxton,Recreation Centre,CB22 6RN,monthly,541169.85,248272.47,14:35:00,16:00:00,01:25:00,01:25:00,1.42,00:05:00
+CMOB,C11,2nd,Thursday,8,Foxton,West Hill Road,CB22 6SU,monthly,540676.17,248033.81,16:05:00,16:20:00,00:15:00,00:15:00,0.25,00:05:00
+CMOB,C12,2nd ,Friday,1,Milton,Post Office,CB24 6BW,twice monthly,547855.68,262827.7,09:45:00,10:45:00,01:00:00,01:00:00,1.00,17:25:00
+CMOB,C12,2nd ,Friday,2,Milton,The Rowans,CB24 6ZR,monthly,547442.68,262643.67,10:50:00,11:15:00,00:25:00,00:25:00,0.42,00:05:00
+CMOB,C12,2nd,Friday,3,Soham,Honeysuckle Close,CB7 5YT,monthly,559226.81,273927.63,11:45:00,12:10:00,00:25:00,00:25:00,0.42,00:30:00
+CMOB,C12,2nd,Friday,4,Soham,Crescent,CB7 5AG,monthly,559952.13,272711.07,12:15:00,12:30:00,00:15:00,00:15:00,0.25,00:05:00
+CMOB,C12,2nd,Friday,5,Burwell,Ash Grove,CB25 0ER,monthly,558745.07,266817.26,12:45:00,13:15:00,00:30:00,00:30:00,0.50,00:15:00
+CMOB,C12,2nd,Friday,6,Reach,Fair Green,CB25 0JD,monthly,556639.72,266208.43,14:20:00,14:40:00,00:20:00,00:20:00,0.33,01:05:00
+CMOB,C12,2nd,Friday,7,Swaffham Prior,Commercial End,CB25 0NE,monthly,555682.11,263077.09,14:50:00,15:05:00,00:15:00,00:15:00,0.25,00:10:00
+CMOB,C12,2nd,Friday,8,Swaffham Prior,School ,CB25 0LD,monthly,556777,264043,15:10:00,15:35:00,00:25:00,00:25:00,0.42,00:05:00
+CMOB,C12,2nd,Friday,9,Swaffham Bulbeck,High Street,CB21 5JD,monthly,555584.82,262516.53,15:45:00,16:15:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C16,3rd,Tuesday,1,Whaddon,Meldreth Road,SG8 5RS,monthly,535650.44,246442.2,10:00:00,10:30:00,00:30:00,00:30:00,0.50,17:45:00
+CMOB,C16,3rd,Tuesday,2,Meldreth,Bell Close,SG8 6LE,monthly,537496.44,245967.21,10:40:00,11:30:00,00:50:00,00:50:00,0.83,00:10:00
+CMOB,C16,3rd,Tuesday,3,Melbourn,John Impey Way,SG8 6HZ,monthly,538695.57,244579.16,11:40:00,12:05:00,00:25:00,00:25:00,0.42,00:10:00
+CMOB,C16,3rd,Tuesday,4,Melbourn,"Vicarage Close, Sheltered Housing",SG8 6DY,monthly,538217.87,244937.66,12:10:00,12:45:00,00:35:00,00:35:00,0.58,00:05:00
+CMOB,C16,3rd,Tuesday,5,Shepreth,Frog End,SG8 6RF,monthly,539396.99,246895.22,14:00:00,14:20:00,00:20:00,00:20:00,0.33,01:15:00
+CMOB,C16,3rd,Tuesday,6,Shepreth,Blenheim Close,SG8 6PS,monthly,539182.2,247885.39,14:30:00,14:55:00,00:25:00,00:25:00,0.42,00:10:00
+CMOB,C16,3rd,Tuesday,7,Barrington,Bus Shelter,CB22 7QX,monthly,539290.87,249625.25,15:05:00,15:35:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C16,3rd,Tuesday,8,Barrington,Glebe Road,CB22 7RN,monthly,539926.96,249766.19,15:40:00,16:20:00,00:40:00,00:40:00,0.67,00:05:00
+CMOB,C17,3rd,Wednesday,1,Stapleford,Cox’s Close,CB22 5SP,monthly,547076.04,251865.27,10:00:00,10:20:00,00:20:00,00:20:00,0.33,17:40:00
+CMOB,C17,3rd,Wednesday,2,Pampisford,Recreation Ground,CB22 3EN,monthly,549447,248239,10:30:00,11:00:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C17,3rd,Wednesday,3,Hinxton,Wellcome Trust Genome Campus,CB10 1SA ,monthly,549901,244577,11:15:00,12:15:00,01:00:00,01:00:00,1.00,00:15:00
+CMOB,C17,3rd,Wednesday,4,Hinxton,War Memorial,CB10 1RA,monthly,549593.69,245167.34,12:20:00,12:35:00,00:15:00,00:15:00,0.25,00:05:00
+CMOB,C17,3rd,Wednesday,5,Ickleton,Brookhampton Street,CB10 1SL,monthly,549475.96,243995.15,12:45:00,13:15:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C17,3rd,Wednesday,6,Duxford,Laceys Way,CB22 4SE,monthly,547717.38,246274.81,14:15:00,14:50:00,00:35:00,00:35:00,0.58,01:00:00
+CMOB,C17,3rd,Wednesday,7,Duxford,Green Acres,CB22 4RB,monthly,547892.91,246351.92,14:55:00,15:10:00,00:15:00,00:15:00,0.25,00:05:00
+CMOB,C17,3rd,Wednesday,8,Duxford,Carter Close,CB22 4RZ,monthly,548078,245681.5,15:15:00,15:45:00,00:30:00,00:30:00,0.50,00:05:00
+CMOB,C17,3rd,Wednesday,9,Duxford,Petersfield Road,CB22 4SF,monthly,547874.87,245863.16,15:50:00,16:15:00,00:25:00,00:25:00,0.42,00:05:00
+CMOB,C18,3rd,Thursday,1,Teversham,Shepherds Way,CB1 9AX,monthly,549884.75,258022.81,09:50:00,10:30:00,00:40:00,00:40:00,0.67,17:35:00
+CMOB,C18,3rd,Thursday,2,Fulbourn,St Vigors Road,CB21 5HT,monthly,551824.8,255970.26,10:40:00,11:00:00,00:20:00,00:20:00,0.33,00:10:00
+CMOB,C18,3rd,Thursday,3,Great Wilbraham,The Green,CB21 5JQ,monthly,554896.74,257577.98,11:10:00,11:40:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C18,3rd,Thursday,4,Little Wilbraham,High Street,CB21 5JY,monthly,553960.75,258452.62,11:50:00,12:15:00,00:25:00,00:25:00,0.42,00:10:00
+CMOB,C18,3rd,Thursday,5,Bottisham,Downing Close,CB25 9DB,monthly,554522.27,260634.8,12:25:00,12:55:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C18,3rd,Thursday,6,Upware,Upware Road,CB7 5YQ,monthly,553798.28,270168.59,14:00:00,14:20:00,00:20:00,00:20:00,0.33,01:05:00
+CMOB,C18,3rd,Thursday,7,Wicken,Village Hall,CB7 5XR,monthly,556859.86,270739.9,14:30:00,15:00:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C18,3rd,Thursday,8,Isleham,Mill Street,CB7 5RY,monthly,564314.1,274148.75,15:15:00,16:15:00,01:00:00,01:00:00,1.00,00:15:00
+CMOB,C19,3rd,Friday,1,Cambridge Science Park,Bright Horizons,CB4 0WG,monthly,546236,261806,09:40:00,10:45:00,01:05:00,01:05:00,1.08,17:25:00
+CMOB,C19,3rd,Friday,2,Landbeach,High Street,CB25 9FR,monthly,547662.96,265102.9,13:30:00,14:00:00,00:30:00,00:30:00,0.50,#REF!
+CMOB,C19,3rd,Friday,3,Cottenham,Franklin Gardens,CB24 8QW,monthly,544972.92,267538.66,14:15:00,14:40:00,00:25:00,00:25:00,0.42,#REF!
+CMOB,C19,3rd,Friday,4,Rampton,The Green,CB24 8QD,monthly,542642.55,267967.34,14:50:00,15:20:00,00:30:00,00:30:00,0.50,#REF!
+CMOB,C19,3rd,Friday,5,Histon,"Burdett House, Station Rd",CB24 9LQ,monthly,544060,263045,15:35:00,16:10:00,00:35:00,00:35:00,0.58,00:15:00
+CMOB,C23,4th,Tuesday,1,Little Abington,Westfield,CB21 6BE,monthly,552932.79,249337.96,10:00:00,10:30:00,00:30:00,00:30:00,0.50,17:50:00
+CMOB,C23,4th,Tuesday,2,Great Abington,North Road,CB21 6AS,monthly,553057.47,247698.45,10:40:00,11:10:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C23,4th,Tuesday,3,Great Abington,Magna Close,CB21 6AF,monthly,553306.99,248535.06,11:20:00,12:10:00,00:50:00,00:50:00,0.83,00:10:00
+CMOB,C23,4th,Tuesday,4,Great Abington,The Shop,CB21 6AE,monthly,553308.46,248799.13,12:15:00,12:35:00,00:20:00,00:20:00,0.33,00:05:00
+CMOB,C23,4th,Tuesday,5,Hildersham,High Street,CB21 6BU,monthly,554596.82,248726.14,12:45:00,13:00:00,00:15:00,00:15:00,0.25,00:10:00
+CMOB,C23,4th,Tuesday,6,Balsham,Mays Avenue,CB21 4ER,monthly,558413.62,250726.09,14:15:00,14:45:00,00:30:00,00:30:00,0.50,01:15:00
+CMOB,C23,4th,Tuesday,7,Balsham,Horseshoe  Close,CB21 6EQ,monthly,559020.98,250615.14,14:50:00,15:30:00,00:40:00,00:40:00,0.67,00:05:00
+CMOB,C23,2nd & 4th,Tuesday,8,Balsham,Bandstand,CB21 5WA,twice monthly,558606.1,250815.53,15:40:00,16:45:00,01:05:00,01:05:00,1.08,00:10:00
+CMOB,C24,4th,Wednesday,1,Isleham,Church Street,CB7 5RY,monthly,564288.13,274342.21,09:45:00,10:10:00,00:25:00,00:25:00,0.42,17:00:00
+CMOB,C24,4th,Wednesday,2,Newmarket,Issinglass Close,CB8 8HX,monthly,566203.7,262596.52,10:35:00,10:55:00,00:20:00,00:20:00,0.33,00:25:00
+CMOB,C24,4th,Wednesday,3,Saxon Street,The Reindeer,CB8 9RS,monthly,567922.51,259402.6,11:05:00,11:20:00,00:25:00,10:00:00,10.00,00:10:00
+CMOB,C24,4th,Wednesday,4,Cheveley,Holland Park,CB8 9DL,monthly,568394.08,261253.5,11:25:00,11:45:00,00:20:00,08:00:00,8.00,00:05:00
+CMOB,C24,4th,Wednesday,5,Ashley,Silverley Way,CB8 9DY,monthly,569668.24,261317.66,11:55:00,12:15:00,00:20:00,08:00:00,8.00,00:10:00
+CMOB,C24,4th,Wednesday,6,Kirtling,Pub,CB8 9PB,monthly,568959.42,256853.74,12:25:00,12:45:00,00:15:00,06:00:00,6.00,00:10:00
+CMOB,C24,4th,Wednesday,7,Woodditton,The Three Blackbirds,CB8 9SQ,monthly,565923.11,258138.06,13:55:00,14:15:00,00:20:00,08:00:00,8.00,01:10:00
+CMOB,C24,4th,Wednesday,8,Stetchworth,Jubilee Court,CB8 9UA,monthly,564048.42,258471,14:25:00,15:00:00,00:35:00,14:00:00,14.00,00:10:00
+CMOB,C24,4th,Wednesday,9,Dullingham,Kettlefields School,CB8 9UH,monthly,563610.73,257868.52,15:10:00,15:40:00,00:30:00,12:00:00,12.00,00:10:00
+CMOB,C24,4th,Wednesday,10,Burrough Green,Telephone Kiosk / Bus stop,CB8 0RQ,monthly,563789,255560,15:50:00,16:10:00,00:20:00,08:00:00,8.00,00:10:00
+CMOB,C25,4th,Thursday,1,Girton,Thornton Court,CB3 0NS,monthly,542952,260625,09:40:00,10:00:00,00:20:00,00:20:00,0.33,17:30:00
+CMOB,C25,4th,Thursday,2,Girton,Abbeyfield,CB3 0GQ,monthly,542820,261216,10:05:00,10:50:00,00:45:00,00:45:00,0.75,00:05:00
+CMOB,C25,4th,Thursday,3,Girton,St Vincents Close,CB3 0PA,monthly,542290.11,261658.92,10:55:00,11:30:00,00:35:00,00:35:00,0.58,00:05:00
+CMOB,C25,4th,Thursday,4,Girton,Orchard Close,CB3 0PS,monthly,542347.77,262085.01,11:35:00,12:00:00,00:25:00,00:25:00,0.42,00:05:00
+CMOB,C25,4th,Thursday,5,Girton,Gretton Court,CB3 0QN,monthly,541951.65,262108.53,12:05:00,12:40:00,00:35:00,00:35:00,0.58,00:05:00
+CMOB,C25,4th,Thursday,6,Girton,Churchfield Court,CB3 0XA,monthly,542296.67,262639.97,12:45:00,13:30:00,00:45:00,00:45:00,0.75,00:05:00
+CMOB,C25,4th,Thursday,7,Oakington,Coles Lane/High Street,CB24 3BA,monthly,540994.41,264433.19,14:30:00,14:55:00,00:25:00,00:25:00,0.42,01:00:00
+CMOB,C25,4th,Thursday,8,Histon,St Audrey's Close,CB24 9JY,monthly,543241.15,263724.14,15:05:00,15:25:00,00:20:00,00:20:00,0.33,00:10:00
+CMOB,C25,4th,Thursday,9,Histon,Kay Hitch Way,CB24 9JR,monthly,544001.45,262973.68,15:30:00,16:05:00,00:35:00,00:35:00,0.58,00:05:00
+CMOB,C26,4th,Friday,1,Cambridge,Brandon Court,CB1 1DZ,monthly,545751.51,258404.97,09:30:00,10:00:00,00:30:00,00:30:00,0.50,17:25:00
+CMOB,C26,4th,Friday,2,Cambridge,Hester Adrian,CB4 1AX,monthly,545859.02,259781.19,10:10:00,10:40:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C26,4th,Friday,3,Cambridge,HC One,CB4 1NQ,monthly,546054,259801,10:45:00,11:25:00,00:40:00,00:40:00,0.67,00:05:00
+CMOB,C26,4th,Friday,4,Cambridge,Canon New Court,CB4 1ED,monthly,546217.44,259738.28,11:30:00,11:55:00,00:25:00,00:25:00,0.42,00:05:00
+CMOB,C26,4th,Friday,5,Cambridge,Haig Court,CB4 1TT,monthly,546174.62,259884.7,12:00:00,12:35:00,00:35:00,00:35:00,0.58,00:05:00
+CMOB,C26,4th,Friday,6,Cambridge,Pippin Drive,CB4 1GL,monthly,547128.7,260725.18,12:45:00,13:15:00,00:30:00,00:30:00,0.50,00:10:00
+CMOB,C26,4th,Friday,7,Milton,Post Office,CB24 6BW,twice monthly ,547855.68,262827.7,14:25:00,15:25:00,01:00:00,01:00:00,1.00,01:10:00
+CMOB,C26,4th,Friday,8,Milton,Community Centre,CB24 6BL,monthly ,547597.4,262477.92,15:30:00,16:30:00,01:00:00,01:00:00,1.00,00:05:00
+HMOB,H2,1st,Tuesday,1,Steeple Morden,Russell Close,SG8 0NE,monthly,528783.87,242625.54,10:20:00,11:05:00,00:45:00,00:45:00,0.75,17:50:00
+HMOB,H2,1st,Tuesday,2,Guilden Morden,St. Marys Church,SG8 0JD,monthly,527949.12,244102.23,11:15:00,11:55:00,00:40:00,00:40:00,0.67,00:10:00
+HMOB,H2,1st,Tuesday,3,Tadlow,Post Box,SG8 0ES,monthly,528132.05,247395.31,12:10:00,12:40:00,00:30:00,00:30:00,0.50,00:15:00
+HMOB,H2,1st,Tuesday,4,Litlington,Church Street,SG8 0QB,monthly,531141.64,242691.87,14:00:00,14:15:00,00:15:00,00:15:00,0.25,01:20:00
+HMOB,H2,1st & 3rd,Tuesday,5,Bassingbourn,Knutsford Road,SG8 5HS,twice monthly,533433.44,243893.92,14:30:00,16:00:00,01:30:00,01:30:00,1.50,00:15:00
+HMOB,H3,1st,Wednesday,1,Pidley,"Village Hall, Warboys Rd.",PE28 3DA,monthly,532943.33,278058.11,10:00:00,10:20:00,00:20:00,00:20:00,0.33,18:00:00
+HMOB,H3,1st,Wednesday,2,Woodhurst,"Old Post Office, Church St.",PE28 3BN,monthly,531695.68,276099.59,10:40:00,11:05:00,00:25:00,00:25:00,0.42,00:20:00
+HMOB,H3,1st,Wednesday,3,Bluntisham,Wheatley Cresent,PE28 3XN,monthly,536842,275132,11:20:00,11:40:00,00:20:00,00:20:00,0.33,00:15:00
+HMOB,H3,1st,Wednesday,4,Colne,"Village Hall, East St.",PE28 3LZ,monthly,537320.13,275848.31,11:55:00,12:15:00,00:20:00,00:20:00,0.33,00:15:00
+HMOB,H3,1st,Wednesday,5,Somersham,"Windsor Court, Springfield.",PE28 3JA,monthly,536500.96,278135.06,12:30:00,13:00:00,00:30:00,00:30:00,0.50,00:15:00
+HMOB,H3,1st,Wednesday,6,Earith,"Bus Shelter, Whybrows Lane",PE28 3PY,monthly,538416.9,274960.46,14:20:00,14:50:00,00:30:00,00:30:00,0.50,01:20:00
+HMOB,H3,1st,Wednesday,7,Earith,66 Greenfields/ School Road,PE28 3QH,monthly,538645,275079,15:00:00,15:40:00,00:40:00,00:40:00,0.67,00:10:00
+HMOB,H3,1st,Wednesday,8,Holywell,Ferryboat Inn car park,PE28 2JB,monthly,534227.81,270676.88,15:55:00,16:10:00,00:15:00,00:15:00,0.25,00:15:00
+HMOB,H3,1st,Wednesday,9,Needingworth,"Playing Field, Overcote Lane.",PE27 4TU,monthly,534332.89,272002.03,16:20:00,16:50:00,00:30:00,00:30:00,0.50,00:10:00
+HMOB,H4,1st,Thursday,1,Brampton,"High Street, Post Office.",PE28 4TG,monthly,521175.83,270769.05,10:00:00,10:15:00,00:15:00,00:15:00,0.25,17:10:00
+HMOB,H4,1st,Thursday,2,Brampton,West End,PE28 4RQ,monthly,520468.72,270934.26,10:25:00,10:45:00,00:20:00,00:20:00,0.33,00:10:00
+HMOB,H4,1st,Thursday,3,Brampton,"Hilary Lodge, Horseshoes Way.",PE28 4TL,monthly,520893.39,270908.47,10:50:00,11:15:00,00:25:00,00:25:00,0.42,00:05:00
+HMOB,H4,1st,Thursday,4,Brampton,Miller Way opp. Emery Close,PE28 4RU,monthly,520524,271266,11:25:00,11:40:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H4,1st,Thursday,5,Brampton,"Hanover Court, Miller way",PE28 4RY,monthly,520854.7,271184.14,11:45:00,12:00:00,00:15:00,00:15:00,0.25,00:05:00
+HMOB,H4,1st,Thursday,6,Huntingdon,Millfield House,PE29 3TT,monthly,523493.92,271695.19,12:10:00,12:40:00,00:30:00,00:30:00,0.50,00:10:00
+HMOB,H4,1st,Thursday,7,Huntingdon,Ferrars Hall Care Home,PE29 3DQ,monthly,523458,272027,13:50:00,14:10:00,00:20:00,00:20:00,0.33,01:10:00
+HMOB,H4,1st,Thursday,8,Great Stukeley,"Church Road, West View",PE28 4AN,monthly,521884,274493,14:25:00,14:45:00,00:20:00,00:20:00,0.33,00:15:00
+HMOB,H4,1st,Thursday,9,Alconbury,"Primary School, School Lane, Layby",PE28 4EQ,monthly,518662,276175,15:00:00,15:40:00,00:40:00,00:40:00,0.67,00:15:00
+HMOB,H4,1st,Thursday,10,Alconbury,Maypole Square,PE28 4DY,monthly,518554.44,275977.06,15:50:00,16:30:00,00:40:00,00:40:00,0.67,01:05:00
+HMOB,H5,1st,Friday,1,Waresley,Duncombe Arms,SG19 3BS,monthly,524987.17,254558.5,10:40:00,11:00:00,00:20:00,00:20:00,0.33,18:10:00
+HMOB,H5,1st,Friday,2,Gamlingay,Avenells Way,SG19 3EU,monthly,523856.3,252475.01,11:10:00,11:40:00,00:30:00,00:30:00,0.50,00:10:00
+HMOB,H5,1st,Friday,3,Gamlingay,Blythe Way,SG19 3JQ,monthly,523836.53,252115.49,11:45:00,12:15:00,00:30:00,00:30:00,0.50,00:05:00
+HMOB,H5,1st,Friday,4,Abbotsley,"Church lay-By, High St",PE19 6UL,monthly,522746.82,256577.05,12:30:00,13:15:00,00:45:00,00:45:00,0.75,00:15:00
+HMOB,H5,1st,Friday,5,Great Gransden,Church Street,SG19 3AF,monthly,527065.37,255674.67,14:15:00,14:45:00,00:30:00,00:30:00,0.50,01:00:00
+HMOB,H5,1st,Friday,6,Little Gransden,Chequers Pub,SG19 3DW,monthly,527239.22,255231.48,14:55:00,15:15:00,00:20:00,00:20:00,0.33,00:10:00
+HMOB,H5,1st,Friday,7,Eltisley,The Green,PE19 6TG,monthly,527176.18,259746.31,15:30:00,16:00:00,00:30:00,00:30:00,0.50,00:15:00
+HMOB,H8,2nd,Monday,1,Eaton Socon,"McNish Court, Grenville Way",PE19 8PE,monthly,516761.63,258869.14,10:00:00,10:25:00,00:25:00,00:25:00,0.42,18:00:00
+HMOB,H8,2nd,Monday,2,Eaton Socon,Queens Court,PE19 3BZ,monthly,516942.07,259399.67,10:30:00,10:50:00,00:20:00,00:20:00,0.33,00:05:00
+HMOB,H8,2nd,Monday,3,Eaton Socon,Nelson Lodge Care Home,PE19 8AB,monthly,516535,258667,11:00:00,11:30:00,00:30:00,00:30:00,0.50,00:10:00
+HMOB,H8,2nd,Monday,4,Eaton Ford,Hanover Court,PE19 7SG,monthly,517716.17,260181.86,11:40:00,12:00:00,00:20:00,00:20:00,0.33,00:50:00
+HMOB,H8,2nd,Monday,5,Eaton Ford,"Cavendish Court, Crosshall Rd.",PE19 7SR,monthly,517854.45,260182.25,12:05:00,12:20:00,00:15:00,00:15:00,0.25,00:05:00
+HMOB,H8,2nd,Monday,6,St Neots,"Waterside Court, Church Street.",PE19 2BL,monthly,518504.96,260075.1,12:30:00,13:00:00,00:30:00,00:30:00,0.50,00:10:00
+HMOB,H8,2nd,Monday,7,St Neots,"Old Market Court, Tebbutts Road.",PE19 1DJ,monthly,518413.6,260457.41,14:15:00,14:45:00,00:30:00,00:30:00,0.50,01:15:00
+HMOB,H8,2nd,Monday,8,St Neots,The Close/ Meadow Close,PE19 1JR,monthly,518728.04,260200.5,14:55:00,15:10:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H8,2nd,Monday,9,St Neots,"Chesterton Court, Russell St.",PE19 1BA,monthly,518442,260535,15:20:00,15:55:00,00:35:00,00:35:00,0.58,00:10:00
+HMOB,H9,2nd ,Tuesday,1,Godmanchester,Rectory Gardens,PE29 2BH,monthly,525028.05,270677.65,10:05:00,10:30:00,00:25:00,00:25:00,0.42,18:10:00
+HMOB,H9,2nd ,Tuesday,2,Godmanchester,McCartney House,PE29 2NJ,monthly,525194.09,270081.16,10:40:00,11:05:00,00:25:00,00:25:00,0.42,00:10:00
+HMOB,H9,2nd ,Tuesday,3,Fen Drayton,"School, Cootes lane",CB24 4SL,monthly,533577.76,268450.31,11:30:00,12:00:00,00:30:00,00:30:00,0.50,00:25:00
+HMOB,H9,2nd ,Tuesday,4,Fen Drayton,War Memorial,CB24 4SF,monthly,534086.86,268153.5,12:10:00,12:40:00,00:30:00,00:30:00,0.50,00:10:00
+HMOB,H9,2nd & 4th,Tuesday,5,Over,"The Green, Willingham Rd.",CB24 5PD,twice monthly,537801.81,270510.28,14:00:00,14:30:00,00:30:00,00:30:00,0.50,01:20:00
+HMOB,H9,2nd & 4th,Tuesday,6,Over,"Elm Court, Drings Close.",CB24 5SB,twice monthly,537312,270420,14:40:00,15:30:00,00:50:00,00:50:00,0.83,00:10:00
+HMOB,H9,2nd & 4th,Tuesday,7,Over,Hilton Street,CB24 5PU,twice monthly,537582.8,270207.88,15:40:00,16:30:00,00:50:00,00:50:00,0.83,00:10:00
+HMOB,H10,2nd,Wednesday,1,Diddington,Manor Farm,PE19 5XU,monthly,519497.31,265579.77,10:05:00,10:20:00,00:15:00,00:15:00,0.25,17:35:00
+HMOB,H10,2nd,Wednesday,2,Southoe,The Church,PE19 5YE,monthly,518315.2,264409.47,10:35:00,10:55:00,00:20:00,00:20:00,0.33,00:15:00
+HMOB,H10,2nd,Wednesday,3,Spaldwick,The Green - High St.,PE28 0TD,monthly,512927,272779,11:20:00,11:40:00,00:20:00,00:20:00,0.33,00:25:00
+HMOB,H10,2nd,Wednesday,4,Stow Longa,The Green,PE28 0TL,monthly,510845.45,270978.24,11:55:00,12:15:00,00:20:00,00:20:00,0.33,00:15:00
+HMOB,H10,2nd,Wednesday,5,Catworth,"Station Road, (bus shelter)",PE28 0PE,monthly,508749.4,273151.04,12:30:00,13:00:00,00:30:00,00:30:00,0.50,00:15:00
+HMOB,H10,2nd,Wednesday,6,Covington,"Cross Street, (post box)",PE28 0RS,monthly,505522,270812,14:15:00,14:30:00,00:15:00,00:15:00,0.25,01:15:00
+HMOB,H10,2nd & 4th,Wednesday,7,Kimbolton,Stow Road (Newtown),PE28 0HX,twice monthly,509804,268416,14:45:00,16:00:00,01:15:00,01:15:00,1.25,00:15:00
+HMOB,H10,2nd & 4th,Wednesday,8,Kimbolton,Castle Gardens,PE28 0JF,twice monthly,509658.85,267965.24,16:15:00,16:50:00,00:35:00,00:35:00,0.58,00:15:00
+HMOB,H11,2nd,Thursday,1,Little Eversden,Harlton Road,CB23 1HB,monthly,537474.8,252706.43,10:20:00,10:35:00,00:15:00,00:15:00,0.25,17:30:00
+HMOB,H11,2nd,Thursday,2,Little Eversden,Recreation Ground,CB23 1HE,monthly,536895.45,253191.15,10:40:00,11:00:00,00:20:00,00:20:00,0.33,00:05:00
+HMOB,H11,2nd,Thursday,3,Great Eversden,Old Post Office,CB23 1HN,monthly,536308.29,253562.21,11:05:00,11:20:00,00:15:00,00:15:00,0.25,00:05:00
+HMOB,H11,2nd,Thursday,4,Kingston,Crossroads,CB23 2NP,monthly,534551.48,255145.91,11:30:00,11:45:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H11,2nd,Thursday,5,Caldecote Highfields,Nr 117 Highfields Road,CB23 7NX,monthly,535512.99,259145.97,11:55:00,12:35:00,00:40:00,00:40:00,0.67,00:10:00
+HMOB,H11,2nd,Thursday,6,Hilton,Village Hall car park.,PE28 9NA,monthly,529215.73,266180.59,14:05:00,14:20:00,00:15:00,00:15:00,0.25,01:30:00
+HMOB,H11,2nd,Thursday,7,Elsworth,The Poacher,CB23 4JS,monthly,531539.79,263615.2,14:35:00,14:55:00,00:20:00,00:20:00,0.33,00:15:00
+HMOB,H11,2nd & 4th,Thursday,8,Fenstanton,"Headlands, Tythe Piece.",PE28 9LR,twice monthly,532174,268312,15:15:00,15:45:00,00:30:00,00:30:00,0.50,00:20:00
+HMOB,H11,2nd & 4th,Thursday,9,Fenstanton,Chapel Green,PE28 9LQ,twice monthly,531810,268761,15:50:00,16:20:00,00:30:00,00:30:00,0.50,00:05:00
+HMOB,H12,2nd ,Friday,1,Hardwick,"School, Limes Road",CB23 7RE,monthly,537530.81,259263.72,10:40:00,11:50:00,01:10:00,01:10:00,1.17,18:20:00
+HMOB,H12,2nd ,Friday,2,Dry Drayton,Pettitts Lane,CB23 8BT,monthly,538193,262505,12:20:00,12:50:00,00:30:00,00:30:00,0.50,00:30:00
+HMOB,H12,2nd ,Friday,3,Hardwick,St Neots Road layby [Tall trees],CB23 7QH,monthly,538151.71,259517.1,14:15:00,14:30:00,00:15:00,00:15:00,0.25,01:25:00
+HMOB,H12,2nd ,Friday,4,Hardwick,"Blue Lion, Main St.",CB23 7QU,monthly,537253,258513,14:40:00,14:55:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H12,2nd ,Friday,5,Hardwick,"Nr School,  Limes Road",CB23 7QR,monthly,537461,259313,15:05:00,16:00:00,00:55:00,00:55:00,0.92,00:10:00
+HMOB,H15,3rd,Monday,1,Little Paxton,"Gordon Road, Lay by.",PE19 6NB,monthly,518947.23,262494.8,10:10:00,10:30:00,00:20:00,00:20:00,0.33,18:10:00
+HMOB,H15,3rd,Monday,2,Eynesbury,"Poppyfields, Buttercup Avenue.",PE19 2PF,monthly,518262,258391,10:50:00,11:20:00,00:30:00,00:30:00,0.50,00:20:00
+HMOB,H15,3rd,Monday,3,Eynesbury,Howitts Gardens,PE19 2NW,monthly,518959.69,258804.55,11:30:00,11:45:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H15,3rd,Monday,4,Eynesbury,Caernarvon Road,PE19 2SW,monthly,518520,258571,11:55:00,12:10:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H15,3rd,Monday,5,Eynesbury,The Green,PE19 2ND,monthly,518550.19,259560.1,12:20:00,12:40:00,00:20:00,00:20:00,0.33,00:10:00
+HMOB,H15,3rd,Monday,6,Eaton Socon,"Church, School Lane.",PE19 3HN,monthly,517031.78,258807.62,14:00:00,14:45:00,00:45:00,00:45:00,0.75,01:20:00
+HMOB,H15,3rd,Monday,7,Great Paxton,Towgood Way,PE19 6RR,monthly,521117.46,263873.38,15:10:00,15:45:00,00:35:00,00:35:00,0.58,00:25:00
+HMOB,H15,3rd,Monday,8,Offord Darcy,"Orchard Way, opp. Bramley Drive.",PE19 5RE,monthly,522029,266893,15:55:00,16:15:00,00:20:00,00:20:00,0.33,00:10:00
+HMOB,H15,3rd,Monday,9,Offord Cluny,Elm Drive,PE19 5RN,monthly,522050.31,266895.72,16:25:00,16:40:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H16,3rd,Tuesday,1,Arrington,Church Lane,SG8 0BD,monthly,532764.7,250237.64,10:10:00,10:40:00,00:30:00,00:30:00,0.50,17:30:00
+HMOB,H16,3rd,Tuesday,2,Croydon,Clopton Close,SG8 0DT,monthly,531258.67,249276.27,10:50:00,11:05:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H16,3rd,Tuesday,3,East Hatley,"Phone Box, Main Street",SG19 3JA,monthly,528828.07,250691.82,11:15:00,11:30:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H16,3rd,Tuesday,4,Orwell,Lordship Close,SG8 5TH,monthly,536180.62,250422.37,11:50:00,12:20:00,00:30:00,00:30:00,0.50,00:20:00
+HMOB,H16,3rd,Tuesday,5,Orwell,Hurdleditch Road,SG8 5QG,monthly,535818.58,249934.42,12:30:00,12:50:00,00:20:00,00:20:00,0.33,00:10:00
+HMOB,H16,3rd,Tuesday,6,Abington Piggots,The Pig and Abbot,SG8 0SD,monthly,530752.72,244538.48,14:00:00,14:15:00,00:15:00,00:15:00,0.25,01:10:00
+HMOB,H16,1st & 3rd,Tuesday,7,Bassingbourn,Knutsford Road,SG8 5HS,twice monthly,533433.44,243893.92,14:30:00,16:00:00,01:30:00,01:30:00,1.50,00:15:00
+HMOB,H17,3rd,Wednesday,1,Huntingdon,"Skeels Court, Thames Rd.",PE29 1TD,monthly,524824,273421,10:00:00,10:30:00,00:30:00,00:30:00,0.50,18:00:00
+HMOB,H17,3rd,Wednesday,2,St Ives,Broadleas Court,PE27 5XG,monthly,531329,271554,10:50:00,11:10:00,00:20:00,00:20:00,0.33,00:20:00
+HMOB,H17,3rd,Wednesday,3,St Ives,"Harvest Court, North Rd.",PE27 5QZ,monthly,531203.79,271624.54,11:15:00,11:45:00,00:30:00,00:30:00,0.50,00:05:00
+HMOB,H17,3rd,Wednesday,4,St Ives,Field Lodge,PE27 5EX,monthly,530765,270303,12:00:00,12:30:00,00:30:00,00:30:00,0.50,00:15:00
+HMOB,H17,3rd,Wednesday,5,Houghton,The Three Horseshoes Inn car park.,PE28 2BE,monthly,528292,272779,14:00:00,14:15:00,00:15:00,00:15:00,0.25,01:30:00
+HMOB,H17,3rd,Wednesday,6,Wyton,"Pine Hill Park, Sawtry Way.",PE28 2DZ,monthly,528602.19,273180.52,14:25:00,15:00:00,00:35:00,00:35:00,0.58,00:10:00
+HMOB,H17,3rd,Wednesday,7,Wyton on the Hill,"Cambridge Square, playground.",PE28 2JB,monthly,528724.37,273424.51,15:10:00,15:40:00,00:30:00,00:30:00,0.50,00:10:00
+HMOB,H17,3rd,Wednesday,8,Huntingdon,"Medway Court, Medway Road.",PE29 1SF,monthly,524499.4,273373.03,16:00:00,16:30:00,00:30:00,00:30:00,0.50,00:20:00
+HMOB,H18,3rd,Thursday,1,Little Stukeley,Church Way,PE28 4BQ,monthly,520915,275684,10:10:00,10:30:00,00:20:00,00:20:00,0.33,17:40:00
+HMOB,H18,3rd,Thursday,2,Alconbury,"Crown Gardens, High St.",PE28 4HP,monthly,518642.9,275874.46,10:45:00,11:15:00,00:30:00,00:30:00,0.50,00:15:00
+HMOB,H18,3rd,Thursday,3,Sawtry,"Mellors Court, High St.",PE28 5SP,monthly,516719.24,283917.23,11:35:00,12:05:00,00:30:00,00:30:00,0.50,00:20:00
+HMOB,H18,3rd,Thursday,4,Glatton,"The Green, Infield Rd.",PE28 5RP,monthly,515449,286017,12:15:00,12:30:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H18,3rd,Thursday,5,Great Gidding,"Playing Field, Winwick Road",PE28 5PB,monthly,511661,282895,12:40:00,12:55:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H18,3rd,Thursday,6,Winwick,The Green,PE28 5PP,monthly,510398.25,280700.37,14:10:00,14:30:00,00:20:00,00:20:00,0.33,01:15:00
+HMOB,H18,3rd,Thursday,7,Hamerton,Sawpit Lane,PE28 5QS,monthly,513584.91,279619.87,14:45:00,15:00:00,00:15:00,00:15:00,0.25,00:15:00
+HMOB,H18,3rd,Thursday,8,Upton,The Church,PE28 4JD,monthly,517467.2,278474.98,15:15:00,15:45:00,00:30:00,00:30:00,0.50,00:15:00
+HMOB,H18,3rd,Thursday,9,Alconbury Weston,The Green,PE28 4JP,monthly,517866.9,276850.16,16:00:00,16:30:00,00:30:00,00:30:00,0.50,00:15:00
+HMOB,H19,3rd,Friday,1,Toseland,75 High Street,PE19 6RX,monthly,523950,262565,10:15:00,10:30:00,00:15:00,00:15:00,0.25,17:45:00
+HMOB,H19,3rd,Friday,2,Yelling,47 High Street,PE19 6SB,monthly,525534,262605,10:40:00,10:55:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H19,3rd,Friday,3,Longstowe,Rushbrook Close,CB23 2UL,monthly,530876,255085,11:10:00,11:25:00,00:15:00,00:15:00,0.25,00:15:00
+HMOB,H19,3rd,Friday,4,Bourn,Meadow Rise,CB23 7TG,monthly,532324.25,256786.69,11:40:00,12:00:00,00:20:00,00:20:00,0.33,00:15:00
+HMOB,H19,3rd,Friday,5,Bourn,"School, Riddy Lane",CB23 7SP,monthly,532156.15,256422.57,12:05:00,12:25:00,00:20:00,00:20:00,0.33,00:05:00
+HMOB,H19,3rd,Friday,6,Bourn,Hall Close,CB23 7SW,monthly,532155,256322,12:35:00,13:00:00,00:25:00,00:25:00,0.42,00:10:00
+HMOB,H19,3rd,Friday,7,Toft,Post Office Green,CB23 2RL,monthly,535962,256213,14:30:00,15:15:00,00:45:00,00:45:00,0.75,01:30:00
+HMOB,H19,3rd,Friday,8,Comberton,Nursery Way,CB23 7EL,monthly,538063.9,256100.28,15:25:00,15:55:00,00:30:00,00:30:00,0.50,00:10:00
+HMOB,H23,4th,Tuesday,1,Huntingdon,Lord Protector,PE29 1NH,monthly,524811.15,272756.53,10:00:00,10:45:00,00:45:00,00:45:00,0.75,18:05:00
+HMOB,H23,4th,Tuesday,2,Hemingford Abbots,Axe & Compass,PE28 9AH,monthly,528284.76,271066.01,11:05:00,11:20:00,00:15:00,00:15:00,0.25,00:20:00
+HMOB,H23,4th,Tuesday,3,Hemingford Grey,Church Street,PE28 9DF,monthly,529516.44,270601.58,11:30:00,12:10:00,00:40:00,00:40:00,0.67,00:10:00
+HMOB,H23,4th,Tuesday,4,Hemingford Grey,"Old Pound Close, opp. The School.",PE28 9DY,monthly,529924.09,270690.1,12:20:00,12:35:00,00:15:00,00:15:00,0.25,00:10:00
+HMOB,H23,2nd & 4th,Tuesday,5,Over,"The Green, Willingham Rd.",CB24 5PD,twice monthly,537801.81,270510.28,14:00:00,14:30:00,00:30:00,00:30:00,0.50,01:25:00
+HMOB,H23,2nd & 4th,Tuesday,6,Over,"Elm Court, Drings Close.",CB24 5SB,twice monthly,537312,270420,14:40:00,15:30:00,00:50:00,00:50:00,0.83,00:10:00
+HMOB,H23,2nd & 4th,Tuesday,7,Over,Hilton Street,CB24 5PU,twice monthly,537582.8,270207.88,15:40:00,16:30:00,00:50:00,00:50:00,0.83,00:10:00
+HMOB,H24,4th,Wednesday,1,Ellington,Mermaid Pub,PE28 0AD,monthly,518035,271826,10:00:00,10:30:00,00:30:00,00:30:00,0.50,17:30:00
+HMOB,H24,4th,Wednesday,2,Grafham,Breach Road,PE28 0BA,monthly,516146.31,269220.2,10:40:00,11:05:00,00:25:00,00:25:00,0.42,00:10:00
+HMOB,H24,4th,Wednesday,3,Perry,Chichester Way,PE28 0BS,monthly,514860.65,266915.17,11:15:00,12:05:00,00:50:00,00:50:00,0.83,00:10:00
+HMOB,H24,4th,Wednesday,4,Hail Weston,Orchard Close,PE19 5LF,monthly,516450,262264,12:25:00,12:45:00,00:20:00,00:20:00,0.33,00:20:00
+HMOB,H24,4th,Wednesday,5,Great Staughton,The Causeway,PE19 4DA,monthly,512980.44,264626.29,14:00:00,14:30:00,00:30:00,00:30:00,0.50,01:15:00
+HMOB,H24,2nd & 4th,Wednesday,6,Kimbolton,Stow Road (Newtown),PE28 0HX,twice monthly,509804,268416,14:45:00,16:00:00,01:15:00,01:15:00,1.25,00:15:00
+HMOB,H24,2nd & 4th,Wednesday,7,Kimbolton,Castle Gardens,PE28 0JF,twice monthly,509658.85,267965.24,16:15:00,16:50:00,00:35:00,00:35:00,0.58,00:15:00
+HMOB,H25,4th,Thursday,1,Godmanchester,Old Court Hall,PE29 2HA,monthly,524502.15,270320.72,10:00:00,10:20:00,00:20:00,00:20:00,0.33,17:10:00
+HMOB,H25,4th,Thursday,2,Godmanchester,"Oaktree Court, West St.",PE29 2LZ,monthly,524287.03,270296.58,10:30:00,10:55:00,00:25:00,00:25:00,0.42,00:10:00
+HMOB,H25,4th,Thursday,3,Swavesey,Thistle Green,CB24 4SA,monthly,536149.97,268639.25,11:20:00,11:50:00,00:30:00,00:30:00,0.50,00:25:00
+HMOB,H25,4th,Thursday,4,Longstanton,The Dale,CB24 3DH,monthly,539770.02,266492.71,12:00:00,12:20:00,00:20:00,00:20:00,0.33,00:10:00
+HMOB,H25,4th,Thursday,5,Longstanton,Prentice Close,CB24 3DY,monthly,539652.11,266797.22,12:25:00,12:50:00,00:25:00,00:25:00,0.42,00:05:00
+HMOB,H25,4th,Thursday,6,Lolworth,The Green,CB23 8HH,monthly,536679.76,264100.68,14:20:00,14:50:00,00:30:00,00:30:00,0.50,01:30:00
+HMOB,H25,2nd & 4th,Thursday,7,Fenstanton,"Headlands, Tythe Piece.",PE28 9LR,twice monthly,532174,268312,15:15:00,15:45:00,00:30:00,00:30:00,0.50,00:25:00
+HMOB,H25,2nd & 4th,Thursday,8,Fenstanton,Chapel Green,PE28 9JQ,twice monthly,531810,268761,15:50:00,16:20:00,00:30:00,00:30:00,0.50,00:05:00
+MMOB,M2,1st,Tuesday,1,March,Elliott Lodge,PE15 8BP,monthly,540551.2,297187,09:45:00,10:10:00,00:25:00,00:25:00,0.42,17:25:00
+MMOB,M2,1st,Tuesday,2,March,Shaftesbury Court,PE15 9DG,monthly,542191.52,296123.21,10:20:00,10:50:00,00:30:00,00:30:00,0.50,00:10:00
+MMOB,M2,1st,Tuesday,3,March,Upwell Park,PE15 0DR,monthly,542836.69,296047.75,10:55:00,11:15:00,00:20:00,00:20:00,0.33,00:05:00
+MMOB,M2,1st,Tuesday,4,March,Fleming Court,PE15 9BH,monthly,542515.43,296484.44,11:30:00,11:45:00,00:15:00,00:15:00,0.25,00:15:00
+MMOB,M2,1st,Tuesday,5,Christchurch,Lay-by,SG8 7NT,monthly,549380.14,296648.32,12:15:00,12:45:00,00:30:00,00:30:00,0.50,00:30:00
+MMOB,M2,1st,Tuesday,6,Manea,Festival Close,PE15 0HD,monthly,548066.17,289892.97,14:00:00,14:25:00,00:25:00,00:25:00,0.42,01:15:00
+MMOB,M2,1st,Tuesday,7,Manea,Station Road,PE15 0HJ,monthly,547967.81,289773.74,14:30:00,15:40:00,01:10:00,01:10:00,1.17,00:05:00
+MMOB,M2,1st,Tuesday,8,Manea,High Street,PE15 0JA,monthly,548015.91,289445.05,15:45:00,16:15:00,00:30:00,00:30:00,0.50,00:05:00
+MMOB,M3,1st,Wednesday,1,Haddenham,Camping Close,CB6 3UA,monthly,546453,275141.57,10:15:00,11:30:00,01:15:00,01:15:00,1.25,18:00:00
+MMOB,M3,1st,Wednesday,2,Aldreth,High Street,CB6 3PQ,monthly,544548.53,273420.75,11:40:00,12:00:00,00:20:00,00:20:00,0.33,00:10:00
+MMOB,M3,1st,Wednesday,3,Wilburton,Littlefield Close,CB6 3RU,monthly,548412.3,275342.9,12:15:00,13:00:00,00:45:00,00:45:00,0.75,00:15:00
+MMOB,M3,1st,Wednesday,4,Stretham,Cambridge Road,CB6 3LW,monthly,550809.75,274323.2,13:30:00,13:45:00,00:15:00,00:15:00,0.25,00:30:00
+MMOB,M3,1st,Wednesday,5,Stretham,Meadowcroft,CB6 3JY,monthly,551492.63,274452.85,13:50:00,14:15:00,00:25:00,00:25:00,0.42,00:05:00
+MMOB,M3,1st,Wednesday,6,Stretham,Hazel Court,CB6 3LY,monthly,551379.59,274759.41,14:20:00,14:40:00,00:20:00,00:20:00,0.33,00:05:00
+MMOB,M3,1st,Wednesday,7,Mepal,Post Office,CB6 2AW,monthly,544244.9,280830.53,15:15:00,16:00:00,00:45:00,00:45:00,0.75,00:35:00
+MMOB,M4,1st ,Thursday,1,Murrow,School,PE13 4HD,monthly,537440.67,306477.74,10:00:00,10:40:00,00:40:00,00:40:00,0.67,18:00:00
+MMOB,M4,1st ,Thursday,2,Parson Drove,Payne School,PE13 4JD,monthly,537073,308535,10:50:00,12:15:00,01:25:00,01:25:00,1.42,00:10:00
+MMOB,M4,1st ,Thursday,3,Murrow,"Front Road, Paddocks",PE13 4JQ,monthly,537417.97,306981.25,12:25:00,12:40:00,00:15:00,00:15:00,0.25,00:10:00
+MMOB,M4,1st ,Thursday,4,Wimblington,King Street,PE15 0QF,monthly,541681.51,292525.09,14:25:00,14:45:00,00:20:00,00:20:00,0.33,01:45:00
+MMOB,M4,1st ,Thursday,5,Doddington,26 Newgate,PE15 0SR,monthly,539629.62,290390.12,14:55:00,15:10:00,00:15:00,00:15:00,0.25,00:10:00
+MMOB,M4,1st ,Thursday,6,Doddington,Clock Tower,PE15 0TG,monthly,540057.25,290771.64,15:20:00,15:50:00,00:30:00,00:30:00,0.50,00:10:00
+MMOB,M4,1st ,Thursday,7,Doddington,Child Lane,PE15 0TG,monthly,540375.12,290778.43,16:00:00,16:20:00,00:20:00,00:20:00,0.33,00:10:00
+MMOB,M5,1st,Friday,1,Whittlesey,St Mary’s House,PE7 1BG,monthly,526845.42,297345.45,09:45:00,10:15:00,00:30:00,00:30:00,0.50,17:25:00
+MMOB,M5,1st,Friday,2,Whittlesey,Sudbury Court,PE7 1RY,monthly,526722.46,297690.25,10:20:00,10:45:00,00:25:00,00:25:00,0.42,00:05:00
+MMOB,M5,1st,Friday,3,Whittlesey,Palmers Court,PE7 1TA,monthly,527697.57,296725.1,10:55:00,11:15:00,00:20:00,00:20:00,0.33,00:10:00
+MMOB,M5,1st,Friday,4,Coldham,Lay-by,PE14 0ND,monthly,543476.15,302873.9,11:45:00,12:00:00,00:15:00,00:15:00,0.25,00:30:00
+MMOB,M5,1st,Friday,5,Friday Bridge,"17 Mill Way, off The Stitch",PE14 0HZ,monthly,547130.27,305180.33,12:15:00,12:35:00,00:20:00,00:20:00,0.33,00:15:00
+MMOB,M5,1st,Friday,6,Friday Bridge,The School,PE14 0HG,monthly,546517.13,304682.84,13:30:00,14:15:00,00:45:00,00:45:00,0.75,00:55:00
+MMOB,M5,1st,Friday,7,Elm,31 Friday Bridge Road,PE14 0AS,monthly,546929.83,306273.44,14:25:00,14:50:00,00:25:00,00:25:00,0.42,00:10:00
+MMOB,M5,1st,Friday,8,Elm,The Dale,PE14 0BP,monthly,546705.07,306891.91,15:00:00,15:15:00,00:15:00,00:15:00,0.25,00:10:00
+MMOB,M5,1st,Friday,9,Elm,Roseberry Road,PE14 0AN,monthly,547100.44,306359.17,15:20:00,15:45:00,00:25:00,00:25:00,0.42,00:05:00
+MMOB,M5,1st,Friday,10,Elm,Church Hall,PE14 0AF,monthly,547008.49,306974.6,15:50:00,16:10:00,00:20:00,00:20:00,0.33,00:05:00
+MMOB,M9,2nd & 4th,Tuesday,1,Sutton,Brooklands Centre,CB6 2QQ,twice monthly,544184.33,279033.29,10:00:00,12:00:00,02:00:00,02:00:00,2.00,17:50:00
+MMOB,M9,2nd,Tuesday,2,Stuntney,Nr Social Centre,CB7 5TL,monthly,555592.03,278043.69,12:30:00,13:00:00,00:30:00,00:30:00,0.50,00:30:00
+MMOB,M9,2nd,Tuesday,3,Little Thetford,Church,CB6 3HA,monthly,553145.08,276310.8,14:00:00,14:15:00,00:15:00,00:15:00,0.25,01:00:00
+MMOB,M9,2nd & 4th,Tuesday,4,Witchford,West End,CB6 2HP,twice monthly,549605.64,278796.82,14:45:00,15:20:00,00:20:00,00:20:00,0.33,00:30:00
+MMOB,M9,2nd & 4th,Tuesday,5,Witchford,Victoria Gardens,CB6 2XB,twice monthly,549902.4,278907.84,15:25:00,16:00:00,00:45:00,00:45:00,0.75,00:05:00
+MMOB,M10,2nd,Wednesday,1,Wisbech,Rose Lodge ,PE13 3EP,monthly,547078.14,311095.94,10:25:00,10:55:00,00:30:00,00:30:00,0.50,18:25:00
+MMOB,M10,2nd,Wednesday,2,Wisbech,Oasis Centre,PE13 3NR,monthly,546592.3,310946.89,11:00:00,12:00:00,01:00:00,01:00:00,1.00,00:05:00
+MMOB,M10,2nd,Wednesday,3,Wisbech,Orchard House,PE13 2JF,monthly,546911,309146,13:30:00,14:00:00,00:30:00,00:30:00,0.50,#REF!
+MMOB,M10,2nd,Wednesday,4,Wisbech,Edina Court,PE13 1RL,monthly,545534.1,309938.71,14:15:00,14:45:00,00:30:00,00:30:00,0.50,00:15:00
+MMOB,M10,2nd,Wednesday,5,Wisbech,Fenland Village,PE13 3JY,monthly,546012.29,311205.23,15:00:00,15:30:00,00:30:00,00:30:00,0.50,00:15:00
+MMOB,M10,2nd,Wednesday,6,Wisbech,Osborne Park,PE13 3JY,monthly,545936.6,311272.3,15:35:00,16:00:00,00:25:00,00:25:00,0.42,00:05:00
+MMOB,M11,2nd,Thursday,1,Benwick,Chapel Gardens,PE15 0XH,monthly,534261.83,290372.98,10:05:00,10:25:00,00:20:00,00:20:00,0.33,18:05:00
+MMOB,M11,2nd,Thursday,2,Benwick,Village Hall,PE15 0XH,monthly,534310.28,290133.41,10:30:00,10:45:00,00:15:00,00:15:00,0.25,00:05:00
+MMOB,M11,2nd,Thursday,3,Ramsey Forty Foot,Phone Box,PE26 2XN,monthly,530657.64,287886.2,11:00:00,11:15:00,00:15:00,00:15:00,0.25,00:15:00
+MMOB,M11,2nd,Thursday,4,Ramsey,Mill House,PE17 1EP,monthly,528928.06,285291.42,11:30:00,11:55:00,00:25:00,00:25:00,0.42,00:15:00
+MMOB,M11,2nd,Thursday,5,Abbots Ripton,School,PE28 2LT,monthly,523071.22,278129.31,13:30:00,14:00:00,00:30:00,00:30:00,0.50,01:35:00
+MMOB,M11,2nd,Thursday,6,Wood Walton,Public House/ New Road,PE28 2AG,monthly,521439.33,280873.14,14:15:00,14:30:00,00:15:00,00:15:00,0.25,00:15:00
+MMOB,M11,2nd,Thursday,7,Conington,"Lay-by, Church Road.",PE7 3QL,monthly,517532.71,285895.7,14:45:00,15:10:00,00:25:00,00:25:00,0.42,00:15:00
+MMOB,M11,2nd,Thursday,8,Holme,Holmewood,PE7 3PG,monthly,518603.9,287755.45,15:20:00,15:45:00,00:25:00,00:25:00,0.42,00:10:00
+MMOB,M12/26,2nd & 4th,Friday,1,Rings End,March Road,PE13 4DA,twice monthly,539796.11,302458.87,09:45:00,10:05:00,00:20:00,00:20:00,0.33,18:00:00
+MMOB,M12/26,2nd & 4th,Friday,2,Bunkers Hill,Lay-by,PE13 4SQ,twice monthly,540775.1,307104.76,10:15:00,10:35:00,00:20:00,00:20:00,0.33,00:10:00
+MMOB,M12/26,2nd & 4th,Friday,3,Wisbech St Mary,Church Road,PE13 4RY,twice monthly,542060.72,308163.59,10:45:00,11:25:00,00:40:00,00:40:00,0.67,00:10:00
+MMOB,M12/26,2nd & 4th,Friday,4,Leverington,Dowgate Road,PE13 5DJ,twice monthly,544948.76,310647.64,11:40:00,11:55:00,00:15:00,00:15:00,0.25,00:15:00
+MMOB,M12/26,2nd & 4th,Friday,5,Leverington Common,Pear Tree Crescent,PE13 5AY,twice monthly,544016.43,310755.54,12:00:00,12:15:00,00:15:00,00:15:00,0.25,00:05:00
+MMOB,M12/26,2nd & 4th,Friday,6,Leverington,Richmond Way,PE13 5JX,twice monthly,544221.64,311663.43,13:35:00,14:00:00,00:25:00,00:25:00,0.42,01:20:00
+MMOB,M12/26,2nd & 4th,Friday,7,Leverington,Popes Lane,PE13 5BD,twice monthly,543832.08,311784.78,14:05:00,14:25:00,00:20:00,00:20:00,0.33,00:05:00
+MMOB,M12/26,2nd & 4th,Friday,8,Wisbech St Mary,Cannon Close,PE13 4RD,twice monthly,541720.05,307925.77,14:40:00,15:45:00,01:05:00,01:05:00,1.08,00:15:00
+MMOB,M12/26,2nd & 4th,Friday,9,Guyhirn,Chapelfield,PE13 4EE,twice monthly,540176.65,303962.28,16:00:00,16:15:00,00:15:00,00:15:00,0.25,00:15:00
+MMOB,M16,3rd,Tuesday,1,Upwood,Public House,PE26 2QE,monthly,525939.81,282757.43,09:35:00,10:00:00,00:25:00,00:25:00,0.42,17:20:00
+MMOB,M16,3rd,Tuesday,2,Great Raveley,Spindlewood Lodge ,PE28 2QX,monthly,525296,281352,10:05:00,10:15:00,00:10:00,00:10:00,0.17,00:05:00
+MMOB,M16,3rd,Tuesday,3,Wistow,T junction,PE28 2QA,monthly,527821.32,281055.79,10:30:00,10:45:00,00:15:00,00:15:00,0.25,00:15:00
+MMOB,M16,3rd,Tuesday,4,Ramsey Heights,Council Houses,PE26 2RJ,monthly,525323.6,285685.73,11:00:00,11:25:00,00:25:00,00:25:00,0.42,00:15:00
+MMOB,M16,3rd,Tuesday,5,Ramsey St Mary’s,School,PE26 2TG,monthly,525574.79,288498.2,11:30:00,12:15:00,00:45:00,00:45:00,0.75,00:05:00
+MMOB,M16,3rd,Tuesday,6,Ramsey Mereside,Marriots Drove,PE26 2TY,monthly,528426.45,289280.17,12:25:00,12:55:00,00:30:00,00:30:00,0.50,00:10:00
+MMOB,M16,3rd,Tuesday,7,Farcet,School,PE7 3AR,monthly,520468,294725,14:45:00,15:30:00,00:45:00,00:45:00,0.75,01:50:00
+MMOB,M16,3rd,Tuesday,8,Farcet,Main Street,PE7 3DB,monthly,520429.96,294583.47,15:40:00,16:15:00,00:35:00,00:35:00,0.58,00:10:00
+MMOB,M17,3rd,Wednesday,1,Tydd St Giles,Hockland Road,PE13 5LF,monthly,542616.1,315935.23,10:15:00,11:10:00,00:55:00,00:55:00,0.92,18:00:00
+MMOB,M17,3rd,Wednesday,2,Tydd St Giles,Kinderley School,PE13 5LG,monthly,542461.21,316636.62,11:15:00,12:00:00,00:45:00,00:45:00,0.75,00:05:00
+MMOB,M17,3rd,Wednesday,3,Newton (Fenland),Goodens Lane,PE13 5HQ,monthly,543838.98,314729.9,12:15:00,12:35:00,00:20:00,00:20:00,0.33,00:15:00
+MMOB,M17,3rd,Wednesday,4,Gorefield,School,PE13 4NB,monthly,541924.74,311918.31,14:45:00,15:40:00,00:55:00,00:55:00,0.92,02:10:00
+MMOB,M17,3rd,Wednesday,5,Gorefield,Post Office Stores,PE13 4PG,monthly,541531.9,312057.16,15:45:00,16:00:00,00:15:00,00:15:00,0.25,00:05:00
+MMOB,M17,3rd,Wednesday,6,Gorefield,Mill Height,PE13 4PJ,monthly,541132.83,312126.9,16:05:00,16:25:00,00:20:00,00:20:00,0.33,00:05:00
+MMOB,M18,3rd,Thursday,1,Doddington,"Doddington Court, Sanctuary Housing.",PE15 0WD,monthly,539565,290941,12:45:00,13:15:00,00:30:00,00:30:00,0.50,20:20:00
+MMOB,M18,3rd,Thursday,2,Chatteris,Lyons Court,PE16 6PB,monthly,539043.7,286400.4,13:30:00,14:00:00,00:30:00,00:30:00,0.50,00:15:00
+MMOB,M18,3rd,Thursday,3,Chatteris,Quaker Way,PE16 6NJ,monthly,539046.37,285839.56,14:10:00,14:30:00,00:20:00,00:20:00,0.33,00:10:00
+MMOB,M18,3rd,Thursday,4,Coates,The Green,PE7 2BJ,monthly,530779.51,297641.95,15:15:00,15:50:00,00:35:00,00:35:00,0.58,00:45:00
+MMOB,M18,3rd,Thursday,5,Coates,Grounds Way,PE7 2BS,monthly,531063.01,297637.05,15:55:00,16:15:00,00:20:00,00:20:00,0.33,00:05:00
+MMOB,M19,3rd,Friday,1,Littleport,Beach Court,CB6 1JG,monthly,556071.8,286886.53,10:40:00,11:10:00,00:30:00,00:30:00,0.50,18:25:00
+MMOB,M19,3rd,Friday,2,Littleport,Anchor Court,CB6 1NL,monthly,557152.52,286608.62,11:20:00,11:40:00,00:20:00,00:20:00,0.33,00:10:00
+MMOB,M19,3rd,Friday,3,Littleport,New Orchard Park,CB6 1LT,monthly,557424.08,286551.68,11:45:00,12:10:00,00:25:00,00:25:00,0.42,00:05:00
+MMOB,M19,3rd,Friday,4,Black Horse Drove,Community Centre,CB6 1EG,monthly,559658.15,291617.17,12:30:00,12:50:00,00:20:00,00:20:00,0.33,00:20:00
+MMOB,M19,3rd,Friday,5,Chettisham,The Hamlet,CB6 1SB,monthly,554815.8,283010.25,13:45:00,14:15:00,00:30:00,00:30:00,0.50,00:55:00
+MMOB,M19,3rd,Friday,6,Pymoor,Main Street,CB6 2DY,monthly,549704.62,286312.79,14:30:00,14:45:00,00:15:00,00:15:00,0.25,00:15:00
+MMOB,M19,3rd,Friday,7,Little Downham,Village Hall,CB6 2SX,monthly,552562.06,284116.77,15:00:00,15:45:00,00:45:00,00:45:00,0.75,00:15:00
+MMOB,M23,2nd & 4th,Tuesday,1,Sutton,Brooklands Centre,CB6 2QQ,twice monthly,544184.33,279033.29,10:00:00,12:00:00,02:00:00,02:00:00,2.00,18:15:00
+MMOB,M23,4th,Tuesday,2,Prickwillow,Old Phone box,CB7 4UN,monthly,559407,282456,12:35:00,12:55:00,00:20:00,00:20:00,0.33,00:35:00
+MMOB,M23,4th,Tuesday,3,Queen Adeliade,Village,CB7 4SH,monthly,556382,281459,13:05:00,13:25:00,00:20:00,00:20:00,0.33,00:10:00
+MMOB,M23,2nd & 4th,Tuesday,4,Witchford,West End,CB6 2HP,twice monthly,549605.64,278796.82,14:45:00,15:20:00,00:20:00,00:20:00,0.33,01:20:00
+MMOB,M23,2nd & 4th,Tuesday,5,Witchford,Victoria Gardens,CB6 2XB,twice monthly,549902.4,278907.84,15:25:00,16:00:00,00:45:00,00:45:00,0.75,00:05:00
+MMOB,M24,4th,Wednesday,1,Stilton,Primary School,PE7 3RF,monthly,515957,289288,09:30:00,10:15:00,01:45:00,01:45:00,1.75,17:30:00
+MMOB,M24,4th,Wednesday,2,Folksworth,Elm Rd [near No.57],PE7 3SX,monthly,514562.78,289655.51,10:30:00,10:50:00,00:20:00,00:20:00,0.33,00:15:00
+MMOB,M24,4th,Wednesday,3,Stibbington,Roman Drive,PE8 6LL,monthly,508608,298733,11:10:00,11:30:00,00:20:00,00:20:00,0.33,00:20:00
+MMOB,M24,4th,Wednesday,4,Elton,"Bus Stop, Middle St/Overend",PE8 6RY,monthly,508941.39,293762.88,11:45:00,12:15:00,00:30:00,00:30:00,0.50,00:15:00
+MMOB,M24,4th,Wednesday,5,Chesterton,"Lay-by, 43 Oundle Way",PE7 3UA,monthly,512430.49,295140.46,13:50:00,14:05:00,00:15:00,00:15:00,0.25,01:35:00
+MMOB,M24,4th,Wednesday,6,Alwalton,Lay by,PE7 3GA,monthly,513507,295805,14:10:00,14:50:00,00:40:00,00:40:00,0.67,00:05:00
+MMOB,M24,4th,Wednesday,7,Stilton,The Talbot,PE7 3RA,monthly,516250.45,289371.4,15:10:00,16:00:00,00:50:00,00:50:00,0.83,00:20:00
+MMOB,M25,4th,Thursday,1,Molesworth,Telephone Kiosk,PE28 0QF,monthly,507425.57,275864.65,11:15:00,11:40:00,00:25:00,00:25:00,0.42,19:15:00
+MMOB,M25,4th,Thursday,2,Bythorn,"Old School, School Lane.",PE28 0QS,monthly,505781,275857,11:50:00,12:05:00,00:15:00,00:15:00,0.25,00:10:00
+MMOB,M25,4th,Thursday,3,Brington,Church Lane,PE28 5AE,monthly,508367.98,275688.58,12:15:00,12:40:00,00:25:00,00:25:00,0.42,00:10:00
+MMOB,M25,4th,Thursday,4,Old Weston,Village Hall car park.,PE28 5LL,monthly,509984.9,277471.15,13:35:00,14:00:00,00:25:00,00:25:00,0.42,00:55:00
+MMOB,M25,4th,Thursday,5,Leighton Bromswold,The Avenue,PE28 5AW,monthly,511297.43,275442.97,14:10:00,14:25:00,00:15:00,00:15:00,0.25,00:10:00
+MMOB,M25,4th,Thursday,6,Buckworth,"Bus Shelter, Barham Road.",PE28 5AN,monthly,514771.53,276704.27,14:40:00,15:00:00,00:20:00,00:20:00,0.33,00:15:00
+MMOB,M12/26,2nd & 4th,Friday,1,Rings End,March Road,PE13 4DA,twice monthly,539796.11,302458.87,09:45:00,10:05:00,00:20:00,00:20:00,0.33,18:45:00
+MMOB,M12/26,2nd & 4th,Friday,2,Bunkers Hill,Lay-by,PE13 4SQ,twice monthly,540775.1,307104.76,10:15:00,10:35:00,00:20:00,00:20:00,0.33,00:10:00
+MMOB,M12/26,2nd & 4th,Friday,3,Wisbech St Mary,Church Road,PE13 4RY,twice monthly,542060.72,308163.59,10:45:00,11:25:00,00:40:00,00:40:00,0.67,00:10:00
+MMOB,M12/26,2nd & 4th,Friday,4,Leverington,Dowgate Road,PE13 5DJ,twice monthly,544948.76,310647.64,11:40:00,11:55:00,00:15:00,00:15:00,0.25,00:15:00
+MMOB,M12/26,2nd & 4th,Friday,5,Leverington Common,Pear Tree Crescent,PE13 5AY,twice monthly,544016.43,310755.54,12:00:00,12:15:00,00:15:00,00:15:00,0.25,00:05:00
+MMOB,M12/26,2nd & 4th,Friday,6,Leverington,Richmond Way,PE13 5JX,twice monthly,544221.64,311663.43,13:35:00,14:00:00,00:25:00,00:25:00,0.42,01:20:00
+MMOB,M12/26,2nd & 4th,Friday,7,Leverington,Popes Lane,PE13 5BD,twice monthly,543832.08,311784.78,14:05:00,14:25:00,00:20:00,00:20:00,0.33,00:05:00
+MMOB,M12/26,2nd & 4th,Friday,8,Wisbech St Mary,Cannon Close,PE13 4RD,twice monthly,541720.05,307925.77,14:40:00,15:45:00,01:05:00,01:05:00,1.08,00:15:00
+MMOB,M12/26,2nd & 4th,Friday,9,Guyhirn,Chapelfield,PE13 4EE,twice monthly,540176.65,303962.28,16:00:00,16:15:00,00:15:00,00:15:00,0.25,00:15:00

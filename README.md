@@ -9,9 +9,14 @@ Primarily scripts will be written in Python (v3).
 - [Python](https://www.python.org/)
 
 ```
+pip install geopandas
 pip install beautifulsoup4
 pip install requests
 ```
+
+Geopandas will need rtree, pyproj, fiona, gdal (v2), and shapely to be installed. For Windows systems these are all available at:
+
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
 
 ## Running scripts
 
