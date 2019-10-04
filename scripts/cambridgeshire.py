@@ -45,19 +45,19 @@ def run():
         next(mobreader, None)  # skip the headers
         for row in mobreader:
 
-            mobile_library = row[0]
-            route = row[1]
-            week = row[2]
-            day = row[3]
-            community = row[5]
-            stop_name = row[6]
+            mobile_library = row[0].strip()
+            route = row[1].strip()
+            week = row[2].strip()
+            day = row[3].strip()
+            community = row[5].strip()
+            stop_name = row[6].strip()
             address = stop_name + ', ' + community
-            postcode = row[7]
-            frequency = row[8]
-            easting = row[9]
-            northing = row[10]
-            arrival = row[11][0:5]
-            departure = row[12][0:5]
+            postcode = row[7].strip()
+            frequency = row[8].strip()
+            easting = row[9].strip()
+            northing = row[10].strip()
+            arrival = row[11][0:5].strip()
+            departure = row[12][0:5].strip()
 
             freq = MONTHLY
 
@@ -92,7 +92,9 @@ def run():
         mob_writer.writerow(
             ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
              'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles:
+        
+        mobiles_deduped = [i for n, i in enumerate(mobiles) if i not in mobiles[n + 1:]]
+        for sto in mobiles_deduped:
             mob_writer.writerow(
                 ['Cambridgeshire', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
                  sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
