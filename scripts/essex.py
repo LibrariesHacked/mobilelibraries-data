@@ -72,16 +72,53 @@ def run():
             frequency = 'FREQ=WEEKLY;INTERVAL=' + values[1].text.strip()[:1]
             day = values[2].text.strip()
             times = values[3].text.strip()
-            route = values[4].text.strip()
-            route = 'Week ' + route.split('week')[1].strip()
-            mobile_library = route.split('week')[0].strip()
+            route_mobile = values[4].text.strip()
+            route = 'Week ' + route_mobile.split('week')[1].strip() + ' ' + day
+            mobile_library = route_mobile.split('week')[0].strip()
             start = values[6].text.strip()
             start = datetime.strptime(start, '%d %B %Y')
             start = start.strftime('%Y-%m-%d')
             arrival = times.split('to')[0].replace('am', '').replace(
-                'pm', '').strip().replace('.', ':')
+                'pm', '').strip().replace('.', '')
+
+            arrival_hours = '00'
+            arrival_mins = '00'
+            if len(arrival) == 1:
+                arrival_hours = arrival.rjust(2, '0')
+            if len(arrival) == 2:
+                arrival_hours = arrival
+            if len(arrival) == 3:
+                arrival_hours = arrival[0:1].rjust(2, '0')
+                arrival_mins = arrival[1:3]
+            if len(arrival) == 4:
+                arrival_hours = arrival[0:2]
+                arrival_mins = arrival[2:4]
+
+            if int(arrival_hours) < 8:
+                arrival_hours = int(arrival_hours) + 12
+
+            arrival = str(arrival_hours) + ':' + arrival_mins
+
             departure = times.split('to')[1].replace(
-                'am', '').replace('pm', '').strip().replace('.', ':')
+                'am', '').replace('pm', '').strip().replace('.', '')
+
+            departure_hours = '00'
+            departure_mins = '00'
+            if len(departure) == 1:
+                departure_hours = departure.rjust(2, '0')
+            if len(departure) == 2:
+                departure_hours = departure
+            if len(departure) == 3:
+                departure_hours = departure[0:1].rjust(2, '0')
+                departure_mins = departure[1:3]
+            if len(departure) == 4:
+                departure_hours = departure[0:2]
+                departure_mins = departure[2:4]
+
+            if int(departure_hours) < 8:
+                departure_hours = int(departure_hours) + 12
+
+            departure = str(departure_hours) + ':' + departure_mins
 
             url = 'https://api.postcodes.io/postcodes/' + postcode
             #postcode_request = requests.get('https://api.postcodes.io/postcodes/' + postcode)
