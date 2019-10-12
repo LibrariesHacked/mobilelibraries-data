@@ -69,6 +69,10 @@ def run():
             community = values[0].text.strip().splitlines()[0].strip()
             address = stop_name + ', ' + community
             postcode = values[0].text.strip().splitlines()[-1].strip()
+            if postcode == 'CM133AS':
+                postcode = 'CM132AS'
+            if postcode == 'RM4 1ED':
+                postcode = 'RM4 1LU'
             frequency = 'FREQ=WEEKLY;INTERVAL=' + values[1].text.strip()[:1]
             day = values[2].text.strip()
             times = values[3].text.strip()
@@ -121,10 +125,11 @@ def run():
             departure = str(departure_hours) + ':' + departure_mins
 
             url = 'https://api.postcodes.io/postcodes/' + postcode
-            #postcode_request = requests.get('https://api.postcodes.io/postcodes/' + postcode)
-            #postcode_data = json.loads(postcode_request.text)
-            latitude = ''#postcode_data['result']['latitude']
-            longitude = ''#postcode_data['result']['longitude']
+            postcode_request = requests.get('https://api.postcodes.io/postcodes/' + postcode)
+            postcode_data = json.loads(postcode_request.text)
+            print(postcode_data)
+            latitude = postcode_data['result']['latitude']
+            longitude = postcode_data['result']['longitude']
             
             mobiles.append(
                 [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
