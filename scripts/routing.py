@@ -110,24 +110,26 @@ def run():
 
                 for trip_idx, trip_item in enumerate(trips):
 
-                    line = LineString(
-                        res_data['features'][0]['geometry']['coordinates'][trip_item[0]:trip_item[1] + 1])
+                    line_points = res_data['features'][0]['geometry']['coordinates'][trip_item[0]:trip_item[1] + 1]
+                    if len(line_points) > 1:
+                        line = LineString(
+                            res_data['features'][0]['geometry']['coordinates'][trip_item[0]:trip_item[1] + 1])
 
-                    route_list = [val for key, val in routes[route].items()]
-                    geodata.append(
-                        {
-                            'route': route,
-                            'mobile': route_list[0]['mobile'],
-                            'origin_stop': trip_lookup[trip_idx]['origin_stop'],
-                            'origin_stop_longitude': trip_lookup[trip_idx]['origin_stop_longitude'],
-                            'origin_stop_latitude': trip_lookup[trip_idx]['origin_stop_latitude'],
-                            'destination_stop': trip_lookup[trip_idx]['destination_stop'],
-                            'destination_stop_longitude': trip_lookup[trip_idx]['destination_stop_longitude'],
-                            'destination_stop_latitude': trip_lookup[trip_idx]['destination_stop_latitude'],
-                            'distance': segments[trip_idx]['distance'],
-                            'duration': segments[trip_idx]['duration'],
-                            'geo': line
-                        })
+                        route_list = [val for key, val in routes[route].items()]
+                        geodata.append(
+                            {
+                                'route': route,
+                                'mobile': route_list[0]['mobile'],
+                                'origin_stop': trip_lookup[trip_idx]['origin_stop'],
+                                'origin_stop_longitude': trip_lookup[trip_idx]['origin_stop_longitude'],
+                                'origin_stop_latitude': trip_lookup[trip_idx]['origin_stop_latitude'],
+                                'destination_stop': trip_lookup[trip_idx]['destination_stop'],
+                                'destination_stop_longitude': trip_lookup[trip_idx]['destination_stop_longitude'],
+                                'destination_stop_latitude': trip_lookup[trip_idx]['destination_stop_latitude'],
+                                'distance': segments[trip_idx]['distance'],
+                                'duration': segments[trip_idx]['duration'],
+                                'geo': line
+                            })
 
             time.sleep(6)
 
