@@ -6,8 +6,8 @@ import geopandas
 from shapely.geometry import Point
 
 ## Data extracted using https://isharemaps.bathnes.gov.uk/MapGetImage.aspx?Type=json&MapSource=BathNES/banes&RequestType=GeoJSON&ServiceAction=ShowMyClosest&ActiveTool=MultiInfo&ActiveLayer=MobileLibraryStops&SearchType=findMyNearest&Distance=180047&MaxResults=500&Easting=375973&Northing=166129
-DATA_SOURCE = '../raw/bathandnortheastsomerset.json'
-DATA_OUTPUT = '../data/bathandnortheastsomerset.csv'
+DATA_SOURCE = '../raw/bath_and_north_east_somerset.json'
+DATA_OUTPUT = '../data/bath_and_north_east_somerset.csv'
 TIMETABLE = 'https://beta.bathnes.gov.uk/mobile-library-routes'
 
 def read_data(data_source):
