@@ -17,52 +17,46 @@ def run():
         timetable = 'https://www.northlincs.gov.uk/schools-libraries-and-learning/libraries/the-mobile-library/'
 
         dates = {
-            "Monday": "2019-03-04",
-            "Tuesday": "2019-03-05",
-            "Wednesday": "2019-03-06",
-            "Thursday": "2019-03-07",
-            "Friday": "2019-03-08",
+            12: '8/01/2019',
+            11: '21/01/2019',
+            13: '23/01/2019',
+            14: '24/01/2019',
+            15: '25/01/2019',
+            16: '26/01/2019',
+            21: '28/01/2019',
+            23: '9/01/2019',
+            24: '10/01/2019',
+            26: '12/01/2019',
+            31: '14/01/2019',
+            33: '16/01/2019',
+            34: '17/01/2019',
+            35: '18/01/2019',
+            36: '19/01/2019'
         }
 
         for feature in features:
 
-            mobile_library = feature['properties']['vehicle']
+            frequency = 'FREQ=WEEKLY;INTERVAL=3'
+            route_id = feature['properties']['id']
+            if route_id == 12:
+                frequency = 'FREQ=WEEKLY;INTERVAL=1'
+            route_name = 'Route ' + str(route_id)
+            day = feature['properties']['day']
+            address = feature['properties']['addr']
+            arrival = feature['properties']['time1'][:5]
+            departure = feature['properties']['time2'][:5]
+            community = feature['properties']['name']
+            stop_name = feature['properties']['addr']
 
-            day = feature['properties']['day'].rstrip('s')
+            longitude = feature['geometry']['coordinates'][0]
+            latitude = feature['geometry']['coordinates'][1]
 
-            community = ''
-            stop_name = feature['properties']['location'].title()
-            address = stop_name.title()
-            stop_split = stop_name.split(': ')
-
-            if len(stop_split) > 1:
-                community = stop_split[0].title()
-                stop_name = stop_split[1].title()
-                address = stop_name + ', ' + community
-
-            arrival = feature['properties']['time_arrive'].replace(':00Z', '')
-            departure = feature['properties']['time_depart'].replace(
-                ':00Z', '')
-
-            week = feature['properties']['week']
-
-            route = mobile_library + ' ' + 'Week ' + str(week) + ' ' + day
-
-            start = dates[week][day]
-
-            latitude = ''
-            longitude = ''
-
-            point = geopandas.GeoSeries([Point(easting, northing)])
-            point.crs = {'init': 'epsg:27700'}
-            point = point.to_crs({'init': 'epsg:4326'})
-
-            longitude = str(point[0].x)
-            latitude = str(point[0].y)
+            date = datetime.strptime(dates[route_id], '%d/%m/%Y')
+            start = date.strftime('%Y-%m-%d')
 
             mobiles.append(
-                [mobile_library, route, community, stop_name, address, '', longitude, latitude,
-                    day, arrival, departure, 'FREQ=WEEKLY;INTERVAL=2', start, '', timetable]
+                ['Mobile', route_name, community, stop_name, address, '', longitude, latitude,
+                    day, arrival, departure, frequency, start, '', timetable]
             )
 
     with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
