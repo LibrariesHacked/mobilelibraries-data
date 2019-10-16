@@ -127,7 +127,6 @@ def run():
             url = 'https://api.postcodes.io/postcodes/' + postcode
             postcode_request = requests.get('https://api.postcodes.io/postcodes/' + postcode)
             postcode_data = json.loads(postcode_request.text)
-            print(postcode_data)
             latitude = postcode_data['result']['latitude']
             longitude = postcode_data['result']['longitude']
             
