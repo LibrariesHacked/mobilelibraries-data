@@ -16,7 +16,7 @@ pip install requests
 
 Geopandas will need rtree, pyproj, fiona, gdal (v2), and shapely to be installed. For Windows systems these are all available at:
 
-https://www.lfd.uci.edu/~gohlke/pythonlibs/
+[Python Libraries](https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 
 ## Running scripts
 
@@ -26,14 +26,14 @@ ogr2ogr -f "CSV" aberdeenshire_routes.csv aberdeenshire_routes.geojson -lco GEOM
 
 ## Authors
 
-* **Dave Rowe** - *Initial work* - [DaveBathnes](https://github.com/DaveBathnes)
+- **Dave Rowe** - *Initial work* - [DaveBathnes](https://github.com/DaveBathnes)
 
 See also the list of [contributors](https://github.com/librarieshacked/mobilelibraries-database/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+All code in this project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
-* All mobile library services and their data
+- All mobile library services and their data
