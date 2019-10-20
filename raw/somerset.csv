@@ -67,7 +67,7 @@ I,Lydeard St Lawrence,Old Post Office,TA4 3SB,11.30,11.45,Tuesday,2019-10-29
 I,Cotford St Luke,Graham Way,TA4 1GQ,13.55,14.25,Tuesday,2019-10-29
 I,Hillfarance,Hillfarance Church,TA4 1AW,14.35,14.50,Tuesday,2019-10-29
 J,Benter,Fire Engine,BA3 5BJ,10.00,10.15,Wednesday,2019-10-30
-J,Stratton-on-the-Fosse,Red House Farm,BA3 4QE 10.30,10.55,Wednesday,2019-10-30
+J,Stratton-on-the-Fosse,Red House Farm,BA3 4QE,10.30,10.55,Wednesday,2019-10-30
 J,Coleford,Bishop Henderson School,BA3 5PN,11.05,11.35,Wednesday,2019-10-30
 J,Coleford,British Legion Car park,BA3 5PB,11.40,12.00,Wednesday,2019-10-30
 J,Holcombe,Scotts Close,BA3 5DT,12.40,12.55,Wednesday,2019-10-30
@@ -97,7 +97,7 @@ N,Puriton,Puriton Village Hall,TA7 8BP,09.55,10.10,Tuesday,2019-11-05
 N,Catcott,Wellfield House,TA7 9HT,10.25,10.45,Tuesday,2019-11-05
 N,Ashcott,Ashcott School,TA7 9PP,11.00,11.30,Tuesday,2019-11-05
 N,Ashcott,Middle Street,TA7 9QB,11.35,11.55,Tuesday,2019-11-05
-N,Shapwick Cricket Club,TA7 9LN,12.10,12.35,Tuesday,2019-11-05
+N,Shapwick,Cricket Club,TA7 9LN,12.10,12.35,Tuesday,2019-11-05
 N,Westham,Westham Farm,BS28 4UR,13.55,14.10,Tuesday,2019-11-05
 N,Burtle,Catcott Burtle,TA7 8NB,14.25,14.45,Tuesday,2019-11-05
 N,Edington,Holywell Road,TA7 9LD,14.55,15.15,Tuesday,2019-11-05
@@ -118,7 +118,7 @@ P,Ilton,Ilton School,TA19 9EX,11.50,12.15,Thursday,2019-11-07
 P,Isle Abbotts,Isle Abbotts Village Hall,TA3 6RR,12.30,12.50,Thursday,2019-11-07
 P,Isle Brewers,Isle Brewers Garage,TA3 6QN,13.35,13.55,Thursday,2019-11-07
 P,Beercrocombe,Allen's Farm,TA3 6AG,14.05,14.25,Thursday,2019-11-07
-Q,North Petherton,Stockmoor School TA6 6AH,09.30,10.00,Friday,2019-11-08
+Q,North Petherton,Stockmoor School,TA6 6AH,09.30,10.00,Friday,2019-11-08
 Q,Bridgwater,College Children's Centre,TA6 4PZ,10.15,11.00,Friday,2019-11-08
 Q,Chedzoy,Chedzoy Lane (Pre-school),TA7 8QW,11.10,11.30,Friday,2019-11-08
 Q,Stawell,Stawell Village Hall,TA7 9AE,11.40,12.00,Friday,2019-11-08
