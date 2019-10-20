@@ -125,7 +125,7 @@ def run():
             departure = str(departure_hours) + ':' + departure_mins
 
             url = 'https://api.postcodes.io/postcodes/' + postcode
-            postcode_request = requests.get('https://api.postcodes.io/postcodes/' + postcode)
+            postcode_request = requests.get(url)
             postcode_data = json.loads(postcode_request.text)
             latitude = postcode_data['result']['latitude']
             longitude = postcode_data['result']['longitude']
