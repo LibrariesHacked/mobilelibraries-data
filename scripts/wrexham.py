@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 from _common import create_mobile_library_file
 
 WEBSITE = 'http://www.wrexham.gov.uk/'
-DATA_SOURCE = 'english/community/libraries/mobile_library.htm'
+DATA_SOURCE = 'development/libraries/mobile_library_routes.htm'
 POSTCODE_RE = '(([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2}))'
 DATA_RE = '(.*),(.*)\((\d*):(\d*).*[^0-9](\d*):(\d*)'
 

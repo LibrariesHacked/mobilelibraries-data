@@ -10,8 +10,8 @@ from shapely.geometry import Point
 from shapely.geometry import LineString
 
 API_KEY = '5b3ce3597851110001cf624860a035e0c0bf48c690561cefd3ff4769'
-STOP_DATA = '../data/east_riding_of_yorkshire.csv'
-OUTPUT_DATA = '../data/east_riding_of_yorkshire_routes.geojson'
+STOP_DATA = '../data/wrexham.csv'
+OUTPUT_DATA = '../data/wrexham_routes.geojson'
 
 def run():
     """Runs the main script"""
@@ -23,7 +23,7 @@ def run():
         reader = csv.reader(mobile_csv, delimiter=',', quotechar='"')
         next(reader, None)  # skip the headers
         # make sure the rows are sorted by mobile, route, and arrival time
-        sorted_rows = sorted(reader, key=lambda row: (row[1], row[2], datetime.strptime('01/01/2019 ' + row[10], '%d/%m/%Y %H:%M')))
+        sorted_rows = sorted(reader, key=lambda row: (row[1], row[2], datetime.strptime('01/01/2019 ' + row[11], '%d/%m/%Y %H:%M')))
 
         for (idx, row) in enumerate(sorted_rows):
 
