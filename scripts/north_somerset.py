@@ -4,10 +4,9 @@ import csv
 import geopandas
 from datetime import datetime
 from shapely.geometry import Point
+from _common import create_mobile_library_file
 
 DATA_SOURCE = '../raw/north_somerset.csv'
-DATA_OUTPUT_NS = '../data/north_somerset.csv'
-DATA_OUTPUT_SG = '../data/south_gloucestershire.csv'
 
 
 def run():
@@ -30,7 +29,7 @@ def run():
             arrival = row[5].strip()
             departure = row[6].strip()
             start = row[7].strip()
-            
+
             easting = float(row[8].strip())
             northing = float(row[9].strip())
             point = geopandas.GeoSeries([Point(easting, northing)])
@@ -43,35 +42,18 @@ def run():
             if route == 'Thursday 1':
                 mobiles_sg.append(
                     [mobile_library, route, community, stop_name, address, '', longitude, latitude,
-                        day, arrival, departure, frequency, start, '', timetable_sg]
+                        day, 'Public', arrival, departure, frequency, start, '', '', timetable_sg]
                 )
             else:
                 mobiles_ns.append(
                     [mobile_library, route, community, stop_name, address, '', longitude, latitude,
-                        day, arrival, departure, frequency, start, '', timetable_ns]
+                        day, 'Public', arrival, departure, frequency, start, '', '', timetable_ns]
                 )
 
-    with open(DATA_OUTPUT_NS, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles_ns:
-            mob_writer.writerow(
-                ['North Somerset', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
-
-    with open(DATA_OUTPUT_SG, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles_sg:
-            mob_writer.writerow(
-                ['South Gloucestershire', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
+    create_mobile_library_file(
+        'North Somerset', 'north_somerset.csv', mobiles_ns)
+    create_mobile_library_file(
+        'South Gloucestershire', 'south_gloucestershire.csv', mobiles_sg)
 
 
 run()

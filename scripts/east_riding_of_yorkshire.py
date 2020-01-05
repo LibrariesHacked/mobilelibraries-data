@@ -6,11 +6,10 @@ import os
 import csv
 import re
 from bs4 import BeautifulSoup
+from _common import create_mobile_library_file
 
 # HTML obtained using curl
-
 HTML = '../raw/east_riding_of_yorkshire.html'
-DATA_OUTPUT = '../data/east_riding_of_yorkshire.csv'
 
 
 def run():
@@ -81,19 +80,11 @@ def run():
 
             mobiles.append(
                 [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
-                    day, arrival, departure, frequency, start, '', timetable]
+                    day, 'Public', arrival, departure, frequency, start, '', '', timetable]
             )
 
-    with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles:
-            mob_writer.writerow(
-                ['East Riding of Yorkshire', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
+    create_mobile_library_file(
+        'East Riding of Yorkshire', 'east_riding_of_yorkshire.csv', mobiles)
 
 
 run()

@@ -4,9 +4,11 @@ from datetime import datetime
 from shapely.geometry import Point
 import re
 import csv
+from _common import create_mobile_library_file
 
 DATA_SOURCE = '../raw/angus.geojson'
 DATA_OUTPUT = '../data/angus.csv'
+
 
 def run():
 
@@ -46,14 +48,15 @@ def run():
             stop_name = feature['properties']['location'].title()
             address = stop_name.title()
             stop_split = stop_name.split(': ')
-            
+
             if len(stop_split) > 1:
                 community = stop_split[0].title()
                 stop_name = stop_split[1].title()
                 address = stop_name + ', ' + community
 
             arrival = feature['properties']['time_arrive'].replace(':00Z', '')
-            departure = feature['properties']['time_depart'].replace(':00Z', '')
+            departure = feature['properties']['time_depart'].replace(
+                ':00Z', '')
 
             week = feature['properties']['week']
 
@@ -73,18 +76,10 @@ def run():
 
             mobiles.append(
                 [mobile_library, route, community, stop_name, address, '', longitude, latitude,
-                    day, arrival, departure, 'FREQ=WEEKLY;INTERVAL=2', start, '', timetable]
+                    day, 'Public', arrival, departure, 'FREQ=WEEKLY;INTERVAL=2', start, '', '', timetable]
             )
 
-    with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles:
-            mob_writer.writerow(
-                ['Angus', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
+    create_mobile_library_file('Angus', 'angus.csv', mobiles)
+
 
 run()

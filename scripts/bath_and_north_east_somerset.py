@@ -4,10 +4,10 @@ import re
 import csv
 import geopandas
 from shapely.geometry import Point
+from _common import create_mobile_library_file
 
 ## Data extracted using https://isharemaps.bathnes.gov.uk/MapGetImage.aspx?Type=json&MapSource=BathNES/banes&RequestType=GeoJSON&ServiceAction=ShowMyClosest&ActiveTool=MultiInfo&ActiveLayer=MobileLibraryStops&SearchType=findMyNearest&Distance=180047&MaxResults=500&Easting=375973&Northing=166129
 DATA_SOURCE = '../raw/bath_and_north_east_somerset.json'
-DATA_OUTPUT = '../data/bath_and_north_east_somerset.csv'
 TIMETABLE = 'https://beta.bathnes.gov.uk/mobile-library-routes'
 
 def read_data(data_source):
@@ -71,18 +71,9 @@ def run():
         if community != 'LIBRARY DEPOT':
             mobiles.append(
                 [mobile_name, route, community, stop_name, address, '', longitude, latitude,
-                    day, arrival, departure, frequency, start, '', TIMETABLE]
+                    day, 'Public', arrival, departure, frequency, start, '', '', TIMETABLE]
             )
 
-    with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles:
-            mob_writer.writerow(
-                [organisation, sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
+    create_mobile_library_file(organisation, 'bath_and_north_east_somerset.csv', mobiles)
 
 run()

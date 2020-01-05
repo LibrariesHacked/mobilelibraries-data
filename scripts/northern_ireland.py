@@ -7,10 +7,10 @@ import csv
 import requests
 import re
 from bs4 import BeautifulSoup
+from _common import create_mobile_library_file
 
 WEBSITE = 'https://www.librariesni.org.uk'
 LIST_PAGE = '/Libraries/Pages/Mobile-Libraries.aspx'
-DATA_OUTPUT = '../data/northern_ireland.csv'
 
 
 def run():
@@ -104,19 +104,20 @@ def run():
                                 postcode = 'BT359PW'
                             if postcode == 'BT222HN' and stop_name == 'Rathgill George Green Community Centre':
                                 postcode = 'BT197TZ'
+                            if postcode == 'BT116BB':
+                                postcode = 'BT118BB'
 
                             if postcode and postcode != '':
 
                                 url = 'https://api.postcodes.io/postcodes/' + postcode
                                 # then do the geocoding from postcode lookup
-                                postcode_request = requests.get(
-                                    'https://api.postcodes.io/postcodes/' + postcode)
+                                postcode_request = requests.get(url)
                                 postcode_data = json.loads(
                                     postcode_request.text)
 
                                 latitude = postcode_data['result']['latitude']
                                 longitude = postcode_data['result']['longitude']
-                                
+
                                 if stop_name == '​Montgomery Manor':
                                     latitude = 54.657097
                                     longitude = -5.632655
@@ -180,20 +181,12 @@ def run():
 
                                 mobiles.append(
                                     [mobile_name, route, community, stop_name, address, postcode,
-                                     longitude, latitude, day, arrival, departure, frequency, start_date, '',
+                                     longitude, latitude, day, 'Public', arrival, departure, frequency, start_date, '', '',
                                      WEBSITE + href]
                                 )
 
-    with open(DATA_OUTPUT, 'w', encoding='utf-8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles:
-            mob_writer.writerow(
-                ['Northern Ireland', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
+    create_mobile_library_file(
+        'Northern Ireland', 'northern_ireland.csv', mobiles)
 
 
 run()

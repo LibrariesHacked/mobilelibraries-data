@@ -7,10 +7,10 @@ import csv
 import requests
 import re
 from bs4 import BeautifulSoup
+from _common import create_mobile_library_file
 
 WEBSITE = 'http://www.wrexham.gov.uk/'
 DATA_SOURCE = 'english/community/libraries/mobile_library.htm'
-DATA_OUTPUT = '../data/wrexham.csv'
 POSTCODE_RE = '(([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2}))'
 DATA_RE = '(.*),(.*)\((\d*):(\d*).*[^0-9](\d*):(\d*)'
 
@@ -95,19 +95,9 @@ def run():
 
             mobiles.append(
                 [mobile_library, route_name, community, stop_name, address, postcode, longitude, latitude,
-                    day, arrival, departure, frequency, start, '', url]
+                    day, 'Public', arrival, departure, frequency, start, '', '', url]
             )
 
-    with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles:
-            mob_writer.writerow(
-                ['Wrexham', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
-
+    create_mobile_library_file('Wrexham', 'wrexham.csv', mobiles)
 
 run()

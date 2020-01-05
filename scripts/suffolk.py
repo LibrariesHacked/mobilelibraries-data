@@ -9,14 +9,15 @@ import requests
 import re
 import time
 from bs4 import BeautifulSoup
+from _common import create_mobile_library_file
 
 WEBSITE = 'https://www.suffolklibraries.co.uk/'
 ROUTES = 'mobiles-home/mobile-route-schedules/'
-DATA_OUTPUT = '../data/suffolk.csv'
 BOUNDS = '0.34,51.9321,1.7689,52.5502'
-NOM_URL='https://nominatim.openstreetmap.org/search?format=json&q='
+NOM_URL = 'https://nominatim.openstreetmap.org/search?format=json&q='
 
 ## Example request https://nominatim.openstreetmap.org/search?q=The Drift, Coney Weston&viewport=0.34,51.9321,1.7689,52.5502
+
 
 def run():
     """Runs the main script"""
@@ -50,7 +51,7 @@ def run():
         for para in paras:
             if '2019:' in para.text:
                 dates = para.text.strip().split(', ')
-        
+
         date = datetime.strptime(dates[2] + ' 2019', '%d %B %Y')
         start = date.strftime('%Y-%m-%d')
 
@@ -72,28 +73,20 @@ def run():
             timetable = WEBSITE + route_link['href']
 
             # Geocoding: get the lat/lng
-            geo_json = requests.get(NOM_URL + address + ', Suffolk, UK&countrycodes=gb&viewbox=' + BOUNDS).json()
+            geo_json = requests.get(
+                NOM_URL + address + ', Suffolk, UK&countrycodes=gb&viewbox=' + BOUNDS).json()
             if len(geo_json) > 0:
                 longitude = geo_json[0]['lon']
                 latitude = geo_json[0]['lat']
 
             mobiles.append(
                 [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
-                 day, arrival, departure, 'FREQ=WEEKLY;INTERVAL=4', start, '', timetable]
+                 day, 'Public', arrival, departure, 'FREQ=WEEKLY;INTERVAL=4', start, '', '', timetable]
             )
-            
+
             time.sleep(6)
 
-    with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles:
-            mob_writer.writerow(
-                ['Suffolk', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
+    create_mobile_library_file('Suffolk', 'suffolk.csv', mobiles)
 
 
 run()

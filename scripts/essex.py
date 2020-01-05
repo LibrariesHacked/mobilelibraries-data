@@ -12,10 +12,10 @@ import os.path
 import base64
 from os import path
 from bs4 import BeautifulSoup
+from _common import create_mobile_library_file
 
 WEBSITE = 'https://libraries.essex.gov.uk/'
 ROUTES_LIST = 'mobile-library-service/mobile-routes-and-areas-april-2018/'
-DATA_OUTPUT = '../data/essex.csv'
 
 
 def run():
@@ -32,17 +32,20 @@ def run():
 
     for link in route_links:
         route_text = ''
-        route_encoded_link = str(base64.urlsafe_b64encode(link.encode("utf-8")), 'utf-8')
+        route_encoded_link = str(
+            base64.urlsafe_b64encode(link.encode("utf-8")), 'utf-8')
         if not path.exists('../raw/essex/' + route_encoded_link + '.txt'):
             route_html = requests.get(link)
             route_text = route_html.text
             # save the data out as web scraping seems to be getting blocked so may take a few goes
-            route_file = open('../raw/essex/' + route_encoded_link + '.txt', "w")
+            route_file = open('../raw/essex/' +
+                              route_encoded_link + '.txt', "w")
             route_file.write(route_text)
             route_file.close()
             time.sleep(10)
         else:
-            route_text = open ('../raw/essex/' + route_encoded_link + '.txt', 'r').read()
+            route_text = open('../raw/essex/' +
+                              route_encoded_link + '.txt', 'r').read()
 
         route_soup = BeautifulSoup(route_text, 'html.parser')
 
@@ -52,15 +55,18 @@ def run():
 
         for stop in stop_links:
             stop_text = ''
-            stop_encoded_link = str(base64.urlsafe_b64encode(stop.encode("utf-8")), 'utf-8')
+            stop_encoded_link = str(base64.urlsafe_b64encode(
+                stop.encode("utf-8")), 'utf-8')
             if not path.exists('../raw/essex/' + stop_encoded_link + '.txt'):
                 stop_html = requests.get(stop)
                 stop_text = stop_html.text
-                stop_file = open('../raw/essex/' + stop_encoded_link + '.txt', "w")
+                stop_file = open('../raw/essex/' +
+                                 stop_encoded_link + '.txt', "w")
                 stop_file.write(stop_text)
                 stop_file.close()
             else:
-                stop_text = open ('../raw/essex/' + stop_encoded_link + '.txt', 'r').read()
+                stop_text = open('../raw/essex/' +
+                                 stop_encoded_link + '.txt', 'r').read()
 
             stop_soup = BeautifulSoup(stop_text, 'html.parser')
             values = stop_soup.find_all('div', {"class": "pfont"})
@@ -129,22 +135,13 @@ def run():
             postcode_data = json.loads(postcode_request.text)
             latitude = postcode_data['result']['latitude']
             longitude = postcode_data['result']['longitude']
-            
+
             mobiles.append(
                 [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
-                 day, arrival, departure, frequency, start, '', stop]
+                 day, 'Public', arrival, departure, frequency, start, '', '', stop]
             )
 
-    with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles:
-            mob_writer.writerow(
-                ['Essex', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
+    create_mobile_library_file('Essex', 'essex.csv', mobiles)
 
 
 run()

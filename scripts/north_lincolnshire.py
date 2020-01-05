@@ -2,9 +2,9 @@ import json
 from datetime import datetime
 import re
 import csv
+from _common import create_mobile_library_file
 
 DATA_SOURCE = '../raw/north_lincolnshire.geojson'
-DATA_OUTPUT = '../data/north_lincolnshire.csv'
 
 
 def run():
@@ -56,19 +56,11 @@ def run():
 
             mobiles.append(
                 ['Mobile', route_name, community, stop_name, address, '', longitude, latitude,
-                    day, arrival, departure, frequency, start, '', timetable]
+                    day, 'Public', arrival, departure, frequency, start, '', '', timetable]
             )
 
-    with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles:
-            mob_writer.writerow(
-                ['North Lincolnshire', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
+    create_mobile_library_file(
+        'North Lincolnshire', 'north_lincolnshire.csv', mobiles)
 
 
 run()

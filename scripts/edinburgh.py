@@ -8,10 +8,10 @@ import csv
 import requests
 import re
 from bs4 import BeautifulSoup
+from _common import create_mobile_library_file
 
 WEBSITE = 'https://www.edinburgh.gov.uk/'
 DATA_SOURCE = 'directory/16/mobile_library_stops?page='
-DATA_OUTPUT = '../data/edinburgh.csv'
 
 
 def run():
@@ -119,19 +119,10 @@ def run():
 
             mobiles.append(
                 [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
-                 day, arrival, departure, 'FREQ=WEEKLY', start, '', timetable]
+                 day, 'Public', arrival, departure, 'FREQ=WEEKLY', start, '', '', timetable]
             )
 
-    with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
-        for sto in mobiles:
-            mob_writer.writerow(
-                ['Edinburgh', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
+    create_mobile_library_file('Edinburgh', 'edinburgh.csv', mobiles)
 
 
 run()

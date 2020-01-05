@@ -1,9 +1,10 @@
 import requests
 import json
 import csv
+from _common import create_mobile_library_file
 
 DATA_SOURCE = '../raw/milton_keynes.csv'
-DATA_OUTPUT = '../data/milton_keynes.csv'
+
 
 def run():
 
@@ -26,26 +27,17 @@ def run():
             frequency = 'FREQ=WEEKLY;INTERVAL=1'
 
             url = 'https://api.postcodes.io/postcodes/' + postcode
-            postcode_request = requests.get('https://api.postcodes.io/postcodes/' + postcode)
+            postcode_request = requests.get(url)
             postcode_data = json.loads(postcode_request.text)
             latitude = postcode_data['result']['latitude']
             longitude = postcode_data['result']['longitude']
 
             mobiles.append(
                 ['Mobile', day, community, stop_name, address, postcode, longitude, latitude,
-                    day, arrival, departure, frequency, start, '', timetable]
+                    day, 'Public', arrival, departure, frequency, start, '', '', timetable]
             )
 
-    with open(DATA_OUTPUT, 'w', encoding='utf8', newline='') as out_csv:
-        mob_writer = csv.writer(out_csv, delimiter=',',
-                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        mob_writer.writerow(
-            ['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
-             'geoy', 'day', 'arrival', 'departure', 'frequency', 'start', 'end',  'timetable'])
+    create_mobile_library_file('Milton Keynes', 'milton_keynes.csv', mobiles)
 
-        for sto in mobiles:
-            mob_writer.writerow(
-                ['Milton Keynes', sto[0], sto[1], sto[2], sto[3], sto[4], sto[5],
-                 sto[6], sto[7], sto[8], sto[9], sto[10], sto[11], sto[12], sto[13], sto[14]])
 
 run()
