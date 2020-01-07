@@ -20,6 +20,8 @@ Geopandas will need rtree, pyproj, fiona, gdal (v2), and shapely to be installed
 
 ## Running scripts
 
+Run the following when in the data directory for each authority.
+
 ```
 ogr2ogr -f "CSV" aberdeenshire_routes.csv aberdeenshire_routes.geojson -lco GEOMETRY=AS_WKT
 ```
