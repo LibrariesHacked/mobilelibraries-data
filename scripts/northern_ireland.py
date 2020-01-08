@@ -186,7 +186,7 @@ def run():
                                 )
 
     create_mobile_library_file(
-        'Northern Ireland', 'northern_ireland.csv', mobiles)
+        'LibrariesNI', 'librariesni.csv', mobiles)
 
 
 run()

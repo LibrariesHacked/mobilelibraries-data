@@ -9,10 +9,10 @@ import re
 from bs4 import BeautifulSoup
 from _common import create_mobile_library_file
 
-WEBSITE = 'http://www.wrexham.gov.uk/'
-DATA_SOURCE = 'development/libraries/mobile_library_routes.htm'
+WEBSITE = 'https://beta.wrexham.gov.uk/'
+DATA_SOURCE = 'service/mobile-library-service'
 POSTCODE_RE = '(([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2}))'
-DATA_RE = '(.*),(.*)\((\d*):(\d*).*[^0-9](\d*):(\d*)'
+DATA_RE = '(.*),(.*)\((\d*):?(\d*).*-[^0-9](\d*):?(\d*)'
 
 
 def run():
@@ -26,14 +26,13 @@ def run():
     # A single web page listing stops
     url = WEBSITE + DATA_SOURCE
     stop_list_html = requests.get(url)
-    stop_list_soup = BeautifulSoup(stop_list_html.text, 'html.parser')
+    stop_list_soup = BeautifulSoup(stop_list_html.text, 'lxml')
 
     # For each stop get the stop details
-    # Being lazy here and just taking the 4th list - can refine another time
-    for route in stop_list_soup.find_all('div', 'acc_content'):
+    for route in stop_list_soup.find_all('div', {"class": "field-group-accordion-wrapper"}):
 
-        route_name = route.find('h3').string.split('(')[0].strip()
-        day = route.find('h3').string.split(
+        route_name = route.find('h4').string.split('(')[0].strip()
+        day = route.find('h4').string.split(
             '(')[1].split(',')[1].replace(')', '').strip()
 
         stops = route.find_all('ol')[0]
@@ -73,7 +72,7 @@ def run():
             longitude = postcode_data['result']['longitude']
 
             # take postcode out of the main string
-            stop_str = stop.string.replace(postcode, '').replace('.', ':')
+            stop_str = stop.string.replace(postcode, '').replace('.', ':').replace('–', '-')
 
             data_match = re.compile(DATA_RE)
             data = data_match.search(stop_str)
@@ -84,10 +83,14 @@ def run():
             if int(arrival_hours) < 8:
                 arrival_hours = int(arrival_hours) + 12
             arrival_mins = data.group(4).strip()
+            if arrival_mins == '':
+                arrival_mins = '00'
             departure_hours = data.group(5).strip()
             if int(departure_hours) < 8:
                 departure_hours = int(departure_hours) + 12
             departure_mins = data.group(6).strip()
+            if departure_mins == '':
+                departure_mins = '00'
             arrival = str(arrival_hours) + ':' + arrival_mins
             departure = str(departure_hours) + ':' + departure_mins
 
