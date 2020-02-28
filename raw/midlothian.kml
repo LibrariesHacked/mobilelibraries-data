@@ -1,0 +1,919 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Midlothian Mobile Library Routes</name>
+    <description><![CDATA[Midlothian's Mobile Library brings library services out into our communities]]></description>
+    <Style id="icon-1899-0097A7-normal">
+      <IconStyle>
+        <color>ffa79700</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0097A7-highlight">
+      <IconStyle>
+        <color>ffa79700</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0097A7">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0097A7-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0097A7-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-0F9D58-normal">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-0F9D58-highlight">
+      <IconStyle>
+        <color>ff589d0f</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-0F9D58">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0F9D58-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0F9D58-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-817717-normal">
+      <IconStyle>
+        <color>ff177781</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-817717-highlight">
+      <IconStyle>
+        <color>ff177781</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-817717">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-817717-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-817717-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-880E4F-normal">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-880E4F-highlight">
+      <IconStyle>
+        <color>ff4f0e88</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-880E4F">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-880E4F-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-880E4F-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-E65100-normal">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-E65100-highlight">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-E65100">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-E65100-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-E65100-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FBC02D-normal">
+      <IconStyle>
+        <color>ff2dc0fb</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FBC02D-highlight">
+      <IconStyle>
+        <color>ff2dc0fb</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FBC02D">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FBC02D-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FBC02D-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-FF5252-normal">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-FF5252-highlight">
+      <IconStyle>
+        <color>ff5252ff</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-FF5252">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-FF5252-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-FF5252-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Week 1 Monday Stops</name>
+      <Placemark>
+        <name>Bilston Primary School</name>
+        <description><![CDATA[Bilston Nursery <br>Mondays Week1 9:30 - 10:30]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -3.18264420000003,55.8695055,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bilston</name>
+        <description><![CDATA[Near Post Office, Castlelaw Crescent, Bilston<br>Mondays Week 1 10:30 - 11:15]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -3.18209100000001,55.8691536,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Silverburn</name>
+        <description><![CDATA[Outside Silverburn Hall<br>Mondays Week 1 11:30 - 12:00]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -3.27245019999998,55.828285,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Nine Mile Burn</name>
+        <description>Mondays 12:05 - 12:45</description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -3.30757199999994,55.809141,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Loanstone</name>
+        <description><![CDATA[Layby on Main Road Through Loanstone<br>Mondays Week 1 13:45 - 14:10]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -3.20140309999999,55.8293648,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Howgate</name>
+        <description><![CDATA[Howgate<br>Mondays Week 1 14:15 - 14:45]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -3.2022121,55.8107984,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Burnbrae Rd</name>
+        <description><![CDATA[Outside #90<br>Mondays Week 1 15:00 - 16:15]]></description>
+        <styleUrl>#icon-1899-0288D1</styleUrl>
+        <Point>
+          <coordinates>
+            -3.10090719999994,55.8660255,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Week 2 Monday Stops</name>
+      <Placemark>
+        <name>Auchendinny 2</name>
+        <description><![CDATA[Mondays Week 2 <br>9:45 – 10:00]]></description>
+        <styleUrl>#icon-1899-0097A7</styleUrl>
+        <Point>
+          <coordinates>
+            -3.19241290000002,55.8463183,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bilston</name>
+        <description><![CDATA[Outside shop/post office in Castlelaw Crescent<br>Mondays Week 2 10:15 - 11:15]]></description>
+        <styleUrl>#icon-1899-0097A7</styleUrl>
+        <Point>
+          <coordinates>
+            -3.18209000000002,55.86915,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bilston Corby Craig</name>
+        <description><![CDATA[Corby Craig Crescent<br>Mondays Week 2 11:30 - 12:00]]></description>
+        <styleUrl>#icon-1899-0097A7</styleUrl>
+        <Point>
+          <coordinates>
+            -3.17737480000005,55.8729901,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rosewell Primary School</name>
+        <description><![CDATA[Outside School<br>Mondays Week 2 13:15 - 14:00]]></description>
+        <styleUrl>#icon-1899-0097A7</styleUrl>
+        <Point>
+          <coordinates>
+            -3.13533940000002,55.8524205,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cameron Crescent</name>
+        <description><![CDATA[Bonnyrigg<br>Mondays Week 2 14:10 - 14:30]]></description>
+        <styleUrl>#icon-1899-0097A7</styleUrl>
+        <Point>
+          <coordinates>
+            -3.12287289999995,55.8683524,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Polton Bank</name>
+        <description><![CDATA[Lasswade<br>Mondays Week 2 14:35 - 14:55]]></description>
+        <styleUrl>#icon-1899-0097A7</styleUrl>
+        <Point>
+          <coordinates>
+            -3.12920699999995,55.8702084,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>James Leary Way</name>
+        <description><![CDATA[Bonnyrigg<br>Mondays Week 2 15:05 - 16:15]]></description>
+        <styleUrl>#icon-1899-0097A7</styleUrl>
+        <Point>
+          <coordinates>
+            -3.09785090000003,55.8783134,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bilston</name>
+        <description><![CDATA[Outside Shop/Post Office on Castlelaw Crescent<br>Wednesdays 15:00 - 16:00]]></description>
+        <styleUrl>#icon-1899-0097A7</styleUrl>
+        <Point>
+          <coordinates>
+            -3.18205555555551,55.8688055555556,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Auchendinny 1</name>
+        <description><![CDATA[Mondays Week 2 <br>9:30 – 9:45]]></description>
+        <styleUrl>#icon-1899-0097A7</styleUrl>
+        <Point>
+          <coordinates>
+            -3.1918145,55.8478081,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name><![CDATA[Week 1 & 2 Tuesday Stops]]></name>
+      <Placemark>
+        <name>Newbattle Abbey Crescent 1</name>
+        <description>Tuesdays 13:15 - 13:30</description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -3.07857490000004,55.8768114,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Newbattle Abbey Crescent 2</name>
+        <description>Tuesdays 13:30-13:45</description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -3.0739231,55.880474,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maryburn Road</name>
+        <description>Tuesdays 14:00 - 14:30</description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -3.05246929999998,55.8809938,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Salisbury View</name>
+        <description><![CDATA[Car park outside Salisbury View care home<br>Tuesdays 14.35 - 15.00]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -3.0418482,55.8724439,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dundas Crescent</name>
+        <description>Tuesdays 15:10 - 15:40</description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -3.08406830000001,55.8876303,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Weir Crescent</name>
+        <description><![CDATA[Lay by outside #23<br>Tuesdays 15:45 - 16:20]]></description>
+        <styleUrl>#icon-1899-E65100</styleUrl>
+        <Point>
+          <coordinates>
+            -3.08513640000001,55.8903565,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name><![CDATA[Week 1 & 2 Wednesday Stops]]></name>
+      <Placemark>
+        <name>Milton Bridge</name>
+        <description>Wednesdays 9:30 - 10:00</description>
+        <styleUrl>#icon-1899-FBC02D</styleUrl>
+        <Point>
+          <coordinates>
+            -3.20066420000001,55.8492513,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Greenlaw Grove</name>
+        <description>Wednesdays 10:00 - 10:20</description>
+        <styleUrl>#icon-1899-FBC02D</styleUrl>
+        <Point>
+          <coordinates>
+            -3.21065629999998,55.8468801,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stevenson Road</name>
+        <description>Wednesdays 10:25 - 10:55</description>
+        <styleUrl>#icon-1899-FBC02D</styleUrl>
+        <Point>
+          <coordinates>
+            -3.20676320000007,55.8463069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Scots Corner community centre</name>
+        <description>Wednesday 11:00 - 11:25</description>
+        <styleUrl>#icon-1899-FBC02D</styleUrl>
+        <Point>
+          <coordinates>
+            -3.2081263,55.849494,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Aaron House Care Home</name>
+        <description>Wednesdays 11:30 - 12:00</description>
+        <styleUrl>#icon-1899-FBC02D</styleUrl>
+        <Point>
+          <coordinates>
+            -3.20661059999998,55.8397372,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cuikenburn</name>
+        <description>Wednesdays 12:40 - 13:10</description>
+        <styleUrl>#icon-1899-FBC02D</styleUrl>
+        <Point>
+          <coordinates>
+            -3.22883509999997,55.8379877,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Eskvale Drive</name>
+        <description>Wednesdays 13:20 - 13:40</description>
+        <styleUrl>#icon-1899-FBC02D</styleUrl>
+        <Point>
+          <coordinates>
+            -3.20996779999996,55.8326715,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Salamanca Crescent</name>
+        <description>Wednesdays 13:50 - 14:10</description>
+        <styleUrl>#icon-1899-FBC02D</styleUrl>
+        <Point>
+          <coordinates>
+            -3.21310459999995,55.8428807,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boyd-Orr Drive</name>
+        <description>Wednesdays 14:15 - 14:45</description>
+        <styleUrl>#icon-1899-FBC02D</styleUrl>
+        <Point>
+          <coordinates>
+            -3.21703760000003,55.8428055,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Week 1 Thursday Stops</name>
+      <Placemark>
+        <name>Temple</name>
+        <description><![CDATA[Thursdays Week 1<br>9:20 - 9:50]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            -3.0908309,55.8146238,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Moorfoot Primary School</name>
+        <description><![CDATA[Thursdays Week 1<br>10:05 - 10:30]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            -3.02221650000001,55.8215752,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Middleton</name>
+        <description><![CDATA[Thursdays Week 1<br>10:30 - 10:45]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            -3.02394300000003,55.8203884,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cranston Nursery</name>
+        <description><![CDATA[Thursday Week 1<br>11:00 - 11:20]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            -2.99240120000002,55.8720541,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Edgehead Road</name>
+        <description><![CDATA[Thursdays Week 1<br>11:25 - 11:55]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            -3.00029749999999,55.8742799,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Clover Nursery</name>
+        <description><![CDATA[Thursdays Week 1<br>12:10 - 12:40]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            -2.89882039999998,55.8390034,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Woodburn Terrace</name>
+        <description><![CDATA[Thursdays Week 1<br>13:30 - 14:15]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            -3.04660630000001,55.8917758,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kippielaw Road</name>
+        <description><![CDATA[Thursdays Week 1<br>14:20 - 15:20]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            -3.05233039999996,55.8856235,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wester Kippielaw Drive</name>
+        <description><![CDATA[Thursdays Week 1<br>15:30 - 16:15]]></description>
+        <styleUrl>#icon-1899-880E4F</styleUrl>
+        <Point>
+          <coordinates>
+            -3.05642320000004,55.8874809,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Week 2 Thursday Stops</name>
+      <Placemark>
+        <name>Whitecraig Primary School</name>
+        <description><![CDATA[Thursdays Week 2<br>9:30 - 10:30]]></description>
+        <styleUrl>#icon-1899-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -3.03779399999996,55.9195496,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Whitecraig</name>
+        <description><![CDATA[Thursdays Week 2<br>10:35 - 11:05]]></description>
+        <styleUrl>#icon-1899-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -3.0358731,55.9199672,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Macmerry</name>
+        <description><![CDATA[Thursdays Week 2<br>11:20 - 12:30]]></description>
+        <styleUrl>#icon-1899-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -2.9108367,55.9412969,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pencaitland 1</name>
+        <description><![CDATA[Thursdays Week 2<br>13:20 – 13:45 ]]></description>
+        <styleUrl>#icon-1899-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -2.88588709999999,55.9104235,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pencaitland 2</name>
+        <description><![CDATA[Thursdays Week 2<br>13:20 - 14:50]]></description>
+        <styleUrl>#icon-1899-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -2.89585250000005,55.9085006,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>East Saltoun</name>
+        <description><![CDATA[Parked opposite red telephone box, Main Street<br>Thursdays Week 2<br>15:00 - 15:30]]></description>
+        <styleUrl>#icon-1899-FF5252</styleUrl>
+        <Point>
+          <coordinates>
+            -2.83991666666668,55.8998888888889,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Week 1 Friday Stops</name>
+      <Placemark>
+        <name>Cousland 1</name>
+        <description><![CDATA[Fridays Week 1<br>9:45 - 10:00 ]]></description>
+        <styleUrl>#icon-1899-817717</styleUrl>
+        <Point>
+          <coordinates>
+            -2.99998140000002,55.9040978,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cousland 2</name>
+        <description><![CDATA[Fridays Week 1<br>10:00 - 10:15]]></description>
+        <styleUrl>#icon-1899-817717</styleUrl>
+        <Point>
+          <coordinates>
+            -2.99558379999996,55.9050879,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cousland 3</name>
+        <description><![CDATA[Fridays Week 1<br>10:15 - 10:30]]></description>
+        <styleUrl>#icon-1899-817717</styleUrl>
+        <Point>
+          <coordinates>
+            -2.9987059,55.903725,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Humbie</name>
+        <description><![CDATA[Fridays Week 1<br>10:50 - 12:30]]></description>
+        <styleUrl>#icon-1899-817717</styleUrl>
+        <Point>
+          <coordinates>
+            -2.86743999999999,55.854323,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Roman Camp Way</name>
+        <description><![CDATA[Fridays Week 1<br>13:40 - 14:10]]></description>
+        <styleUrl>#icon-1899-817717</styleUrl>
+        <Point>
+          <coordinates>
+            -2.96639970000001,55.8653139,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chapel</name>
+        <description><![CDATA[Fridays Week 1<br>14:15 - 15:00]]></description>
+        <styleUrl>#icon-1899-817717</styleUrl>
+        <Point>
+          <coordinates>
+            -2.96962629999996,55.8678313,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Crichton Terrace</name>
+        <description><![CDATA[Fridays Week 1<br>15:05 - 16:00]]></description>
+        <styleUrl>#icon-1899-817717</styleUrl>
+        <Point>
+          <coordinates>
+            -2.96891700000003,55.8663004,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Week 2 Friday Stops</name>
+      <Placemark>
+        <name>Cousland 1</name>
+        <description><![CDATA[Fridays Week 2<br>9:45 - 10:00 ]]></description>
+        <styleUrl>#icon-1899-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            -2.99998140000002,55.9040978,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cousland 2</name>
+        <description><![CDATA[Fridays Week 2<br>10:00 - 10:15 ]]></description>
+        <styleUrl>#icon-1899-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            -2.99558379999996,55.9050879,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cousland 3</name>
+        <description><![CDATA[Fridays Week 2<br>10:15 - 10:30 ]]></description>
+        <styleUrl>#icon-1899-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            -2.9987059,55.903725,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gifford</name>
+        <description><![CDATA[Parked in the Square<br>Fridays Week 2<br>11:00 - 12:15]]></description>
+        <styleUrl>#icon-1899-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            -2.74744444444445,55.9030833333333,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Roman Camp Way</name>
+        <description><![CDATA[Fridays Week 2<br>13:40 - 14:10]]></description>
+        <styleUrl>#icon-1899-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            -2.96639970000001,55.8653139,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chapel Place</name>
+        <description><![CDATA[Fridays Week 2<br>14:15 - 15:00]]></description>
+        <styleUrl>#icon-1899-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            -2.96962629999996,55.8678313,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Crichton Terrace</name>
+        <description><![CDATA[Fridays Week 2<br>15:05 - 16:00]]></description>
+        <styleUrl>#icon-1899-0F9D58</styleUrl>
+        <Point>
+          <coordinates>
+            -2.96891700000003,55.8663004,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
