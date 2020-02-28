@@ -23,14 +23,13 @@ def run():
         reader = csv.reader(mobile_csv, delimiter=',', quotechar='"')
         next(reader, None)  # skip the headers
         # make sure the rows are sorted by mobile, route, and arrival time
-        sorted_rows = sorted(reader, key=lambda row: (row[1], row[2], datetime.strptime('01/01/2019 ' + row[11], '%d/%m/%Y %H:%M')))
+        sorted_rows = sorted(reader, key=lambda row: (row[1], row[2], datetime.strptime('01/01/2020 ' + row[11], '%d/%m/%Y %H:%M')))
 
         for (idx, row) in enumerate(sorted_rows):
 
             mobile = str(row[1])
             route = str(row[2])
-            stop = str(row[4]),
-            stop = stop[0]
+            stop = str(row[4])
             longitude = float(row[7])
             latitude = float(row[8])
 

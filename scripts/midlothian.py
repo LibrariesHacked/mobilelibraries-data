@@ -70,6 +70,12 @@ def run():
 
             description = stop.find('kml:description', ns).text.strip()
 
+            if '<br' in description:
+                detail = description.split('<br')[0].strip()
+                if 'day' not in detail:
+                    stop_name = description.split('<br')[0].strip()
+                    address = stop_name + ', ' + community
+
             times_result = re.search(
                 r'(\d{1,2}:\d{2}).*?(\d{1,2}:\d{2})', description.replace('.', ':'))
             arrival = times_result.group(1)
