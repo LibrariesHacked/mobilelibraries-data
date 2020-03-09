@@ -1,9 +1,12 @@
 import csv
+from datetime import datetime
 
 DATA_OUTPUT = '../data/'
 
 def create_mobile_library_file(organisation, filename, mobiles):
 	with open(DATA_OUTPUT + filename, 'w', encoding='utf8', newline='') as out_csv:
+
+		mobiles = sorted(mobiles, key=lambda row: (row[1], row[2], datetime.strptime('01/01/2020 ' + row[11], '%d/%m/%Y %H:%M')))
 		mob_writer = csv.writer(out_csv, delimiter=',',
 		                        quotechar='"', quoting=csv.QUOTE_MINIMAL)
 		mob_writer.writerow(['organisation', 'mobile', 'route', 'community', 'stop', 'address', 'postcode', 'geox',
