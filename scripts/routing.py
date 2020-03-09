@@ -10,8 +10,8 @@ from shapely.geometry import Point
 from shapely.geometry import LineString
 
 API_KEY = '5b3ce3597851110001cf624860a035e0c0bf48c690561cefd3ff4769'
-STOP_DATA = '../data/hillingdon.csv'
-OUTPUT_DATA = '../data/hillingdon_routes.geojson'
+STOP_DATA = '../data/north_yorkshire.csv'
+OUTPUT_DATA = '../data/north_yorkshire_routes.geojson'
 
 def run():
     """Runs the main script"""
