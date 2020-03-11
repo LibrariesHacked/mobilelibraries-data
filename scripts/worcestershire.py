@@ -11,8 +11,8 @@ from datetime import date
 from datetime import datetime
 from _common import create_mobile_library_file
 
-WEBSITE = 'http://www.worcestershire.gov.uk/'
-A_Z_PAGE = 'directory/54/a_to_z'
+WEBSITE = 'http://www.worcestershire.gov.uk'
+A_Z_PAGE = '/directory/54/a_to_z'
 
 day_codes = {
     'Monday': [MO, 'MO'],
@@ -48,8 +48,7 @@ def run():
             
             stop_html = requests.get(WEBSITE + stop_url)
             stop_soup = BeautifulSoup(stop_html.text, 'html.parser')
-            stop_rows = stop_soup.find('div', {'class': 'editor'}).text.splitlines()
-
+            
             stop_schedule = stop_soup.find('table', {'class': 'data-table directory-record'}).find_all('td')[0].text
             schedule_matcher = re.compile(r'(\d)(st|nd|rd|th) (.*day)')
             schedule_search = schedule_matcher.search(stop_schedule)
@@ -67,15 +66,25 @@ def run():
             longitude = location.split(',')[1]
             latitude = location.split(',')[0]
 
+            if community == 'Sytchampton':
+                stop_rows = ['11:05 to 11:20 - Sytchampton, Brakeshill']
+            else:
+                editor = stop_soup.find('div', {'class': 'editor'})
+                stop_rows = [stop.text.replace('\r\n', ' ') for stop in editor.find_all('p')]
+                if len(stop_rows) < 5:
+                    stop_rows = stop_soup.find('div', {'class': 'editor'}).text.splitlines()
+
             for stop in stop_rows:
 
                 if (community in stop):
 
                     stop_times_matcher = re.compile(r'(\d{1,2}:\d{2}).*?(\d{1,2}:\d{2})(.*)')
-                    times_result = re.search(stop_times_matcher, stop)
+                    times_result = re.search(stop_times_matcher, stop.replace('.', ':'))
                     arrival = times_result.group(1)
                     departure = times_result.group(2)
-                    stop_name = times_result.group(3).replace(community, '').replace(',', '').replace('-', '').strip()
+                    stop_name = times_result.group(3).replace(community, '').replace(',', '').replace('-', '').replace('–', '').strip()
+                    if stop_name == '':
+                        stop_name = community
                     address = stop_name + ', ' + community
 
                     mobiles.append(
