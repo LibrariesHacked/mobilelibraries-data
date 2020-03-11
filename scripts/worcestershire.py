@@ -66,6 +66,10 @@ def run():
             longitude = location.split(',')[1]
             latitude = location.split(',')[0]
 
+            if community == 'Longdon':
+                longitude = '-2.239241'
+                latitude = '52.023780'
+
             if community == 'Sytchampton':
                 stop_rows = ['11:05 to 11:20 - Sytchampton, Brakeshill']
             else:
