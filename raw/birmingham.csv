@@ -1,26 +1,25 @@
-Monday,10:00,12:00,West Heath,Houldey Road,52.402585,-1.959662
-Tuesday,10:00,12:00,Banners Gate,Coppice View Road,52.559015,-1.876610
-Tuesday,14:00,14:45,Bordesley Green,Pretoria Road,52.481116,-1.848347
-Tuesday,15:00,16:15,Saltley,St Saviours Road,52.486723,-1.857164
-
-
-Wednesday,13:00,13:30,Pineapple,Dads Lane,
-Wednesday,14:00,14:30,Hall Green,Baldwins Lane,
-Wednesday,15:00,16:00,Hall Green,Pitmaston Road,
-
-
-Thursday,09:50,10:20,Edgbaston,Clark Street,52.477750,-1.931900
-Thursday,10:35,10:50,Edgbaston,Selwyn Road,52.483154,-1.944626
-Thursday,11:00,12:05,Winson Green,Cavendish Road/Ashbourne Road,52.485585,-1.944678
-Thursday,13:30,13:55,Edgbaston,George Dixon Road,52.479113,-1.958008
-Thursday,14:05,14:50,Edgbaston,Gillott Road,52.480415,-1.944264
-Thursday,15:00,16:00,Winston Green,Cuthbert Road,52.488525,-1.940383
-Friday,10:00,12:00,Witton,Cheshire Road/Deykin Avenue,52.514189,-1.877275
-Friday,14:00,14:30,Falcon Lodge,Churchill Road (Ogley Drive end),52.563461,-1.793926
-Friday,14:30,16:15,Falcon Lodge,Churchill Road (lay-by, opposite shops),52.563436,-1.789527
-
-
-Saturday,10:00,10:30,Handsworth,Junction Road,
-Saturday,10:45,12:15,Handsworth Wood,Beechglade,
-Saturday,,14:00,14:45,Moseley,Forest Road,
-Saturday,15:00,16:00,Edgbaston,Balsall Heath Road,
+Monday,10:00,12:00,West Heath,Houldey Road,52.402585,-1.959662,FREQ=WEEKLY;INTERVAL=1,2020-03-16,Monday
+Tuesday,10:00,12:00,Banners Gate,Coppice View Road,52.559015,-1.876610,FREQ=WEEKLY;INTERVAL=1,2020-03-16,Tuesday
+Tuesday,14:00,14:45,Bordesley Green,Pretoria Road,52.481116,-1.848347,FREQ=WEEKLY;INTERVAL=1,2020-03-16,Tuesday
+Tuesday,15:00,16:15,Saltley,St Saviours Road,52.486723,-1.857164,FREQ=WEEKLY;INTERVAL=1,2020-03-16,Tuesday
+Wednesday,13:00,13:30,Pineapple,Dads Lane,52.436654,-1.907605,FREQ=WEEKLY;INTERVAL=2,2020-03-25,Wednesday
+Wednesday,14:00,14:30,Hall Green,Baldwins Lane,52.414446,-1.842752,FREQ=WEEKLY;INTERVAL=2,2020-03-25,Wednesday
+Wednesday,15:00,16:00,Hall Green,Pitmaston Road,52.426375,-1.831929,FREQ=WEEKLY;INTERVAL=2,2020-03-25,Wednesday
+Thursday,09:50,10:20,Edgbaston,Clark Street,52.477750,-1.931900,FREQ=WEEKLY;INTERVAL=1,2020-03-19,Thursday
+Thursday,10:35,10:50,Edgbaston,Selwyn Road,52.483154,-1.944626,FREQ=WEEKLY;INTERVAL=1,2020-03-19,Thursday
+Thursday,11:00,12:05,Winson Green,Cavendish Road/Ashbourne Road,52.485585,-1.944678,FREQ=WEEKLY;INTERVAL=1,2020-03-19,Thursday
+Thursday,13:30,13:55,Edgbaston,George Dixon Road,52.479113,-1.958008,FREQ=WEEKLY;INTERVAL=1,2020-03-19,Thursday
+Thursday,14:05,14:50,Edgbaston,Gillott Road,52.480415,-1.944264,FREQ=WEEKLY;INTERVAL=1,2020-03-19,Thursday
+Thursday,15:00,16:00,Winston Green,Cuthbert Road,52.488525,-1.940383,FREQ=WEEKLY;INTERVAL=1,2020-03-19,Thursday
+Friday,10:00,12:00,Witton,Cheshire Road/Deykin Avenue,52.514189,-1.877275,FREQ=WEEKLY;INTERVAL=1,2020-03-20,Friday
+Friday,14:00,14:30,Falcon Lodge,Churchill Road (Ogley Drive end),52.563461,-1.793926,FREQ=WEEKLY;INTERVAL=1,2020-03-20,Friday
+Friday,14:30,16:15,Falcon Lodge,Churchill Road (lay-by, opposite shops),52.563436,-1.789527,FREQ=WEEKLY;INTERVAL=1,2020-03-20,Friday
+Saturday,10:00,10:30,Handsworth,Junction Road,52.504111,-1.952711,FREQ=WEEKLY;INTERVAL=4,2020-03-21,Saturday 1
+Saturday,10:45,12:15,Handsworth Wood,Beechglade,52.521896,-1.933711,FREQ=WEEKLY;INTERVAL=4,2020-03-21,Saturday 1
+Saturday,,14:00,14:45,Moseley,Forest Road,52.447152,-1.881424,FREQ=WEEKLY;INTERVAL=4,2020-03-21,Saturday 1
+Saturday,15:00,16:00,Edgbaston,Balsall Heath Road,52.464841,-1.898338,FREQ=WEEKLY;INTERVAL=4,2020-03-21,Saturday 1
+Saturday,10:00,11:00,Firs,Collingbourne Avenue,52.504567,-1.807749,FREQ=WEEKLY;INTERVAL=4,2020-04-04,Saturday 2
+Saturday,11:15,11:45,Hodge Hill,Teesdale Avenue,52.498380,-1.795387,FREQ=WEEKLY;INTERVAL=4,2020-04-04,Saturday 2
+Saturday,12:00,,12:30,Firs,Reynoldstown Road,52.504951,-1.823995,FREQ=WEEKLY;INTERVAL=4,2020-04-04,Saturday 2
+Saturday,14:00,15:00,Hodge Hill,Hodge Hill Road,52.495841,-1.798690,FREQ=WEEKLY;INTERVAL=4,2020-04-04,Saturday 2
+Saturday,15:15,16:15,Hodge Hill,Eastbourne Avenue,52.495414,-1.809507,FREQ=WEEKLY;INTERVAL=4,2020-04-04,Saturday 2
