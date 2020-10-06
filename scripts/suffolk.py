@@ -49,18 +49,25 @@ def run():
         paras = stop_list_soup.find_all('p')
         dates = []
         for para in paras:
-            if '2019:' in para.text:
+            if '2020' in para.text:
                 dates = para.text.strip().split(', ')
 
-        date = datetime.strptime(dates[2] + ' 2019', '%d %B %Y')
-        start = date.strftime('%Y-%m-%d')
+        if len(dates) > 0:
+            date = datetime.strptime(dates[2] + ' 2020', '%d %B %Y')
+            start = date.strftime('%Y-%m-%d')
+        else:
+            start = ''
 
         # For each stop get the stop details
         for stop in stop_list_soup.find_all('tr')[1:]:
 
-            route = route_link['route']
+            route = mobile_library + ' ' + route_link['route']
             community = stop.find_all('td')[1].string.strip()
-            stop_name = stop.find_all('td')[2].string.strip()
+            stop_number = stop.find_all('td')[0].string.strip()
+            if stop_number == '15B':
+                stop_name = 'Brook Inn, Car Park'
+            else: 
+                stop_name = stop.find_all('td')[2].string.strip()
             address = stop_name + ', ' + community
             postcode = ''
             longitude = ''
@@ -69,22 +76,26 @@ def run():
             times = re.sub(r'\D', '', stop.find_all('td')[3].text)
             arrival = times[:2] + ':' + times[2:4]
             departure = times[4:6] + ':' + times[6:]
-            start = ''
             timetable = WEBSITE + route_link['href']
 
             # Geocoding: get the lat/lng
-            geo_json = requests.get(
-                NOM_URL + address + ', Suffolk, UK&countrycodes=gb&viewbox=' + BOUNDS).json()
-            if len(geo_json) > 0:
-                longitude = geo_json[0]['lon']
-                latitude = geo_json[0]['lat']
+            #geo_json = requests.get(
+            #    NOM_URL + address + '&viewbox=' + BOUNDS).json()
+
+            #if len(geo_json) == 0:
+            #    geo_json = requests.get(
+            #        NOM_URL + community + '&viewbox=' + BOUNDS).json()
+
+            #if len(geo_json) > 0:
+            #    longitude = geo_json[0]['lon']
+            #    latitude = geo_json[0]['lat']
 
             mobiles.append(
                 [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
                  day, 'Public', arrival, departure, 'FREQ=WEEKLY;INTERVAL=4', start, '', '', timetable]
             )
 
-            time.sleep(6)
+            # time.sleep(10)
 
     create_mobile_library_file('Suffolk', 'suffolk.csv', mobiles)
 
