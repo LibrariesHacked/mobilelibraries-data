@@ -11,18 +11,17 @@ import time
 from bs4 import BeautifulSoup
 from _common import create_mobile_library_file
 
-WEBSITE = 'https://www.suffolklibraries.co.uk/'
-ROUTES = 'mobiles-home/mobile-route-schedules/'
+WEBSITE = 'https://www.suffolklibraries.co.uk'
+ROUTES = '/mobiles-home/mobile-route-schedules/'
 BOUNDS = '0.34,51.9321,1.7689,52.5502'
-NOM_URL = 'https://nominatim.openstreetmap.org/search?format=json&q='
-
-## Example request https://nominatim.openstreetmap.org/search?q=The Drift, Coney Weston&viewport=0.34,51.9321,1.7689,52.5502
+NOM_URL = 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=gb&q='
 
 
 def run():
     """Runs the main script"""
 
     mobiles = []
+    coordinates = []
 
     route_list_html = requests.get(WEBSITE + ROUTES)
     route_list_soup = BeautifulSoup(route_list_html.text, 'html.parser')
@@ -63,11 +62,7 @@ def run():
 
             route = mobile_library + ' ' + route_link['route']
             community = stop.find_all('td')[1].string.strip()
-            stop_number = stop.find_all('td')[0].string.strip()
-            if stop_number == '15B':
-                stop_name = 'Brook Inn, Car Park'
-            else: 
-                stop_name = stop.find_all('td')[2].string.strip()
+            stop_name = stop.find_all('td')[2].string.strip()
             address = stop_name + ', ' + community
             postcode = ''
             longitude = ''
@@ -79,23 +74,29 @@ def run():
             timetable = WEBSITE + route_link['href']
 
             # Geocoding: get the lat/lng
-            #geo_json = requests.get(
-            #    NOM_URL + address + '&viewbox=' + BOUNDS).json()
+            geo_json = requests.get(
+                NOM_URL + address + '&viewbox=' + BOUNDS).json()
 
-            #if len(geo_json) == 0:
-            #    geo_json = requests.get(
-            #        NOM_URL + community + '&viewbox=' + BOUNDS).json()
+            if len(geo_json) == 0:
+                geo_json = requests.get(
+                    NOM_URL + community + '&viewbox=' + BOUNDS).json()
 
-            #if len(geo_json) > 0:
-            #    longitude = geo_json[0]['lon']
-            #    latitude = geo_json[0]['lat']
+            if len(geo_json) > 0:
+                x = geo_json[0]['lon']
+                y = geo_json[0]['lat']
+                bbox = BOUNDS.split(',')
+                if bbox[0] <= x and x <= bbox[2] and bbox[1] <= y and y <= bbox[3] and x not in coordinates:
+                    # Don't add duplicates - we'll manually sort em out laters
+                    coordinates.append(x)
+                    longitude = geo_json[0]['lon']
+                    latitude = geo_json[0]['lat']
 
             mobiles.append(
                 [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
                  day, 'Public', arrival, departure, 'FREQ=WEEKLY;INTERVAL=4', start, '', '', timetable]
             )
 
-            # time.sleep(10)
+            time.sleep(6)
 
     create_mobile_library_file('Suffolk', 'suffolk.csv', mobiles)
 
