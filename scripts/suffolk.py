@@ -180,11 +180,11 @@ def run():
                     x = round(float(geo_json[0]['lon']), 5)
                     y = round(float(geo_json[0]['lat']), 5)
                     bbox = BOUNDS.split(',')
-                    if bbox[0] <= x and x <= bbox[2] and bbox[1] <= y and y <= bbox[3] and x not in coordinates:
+                    if float(bbox[0]) <= x and x <= float(bbox[2]) and float(bbox[1]) <= y and y <= float(bbox[3]) and x not in coordinates:
                         # Don't add duplicates - we'll manually sort em out laters
                         coordinates.append(x)
-                        longitude = str(geo_json[0]['lon'])
-                        latitude = str(geo_json[0]['lat'])
+                        longitude = x
+                        latitude = y
             else:
                 longitude = locations[address][1]
                 latitude = locations[address][0]
