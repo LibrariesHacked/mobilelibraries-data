@@ -10,15 +10,15 @@ from shapely.geometry import Point
 from shapely.geometry import LineString
 
 API_KEY = '5b3ce3597851110001cf624860a035e0c0bf48c690561cefd3ff4769'
-STOP_DATA = '../data/birmingham.csv'
-OUTPUT_DATA = '../data/birmingham_routes.geojson'
+STOP_DATA = '../data/suffolk.csv'
+OUTPUT_DATA = '../data/suffolk_routes.geojson'
 
 def run():
     """Runs the main script"""
 
     routes = {}
     geodata = []
-    with open(STOP_DATA, 'rt') as mobile_csv:
+    with open(STOP_DATA, 'rt', encoding="utf-8") as mobile_csv:
 
         reader = csv.reader(mobile_csv, delimiter=',', quotechar='"')
         next(reader, None)  # skip the headers
@@ -118,17 +118,17 @@ def run():
                         route_list = [val for key, val in routes[route].items()]
                         geodata.append(
                             {
-                                'route': route,
-                                'mobile': route_list[0]['mobile'],
-                                'origin_stop': trip_lookup[trip_idx]['origin_stop'],
-                                'origin_stop_longitude': trip_lookup[trip_idx]['origin_stop_longitude'],
-                                'origin_stop_latitude': trip_lookup[trip_idx]['origin_stop_latitude'],
+                                'geo': line,
                                 'destination_stop': trip_lookup[trip_idx]['destination_stop'],
-                                'destination_stop_longitude': trip_lookup[trip_idx]['destination_stop_longitude'],
                                 'destination_stop_latitude': trip_lookup[trip_idx]['destination_stop_latitude'],
+                                'destination_stop_longitude': trip_lookup[trip_idx]['destination_stop_longitude'],
                                 'distance': segments[trip_idx]['distance'],
                                 'duration': segments[trip_idx]['duration'],
-                                'geo': line
+                                'mobile': route_list[0]['mobile'],
+                                'origin_stop': trip_lookup[trip_idx]['origin_stop'],
+                                'origin_stop_latitude': trip_lookup[trip_idx]['origin_stop_latitude'],
+                                'origin_stop_longitude': trip_lookup[trip_idx]['origin_stop_longitude'],
+                                'route': route
                             })
 
             time.sleep(6)

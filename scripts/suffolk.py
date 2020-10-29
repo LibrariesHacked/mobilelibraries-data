@@ -111,7 +111,8 @@ def run():
         'Village Stores, Otley': [52.151381, 1.220365],
         'Village Hall, Snape': [52.170943, 1.500930],
         'Near pond, Lound': [52.547929, 1.682302],
-        'Lound Hall, Lound': [52.530358, 1.702772]
+        'Lound Hall, Lound': [52.530358, 1.702772],
+        'Village Way, Waldringfield': [52.530358, 1.702772]
     }
 
     mobiles = []
