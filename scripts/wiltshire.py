@@ -11,8 +11,6 @@ import time
 from bs4 import BeautifulSoup
 from _common import create_mobile_library_file
 
-WEBSITE = 'https://www.suffolklibraries.co.uk'
-ROUTES = '/mobiles-home/mobile-route-schedules/'
 BOUNDS = '-2.3656,50.945,-1.4857,51.7031'
 NOM_URL = 'https://nominatim.openstreetmap.org/search?format=json&countrycodes=gb&q='
 DATA_OUTPUT_RAW = '../raw/wiltshire.csv'
@@ -96,7 +94,7 @@ def run():
     next(mobreader, None)  # skip the headers
     # Mobile,Route,Community,Stop,Address,Date,Day,Frequency,Start,End,Timetable
     for row in mobreader:
-      
+
       longitude = ''
       latitude = ''
 
@@ -108,23 +106,23 @@ def run():
           geo_json = requests.get(
               NOM_URL + row[2] + '&viewbox=' + BOUNDS).json()
 
-          if len(geo_json) > 0:
-            x = round(float(geo_json[0]['lon']), 5)
-            y = round(float(geo_json[0]['lat']), 5)
-            bbox = BOUNDS.split(',')
+        if len(geo_json) > 0:
+          x = round(float(geo_json[0]['lon']), 5)
+          y = round(float(geo_json[0]['lat']), 5)
+          bbox = BOUNDS.split(',')
 
-            if float(bbox[0]) <= x and x <= float(bbox[2]) and float(bbox[1]) <= y and y <= float(bbox[3]) and x not in coordinates:
-              # Don't add duplicates - we'll manually sort em out laters
-              coordinates.append(x)
-              longitude = x
-              latitude = y
-            else:
-              longitude = locations[address][1]
-              latitude = locations[address][0]
+          if float(bbox[0]) <= x and x <= float(bbox[2]) and float(bbox[1]) <= y and y <= float(bbox[3]) and x not in coordinates:
+            # Don't add duplicates - we'll manually sort em out laters
+            coordinates.append(x)
+            longitude = x
+            latitude = y
+      else:
+        longitude = locations[row[4]][1]
+        latitude = locations[row[4]][0]
 
       # Mobile,Route,Stop,Community,Address,Longitude,Latitude,Date,Day,Frequency,Start,End,Timetable
-      mobile = [row[0], row[1], row[3], row[2], row[4], '', longitude,
-                latitude, row[6], 'Public', row[8], row[9], row[7], row[5], row[10]]
+      mobile = [row[0], row[1], row[2], row[3], row[4], '', longitude,
+                latitude, row[6], 'Public', row[8], row[9], 'FREQ=WEEKLY;INTERVAL=4', row[5], '', '', row[10]]
       mobiles.append(mobile)
 
   create_mobile_library_file('Wiltshire', 'wiltshire.csv', mobiles)
