@@ -10,8 +10,9 @@ from shapely.geometry import Point
 from shapely.geometry import LineString
 
 API_KEY = '5b3ce3597851110001cf624860a035e0c0bf48c690561cefd3ff4769'
-STOP_DATA = '../data/suffolk.csv'
-OUTPUT_DATA = '../data/suffolk_routes.geojson'
+STOP_DATA = '../data/wiltshire.csv'
+OUTPUT_DATA = '../data/wiltshire_routes.geojson'
+
 
 def run():
     """Runs the main script"""
@@ -23,7 +24,8 @@ def run():
         reader = csv.reader(mobile_csv, delimiter=',', quotechar='"')
         next(reader, None)  # skip the headers
         # make sure the rows are sorted by mobile, route, and arrival time
-        sorted_rows = sorted(reader, key=lambda row: (row[1], row[2], datetime.strptime('01/01/2020 ' + row[11], '%d/%m/%Y %H:%M')))
+        sorted_rows = sorted(reader, key=lambda row: (
+            row[1], row[2], datetime.strptime('01/01/2020 ' + row[11], '%d/%m/%Y %H:%M')))
 
         for (idx, row) in enumerate(sorted_rows):
 
@@ -52,13 +54,14 @@ def run():
         }
 
         # construct the URL from the stops
-        url = 'https://api.openrouteservice.org/directions?format=geojson&api_key=' + \
-            API_KEY + '&profile=driving-hgv&preference=fastest&coordinates='
+        url = 'https://api.openrouteservice.org/v2/directions/driving-hgv/geojson'
+        headers = {'Authorization': API_KEY}
+        coordinates = []
         for (tr, idx) in enumerate(routes[route]):
 
             route_stop = routes[route][idx]
-            url = url + route_stop['longitude'] + \
-                ',' + route_stop['latitude'] + '|'
+            coordinates.append(
+                [route_stop['longitude'], route_stop['latitude']])
 
             # Keep track of our trips for later
             if 'origin_stop' in trip_stops and 'destination_stop' not in trip_stops:
@@ -87,7 +90,8 @@ def run():
 
         # Only continue if there is more than one stop
         if len(routes[route]) > 1:
-            res_data = requests.get(url[:-1]).json()
+            res_data = requests.post(
+                url, json={'coordinates': coordinates}, headers=headers).json()
 
             if 'error' not in res_data:
 
@@ -115,7 +119,8 @@ def run():
                         line = LineString(
                             res_data['features'][0]['geometry']['coordinates'][trip_item[0]:trip_item[1] + 1])
 
-                        route_list = [val for key, val in routes[route].items()]
+                        route_list = [val for key,
+                                      val in routes[route].items()]
                         geodata.append(
                             {
                                 'geo': line,
