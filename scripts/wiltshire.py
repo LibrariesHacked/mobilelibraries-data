@@ -115,7 +115,7 @@ locations = {
   'The Wheatsheaf, Lower Woodford': [51.114532, -1.822654], 
   'Long Leaze, Nettleton': [51.501181, -2.260505], 
   'Gloucester House, Salisbury': [51.083015, -1.803945], 
-  'St. Mark''s House, Salisbury': [51.075724, -1.786107], 
+  "St. Mark's House, Salisbury": [51.075724, -1.786107], 
   'Avonbourne Centre, Sarum': [51.099577, -1.789974], 
   'Hindes Meadow, Shrewton': [51.199727, -1.901414], 
   'Maddington Church Rooms, Shrewton': [51.194221, -1.905588], 
@@ -152,10 +152,10 @@ def run():
           stop_soup = BeautifulSoup(stop_html.text, 'html.parser')
 
           # General stop information
-          stop_name = stop_soup.find('h2').text
-          community = stop_name.split(', ')[0]
+          stop_name = stop_soup.find('h2').text.strip()
+          community = stop_name.split(', ')[0].strip()
           stop_name = stop_name.split(
-              ', ')[1].replace(' (fortnightly stop)', '')
+              ', ')[1].replace(' (fortnightly stop)', '').strip()
           address = stop_name + ', ' + community
 
           # There are some stops that are two weekly but they're part of separate routes.  Keep them separate
