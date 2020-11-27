@@ -126,7 +126,8 @@ locations = {
   'The Elms, Holt': [51.357116, -2.199859],
   'Laverstock Care Centre, Salisbury': [51.085704, -1.775490],
   'Hardy House, Salisbury': [51.068875, -1.803861],
-  'Longs Arms pub, Steeple Ashton': [51.310428, -2.135223]
+  'Longs Arms pub, Steeple Ashton': [51.310428, -2.135223],
+  'Brunel House, Box': [51.418952, -2.250902]
 }
 
 
