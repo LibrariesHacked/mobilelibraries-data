@@ -1,4 +1,4 @@
-# Mobile Libaries Data
+# Mobile libaries data
 
 This is a project for string and transforming data for the [mobile libraries project](https://blog.librarydata.uk/mobile-library-data-project).
 
