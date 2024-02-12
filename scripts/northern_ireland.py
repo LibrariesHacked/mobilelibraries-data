@@ -10,36 +10,32 @@ from bs4 import BeautifulSoup
 from _common import create_mobile_library_file
 
 WEBSITE = 'https://www.librariesni.org.uk'
-LIST_PAGE = '/Libraries/Pages/Mobile-Libraries.aspx'
+LIST_PAGE = '/libraries/mobile-libraries/'
 
 
 def run():
     """Runs the main script"""
 
-    dates = {
+    weeks = {
         '1': {
-            "Monday": "2019-04-08",
-            "Tuesday": "2019-04-09",
-            "Wednesday": "2019-04-10",
-            "Thursday": "2019-04-11",
-            "Friday": "2019-04-12",
-            "Saturday": "2019-04-13"
+            'Start': "2023-05-29",
+            'End': "2024-12-16"
         },
         '2': {
-            "Monday": "2019-04-15",
-            "Tuesday": "2019-04-16",
-            "Wednesday": "2019-04-17",
-            "Thursday": "2019-04-18",
-            "Friday": "2019-04-19",
-            "Saturday": "2019-04-20"
+            'Start': "2023-06-05",
+            'End': "2024-12-16"
+        },
+        '3': {
+            'Start': "2023-06-12",
+            'End': "2024-12-16"
+        },
+        '4': {
+            'Start': "2023-06-19",
+            'End': "2024-12-16"
         }
     }
 
-    mobiles = []
-
-    frequency = 'FREQ=WEEKLY;INTERVAL=2'
-
-    # A single web page listing mobiles
+    # The index page lists the individual mobile library pages
     mobile_list_html = requests.get(WEBSITE + LIST_PAGE)
     mobile_list_soup = BeautifulSoup(mobile_list_html.text, 'html.parser')
 
