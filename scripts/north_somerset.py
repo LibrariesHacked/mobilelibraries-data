@@ -7,17 +7,15 @@ from shapely.geometry import Point
 from _common import create_mobile_library_file
 
 DATA_SOURCE = '../raw/north_somerset.csv'
+TIMETABLE = 'https://www.n-somerset.gov.uk/my-services/leisure/libraries/bringing-the-library-to-you/mobile-library/'
 
 
 def run():
     """Runs the main script"""
-    mobiles_ns = []
-    mobiles_sg = []
-    timetable_ns = 'https://www.n-somerset.gov.uk/my-services/leisure/libraries/bringing-the-library-to-you/mobile-library/'
-    timetable_sg = 'https://www.southglos.gov.uk/libraries/mobile-library-almondsbury-severn-beach-pilning/'
+    mobiles = []
     mobile_library = 'Mobile'
 
-    with open(DATA_SOURCE, 'r') as northsom_raw:
+    with open(DATA_SOURCE, 'r', encoding='utf-8') as northsom_raw:
         mobreader = csv.reader(northsom_raw, delimiter=',', quotechar='"')
         next(mobreader, None)  # skip the headers
         for row in mobreader:
@@ -39,21 +37,13 @@ def run():
             latitude = str(point[0].y)
             address = stop_name + ', ' + community
 
-            if route == 'Thursday 1':
-                mobiles_sg.append(
-                    [mobile_library, route, community, stop_name, address, '', longitude, latitude,
-                        day, 'Public', arrival, departure, frequency, start, '', '', timetable_sg]
-                )
-            else:
-                mobiles_ns.append(
-                    [mobile_library, route, community, stop_name, address, '', longitude, latitude,
-                        day, 'Public', arrival, departure, frequency, start, '', '', timetable_ns]
-                )
+            mobiles.append(
+                [mobile_library, route, community, stop_name, address, '', longitude, latitude,
+                    day, 'Public', arrival, departure, frequency, start, '', '', TIMETABLE]
+            )
 
     create_mobile_library_file(
-        'North Somerset', 'north_somerset.csv', mobiles_ns)
-    create_mobile_library_file(
-        'South Gloucestershire', 'south_gloucestershire.csv', mobiles_sg)
+        'North Somerset', 'north_somerset.csv', mobiles)
 
 
 run()
