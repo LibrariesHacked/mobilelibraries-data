@@ -9,9 +9,9 @@ import time
 from shapely.geometry import Point
 from shapely.geometry import LineString
 
-API_KEY = '5b3ce3597851110001cf624860a035e0c0bf48c690561cefd3ff4769'
-STOP_DATA = '../data/wiltshire.csv'
-OUTPUT_DATA = '../data/wiltshire_routes.geojson'
+API_KEY = '5b3ce3597851110001cf624843265134879f4af891bea9acf99ebbc7'
+STOP_DATA = '../data/north_somerset.csv'
+OUTPUT_DATA = '../data/north_somerset_routes.geojson'
 
 
 def run():
