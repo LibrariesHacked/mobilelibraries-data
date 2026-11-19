@@ -1,53 +1,51 @@
-# Route Geometry Generation
+# Driving routes between stops
 
-This repository includes a routing engine in [`scripts/routing.py`](../scripts/routing.py) that generates realistic road geometries and travel estimates between consecutive stops on mobile library routes.
-
----
-
-## 1. Routing Engines & Technology
-
-Mobile libraries travel on public roads between scheduled stops. The routing engine supports two providers:
-
-1. **OpenRouteService (ORS):**
-   - **Profile:** `driving-hgv` (Heavy Goods Vehicle restrictions: weight, height, axle limits).
-   - **Authentication:** Requires `ORS_API_KEY` environment variable.
-2. **Open Source Routing Machine (OSRM):**
-   - **Profile:** Standard driving road network based on live OpenStreetMap data.
-   - **Authentication:** None required (zero-config open fallback).
-
-### Chronological Waypoint Sequencing
-Before generating directions, stops on each route schedule are automatically sorted chronologically by scheduled `Arrival` time. This guarantees that road geometries follow the true driving sequence rather than arbitrary timetable order.
+This guide explains how we calculate the driving path, distance, and travel time between consecutive stops on a mobile library route.
 
 ---
 
-## 2. Running the Routing Engine
+## How routes are calculated
 
-### Using OpenRouteService (HGV Profile)
-1. Register at [openrouteservice.org/sign-up](https://openrouteservice.org/sign-up).
-2. Set your API key:
-   - **Linux / macOS:** `export ORS_API_KEY="your-api-key"`
-   - **Windows (PowerShell):** `$env:ORS_API_KEY="your-api-key"`
+Mobile library vehicles travel on public roads between scheduled stops. Rather than drawing straight lines through the air, our routing script [`scripts/routing.py`](../scripts/routing.py) works out the actual driving path along the road network.
 
-### Using OSRM (Zero-Config Open Default)
-No API key is required. Simply run the routing command:
+* **Driving order:** Stops on each route are automatically sorted by their scheduled arrival time, so the path follows the van's real journey through the day.
+* **Travel measurements:** The script measures the driving distance in metres and the estimated driving time in seconds between each stop.
+
+---
+
+## Routing services
+
+The script can use two routing providers:
+
+1. **OSRM (open default):**
+   * Uses live OpenStreetMap road network data.
+   * Free and requires no account or API key.
+2. **OpenRouteService (lorry / HGV profile):**
+   * Uses commercial vehicle rules to avoid roads with low bridges, narrow lanes, or weight restrictions.
+   * Requires a free API key from [openrouteservice.org](https://openrouteservice.org/). To use it, set the key in your terminal as `ORS_API_KEY`.
+
+---
+
+## How to run the routing script
+
+You can work out routes from your terminal:
 
 ```bash
-# Generate road geometries for a single authority
+# Calculate routes for a single council
 python scripts/routing.py --authority shropshire
 
-# Generate road geometries across all active authorities
+# Calculate routes for all councils
 python scripts/routing.py --all
 
-# Force regenerate existing route files
+# Force the script to recalculate routes that already exist
 python scripts/routing.py --authority somerset --force
 ```
 
 ---
 
-## 3. Output Formats
+## Where route files are saved
 
-Outputs are saved directly to `data/routes/`:
+All route files are saved in the `data/routes/` folder:
 
-- `data/routes/<slug>_routes.geojson`: GeoJSON FeatureCollection containing `LineString` road network coordinates with trip distances and durations.
-- `data/routes/<slug>_routes.csv`: Tabular trip segments with Well-Known Text (WKT) geometries:
-  - `WKT`, `origin_stop`, `origin_stop_latitude`, `origin_stop_longitude`, `destination_stop`, `destination_stop_latitude`, `destination_stop_longitude`, `distance` (metres), `duration` (seconds), `mobile`, `route`.
+* **`data/routes/<council>_routes.csv`**: A spreadsheet of journeys between stops. Each row shows the starting stop, destination stop, driving distance, driving time, and the road line geometry.
+* **`data/routes/<council>_routes.geojson`**: A map file that can be opened in mapping tools (like QGIS or web maps) to display the road lines visually.

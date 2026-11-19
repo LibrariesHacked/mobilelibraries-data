@@ -1,38 +1,35 @@
-# Geocoding & Spatial Standards
+# Location and map coordinates
 
-This document outlines the geocoding rules, coordinate precision standards, and spatial boundary gating enforced across all mobile library datasets in this repository.
-
----
-
-## 1. Coordinate Precision Standard
-
-All coordinates (`GeoX` longitude and `GeoY` latitude) are normalized to **5 decimal places** (e.g. `53.02340`, `-3.56120`).
-
-### Why 5 Decimal Places?
-- **Ground Resolution:** At UK latitudes (50°–58° N), 5 decimal places represents roughly **1.1 metres** north-south and **0.6–0.7 metres** east-west.
-- **Physical Fit:** Mobile library vehicles are heavy commercial vehicles (typically 8 to 12 metres long and 2.5 metres wide). 5 decimal places lands accurately within the physical parking bay, layby, or school turnaround area without introducing false millimetre-level precision.
-- **Data Footprint:** It minimizes file size across the nationwide CSV and GeoJSON datasets and prevents diff churn.
+This guide explains how mobile library stop locations are found, how accurate the coordinates need to be, and how we check that stops are in the right council area.
 
 ---
 
-## 2. Spatial Bounding Box Gating
+## Why coordinates use 5 decimal places
 
-To prevent automated geocoding hallucinations (e.g. homonym villages resolving to another county, country, or overseas continent):
+All coordinates (`GeoX` longitude and `GeoY` latitude) are stored to **5 decimal places** (for example, `53.02340` and `-3.56120`).
 
-1. **Bounding Box Registry (`geocache/authority_bboxes.json`):**
-   - Every library authority has an authoritative spatial bounding box envelope (`min_lat`, `max_lat`, `min_lon`, `max_lon`) derived from ONS / OS OpenData boundaries.
-2. **Automated Gating:**
-   - Both `scripts/_common.py` (`is_in_bbox()`) and `scripts/geocoder.py` enforce these bounds on all candidate locations returned by external APIs (Postcodes.io, Nominatim, OS Open Names).
-   - Any candidate coordinates falling outside the authority's spatial envelope are automatically rejected.
-3. **Fail-Safe Blanking:**
-   - When an address cannot be accurately placed within the verified bounds, coordinates remain blank (`""`) rather than placing a point in an incorrect location.
+Here is why:
+* **The right size:** In the UK, 5 decimal places is accurate to about 1 metre. A mobile library is a large vehicle (usually 8 to 11 metres long), so 1 metre is accurate enough to pinpoint the exact parking bay, village hall layby, or school gates.
+* **Avoiding false precision:** Using 7 or 8 decimal places would suggest we know where the van parks down to the nearest millimetre, which is unrealistic.
+* **Smaller file sizes:** Keeping coordinates to 5 decimal places keeps the files compact and easy to download.
 
 ---
 
-## 3. Persistent Geocache (`geocache/stops_reference.json`)
+## Keeping stops within council boundaries
 
-To ensure reproducibility, minimize external network requests, and preserve manually verified curb pin drops:
+Sometimes different places across the country share the same name (for example, there is a Newport in Wales, Shropshire, and the Isle of Wight).
 
-- **Structure:** Keyed by normalized `f"{authority}::{community}::{stop}"` and `f"{authority}::{stop}"`.
-- **Precedence:** Geocoders check `stops_reference.json` before making external HTTP queries.
-- **Curated Pin Drops:** Complex roadside halts, crofting townships, and rural halts without distinct postcodes (e.g., Highland crofts, remote farm cottages, urban road junctions) are permanently recorded in this reference file with their verified coordinates.
+To stop computer tools from placing a stop in the wrong county:
+1. **Boundary boxes:** Every council has an official boundary area stored in `geocache/authority_bboxes.json`.
+2. **Automatic checking:** When an address is converted into map coordinates, the script checks whether the coordinates fall inside that council's area. If they fall outside, they are rejected.
+3. **Leaving unknown spots blank:** If a location cannot be verified with confidence, we leave the coordinates blank rather than guessing or putting a pin in the wrong place.
+
+---
+
+## Saved verified locations
+
+Many mobile library stops are in rural spots that do not have their own building or unique postcode (such as farm road ends, laybys, or village greens).
+
+We save coordinates that have been verified by hand in `geocache/stops_reference.json`. When a scraper runs:
+* It looks up the stop in the saved list first.
+* This ensures that manually checked positions are kept safe and stops are consistently plotted in the right place every time the data updates.

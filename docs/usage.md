@@ -1,65 +1,60 @@
-# Usage & Workflows
+# How to run the scripts
 
-This guide covers running harvesters, aggregating nationwide datasets, and generating road route geometries.
+This guide explains how to collect timetable data for a council, combine all stops into a single UK file, and work out driving routes.
 
 ---
 
-## 1. Running an Authority Harvester
+## 1. Updating data for a council
 
-Each authority has an independent scraper script in the `scripts/` directory that fetches live timetables, normalises coordinates, and outputs to `data/<slug>.csv`:
+Each council that runs a mobile library has its own Python script in the `scripts/` folder.
+
+Running the script visits the council's website or downloads their published timetable, works out the map coordinates, and saves the results in `data/<council>.csv`:
 
 ```bash
-# Run a specific authority scraper
+# Run a specific council script
 python scripts/conwy.py
 python scripts/leicestershire.py
 python scripts/highland.py
 ```
 
-Harvester scripts:
-* Fetch source timetable documents (HTML, PDF, ArcGIS REST endpoints).
-* Store raw responses in `raw/<slug>/<date>/`.
-* Format dates and times into standard 24-hour `%H:%M` format.
-* Normalise coordinates to 5 decimal places (~1.1 m precision).
-* Validate output against `schemas/mobile-library-stops.json`.
+What the script does:
+* Downloads the council's timetable (from a webpage, PDF leaflet, or council database).
+* Saves a copy of the original timetable in `raw/<council>/<date>/` so we have a record.
+* Converts times into the standard 24-hour clock (like `10:15`).
+* Works out map coordinates for each stop to 5 decimal places.
+* Checks the file to make sure it matches the required standard.
 
 ---
 
-## 2. Aggregating the Nationwide Dataset
+## 2. Combining all stops into a single UK file
 
-To combine all 48 local authority datasets into a single nationwide view:
+To merge all individual council files into one nationwide dataset, run:
 
 ```bash
 python scripts/combine.py
 ```
 
-This generates:
-* **`data/uk_mobile_library_stops.csv`**: Unified CSV containing over 8,100 stops with the 19-column Table Schema.
-* **`data/uk_mobile_library_stops.geojson`**: Spatial Point features (WGS84, 5 decimal places) ready for web maps, GIS (QGIS, ArcGIS), Kepler.gl, or MapLibre.
-* **`data/library-services.csv`**: Reference lookup of statutory local authority codes (`Local authority code` -> `Local authority`) satisfying foreign keys in the Data Package.
+This updates two files in the `data/` folder:
+* **`data/uk_mobile_library_stops.csv`**: A single spreadsheet containing all 8,100+ stops across the UK.
+* **`data/uk_mobile_library_stops.geojson`**: A map file that can be opened in mapping tools (such as QGIS, ArcGIS, or web map viewers) to see every stop as a pin on a map.
 
 ---
 
-## 3. Generating Road Route Geometries
+## 3. Calculating driving routes between stops
 
-To compute realistic driving routes between sequential stops on each mobile route schedule:
+To work out the road path and driving time between consecutive stops on each route:
 
 ```bash
-# Generate routes for a single authority
+# Calculate routes for a single council
 python scripts/routing.py --authority shropshire
 
-# Generate routes across all authorities
+# Calculate routes for all councils
 python scripts/routing.py --all
 
-# Force regeneration of existing route files
+# Force the script to recalculate routes that already exist
 python scripts/routing.py --authority somerset --force
 ```
 
-### Routing Engines
-* **OSRM (Default):** Runs against the OpenStreetMap road network with zero setup or API keys needed.
-* **OpenRouteService (`driving-hgv`):** Enabled when `ORS_API_KEY` is set in the environment for Heavy Goods Vehicle restrictions.
+By default, the script uses the free OpenStreetMap road network (OSRM) with no setup required.
 
-Outputs are written to:
-* `data/routes/<slug>_routes.geojson`: GeoJSON LineString geometries following public roads.
-* `data/routes/<slug>_routes.csv`: Tabular road trip segments with Well-Known Text (WKT) geometries, driving distances (metres), and durations (seconds).
-
-See [docs/routing.md](routing.md) for complete details.
+All route files are saved in `data/routes/`. For more information, see [driving routes between stops](routing.md).

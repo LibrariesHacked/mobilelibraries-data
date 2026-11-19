@@ -1,75 +1,70 @@
-# Data Schema & Recurrence Rules
+# Data schema and visit frequency
 
-This repository publishes mobile library stop and schedule data conforming to the [Frictionless Table Schema](https://specs.frictionlessdata.io/table-schema/) standard.
+This guide explains how mobile library stops are stored in the data files, what each column means, and how repeating timetables are written.
 
-The primary schema definition is maintained in [`schemas/mobile-library-stops.json`](../schemas/mobile-library-stops.json).
-
----
-
-## Stops Data Dictionary
-
-Every authority stops dataset in `data/<slug>.csv` and the combined dataset `data/uk_mobile_library_stops.csv` contains the following 19 columns:
-
-| Field | Type | Format | Constraints | Description | Example |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| `Local authority` | string | default | required | Official administrative name of the library authority | `Conwy County Borough Council` |
-| `Local authority code`| string | default | regex: `^[ENSW][0-9]{8}$` | Official ONS/GSS administrative identifier | `W06000003` |
-| `Mobile name` | string | default | required | Vehicle identifier or mobile service name | `Mobile Library 1` |
-| `Route` | string | default | required | Route or schedule grouping identifier | `Week 1 Tuesday` |
-| `Community` | string | default | optional | Town, village, parish, or district | `Cerrigydrudion` |
-| `Stop` | string | default | required | Specific stopping place, facility, or landmark | `Parish Hall Car Park` |
-| `Address` | string | default | optional | Full postal address or location description | `High Street, Cerrigydrudion` |
-| `Postcode` | string | default | optional (valid UK postcode) | Postcode of stop location | `LL21 4ST` |
-| `GeoX` | number | default | optional (-9.0 to 2.5) | Longitude in decimal degrees (WGS84, 5 decimal places) | `-3.56120` |
-| `GeoY` | number | default | optional (49.0 to 61.5) | Latitude in decimal degrees (WGS84, 5 decimal places) | `53.02340` |
-| `Day` | string | default | enum: `Monday`..`Sunday` | Day of the week for the stop | `Tuesday` |
-| `Type` | string | default | enum: `Public`, `Private`, `Dynamic`, `Other` | Access type of the stop | `Public` |
-| `Arrival` | time | `%H:%M` | required | Scheduled arrival time in 24-hour clock | `10:15` |
-| `Departure` | time | `%H:%M` | required | Scheduled departure time in 24-hour clock | `11:00` |
-| `Frequency` | string | default | RFC 5545 RRULE | Frequency format for recurrence | `FREQ=WEEKLY;INTERVAL=3` |
-| `Start` | date | `%Y-%m-%d`| required | Start date of current timetable period | `2026-01-05` |
-| `End` | date | `%Y-%m-%d`| optional | End date of timetable period (if defined) | `2026-12-23` |
-| `Exceptions` | string | default | optional | Comma-separated ISO-8601 dates (`YYYY-MM-DD`) on which this stop is not visited. Plain text like 'Public holidays' is prohibited. | `2026-05-04,2026-05-25` |
-| `Timetable` | string | uri | optional | Official source URL where timetable is published | `https://www.conwy.gov.uk/...` |
+The formal specification is stored in [`schemas/mobile-library-stops.json`](../schemas/mobile-library-stops.json).
 
 ---
 
-## Exceptions Field Format
+## Stop columns and descriptions
 
-Following the official [schema.librarydata.uk mobile library stops specification](https://schema.librarydata.uk/mobile-library-stops):
-- **Allowed values:** Either completely empty (`""`) or a comma-separated list of ISO-8601 dates in `YYYY-MM-DD` format (e.g. `2026-05-04,2026-05-25`).
-- **Prohibited:** Descriptive text phrases such as `"Public holidays"`, `"Bank holidays"`, `"Christmas period"`, or `"Week 1 Monday (maintenance)"` are strictly prohibited.
-- **Rule of thumb:** If the authority provides a general statement (e.g. "mobile libraries do not run on bank holidays") without listing explicit dates, leave the `Exceptions` field empty. If explicit closure dates are scheduled, format each as `YYYY-MM-DD`.
+Every council file in `data/<council>.csv` and the combined nationwide file `data/uk_mobile_library_stops.csv` uses the same 19 columns:
+
+| Column | Type | Is it required? | What it means | Example |
+| :--- | :--- | :--- | :--- | :--- |
+| `Local authority` | text | Yes | The council responsible for the service | `Conwy County Borough Council` |
+| `Local authority code` | text | Yes | Official 9-character council code (from the ONS) | `W06000003` |
+| `Mobile name` | text | Yes | Name of the van or mobile vehicle | `Mobile Library 1` |
+| `Route` | text | Yes | Name or identifier for the route schedule | `Week 1 Tuesday` |
+| `Community` | text | Optional | Village, town, parish, or neighbourhood | `Cerrigydrudion` |
+| `Stop` | text | Yes | Exact place where the van parks | `Parish Hall Car Park` |
+| `Address` | text | Optional | Street address or helpful directions | `High Street, Cerrigydrudion` |
+| `Postcode` | text | Optional | Nearest UK postcode | `LL21 4ST` |
+| `GeoX` | number | Optional | Longitude coordinate (how far east or west) | `-3.56120` |
+| `GeoY` | number | Optional | Latitude coordinate (how far north or south) | `53.02340` |
+| `Day` | text | Yes | Day of the week the van visits | `Tuesday` |
+| `Type` | text | Yes | Usually `Public` (available to everyone) | `Public` |
+| `Arrival` | time | Yes | When the van arrives (24-hour clock, HH:MM) | `10:15` |
+| `Departure` | time | Yes | When the van leaves (24-hour clock, HH:MM) | `11:00` |
+| `Frequency` | text | Yes | How often the visit repeats (see below) | `FREQ=WEEKLY;INTERVAL=3` |
+| `Start` | date | Yes | First date this timetable applies from | `2026-01-05` |
+| `End` | date | Optional | Last date this timetable applies to (if known) | `2026-12-23` |
+| `Exceptions` | text | Optional | Specific dates when the van will not visit | `2026-05-04,2026-05-25` |
+| `Timetable` | link | Optional | Web address for the council's timetable page | `https://www.conwy.gov.uk/...` |
 
 ---
 
-## Recurrence Rule Format (RFC 5545)
+## How exceptions and closures are written
 
-The `Frequency` field strictly follows the **iCalendar RFC 5545 RRULE** recurrence rule specification:
+The `Exceptions` column lists specific dates when a scheduled stop will not happen (for example, on a bank holiday or when a van is in for servicing).
 
-### 1. Weekly & Multi-Weekly Cycles
+* **Format:** Dates must be written as a comma-separated list in year-month-day order (`YYYY-MM-DD`). For example: `2026-05-04,2026-05-25`.
+* **No plain text words:** General phrases like `"Public holidays"`, `"Bank holidays"`, or `"Closed over Christmas"` cannot be used here.
+* **If dates are not published:** If the council only says "does not run on public holidays" without listing specific dates, leave this column blank.
 
-Used when stops recur at fixed interval intervals of weeks on the specified `Day`:
+---
 
-| Pattern | RFC 5545 RRULE | Meaning |
+## How visit frequency is recorded
+
+Mobile libraries visit stops on a repeating cycle (such as every week, every two weeks, or on the first Monday of each month). We record this using the standard calendar format (iCalendar RFC 5545).
+
+### Weekly and multi-weekly cycles
+
+Most mobile library stops happen at a regular number of weeks on the named `Day`:
+
+| Cycle | How it is written | What it means |
 | :--- | :--- | :--- |
-| **Weekly** | `FREQ=WEEKLY;INTERVAL=1` | Visits occur once every week |
-| **Fortnightly** | `FREQ=WEEKLY;INTERVAL=2` | Visits occur every two weeks |
-| **3-Weekly** | `FREQ=WEEKLY;INTERVAL=3` | Visits occur every three weeks |
-| **4-Weekly** | `FREQ=WEEKLY;INTERVAL=4` | Visits occur every four weeks |
+| **Every week** | `FREQ=WEEKLY;INTERVAL=1` | The van visits every single week |
+| **Every two weeks** | `FREQ=WEEKLY;INTERVAL=2` | The van visits fortnightly |
+| **Every three weeks** | `FREQ=WEEKLY;INTERVAL=3` | The van visits every 3 weeks |
+| **Every four weeks** | `FREQ=WEEKLY;INTERVAL=4` | The van visits every 4 weeks |
 
-### 2. Monthly Cycles by Weekday Pattern
+### Monthly patterns by day of the week
 
-Used when stops visit on specific nth weekdays of each month:
+Some services visit on a specific week of each month:
 
-| Pattern | RFC 5545 RRULE | Meaning |
+| Pattern | How it is written | What it means |
 | :--- | :--- | :--- |
-| **1st Monday** | `FREQ=MONTHLY;BYDAY=1MO` | Visits the first Monday of each month |
-| **3rd Thursday** | `FREQ=MONTHLY;BYDAY=3TH` | Visits the third Thursday of each month |
-| **2nd & 4th Wednesday** | `FREQ=MONTHLY;BYDAY=2WE,4WE` | Visits on both 2nd and 4th Wednesdays |
-| **Last Friday** | `FREQ=MONTHLY;BYDAY=-1FR` | Visits the final Friday of each month |
-
-Validation regex used in test suites:
-```regex
-^FREQ=(WEEKLY;INTERVAL=[1-9][0-9]*|MONTHLY;BYDAY=-?[1-5](MO|TU|WE|TH|FR|SA|SU)(,-?[1-5](MO|TU|WE|TH|FR|SA|SU))*)$
-```
+| **First Monday** | `FREQ=MONTHLY;BYDAY=1MO` | Visits on the first Monday of each month |
+| **Third Thursday** | `FREQ=MONTHLY;BYDAY=3TH` | Visits on the third Thursday of each month |
+| **Second and fourth Wednesday** | `FREQ=MONTHLY;BYDAY=2WE,4WE` | Visits on both the 2nd and 4th Wednesdays |

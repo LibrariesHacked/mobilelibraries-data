@@ -1,43 +1,43 @@
-# Authority Services Registry (`services.csv`)
+# List of all UK library services
 
-[`services.csv`](../services.csv) is the master administrative register tracking mobile library provision across all **216 UK library authorities**.
+The [`services.csv`](../services.csv) file is a master list tracking mobile library provision across all **216 library authorities** in the UK.
 
----
-
-## Schema & Core Fields
-
-The file adheres to the Frictionless schema defined in [`datapackage.json`](../datapackage.json):
-
-| Field | Type | Description | Example |
-| :--- | :--- | :--- | :--- |
-| `local_authority` | string | Common name of the local authority | `Conwy` |
-| `official_name` | string | Full legal administrative name | `Conwy County Borough Council` |
-| `local_authority_code` | string | Official ONS/GSS administrative identifier | `W06000003` |
-| `nation` | string | UK nation (`England`, `Scotland`, `Wales`, `Northern Ireland`) | `Wales` |
-| `authority_type` | string | Local government structure (e.g. `Unitary Authority`, `County Council`) | `Unitary Authority` |
-| `dataset_slug` | string | Unique filename slug matching `data/<slug>.csv` | `conwy` |
-| `has_mobile_service` | string | `Yes` or `No` | `Yes` |
-| `status` | string | Provision status category (see below) | `Active Verified` |
-| `source_url` | string | Official council timetable or service web page | `https://www.conwy.gov.uk/...` |
-| `last_checked` | date | Date the service website was last inspected | `2026-11-19` |
-| `last_updated` | date | Date the timetable data was last updated | `2026-11-19` |
-| `notes` | string | Operational context, vehicle fleet info, or discontinuation notes | `2-vehicle fleet; 3-weekly rota` |
+It records whether each council operates a mobile library van, links to their timetable pages, and notes services that have closed or changed over time.
 
 ---
 
-## Provision Status Categories
+## Columns in services.csv
 
-Every authority is classified into one of the following verified statuses:
+| Column | What it means | Example |
+| :--- | :--- | :--- |
+| `local_authority` | Common name of the council | `Conwy` |
+| `official_name` | Full legal name of the council | `Conwy County Borough Council` |
+| `local_authority_code` | Official 9-character code from the Office for National Statistics | `W06000003` |
+| `nation` | UK nation (`England`, `Scotland`, `Wales`, or `Northern Ireland`) | `Wales` |
+| `authority_type` | Council type (such as `County Council` or `Unitary Authority`) | `Unitary Authority` |
+| `dataset_slug` | Short name matching the filename in `data/` and `scripts/` | `conwy` |
+| `has_mobile_service` | Whether the council currently runs a mobile library (`Yes` or `No`) | `Yes` |
+| `status` | Category explaining service status (see below) | `Active Verified` |
+| `source_url` | Web link to the council's timetable or consultation page | `https://www.conwy.gov.uk/...` |
+| `last_checked` | Date the website was last checked by us | `2026-11-19` |
+| `last_updated` | Date the timetable data was last updated | `2026-11-19` |
+| `notes` | Extra context, such as vehicle numbers or reasons for closure | `2 vehicles; 3-weekly cycle` |
 
-1. **`Active Verified` (50 authorities):**
-   - Service is actively operating with public scheduled timetables harvested and maintained in `data/<slug>.csv`.
-2. **`No Mobile (Urban/Home Delivery)` (123 authorities):**
-   - The authority operates static branches and/or Home Library Delivery services for vulnerable residents, but no mobile library vehicle.
-3. **`Discontinued` (34 authorities):**
-   - The authority previously operated mobile library routes, but the service was decommissioned or replaced with community hubs/postal delivery.
-4. **`Active (No Public Timetable)` (2 authorities):**
-   - Active mobile vehicles exist, but service visits are arranged privately, on-demand, or restricted to schools/nursing homes without fixed public timetables (e.g. Isle of Anglesey, Ceredigion).
-5. **`Active - On Demand` (1 authority):**
-   - On-demand mobile service (Comhairle nan Eilean Siar / Western Isles).
-6. **`Dissolved Historic Council` (4 authorities):**
-   - Historic administrative entities abolished during local government reorganisation.
+---
+
+## Mobile service status types
+
+Every council is given one of these verified statuses:
+
+1. **`Active Verified` (50 councils):**
+   * The council currently runs a mobile library and publishes a timetable of public stops. Data is collected and kept up to date in `data/<council>.csv`.
+2. **`No Mobile (Urban/Home Delivery)` (123 councils):**
+   * The council does not operate a mobile library vehicle. Most of these are city and town councils where residents live close to a physical library building, or councils that deliver books directly to people's homes.
+3. **`Discontinued` (34 councils):**
+   * The council used to run a mobile library, but the service has closed down.
+4. **`Active (No Public Timetable)` (2 councils):**
+   * A mobile van exists, but stops are not published as a fixed public timetable (for example, stops visit schools, care homes, or are booked privately).
+5. **`Active - On Demand` (1 council):**
+   * Mobile services that visit communities when residents request them (such as in the Western Isles).
+6. **`Dissolved Historic Council` (4 councils):**
+   * Older councils that no longer exist due to local government mergers.

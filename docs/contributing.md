@@ -1,15 +1,16 @@
-# Contributing Guide
+# How to contribute
 
-Contributions to improve data accuracy, add new authorities, or fix timetable changes are very welcome.
+We welcome contributions to help keep mobile library data accurate, add new councils, or fix timetable changes.
 
 ---
 
-## Adding or Updating an Authority
+## Adding or updating a council
 
-### 1. Creating a Harvester Script
-Each authority has a dedicated script in `scripts/<slug>.py` (matching the `dataset_slug` in `services.csv`).
+### 1. Creating a council script
 
-Always import shared helper utilities from [`scripts/_common.py`](../scripts/_common.py) rather than reimplementing them:
+Each council has its own script in `scripts/<council_name>.py`.
+
+When writing or updating a script, use the shared helper functions in [`scripts/_common.py`](../scripts/_common.py) to save time:
 
 ```python
 from pathlib import Path
@@ -26,37 +27,36 @@ from _common import (
 from geocoder import Geocoder
 ```
 
-### 2. Follow Schema Guidelines
-- **All 19 Schema Columns:** Ensure every required column in [`docs/schema.md`](schema.md) is populated.
-- **24-Hour Times:** All times must be zero-padded `HH:MM` in 24-hour clock (use `clean_time_24h`).
-- **Postcodes:** Validated UK format with single space (use `normalise_postcode`).
-- **Coordinates:** Standardized to **5 decimal places** (use `round(float(val), 5)`).
-- **Recurrence Rules:** The `Frequency` column must strictly use RFC 5545 RRULE format (e.g. `FREQ=WEEKLY;INTERVAL=2`).
+### 2. Following the data format
 
-### 3. Preserving Raw Timetable Snapshots
-Save downloaded PDF or HTML source documents to `raw/<slug>/<YYYY-MM-DD>/` using `save_raw()`. This ensures all transformations can be inspected and run offline for verification.
+* **All 19 columns:** Make sure your output matches the columns in [data schema and visit frequency](schema.md).
+* **Times:** Use the 24-hour clock (such as `10:15` or `14:30`).
+* **Postcodes:** Use standard UK postcode formatting with a single space (such as `LL21 4ST`).
+* **Coordinates:** Format latitude and longitude to 5 decimal places (like `53.02340`).
+* **Visit frequency:** Record cycles using standard calendar rules (such as `FREQ=WEEKLY;INTERVAL=2` for visits every two weeks).
 
-### 4. Rebuilding Aggregations
-After creating or updating an authority CSV:
-1. Run `python scripts/<slug>.py` to generate `data/<slug>.csv`.
-2. Run `python scripts/combine.py` to regenerate the nationwide `uk_mobile_library_stops.csv` and GeoJSON.
-3. Validate the Data Package:
+### 3. Saving raw timetable files
+
+Always save a copy of the original timetable document (HTML, PDF, or data file) into `raw/<council>/<YYYY-MM-DD>/` using `save_raw()`. This provides a permanent record and allows anyone to verify the data offline.
+
+### 4. Updating the combined files
+
+After generating or updating a council file:
+1. Run `python scripts/<council_name>.py` to create or update `data/<council_name>.csv`.
+2. Run `python scripts/combine.py` to update the UK-wide files.
+3. Check the data:
    ```bash
-   frictionless validate datapackage.json
+   python scripts/validate.py
    ```
 
 ---
 
-## Submitting Pull Requests
+## Submitting your changes
 
-1. Fork the repo and create your branch from `main`:
+1. Fork the repository and create your branch from `main`:
    ```bash
-   git checkout -b feature/update-<slug>
+   git checkout -b feature/update-<council_name>
    ```
-2. Verify all tests pass:
-   ```bash
-   python -m pytest tests/  # or run Frictionless validation
-   frictionless validate datapackage.json
-   ```
+2. Make your changes and run `python scripts/validate.py` to ensure all checks pass.
 3. Commit your changes with a clear commit message.
-4. Open a Pull Request referencing the authority updated.
+4. Open a pull request describing the changes you made.
