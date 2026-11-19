@@ -20,6 +20,7 @@ TIMETABLE_URL = 'https://baneslibraries.co.uk/visit-our-libraries/mobile-library
 
 
 def run():
+    """Deduplicate B&NES Tribe Events JSON stops, geocode them, and write data/bath_and_north_east_somerset.csv."""
     geocoder = Geocoder()
     events = json.loads(RAW_JSON.read_text(encoding='utf-8'))
 
@@ -59,6 +60,7 @@ def run():
                 'community': comm_name,
                 'stop': stop_name,
                 'address': f"{addr}, {comm_name}, Bath & North East Somerset".strip(', '),
+                # Require full two-part UK postcode (outcode + incode)
                 'postcode': zip_code if len(zip_code.split()) == 2 else '',
                 'day': day_name,
                 'arrival': arr,

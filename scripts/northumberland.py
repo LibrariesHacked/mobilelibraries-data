@@ -6,6 +6,7 @@ Harvests live timetables from Northumberland Libraries Spydus portal:
 Resolves postcodes, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import batch_lookup_postcodes, clean_time_24h
 import os
 import re
 import json
@@ -34,52 +35,16 @@ ROUTES_CONFIG = [
 ]
 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor'}
+# Match standard UK postcode formats
 POSTCODE_RE = re.compile(r"([A-Z]{1,2}[0-9][0-9A-Z]?\s*[0-9][A-Z]{2})", re.I)
 
 
-def clean_time_24h(t_str: str) -> str:
-    if not t_str:
-        return ""
-    t_str = t_str.strip().lower().replace(".", ":")
-    m = re.search(r"(\d{1,2}):(\d{2})", t_str)
-    if m:
-        h = int(m.group(1))
-        mins = m.group(2)
-        return f"{h:02d}:{mins}"
-    return ""
 
 
-def batch_lookup_postcodes(postcodes_list):
-    results = {}
-    clean_pcs = [p.replace(" ", "").upper() for p in postcodes_list if p]
-    pc_map = {p.replace(" ", "").upper(): p for p in postcodes_list if p}
-    
-    unique_pcs = list(pc_map.keys())
-    for i in range(0, len(unique_pcs), 100):
-        chunk = unique_pcs[i:i+100]
-        data = json.dumps({"postcodes": chunk}).encode("utf-8")
-        req = urllib.request.Request(
-            "https://api.postcodes.io/postcodes",
-            data=data,
-            headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"}
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=12) as resp:
-                res = json.loads(resp.read().decode("utf-8"))
-                for item in res.get("result", []):
-                    query_pc = item.get("query")
-                    orig_pc = pc_map.get(query_pc, query_pc)
-                    res_val = item.get("result")
-                    if res_val and "longitude" in res_val and "latitude" in res_val:
-                        results[orig_pc] = (res_val["latitude"], res_val["longitude"])
-                        results[query_pc] = (res_val["latitude"], res_val["longitude"])
-        except Exception as e:
-            print(f"Batch lookup error for chunk {i}: {e}")
-        time.sleep(0.15)
-    return results
 
 
 def run():
+    """Fetch Northumberland Spydus routes, geocode postcodes, write data/northumberland.csv, validate, and update registries."""
     print(f"[{SLUG}] Starting ingestion for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", SLUG, date_stamp)
@@ -114,7 +79,7 @@ def run():
         print(f"[{SLUG}] Found {len(tables)} route tables for {v_name}")
 
         for t in tables:
-            # Look backwards for route title and dates
+            # Look backwards up to 10 preceding elements for route title and dates
             curr = t
             route_title = ""
             dates_str = ""
@@ -123,6 +88,7 @@ def run():
                 if not curr:
                     break
                 txt = curr.get_text(" ", strip=True)
+                # Match route week header (e.g. "Week 1") or 2026/ordinal date range
                 if re.search(r"Week\s+\d", txt, re.I) and not route_title:
                     route_title = txt
                 elif re.search(r"2026:|\d{1,2}(?:st|nd|rd|th)\s+[A-Za-z]+", txt) and not dates_str:
@@ -255,6 +221,7 @@ def run():
     # Frictionless validation
     print(f"[{SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Disable foreign key checks because reference tables are validated separately
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

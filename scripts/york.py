@@ -5,6 +5,7 @@ Harvests routes, timetables, and stops from Explore York official portal
 Geocodes via postcodes.io, validates schema compliance, and updates services.csv and geocache.
 """
 
+from _common import bulk_lookup_postcodes, clean_time, parse_time_range
 import os
 import re
 import csv
@@ -38,7 +39,7 @@ POSTCODE_MAP = {
     "acastermalbis-mountpleasant": "YO23 2UQ",
     "askhambryan-thepub": "YO23 3QS",
     "askhamrichard-roseandcrown": "YO23 3PT",
-    "hessay": "YO26 8HD",
+    "hessay": "YO26 8JS",
     "rufforth-milestoneavenue": "YO23 3PX",
     "osbaldwickvillage(nearthepub)": "YO10 3NP",
     "badgerhill-yarburghway": "YO10 5HJ",
@@ -58,60 +59,14 @@ POSTCODE_MAP = {
 }
 
 
-def clean_time(time_str: str) -> str:
-    """Format time string like '2.40' or '13.30' into 24-hr HH:MM."""
-    m = re.search(r"(\d{1,2})[.:](\d{2})", time_str.strip())
-    if not m:
-        return ""
-    h, mins = int(m.group(1)), m.group(2)
-    # Hours 1 to 7 are in the afternoon
-    if h < 8:
-        h += 12
-    return f"{h:02d}:{mins}"
 
 
-def parse_time_range(time_raw: str) -> tuple:
-    """Split time string like '2.40-3.50' into (arrival, departure)."""
-    parts = re.split(r"[-–]", time_raw.strip())
-    arr = clean_time(parts[0]) if len(parts) > 0 else ""
-    dep = clean_time(parts[1]) if len(parts) > 1 else ""
-    return arr, dep
 
 
-def bulk_lookup_postcodes(pcs: list) -> dict:
-    """Lookup multiple postcodes via postcodes.io batch endpoint."""
-    unique_pcs = list({p for p in pcs if p})
-    coords = {}
-    if not unique_pcs:
-        return coords
-
-    # Batch in chunks of 100
-    for i in range(0, len(unique_pcs), 100):
-        chunk = unique_pcs[i:i + 100]
-        req = urllib.request.Request(
-            "https://api.postcodes.io/postcodes",
-            data=json.dumps({"postcodes": chunk}).encode("utf-8"),
-            headers={"Content-Type": "application/json", "User-Agent": HEADERS["User-Agent"]}
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                for item in data.get("result", []):
-                    pc = item.get("query")
-                    res = item.get("result")
-                    if res:
-                        coords[pc] = {
-                            "lat": float(res["latitude"]),
-                            "lon": float(res["longitude"]),
-                            "postcode": res.get("postcode", pc)
-                        }
-        except Exception as e:
-            print(f"[{DATASET_SLUG}] Postcode batch lookup warning: {e}")
-
-    return coords
 
 
 def main():
+    """Fetch Explore York timetable HTML, geocode stops via POSTCODE_MAP and postcodes.io, write data/york.csv, and update metadata."""
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -170,6 +125,8 @@ def main():
     lookup_pcs = []
     processed_stops = []
 
+    CLEAN_MAP = {re.sub(r'[^a-z0-9]', '', k.lower()): v for k, v in POSTCODE_MAP.items()}
+
     for item in raw_entries:
         loc_raw = item["location_raw"].strip()
         arr, dep = parse_time_range(item["time_slot"])
@@ -189,10 +146,11 @@ def main():
             comm = loc_raw
             stop = loc_raw
 
-        norm_key = re.sub(r"[^a-z0-9]", "", f"{comm}-{stop}".lower())
-        alt_key = re.sub(r"[^a-z0-9]", "", comm.lower())
-
-        pc = POSTCODE_MAP.get(norm_key) or POSTCODE_MAP.get(alt_key) or ""
+        k1 = re.sub(r"[^a-z0-9]", "", f"{comm}{stop}".lower())
+        k2 = re.sub(r"[^a-z0-9]", "", comm.lower())
+        k3 = re.sub(r"[^a-z0-9]", "", stop.lower())
+        k4 = re.sub(r"[^a-z0-9]", "", loc_raw.lower())
+        pc = CLEAN_MAP.get(k1) or CLEAN_MAP.get(k2) or CLEAN_MAP.get(k3) or CLEAN_MAP.get(k4) or ""
         if pc:
             lookup_pcs.append(pc)
 
@@ -204,7 +162,7 @@ def main():
             "dep": dep,
             "community": comm,
             "stop": stop,
-            "norm_key": norm_key,
+            "norm_key": k1,
             "postcode": pc
         })
 
@@ -274,6 +232,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign key validation against external reference tables
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

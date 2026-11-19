@@ -1,6 +1,7 @@
 """
 Wiltshire Council Mobile Library Ingestion Script
 Harvests live mobile library routes, stops, timetables, and Ordnance Survey BNG (EPSG:27700) coordinates
+from _common import clean_time_24h
 from the official Wiltshire Council Libraries Information web application:
 https://apps.wiltshire.gov.uk/librariesinformation/Library/Mobiles
 Validates schema compliance and updates services.csv, geocache, and historical vehicle registries.
@@ -32,16 +33,10 @@ FLEETS = [
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor"}
 
 
-def clean_time_24h(t_str: str) -> str:
-    if not t_str:
-        return ""
-    m = re.search(r"(\d{1,2})[:.](\d{2})", t_str.strip())
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
-    return ""
 
 
 def fetch_html(url: str, raw_path: str = None, delay: float = 0.08) -> str:
+    """Fetch HTML from a URL, using or saving `raw_path` cache if provided and retrying up to 3 times."""
     if raw_path and os.path.exists(raw_path):
         with open(raw_path, "r", encoding="utf-8") as f:
             return f.read()
@@ -92,6 +87,7 @@ def reverse_geocode_postcodes_batch(coords_list: list) -> dict:
 
 
 def run():
+    """Harvest Wiltshire routes and stops, resolve OS BNG coordinates and postcodes, write data/wiltshire.csv, and update metadata."""
     print(f"[{SLUG}] Starting harvest for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", SLUG, date_stamp)
@@ -107,6 +103,7 @@ def run():
     else:
         geocache = {}
 
+    # British National Grid (EPSG:27700) to WGS84 (lon, lat)
     transformer = pyproj.Transformer.from_crs("EPSG:27700", "EPSG:4326", always_xy=True)
 
     # Save main index
@@ -274,6 +271,7 @@ def run():
                         pass
 
     def lookup_place_wiltshire(community_name: str):
+        """Look up (lat, lon) for a Wiltshire community via postcodes.io, falling back to Devizes centroid."""
         q = urllib.parse.quote(community_name)
         url = f"https://api.postcodes.io/places?q={q}&limit=5"
         try:
@@ -283,6 +281,7 @@ def run():
                 for p in data.get("result") or []:
                     lat_p = float(p.get("latitude", 0))
                     lon_p = float(p.get("longitude", 0))
+                    # Filter ambiguous place names using Wiltshire's approximate lat/lon bounding box
                     if p.get("county_unitary") == "Wiltshire" or (50.94 <= lat_p <= 51.71 and -2.37 <= lon_p <= -1.48):
                         return (round(lat_p, 6), round(lon_p, 6))
         except Exception:
@@ -361,6 +360,7 @@ def run():
 
     # Frictionless validation
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign key validation against external reference tables
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

@@ -6,6 +6,7 @@ https://www.shetland.gov.uk/downloads/file/13460/mobile-library-timetable-2026
 Geocodes stops within Shetland bounds, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import reverse_geocode_postcode
 import os
 import csv
 import json
@@ -96,6 +97,7 @@ SHETLAND_STOPS = [
 
 
 def geocode_shetland_place(community: str, cache: dict):
+    """Resolve a Shetland community name to (lat, lon) via postcodes.io, using cache and Lerwick fallback."""
     clean = community.split("(")[0].strip()
     if clean in cache:
         return cache[clean]
@@ -108,6 +110,7 @@ def geocode_shetland_place(community: str, cache: dict):
             for p in data.get("result") or []:
                 lat = float(p.get("latitude", 0))
                 lon = float(p.get("longitude", 0))
+                # Bounding box for Shetland Islands
                 if p.get("county_unitary") == "Shetland Islands" or (59.8 <= lat <= 60.9 and -2.2 <= lon <= -0.7):
                     cache[clean] = (round(lat, 6), round(lon, 6))
                     return cache[clean]
@@ -117,25 +120,10 @@ def geocode_shetland_place(community: str, cache: dict):
     return cache[clean]
 
 
-def reverse_geocode_postcode(lat: float, lon: float, pc_cache: dict) -> str:
-    key = f"{round(lat, 4)},{round(lon, 4)}"
-    if key in pc_cache:
-        return pc_cache[key]
-    try:
-        url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as r:
-            data = json.loads(r.read().decode("utf-8"))
-            if data.get("result"):
-                pc_cache[key] = data["result"][0]["postcode"]
-                return pc_cache[key]
-    except Exception:
-        pass
-    pc_cache[key] = ""
-    return ""
 
 
 def run():
+    """Geocode SHETLAND_STOPS, write data/shetland_islands.csv, validate schema, and update registries."""
     print(f"[{SLUG}] Starting ingestion for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     geocache_path = os.path.join("geocache", "stops_reference.json")
     if os.path.exists(geocache_path):
@@ -196,6 +184,7 @@ def run():
     print(f"[{SLUG}] Saved {len(stops_records)} stops to {out_csv}")
 
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key checks when validating this standalone CSV
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

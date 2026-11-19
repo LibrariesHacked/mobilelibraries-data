@@ -20,6 +20,7 @@ TIME_RANGE_RE = re.compile(r'(\d{1,2}):(\d{2})\s*(am|pm)\s*to\s*(\d{1,2}):(\d{2}
 
 
 def parse_ampm(h_str, m_str, meridiem):
+    """Convert 12-hour clock strings and 'am'/'pm' meridiem to zero-padded 24-hour 'HH:MM'."""
     hours = int(h_str)
     minutes = int(m_str)
     mer = meridiem.upper()
@@ -31,6 +32,7 @@ def parse_ampm(h_str, m_str, meridiem):
 
 
 def run():
+    """Parse HTML route tables in HTML_DIR, geocode stops, and write data/staffordshire.csv."""
     geocoder = Geocoder()
     stops = []
 
@@ -71,6 +73,7 @@ def run():
                 arr = parse_ampm(m_time.group(1), m_time.group(2), m_time.group(3))
                 dep = parse_ampm(m_time.group(4), m_time.group(5), m_time.group(6))
             else:
+                # Default time window when a table cell has no parseable time range
                 arr = '09:30'
                 dep = '10:00'
 

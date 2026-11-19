@@ -5,6 +5,7 @@ published on libraries.essex.gov.uk/digital-content/our-mobile-and-home-library-
 Validates schema compliance and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import clean_time, reverse_geocode_postcode
 import os
 import re
 import csv
@@ -39,36 +40,12 @@ DISTRICT_MAPS = {
 KML_NS = {"kml": "http://www.opengis.net/kml/2.2"}
 
 
-def clean_time(t_str: str) -> str:
-    """Format time string into 24-hr HH:MM."""
-    m = re.search(r"(\d{1,2})[:.](\d{2})", t_str.strip())
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
-    return ""
 
 
-def reverse_geocode_postcode(lat: float, lon: float, postcode_cache: dict) -> str:
-    """Find nearest UK postcode from postcodes.io."""
-    cache_key = f"{round(lat, 4)},{round(lon, 4)}"
-    if cache_key in postcode_cache:
-        return postcode_cache[cache_key]
-
-    url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-    try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                postcode_cache[cache_key] = pc
-                return pc
-    except Exception:
-        pass
-    postcode_cache[cache_key] = ""
-    return ""
 
 
 def main():
+    """Download Essex district KML feeds, geocode and validate stops, and write data/essex.csv and metadata registries."""
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -165,6 +142,7 @@ def main():
         day = m_day.group(1).title() if m_day else "Monday"
 
         # Parse Times
+        # Match arrival-departure time range separated by '-' or 'to'
         m_times = re.search(r"(\d{1,2}[:.]\d{2})\s*(?:-|to)\s*(\d{1,2}[:.]\d{2})", desc_raw, re.I)
         if m_times:
             arr = clean_time(m_times.group(1))
@@ -178,6 +156,7 @@ def main():
         if arr and not dep:
             try:
                 h, m = map(int, arr.split(":"))
+                # Default 30-minute stop duration when departure time is missing
                 m += 30
                 if m >= 60:
                     h = (h + 1) % 24
@@ -195,6 +174,7 @@ def main():
         address = f"{stop}, {comm}" if stop != comm else comm
 
         # Check type
+        # Map school/nursery stops to Private since the schema only allows Public or Private
         stop_type = "School" if "school" in stop.lower() or "nursery" in stop.lower() else "Public"
         if stop_type == "School":
             stop_type = "Private"
@@ -241,6 +221,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Clear foreign keys so the standalone CSV validates without external lookup tables
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()
@@ -253,6 +234,7 @@ def main():
     added_geos = 0
     for s in stops_records:
         if s["GeoX"] and s["GeoY"]:
+            # Strip non-alphanumeric characters to build normalized geocache keys
             norm_c = re.sub(r"[^a-z0-9]", "", s["Community"].lower())
             norm_st = re.sub(r"[^a-z0-9]", "", s["Stop"].lower())
             k1 = f"{DATASET_SLUG}::{norm_c}::{norm_st}"

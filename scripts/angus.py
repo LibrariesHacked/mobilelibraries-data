@@ -29,6 +29,7 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
 
 def download_raw_pdf():
+    """Download the Angus timetable PDF to RAW_DIR if missing and return its local Path."""
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     filepath = RAW_DIR / 'Mobile-Library-Timetable-Aut-2026-Spring-2027-.pdf'
     if not filepath.exists():
@@ -40,7 +41,9 @@ def download_raw_pdf():
 
 
 def extract_angus_location(loc_raw):
+    """Split a raw Angus location string into (community, stop) via parentheses or '/'."""
     # e.g. "Wellbank (Gagiebank)", "Inverarity (by school)*", "Edzell (Memorial Hall)", "Lunanhead (Midrow)"
+    # Strip footnote symbols (*, ^, ellipsis) and trailing punctuation
     clean = re.sub(r'[\*\^…]+', '', loc_raw).strip()
     clean = re.sub(r'[\.\s]+$', '', clean)
 
@@ -59,13 +62,15 @@ def extract_angus_location(loc_raw):
 
 
 def parse_angus_pdf(filepath):
+    """Extract raw stop dicts from the two-page Angus PDF tables by van, week, and day."""
     stops = []
     with pdfplumber.open(filepath) as pdf:
         for p_idx, page in enumerate(pdf.pages):
+            # Page 0 holds Van 1 (Isla); page 1 holds Van 2 (Glen)
             van_name = 'Van 1 - Isla' if p_idx == 0 else 'Van 2 - Glen'
             tables = page.extract_tables()
 
-            # Week 1 vs Week 2 columns/tables
+            # 8 tables per page: Mon-Thu pairs where even indices are Week 1 and odd are Week 2
             for t_idx, table in enumerate(tables):
                 week = 'Week 1' if t_idx % 2 == 0 else 'Week 2'
                 day = 'Monday'
@@ -80,6 +85,7 @@ def parse_angus_pdf(filepath):
                     if len(row) < 2 or not row[1]:
                         continue
                     time_raw = row[1].strip()
+                    # Match arrival-departure time range separated by hyphen or en-dash
                     m = re.search(r'(\d{1,2}:\d{2})\s*[-–]\s*(\d{1,2}:\d{2})', time_raw)
                     if not m:
                         continue
@@ -107,6 +113,7 @@ def parse_angus_pdf(filepath):
 
 
 def run():
+    """Fetch and parse the Angus timetable PDF, geocode stops, write data/angus.csv, and update services.csv."""
     print('=== Starting Angus Mobile Library Ingestion ===')
     pdf_path = download_raw_pdf()
     raw_stops = parse_angus_pdf(pdf_path)

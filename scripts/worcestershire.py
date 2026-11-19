@@ -6,6 +6,7 @@ Converts British National Grid (EPSG:27700) coordinates to WGS84 (EPSG:4326), va
 and updates services.csv and geocache.
 """
 
+from _common import clean_time, reverse_geocode_postcode
 import os
 import re
 import csv
@@ -27,12 +28,6 @@ TIMETABLE_URL = "https://www.worcestershire.gov.uk/council-services/worcestershi
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor"}
 
 
-def clean_time(time_str: str) -> str:
-    """Format time string into 24-hr HH:MM."""
-    m = re.search(r"(\d{1,2})[:.;](\d{2})", time_str.strip())
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
-    return ""
 
 
 def add_minutes_to_time(time_str: str, minutes: int) -> str:
@@ -45,28 +40,10 @@ def add_minutes_to_time(time_str: str, minutes: int) -> str:
         return ""
 
 
-def reverse_geocode_postcode(lat: float, lon: float, postcode_cache: dict) -> str:
-    """Find nearest UK postcode from postcodes.io."""
-    cache_key = f"{round(lat, 4)},{round(lon, 4)}"
-    if cache_key in postcode_cache:
-        return postcode_cache[cache_key]
-
-    url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-    try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                postcode_cache[cache_key] = pc
-                return pc
-    except Exception:
-        pass
-    postcode_cache[cache_key] = ""
-    return ""
 
 
 def main():
+    """Query Worcestershire GIS WebForm callback, convert BNG coordinates to WGS84, write data/worcestershire.csv, and update metadata."""
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -110,6 +87,7 @@ def main():
     with open(raw_points_file, "w", encoding="utf-8") as f:
         f.write(raw_data)
 
+    # ASP.NET callback response prefixes data with "returnPoints£*$ž" and delimits records with "ž" and fields with "ª"
     if "returnPoints£*$ž" in raw_data:
         raw_data = raw_data.split("returnPoints£*$ž", 1)[1]
 
@@ -130,6 +108,7 @@ def main():
             continue
 
         x_str, y_str, loc, stop, pc, day, week, arr_raw = attrs[:8]
+        # Default stop duration to 15 minutes when omitted from the GIS payload
         dur_raw = attrs[8] if len(attrs) > 8 else "15"
 
         if not day or not arr_raw:
@@ -212,6 +191,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign key validation against external reference tables
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

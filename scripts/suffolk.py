@@ -36,6 +36,7 @@ DAY_MAP = {
 
 
 def find_latest_livewire_json() -> str:
+    """Return the path to the newest suffolk_livewire.json export under raw/suffolk/."""
     candidates = sorted(glob.glob(os.path.join("raw", SLUG, "*", "suffolk_livewire.json")))
     if candidates:
         return candidates[-1]
@@ -46,6 +47,8 @@ def find_latest_livewire_json() -> str:
 
 
 def lookup_place_suffolk(place_name: str, session_cache: dict):
+    """Geocode a Suffolk place name via postcodes.io/places, caching in session_cache and falling back to a county centroid."""
+    # Strip parenthetical notes and secondary qualifiers before querying
     clean_p = re.sub(r"\(.*?\)", "", place_name).split(",")[0].strip()
     key = clean_p.lower()
     if key in session_cache:
@@ -60,6 +63,7 @@ def lookup_place_suffolk(place_name: str, session_cache: dict):
             for p in data.get("result") or []:
                 lat_p = float(p.get("latitude", 0))
                 lon_p = float(p.get("longitude", 0))
+                # Match Suffolk unitary or approximate Suffolk bounding box
                 if p.get("county_unitary") == "Suffolk" or (51.93 <= lat_p <= 52.56 and 0.34 <= lon_p <= 1.77):
                     coords = (round(lat_p, 6), round(lon_p, 6))
                     session_cache[key] = coords
@@ -74,10 +78,12 @@ def lookup_place_suffolk(place_name: str, session_cache: dict):
 
 
 def reverse_geocode_postcodes_batch(coords_list: list) -> dict:
+    """Reverse-geocode (lat, lon) pairs in batches of 100 via postcodes.io, returning a rounded-coords to postcode map."""
     results = {}
     unique_coords = list({(round(lat, 5), round(lon, 5)) for lat, lon in coords_list if lat and lon})
     for i in range(0, len(unique_coords), 100):
         chunk = unique_coords[i:i + 100]
+        # postcodes.io accepts max 100 geolocations per batch; search within 1 km
         geolocations = [{"longitude": lon, "latitude": lat, "limit": 1, "radius": 1000} for lat, lon in chunk]
         payload = json.dumps({"geolocations": geolocations}).encode("utf-8")
         req = urllib.request.Request(
@@ -101,6 +107,7 @@ def reverse_geocode_postcodes_batch(coords_list: list) -> dict:
 
 
 def run():
+    """Process the latest Livewire JSON export, resolve coordinates and postcodes, write data/suffolk.csv, and update metadata."""
     raw_json_path = find_latest_livewire_json()
     print(f"[{SLUG}] Loading Livewire dataset from {raw_json_path}...")
 
@@ -278,6 +285,7 @@ def run():
 
     # Frictionless validation
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key checks when validating the stops CSV standalone
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

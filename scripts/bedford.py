@@ -5,6 +5,7 @@ Harvests routes, timetables, and stops from official 2026 timetable PDF
 Geocodes via postcodes.io, validates schema compliance, and updates services.csv and geocache.
 """
 
+from _common import clean_time, reverse_geocode_postcode
 import os
 import re
 import csv
@@ -25,12 +26,6 @@ PDF_URL = "https://virtual-library.culturalservices.net/bedfordshire/vlib/0.beds
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor"}
 
 
-def clean_time(time_str: str) -> str:
-    """Format time string into 24-hr HH:MM."""
-    m = re.search(r"(\d{1,2})[:.](\d{2})", time_str.strip())
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
-    return ""
 
 
 def geocode_place_postcodes_io(place: str, cache: dict) -> tuple:
@@ -61,28 +56,13 @@ def geocode_place_postcodes_io(place: str, cache: dict) -> tuple:
     return None, None, ""
 
 
-def reverse_geocode_postcode(lat: float, lon: float, postcode_cache: dict) -> str:
-    """Find nearest UK postcode from postcodes.io."""
-    cache_key = f"{round(lat, 4)},{round(lon, 4)}"
-    if cache_key in postcode_cache:
-        return postcode_cache[cache_key]
-
-    url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-    try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                postcode_cache[cache_key] = pc
-                return pc
-    except Exception:
-        pass
-    postcode_cache[cache_key] = ""
-    return ""
 
 
 def main():
+    """Download and parse Bedford's timetable PDF, geocode stops, validate, and write data/bedford.csv.
+
+    Also updates the shared geocache, services.csv, and historical_mobile_vehicles.csv.
+    """
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -103,6 +83,7 @@ def main():
 
     raw_stops = []
     with pdfplumber.open(io.BytesIO(pdf_bytes)) as pdf:
+        # Skip page 0 (cover/intro page without route tables)
         for page_idx in range(1, len(pdf.pages)):
             p = pdf.pages[page_idx]
             tables = p.extract_tables()
@@ -115,6 +96,7 @@ def main():
                         continue
                     if any(k in first.lower() for k in ["village", "location", "arrive"]):
                         continue
+                    # Expect at least 4 columns: community, stop, arrival, departure
                     if len(r) >= 4 and r[2] and r[3]:
                         comm = str(r[0]).strip() if r[0] else ""
                         stop = str(r[1]).strip() if r[1] else ""
@@ -215,6 +197,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Clear foreign keys so standalone CSV validation does not require external reference files
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

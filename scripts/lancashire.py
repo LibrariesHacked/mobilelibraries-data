@@ -1,8 +1,8 @@
 """
 Dedicated Lancashire Mobile Library Extractor.
 Extracts all 498 official pre-geocoded mobile library stops from Lancashire County
-Council's ArcGIS live FeatureServer in WGS84 coordinates and maps them into
-schema-librarydata/mobile-library-stops.json.
+Council's cached ArcGIS FeatureServer JSON in WGS84 coordinates, maps them to
+schema-librarydata/mobile-library-stops.json, and writes data/lancashire.csv.
 """
 
 import json
@@ -19,6 +19,7 @@ TIMETABLE_URL = 'https://www.lancashire.gov.uk/libraries/mobile-library/'
 
 
 def format_time_num(val):
+    """Format an integer or string HHMM time (e.g. 930, 1415) as HH:MM, defaulting to '09:00' if falsy."""
     if not val:
         return '09:00'
     val_str = str(val).zfill(4)
@@ -28,6 +29,7 @@ def format_time_num(val):
 
 
 def run():
+    """Load cached Lancashire ArcGIS JSON features, map them to schema rows, update the geocache, and write data/lancashire.csv."""
     geocoder = Geocoder()
     data = json.loads(RAW_JSON.read_text(encoding='utf-8'))
     features = data.get('features', [])
@@ -65,6 +67,7 @@ def run():
         stop_details = attrs.get('StopDetails', '')
         stop_name = roadname or (stop_details.split(':')[-1].strip() if ':' in stop_details else stop_details) or 'Stop'
 
+        # Lancashire's ArcGIS schema stores some stop postcodes in 'Hazards'; require full outward + inward pair
         postcode_hint = str(attrs.get('Hazards') or '').strip()
         postcode = postcode_hint if len(postcode_hint.split()) == 2 else ''
 
@@ -76,7 +79,7 @@ def run():
         # 3-week rota
         frequency = 'FREQ=WEEKLY;INTERVAL=3'
 
-        # KnownVisit timestamp if available
+        # KnownVisit timestamp if available (ArcGIS dates are epoch milliseconds)
         known_ms = attrs.get('KnownVisit')
         if known_ms:
             start_date = datetime.fromtimestamp(known_ms / 1000.0).strftime('%Y-%m-%d')

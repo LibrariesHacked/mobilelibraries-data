@@ -5,6 +5,7 @@ cross-references historical geocache and Nominatim/postcodes.io, validates schem
 and updates services.csv and geocache.
 """
 
+from _common import clean_time, get_html, parse_time_range, reverse_geocode_postcode
 import os
 import re
 import csv
@@ -24,66 +25,12 @@ SOURCE_URL = "https://www.culturepk.org.uk/library/mobile-library/"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor"}
 
 
-def get_html(url: str, retries: int = 3, delay: float = 1.0) -> str:
-    req = urllib.request.Request(url, headers=HEADERS)
-    for attempt in range(retries):
-        try:
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                return resp.read().decode("utf-8", errors="replace")
-        except Exception as e:
-            if attempt == retries - 1:
-                raise e
-            time.sleep(delay)
-    return ""
 
 
-def clean_time(time_str: str) -> str:
-    """Format time string into 24-hr HH:MM."""
-    t = time_str.strip().replace(";", ":").replace(".", ":")
-    m = re.match(r"^(\d{1,2}):(\d{2})$", t)
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
-    return ""
 
 
-def parse_time_range(time_raw: str):
-    """Split time string like '11:00 – 11:30' into (arrival, departure)."""
-    # Clean typos like '15.30 -1 6.00' -> '15.30 - 16.00'
-    t_clean = re.sub(r"-1\s*6", "- 16", time_raw)
-    t_clean = re.sub(r"(\d)\s+(\d)", r"\1\2", t_clean)
-    parts = re.split(r"[–—-]", t_clean)
-    arr = clean_time(parts[0]) if len(parts) > 0 else ""
-    dep = clean_time(parts[1]) if len(parts) > 1 else ""
-    if arr and not dep:
-        # Default duration +20m
-        h, m = map(int, arr.split(":"))
-        m += 20
-        if m >= 60:
-            h = (h + 1) % 24
-            m -= 60
-        dep = f"{h:02d}:{m:02d}"
-    return arr, dep
 
 
-def reverse_geocode_postcode(lat: float, lon: float, postcode_cache: dict) -> str:
-    """Find nearest UK postcode from postcodes.io."""
-    cache_key = f"{round(lat, 4)},{round(lon, 4)}"
-    if cache_key in postcode_cache:
-        return postcode_cache[cache_key]
-
-    url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-    try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                postcode_cache[cache_key] = pc
-                return pc
-    except Exception:
-        pass
-    postcode_cache[cache_key] = ""
-    return ""
 
 
 def geocode_nominatim(query: str) -> tuple:
@@ -101,6 +48,7 @@ def geocode_nominatim(query: str) -> tuple:
 
 
 def main():
+    """Scrape Perth and Kinross timetables, geocode stops, write data/perth_and_kinross.csv, and validate."""
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -126,6 +74,8 @@ def main():
         geocache = {}
 
     def match_geocache(comm, stp):
+        """Return (lat, lon, postcode) from geocache for a community and stop, or (None, None, '')."""
+        # Strip non-alphanumeric chars to match normalised geocache keys
         c_clean = re.sub(r"[^a-z0-9]", "", comm.lower())
         s_clean = re.sub(r"[^a-z0-9]", "", stp.lower())
         candidates = [
@@ -276,6 +226,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key checks because services.csv is validated separately
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

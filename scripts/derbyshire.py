@@ -1,7 +1,9 @@
 """
 Dedicated Derbyshire Mobile Library Timetable Parser.
-Parses 4-week rotating timetables (North & South mobiles) from official PDF,
-resolves coordinates via Geocoder reference cache, and writes schema-compliant data.
+Parses 4-week rotating timetables (North & South mobiles) from the official PDF
+(https://www.derbyshire.gov.uk/leisure/libraries/services/mobile-libraries/mobile-libraries.aspx,
+cached at raw/derbyshire/2026-11-18/mobile-library-routes.pdf), resolves coordinates
+via Geocoder reference cache, and writes schema-compliant data to data/derbyshire.csv.
 """
 
 import csv
@@ -17,10 +19,12 @@ TIMETABLE_URL = 'https://www.derbyshire.gov.uk/leisure/libraries/services/mobile
 LOCAL_AUTHORITY = 'Derbyshire'
 LOCAL_AUTHORITY_CODE = 'E10000007'
 
+# Matches 12-hour times such as '10:45 AM' or '1:30pm'
 TIME_AMPM_RE = re.compile(r'(\d{1,2}):(\d{2})\s*(AM|PM)', re.IGNORECASE)
 
 
 def parse_ampm_to_24h(time_str):
+    """Convert a 12-hour AM/PM time string into 24-hour 'HH:MM', or '' if unparsed."""
     m = TIME_AMPM_RE.search(time_str.strip())
     if not m:
         return ''
@@ -40,6 +44,7 @@ def parse_ampm_to_24h(time_str):
 
 
 def run():
+    """Extract Derbyshire stops from the raw PDF, geocode them, and write data/derbyshire.csv."""
     geocoder = Geocoder()
     stops = []
 
@@ -60,6 +65,7 @@ def run():
 
                         # Detect mobile from place tag e.g. 'Ambergate (S)' or 'Ashover (N)'
                         mobile_name = 'South Mobile (Long Eaton)' if '(S)' in place_raw else ('North Mobile (Buxton)' if '(N)' in place_raw else 'Mobile Library')
+                        # Remove trailing (S)/(N) vehicle marker from the community name
                         community = re.sub(r'\s*\([SN]\)', '', place_raw).strip()
                         route = f"Week {week_num} - {day}"
 

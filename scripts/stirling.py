@@ -5,6 +5,7 @@ Harvests routes, timetables, and stops from Stirling Council official website
 Geocodes via postcodes.io, validates schema compliance, and updates services.csv and geocache.
 """
 
+from _common import bulk_lookup_postcodes
 import os
 import re
 import csv
@@ -84,43 +85,15 @@ def parse_time(t_str: str) -> str:
     elif meridiem == "am" and h == 12:
         h = 0
     elif not meridiem and h < 8:
+        # Assume hours 1-7 without am/pm are afternoon stops
         h += 12
     return f"{h:02d}:{mins}"
 
 
-def bulk_lookup_postcodes(pcs: list) -> dict:
-    """Lookup multiple postcodes via postcodes.io batch endpoint."""
-    unique_pcs = list({p for p in pcs if p})
-    coords = {}
-    if not unique_pcs:
-        return coords
-
-    for i in range(0, len(unique_pcs), 100):
-        chunk = unique_pcs[i:i + 100]
-        req = urllib.request.Request(
-            "https://api.postcodes.io/postcodes",
-            data=json.dumps({"postcodes": chunk}).encode("utf-8"),
-            headers={"Content-Type": "application/json", "User-Agent": HEADERS["User-Agent"]}
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                for item in data.get("result", []):
-                    pc = item.get("query")
-                    res = item.get("result")
-                    if res:
-                        coords[pc] = {
-                            "lat": float(res["latitude"]),
-                            "lon": float(res["longitude"]),
-                            "postcode": res.get("postcode", pc)
-                        }
-        except Exception as e:
-            print(f"[{DATASET_SLUG}] Postcode batch lookup warning: {e}")
-
-    return coords
 
 
 def main():
+    """Fetch the HTML timetable, geocode stops, write data/stirling.csv, and update caches and metadata."""
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -142,6 +115,7 @@ def main():
 
     raw_records = []
     for idx, t in enumerate(tables):
+        # First 6 HTML tables cover Week 1; remaining tables cover Week 2
         week = "Week 1" if idx < 6 else "Week 2"
 
         prev = t.find_previous(["h3", "h4", "h5", "p", "strong"])
@@ -270,6 +244,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key checks when validating the stops CSV standalone
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

@@ -1,6 +1,6 @@
 """
-Processes raw Leicestershire mobile library timetables and produces
-a standardised CSV adhering to mobile-library-stops.json schema.
+Processes raw Leicestershire mobile library PDF timetables from leicestershire.gov.uk
+and produces a standardised CSV (data/leicestershire.csv) adhering to mobile-library-stops.json schema.
 """
 
 import json
@@ -33,6 +33,7 @@ months = {
     'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12
 }
 
+# Matches day-and-month dates such as "12th January" to infer each route's baseline start date
 date_pattern = re.compile(
     r'(\d{1,2})(?:st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December)',
     re.IGNORECASE
@@ -40,6 +41,7 @@ date_pattern = re.compile(
 
 
 def normalise_time(t_str):
+    """Normalise a dot- or colon-separated time string (e.g. '9.30', '14:05') to zero-padded HH:MM."""
     t_str = t_str.strip().replace(' ', '')
     if '.' in t_str:
         h, m = t_str.split('.')
@@ -51,6 +53,7 @@ def normalise_time(t_str):
 
 
 def run():
+    """Parse stop tables and rota dates from Leicestershire timetable PDFs, apply cached geocodes, and write data/leicestershire.csv."""
     geocode_dict = {}
     if GEOCODE_CACHE.exists():
         geocode_dict = json.loads(GEOCODE_CACHE.read_text(encoding='utf-8'))
@@ -70,6 +73,7 @@ def run():
                     continue
 
                 header = lines[0]
+                # Split on ASCII hyphen or en-dash to separate route name and weekday in page header
                 parts = [p.strip() for p in re.split(r'[-–]', header)]
                 route_str = ''
                 day_str = ''

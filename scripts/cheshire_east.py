@@ -5,6 +5,7 @@ Harvests routes, timetables, and stops from Cheshire East official portal
 Geocodes via postcodes.io/places, validates schema compliance, and updates services.csv and geocache.
 """
 
+from _common import reverse_geocode_postcode
 import os
 import re
 import csv
@@ -43,6 +44,7 @@ def parse_time_single(t_str: str) -> str:
     elif mer == "am" and h == 12:
         h = 0
     elif not mer and h < 8:
+        # Assume hours < 8 without am/pm are afternoon (mobile library hours)
         h += 12
     return f"{h:02d}:{mins}"
 
@@ -83,28 +85,13 @@ def geocode_place_postcodes_io(place: str, cache: dict) -> tuple:
     return None, None, ""
 
 
-def reverse_geocode_postcode(lat: float, lon: float, postcode_cache: dict) -> str:
-    """Find nearest UK postcode from postcodes.io."""
-    cache_key = f"{round(lat, 4)},{round(lon, 4)}"
-    if cache_key in postcode_cache:
-        return postcode_cache[cache_key]
-
-    url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-    try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                postcode_cache[cache_key] = pc
-                return pc
-    except Exception:
-        pass
-    postcode_cache[cache_key] = ""
-    return ""
 
 
 def main():
+    """Fetch Cheshire East timetables, geocode stops, write data/cheshire_east.csv, and validate schema.
+
+    Also updates the shared geocache, services.csv, and historical_mobile_vehicles.csv.
+    """
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -141,6 +128,7 @@ def main():
                 time_raw = tds[2].get_text(strip=True)
 
                 if "village" in comm.lower() or "times" in time_raw.lower():
+                    # Skip table header rows
                     continue
 
                 arr, dep = parse_range(time_raw)
@@ -234,6 +222,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Disable foreign-key checks so standalone CSV validation passes without services.csv
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

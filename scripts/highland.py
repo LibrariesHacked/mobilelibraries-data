@@ -4,6 +4,7 @@ Downloads all 7 live 2026 timetable pages (HTML), parses stops across all routes
 resolves coordinates, validates against Frictionless Schema, and updates services.csv.
 """
 
+from _common import parse_time_range
 import os
 import re
 import csv
@@ -14,7 +15,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-from _common import create_mobile_library_file
+from _common import create_mobile_library_file, parse_time_range
 from geocoder import Geocoder
 
 AUTHORITY_NAME = 'Highland'
@@ -38,6 +39,7 @@ TIMETABLE_PAGES = [
 
 
 def download_raw_pages():
+    """Download and cache the 7 High Life Highland HTML timetable pages if missing locally."""
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     downloaded = []
     for mobile_name, url in TIMETABLE_PAGES:
@@ -53,27 +55,12 @@ def download_raw_pages():
     return downloaded
 
 
-def parse_time_range(raw):
-    """Parse time range like '10:20 – 12:30', '09:50 – 10:10', '1005 - 1025'."""
-    # Replace non-breaking spaces and hyphens
-    cleaned = raw.replace('\xa0', ' ').replace('–', '-').replace('—', '-')
-    times = re.findall(r'(\d{1,2})[:.]?(\d{2})', cleaned)
-    if len(times) >= 2:
-        h1, m1 = int(times[0][0]), int(times[0][1])
-        h2, m2 = int(times[1][0]), int(times[1][1])
-        if h2 < h1 and h2 < 12:
-            h2 += 12
-        arr = f"{h1:02d}:{m1:02d}"
-        dep = f"{h2:02d}:{m2:02d}"
-        if dep <= arr:
-            dep = f"{h2:02d}:{min(59, m1+20):02d}"
-        return arr, dep
-    return '', ''
 
 
 def extract_community_and_stop(stop_raw):
     """Clean stop text and extract community and stop name."""
     clean = re.sub(r'[\*\^]', '', stop_raw).strip()
+    # Fix mojibake UTF-8 en-dash misdecoded as Latin-1/Windows-1252
     clean = clean.replace('â\x80\x93', '-').replace('–', '-').replace('—', '-')
     clean = re.sub(r'\s+', ' ', clean)
 
@@ -92,6 +79,7 @@ def extract_community_and_stop(stop_raw):
 
 
 def parse_page(mobile_name, url, filepath):
+    """Parse timetable HTML tables in filepath into a list of stop dictionaries for mobile_name."""
     html = filepath.read_text(encoding='utf-8')
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -104,6 +92,7 @@ def parse_page(mobile_name, url, filepath):
         route_title = f"{mobile_name} Route {t_idx+1}"
         day = 'Monday'
 
+        # Limit lookback to 6 elements to avoid picking up headings from earlier tables
         for el in prev_elements[:6]:
             txt = el.get_text(strip=True)
             if 'route' in txt.lower():
@@ -154,6 +143,7 @@ def parse_page(mobile_name, url, filepath):
 
 
 def run():
+    """Download Highland timetable pages, parse and geocode stops, write data/highland.csv, and update services.csv."""
     print('=== Starting Highland Mobile Library Ingestion ===')
     pages = download_raw_pages()
     print(f'Downloaded/verified {len(pages)} Highland timetable pages.')

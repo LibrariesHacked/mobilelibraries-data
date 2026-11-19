@@ -5,6 +5,7 @@ https://www.onfife.com/read-learn/borrow-browse-request/mobile-and-home-delivery
 Validates schema compliance and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import reverse_geocode_postcode
 import os
 import re
 import ssl
@@ -35,12 +36,14 @@ PDF_SOURCES = [
 ]
 
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor'}
+# Disable SSL certificate verification for OnFife PDF downloads
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 
 def format_24h(t_str: str) -> str:
+    """Convert a 3- or 4-digit time string into 24-hour HH:MM format, or empty string if invalid."""
     t_str = re.sub(r"\D", "", t_str)
     if len(t_str) == 4:
         return f"{t_str[:2]}:{t_str[2:]}"
@@ -50,6 +53,7 @@ def format_24h(t_str: str) -> str:
 
 
 def geocode_fife_place(community: str, stop: str, geocache: dict, session_cache: dict):
+    """Resolve (lat, lng) for a Fife community and stop using caches, postcodes.io places API, or Fife centroid fallback."""
     ref_key = f"{AUTHORITY_NAME}:{community}:{stop}".lower()
     if ref_key in geocache:
         return geocache[ref_key]
@@ -65,12 +69,14 @@ def geocode_fife_place(community: str, stop: str, geocache: dict, session_cache:
         with urllib.request.urlopen(req, timeout=8) as resp:
             data = json.loads(resp.read().decode("utf-8"))
             for p in data.get("result") or []:
+                # Fife geographic bounding box (56.0-56.5 N, -3.8 to -2.5 E) to disambiguate places
                 if p.get("county_unitary") == "Fife" or (56.0 <= float(p.get("latitude", 0)) <= 56.5 and -3.8 <= float(p.get("longitude", 0)) <= -2.5):
                     coords = (round(float(p["latitude"]), 6), round(float(p["longitude"]), 6))
                     session_cache[comm_key] = coords
                     return coords
             if data.get("result"):
                 p = data["result"][0]
+                # Wider Fife/East Scotland latitude band fallback when county_unitary is absent
                 if 55.8 <= float(p.get("latitude", 0)) <= 56.6:
                     coords = (round(float(p["latitude"]), 6), round(float(p["longitude"]), 6))
                     session_cache[comm_key] = coords
@@ -84,26 +90,10 @@ def geocode_fife_place(community: str, stop: str, geocache: dict, session_cache:
     return default_coords
 
 
-def reverse_geocode_postcode(lat: float, lng: float, pc_cache: dict) -> str:
-    key = f"{round(lat, 4)},{round(lng, 4)}"
-    if key in pc_cache:
-        return pc_cache[key]
-    try:
-        url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lng}&limit=1"
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                pc_cache[key] = pc
-                return pc
-    except Exception:
-        pass
-    pc_cache[key] = ""
-    return ""
 
 
 def parse_pdf_timetable(pdf_path: str, vehicle: str, source_url: str):
+    """Extract stop dictionaries from a 3-column OnFife PDF timetable."""
     stops = []
     days_order = ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"]
     current_day = "Monday"
@@ -113,6 +103,7 @@ def parse_pdf_timetable(pdf_path: str, vehicle: str, source_url: str):
         for p_idx, page in enumerate(pdf.pages):
             w = page.width
             h = page.height
+            # Timetable pages are formatted in 3 equal vertical columns
             c_w = w / 3.0
             for c_idx in range(3):
                 # Skip summary panel on Page 2 Col 3
@@ -138,6 +129,7 @@ def parse_pdf_timetable(pdf_path: str, vehicle: str, source_url: str):
                         current_route = m_route.group(1).title()
 
                     # Check stop line with time span e.g. "Main Street, West Wemyss 1300 - 1320"
+                    # Match location text followed by 3- or 4-digit start and end times
                     m_stop = re.match(r"^(.*?)\s+(\d{3,4})\s*[-–]\s*(\d{3,4})$", line)
                     if m_stop:
                         loc_raw = m_stop.group(1).strip()
@@ -153,6 +145,7 @@ def parse_pdf_timetable(pdf_path: str, vehicle: str, source_url: str):
                             community = parts[1]
                         else:
                             # E.g. "Thornton Primary School" or "Boarhills"
+                            # Strip school/nursery suffixes to derive the community name
                             community = re.sub(r"\s+(Primary School|P\.S|Nursery|Kindergarten|Prim\.\s*School)$", "", loc_raw, flags=re.I).strip()
                             stop_name = loc_raw
 
@@ -170,6 +163,7 @@ def parse_pdf_timetable(pdf_path: str, vehicle: str, source_url: str):
 
 
 def run():
+    """Download OnFife PDFs, parse and geocode stops, validate schema, and update data/fife.csv and registries."""
     print(f"[{SLUG}] Starting ingestion for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", SLUG, date_stamp)
@@ -259,6 +253,7 @@ def run():
     print(f"[{SLUG}] Saved {len(stops_records)} stops to {out_csv}")
 
     schema = Schema("schemas/mobile-library-stops.json")
+    # Clear foreign keys so the standalone CSV validates without external lookup tables
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

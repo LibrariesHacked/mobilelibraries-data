@@ -1,12 +1,8 @@
-"""
-GitHub Actions Continuous Monitor and Scheduled Ingestion Workflow.
-Runs every 6 months (or on workflow_dispatch manual trigger) to:
-1. Verify statutory authority timetables against content hashes.
-2. Validate all CSV datasets against schema-librarydata/mobile-library-stops.json.
-3. Keep the persistent geocache up to date.
-"""
-
-name: Mobile Library AI Monitor & Schema Validation
+# Validates every dataset in data/ against schemas/mobile-library-stops.json.
+# Runs on pushes to main that touch data/schema/scripts, twice a year
+# (1 January and 1 July), and on demand via "Run workflow".
+# Live timetable monitoring (content-hash change detection) is not wired up yet.
+name: Validate mobile library datasets
 
 on:
   schedule:
@@ -39,9 +35,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install frictionless requests pdfplumber pypdf
+          pip install -r requirements.txt
 
-      - name: Validate all datasets against schema-librarydata Table Schema
+      - name: Validate all authority datasets against Table Schema
         run: |
           python -c "
           from frictionless import Resource, Schema
@@ -53,7 +49,7 @@ jobs:
           errors = 0
 
           for f in sorted(Path('data').glob('*.csv')):
-              if f.stem.endswith('_routes'): continue
+              if f.name.startswith('uk_'): continue
               res = Resource(str(f), schema=schema)
               rep = res.validate()
               if not rep.valid:
@@ -67,5 +63,9 @@ jobs:
           if errors > 0:
               print(f'Validation failed for {errors} dataset(s).')
               sys.exit(1)
-          print('All datasets passed schema validation!')
+          print('All authority datasets passed schema validation!')
           "
+
+      - name: Build and validate unified UK dataset
+        run: |
+          python scripts/combine.py

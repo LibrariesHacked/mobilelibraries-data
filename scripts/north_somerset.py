@@ -71,6 +71,7 @@ SCHEDULE_STOPS = [
 
 
 def download_raw_pdf():
+    """Download the North Somerset timetable PDF into RAW_DIR if missing, returning its Path."""
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     filepath = RAW_DIR / 'mobile_library_timetable_aug26_mar27.pdf'
     if not filepath.exists():
@@ -83,6 +84,7 @@ def download_raw_pdf():
 
 
 def run():
+    """Archive the source PDF, geocode SCHEDULE_STOPS, write data/north_somerset.csv, and update services.csv."""
     print('=== Starting North Somerset Mobile Library Ingestion ===')
     download_raw_pdf()
     print(f'Processing {len(SCHEDULE_STOPS)} stops from North Somerset timetable.')

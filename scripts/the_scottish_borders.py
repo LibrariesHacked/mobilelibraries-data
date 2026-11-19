@@ -5,6 +5,7 @@ Harvests routes, timetables, and stops from official Live Borders West and East 
 Geocodes coordinates via postcodes.io/places, validates schema compliance, and updates services.csv and geocache.
 """
 
+from _common import clean_time, parse_time_range, reverse_geocode_postcode
 import os
 import re
 import csv
@@ -31,6 +32,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHac
 
 
 def download_file(url: str, dest_path: str) -> bytes:
+    """Return cached bytes from dest_path if present, otherwise download from url and save locally."""
     if os.path.exists(dest_path):
         with open(dest_path, "rb") as f:
             return f.read()
@@ -42,30 +44,8 @@ def download_file(url: str, dest_path: str) -> bytes:
     return data
 
 
-def clean_time(time_str: str) -> str:
-    """Format time string into 24-hr HH:MM."""
-    m = re.search(r"(\d{1,2})[:.](\d{2})", time_str.strip())
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
-    return ""
 
 
-def parse_time_range(time_raw: str) -> tuple:
-    """Split time string like '13:00-13:30' into (arrival, departure)."""
-    parts = re.split(r"[–—-]", time_raw)
-    arr = clean_time(parts[0]) if len(parts) > 0 else ""
-    dep = clean_time(parts[1]) if len(parts) > 1 else ""
-    if arr and not dep:
-        try:
-            h, m = map(int, arr.split(":"))
-            m += 15
-            if m >= 60:
-                h = (h + 1) % 24
-                m -= 60
-            dep = f"{h:02d}:{m:02d}"
-        except Exception:
-            pass
-    return arr, dep
 
 
 def geocode_place_postcodes_io(place: str, cache: dict) -> tuple:
@@ -96,28 +76,10 @@ def geocode_place_postcodes_io(place: str, cache: dict) -> tuple:
     return None, None, ""
 
 
-def reverse_geocode_postcode(lat: float, lon: float, postcode_cache: dict) -> str:
-    """Find nearest UK postcode from postcodes.io."""
-    cache_key = f"{round(lat, 4)},{round(lon, 4)}"
-    if cache_key in postcode_cache:
-        return postcode_cache[cache_key]
-
-    url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-    try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                postcode_cache[cache_key] = pc
-                return pc
-    except Exception:
-        pass
-    postcode_cache[cache_key] = ""
-    return ""
 
 
 def main():
+    """Download and parse the West/East PDF timetables, geocode stops, write data/the_scottish_borders.csv, and update metadata."""
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -244,6 +206,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key checks when validating the stops CSV standalone
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

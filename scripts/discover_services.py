@@ -23,11 +23,13 @@ HEADERS = {
 
 
 def load_services():
+    """Read all authority rows from services.csv as a list of dicts."""
     with open(SERVICES_FILE, 'r', encoding='utf-8') as f:
         return list(csv.DictReader(f))
 
 
 def save_services(rows):
+    """Write non-empty authority row dicts to services.csv using row[0] keys as headers."""
     fieldnames = list(rows[0].keys())
     with open(SERVICES_FILE, 'w', encoding='utf-8', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
@@ -36,11 +38,13 @@ def save_services(rows):
 
 
 def update_authority(slug, has_mobile, status, url='', fmt='', notes=''):
+    """Update status and optional source metadata for the matching dataset_slug in services.csv."""
     rows = load_services()
     for r in rows:
         if r['dataset_slug'] == slug:
             r['has_mobile_service'] = has_mobile
             r['status'] = status
+            # Fixed triage snapshot date for this discovery batch
             r['last_checked'] = '2026-11-18'
             if url:
                 r['source_url'] = url

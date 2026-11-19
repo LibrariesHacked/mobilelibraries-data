@@ -1,10 +1,11 @@
 """
 Ingestion script for County Durham Mobile Library Service.
 Harvests routes, timetables, and stops from Durham County Council Library Online
-(libraryonline.durham.gov.uk/pgLibMobile.aspx).
+HTML pages (https://libraryonline.durham.gov.uk/pgLibMobile.aspx) and writes data/county_durham.csv.
 Geocodes via postcodes.io, validates schema compliance, and updates services.csv and geocache.
 """
 
+from _common import clean_time, reverse_geocode_postcode
 import os
 import re
 import csv
@@ -28,19 +29,15 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHac
 
 class NoRedirectHandler(urllib.request.HTTPRedirectHandler):
     def http_error_302(self, req, fp, code, msg, headers):
+        """Return the 302 response directly without following redirects."""
         return fp
 
 
-def clean_time(time_str: str) -> str:
-    """Format time string like '11.20' into 24-hr HH:MM."""
-    m = re.search(r"(\d{1,2})[:.](\d{2})", time_str.strip())
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
-    return ""
 
 
 def geocode_place_postcodes_io(place: str, cache: dict) -> tuple:
     """Geocode place using postcodes.io/places API with priority for Durham outcodes."""
+    # Use the primary place name when a stop lists slash-separated alternatives
     clean_p = place.split("/")[0].strip()
     if clean_p in cache:
         return cache[clean_p]
@@ -52,6 +49,7 @@ def geocode_place_postcodes_io(place: str, cache: dict) -> tuple:
             data = json.loads(resp.read().decode("utf-8"))
             results = data.get("result", [])
             if results:
+                # Prefer County Durham postcode prefixes (DH, DL, TS, SR) over same-named UK places
                 dur_matches = [r for r in results if "Durham" in str(r.get("admin_district", "")) or str(r.get("outcode", "")).startswith(("DH", "DL", "TS", "SR"))]
                 chosen = dur_matches[0] if dur_matches else results[0]
                 lat = float(chosen["latitude"])
@@ -66,28 +64,13 @@ def geocode_place_postcodes_io(place: str, cache: dict) -> tuple:
     return None, None, ""
 
 
-def reverse_geocode_postcode(lat: float, lon: float, postcode_cache: dict) -> str:
-    """Find nearest UK postcode from postcodes.io."""
-    cache_key = f"{round(lat, 4)},{round(lon, 4)}"
-    if cache_key in postcode_cache:
-        return postcode_cache[cache_key]
-
-    url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-    try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                postcode_cache[cache_key] = pc
-                return pc
-    except Exception:
-        pass
-    postcode_cache[cache_key] = ""
-    return ""
 
 
 def main():
+    """Harvest County Durham stops, geocode them, and write data/county_durham.csv.
+
+    Also validates schema compliance and updates geocache, services.csv, and vehicle history.
+    """
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -98,7 +81,7 @@ def main():
     opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(cj), NoRedirectHandler)
     opener.addheaders = [("User-Agent", HEADERS["User-Agent"])]
 
-    # Establish cookies
+    # Establish ASP.NET session cookies without following the cookie-check redirect loop
     opener.open("https://libraryonline.durham.gov.uk/")
     opener.open("https://libraryonline.durham.gov.uk/?AspxAutoDetectCookieSupport=1")
 
@@ -245,6 +228,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key check since services.csv is updated after writing the CSV
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

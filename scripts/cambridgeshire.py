@@ -4,6 +4,7 @@ Harvests all live pre-geocoded mobile library stops via the Contensis Delivery A
 validates against Frictionless Schema, and updates services.csv.
 """
 
+from _common import normalise_postcode
 import os
 import re
 import csv
@@ -12,7 +13,7 @@ import time
 import requests
 from pathlib import Path
 
-from _common import create_mobile_library_file
+from _common import create_mobile_library_file, normalise_postcode
 from geocoder import Geocoder
 
 AUTHORITY_NAME = 'Cambridgeshire'
@@ -31,6 +32,7 @@ HEADERS = {
 
 
 def download_raw_entries():
+    """Return deduplicated mobileLibrary entries from the local JSON cache or Contensis Delivery API."""
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     raw_file = RAW_DIR / 'mobile_libraries.json'
     if raw_file.exists():
@@ -85,19 +87,10 @@ def download_raw_entries():
     return all_items
 
 
-def normalise_postcode(pc_str):
-    if not pc_str:
-        return ''
-    cleaned = re.sub(r'[^A-Za-z0-9]', '', pc_str).upper()
-    if len(cleaned) in [5, 6, 7]:
-        outcode = cleaned[:-3]
-        incode = cleaned[-3:]
-        if re.match(r'^[A-Z]{1,2}[0-9][0-9A-Z]?[0-9][A-Z]{2}$', cleaned):
-            return f"{outcode} {incode}"
-    return ''
 
 
 def parse_time_str(t_str):
+    """Extract the first time value from a string and format it as zero-padded 'HH:MM'."""
     if not t_str:
         return ''
     cleaned = t_str.strip()
@@ -109,6 +102,10 @@ def parse_time_str(t_str):
 
 
 def parse_cambridgeshire_items(items):
+    """Convert raw Contensis entries into schema-ready stop dicts and update the geocoder cache.
+
+    Skips entries missing both times, and defaults missing or inverted times to a 30-minute window.
+    """
     stops = []
     geocoder = Geocoder()
 
@@ -132,6 +129,7 @@ def parse_cambridgeshire_items(items):
 
         if not arr and not dep:
             continue
+        # Assume a 30-minute stop when one bound is missing or departure precedes arrival
         if arr and not dep:
             h, m = map(int, arr.split(':'))
             m += 30
@@ -234,6 +232,7 @@ def parse_cambridgeshire_items(items):
 
 
 def run():
+    """Fetch, parse, and write Cambridgeshire stop data to data/cambridgeshire.csv and update services.csv."""
     print('=== Starting Cambridgeshire Mobile Library Ingestion ===')
     items = download_raw_entries()
     stops = parse_cambridgeshire_items(items)

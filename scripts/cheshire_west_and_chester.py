@@ -5,6 +5,7 @@ Harvests routes, timetables, and stops from Cheshire West and Chester Council of
 Geocodes via postcodes.io, validates schema compliance, and updates services.csv and geocache.
 """
 
+from _common import bulk_lookup_postcodes
 import os
 import re
 import csv
@@ -42,6 +43,7 @@ def parse_time_single(t_str: str) -> str:
     elif mer == "am" and h == 12:
         h = 0
     elif not mer and h < 8:
+        # Assume hours < 8 without am/pm are afternoon (mobile library hours)
         h += 12
     return f"{h:02d}:{mins}"
 
@@ -54,39 +56,13 @@ def parse_range(r_str: str) -> tuple:
     return arr, dep
 
 
-def bulk_lookup_postcodes(pcs: list) -> dict:
-    """Lookup multiple postcodes via postcodes.io batch endpoint."""
-    unique_pcs = list({p for p in pcs if p})
-    coords = {}
-    if not unique_pcs:
-        return coords
-
-    for i in range(0, len(unique_pcs), 100):
-        chunk = unique_pcs[i:i + 100]
-        req = urllib.request.Request(
-            "https://api.postcodes.io/postcodes",
-            data=json.dumps({"postcodes": chunk}).encode("utf-8"),
-            headers={"Content-Type": "application/json", "User-Agent": HEADERS["User-Agent"]}
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                for item in data.get("result", []):
-                    pc = item.get("query")
-                    res = item.get("result")
-                    if res:
-                        coords[pc] = {
-                            "lat": float(res["latitude"]),
-                            "lon": float(res["longitude"]),
-                            "postcode": res.get("postcode", pc)
-                        }
-        except Exception as e:
-            print(f"[{DATASET_SLUG}] Postcode batch lookup warning: {e}")
-
-    return coords
 
 
 def main():
+    """Fetch Cheshire West and Chester timetables, geocode postcodes, write data/cheshire_west_and_chester.csv, and validate.
+
+    Also updates the shared geocache, services.csv, and historical_mobile_vehicles.csv.
+    """
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -121,8 +97,10 @@ def main():
             if len(tds) >= 3:
                 comm = tds[0].get_text(strip=True)
                 if "village" in comm.lower():
+                    # Skip table header rows
                     continue
 
+                # Multiple stops/times in one cell use <p> tags; pair them, falling back to last entry
                 p_stops = [p.get_text(strip=True) for p in tds[1].find_all("p")] or [tds[1].get_text(strip=True)]
                 p_times = [p.get_text(strip=True) for p in tds[2].find_all("p")] or [tds[2].get_text(strip=True)]
 
@@ -130,6 +108,7 @@ def main():
                     st_text = p_stops[i] if i < len(p_stops) else p_stops[-1]
                     tm_text = p_times[i] if i < len(p_times) else p_times[-1]
 
+                    # Match UK postcode embedded in stop text
                     m_pc = re.search(r"([A-Z]{1,2}\d[A-Z0-9]?\s*\d[A-Z]{2})", st_text)
                     pc = m_pc.group(1).upper() if m_pc else ""
 
@@ -217,6 +196,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Disable foreign-key checks for standalone CSV validation
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

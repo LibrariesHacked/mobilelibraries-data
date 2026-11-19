@@ -1,10 +1,11 @@
 """
 Kent County Council Mobile Library Ingestion Script
-Harvests all mobile library stops from Kent County Council Directory:
+Harvests all mobile library stops from Kent County Council HTML Directory:
 https://local.kent.gov.uk/kb5/kent/directory/results.page?communitychannel=8
-Validates schema compliance and updates services.csv, geocache, and historical vehicle registries.
+Writes data/kent.csv, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import batch_lookup_postcodes, clean_time_24h
 import os
 import re
 import ssl
@@ -29,68 +30,19 @@ HEADERS = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
 }
 
+# Disable SSL verification due to certificate chain issues on local.kent.gov.uk
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 
 
-def clean_time_24h(t_str: str) -> str:
-    if not t_str:
-        return ""
-    t_str = t_str.strip().lower()
-    m = re.search(r"(\d{1,2})[:.](\d{2})\s*([ap]m)?", t_str)
-    if m:
-        h = int(m.group(1))
-        mins = m.group(2)
-        meridiem = m.group(3)
-        if meridiem == "pm" and h < 12:
-            h += 12
-        elif meridiem == "am" and h == 12:
-            h = 0
-        return f"{h:02d}:{mins}"
-    m_single = re.search(r"(\d{1,2})\s*([ap]m)", t_str)
-    if m_single:
-        h = int(m_single.group(1))
-        meridiem = m_single.group(2)
-        if meridiem == "pm" and h < 12:
-            h += 12
-        elif meridiem == "am" and h == 12:
-            h = 0
-        return f"{h:02d}:00"
-    return ""
 
 
-def batch_lookup_postcodes(postcodes_list):
-    results = {}
-    clean_pcs = [p.replace(" ", "").upper() for p in postcodes_list if p]
-    pc_map = {p.replace(" ", "").upper(): p for p in postcodes_list if p}
-    
-    unique_pcs = list(pc_map.keys())
-    for i in range(0, len(unique_pcs), 100):
-        chunk = unique_pcs[i:i+100]
-        data = json.dumps({"postcodes": chunk}).encode("utf-8")
-        req = urllib.request.Request(
-            "https://api.postcodes.io/postcodes",
-            data=data,
-            headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"}
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=12) as resp:
-                res = json.loads(resp.read().decode("utf-8"))
-                for item in res.get("result", []):
-                    query_pc = item.get("query")
-                    orig_pc = pc_map.get(query_pc, query_pc)
-                    res_val = item.get("result")
-                    if res_val and "longitude" in res_val and "latitude" in res_val:
-                        results[orig_pc] = (res_val["latitude"], res_val["longitude"])
-                        results[query_pc] = (res_val["latitude"], res_val["longitude"])
-        except Exception as e:
-            print(f"Batch lookup error for chunk {i}: {e}")
-        time.sleep(0.15)
-    return results
 
 
 def fetch_url(url, retries=3, delay=0.5):
+    """Fetch URL as UTF-8 HTML with linear backoff retries using the unverified SSL context.
+    Returns decoded HTML or None if all retries fail."""
     req = urllib.request.Request(url, headers=HEADERS)
     for attempt in range(retries):
         try:
@@ -105,6 +57,8 @@ def fetch_url(url, retries=3, delay=0.5):
 
 
 def run():
+    """Discover Kent directory pages, extract stops, geocode postcodes, write data/kent.csv,
+    validate against the schema, and update geocache, vehicle history, and services.csv."""
     print(f"[{SLUG}] Starting discovery and harvest for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     timestamp = datetime.utcnow().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", SLUG, timestamp)
@@ -148,6 +102,7 @@ def run():
         service_ids.extend(new_ids)
         print(f"[{SLUG}] Found {len(new_ids)} new services (total collected: {len(service_ids)})")
         
+        # LIST_URL requests nh=100 results per page; fewer indicates the final page
         if len(new_ids) < 100:
             break
         
@@ -184,6 +139,7 @@ def run():
         stop_name = ""
         vehicle = ""
         
+        # Expect "Community, Stop - mobile library stop (Vehicle)" or fallback without community
         m_h1 = re.match(r"^(.*?),\s*(.*?)\s*-\s*mobile library stop\s*\((.*?)\)", h1_text, re.IGNORECASE)
         if m_h1:
             community = m_h1.group(1).strip()
@@ -214,6 +170,7 @@ def run():
             postcode = pc_match.group(1).strip().upper()
         
         # Address extraction
+        # Positive lookahead stops at the next field label without consuming it
         addr_match = re.search(r"Address\s*\n(.*?)(?=\nPostcode|\nView|\nGet directions)", main_text, re.DOTALL)
         if addr_match:
             lines = [l.strip() for l in addr_match.group(1).strip().split("\n") if l.strip()]
@@ -256,6 +213,7 @@ def run():
                 dep_24 = clean_time_24h(t_span.group(2))
 
         # In case departure is empty or before arrival
+        # Default to a 30-minute stop duration when no departure time is listed
         if arr_24 and not dep_24:
             try:
                 ah, am = map(int, arr_24.split(":"))

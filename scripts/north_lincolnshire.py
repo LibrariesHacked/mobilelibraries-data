@@ -5,6 +5,7 @@ raw/north_lincolnshire.geojson
 Resolves postcodes, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import reverse_geocode_postcode
 import os
 import re
 import json
@@ -23,26 +24,10 @@ BASE_TIMETABLE_URL = "https://www.northlincs.gov.uk/schools-libraries-and-learni
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor'}
 
 
-def reverse_geocode_postcode(lat, lng, cache):
-    key = f"{round(lat, 4)},{round(lng, 4)}"
-    if key in cache:
-        return cache[key]
-    try:
-        url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lng}&limit=1"
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                cache[key] = pc
-                return pc
-    except Exception:
-        pass
-    cache[key] = ""
-    return ""
 
 
 def run():
+    """Ingest raw/north_lincolnshire.geojson, geocode postcodes, write data/north_lincolnshire.csv, and update registries."""
     print(f"[{SLUG}] Starting ingestion for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     
     if not os.path.exists(RAW_SOURCE):
@@ -96,6 +81,7 @@ def run():
         postcode = ""
         if lat and lng:
             postcode = reverse_geocode_postcode(lat, lng, pc_cache)
+            # Rate-limit requests to postcodes.io
             time.sleep(0.05)
 
         # Stop Type
@@ -157,6 +143,7 @@ def run():
     # Frictionless validation
     print(f"[{SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Disable foreign key checks because reference tables are validated separately
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

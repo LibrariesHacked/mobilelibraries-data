@@ -1,3 +1,9 @@
+"""Aberdeenshire: convert the council's web JSON (raw/aberdeenshire.json) into data/aberdeenshire.csv.
+
+Legacy script: reads a saved copy of the source rather than fetching it. The service has
+since been withdrawn - see history/ for the archived stops.
+"""
+
 import json
 import csv
 from datetime import datetime
@@ -9,6 +15,7 @@ DATA_OUTPUT = '../data/aberdeenshire.csv'
 
 
 def run():
+    """Parse saved Aberdeenshire mobile library JSON and write data/aberdeenshire.csv."""
 
     organisation = 'Aberdeenshire'
     stop_type = 'Public'
@@ -19,6 +26,7 @@ def run():
 
         for mobile in mobiles_data:
 
+            # Google MyMaps JSON stores the route name at index 2 and stops array at [12][0][13][0]
             mobile_library = mobile[2].replace(
                 'Mobile', '').replace('Library', '').strip()
             timetable = 'https://www.livelifeaberdeenshire.org.uk/media/'
@@ -33,6 +41,7 @@ def run():
             stops = mobile[12][0][13][0]
 
             for stop in stops:
+                # Coordinates are [lat, lng] at [1][0][0]; name and key-value attrs sit under [5]
                 coord_y = stop[1][0][0][0]
                 coord_x = stop[1][0][0][1]
 
@@ -60,7 +69,7 @@ def run():
                         dates = val
 
                 if (dates != '' and len(dates.split(',')) > 0):
-                    # e.g. January 22 should be 2019-01-22
+                    # e.g. January 22 should be 2019-01-22 (saved source dates omit the year)
                     date = dates.split(',')[0] + ' 2019'
                     date = datetime.strptime(date, '%B %d %Y')
                     start = date.strftime('%Y-%m-%d')

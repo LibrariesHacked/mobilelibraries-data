@@ -5,6 +5,7 @@ parses community stops across the 4-week rotating schedule,
 resolves coordinates, validates against Frictionless Schema, and updates services.csv.
 """
 
+from _common import parse_time_range
 import os
 import re
 import csv
@@ -14,7 +15,7 @@ import requests
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-from _common import create_mobile_library_file
+from _common import create_mobile_library_file, parse_time_range
 from geocoder import Geocoder
 
 AUTHORITY_NAME = 'North Yorkshire'
@@ -28,6 +29,7 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
 
 def download_raw_page():
+    """Download the North Yorkshire mobile library HTML page to RAW_DIR and return its Path."""
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     filepath = RAW_DIR / 'mobile_library.html'
     print(f'Downloading North Yorkshire mobile library page...')
@@ -38,9 +40,11 @@ def download_raw_page():
 
 
 def parse_ampm(t_str):
+    """Convert a 12-hour or midday/noon time string to 24-hour HH:MM, or '' if invalid."""
     t = t_str.strip().lower()
     if 'midday' in t or 'noon' in t:
         return '12:00'
+    # Match hour, optional :MM or .MM minutes, and optional am/pm
     m = re.search(r'(\d{1,2})(?:[.:](\d{2}))?\s*(am|pm)?', t)
     if not m:
         return ''
@@ -54,26 +58,10 @@ def parse_ampm(t_str):
     return f"{h:02d}:{mins:02d}"
 
 
-def parse_time_range(time_str):
-    parts = re.split(r'\s+to\s+', time_str, flags=re.IGNORECASE)
-    if len(parts) == 2:
-        p0, p1 = parts[0], parts[1]
-        if not re.search(r'(am|pm)', p0, re.I) and 'midday' not in p0.lower():
-            if 'am' in p1.lower() and int(re.search(r'\d+', p0).group(0)) <= int(re.search(r'\d+', p1).group(0)):
-                p0 += 'am'
-            elif 'pm' in p1.lower():
-                h0 = int(re.search(r'\d+', p0).group(0))
-                p0 += 'pm' if 1 <= h0 < 12 else 'am'
-        arr = parse_ampm(p0)
-        dep = parse_ampm(p1)
-        if arr and dep and dep <= arr:
-            h, m = map(int, arr.split(':'))
-            dep = f"{(h+1)%24:02d}:{m:02d}"
-        return arr, dep
-    return '', ''
 
 
 def extract_location(loc_raw):
+    """Split a raw location string on ' - ' or ',' into (community, stop), defaulting both to the full string."""
     clean = re.sub(r'\s+', ' ', loc_raw).strip()
     if ' - ' in clean:
         parts = clean.split(' - ', 1)
@@ -90,6 +78,7 @@ def extract_location(loc_raw):
 
 
 def parse_schedule(filepath):
+    """Extract deduplicated stop dictionaries from HTML tables in filepath, skipping cancelled/closed rows."""
     html = filepath.read_text(encoding='utf-8')
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -144,6 +133,7 @@ def parse_schedule(filepath):
 
 
 def run():
+    """Download and parse the North Yorkshire timetable, geocode stops, write data/north_yorkshire.csv, and update services.csv."""
     print('=== Starting North Yorkshire Mobile Library Ingestion ===')
     filepath = download_raw_page()
     raw_stops = parse_schedule(filepath)

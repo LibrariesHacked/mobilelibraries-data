@@ -1,3 +1,9 @@
+"""Leeds: convert the three ArcGIS amenity layers (children, older people, community)
+saved in raw/ (ArcGIS JSON) into one stops CSV (target: data/leeds.csv; script currently retains unfinished template values).
+
+The ArcGIS query URL for each layer is noted above its DATA_SOURCE constant.
+"""
+
 import json
 from datetime import datetime, timedelta
 import re
@@ -9,12 +15,14 @@ DATA_SOURCE_1 = '../raw/leeds_children.json'
 # https://gis2.leeds.gov.uk/arcgis/rest/services/Public/Amenities/FeatureServer/5/query?f=json&returnGeometry=true&spatialRel=esriSpatialRelIntersects&geometry={"xmin":-2.0114,"ymin":53.6252,"xmax":-0.9429,"ymax":54.0337,"spatialReference":{"wkid":4326,"latestWkid":4326}}&geometryType=esriGeometryEnvelope&inSR=4326&outFields=*&outSR=4326
 DATA_SOURCE_2 = '../raw/leeds_older.json'
 # https://gis2.leeds.gov.uk/arcgis/rest/services/Public/Amenities/FeatureServer/4/query?f=json&returnGeometry=true&spatialRel=esriSpatialRelIntersects&geometry={"xmin":-2.0114,"ymin":53.6252,"xmax":-0.9429,"ymax":54.0337,"spatialReference":{"wkid":4326,"latestWkid":4326}}&geometryType=esriGeometryEnvelope&inSR=4326&outFields=*&outSR=4326
+# Note: overwrites DATA_SOURCE_2 above; third layer is not yet merged separately
 DATA_SOURCE_2 = '../raw/leeds_community.json'
 
 TIMETABLE = ''
 
 
 def read_data(data_source):
+    """Load an ArcGIS JSON file from data_source and return its list of feature dicts."""
 
     features = []
     with open(data_source) as data_file:
@@ -26,9 +34,11 @@ def read_data(data_source):
 
 
 def run():
+    """Load, sort, and deduplicate ArcGIS stop features, extract timetable fields, and write the output CSV."""
 
     features = read_data(DATA_SOURCE_1) + read_data(DATA_SOURCE_2)
     features_sorted = sorted(features, key=lambda k: k['attributes']['STOP_NUMBE'])
+    # Keep only the last occurrence of any identical feature dict in the sorted list
     features_deduped = [i for n, i in enumerate(features_sorted) if i not in features_sorted[n + 1:]]
 
     mobiles = []

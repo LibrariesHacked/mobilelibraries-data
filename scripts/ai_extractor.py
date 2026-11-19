@@ -30,15 +30,18 @@ MONTHS = {
     'july': 7, 'august': 8, 'september': 9, 'october': 10, 'november': 11, 'december': 12
 }
 
+# Matches day with optional ordinal suffix and full month name, e.g. "5th January"
 DATE_PATTERN = re.compile(
     r'(\d{1,2})(?:st|nd|rd|th)?\s+(January|February|March|April|May|June|July|August|September|October|November|December)',
     re.IGNORECASE
 )
 
+# Matches start-end time pairs using '.' or ':' separated by dashes, whitespace, or 'to'
 TIME_PATTERN = re.compile(r'(\d{1,2}[:.]\d{2})\s*[-–to\s]+\s*(\d{1,2}[:.]\d{2})')
 
 
 def normalise_time(t_str):
+    """Convert a '.' or ':' delimited time string to HH:MM, or return input unchanged on failure."""
     t = str(t_str).strip().replace(' ', '')
     if '.' in t:
         parts = t.split('.')
@@ -53,6 +56,7 @@ def normalise_time(t_str):
 
 
 def normalise_day(text):
+    """Return the first English weekday name found in text, or '' if none."""
     for d in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
         if d.lower() in text.lower():
             return d
@@ -61,11 +65,13 @@ def normalise_day(text):
 
 class AITimetableExtractor:
     def __init__(self, authority_slug):
+        """Initialise extractor for authority_slug with geocoder and services.csv metadata."""
         self.slug = authority_slug
         self.geocoder = Geocoder()
         self.authority_meta = self._load_authority_meta()
 
     def _load_authority_meta(self):
+        """Return the services.csv row matching self.slug, or an empty dict."""
         if not SERVICES_FILE.exists():
             return {}
         with open(SERVICES_FILE, 'r', encoding='utf-8') as f:
@@ -75,6 +81,7 @@ class AITimetableExtractor:
         return {}
 
     def extract_from_pdf(self, pdf_path, mobile_name='Mobile', frequency='FREQ=WEEKLY;INTERVAL=2', default_start='2026-01-05'):
+        """Extract stop tables from pdf_path, geocode them, write data/<slug>.csv, and return stop dicts."""
         pdf_file = Path(pdf_path)
         if not pdf_file.exists():
             raise FileNotFoundError(f"PDF not found: {pdf_path}")

@@ -1,10 +1,12 @@
 """
 Ingestion script for East Riding of Yorkshire Mobile Library Service.
 Harvests all 150 stops and live timetables directly from East Riding Libraries
-DirectoryJS endpoints (directories 2 and 1), resolves postcodes and coordinates,
+DirectoryJS JSON endpoints (https://www.eastridinglibraries.co.uk, directories 2 and 1),
+resolves postcodes and coordinates, writes data/east_riding_of_yorkshire.csv,
 validates schema compliance, and updates services.csv and geocache.
 """
 
+from _common import batch_lookup_postcodes, clean_time
 import os
 import re
 import csv
@@ -27,6 +29,7 @@ HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHac
 
 
 def get_json(url: str, retries: int = 3, delay: float = 1.0) -> dict:
+    """Fetch and decode JSON from url with up to retries attempts spaced by delay seconds."""
     req = urllib.request.Request(url, headers=HEADERS)
     for attempt in range(retries):
         try:
@@ -39,45 +42,12 @@ def get_json(url: str, retries: int = 3, delay: float = 1.0) -> dict:
     return {}
 
 
-def clean_time(time_str: str) -> str:
-    """Format time string into 24-hr HH:MM."""
-    m = re.search(r"(\d{1,2})[:.;](\d{2})", time_str.strip())
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
-    return ""
 
 
-def batch_lookup_postcodes(postcodes_list: list) -> dict:
-    """Lookup coordinates for up to 100 postcodes at a time via postcodes.io."""
-    results = {}
-    cleaned = list(set([pc.strip() for pc in postcodes_list if pc and pc.strip()]))
-    for i in range(0, len(cleaned), 100):
-        batch = cleaned[i:i+100]
-        url = "https://api.postcodes.io/postcodes"
-        req = urllib.request.Request(
-            url,
-            data=json.dumps({"postcodes": batch}).encode("utf-8"),
-            headers={"User-Agent": "LibrariesHacked/1.0", "Content-Type": "application/json"}
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                data = json.loads(resp.read().decode("utf-8"))
-                for item in data.get("result", []):
-                    query_pc = item.get("query")
-                    res = item.get("result")
-                    if res:
-                        results[query_pc] = {
-                            "lat": res.get("latitude"),
-                            "lng": res.get("longitude"),
-                            "postcode": res.get("postcode")
-                        }
-        except Exception as e:
-            print(f"Batch postcode error: {e}")
-        time.sleep(0.3)
-    return results
 
 
 def main():
+    """Harvest East Riding DirectoryJS venues and schedules, geocode postcodes, and write data/east_riding_of_yorkshire.csv."""
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -101,6 +71,7 @@ def main():
             alias = e.get("alias", "")
             base = re.sub(r"[^a-z0-9]", "", alias.lower()).replace("lib", "").replace("mobilelibrarydefaultnormal", "")
             exceptions = e.get("search_data", {}).get("exceptions", [])
+            # Closed == 0 identifies scheduled open visit dates in DirectoryJS exceptions
             valid_visits = [x for x in exceptions if x.get("Closed") == 0 and x.get("Times") and x["Times"][0].get("from")]
             schedules[base] = {
                 "venue": venue,
@@ -113,6 +84,7 @@ def main():
     for e in dir2_data.get("searchEntries", []):
         alias = e.get("alias", "")
         if "mobile_library" in alias:
+            # Strip non-alphanumerics and 'mobilelibrary' to match Directory 1 schedule keys
             base = re.sub(r"[^a-z0-9]", "", alias.lower()).replace("mobilelibrary", "")
             s_data = e.get("search_data", {})
             raw_name = s_data.get("name", [""])[0]
@@ -185,6 +157,7 @@ def main():
         if len(target_dates) > 1:
             diffs = [(target_dates[i+1] - target_dates[i]).days for i in range(len(target_dates)-1)]
             avg_diff = sum(diffs) / len(diffs)
+            # Infer 4-weekly, fortnightly, or weekly cadence from mean visit gap (allowing holiday skips)
             if 24 <= avg_diff <= 32:
                 freq = "FREQ=WEEKLY;INTERVAL=4"
             elif 12 <= avg_diff <= 16:
@@ -214,6 +187,7 @@ def main():
             stop_name = stop_name.replace("Mobile Library", "").strip()
 
         addr_parts = [p for p in [v["building"], v["addr1"], v["addr2"], v["town"]] if p]
+        # Deduplicate repeated address components while preserving order
         address = ", ".join(dict.fromkeys(addr_parts))
 
         route_name = f"{day_name} Route"
@@ -261,6 +235,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key check since services.csv is updated after writing the CSV
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

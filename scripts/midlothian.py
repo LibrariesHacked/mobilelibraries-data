@@ -1,11 +1,13 @@
 """
 Ingestion script for Midlothian Council Mobile Library Service.
 Harvests routes, timetables, and stops for the mobile vehicle "Mabel"
-directly from the official Midlothian Council mobile library page
+directly from the official Midlothian Council mobile library HTML page
 (midlothian.gov.uk/info/427/libraries/446/mobile_library).
-Resolves coordinates, validates schema compliance, and updates services.csv and geocache.
+Resolves coordinates, validates schema compliance, writes data/midlothian.csv,
+and updates services.csv and geocache.
 """
 
+from _common import clean_time, get_html, parse_time_range, reverse_geocode_postcode
 import os
 import re
 import csv
@@ -25,54 +27,12 @@ SOURCE_URL = "https://www.midlothian.gov.uk/info/427/libraries/446/mobile_librar
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor"}
 
 
-def get_html(url: str, retries: int = 3, delay: float = 1.0) -> str:
-    req = urllib.request.Request(url, headers=HEADERS)
-    for attempt in range(retries):
-        try:
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                return resp.read().decode("utf-8", errors="replace")
-        except Exception as e:
-            if attempt == retries - 1:
-                raise e
-            time.sleep(delay)
-    return ""
 
 
-def clean_time(time_str: str) -> str:
-    """Format time string into 24-hr HH:MM."""
-    m = re.search(r"(\d{1,2})[:.;](\d{2})", time_str.strip())
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
-    return ""
 
 
-def parse_time_range(time_raw: str):
-    """Split time string like '09:30 - 10:45' into (arrival, departure)."""
-    parts = re.split(r"[–—-]", time_raw)
-    arr = clean_time(parts[0]) if len(parts) > 0 else ""
-    dep = clean_time(parts[1]) if len(parts) > 1 else ""
-    return arr, dep
 
 
-def reverse_geocode_postcode(lat: float, lon: float, postcode_cache: dict) -> str:
-    """Find nearest UK postcode from postcodes.io."""
-    cache_key = f"{round(lat, 4)},{round(lon, 4)}"
-    if cache_key in postcode_cache:
-        return postcode_cache[cache_key]
-
-    url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-    try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                postcode_cache[cache_key] = pc
-                return pc
-    except Exception:
-        pass
-    postcode_cache[cache_key] = ""
-    return ""
 
 
 def geocode_location(query: str, cache: dict) -> tuple:
@@ -179,6 +139,7 @@ MIDLOTHIAN_SCHEDULE = [
 
 
 def main():
+    """Archive source HTML, resolve coordinates for MIDLOTHIAN_SCHEDULE, write data/midlothian.csv, validate schema, and update caches."""
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     os.makedirs(raw_dir, exist_ok=True)
@@ -223,6 +184,7 @@ def main():
 
         # Check legacy coords
         for lk, (ly, lx) in legacy_coords.items():
+            # Require words > 4 chars to avoid false positives on short tokens
             if community.lower() in lk and any(w in lk for w in stop_name.lower().split() if len(w) > 4):
                 lat, lng = ly, lx
                 break
@@ -293,6 +255,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Clear foreign keys so standalone CSV validation does not fail on external table refs
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

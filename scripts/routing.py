@@ -8,19 +8,24 @@ import argparse
 import collections
 import csv
 import json
+import os
 import time
 from pathlib import Path
 import requests
 
-API_KEY = '5b3ce3597851110001cf624843265134879f4af891bea9acf99ebbc7'
+# OpenRouteService key: set the ORS_API_KEY environment variable (never commit keys).
+API_KEY = os.environ.get('ORS_API_KEY', '')
 DATA_DIR = Path(__file__).resolve().parent.parent / 'data'
+ROUTES_DIR = DATA_DIR / 'routes'
 ORS_URL = 'https://api.openrouteservice.org/v2/directions/driving-hgv/geojson'
 
 
 def generate_routes_for_authority(slug, force=False):
+    """Generate road geometries and trip segments for slug via OpenRouteService; returns True if skipped or written."""
     stop_file = DATA_DIR / f"{slug}.csv"
-    output_geojson = DATA_DIR / f"{slug}_routes.geojson"
-    output_csv = DATA_DIR / f"{slug}_routes.csv"
+    ROUTES_DIR.mkdir(parents=True, exist_ok=True)
+    output_geojson = ROUTES_DIR / f"{slug}_routes.geojson"
+    output_csv = ROUTES_DIR / f"{slug}_routes.csv"
 
     if not stop_file.exists():
         print(f"Error: {stop_file} does not exist.")
@@ -41,6 +46,8 @@ def generate_routes_for_authority(slug, force=False):
 
     features = []
     trip_rows = []
+    if not API_KEY:
+        raise SystemExit('Set the ORS_API_KEY environment variable (free key from openrouteservice.org).')
     headers = {'Authorization': API_KEY}
 
     print(f"[{slug}] Processing {len(routes)} route schedules...")
@@ -82,6 +89,7 @@ def generate_routes_for_authority(slug, force=False):
                 origin = valid_stops[i]
                 destination = valid_stops[i + 1]
                 start_idx = waypoints[i]
+                # Include the destination waypoint coordinate at the end of the segment slice
                 end_idx = waypoints[i + 1] + 1
                 segment_coords = geometry_coords[start_idx:end_idx]
                 wkt_linestring = "LINESTRING (" + ",".join([f"{c[0]} {c[1]}" for c in segment_coords]) + ")"
@@ -100,6 +108,7 @@ def generate_routes_for_authority(slug, force=False):
                     'route': route
                 })
 
+            # Throttle requests to stay within OpenRouteService free-tier rate limits
             time.sleep(1.2)
         except Exception as e:
             print(f"[{slug}] Routing failed for {mobile} {route}: {e}")
@@ -132,7 +141,8 @@ if __name__ == '__main__':
         generate_routes_for_authority(args.authority, force=args.force)
     elif args.all:
         for p in sorted(DATA_DIR.glob('*.csv')):
-            if not p.stem.endswith('_routes'):
-                generate_routes_for_authority(p.stem, force=args.force)
+            if p.name.startswith('uk_') or p.stem.endswith('_routes'):
+                continue
+            generate_routes_for_authority(p.stem, force=args.force)
     else:
         parser.print_help()

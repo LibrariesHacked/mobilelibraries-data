@@ -4,6 +4,7 @@ Harvests routes, timetables, and pre-geocoded coordinates from the official
 Warwickshire Mobile Libraries application (apps.warwickshire.gov.uk/MobileLibraries).
 """
 
+from _common import clean_time, get_html, reverse_geocode_postcode
 import os
 import re
 import csv
@@ -23,26 +24,8 @@ ROUTES_URL = f"{BASE_URL}/MobileLibraries/library_routes"
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor"}
 
 
-def get_html(url: str, retries: int = 3, delay: float = 1.0) -> str:
-    req = urllib.request.Request(url, headers=HEADERS)
-    for attempt in range(retries):
-        try:
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                return resp.read().decode("utf-8", errors="replace")
-        except Exception as e:
-            if attempt == retries - 1:
-                raise e
-            time.sleep(delay)
-    return ""
 
 
-def clean_time(time_str: str) -> str:
-    """Format time string into 24-hr HH:MM."""
-    t = time_str.strip().replace(";", ":").replace(".", ":")
-    m = re.match(r"^(\d{1,2}):(\d{2})$", t)
-    if m:
-        return f"{int(m.group(1)):02d}:{m.group(2)}"
-    return ""
 
 
 def calculate_frequency_and_dates(dates_list):
@@ -66,6 +49,7 @@ def calculate_frequency_and_dates(dates_list):
         elif 18 <= avg_diff <= 22:
             freq = "FREQ=WEEKLY;INTERVAL=3"
         elif 35 <= avg_diff <= 70:
+            # Treat 5-10 week gaps (e.g. skipped holiday weeks) as 4-weekly
             freq = "FREQ=WEEKLY;INTERVAL=4"
         else:
             freq = f"FREQ=WEEKLY;INTERVAL={max(1, round(avg_diff / 7))}"
@@ -75,28 +59,10 @@ def calculate_frequency_and_dates(dates_list):
     return freq, day, start_date, end_date
 
 
-def reverse_geocode_postcode(lat: float, lon: float, postcode_cache: dict) -> str:
-    """Find nearest UK postcode from postcodes.io."""
-    cache_key = f"{round(lat, 4)},{round(lon, 4)}"
-    if cache_key in postcode_cache:
-        return postcode_cache[cache_key]
-
-    url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-    try:
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                postcode_cache[cache_key] = pc
-                return pc
-    except Exception:
-        pass
-    postcode_cache[cache_key] = ""
-    return ""
 
 
 def main():
+    """Scrape route and location pages, write data/warwickshire.csv, validate schema, and update geocache and services.csv."""
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
     raw_routes_dir = os.path.join(raw_dir, "routes")
@@ -213,6 +179,7 @@ def main():
                         if h2:
                             address = h2.get_text(strip=True)
 
+                        # Extract coordinates embedded as JSON in the location page HTML
                         m = re.search(r'\"lat\":\"([-0-9.]+)\",\"lng\":\"([-0-9.]+)\"', loc_html)
                         if m:
                             lat = m.group(1)
@@ -270,6 +237,7 @@ def main():
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key checks when validating the stops CSV standalone
     schema.foreign_keys = []
     resource = Resource(output_path, schema=schema)
     report = resource.validate()

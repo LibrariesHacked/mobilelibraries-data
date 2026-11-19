@@ -4,6 +4,7 @@ Downloads all live 2026 timetables (DOCX & PDF), parses stops,
 resolves coordinates, validates against Frictionless Schema, and updates services.csv.
 """
 
+from _common import normalise_postcode
 import os
 import re
 import csv
@@ -16,7 +17,7 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import pdfplumber
 
-from _common import create_mobile_library_file
+from _common import create_mobile_library_file, normalise_postcode
 from geocoder import Geocoder
 
 AUTHORITY_NAME = 'Nottinghamshire'
@@ -29,19 +30,10 @@ BASE_URL = 'https://www.inspireculture.org.uk/reading-information/libraries/mobi
 HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
 
-def normalise_postcode(pc_str):
-    if not pc_str:
-        return ''
-    cleaned = re.sub(r'[^A-Za-z0-9]', '', pc_str).upper()
-    if len(cleaned) in [5, 6, 7]:
-        outcode = cleaned[:-3]
-        incode = cleaned[-3:]
-        if re.match(r'^[A-Z]{1,2}[0-9][0-9A-Z]?[0-9][A-Z]{2}$', cleaned):
-            return f"{outcode} {incode}"
-    return ''
 
 
 def extract_postcode(text):
+    """Extract and normalise the first UK postcode found in text, or return ''."""
     match = re.search(r'([A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2})', text, re.IGNORECASE)
     if match:
         return normalise_postcode(match.group(1))
@@ -108,6 +100,7 @@ def parse_time_str(time_str):
     if match:
         h, m_str = int(match.group(1)), match.group(2)
         if len(m_str) == 1:
+            # Single-digit decimal minutes like '13.3' mean '13:30'
             m = int(m_str) * 10
         else:
             m = int(m_str)
@@ -218,6 +211,7 @@ def parse_docx_timetable(filepath):
 
                     if not arr and not dep:
                         continue
+                    # Infer a 20-minute stop duration if one bound is missing or inverted
                     if arr and not dep:
                         ah, am = map(int, arr.split(':'))
                         am += 20
@@ -241,6 +235,7 @@ def parse_docx_timetable(filepath):
                         dep = f"{ah:02d}:{am:02d}"
 
                     pc = extract_postcode(f'{comm} {stop_name}')
+                    # Strip embedded UK postcode from the stop name
                     clean_stop = re.sub(r'[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}', '', stop_name).strip()
 
                     stops.append({
@@ -312,6 +307,7 @@ def parse_pdf_timetable(filepath):
 
                     if not arr and not dep:
                         continue
+                    # Infer a 20-minute stop duration if one bound is missing or inverted
                     if arr and not dep:
                         ah, am = map(int, arr.split(':'))
                         am += 20
@@ -335,6 +331,7 @@ def parse_pdf_timetable(filepath):
                         dep = f"{ah:02d}:{am:02d}"
 
                     pc = extract_postcode(f'{comm} {stop_name}')
+                    # Strip embedded UK postcode from the stop name
                     clean_stop = re.sub(r'[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}', '', stop_name).strip()
 
                     stops.append({
@@ -357,6 +354,7 @@ def parse_pdf_timetable(filepath):
 
 
 def run():
+    """Harvest Nottinghamshire timetables, geocode stops, and write data/nottinghamshire.csv."""
     print('=== Starting Nottinghamshire Mobile Library Ingestion ===')
     route_files = discover_route_files()
     print(f'Discovered {len(route_files)} route timetable files.')
@@ -376,7 +374,7 @@ def run():
                 continue
 
             nice_route = title.replace('Download the ', '').replace(' timetable', '').strip()
-            # Clean up route name
+            # Strip file-format/size suffix such as '(PDF, 120KB)' from link text
             nice_route = re.sub(r'\(PDF,.*?\)', '', nice_route).strip()
             for s in file_stops:
                 if nice_route:

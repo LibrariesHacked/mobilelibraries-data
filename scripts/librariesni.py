@@ -1,10 +1,12 @@
 """
 Libraries NI (Northern Ireland) Mobile Library Ingestion Script.
-Harvests all 14 mobile library routes across Northern Ireland,
+Harvests all 14 mobile library routes across Northern Ireland from HTML pages
+at https://www.librariesni.org.uk/libraries/mobile-libraries/,
 parses schedules, resolves coordinates, validates against Frictionless Schema,
-and updates services.csv.
+writes data/librariesni.csv, and updates services.csv.
 """
 
+from _common import normalise_postcode
 import os
 import re
 import csv
@@ -15,7 +17,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 
-from _common import create_mobile_library_file
+from _common import create_mobile_library_file, normalise_postcode
 from geocoder import Geocoder
 
 AUTHORITY_NAME = 'LibrariesNI'
@@ -46,6 +48,9 @@ MOBILES = [
 
 
 def download_raw_html_pages():
+    """Download and cache HTML timetable pages for all 14 vehicles.
+    Returns a list of (name, url, filepath) tuples.
+    """
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     downloaded = []
     for name, slug in MOBILES:
@@ -61,20 +66,10 @@ def download_raw_html_pages():
     return downloaded
 
 
-def normalise_postcode(pc_str):
-    if not pc_str:
-        return ''
-    match = re.search(r'([A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2})', pc_str, re.IGNORECASE)
-    if match:
-        cleaned = re.sub(r'[^A-Za-z0-9]', '', match.group(1)).upper()
-        if len(cleaned) in [5, 6, 7]:
-            outcode = cleaned[:-3]
-            incode = cleaned[-3:]
-            return f"{outcode} {incode}"
-    return ''
 
 
 def parse_ampm(h_str, m_str, mer):
+    """Convert 12-hour clock strings (hour, minute, AM/PM) to 24-hour 'HH:MM'."""
     h = int(h_str)
     m = int(m_str)
     mer = mer.upper()
@@ -86,6 +81,7 @@ def parse_ampm(h_str, m_str, mer):
 
 
 def parse_time_range_ampm(time_str):
+    """Parse an AM/PM time range string into a (arrival, departure) 'HH:MM' tuple."""
     cleaned = re.sub(r'[^\w\s:.-]', '', time_str).strip()
     match = re.search(r'(\d{1,2}):(\d{2})\s*(am|pm)\s*[-–—]\s*(\d{1,2}):(\d{2})\s*(am|pm)', cleaned, re.IGNORECASE)
     if match:
@@ -97,6 +93,7 @@ def parse_time_range_ampm(time_str):
 
 
 def extract_ni_location(loc_raw):
+    """Split a raw location string into (community, stop) using common delimiters."""
     clean = re.sub(r'\s+', ' ', loc_raw).strip()
     if ',' in clean:
         parts = clean.split(',', 1)
@@ -117,6 +114,7 @@ def extract_ni_location(loc_raw):
 
 
 def parse_mobile_page(mobile_name, url, filepath):
+    """Parse the first HTML timetable table in filepath into a list of stop dicts."""
     html = filepath.read_text(encoding='utf-8')
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -190,6 +188,7 @@ def parse_mobile_page(mobile_name, url, filepath):
 
 
 def run():
+    """Download HTML timetables, parse and geocode stops, write data/librariesni.csv, and update services.csv."""
     print('=== Starting Libraries NI Mobile Library Ingestion ===')
     files = download_raw_html_pages()
     print(f'Downloaded/verified {len(files)} mobile timetable pages.')

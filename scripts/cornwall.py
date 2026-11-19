@@ -38,6 +38,7 @@ TIMETABLE_URLS = [
 
 
 def download_raw_files():
+    """Download each Cornwall DOCX timetable in TIMETABLE_URLS into RAW_DIR if missing and return (label, url, filepath) tuples."""
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     downloaded = []
     for label, url in TIMETABLE_URLS:
@@ -60,6 +61,7 @@ def parse_cornwall_time_range(raw):
         h1, m1 = int(times[0][0]), int(times[0][1])
         h2, m2 = int(times[1][0]), int(times[1][1])
         if h2 < h1 and h2 < 12:
+            # Convert 12-hour PM departure time to 24-hour when earlier than arrival
             h2 += 12
         arr = f"{h1:02d}:{m1:02d}"
         dep = f"{h2:02d}:{m2:02d}"
@@ -68,6 +70,7 @@ def parse_cornwall_time_range(raw):
 
 
 def parse_file(label, url, filepath):
+    """Extract deduplicated stop dicts from a Cornwall DOCX timetable's word/document.xml tables."""
     stops = []
     with zipfile.ZipFile(filepath) as z:
         xml = z.read('word/document.xml').decode('utf-8')
@@ -149,6 +152,7 @@ def parse_file(label, url, filepath):
 
 
 def run():
+    """Download and parse Cornwall DOCX timetables, geocode stops, write data/cornwall.csv, and update services.csv."""
     print('=== Starting Cornwall Mobile Library Ingestion ===')
     files = download_raw_files()
     print(f'Downloaded/verified {len(files)} Cornwall timetable files.')

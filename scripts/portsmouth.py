@@ -5,6 +5,7 @@ https://librariesandarchives.portsmouth.gov.uk/public-library-service/find-us/li
 Validates schema compliance and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import reverse_geocode_postcode
 import os
 import re
 import json
@@ -35,26 +36,10 @@ KNOWN_LOCATIONS = {
 }
 
 
-def reverse_geocode_postcode(lat, lng, cache):
-    key = f"{round(lat, 4)},{round(lng, 4)}"
-    if key in cache:
-        return cache[key]
-    try:
-        url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lng}&limit=1"
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                pc = data["result"][0]["postcode"]
-                cache[key] = pc
-                return pc
-    except Exception:
-        pass
-    cache[key] = ""
-    return ""
 
 
 def run():
+    """Archive Portsmouth timetable HTML, build data/portsmouth.csv, validate schema, and update metadata."""
     print(f"[{SLUG}] Starting ingestion for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", SLUG, date_stamp)
@@ -162,6 +147,7 @@ def run():
     # Frictionless validation
     print(f"[{SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key checks because services.csv is validated separately
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

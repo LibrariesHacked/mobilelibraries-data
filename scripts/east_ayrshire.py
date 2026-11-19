@@ -1,11 +1,12 @@
 """
 East Ayrshire Council (East Ayrshire Leisure / Ayrshire360) Mobile Library Ingestion Script
-Harvests 2026 Mobile Library Timetable from Ayrshire360:
+Harvests 2026 Mobile Library Timetable (PDF) from Ayrshire360:
 https://ayrshire360.com/communities/libraries/bringing-books-to-you/
 https://ayrshire360.com/media/3aviebla/a360-mobile-timetable-2026-tabbed.pdf
-Geocodes stops within East Ayrshire bounds, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
+Geocodes stops within East Ayrshire bounds, writes data/east_ayrshire.csv, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import reverse_geocode_postcode
 import os
 import csv
 import json
@@ -142,6 +143,7 @@ EAST_AYRSHIRE_STOPS = [
 
 
 def geocode_ea_place(community: str, cache: dict):
+    """Look up (lat, lon) for community via postcodes.io within East Ayrshire, falling back to Kilmarnock."""
     if community in cache:
         return cache[community]
     q = urllib.parse.quote(community)
@@ -153,6 +155,7 @@ def geocode_ea_place(community: str, cache: dict):
             for p in data.get("result") or []:
                 lat = float(p.get("latitude", 0))
                 lon = float(p.get("longitude", 0))
+                # Bounding box covering East Ayrshire to reject same-named places elsewhere in the UK
                 if p.get("county_unitary") == "East Ayrshire" or (55.25 <= lat <= 55.75 and -4.65 <= lon <= -3.95):
                     cache[community] = (round(lat, 6), round(lon, 6))
                     return cache[community]
@@ -162,25 +165,10 @@ def geocode_ea_place(community: str, cache: dict):
     return cache[community]
 
 
-def reverse_geocode_postcode(lat: float, lon: float, pc_cache: dict) -> str:
-    key = f"{round(lat, 4)},{round(lon, 4)}"
-    if key in pc_cache:
-        return pc_cache[key]
-    try:
-        url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as r:
-            data = json.loads(r.read().decode("utf-8"))
-            if data.get("result"):
-                pc_cache[key] = data["result"][0]["postcode"]
-                return pc_cache[key]
-    except Exception:
-        pass
-    pc_cache[key] = ""
-    return ""
 
 
 def run():
+    """Geocode East Ayrshire stops, write data/east_ayrshire.csv, and update registries."""
     print(f"[{SLUG}] Starting ingestion for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     geocache_path = os.path.join("geocache", "stops_reference.json")
     if os.path.exists(geocache_path):
@@ -239,6 +227,7 @@ def run():
     print(f"[{SLUG}] Saved {len(stops_records)} stops to {out_csv}")
 
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key check since services.csv is updated after writing the CSV
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

@@ -1,10 +1,11 @@
 """
 Norfolk County Council Mobile Library Ingestion Script
-Harvests all mobile library stops from Norfolk County Council's official ArcGIS MapServer:
+Harvests all mobile library stops from Norfolk County Council's official ArcGIS MapServer (REST JSON):
 https://maps.norfolk.gov.uk/arcgis/rest/services/layers_ext/where_i_live/MapServer/16/
-Validates schema compliance and updates services.csv, geocache, and historical vehicle registries.
+Writes data/norfolk.csv, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import reverse_geocode_postcode
 import os
 import re
 import ssl
@@ -30,22 +31,10 @@ DAY_MAP = {
     '5': 'Friday'
 }
 
+# Matches standard UK postcodes (including GIR 0AA) to detect malformed source values
 POSTCODE_RE = re.compile(r"^([A-Za-z][A-Ha-hJ-Yj-y]?[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}|[Gg][Ii][Rr] ?0[Aa]{2})$")
 
 
-def reverse_geocode_postcode(lat, lng):
-    if not lat or not lng:
-        return ""
-    try:
-        url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lng}&limit=1"
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-            if data.get("result"):
-                return data["result"][0]["postcode"]
-    except Exception:
-        pass
-    return ""
 
 
 VEHICLE_MAP = {
@@ -56,6 +45,7 @@ VEHICLE_MAP = {
 
 
 def run():
+    """Page through Norfolk's ArcGIS MapServer layer, write data/norfolk.csv, validate schema, and update registries."""
     print(f"[{SLUG}] Starting harvest for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", SLUG, date_stamp)
@@ -75,6 +65,7 @@ def run():
     batch_size = 1000
 
     while True:
+        # outSR=4326 requests WGS84 lon/lat; paginate in 1000-record batches per ArcGIS limit
         query_url = f"{ARCGIS_LAYER_URL}?where=1%3D1&outFields=*&outSR=4326&resultOffset={offset}&resultRecordCount={batch_size}&f=json"
         print(f"[{SLUG}] Querying ArcGIS features from offset {offset}...")
         raw_file = os.path.join(raw_dir, f"arcgis_layer16_offset_{offset}.json")
@@ -204,6 +195,7 @@ def run():
     # Frictionless validation
     print(f"[{SLUG}] Validating schema compliance...")
     schema = Schema("schemas/mobile-library-stops.json")
+    # Clear foreign keys so standalone CSV validation does not fail on external table refs
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

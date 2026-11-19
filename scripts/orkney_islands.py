@@ -6,6 +6,7 @@ https://orkneylibrary.org.uk/wp-content/uploads/2025/12/Mobile-Calendar-2026-Acc
 Geocodes stops within Orkney Islands bounds, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import reverse_geocode_postcode
 import os
 import csv
 import json
@@ -108,6 +109,8 @@ ORKNEY_STOPS = [
 
 
 def geocode_orkney_place(community: str, cache: dict):
+    """Look up (lat, lon) for an Orkney community via postcodes.io with caching, falling back to Kirkwall."""
+    # Drop parenthetical island qualifiers like 'Lyness (Hoy)' before querying
     clean = community.split("(")[0].strip()
     if clean in cache:
         return cache[clean]
@@ -120,6 +123,7 @@ def geocode_orkney_place(community: str, cache: dict):
             for p in data.get("result") or []:
                 lat = float(p.get("latitude", 0))
                 lon = float(p.get("longitude", 0))
+                # Bounding box filter to reject similarly named places outside Orkney
                 if p.get("county_unitary") == "Orkney Islands" or (58.7 <= lat <= 59.45 and -3.5 <= lon <= -2.3):
                     cache[clean] = (round(lat, 6), round(lon, 6))
                     return cache[clean]
@@ -129,25 +133,10 @@ def geocode_orkney_place(community: str, cache: dict):
     return cache[clean]
 
 
-def reverse_geocode_postcode(lat: float, lon: float, pc_cache: dict) -> str:
-    key = f"{round(lat, 4)},{round(lon, 4)}"
-    if key in pc_cache:
-        return pc_cache[key]
-    try:
-        url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as r:
-            data = json.loads(r.read().decode("utf-8"))
-            if data.get("result"):
-                pc_cache[key] = data["result"][0]["postcode"]
-                return pc_cache[key]
-    except Exception:
-        pass
-    pc_cache[key] = ""
-    return ""
 
 
 def run():
+    """Geocode Orkney stops, write data/orkney_islands.csv, validate schema, and update metadata CSVs."""
     print(f"[{SLUG}] Starting ingestion for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     geocache_path = os.path.join("geocache", "stops_reference.json")
     if os.path.exists(geocache_path):
@@ -206,6 +195,7 @@ def run():
     print(f"[{SLUG}] Saved {len(stops_records)} stops to {out_csv}")
 
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key checks because services.csv is validated separately
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

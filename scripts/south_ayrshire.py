@@ -6,6 +6,7 @@ https://sayrshirelib.wordpress.com/south-ayrshires-mobile-library-calendar/
 Geocodes stops within South Ayrshire bounds, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import reverse_geocode_postcode
 import os
 import csv
 import json
@@ -119,6 +120,7 @@ SOUTH_AYRSHIRE_STOPS = [
 
 
 def geocode_sa_place(community: str, cache: dict):
+    """Resolve a South Ayrshire community name to (lat, lon) via postcodes.io, using cache and Ayr fallback."""
     if community in cache:
         return cache[community]
     q = urllib.parse.quote(community)
@@ -130,6 +132,7 @@ def geocode_sa_place(community: str, cache: dict):
             for p in data.get("result") or []:
                 lat = float(p.get("latitude", 0))
                 lon = float(p.get("longitude", 0))
+                # Bounding box for South Ayrshire
                 if p.get("county_unitary") == "South Ayrshire" or (55.0 <= lat <= 55.62 and -5.05 <= lon <= -4.3):
                     cache[community] = (round(lat, 6), round(lon, 6))
                     return cache[community]
@@ -139,25 +142,10 @@ def geocode_sa_place(community: str, cache: dict):
     return cache[community]
 
 
-def reverse_geocode_postcode(lat: float, lon: float, pc_cache: dict) -> str:
-    key = f"{round(lat, 4)},{round(lon, 4)}"
-    if key in pc_cache:
-        return pc_cache[key]
-    try:
-        url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
-        req = urllib.request.Request(url, headers=HEADERS)
-        with urllib.request.urlopen(req, timeout=5) as r:
-            data = json.loads(r.read().decode("utf-8"))
-            if data.get("result"):
-                pc_cache[key] = data["result"][0]["postcode"]
-                return pc_cache[key]
-    except Exception:
-        pass
-    pc_cache[key] = ""
-    return ""
 
 
 def run():
+    """Geocode SOUTH_AYRSHIRE_STOPS, write data/south_ayrshire.csv, validate schema, and update registries."""
     print(f"[{SLUG}] Starting ingestion for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     geocache_path = os.path.join("geocache", "stops_reference.json")
     if os.path.exists(geocache_path):
@@ -216,6 +204,7 @@ def run():
     print(f"[{SLUG}] Saved {len(stops_records)} stops to {out_csv}")
 
     schema = Schema("schemas/mobile-library-stops.json")
+    # Skip foreign-key checks when validating this standalone CSV
     schema.foreign_keys = []
     resource = Resource(out_csv, schema=schema)
     report = resource.validate()

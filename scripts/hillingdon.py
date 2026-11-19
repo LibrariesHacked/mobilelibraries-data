@@ -1,10 +1,11 @@
 """
 London Borough of Hillingdon Mobile Library Ingestion Script
-Harvests live timetable from Hillingdon Council:
+Harvests live HTML timetable from Hillingdon Council:
 https://pre.hillingdon.gov.uk/libraries/mobile-library
-Resolves postcodes, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
+Writes data/hillingdon.csv, resolves postcodes, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
 """
 
+from _common import batch_lookup_postcodes, clean_time_24h
 import os
 import re
 import json
@@ -25,65 +26,13 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHac
 POSTCODE_RE = re.compile(r"([A-Z]{1,2}[0-9][0-9A-Z]?\s*[0-9][A-Z]{2})", re.I)
 
 
-def clean_time_24h(t_str: str) -> str:
-    if not t_str:
-        return ""
-    t_str = t_str.strip().lower().replace(".", ":")
-    if "midday" in t_str or "noon" in t_str:
-        return "12:00"
-    m = re.search(r"(\d{1,2}):(\d{2})\s*([ap]m)?", t_str)
-    if m:
-        h = int(m.group(1))
-        mins = m.group(2)
-        meridiem = m.group(3)
-        if meridiem == "pm" and h < 12:
-            h += 12
-        elif meridiem == "am" and h == 12:
-            h = 0
-        return f"{h:02d}:{mins}"
-    m_single = re.search(r"(\d{1,2})\s*([ap]m)", t_str)
-    if m_single:
-        h = int(m_single.group(1))
-        meridiem = m_single.group(2)
-        if meridiem == "pm" and h < 12:
-            h += 12
-        elif meridiem == "am" and h == 12:
-            h = 0
-        return f"{h:02d}:00"
-    return ""
 
 
-def batch_lookup_postcodes(postcodes_list):
-    results = {}
-    clean_pcs = [p.replace(" ", "").upper() for p in postcodes_list if p]
-    pc_map = {p.replace(" ", "").upper(): p for p in postcodes_list if p}
-    
-    unique_pcs = list(pc_map.keys())
-    for i in range(0, len(unique_pcs), 100):
-        chunk = unique_pcs[i:i+100]
-        data = json.dumps({"postcodes": chunk}).encode("utf-8")
-        req = urllib.request.Request(
-            "https://api.postcodes.io/postcodes",
-            data=data,
-            headers={"Content-Type": "application/json", "User-Agent": "Mozilla/5.0"}
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=12) as resp:
-                res = json.loads(resp.read().decode("utf-8"))
-                for item in res.get("result", []):
-                    query_pc = item.get("query")
-                    orig_pc = pc_map.get(query_pc, query_pc)
-                    res_val = item.get("result")
-                    if res_val and "longitude" in res_val and "latitude" in res_val:
-                        results[orig_pc] = (res_val["latitude"], res_val["longitude"])
-                        results[query_pc] = (res_val["latitude"], res_val["longitude"])
-        except Exception as e:
-            print(f"Batch lookup error for chunk {i}: {e}")
-        time.sleep(0.15)
-    return results
 
 
 def run():
+    """Fetch Hillingdon timetable HTML, extract stops, geocode postcodes, write data/hillingdon.csv,
+    validate against the schema, and update geocache, vehicle history, and services.csv."""
     print(f"[{SLUG}] Starting ingestion for {AUTHORITY_NAME} ({AUTHORITY_CODE})...")
     date_stamp = datetime.now().strftime("%Y-%m-%d")
     raw_dir = os.path.join("raw", SLUG, date_stamp)
@@ -167,6 +116,7 @@ def run():
                         "addr": f"{text_no_pc}, {pc}".strip(", "),
                         "postcode": pc,
                         "route": route,
+                        # Tuesday rota columns cycle on a 3-week interval
                         "freq": 3,
                         "type": stype
                     })
@@ -185,6 +135,7 @@ def run():
                 dep = clean_time_24h(t_parts[1]) if len(t_parts) > 1 else ""
 
                 # Check if multiple stops are embedded in one cell (e.g. 5 Nov vs 12 Nov)
+                # Lookahead splits before each "<day> [and <day>] <Month>" prefix without consuming it
                 sub_parts = re.split(r"(?=\d{1,2}\s+(?:and\s+\d{1,2}\s+)?(?:November|December|January|February|March|April|May|June|July|August|September|October))", loc_cell)
                 if len(sub_parts) > 1:
                     for sp in sub_parts:
@@ -213,6 +164,7 @@ def run():
                             "addr": f"{text_no_pc}, {pc}".strip(", "),
                             "postcode": pc,
                             "route": f"{vehicle_name} {day} {rota_note}".strip(),
+                            # "D1 and D2 Month" indicates fortnightly (2-week) visits; a single date is 4-weekly
                             "freq": 2 if "and" in rota_note else 4,
                             "type": stype
                         })
@@ -278,6 +230,7 @@ def run():
             "Arrival": s["arr"],
             "Departure": s["dep"],
             "Frequency": (f"FREQ=WEEKLY;INTERVAL={s["freq"]}" if str(s["freq"]).isdigit() else s["freq"]),
+            # First Monday of 2026 used as baseline rota start date
             "Start": "2026-01-05",
             "End": "2026-12-31",
             "Exceptions": "Bank holidays",

@@ -1,4 +1,4 @@
-"""Web scrapes Edinburgh mobile library pages """
+"""Web scrapes Edinburgh mobile library pages (https://www.edinburgh.gov.uk/directory/16/mobile_library_stops, HTML) and writes data/edinburgh.csv."""
 
 from urllib.parse import quote
 from datetime import datetime
@@ -62,11 +62,14 @@ def run():
 
                 if 'Day' in row_header:
                     times = row.find('td').contents[0].replace('.', '')
+                    # Match abbreviated day prefix and expand to full weekday name
                     day_matcher = re.compile('(Mon|Tues|Wed|Thurs|Fri)')
                     day = day_matcher.search(times).group(1) + 'day'
+                    # Fix 'Wed' + 'day' -> 'Wedday'
                     if (day == 'Wedday'):
                         day = 'Wednesday'
-                    times_matcher = re.compile('\d{1,4}')
+                    # Extract 1-4 digit time numbers (e.g. 9, 10, 930, 1430)
+                    times_matcher = re.compile(r'\d{1,4}')
                     times_matches = re.findall(times_matcher, times)
                     if len(times_matches) > 0:
                         arrival = times_matches[0]
@@ -83,6 +86,7 @@ def run():
                             arrival_hours = arrival[0:2]
                             arrival_mins = arrival[2:4]
 
+                        # Hours before 08:00 are assumed to be PM on a 12-hour clock
                         if int(arrival_hours) < 8:
                             arrival_hours = int(arrival_hours) + 12
 
@@ -103,6 +107,7 @@ def run():
                             departure_hours = departure[0:2]
                             departure_mins = departure[2:4]
 
+                        # Hours before 08:00 are assumed to be PM on a 12-hour clock
                         if int(departure_hours) < 8:
                             departure_hours = int(departure_hours) + 12
 

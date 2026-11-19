@@ -27,13 +27,14 @@ ARCGIS_QUERY_URL = 'https://gis.shropshire.gov.uk/arcgis/rest/services/AGOL/Feat
 
 
 def download_raw_arcgis_data():
+    """Fetch Shropshire ArcGIS FeatureServer Layer 11 in WGS84, save raw JSON, and return parsed dict."""
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     raw_file = RAW_DIR / 'stops.json'
 
     params = {
         'where': '1=1',
         'outFields': '*',
-        'outSR': 4326,
+        'outSR': 4326,  # EPSG:4326 (WGS84 lon/lat)
         'f': 'json'
     }
     print(f'Querying Shropshire ArcGIS FeatureServer...')
@@ -45,6 +46,7 @@ def download_raw_arcgis_data():
 
 
 def parse_shropshire_features(data):
+    """Transform ArcGIS feature JSON into schema-compliant stop dicts and update the geocache."""
     features = data.get('features', [])
     stops = []
     geocoder = Geocoder()
@@ -83,6 +85,7 @@ def parse_shropshire_features(data):
         start_date = '2026-01-01'
         if d1:
             try:
+                # ArcGIS epoch timestamps are in milliseconds
                 dt = datetime.fromtimestamp(d1 / 1000, tz=timezone.utc)
                 day = dt.strftime('%A')
             except Exception:
@@ -138,6 +141,7 @@ def parse_shropshire_features(data):
 
 
 def run():
+    """Download ArcGIS stops, parse them, write data/shropshire.csv, and update services.csv."""
     print('=== Starting Shropshire Mobile Library Ingestion ===')
     data = download_raw_arcgis_data()
     stops = parse_shropshire_features(data)

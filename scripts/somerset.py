@@ -5,6 +5,7 @@ parses stops across Routes A through P, resolves coordinates,
 validates against Frictionless Schema, and updates services.csv.
 """
 
+from _common import normalise_postcode
 import os
 import re
 import csv
@@ -14,7 +15,7 @@ import requests
 from pathlib import Path
 import pdfplumber
 
-from _common import create_mobile_library_file
+from _common import create_mobile_library_file, normalise_postcode
 from geocoder import Geocoder
 
 AUTHORITY_NAME = 'Somerset'
@@ -29,6 +30,7 @@ HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
 
 
 def download_raw_pdf():
+    """Download the Somerset timetable PDF to RAW_DIR if not cached and return its path."""
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     filepath = RAW_DIR / 'mobile_library_routes_2026_2027.pdf'
     if not filepath.exists():
@@ -41,6 +43,7 @@ def download_raw_pdf():
 
 
 def parse_time_str(t_str):
+    """Extract the first HH:MM or H.MM time from t_str and return zero-padded HH:MM, or ''."""
     if not t_str:
         return ''
     cleaned = t_str.strip().replace('.', ':')
@@ -51,24 +54,17 @@ def parse_time_str(t_str):
     return ''
 
 
-def normalise_postcode(pc_str):
-    if not pc_str:
-        return ''
-    cleaned = re.sub(r'[^A-Za-z0-9]', '', pc_str).upper()
-    if len(cleaned) in [5, 6, 7]:
-        outcode = cleaned[:-3]
-        incode = cleaned[-3:]
-        if re.match(r'^[A-Z]{1,2}[0-9][0-9A-Z]?[0-9][A-Z]{2}$', cleaned):
-            return f"{outcode} {incode}"
-    return ''
 
 
 def parse_somerset_pdf(filepath):
+    """Parse timetable route pages from the Somerset PDF and return a list of raw stop dicts."""
+    # Match UK postcodes and time ranges using '.' or ':' with hyphen/en-dash/em-dash
     postcode_re = re.compile(r'([A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2})', re.IGNORECASE)
     time_re = re.compile(r'(\d{1,2}[.:]\d{2})\s*[-–—]\s*(\d{1,2}[.:]\d{2})')
 
     stops = []
     with pdfplumber.open(filepath) as pdf:
+        # Pages 0-1 are cover/intro; Route A starts on page index 2
         for p_idx in range(2, len(pdf.pages)):
             text = pdf.pages[p_idx].extract_text()
             if not text:
@@ -87,6 +83,7 @@ def parse_somerset_pdf(filepath):
                     break
 
             current_comm = ''
+            # Skip the route/day header lines at the top of the page
             for line in lines[2:]:
                 m_time = time_re.search(line)
                 m_pc = postcode_re.search(line)
@@ -113,6 +110,7 @@ def parse_somerset_pdf(filepath):
                         'departure': dep,
                         'day': day
                     })
+                # Non-boiler-plate lines without a time range act as community section headings
                 elif not m_time and line and not any(k in line.lower() for k in ['service', 'contact', 'schedule', '2026', 'dates', 'somerset direct']):
                     current_comm = line
 
@@ -120,6 +118,7 @@ def parse_somerset_pdf(filepath):
 
 
 def run():
+    """Download and parse the Somerset PDF, geocode stops, write data/somerset.csv, and update services.csv."""
     print('=== Starting Somerset Mobile Library Ingestion ===')
     filepath = download_raw_pdf()
     raw_stops = parse_somerset_pdf(filepath)
