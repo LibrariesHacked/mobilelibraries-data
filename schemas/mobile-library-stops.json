@@ -173,11 +173,12 @@
         },
         {
             "name": "Exceptions",
-            "description": "A comma separated list of exception dates for this stop and timetable",
+            "description": "Comma separated list of ISO-8601 dates (e.g. YYYY-MM-DD) on which this stop is not visited (for example bank holidays or maintenance days)",
             "type": "string",
             "format": "default",
             "constraints": {
-                "required": false
+                "required": false,
+                "pattern": "^$|^([0-9]{4}-[0-9]{2}-[0-9]{2})(,[0-9]{4}-[0-9]{2}-[0-9]{2})*$"
             }
         },
         {

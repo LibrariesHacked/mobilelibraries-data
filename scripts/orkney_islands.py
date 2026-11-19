@@ -172,7 +172,7 @@ def run():
             "Frequency": "FREQ=WEEKLY;INTERVAL=8",
             "Start": start,
             "End": "2026-12-31",
-            "Exceptions": "Public holidays",
+            "Exceptions": '',
             "Timetable": PDF_URL
         })
 

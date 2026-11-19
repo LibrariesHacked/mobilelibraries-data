@@ -68,7 +68,7 @@ def main():
             'Arrival': arrival, 'Departure': departure,
             'Frequency': 'FREQ=WEEKLY;INTERVAL=4',
             'Start': '2026-10-01', 'End': '2026-12-24',
-            'Exceptions': 'Bank holidays', 'Timetable': URL,
+            'Exceptions': '', 'Timetable': URL,
         })
 
     c.save_geocache(cache)

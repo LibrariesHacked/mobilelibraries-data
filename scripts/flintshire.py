@@ -70,7 +70,7 @@ def main():
             'Arrival': arrival, 'Departure': departure,
             'Frequency': 'FREQ=WEEKLY;INTERVAL=2',
             'Start': '2023-05-05', 'End': '2027-06-27',
-            'Exceptions': 'Bank holidays', 'Timetable': LIVE_URL,
+            'Exceptions': '', 'Timetable': LIVE_URL,
         })
 
     c.save_geocache(cache)

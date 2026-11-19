@@ -107,7 +107,7 @@ def main():
                          'Departure': stop['departure'],
                          'Frequency': f"FREQ=WEEKLY;INTERVAL={stop['interval']}",
                          'Start': stop['start'], 'End': '2027-03-31',
-                         'Exceptions': 'Bank holidays', 'Timetable': stop['url']})
+                         'Exceptions': '', 'Timetable': stop['url']})
         else:
             unscheduled.append({**common, 'Day': '', 'Arrival': '', 'Departure': '',
                                 'Frequency': 'FREQ=WEEKLY;INTERVAL=3', 'Start': '',

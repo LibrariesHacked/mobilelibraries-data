@@ -19,6 +19,9 @@ from frictionless import Package
 RRULE_RE = re.compile(
     r"^FREQ=(WEEKLY;INTERVAL=[1-9][0-9]*|MONTHLY;BYDAY=[1-5](MO|TU|WE|TH|FR|SA|SU)(,[1-5](MO|TU|WE|TH|FR|SA|SU))*)$"
 )
+EXCEPTIONS_RE = re.compile(
+    r"^$|^([0-9]{4}-[0-9]{2}-[0-9]{2})(,[0-9]{4}-[0-9]{2}-[0-9]{2})*$"
+)
 COORD_5DP_RE = re.compile(r"^-?\d+\.\d{5}$")
 
 
@@ -40,35 +43,43 @@ def main() -> int:
     else:
         print(f"✓ datapackage.json is VALID ({len(pkg.resources)} resources)")
 
-    # 2. Coordinate precision and RRULE check on all authority CSVs
-    print("\n2. Checking coordinate precision and RRULE syntax...")
+    # 2. Coordinate precision, RRULE syntax, and Exceptions date list check on all authority CSVs
+    print("\n2. Checking coordinate precision, RRULE syntax, and Exceptions...")
     csv_files = sorted(Path("data").glob("*.csv"))
     checked_stops = 0
     coord_issues = 0
     freq_issues = 0
+    exc_issues = 0
 
     for csv_file in csv_files:
-        if csv_file.name.startswith("uk_"):
+        if csv_file.name.startswith("uk_") or csv_file.name.startswith("library-services"):
             continue
         with open(csv_file, mode="r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for i, row in enumerate(reader, start=2):
                 checked_stops += 1
-                lat_str = row.get("Latitude", "").strip()
-                lng_str = row.get("Longitude", "").strip()
+                lat_str = (row.get("GeoY") or row.get("Latitude", "")).strip()
+                lng_str = (row.get("GeoX") or row.get("Longitude", "")).strip()
                 freq_str = row.get("Frequency", "").strip()
+                exc_str = row.get("Exceptions", "").strip()
 
                 if lat_str and lng_str:
                     if not COORD_5DP_RE.match(lat_str) or not COORD_5DP_RE.match(lng_str):
                         coord_issues += 1
                         if coord_issues <= 3:
-                            print(f"  [Coord Warning] {csv_file.name}:{i} ({row.get('Stop name')}) lat={lat_str}, lng={lng_str} not 5 decimal places")
+                            print(f"  [Coord Warning] {csv_file.name}:{i} ({row.get('Stop')}) lat={lat_str}, lng={lng_str} not 5 decimal places")
 
                 if freq_str:
                     if not RRULE_RE.match(freq_str):
                         freq_issues += 1
                         if freq_issues <= 3:
-                            print(f"  [Freq Warning] {csv_file.name}:{i} ({row.get('Stop name')}) invalid RRULE: '{freq_str}'")
+                            print(f"  [Freq Warning] {csv_file.name}:{i} ({row.get('Stop')}) invalid RRULE: '{freq_str}'")
+
+                if exc_str:
+                    if not EXCEPTIONS_RE.match(exc_str):
+                        exc_issues += 1
+                        if exc_issues <= 3:
+                            print(f"  [Exceptions Warning] {csv_file.name}:{i} ({row.get('Stop')}) invalid Exceptions: '{exc_str}' (must be comma-separated YYYY-MM-DD)")
 
     if coord_issues > 0:
         print(f"❌ Found {coord_issues} coordinate precision warnings.")
@@ -81,6 +92,12 @@ def main() -> int:
         errors += 1
     else:
         print(f"✓ All frequency strings adhere to RFC 5545 RRULE format.")
+
+    if exc_issues > 0:
+        print(f"❌ Found {exc_issues} invalid Exceptions values.")
+        errors += 1
+    else:
+        print(f"✓ All Exceptions fields are either empty or valid ISO-8601 date lists.")
 
     print("\n" + "=" * 60)
     if errors == 0:

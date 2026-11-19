@@ -335,7 +335,7 @@ def run():
             "Frequency": (f"FREQ=WEEKLY;INTERVAL={s["freq"]}" if str(s["freq"]).isdigit() else s["freq"]),
             "Start": s["start"],
             "End": "2027-05-31",
-            "Exceptions": "Bank holidays",
+            "Exceptions": '',
             "Timetable": s["timetable"]
         })
 

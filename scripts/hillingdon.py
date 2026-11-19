@@ -233,7 +233,7 @@ def run():
             # First Monday of 2026 used as baseline rota start date
             "Start": "2026-01-05",
             "End": "2026-12-31",
-            "Exceptions": "Bank holidays",
+            "Exceptions": '',
             "Timetable": TIMETABLE_URL
         })
 

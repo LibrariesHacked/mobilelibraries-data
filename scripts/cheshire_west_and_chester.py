@@ -172,7 +172,7 @@ def main():
             "Frequency": "FREQ=WEEKLY;INTERVAL=3",
             "Start": "2026-01-05",
             "End": "2026-12-23",
-            "Exceptions": "Bank Holidays and weekends",
+            "Exceptions": '',
             "Timetable": BASE_URL
         })
 

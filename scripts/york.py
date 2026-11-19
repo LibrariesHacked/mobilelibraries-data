@@ -208,7 +208,7 @@ def main():
             "Frequency": "FREQ=WEEKLY;INTERVAL=2",
             "Start": "2026-01-12",
             "End": "2026-12-31",
-            "Exceptions": "Bank holidays; Week commencing Monday 30 March 2026 (vehicle repair)",
+            "Exceptions": '',
             "Timetable": BASE_URL
         })
 

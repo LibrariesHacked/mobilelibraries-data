@@ -229,7 +229,7 @@ def run():
             "Frequency": "FREQ=WEEKLY;INTERVAL=2",
             "Start": "2026-10-12",
             "End": "2026-12-22",
-            "Exceptions": "Bank holidays",
+            "Exceptions": '',
             "Timetable": s["url"]
         })
 

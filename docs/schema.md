@@ -16,12 +16,12 @@ Every authority stops dataset in `data/<slug>.csv` and the combined dataset `dat
 | `Local authority code`| string | default | regex: `^[ENSW][0-9]{8}$` | Official ONS/GSS administrative identifier | `W06000003` |
 | `Mobile name` | string | default | required | Vehicle identifier or mobile service name | `Mobile Library 1` |
 | `Route` | string | default | required | Route or schedule grouping identifier | `Week 1 Tuesday` |
-| `Community` | string | default | required | Town, village, parish, or district | `Cerrigydrudion` |
+| `Community` | string | default | optional | Town, village, parish, or district | `Cerrigydrudion` |
 | `Stop` | string | default | required | Specific stopping place, facility, or landmark | `Parish Hall Car Park` |
-| `Address` | string | default | required | Full postal address or location description | `High Street, Cerrigydrudion` |
-| `Postcode` | string | default | valid UK postcode | Postcode of stop location | `LL21 4ST` |
-| `GeoX` | number | default | -9.0 to 2.5 | Longitude in decimal degrees (WGS84, 5 decimal places) | `-3.56120` |
-| `GeoY` | number | default | 49.0 to 61.5 | Latitude in decimal degrees (WGS84, 5 decimal places) | `53.02340` |
+| `Address` | string | default | optional | Full postal address or location description | `High Street, Cerrigydrudion` |
+| `Postcode` | string | default | optional (valid UK postcode) | Postcode of stop location | `LL21 4ST` |
+| `GeoX` | number | default | optional (-9.0 to 2.5) | Longitude in decimal degrees (WGS84, 5 decimal places) | `-3.56120` |
+| `GeoY` | number | default | optional (49.0 to 61.5) | Latitude in decimal degrees (WGS84, 5 decimal places) | `53.02340` |
 | `Day` | string | default | enum: `Monday`..`Sunday` | Day of the week for the stop | `Tuesday` |
 | `Type` | string | default | enum: `Public`, `Private`, `Dynamic`, `Other` | Access type of the stop | `Public` |
 | `Arrival` | time | `%H:%M` | required | Scheduled arrival time in 24-hour clock | `10:15` |
@@ -29,8 +29,17 @@ Every authority stops dataset in `data/<slug>.csv` and the combined dataset `dat
 | `Frequency` | string | default | RFC 5545 RRULE | Frequency format for recurrence | `FREQ=WEEKLY;INTERVAL=3` |
 | `Start` | date | `%Y-%m-%d`| required | Start date of current timetable period | `2026-01-05` |
 | `End` | date | `%Y-%m-%d`| optional | End date of timetable period (if defined) | `2026-12-23` |
-| `Exceptions` | string | default | optional | Bank holidays or closures | `Bank Holidays; Christmas week` |
-| `Timetable` | string | uri | required | Official source URL where timetable is published | `https://www.conwy.gov.uk/...` |
+| `Exceptions` | string | default | optional | Comma-separated ISO-8601 dates (`YYYY-MM-DD`) on which this stop is not visited. Plain text like 'Public holidays' is prohibited. | `2026-05-04,2026-05-25` |
+| `Timetable` | string | uri | optional | Official source URL where timetable is published | `https://www.conwy.gov.uk/...` |
+
+---
+
+## Exceptions Field Format
+
+Following the official [schema.librarydata.uk mobile library stops specification](https://schema.librarydata.uk/mobile-library-stops):
+- **Allowed values:** Either completely empty (`""`) or a comma-separated list of ISO-8601 dates in `YYYY-MM-DD` format (e.g. `2026-05-04,2026-05-25`).
+- **Prohibited:** Descriptive text phrases such as `"Public holidays"`, `"Bank holidays"`, `"Christmas period"`, or `"Week 1 Monday (maintenance)"` are strictly prohibited.
+- **Rule of thumb:** If the authority provides a general statement (e.g. "mobile libraries do not run on bank holidays") without listing explicit dates, leave the `Exceptions` field empty. If explicit closure dates are scheduled, format each as `YYYY-MM-DD`.
 
 ---
 

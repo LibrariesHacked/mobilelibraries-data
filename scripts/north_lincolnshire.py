@@ -107,7 +107,7 @@ def run():
             "Frequency": (f"FREQ=WEEKLY;INTERVAL={freq}" if str(freq).isdigit() else freq),
             "Start": "2026-01-05",
             "End": "2026-12-31",
-            "Exceptions": "Bank holidays",
+            "Exceptions": '',
             "Timetable": BASE_TIMETABLE_URL
         })
 

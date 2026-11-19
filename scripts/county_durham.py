@@ -204,7 +204,7 @@ def main():
             "Frequency": (f"FREQ=WEEKLY;INTERVAL={freq}" if str(freq).isdigit() else freq),
             "Start": "2026-01-05",
             "End": "2026-12-31",
-            "Exceptions": "Bank holidays and Christmas period",
+            "Exceptions": '',
             "Timetable": item["url"]
         })
 

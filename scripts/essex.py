@@ -197,7 +197,7 @@ def main():
             "Frequency": "FREQ=WEEKLY;INTERVAL=3",
             "Start": "2026-01-05",
             "End": "2026-12-31",
-            "Exceptions": "Bank holidays",
+            "Exceptions": '',
             "Timetable": f"{BASE_URL}{p['district'].replace('_', '-')}"
         })
 
