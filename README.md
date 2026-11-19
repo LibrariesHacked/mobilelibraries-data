@@ -50,10 +50,6 @@ More information is available in these guides:
 * [OpenStreetMap](https://www.openstreetmap.org/) and [OSRM](http://project-osrm.org/) - Map data and road routing
 * [OpenRouteService](https://openrouteservice.org/) - Lorry-friendly road routing
 
-## Versioning
-
-We use [SemVer](http://semver.org/) version numbers in [`datapackage.json`](datapackage.json).
-
 ## Authors
 
 * **Libraries Hacked** - [Libraries Hacked](https://www.librarieshacked.org)
