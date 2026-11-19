@@ -1,0 +1,493 @@
+{
+  "name": "uk-mobile-libraries-data",
+  "title": "UK Mobile Libraries Stops and Schedules",
+  "description": "Standardised open data, timetables, and schedules for mobile library services across local authorities in England, Scotland, Wales, and Northern Ireland.",
+  "homepage": "https://github.com/librarieshacked/mobilelibraries-data",
+  "licenses": [
+    {
+      "name": "OGL-UK-3.0",
+      "path": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "title": "Open Government Licence v3.0"
+    },
+    {
+      "name": "MIT",
+      "path": "https://opensource.org/licenses/MIT",
+      "title": "MIT License (Code and Scrapers)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Libraries Hacked",
+      "path": "https://www.librarieshacked.org"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Dave Rowe",
+      "role": "author"
+    }
+  ],
+  "resources": [
+    {
+      "name": "library-services.csv",
+      "title": "UK Library Services Reference",
+      "path": "data/library-services.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Local authority code",
+            "type": "string"
+          },
+          {
+            "name": "Local authority",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "uk-mobile-library-stops",
+      "title": "UK Mobile Library Stops (Nationwide Combined)",
+      "path": "data/uk_mobile_library_stops.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-angus",
+      "title": "Angus Mobile Library Stops",
+      "path": "data/angus.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-bath_and_north_east_somerset",
+      "title": "Bath And North East Somerset Mobile Library Stops",
+      "path": "data/bath_and_north_east_somerset.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-bedford",
+      "title": "Bedford Mobile Library Stops",
+      "path": "data/bedford.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-cambridgeshire",
+      "title": "Cambridgeshire Mobile Library Stops",
+      "path": "data/cambridgeshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-carmarthenshire",
+      "title": "Carmarthenshire Mobile Library Stops",
+      "path": "data/carmarthenshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-cheshire_east",
+      "title": "Cheshire East Mobile Library Stops",
+      "path": "data/cheshire_east.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-cheshire_west_and_chester",
+      "title": "Cheshire West And Chester Mobile Library Stops",
+      "path": "data/cheshire_west_and_chester.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-conwy",
+      "title": "Conwy Mobile Library Stops",
+      "path": "data/conwy.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-cornwall",
+      "title": "Cornwall Mobile Library Stops",
+      "path": "data/cornwall.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-county_durham",
+      "title": "County Durham Mobile Library Stops",
+      "path": "data/county_durham.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-derbyshire",
+      "title": "Derbyshire Mobile Library Stops",
+      "path": "data/derbyshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-east_ayrshire",
+      "title": "East Ayrshire Mobile Library Stops",
+      "path": "data/east_ayrshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-east_riding_of_yorkshire",
+      "title": "East Riding Of Yorkshire Mobile Library Stops",
+      "path": "data/east_riding_of_yorkshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-essex",
+      "title": "Essex Mobile Library Stops",
+      "path": "data/essex.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-fife",
+      "title": "Fife Mobile Library Stops",
+      "path": "data/fife.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-flintshire",
+      "title": "Flintshire Mobile Library Stops",
+      "path": "data/flintshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-highland",
+      "title": "Highland Mobile Library Stops",
+      "path": "data/highland.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-hillingdon",
+      "title": "Hillingdon Mobile Library Stops",
+      "path": "data/hillingdon.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-kent",
+      "title": "Kent Mobile Library Stops",
+      "path": "data/kent.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-lancashire",
+      "title": "Lancashire Mobile Library Stops",
+      "path": "data/lancashire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-leicestershire",
+      "title": "Leicestershire Mobile Library Stops",
+      "path": "data/leicestershire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-librariesni",
+      "title": "Librariesni Mobile Library Stops",
+      "path": "data/librariesni.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-lincolnshire",
+      "title": "Lincolnshire Mobile Library Stops",
+      "path": "data/lincolnshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-midlothian",
+      "title": "Midlothian Mobile Library Stops",
+      "path": "data/midlothian.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-neath_port_talbot",
+      "title": "Neath Port Talbot Mobile Library Stops",
+      "path": "data/neath_port_talbot.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-norfolk",
+      "title": "Norfolk Mobile Library Stops",
+      "path": "data/norfolk.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-north_lincolnshire",
+      "title": "North Lincolnshire Mobile Library Stops",
+      "path": "data/north_lincolnshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-north_somerset",
+      "title": "North Somerset Mobile Library Stops",
+      "path": "data/north_somerset.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-north_yorkshire",
+      "title": "North Yorkshire Mobile Library Stops",
+      "path": "data/north_yorkshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-northumberland",
+      "title": "Northumberland Mobile Library Stops",
+      "path": "data/northumberland.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-nottinghamshire",
+      "title": "Nottinghamshire Mobile Library Stops",
+      "path": "data/nottinghamshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-orkney_islands",
+      "title": "Orkney Islands Mobile Library Stops",
+      "path": "data/orkney_islands.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-pembrokeshire",
+      "title": "Pembrokeshire Mobile Library Stops",
+      "path": "data/pembrokeshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-perth_and_kinross",
+      "title": "Perth And Kinross Mobile Library Stops",
+      "path": "data/perth_and_kinross.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-portsmouth",
+      "title": "Portsmouth Mobile Library Stops",
+      "path": "data/portsmouth.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-shetland_islands",
+      "title": "Shetland Islands Mobile Library Stops",
+      "path": "data/shetland_islands.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-shropshire",
+      "title": "Shropshire Mobile Library Stops",
+      "path": "data/shropshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-somerset",
+      "title": "Somerset Mobile Library Stops",
+      "path": "data/somerset.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-south_ayrshire",
+      "title": "South Ayrshire Mobile Library Stops",
+      "path": "data/south_ayrshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-staffordshire",
+      "title": "Staffordshire Mobile Library Stops",
+      "path": "data/staffordshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-stirling",
+      "title": "Stirling Mobile Library Stops",
+      "path": "data/stirling.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-suffolk",
+      "title": "Suffolk Mobile Library Stops",
+      "path": "data/suffolk.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-the_scottish_borders",
+      "title": "The Scottish Borders Mobile Library Stops",
+      "path": "data/the_scottish_borders.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-warwickshire",
+      "title": "Warwickshire Mobile Library Stops",
+      "path": "data/warwickshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-west_dunbartonshire",
+      "title": "West Dunbartonshire Mobile Library Stops",
+      "path": "data/west_dunbartonshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-wiltshire",
+      "title": "Wiltshire Mobile Library Stops",
+      "path": "data/wiltshire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-worcestershire",
+      "title": "Worcestershire Mobile Library Stops",
+      "path": "data/worcestershire.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-york",
+      "title": "York Mobile Library Stops",
+      "path": "data/york.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    }
+  ]
+}

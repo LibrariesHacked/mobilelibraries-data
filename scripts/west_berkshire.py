@@ -1,3 +1,10 @@
+"""West Berkshire: convert the council ArcGIS MapServer extract (raw/west_berkshire.json)
+into data/west_berkshire.csv.
+
+The query used to extract the JSON is noted above DATA_SOURCE. The service closed in
+March 2025 - see history/ for the archived stops.
+"""
+
 import json
 from datetime import datetime, timedelta
 import re
@@ -10,6 +17,7 @@ DATA_OUTPUT = '../data/west_berkshire.csv'
 TIMETABLE = 'http://info.westberks.gov.uk/mobilelibraries'
 
 def read_data(data_source):
+    """Load the ArcGIS JSON file at data_source and return its list of feature dicts."""
 
     features = []
     with open(data_source) as data_file:
@@ -20,6 +28,7 @@ def read_data(data_source):
     return features
 
 def run():
+    """Parse archived West Berkshire stop features and write data/west_berkshire.csv."""
 
     features = read_data(DATA_SOURCE)
     features_sorted = sorted(features, key=lambda k: (k['attributes']['ROUTE']))
@@ -31,8 +40,10 @@ def run():
 
     for feature in features_sorted:
 
+        # Route identifier is the leading character of the ROUTE field
         route = feature['attributes']['ROUTE'][0:1]
         times = feature['attributes']['TIME']
+        # Extract arrival and departure HH.MM pairs from the free-text TIME string
         times_result = re.search(r'(\d{2}.\d{2}).*(\d{2}.\d{2})', times)
         arrival = times_result.group(1).replace('.', ':')
         departure = times_result.group(2).replace('.', ':')
@@ -45,6 +56,7 @@ def run():
         longitude = feature['geometry']['x']
         latitude = feature['geometry']['y']
 
+        # Anchor start date and weekday to the first October 2019 visit date in DATES
         dates_search = re.search(r'Oct: (\d{1,2})', dates)
         date = datetime.strptime(dates_search.group(1) + ' Oct 2019', '%d %b %Y')
         start = date.strftime('%Y-%m-%d')

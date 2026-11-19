@@ -1,3 +1,9 @@
+"""Milton Keynes: convert the saved timetable (raw/milton_keynes.csv) into data/milton_keynes.csv.
+
+Legacy script: reads a saved copy rather than fetching it. The service has since been
+withdrawn - see history/ for the archived stops.
+"""
+
 import requests
 import json
 import csv
@@ -7,6 +13,7 @@ DATA_SOURCE = '../raw/milton_keynes.csv'
 
 
 def run():
+    """Read stops from DATA_SOURCE, geocode postcodes via postcodes.io, and write milton_keynes.csv."""
 
     timetable = 'https://www.milton-keynes.gov.uk/libraries/about-libraries/mobile-library-service'
     mobiles = []

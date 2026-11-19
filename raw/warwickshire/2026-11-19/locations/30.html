@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Libraries : Locations - Show - 30</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/MobileLibraries/assets/application-9fccb4596cd7e041ba7e7fe29d85f1a5.css" media="all" rel="stylesheet" />
+  <script src="/MobileLibraries/assets/application-7f74a165bed16529e049c12f0104d746.js"></script>
+  <link href="https://warwickshire.github.io/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" media="all" href="https://warwickshire.github.io/wcc_style_modifier.css" />
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="JmyLahwsP81wWG0Nd6DVOvJhZnfCIpyEIuZhxtn8Qak=" name="csrf-token" />
+  <!--[if lt IE 9]>
+    <script src="/MobileLibraries/assets/html5-e258638e942019b1ce1b40fe0b979706.js"></script>
+  <![endif]-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129085183-11"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129085183-11');
+</script>
+
+</head>
+<body lang="en">
+
+  <div id="wrap">
+    <header>
+  <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-full">
+
+    <div class="navbar-header">
+
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="search btn-search pull-right" alt="Warwickshire County Council Search">
+        <span class="glyphicon glyphicon-search icon-white"></span>
+      </a>
+
+      <a class="govdelmobile pull-right" alt="GDS logo" href="https://public.govdelivery.com/accounts/UKWarwickshire/subscriber/new">
+        <img src="https://static.warwickshire.gov.uk/img/keep_me_posted_envelope_17px.png" alt="GDSl" style="width:17px;">
+      </a>
+
+      <a class="navbar-brand" alt="Warwickshire County Council logo" href="//www.warwickshire.gov.uk/">
+        <img src="https://static.warwickshire.gov.uk/img/corpwhitelogo.png" alt="Warwickshire County Council">
+      </a>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="left-topbar">
+
+      <ul class="nav navbar-nav">
+
+        <a class="gdslogo2" alt="GDS logo" href="https://public.govdelivery.com/accounts/UKWarwickshire/subscriber/new">
+          <img src="https://static.warwickshire.gov.uk/img/keep_me_posted_envelope_17px.png" alt="GDSl" style="width:17px;">
+        </a>
+
+        <a class="gdstext" href="https://public.govdelivery.com/accounts/UKWarwickshire/subscriber/new">Email alerts</a>
+        
+      </ul>
+      <div class="pull-right">
+
+      
+        <form action="https://warwickshire.gov.uk/search-results-page" method="get" name="kbs" class="navbar-form" id="site-search">
+
+          <label for="qtbottom" class="skip" style="display:none;">Search again</label>
+          <input class="span3" type="text" maxlength="1000" size="40" name="q" id="qtbottom" alt="Search" placeholder="Search (eg. libraries, blue badge, potholes)">
+          <button type="submit" value="Search" id="kbsubmitbottom" class="btn btn-mini searchbutton">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="row style-1-gradient" id="top-header">
+  <div class="container">
+    <div class="span12" style="height:100px;">
+      <div class="row">
+        <div class="row">
+          <div class="span9">
+            <form action="https://warwickshire.gov.uk/search-results-page" method="get" name="kbs" class="mobile-search" id="site-search">
+              <input class="span3" type="text" maxlength="1000" size="40" name="q" id="qtbottom" alt="Search" placeholder="Search (eg. libraries, blue badge, potholes)">
+              <button type="submit" value="Search" id="kbsubmitbottom" class="btn btn-mini searchbutton">Search</button>
+            </form>
+            <script type="text/javascript">
+              var button = $('.btn-search');
+              button.on('click', function () {
+                  $('#top-header').toggleClass('show-search');
+              });
+            </script>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+</div>
+
+</header>
+   
+    <div class="container-full dynamic-content">
+
+      <main role="main">
+        <ul class="nav nav-pills app_nav">
+  <li><a href="/MobileLibraries/locations" role="presentation">Locations</a></li>
+  <li><a href="/MobileLibraries/library_routes" role="presentation">Routes</a></li>
+</ul>
+
+        
+
+        <div class="search_form">
+          <form accept-charset="UTF-8" action="/MobileLibraries/library_stops" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+            <input id="stops_near" name="stops_near" type="text" />
+            <input class="btn btn-primary" name="commit" type="submit" value="Search for stops" />
+</form>        </div>
+          
+        <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+        <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDE51KYzNA1_o4D_0bNjKr9IuL3f-RYNi8&libraries=places" type="text/javascript"></script>
+        
+        <script>
+//<![CDATA[
+
+
+          if (typeof google !== 'undefined') {
+            new google.maps.places.Autocomplete(
+              /** @type {HTMLInputElement} */(document.getElementById('stops_near')),
+               { types: ['geocode'], componentRestrictions: {country: 'uk'} }
+            );
+          };
+
+
+//]]>
+</script>
+        <h2>Opposite Kimble Close, Knightcote</h2>
+
+<div id="map_container">
+  <div id="map" style='width: 800px; height: 400px;'></div>
+</div>
+
+<script>
+//<![CDATA[
+
+
+var handler = Gmaps.build('Google');
+
+handler.buildMap({
+    provider: {
+      disableDefaultUI: true,
+      // pass in other Google Maps API options here//
+      zoomControl: true,
+      scaleControl: true,
+      streetViewControl: true,
+      maxZoom: 16
+    },
+    internal: {
+      id: 'map'
+    }
+  },
+  function(){
+    markers = handler.addMarkers([{"lat":"52.187649","lng":"-1.417653","picture":{"url":"/MobileLibraries/bus.png","width":36,"height":36}},{"lat":"52.187649","lng":"-1.417653","picture":{"url":"/MobileLibraries/bus.png","width":36,"height":36}},{"lat":"52.187649","lng":"-1.417653","picture":{"url":"/MobileLibraries/bus.png","width":36,"height":36}},{"lat":"52.187649","lng":"-1.417653","picture":{"url":"/MobileLibraries/bus.png","width":36,"height":36}}]);
+    handler.bounds.extendWith(markers);
+    handler.fitMapToBounds();
+  }
+);
+
+
+//]]>
+</script>
+
+<p>This location is on the following routes:</p>
+
+<h3>
+  <a href="/MobileLibraries/library_routes/125">Hawkes Point Mobile - K Route</a>
+</h3>
+
+<p>
+  The Mobile library will be here from
+  12:15
+  to
+  12:30
+</p>
+
+<p>This route will operate on:</p>
+<ul class="travel_day_list">
+  <li> 4 December 2026</li>
+  <li> 8 January 2027</li>
+  <li> 5 February 2027</li>
+  <li> 5 March 2027</li>
+  <li> 2 April 2027</li>
+  <li>30 April 2027</li>
+  <li>28 May 2027</li>
+  <li>25 June 2027</li>
+  <li>23 July 2027</li>
+  <li>20 August 2027</li>
+  <li>17 September 2027</li>
+  <li>15 October 2027</li>
+  <li>12 November 2027</li>
+  <li>10 December 2027</li>
+</ul>
+
+
+
+      </main>
+    </div>
+    <div id="push"></div>
+  </div>
+  <footer>
+  <div class="container">
+  
+    <div class="row">
+
+      <div class="col col-sm-3"><a href="http://www.warwickshire.gov.uk/" class="footer-logo">
+    <img src="https://warwickshire.github.io/logo.png" class="footer-logo-image" alt="WCC Logo"> 
+    <p class="footer-logo-text">Warwickshire County Council</p>
+    <p class="footer-logo-subtext">© Warwickshire County Council</p>
+  </a>
+      </div>
+
+      <div class="col col-sm-2">
+        <aside id="text-3" class="widget widget_text">
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/az">A-Z of services</a></p></div>
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/accessibility">Accessibility</a></p></div>
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/contactus">Contact us</a></p></div>
+        </aside>
+      </div>
+
+      <div class="col col-sm-3">
+        <aside id="text-4" class="widget widget_text">
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/customerservice">Customer service and complaints</a></p></div>
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/help">Help using the website</a></p></div>
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/disclaimer">Privacy and disclaimer</a></p></div>
+        </aside>
+      </div>
+
+      <div class="col col-lg-2">
+        <aside id="text-6" class="widget widget_text">
+          <div class="textwidget">
+            <a href="https://public.govdelivery.com/accounts/UKWarwickshire/subscriber/new">
+              <img class="keep_me_posted" src="https://static.warwickshire.gov.uk/img/keep me posted white on trans 155x39.png" alt="gov delivery">
+            </a>
+          </div>
+        </aside>
+        <aside id="text-11" class="widget widget_text">
+          <div class="textwidget">
+            <script type="text/javascript">
+              function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-9510501-3'}, 'google_translate_element');
+              }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <div id="google_translate_element"></div>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

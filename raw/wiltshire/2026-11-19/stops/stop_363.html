@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' *.wiltshire.gov.uk fonts.googleapis.com;font-src 'self' *.wiltshire.gov.uk fonts.gstatic.com;script-src 'self' *.wiltshire.gov.uk;connect-src http://localhost:* ws://localhost:*;object-src 'none';" />
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-XSS-Protection" content="0; mode=block" />
+    <meta http-equiv="Cache-Control" content="no-cache" /> <!-- use no-store for no caching whatsoever -->
+    <title>Wiltshire Council Libraries Information</title>
+    <script src="/librariesinformation/lib/jquery/jquery.min.js"></script>
+    <script src="/librariesinformation/css/govuk-frontend/dist/govuk-frontend-2.4.1.min.js"></script>
+    <script src="/librariesinformation/js/site.js"></script>
+    <link rel="stylesheet" type="text/css" href="/librariesinformation/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/librariesinformation/lib/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="/librariesinformation/css/govuk-frontend/dist/govuk-frontend-2.4.1.min.css" />
+    <link rel="stylesheet" type="text/css" href="/librariesinformation/css/overrides.css" />
+    <link rel="stylesheet" type="text/css" href="/librariesinformation/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/librariesinformation/css/alphabetmenu.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&display=swap" />
+    <link rel="icon" href="/librariesinformation/favicon.png" type="image/png" />
+	
+	<link rel="stylesheet" href="/librariesinformation/css/ol.css" />
+	<link rel="stylesheet" href="/librariesinformation/css/mapping.css" />
+	<script src="/librariesinformation/js/proj4.js"></script>
+	<script src="/librariesinformation/js/ol.js"></script>
+	<script src="/librariesinformation/js/mapping.js"></script>
+	<script src="/librariesinformation/js/map-stop.js"></script>
+
+</head>
+<body class="govuk-template__body">
+    
+<header class="topnav">
+    <div class="govuk-width-container">
+        <nav class="navbar navbar-expand-lg background-color-006750 navbar-custom">
+            <div class="nav-div-bar">
+                <div>
+                    <a class="link-pointer" href="https://www.wiltshire.gov.uk/libraries-home?">
+                        <img src="/librariesinformation/images/logo_wilts.svg" alt="Wiltshire Council Logo" />
+						<span class="govuk-header__product-name govuk-!-padding-0 govuk-!-padding-left-2 ">
+							Wiltshire Libraries
+						</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+    <div class="container body-content">
+        <div class="container wc-panel">
+            <div class="govuk-width-container min-height-container">
+                <main class="govuk-main-wrapper">
+			        <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-full">
+                            
+	<div class="govuk-breadcrumbs">
+		<ol class="govuk-breadcrumbs__list">			
+			<li class="govuk-breadcrumbs__list-item"><a href="/librariesinformation">Home</a></li>
+				<li class="govuk-breadcrumbs__list-item"><a href="/librariesinformation/Library/Mobiles">Mobile libraries</a></li>
+						<li class="govuk-breadcrumbs__list-item"><a href="/librariesinformation/Library/Routes/3">South mobile library</a></li>
+						<li class="govuk-breadcrumbs__list-item"><a href="/librariesinformation/Route/Index/61">Route T</a></li>
+			<li class="govuk-breadcrumbs__list-item">Sutton Veny, School, High Street</li>
+		</ol>
+	</div>
+
+			            </div>
+			        </div>
+                    
+                    <h1 class="govuk-heading-xl">Sutton Veny, School, High Street</h1>
+			        
+
+
+<input type="hidden" data-val="true" data-val-required="The Id field is required." id="Stop_Id" name="Stop.Id" value="363" />
+<input type="hidden" id="Stop_Easting" name="Stop.Easting" value="390195" />
+<input type="hidden" id="Stop_Northing" name="Stop.Northing" value="141739" />
+<input type="hidden" data-val="true" data-val-length="Please enter 100 characters or fewer" data-val-length-max="100" id="Stop_Name" name="Stop.Name" value="School, High Street" />
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-three-quarters">
+		
+<span>
+    <p class='govuk-body'>Follow us on <a href="https://www.facebook.com/WiltshireMobileLibraries" class="govuk-link" target="_blank" title="Wiltshire Mobile Libraries Facebook">Facebook</a> (opens in a new tab) and <a href="https://twitter.com/WiltsLibraries" class="govuk-link" target="_blank" title="Wiltshire Libraries Twitter">Twitter</a> (opens in a new tab) for mobile library updates. If you have an enquiry about the mobile libraries, please email <a href="mailto:libraryenquiries@wiltshire.gov.uk" class="govuk-link" title="Library enquiries email">libraryenquiries@wiltshire.gov.uk</a>. Our mobile libraries do not operate on Bank Holidays.</p>
+
+</span>
+
+<span>
+    
+
+</span>
+
+
+			<div id="map" class="map-box;">
+				<div id="mapCopyright">
+					<p>&copy; Crown copyright and database rights 2024 Ordnance Survey AC0000812613</p>
+				</div>
+			</div>
+
+				<table class="govuk-table">
+					<thead class="govuk-table__head">
+						<tr class="govuk-table__row">
+							<th scope="col" class="govuk-table__header text-left">Mobile Library</th>
+							<th scope="col" class="govuk-table__header text-left">Route</th>
+							<th scope="col" class="govuk-table__header text-left">Day</th>
+							<th scope="col" class="govuk-table__header text-left">Week</th>
+						</tr>
+					</thead>
+					<tbody class="govuk-table__body">
+						<tr class="govuk-table__row">
+							<td class="govuk-table__cell text-left"><a href="/librariesinformation/Library/Routes/3">South mobile library</a> </td>
+							<td class="govuk-table__cell text-left"><a href="/librariesinformation/Route/Index/61">Route T</a></td>
+								<td class="govuk-table__cell text-left">Friday</td>
+								<td class="govuk-table__cell text-left">Week 4</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="govuk-table">
+					<thead class="govuk-table__head">
+						<tr class="govuk-table__row">
+							<th scope="col" class="govuk-table__header text-left">Date</th>
+							<th scope="col" class="govuk-table__header text-left">Arrives</th>
+							<th scope="col" class="govuk-table__header text-left">Departs</th>
+						</tr>
+					</thead>
+					<tbody class="govuk-table__body">
+							<tr class="govuk-table__row">
+								<td class="govuk-table__cell text-left">Friday, 27 November 2026</td>
+								<td class="govuk-table__cell text-left">9:45</td>
+								<td class="govuk-table__cell text-left">10:15</td>
+							</tr>
+							<tr class="govuk-table__row">
+								<td class="govuk-table__cell text-left">Friday, 25 December 2026</td>
+								<td class="govuk-table__cell text-left">9:45</td>
+								<td class="govuk-table__cell text-left">10:15</td>
+							</tr>
+							<tr class="govuk-table__row">
+								<td class="govuk-table__cell text-left">Friday, 22 January 2027</td>
+								<td class="govuk-table__cell text-left">9:45</td>
+								<td class="govuk-table__cell text-left">10:15</td>
+							</tr>
+							<tr class="govuk-table__row">
+								<td class="govuk-table__cell text-left">Friday, 19 February 2027</td>
+								<td class="govuk-table__cell text-left">9:45</td>
+								<td class="govuk-table__cell text-left">10:15</td>
+							</tr>
+							<tr class="govuk-table__row">
+								<td class="govuk-table__cell text-left">Friday, 19 March 2027</td>
+								<td class="govuk-table__cell text-left">9:45</td>
+								<td class="govuk-table__cell text-left">10:15</td>
+							</tr>
+							<tr class="govuk-table__row">
+								<td class="govuk-table__cell text-left">Friday, 16 April 2027</td>
+								<td class="govuk-table__cell text-left">9:45</td>
+								<td class="govuk-table__cell text-left">10:15</td>
+							</tr>
+							<tr class="govuk-table__row">
+								<td class="govuk-table__cell text-left">Friday, 14 May 2027</td>
+								<td class="govuk-table__cell text-left">9:45</td>
+								<td class="govuk-table__cell text-left">10:15</td>
+							</tr>
+					</tbody>
+				</table>
+				<hr />
+	
+	</div>
+	<div class="govuk-grid-column-one-quarter nav-container">
+    <h2 class="govuk-heading-m nav-main-heading">
+        Find out more
+    </h2>
+
+    <ul class="govuk-list">
+            <li class="link-item">
+				<span class="fas fa-sm fa-fw fa-search" aria-hidden="true"></span>
+                <a class="govuk-link" href="/librariesinformation/Library/Search">Find a library near you</a>
+            </li>
+
+            <li class="link-item">
+				<span class="fas fa-sm fa-fw fa-list" aria-hidden="true"></span>
+				<a class="govuk-link" href="/librariesinformation/Library/List">View a list of libraries</a>
+            </li>
+
+            <li class="link-item">
+				<span class="fas fa-sm fa-fw fa-van-shuttle" aria-hidden="true"></span>
+                <a class="govuk-link" href="/librariesinformation/Library/Mobiles">View mobile libraries</a>
+            </li>
+    </ul>
+</div>
+</div>
+		        </main>
+    	    </div>
+    	</div>
+	</div>
+
+	<footer class="govuk-footer govuk-!-font-size-19" role="contentinfo">
+    <div class="govuk-width-container ">
+        <div class="govuk-footer__meta footer-group">
+            <div class="govuk-footer__meta-item govuk-footer__meta-item--grow footer-meta-item footer-meta-item-grow">
+                <h2 class="govuk-visually-hidden">Support links</h2>
+
+                <ul class="govuk-footer__inline-list footer-inline-list">
+                    <li class="govuk-footer__inline-list-item footer-inline-list-item">
+                        <a class="govuk-footer__link footer-link-url" target="_blank" href="http://www.wiltshire.gov.uk/contact">
+                            Contact
+                        </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item footer-inline-list-item">
+                        <a class="govuk-footer__link footer-link-url" target="_blank" href="http://www.wiltshire.gov.uk/privacy">
+                            View privacy statement
+                        </a>
+                    </li>
+                    <li class="govuk-footer__inline-list-item footer-inline-list-item">
+                        <a class="govuk-footer__link footer-link-url" target="_blank" href="https://twitter.com/WiltsLibraries">
+                            Twitter
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="govuk-footer__meta-item footer-meta-item footer-inline-list-item footer-copyright-logo">
+                <a class="govuk-footer__link footer-link-url govuk-footer__copyright-logo footer-logo" href="">
+                    <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-full">
+                            <img alt="Logo" src="/librariesinformation/images/logo_footer.svg">
+                        </div>
+                    </div>
+
+                    <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-full margin-top-15">
+                            <span>© Wiltshire Council</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

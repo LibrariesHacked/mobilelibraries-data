@@ -1,4 +1,4 @@
-"""Web scrapes Wrexham mobile library pages """
+"""Web scrapes Wrexham County Borough Council mobile library pages (HTML at https://beta.wrexham.gov.uk/service/mobile-library-service) and writes data/wrexham.csv."""
 
 from datetime import datetime
 import json
@@ -11,8 +11,9 @@ from _common import create_mobile_library_file
 
 WEBSITE = 'https://beta.wrexham.gov.uk/'
 DATA_SOURCE = 'service/mobile-library-service'
-POSTCODE_RE = '(([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2}))'
-DATA_RE = '(.*),(.*)\((\d*):?(\d*).*-[^0-9](\d*):?(\d*)'
+POSTCODE_RE = r'(([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2}))'
+# Matches "Community, Stop (H[:MM] - H[:MM])" where colons and minutes are optional
+DATA_RE = r'(.*),(.*)\((\d*):?(\d*).*-[^0-9](\d*):?(\d*)'
 
 
 def run():
@@ -44,6 +45,7 @@ def run():
             start = dates.find_all('li')[0].string.strip()
         if 'and' in start:
             start = start.split('and')[0]
+        # Source page omits the year, so append 2019 to parse month/day
         date_obj = datetime.strptime(start + ' 2019', '%b %d %Y')
         start = datetime.strftime(date_obj, '%Y-%m-%d')
 
@@ -55,6 +57,7 @@ def run():
             postcode = ''
             if postcode_match:
                 postcode = postcode_match.group(1)
+            # Hardcoded fixes for missing or typoed postcodes on the source page
             if postcode == '' and 'Brymbo' in stop.string:
                 postcode = 'LL11 5AG'
             if postcode == '' and 'Cynddelw School' in stop.string:
@@ -80,6 +83,7 @@ def run():
             community = data.group(1).strip()
             stop_name = data.group(2).strip()
             arrival_hours = data.group(3).strip()
+            # Hours 1-7 denote afternoon (PM) in the 12-hour timetable
             if int(arrival_hours) < 8:
                 arrival_hours = int(arrival_hours) + 12
             arrival_mins = data.group(4).strip()

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Braintree Mobile Library Stops</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>Cressing, Springett House</name>
+        <description>Mobile Library 1 Monday 10:10-10:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5867842,51.8565943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>White Notley, Vicarage Avenue</name>
+        <description>Mobile Library 1 Monday 11:05-11:35</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5917746,51.8337914,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Faulkbourne, Village Hall</name>
+        <description>Mobile Library 1 Monday 11:40-12:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6053864,51.8242034,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Black Notley, Bedells Avenue</name>
+        <description>Mobile Library 1 Monday 12:15-12:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5655257,51.8546161,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Notley, Derwent Way Pond</name>
+        <description>Mobile Library 1 Monday 13:50-14:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5320924,51.8625711,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Terling, School Green</name>
+        <description>Mobile Library 1 Monday 15:15-15:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5684722,51.8062607,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stambourne, Village Hall</name>
+        <description>Mobile Library 1 Wednesday 10:05-10:35</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5083612,52.0203112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Yeldham, North Road</name>
+        <description>Mobile Library 1 Wednesday 10:50 - 11:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.563925,52.0167281,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Little Yeldham, Village Hall</name>
+        <description>Mobile Library 1 Wednesday 11:30 - 12:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.590402,52.0253949,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Belchamp St Paul, Primary School</name>
+        <description>Mobile Library 1 Wednesday 13:00 - 14:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6142494,52.0505993,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pentlow, Telephone Kiosk</name>
+        <description>Mobile Library 1 Wednesday 14:10-14:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6460874,52.072767,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Foxearth, Old School</name>
+        <description>Mobile Library 1 Wednesday 14:50-15:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6763759,52.0696361,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rayne, Primary School</name>
+        <description>Mobile Library 1 Thursday 9:40-10:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5056803,51.8781058,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Sailing, Grove Villas</name>
+        <description>Mobile Library 1 Thursday 10:25-10:55</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4713016,51.9040406,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Bardfield, Town Hall</name>
+        <description>Mobile Library 1 Thursday 11:10-11:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4350934,51.9470832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cornish Hall End, Horse and Groom</name>
+        <description>Mobile Library 1 Thursday 12:45 - 13:05</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4505431,52.0014068,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Birdbrook, The Church</name>
+        <description>Mobile Library 1 Thursday 13:20 - 13:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.487578,52.0423303,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ridgewell, Church Lane</name>
+        <description>Mobile Library 1, Thursday, 13:50-14:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5336068,52.0391404,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Ashen, St Augustine's Church, The Street]]></name>
+        <description>Mobile Library 1 Thursday 14:20 - 14:50</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5465588,52.0518143,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gosfield, Nuns Meadow</name>
+        <description>Mobile Library 2 Monday 9:45-10:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5894587,51.9351533,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wethersfield, High Street</name>
+        <description>Mobile Library 2 Monday 10:40-11:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4893687,51.9535829,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Shalford, Barryfields</name>
+        <description>Mobile Library 2 Monday 11:20-11:50</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5016273,51.9349561,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Jaspers Green, Telephone Kiosk</name>
+        <description>Mobile Library 2 Monday 12:45-13:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5003772,51.9117101,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Panfield, Meadow Close</name>
+        <description>Mobile Library 2 Monday 13:30-14:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.516273,51.8994247,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Polly's Field Village, Bocking]]></name>
+        <description>Mobile Library 2 Monday 14:10-14:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.553807,51.8937437,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Middleton, Box Iron Green</name>
+        <description>Mobile Library 2 Wednesday 10:00-10:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.724096,52.0224026,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bulmer, The Street</name>
+        <description>Mobile Library 2 Wednesday 10:45-11:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.682795,52.0294462,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gestingthorpe, The Village Green</name>
+        <description>Mobile Library 2 Wednesday 12:30-13:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6390546,52.0168535,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wickham St Paul, The Village Green</name>
+        <description>Mobile Library 2 Wednesday 13:10-13:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6642319,51.9993302,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Belchamp Walter, Crossroads</name>
+        <description>Mobile Library 2 Wednesday 11:30-12:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6496578,52.0335206,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pebmarsh, Kings Head</name>
+        <description>Mobile Library 2 Wednesday 13:50-14:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.694035,51.9691705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Greenstead Green, Greenstead Farm (Crocklands)</name>
+        <description>Mobile Library 2 Wednesday 14:30-15:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6488174,51.9206716,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Mount Bures, Craig's Lane and Hall Road ]]></name>
+        <description>Mobile library 2 Wednesday 14:30-15:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.7735915,51.9599067,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Untitled layer</name>
+    </Folder>
+  </Document>
+</kml>

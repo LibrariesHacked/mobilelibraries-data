@@ -1,4 +1,8 @@
-"""Web scrapes Northern Ireland mobile library pages """
+"""Web scrapes Northern Ireland (Libraries NI) mobile library pages.
+
+Source: https://www.librariesni.org.uk/Libraries/Pages/Mobile-Libraries.aspx (HTML)
+Output: data/librariesni.csv
+"""
 
 from datetime import datetime
 import json
@@ -16,6 +20,7 @@ LIST_PAGE = '/Libraries/Pages/Mobile-Libraries.aspx'
 def run():
     """Runs the main script"""
 
+    # Reference fortnightly anchor dates used to seed the RRULE start_date
     dates = {
         '1': {
             "Monday": "2019-04-08",
@@ -92,6 +97,7 @@ def run():
                             postcode = ''.join(
                                 ch for ch in postcode if ch.isalnum())
 
+                            # Fix typos in published timetable postcodes before geocoding
                             if postcode == 'BT367FT':
                                 postcode = 'BT367HT'
                             if postcode == 'BT526NU':
@@ -118,6 +124,7 @@ def run():
                                 latitude = postcode_data['result']['latitude']
                                 longitude = postcode_data['result']['longitude']
 
+                                # Override coordinates for stops whose postcodes fail or resolve inaccurately
                                 if stop_name == '​Montgomery Manor':
                                     latitude = 54.657097
                                     longitude = -5.632655
@@ -130,7 +137,8 @@ def run():
                                 route = mobile_name + ' ' + day + ' ' + week_no
                                 times = row.find_all(
                                     'td')[0].get_text().strip().replace(':', '')
-                                times_matcher = re.compile('\d{1,4}')
+                                # Match 1-to-4 digit time tokens after stripping colons
+                                times_matcher = re.compile(r'\d{1,4}')
                                 times_matches = re.findall(
                                     times_matcher, times)
                                 if len(times_matches) > 0:
@@ -149,6 +157,7 @@ def run():
                                         arrival_hours = arrival[0:2]
                                         arrival_mins = arrival[2:4]
 
+                                    # Timetable uses 12-hour times; hours under 08 are PM
                                     if int(arrival_hours) < 8:
                                         arrival_hours = int(arrival_hours) + 12
 
@@ -172,6 +181,7 @@ def run():
                                         departure_hours = departure[0:2]
                                         departure_mins = departure[2:4]
 
+                                    # Timetable uses 12-hour times; hours under 08 are PM
                                     if int(departure_hours) < 8:
                                         departure_hours = int(
                                             departure_hours) + 12

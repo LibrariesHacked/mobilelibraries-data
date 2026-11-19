@@ -1,0 +1,201 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-type" content="text/html;charset=UTF-8" /><title>
+	Worcestershire Mobile Library
+</title><link rel="icon" href="https://www.worcestershire.gov.uk/themes/custom/bbd_classy/favicon.ico" type="image/vn.microsoft.icon" />
+    <script type="text/javascript">        djConfig = { parseOnLoad: true }</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--ALWAYS PUT JQUERY LINKS BEFORE ESRI'S LINKS-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.29/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.29/"></script>
+
+    <link rel="stylesheet" href="CSS/WccGisStyles.css" />
+    <script type="text/javascript" language="Javascript" src="Javascript/geotools2.js"></script>
+    <script type="text/javascript" language="Javascript" src="javascript/wcc_custom.js?v=1"></script>
+</head>
+<body class="calcite">
+    <form name="form1" method="post" action="./" id="form1" autocomplete="off">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="qmXpgN0jIUoenqw3WDZsPN7co8kr2u/CWQzFgIP1ZATpd1cSyefWTSFnzWDv41m0Rtu7yINoFKJHBiL6A2QWR17ezISmLziDyTPbUvusjfrHP+ZmfSdcsc7+wGjeiPBUbdLxcvuPqwSEB8hAKCvWazmbH1Da1BqCQr89XXgc6jTX0ofrEQAFdxsHSKXQsEneindqWuRUF7A8/R4ix8baYUFa/w3CkwMMNl544URPJePoLCLGwHxKFPLKH+IwCLyy2OU9wHjU3uoiCjczLpOuGRltCIRDJ8tpFlHbA4F3owUVUZnTLzMxvZ6Jxy28WIakoH8mwUQUwKzazsK90rtZ2MXoVUp3m39jxu7cAXTQeeuJua8qJ3Nwg9gcUgR/DxctTQSHsXYsSO5Z5Y2sko/c8x8z9hwCLp//rMxY+DHPnyUtgQd6fZKTnnFses0b+697DHSfMa5RfNaNXPtMi6e1ffe8k6WMkOpHu/AmUCbHHIiz+CLjZZaGl3iew8qDbEX5" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/Website/WorcestershireMobileLibrary/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZOElE_WB3o_bnwNeDSxtzWqbHjBQLo1i1y6k2Rb7XR9FC9LhjHGzpY4PIicsglXMfw2&amp;t=639190869332169432" type="text/javascript"></script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="196DFF00" />
+</div>
+        <!-- WCC HEADER -->
+        <header>
+            <div class="wccHeader">
+                <a class="site-header" title="Worcestershire County Council Homepage" href="https://www.worcestershire.gov.uk">
+                    <div class="WCClink">Worcestershire County Council</div>
+                </a>
+                <a class="site-header" title="Disclaimer Information" href="null">
+                    <span class="disclaimerText" onclick="showDisclaimer(); return false;">Disclaimer</span>
+                </a>
+            </div>
+        </header>
+        <main>
+            <div class="wrapperDIV">
+                <div class="containerDIV">
+                    <div id="mapDIV">
+                        <div id="copyright" class="copyrightText">
+                            © Crown copyright and database rights
+                            <script type="text/javascript">document.write(new Date().getFullYear());</script>
+                            Ordnance Survey AC0000809204.<br />
+                            Use of this data is subject to <a href="https://gis.worcestershire.gov.uk/website/OSterms.htm" title="https://gis.worcestershire.gov.uk/website/OSterms.htm" target="_blank">Terms and Conditions</a>
+                        </div>
+                        <div id="loadingDIV">
+                            <img alt="Working" src="images/ProgressBar.gif" />
+                        </div>
+                        <div id="gpsDIV" class="loc_gps">
+                            <div style="font-family: Arial; padding: 7px; border-right: solid 1px #000000; float: left">My Location</div>
+                            <div style="float: right">
+                                <div id="LocateButton"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tocDIV">
+                        <div id="searchDiv">
+                            <h1 class="Heading1">Search for Mobile Library Stops</h1>
+                            <label class="searchLabel" for="searchKey">Search Mobile Library:</label>
+                            <input id="searchKey" autocomplete="nope" onkeypress=" return SearchKeyPress(event);" class="searchInput" type="text" placeholder="Type your search here..." />
+                            <label class="searchLabel" for="searchPostcode">Postcode:</label><label class="searchLabel searchDistLabel" for="searchDistance">Distance from Postcode:</label>
+                            <input id="searchPostcode" autocomplete="nope" onkeypress=" return SearchKeyPress(event);" class="PCInput" type="text" placeholder="Postcode..." />
+                            <select id="searchDistance" class="distSearchDDL">
+                                <option value="-- Any Distance --">-- Any Distance --</option>
+                                <option value="3219">Within 2 Miles</option>
+                                <option value="8047">Within 5 Miles</option>
+                                <option value="16093">Within 10 Miles</option>
+                                <option value="-- Any Distance --">10+ Miles</option>
+                            </select>
+                            <div id="PCerror" class="pcErrorDiv">
+                                <label>Cannot find this post code</label>
+                            </div>
+                            <div style="text-align: center; margin-top: 10px; margin-bottom: 8px;">
+                                <input onclick="updateSearch(); return false;" type="submit" value="Update search results" id="searchBtn" class="h2h-rounded-corners h2h-go-button" />
+                                <input onclick="clearSearch(); return false;" type="submit" value="Clear" id="clearBtn" class="h2h-rounded-corners h2h-white-button" />
+                            </div>
+                        </div>
+                        <div id="resultsDiv">
+                        </div>
+                        <div id="greyoutDIV" class="disclaimer">
+                            <div id="routeDIV" class="typeOptions" style="overflow-y: auto; overflow-x: hidden; max-height: 70vh">
+                                <div id="listDirections" class="infoStyle"></div>
+                                <div style="clear: both; text-align: center; padding-top: 10px; padding-bottom: 10px; margin-left: 10px; margin-right: 12px; background-color: #fff">
+                                    <input onclick="infoRouteOK(); return false;" type="button" value="OK" id="okrouteBtn" class="h2h-rounded-corners h2h-go-button" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="tabDIV" onclick="toggleTOC(); return false;">
+                        <img id="expColImg" alt="Collapse side panel" src="images/collapse.png" />
+                    </div>
+                    <div id="wccFooter" class="wccFooter">
+                        <!-- Social Media Links -->
+                        <div id="TOCFooterDIV">
+                            <div id="SocialMediaDIV">
+                                <img src="Images/iconfinder_facebook_2587943.png" style="height: 20px; margin: 5px; cursor: pointer; vertical-align: middle;" tabindex="0" title='Facebook' onclick="socialMediaClick(0); return false;" onkeypress=" return socialMediaClick(0);" />
+                                <img src="Images/iconfinder_twitter_2363052.png" style="height: 20px; margin: 5px; cursor: pointer; vertical-align: middle;" tabindex="0" title='Twitter' onclick="socialMediaClick(1); return false;" onkeypress=" return socialMediaClick(1);" />
+                                <img src="Images/iconfinder_youtube-1_2363389.png" style="height: 20px; margin: 5px; cursor: pointer; vertical-align: middle;" tabindex="0" title='Youtube' onclick="socialMediaClick(2); return false;" onkeypress=" return socialMediaClick(2);" />
+                                <img src="Images/iconfinder_linkedin_2587940.png" style="height: 20px; margin: 5px; cursor: pointer; vertical-align: middle;" tabindex="0" title='LinkedIn' onclick="socialMediaClick(3); return false;" onkeypress=" return socialMediaClick(3);" />
+                                <img src="Images/iconfinder_instagram_2587941.png" style="height: 20px; margin: 5px; cursor: pointer; vertical-align: middle;" tabindex="0" title='Instagram' onclick="socialMediaClick(4); return false;" onkeypress=" return socialMediaClick(4);" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <!-- Disclaimer Information -->
+            <div class="disclaimerPanel" id="disclaimerDIV">
+                <div style="font-weight: bold">Third Party Website Disclaimer</div>
+                <br />
+                Our website contains links to websites owned and operated by third parties. If you use these links you leave our website. These links are provided for your information and convenience only and are not an endorsement by Worcestershire County Council of the content of any linked websites or third party services. Worcestershire County Council has no control of the content of any linked website and is not responsible for these websites or their content or availability.
+                <br />
+                <br />
+                Worcestershire County Council therefore makes no warranties or representations, express or implied, about such linked websites, the third parties they are owned and operated by, the information contained on them or the suitability or quality of their products or services.
+                <br />
+                <br />
+                If you decide to access any third party websites and make use of the information contained on them and/or enter into any contract for the supply of goods or services from such third party and/or make any donations to such third party, you do so entirely at your own risk.
+                <br />
+                <br />
+                Worcestershire County Council accepts no liability for damage or loss, however caused, in connection with the use of or reliance upon any information, material products or services contained on or accessed through any such linked website.
+                <br />
+                <br />
+                <div style="font-weight: bold">Information Purposes Only</div>
+                <br />
+                Worcestershire County Council provides this service for information purposes only. The Council seek to meet the highest standard of quality information and every attempt has been made to present up to date and accurate information.
+                <br />
+                <br />
+                However, the Council cannot be held responsible for the misuse or misinterpretation of any information and offers no warranty to its accuracy or completeness. Worcestershire County Council accepts no liability for any loss, damage or inconvenience caused as a result of reliance on this information.
+                <br />
+                <br />
+                <div style="font-weight: bold">Ordnance Survey</div>
+                <br />
+                The Ordnance Survey mapping included within this web-site is provided by the Worcestershire County Council under licence from the Ordnance Survey in order to fulfil its public function to make available Council held public domain information. Persons viewing this mapping should contact Ordnance Survey copyright for advice where they wish to licence Ordnance Survey mapping/map data for their own use.
+                <br />
+                <br />
+                <input type="submit" name="okDisclaimer" value="I have read and understand the disclaimer" id="okDisclaimer" class="WCCButtonGreen" onclick="hideDisclaimer(); return false;" />
+                <br />
+                <br />
+                Problem with the map? Let us know at: <a href="mailto:GIS@worcestershire.gov.uk" target="_top">GIS@Worcestershire.gov.uk</a>
+            </div>
+            <div style="position:absolute; left:-3000px; top:-100px; visibility: hidden"><span id="MapsTokenLabel">WY9KFL0YK7d7yxwVf_I9tPPhiS7NilLaaG3SNFFLAPXnUKuhcocCrREsgqJckoJ5LrdSr4SLeYNGNv6P57g1p_tlJStfC75ngw3W9RjtzeY.</span></div>
+            <div style="position:absolute; left:-3000px; top:-100px; visibility: hidden"><span id="RoutesTokenLabel">amQDbp5_NDaKCNdFurYbEgg..V3eRP7ky0NcAqTspGQcsuGCfGtwYpBEYMaq4YaIdEMZ465VV9wkjN2KSGLYl02TsbbGseCxuZL0ZXX6_0K5-0weECyXV0UUR0id7kuz684P7Xv9bcIQSRIhOkIihWTSmXKf21qnh2XP-d0g.</span></div>
+        </main>
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+var callBackFrameUrl='/Website/WorcestershireMobileLibrary/WebResource.axd?d=beToSAE3vdsL1QUQUxjWdRHynDlAz-OryYla-SuXjwqdGEBe6VhTVk3aTN5YQ8iM9bWEk6mQNHPA7iGr8p3m8g2&t=639190869332169432';
+WebForm_InitCallback();//]]>
+</script>
+</form>
+</body>
+<script type='text/javascript'>
+    mapToken = document.getElementById("MapsTokenLabel").innerHTML;
+    routeToken = document.getElementById("RoutesTokenLabel").innerHTML;
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-55459111-1', 'auto');
+    ga('send', 'pageview');  
+</script>
+</html>

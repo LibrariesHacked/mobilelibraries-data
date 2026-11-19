@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang='en-GB'>
+<head>
+    
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<!-- Page details -->
+<meta name="application-name" content="NeathPortTalbotCouncil">
+<meta name="keywords" content="Week 2, mobile, library, route" />
+<meta name="description" content="Week 2 mobile library route" />
+<meta name="path" content="-1,1197,2166,8074,2171,2881" />
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<!-- Preconnect -->
+<link rel="preconnect" href="https://kit.fontawesome.com">
+<link rel="preconnect" href="https://kit-pro.fontawesome.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+
+<!-- Framework css -->
+<link rel="stylesheet" href="https://api.npt.gov.uk/asset?url=www.npt.gov.uk%2Fbootstrap%2F5.3.0%2Fcss%2Fbootstrap.min.css%3Fv%3D2" />
+
+    <!-- Custom css -->
+        <link rel="stylesheet" href="/css/npt20.min.css?v=q9d8ltHWEIA1s1UJXfZry6ZL7rKmZ_2byg_OKURsVZI" />
+        <link rel="stylesheet" href="/govuk-frontend/4.6.0/govuk-frontend-4.6.0.min.css?v=R6LEW6hQGS99m2N6emng0mMaNdrfm7izQrSIfG5KNYI" />
+
+    <!--
+    MeasurementID: G-HJ9C7ZG7F1
+    IsInternal: False
+    -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { window.dataLayer.push(arguments); }
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied',
+                'analytics_storage': 'denied',
+                'wait_for_update': 500  // milliseconds
+            });
+            gtag('set', 'ads_data_redaction', true);
+        </script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ9C7ZG7F1"></script>
+        <script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+            gtag('js', new Date());
+            gtag('config', 'G-HJ9C7ZG7F1', { 
+                'metaPath': '-1,1197,2166,8074,2171,2881',
+                'metaSource': ''
+            });
+        </script>
+
+
+<!-- Framework javascript -->
+
+<!-- Bootstrap -->
+<script defer src="/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- Font Awesome CSS (replaces runtime style injection - CSP safe) -->
+<link rel="stylesheet" href="/font-awesome/kits/50c09f5a42.css">
+
+<!-- Font Awesome Kit JS (SVG/JS, no auto CSS) -->
+<script defer crossorigin="anonymous" data-auto-replace-svg="false" data-auto-add-css="false" nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=" src="/font-awesome/kits/50c09f5a42.js"></script>
+<script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+    function faRefresh() { FontAwesome.dom.i2svg(); }
+    function faReady() { FontAwesome.dom.i2svg({ callback: faDone }); }
+    function faDone() { fitFooter(); }
+    function faLoaded(callback) {
+        setTimeout(function () {
+            if (typeof FontAwesome !== 'undefined') {
+                callback();
+            } else {
+                faLoaded(callback);
+            }
+        }, 100)
+    }
+    faLoaded(faReady);
+</script>
+
+<!-- Vanilla Lazyload -->
+<script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+        document.write('<script src="/js/intersectionObserver/intersectionObserver.min.js"><\/script>');
+</script>
+<script defer src="/js/vanilla-lazyload/19.1.3/lazyload.min.js"></script>
+<script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+    window.lazyFunctions = {}
+    window.addEventListener('DOMContentLoaded', function () {
+        instantiateLazyLoad();
+    });
+</script>
+
+<!-- js-cookie -->
+<script defer src="/js/js.cookie/2.2.1/js.cookie-2.2.1.min.js"></script>
+
+<!-- NPT Library -->
+<script defer src="/scripts/npt.min.js?v=PFa54IJ4jlTT2bJLMGtCfZvOBnqI-Nds9wn2qBIYRx0"></script>
+
+
+
+    <title>Week 2 route  - NPT Council</title>
+
+    <!-- Custom styles for this template -->
+    <meta name="theme-color" content="#265571" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" crossorigin href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap">
+
+    <link rel="stylesheet" href="https://websurveys2.govmetric.com/css/client/gm_sidebar.css" />
+    <script defer src="https://websurveys2.govmetric.com/js/client/gm_sidebar.js"></script>
+    <script defer src="https://hitcounter.govmetric.com/9990063"></script>
+
+    <link title="NPT Council Search" rel="search" type="application/opensearchdescription+xml" href="//www.npt.gov.uk/opensearch.xml" />
+
+    
+<link rel="canonical" href="https://www.npt.gov.uk/libraries/library-delivery-service/mobile-library-service/week-2-route/" />
+
+
+    
+
+</head>
+<body id="nptBody" class="body20 pt-0">
+    <header data-nosnippet>
+        
+<div id="top">
+    <a href="#content" class="govuk-skip-link"  data-analytics="ccGaElementClick(&#x27;Navigation - Skip&#x27;, &#x27;Week 2 route&#x27;);">Skip Navigation</a>
+</div>
+        <nav id="navbar" class="navbar navbar-dark bg-dark text-white shadow py-3 border-bottom-0">
+                    <div class="container">
+                        <a class="navbar-brand govuk-link govuk-link--inverse" href="/">
+                            <svg viewBox="0 0 480 100" height="50" class="d-none d-sm-inline">
+                                <title>Neath Port Talbot Council</title>
+                                <use href="/images/npt/logo_rect.svg#logo" />
+                            </svg>
+                            <svg viewBox="0 0 150 100" height="50" class="d-inline d-sm-none">
+                                <title>Neath Port Talbot Council</title>
+                                <use href="/images/npt/logo_rect.svg#logo" />
+                            </svg>
+                        </a>
+                        <div class="row">
+                            <div id="headersearch" class="col-auto">
+                                    <div class="form-group mr-2 float-end searchbox">
+
+                                        <label for="txtHeaderSearch">Search</label>
+                                        <div class="govuk-input__wrapper input-group-sm w-100">
+                                            <input type="search" data-search-trigger class="govuk-input" id="txtHeaderSearch" placeholder="Search npt.gov.uk">
+                                            <button data-search-trigger class="govuk-input__suffix govuk-button govuk-button--secondary btn mb-0 rounded-0 shadow-none w-auto" type="button" aria-label="Search"><span class="fal fa-search"></span></button>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="col-auto" role="toolbar">
+                                <ul class="list-unstyled list-inline mb-0">
+                                        <li class="list-inline-item d-none d-lg-inline"><a href="/" class="govuk-link govuk-link--inverse">Residents</a></li>
+                                        <li class="list-inline-item d-none d-lg-inline"><a href="/business/" class="govuk-link govuk-link--inverse">Business</a></li>
+                                        <li class="list-inline-item d-none d-lg-inline"><a href="/council/" class="govuk-link govuk-link--inverse">Council</a></li>
+                                        <li class="list-inline-item"><span class="fa-solid fa-user fa-fw"></span><a href="/your-community/welcome-to-mynpt/" class="govuk-link govuk-link--inverse">myNPT</a></li>
+                                    <li class="list-inline-item">
+
+<a href="/cy/llyfrgelloedd/gwasanaeth-dosbarthu-llyfrgell/gwasanaeth-y-llyfrgell-deithiol/llwybr-wythnos-2/" class="lang-switch govuk-link govuk-link--inverse" lang="cy-GB" 
+   data-culture="cy-GB" data-action="Change">Cymraeg</a>
+
+    <script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+        //if (window.__langSwitchBound) return;
+        //    window.__langSwitchBound = true;
+        var lanswitchEls = document.querySelectorAll('.lang-switch');
+        for (var i = 0; i < lanswitchEls.length; i++) {
+            lanswitchEls[i].addEventListener('click', function (e) {
+                if (typeof setLangPref === 'function') {
+                    setLangPref(e);
+                }
+            });
+        }
+    </script>
+</li>
+                                    
+    <li class="list-inline-item">
+        <button class="btn btn-outline-light govuk-link p-1 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-expanded="false" aria-controls="offcanvasNavbar">
+            <span class="fa-solid fa-bars fa-lg" aria-label="Main Navigation"></span>
+        </button>
+    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="collapse menu menu-large pb-2 w-100" id="subNavigation"></div>
+                        </div>
+                        
+    <div class="offcanvas offcanvas-end text-white bg-dark" tabindex="-1" data-bs-theme="dark" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <div class="offcanvas-title h3" id="offcanvasNavbarLabel"><span class="visually-hidden">Menu</span></div>
+            <button type="button" class="btn btn-outline-light govuk-link p-1 border-0" data-bs-dismiss="offcanvas" data-bs-theme="dark" aria-label="Close">
+                <span class="fas fa-xmark fa-2x"></span>
+                <span class="fas fa-xmark" data-fa-symbol="icon_offcanvas_close"></span>
+                <svg class="svg-inline--fa fa-2x" aria-hidden="true" role="img" width="0" height="0"><use xlink:href="#icon_offcanvas_close"></use></svg>
+
+            </button>
+        </div>
+        <div class="offcanvas-body p-0">
+            <div class="umb-block-grid"
+                 data-grid-columns="12;">
+
+                
+<div class="umb-block-grid__layout-container">
+        <div
+            class="umb-block-grid__layout-item"
+            data-content-element-type-alias="offcanvasList"
+            data-content-element-type-key="d2d955e8-406c-411d-9ad0-1954768a3912"
+            data-element-udi="umb://element/1c7222aab48c47cc960ff423454571a9"
+            data-col-span="12"
+            data-row-span="1"
+                        >
+
+
+    <ul class="navbar-nav justify-content-end flex-grow-1">
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/report-request-apply/pay/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Pay&#x27;);"
+                    target="_self" rel="">Pay</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/report-request-apply/report/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Report&#x27;);"
+                    target="_self" rel="">Report</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/report-request-apply/request/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Request&#x27;);"
+                    target="_self" rel="">Request</a>
+            </li>
+    </ul>
+        </div>
+        <div
+            class="umb-block-grid__layout-item"
+            data-content-element-type-alias="offcanvasList"
+            data-content-element-type-key="d2d955e8-406c-411d-9ad0-1954768a3912"
+            data-element-udi="umb://element/79e5117e72c24474ac7f22d87950606e"
+            data-col-span="12"
+            data-row-span="1"
+                        >
+
+
+    <ul class="navbar-nav justify-content-end flex-grow-1">
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/adult-social-care/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Adult social care&#x27;);"
+                    target="_self" rel="">Adult social care</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/bins-and-recycling/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Bins and recycling&#x27;);"
+                    target="_self" rel="">Bins and recycling</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/births-deaths-and-marriages/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Births, deaths and marriages&#x27;);"
+                    target="_self" rel="">Births, deaths and marriages</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/business/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Business&#x27;);"
+                    target="_self" rel="">Business</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/children-and-families/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Children and families&#x27;);"
+                    target="_self" rel="">Children and families</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/council/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Council&#x27;);"
+                    target="_self" rel="">Council</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/council-tax/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Council Tax&#x27;);"
+                    target="_self" rel="">Council Tax</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/culture-and-tourism/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Culture and tourism&#x27;);"
+                    target="_self" rel="">Culture and tourism</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/elections-and-voting/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Elections and voting&#x27;);"
+                    target="_self" rel="">Elections and voting</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/environmental-health/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Environmental health&#x27;);"
+                    target="_self" rel="">Environmental health</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/housing-and-benefits/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Housing and benefits&#x27;);"
+                    target="_self" rel="">Housing and benefits</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/jobs/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Jobs&#x27;);"
+                    target="_self" rel="">Jobs</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/libraries/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Libraries&#x27;);"
+                    target="_self" rel="">Libraries</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/parking-roads-and-travel/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Parking, roads and travel&#x27;);"
+                    target="_self" rel="">Parking, roads and travel</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/parks-sport-and-leisure/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Parks, sports and leisure&#x27;);"
+                    target="_self" rel="">Parks, sports and leisure</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/planning-and-building-control/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Planning and building control&#x27;);"
+                    target="_self" rel="">Planning and building control</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/schools-and-learning/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Schools and learning&#x27;);"
+                    target="_self" rel="">Schools and learning</a>
+            </li>
+            <li class="nav-item position-relative px-3 py-1">
+                    <a class="d-block h4 govuk-link govuk-link--inverse stretched-link mb-0" href="/your-community/" data-analytics="ccGaElementClick(&#x27;Task&#x27;, &#x27;Your community&#x27;);"
+                    target="_self" rel="">Your community</a>
+            </li>
+    </ul>
+        </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+                    </div>
+                    <div class="container d-lg-none d-flex justify-content-end">
+                        <ul class="list-unstyled list-inline mb-0">
+                                <li class="list-inline-item"><a href="/" class="govuk-link govuk-link--inverse">Residents</a></li>
+                                <li class="list-inline-item"><a href="/business/" class="govuk-link govuk-link--inverse">Business</a></li>
+                                <li class="list-inline-item"><a href="/council/" class="govuk-link govuk-link--inverse">Council</a></li>
+                        </ul>
+                    </div>
+                    <div class="container d-xl-none">
+                        <div id="headersearchMobile" class="w-100 pt-2">
+                                <div class="form-group searchbox mt-3">
+                                    <label for="txtHeaderSearchMobile">Search</label>
+                                    <div class="govuk-input__wrapper input-group-sm w-100">
+                                        <input type="text" data-search-trigger class="govuk-input" id="txtHeaderSearchMobile" placeholder="Search npt.gov.uk">
+                                        <button data-search-trigger class="govuk-input__suffix govuk-button govuk-button--secondary btn mb-0 rounded-0 shadow-none w-auto" type="button" aria-label="Search"><span class="fal fa-search"></span></button>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+        </nav>
+    </header>
+
+        <div class="" data-nosnippet>
+            <div class="container">
+                
+    <nav aria-label="Breadcrumb" class="govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile ">
+        <ol class="govuk-breadcrumbs__list">
+                <li class="govuk-breadcrumbs__list-item" >
+                    <a class="govuk-breadcrumbs__link " href="/" data-analytics="ccGaElementClick(&#x27;Navigation - Breadcrumbs&#x27;, &#x27;Neath Port Talbot Council&#x27;);">Home</a><span class="visually-hidden">&#x2800;</span>
+                </li>
+                <li class="govuk-breadcrumbs__list-item" >
+                    <a class="govuk-breadcrumbs__link " href="/libraries/" data-analytics="ccGaElementClick(&#x27;Navigation - Breadcrumbs&#x27;, &#x27;Libraries&#x27;);">Libraries</a><span class="visually-hidden">&#x2800;</span>
+                </li>
+                <li class="govuk-breadcrumbs__list-item" >
+                    <a class="govuk-breadcrumbs__link " href="/libraries/library-delivery-service/" data-analytics="ccGaElementClick(&#x27;Navigation - Breadcrumbs&#x27;, &#x27;Library delivery service&#x27;);">Library delivery service</a><span class="visually-hidden">&#x2800;</span>
+                </li>
+                <li class="govuk-breadcrumbs__list-item" >
+                    <a class="govuk-breadcrumbs__link " href="/libraries/library-delivery-service/mobile-library-service/" data-analytics="ccGaElementClick(&#x27;Navigation - Breadcrumbs&#x27;, &#x27;Mobile library service&#x27;);">Mobile library service</a><span class="visually-hidden">&#x2800;</span>
+                </li>
+
+                <li class="govuk-breadcrumbs__list-item breadcrumbs__current-page d-none d-md-inline-block ">Week 2 route</li>
+        </ol>
+    </nav>
+
+
+<script type="application/ld+json" nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">{"@context":"https://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Neath Port Talbot Council","item":"https://www.npt.gov.uk/"},{"@type":"ListItem","position":2,"name":"Libraries","item":"https://www.npt.gov.uk/libraries/"},{"@type":"ListItem","position":3,"name":"Library delivery service","item":"https://www.npt.gov.uk/libraries/library-delivery-service/"},{"@type":"ListItem","position":4,"name":"Mobile library service","item":"https://www.npt.gov.uk/libraries/library-delivery-service/mobile-library-service/"},{"@type":"ListItem","position":5,"name":"Week 2 route","item":"https://www.npt.gov.uk/libraries/library-delivery-service/mobile-library-service/week-2-route/"}]}</script>
+            </div>
+        </div>
+            <div id="feedbackBanner" class="container noprint" data-nosnippet>
+                <div class="govuk-phase-banner mb-3">
+                    <p class="govuk-phase-banner__content position-relative">
+                        <span class="govuk-phase-banner__text">
+                            Your <a href="https://websurveys2.govmetric.com/theme/gm/9990061" target="_blank" rel="nofollow" data-track="false" class="govuk-link stretched-link gm_sidebar_anchor">feedback</a> will help us improve this website.
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+
+    
+
+
+    
+<main>
+    <article id="content" class="pt-3 content20">
+        <div class="container">
+                <h1>Week 2 route</h1>
+                        <nav class="lgd-guide-nav nav navbar-nav mb-4" aria-label="Guide">
+                <ul class="lgd-guide-nav__list list-unstyled threecol bg-light px-3 pt-3 pb-2 border-top border-bottom">
+                            <li class="lgd-guide-nav__list-item pb-lg-2"><a class="govuk-link" href="/libraries/library-delivery-service/mobile-library-service/week-1-route/">Week 1 route</a></li>
+                            <li class="lgd-guide-nav__list-item lgd-guide-nav__list-item--active pb-lg-2" aria-current="page"><strong>Week 2 route</strong></li>
+                            <li class="lgd-guide-nav__list-item pb-lg-2"><a class="govuk-link" href="/libraries/library-delivery-service/mobile-library-service/week-3-route/">Week 3 route</a></li>
+                </ul>  
+            </nav>  
+            <div id="stepPartHeader" class="container mb-3 d-none" aria-hidden="true">
+                <div class="app-step-nav-header">
+                    <span class="app-step-nav-header__part-of">Part of</span>
+                    <a href="/libraries/library-delivery-service/mobile-library-service/" class="app-step-nav-header__title govuk-link">Mobile library service</a>
+                </div>
+            </div>
+                <div id="navGuideNext" class="container d-none" aria-hidden="true">
+                    <nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+                        <ul class="gem-c-pagination__list">
+                                <li class="gem-c-pagination__item gem-c-pagination__item--prev">
+                                    <a href="/libraries/library-delivery-service/mobile-library-service/week-1-route/" class="govuk-link gem-c-pagination__link" rel="next">
+                                        <span class="gem-c-pagination__link-title">
+                                            <span class="fas fa-arrow-left text-muted"></span><span class="gem-c-pagination__link-text">Previous</span>
+                                        </span>
+                                        <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+                                        <span class="gem-c-pagination__link-label">Week 1 route</span>
+                                    </a>
+                                </li>
+                                <li class="gem-c-pagination__item gem-c-pagination__item--next">
+                                    <a href="/libraries/library-delivery-service/mobile-library-service/week-3-route/" class="govuk-link gem-c-pagination__link" rel="next">
+                                        <span class="gem-c-pagination__link-title">
+                                            <span class="fas fa-arrow-right text-muted"></span><span class="gem-c-pagination__link-text">Next</span>
+                                        </span>
+                                        <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+                                        <span class="gem-c-pagination__link-label">Week 3 route</span>
+                                    </a>
+                                </li>
+                        </ul>
+                    </nav>
+                </div>
+                <script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+                    window.addEventListener('DOMContentLoaded', function () {
+                        // Insert guide step navigation buttons before related pages
+                        var guideNavEl = document.getElementById('navGuideNext');
+                        var mainEl = document.querySelector('main');
+                        var relatedEl = document.querySelector('.related');
+                        if (relatedEl != null) {
+                        relatedEl.parentNode.insertBefore(guideNavEl, relatedEl);
+                        } else if (mainEl != null) {
+                        mainEl.appendChild(guideNavEl);
+                        }
+                        // guideNavEl.style.display = 'block';
+                        replaceClass([guideNavEl], ['d-block'], ['d-none']);
+                        guideNavEl.setAttribute('aria-hidden', false);
+                    });
+                </script>
+            <script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+                // Insert step navigation header after breadcrumbs
+                var stepPartHeader = document.getElementById('stepPartHeader');
+                var headerLocatorEl = document.getElementById('feedbackBanner') || document.querySelector('.breadcrumb-bar');
+                if (headerLocatorEl != null) {
+                headerLocatorEl.parentNode.insertBefore(stepPartHeader, headerLocatorEl.nextSibling);
+                }
+                // stepPartHeader.style.display = 'block';
+                replaceClass(stepPartHeader, ['d-block'], ['d-none']);
+                stepPartHeader.setAttribute('aria-hidden', false);
+            </script>
+
+            
+    <div id="pageContentsPlaceholder">
+        <div id="pageContents"></div>
+    </div>
+    <script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+        // Wait until content has loaded
+        window.addEventListener('DOMContentLoaded', function () {
+            // Find container elements
+            var contentsEl = document.getElementById("pageContents");
+            // var articleEl = document.getElementById("contentInner") ?? document.getElementById("content");
+            var contentInnerEl = document.getElementById("contentInner");
+            var contentEl = document.getElementById("content");
+            var articleEl = (contentInnerEl !== null && contentInnerEl !== undefined) ? contentInnerEl : contentEl;
+
+            // Find heading elements, levels 2 to 6
+            var headings = [];
+            if (articleEl != null) {
+                // headings = articleEl.querySelectorAll('h2,h3,h4,h5,h6');
+                headings = articleEl.querySelectorAll('h2');
+            }
+
+            if (contentsEl != null && headings.length > 0) {
+                // Create contents list
+                var contentsNavEl = document.createElement('nav');
+                var contentsTitleEl = document.createElement('h2');
+                contentsTitleEl.classList.add('govuk-heading-m');
+                contentsTitleEl.classList.add('mb-2');
+                var contentsTitleText = document.createTextNode('Contents');
+                var contentsMenuEl = document.createElement('ul');
+                contentsMenuEl.id = "contentsMenu";
+                contentsTitleEl.appendChild(contentsTitleText);
+                contentsNavEl.appendChild(contentsTitleEl);
+                contentsMenuEl.classList.add('list-style-dash');
+                contentsMenuEl.classList.add('contents-menu');
+                contentsMenuEl.classList.add('nav');
+                contentsMenuEl.classList.add('d-block');
+                contentsNavEl.appendChild(contentsMenuEl);
+                contentsEl.appendChild(contentsNavEl);
+                contentsEl.appendChild(document.createElement('hr'));
+
+                var i;
+                for (i = 0; i < headings.length; i++) {
+                    // Ensure heading has id
+                    headings[i].id = headings[i].id || uniqueId(i + 1);
+
+                    // Insert list item with link to heading
+                    var itemEl = document.createElement('li');
+                    itemEl.classList.add('nav-item');
+                    itemEl.setAttribute("aria-level", headings[i].tagName.slice(-1) - 1);
+                    var linkEl = document.createElement('a');
+                    linkEl.href = "#" + headings[i].id;
+                    linkEl.classList.add("govuk-link");
+                    linkEl.classList.add('nav-link');
+                    linkEl.classList.add('d-inline-block');
+                    linkEl.classList.add('w-100');
+                    linkEl.classList.add('px-1');
+                    linkEl.classList.add('py-0');
+                    linkEl.setAttribute("aria-label", "-" + headings[i].innerText.trim());
+                    var linkText = document.createTextNode(headings[i].innerText.trim());
+
+                            linkEl.addEventListener('click', function () {
+                                ccGaElementClick('Navigation - Contents', this.innerText);
+                            }, true);
+                                            linkEl.appendChild(linkText);
+                    itemEl.appendChild(linkEl);
+                    contentsMenuEl.appendChild(itemEl);
+                }
+
+            }
+
+            function uniqueId(id) {
+                id = "contents" + id;
+                while (document.getElementById(id) != null) {
+                    id += "p";
+                }
+                return id;
+            }
+
+            function moveContentsMenu() {
+                var contentsEl = document.getElementById('pageContents');
+                var contentsPlaceholderEl = document.getElementById('pageContentsPlaceholder');
+                var contentMenuColEl = document.getElementById('contentMenuCol');
+                if (contentsEl != null && contentsPlaceholderEl != null && contentMenuColEl != null) {
+                    if (window.innerWidth < 1200) {
+                        contentsPlaceholderEl.appendChild(contentsEl);
+                    }
+                    else {
+                        contentMenuColEl.appendChild(contentsEl);
+                    }
+                    var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'));
+                    dataSpyList.forEach(function(dataSpyEl) {
+                        bootstrap.ScrollSpy.getInstance(dataSpyEl)
+                            .refresh();
+                    });
+                    // $('[data-spy="scroll"]').each(function () {
+                    //     var $spy = $(this).scrollspy('refresh');
+                    // })
+                }
+            }
+        });
+    </script>
+
+        </div>
+            
+        <div id="contentInner">
+            
+<div class="umb-block-grid"
+     data-grid-columns="12"
+          >
+     <!-- test -->
+    
+<div class="umb-block-grid__layout-container">
+        <div
+            class="umb-block-grid__layout-item"
+            data-content-element-type-alias="sections"
+            data-content-element-type-key="067b46b0-04ea-48e6-aaee-ebf2347e4944"
+            data-element-udi="umb://element/4561eb1aaf0a484990d611404cf483c2"
+            data-col-span="12"
+            data-row-span="1"
+                        >
+
+
+    <div class="sections mb-3">
+                        <div class="section-transparent bg-transparent py-5 ">
+                            <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <h2 id="week1monday">Monday</h2>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-12 ">
+                                                <div class="umb-block-grid"
+                                                     data-grid-columns="12;">
+                                                    
+<div class="umb-block-grid__layout-container">
+        <div
+            class="umb-block-grid__layout-item"
+            data-content-element-type-alias="richText"
+            data-content-element-type-key="3a7ac1f8-fd72-419f-bdc0-de670d611f8c"
+            data-element-udi="umb://element/b687150e9f3442a4ade1e9cacce9855d"
+            data-col-span="12"
+            data-row-span="1"
+                        >
+
+<div>
+    <h3>November 9th, November 30th</h3>
+<table border="0" class="table table-bordered" style="width: 100%; border-collapse: collapse;">
+<tbody>
+<tr>
+<th style="width: 33.3333%;" scope="col">Location</th>
+<th style="width: 33.3333%;" scope="col">Venue</th>
+<th style="width: 33.3333%;" scope="col">Time</th>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Cilfrew</td>
+<td style="width: 33.3333%;">Cilffriw Primary School (school visit only)</td>
+<td style="width: 33.3333%;">10.30 - 11.30</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Bryncoch</td>
+<td style="width: 33.3333%;">Bryncoch Church in Wales School (school visit only)</td>
+<td style="width: 33.3333%;">13.00 - 15.00</td>
+</tr>
+</tbody>
+</table>
+</div>
+        </div>
+</div>
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="section-light bg-light py-5 ">
+                            <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <h2 id="section_4561eb1a-af0a-4849-90d6-11404cf483c2_5553f56e-4f46-407a-8247-01aa7d6b6f6e">Tuesday</h2>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-12 ">
+                                                <div class="umb-block-grid"
+                                                     data-grid-columns="12;">
+                                                    
+<div class="umb-block-grid__layout-container">
+        <div
+            class="umb-block-grid__layout-item"
+            data-content-element-type-alias="richText"
+            data-content-element-type-key="3a7ac1f8-fd72-419f-bdc0-de670d611f8c"
+            data-element-udi="umb://element/fe38dbf360d04676ad0c12f3af473178"
+            data-col-span="12"
+            data-row-span="1"
+                        >
+
+<div>
+    <h3>November 10th, December 1st&nbsp;</h3>
+<table border="0" class="table table-bordered" style="width: 100%; border-collapse: collapse;">
+<tbody>
+<tr>
+<th style="width: 33.3333%;" scope="col">Location</th>
+<th style="width: 33.3333%;" scope="col">Venue</th>
+<th style="width: 33.3333%;" scope="col">Time</th>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Blaengwrach</td>
+<td style="width: 33.3333%;">Blaengwrach Primary School (school visit only)</td>
+<td style="width: 33.3333%;">9.30 - 12.30</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Dyffryn Cellwen</td>
+<td style="width: 33.3333%;">Maesmarchog Primary School (school visit only)</td>
+<td style="width: 33.3333%;">13.45 - 14.45</td>
+</tr>
+</tbody>
+</table>
+</div>
+        </div>
+</div>
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="section-transparent bg-transparent py-5 ">
+                            <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <h2 id="section_4561eb1a-af0a-4849-90d6-11404cf483c2_46457dd7-afc2-40ae-bf84-83f9cdf64809">Wednesday</h2>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-12 ">
+                                                <div class="umb-block-grid"
+                                                     data-grid-columns="12;">
+                                                    
+<div class="umb-block-grid__layout-container">
+        <div
+            class="umb-block-grid__layout-item"
+            data-content-element-type-alias="richText"
+            data-content-element-type-key="3a7ac1f8-fd72-419f-bdc0-de670d611f8c"
+            data-element-udi="umb://element/c53346ae7f8e476aaa017735241434e4"
+            data-col-span="12"
+            data-row-span="1"
+                        >
+
+<div>
+    <h3>November 11th, December 2nd, December 23rd&nbsp;</h3>
+<table border="0" class="table table-bordered" style="width: 100%; border-collapse: collapse; height: 227px;">
+<tbody>
+<tr style="height: 37px;">
+<th style="width: 33.7251%; height: 37px;" scope="col">Location</th>
+<th style="width: 32.9559%; height: 37px;" scope="col">Venue</th>
+<th style="width: 33.3405%; height: 37px;" scope="col">Time</th>
+</tr>
+<tr style="height: 37px;">
+<td style="width: 33.7251%; height: 37px;">Rhos</td>
+<td style="width: 32.9559%; height: 37px;">Green Hedges Park</td>
+<td style="width: 33.3405%; height: 37px;">10.00 - 10.20</td>
+</tr>
+<tr style="height: 37px;">
+<td style="width: 33.7251%; height: 37px;">Rhos</td>
+<td style="width: 32.9559%; height: 37px;">Delffordd</td>
+<td style="width: 33.3405%; height: 37px;">10.25 - 11.00</td>
+</tr>
+<tr>
+<td style="width: 33.7251%;">Rhos</td>
+<td style="width: 32.9559%;">Delffordd (No. 100)</td>
+<td style="width: 33.3405%;">11.05 - 11.25</td>
+</tr>
+<tr>
+<td style="width: 33.7251%;">Rhos</td>
+<td style="width: 32.9559%;">Ashwood Drive</td>
+<td style="width: 33.3405%;">11.35 - 12.00</td>
+</tr>
+<tr>
+<td style="width: 33.7251%;">Rhos</td>
+<td style="width: 32.9559%;">Primrose Lane</td>
+<td style="width: 33.3405%;">12.05 - 12.20</td>
+</tr>
+<tr>
+<td style="width: 33.7251%;">Cwmgors</td>
+<td style="width: 32.9559%;">Abernant Road</td>
+<td style="width: 33.3405%;">13.30 - 13.50</td>
+</tr>
+<tr>
+<td style="width: 33.7251%;">Gwaun Cae Gurwen</td>
+<td style="width: 32.9559%;">Tairgwaith Post Office&nbsp;</td>
+<td style="width: 33.3405%;">14.00 - 14.05</td>
+</tr>
+<tr>
+<td style="width: 33.7251%;">Gwaun Cae Gurwen</td>
+<td style="width: 32.9559%;">Llys Nantfer</td>
+<td style="width: 33.3405%;">14.10 - 14.30</td>
+</tr>
+<tr>
+<td style="width: 33.7251%;">Brynamman</td>
+<td style="width: 32.9559%;">School Road</td>
+<td style="width: 33.3405%;">14.40 - 15.05</td>
+</tr>
+</tbody>
+</table>
+</div>
+        </div>
+</div>
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="section-light bg-light py-5 ">
+                            <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <h2 id="section_4561eb1a-af0a-4849-90d6-11404cf483c2_9d3d129d-e621-40b5-bd2c-5f530846b51a">Thursday</h2>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-12 ">
+                                                <div class="umb-block-grid"
+                                                     data-grid-columns="12;">
+                                                    
+<div class="umb-block-grid__layout-container">
+        <div
+            class="umb-block-grid__layout-item"
+            data-content-element-type-alias="richText"
+            data-content-element-type-key="3a7ac1f8-fd72-419f-bdc0-de670d611f8c"
+            data-element-udi="umb://element/2a12e09b4ae54f379fef1fb2b017b657"
+            data-col-span="12"
+            data-row-span="1"
+                        >
+
+<div>
+    <h3>November 12th, December 3rd, December 24th</h3>
+<table border="0" class="table table-bordered" style="width: 100%; border-collapse: collapse;">
+<tbody>
+<tr>
+<th style="width: 33.3333%;" scope="col">Location</th>
+<th style="width: 33.3333%;" scope="col">Venue</th>
+<th style="width: 33.3333%;" scope="col">Time</th>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Banwen</td>
+<td style="width: 33.3333%;">Ty Maes Marchog Flats&nbsp;</td>
+<td style="width: 33.3333%;">9.30 - 9.55</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Banwen</td>
+<td style="width: 33.3333%;">Ty Maes Marchog</td>
+<td style="width: 33.3333%;">10.00 - 10.20</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Onllwyn</td>
+<td style="width: 33.3333%;">Onllwyn Social Club</td>
+<td style="width: 33.3333%;">10.25 - 10.40</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Seven Sisters</td>
+<td style="width: 33.3333%;">Dulais Road (No. 57)</td>
+<td style="width: 33.3333%;">10.55 - 11.10</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Seven Sisters</td>
+<td style="width: 33.3333%;">Dulais Road (No. 96)</td>
+<td style="width: 33.3333%;">11.15 - 11.35</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Crynant</td>
+<td style="width: 33.3333%;">Treforgan Road</td>
+<td style="width: 33.3333%;">11.50 - 12.20</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Crynant</td>
+<td style="width: 33.3333%;">Station Road</td>
+<td style="width: 33.3333%;">12.30 - 13.00</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Briton Ferry</td>
+<td style="width: 33.3333%;">Former Ynysmaerdy Primary School</td>
+<td style="width: 33.3333%;">PM</td>
+</tr>
+</tbody>
+</table>
+</div>
+        </div>
+</div>
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="section-transparent bg-transparent py-5 ">
+                            <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 ">
+                                                <h2 id="section_4561eb1a-af0a-4849-90d6-11404cf483c2_259c09d7-fa5c-4678-b98e-5c5129a4893f">Friday</h2>
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col-12 ">
+                                                <div class="umb-block-grid"
+                                                     data-grid-columns="12;">
+                                                    
+<div class="umb-block-grid__layout-container">
+        <div
+            class="umb-block-grid__layout-item"
+            data-content-element-type-alias="richText"
+            data-content-element-type-key="3a7ac1f8-fd72-419f-bdc0-de670d611f8c"
+            data-element-udi="umb://element/dff6acf061a64966969cba25b243fd51"
+            data-col-span="12"
+            data-row-span="1"
+                        >
+
+<div>
+    <h3>November 13th, December 4th&nbsp;</h3>
+<table border="0" class="table table-bordered" style="border-collapse: collapse; width: 100%; border-width: 0px;">
+<tbody>
+<tr>
+<th style="width: 33.2855%;" scope="col">Location</th>
+<th style="width: 33.2855%;" scope="col">Venue</th>
+<th style="width: 33.2878%;" scope="col">Time</th>
+</tr>
+<tr>
+<td style="width: 33.2855%;">Tairgwaith</td>
+<td style="width: 33.2855%;">Tairgwaith Primary School (school visit only)</td>
+<td style="width: 33.2878%;">13.00 - 14.30</td>
+</tr>
+</tbody>
+</table>
+</div>
+        </div>
+</div>
+                                                </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+    </div>
+        </div>
+</div>
+</div>
+        </div>
+    </article>
+
+    <div class="container">
+        
+
+    </div>
+
+    
+<div class="backtotop p-2 text-end lead noprint">
+    <span class="badge rounded-pill text-bg-light border shadow-sm">
+        <a class="govuk-link" href="#top" data-analytics="ccGaElementClick(&#x27;Navigation - Back to Top&#x27;, &#x27;Week 2 route&#x27;);">
+            <span class="far fa-arrow-up"></span>
+            Back To Top
+        </a>
+    </span>
+</div>
+
+<script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+    // Do when ready
+    window.addEventListener('DOMContentLoaded', function () {
+        // Do on scroll
+        // Set a timer to only do it after scrolling has finished
+        var scrollTimer;
+        window.addEventListener('scroll', function (e) {
+            clearTimeout(scrollTimer);
+            scrollTimer = setTimeout(onScroll, 150);
+        });
+        function onScroll() {
+            // Hide back-to-top unless scrolled away from top
+            var supportPageOffset = window.pageXOffset !== undefined;
+            var isCSS1Compat = ((document.compatMode || "") === "CSS1Compat");
+            // var scrollLeft = supportPageOffset ? window.pageXOffset : isCSS1Compat ? document.documentElement.scrollLeft : document.body.scrollLeft;
+            var scrollTop = supportPageOffset ? window.pageYOffset : isCSS1Compat ? document.documentElement.scrollTop : document.body.scrollTop;
+            var backToTopEls = document.getElementsByClassName('backtotop');
+            var visibility = scrollTop > 0 ? 'inherit' : 'hidden';
+            for (var i = 0; i < backToTopEls.length; i++) {
+                backToTopEls[i].style.visibility = visibility;
+            }
+        }
+    });
+</script>
+    
+
+
+</main>
+
+    <div class="container" data-nosnippet>
+        <div id="bottomNav"></div>
+    </div>
+
+    <footer class="footer bg-dark text-white py-3 border-top-0" data-nosnippet>
+        <div class="container">
+            
+<section class="section-dark bg-dark pb-2 noprint">
+    <div class="container text-center text-md-start">
+        <div class="row border-bottom border-light pb-3 pb-md-2">
+            <div calss="col-12">
+                <p class="d-block d-md-inline">Share your feedback</p>
+                <div class=" d-block d-md-inline-block ps-md-3">
+                    <div class="gm_sidebar gm_sidebar_rh">
+                        <a href="https://websurveys2.govmetric.com/theme/gm/9990061"
+                           target="_blank"
+                           class="gm_sidebar_anchor"
+                           title="Share your feedback"
+                           rel="nofollow"
+                           data-track="false">
+                            <img width="138" height="45" src="https://websurveys2.govmetric.com/imgs/triggers/combined.png" alt="rating button" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            <div class="row border-bottom border-light mb-3">
+                <div class="col-12 col-sm-6">
+                    <svg viewBox="0 0 480 100" height="50" alt="Neath Port Talbot Council" class="d-sm-none mb-3">
+                        <use href="/images/npt/logo_rect.svg#logo" />
+                    </svg>
+                    <ul class="list-unstyled fs-5 fw-bold">
+                        <li><a href="/all-services/" class="govuk-link govuk-link--inverse">All council services</a></li>
+                        <li><a href="/culture-and-tourism/whats-on-in-npt/" class="govuk-link govuk-link--inverse">Events</a></li>
+                        <li><a href="/council/newsroom/" class="govuk-link govuk-link--inverse">News</a></li>
+                        <li><a href="/jobs/" class="govuk-link govuk-link--inverse">Jobs</a></li>
+                        <li><a href="https://ce0592li.webitrent.com/ce0592li_lss" class="govuk-link govuk-link--inverse">Employee Self Service</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 text-sm-end">
+                    <p class="pt-3">Follow us for updates</p>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/NeathPortTalbotCBC" class="govuk-link govuk-link--inverse border border-white rounded-circle p-1" aria-label="Facebook: NeathPortTalbotCBC"><span class="fab fa-facebook-f fa-fw"></span></a></li>
+                        <li class="list-inline-item"><a href="https://x.com/NPTCouncil" class="govuk-link govuk-link--inverse border border-white rounded-circle p-1" aria-label="Twitter: NPTCouncil"><span class="fa-brands fa-x-twitter fa-fw"></span></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/nptcouncil" class="govuk-link govuk-link--inverse border border-white rounded-circle p-1" aria-label="Instagram: nptcouncil"><span class="fab fa-instagram fa-fw"></span></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/user/NeathPortTalbotCBC" class="govuk-link govuk-link--inverse border border-white rounded-circle p-1" aria-label="YouTube: NeathPortTalbotCBC"><span class="fab fa-youtube fa-fw"></span></a></li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/neath-port-talbot-county-borough-council" class="govuk-link govuk-link--inverse border border-white rounded-circle p-1" aria-label="LinkedIn: neath-port-talbot-county-borough-council"><span class="fab fa-linkedin-in fa-fw"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-lg-3 d-none d-md-block">
+                    &copy; Neath Port Talbot Council
+                </div>
+                <div class="col-12 col-md-8 col-lg-9 text-md-end">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a class="govuk-link govuk-link--inverse" href="/system/accessibility-statement/"><span aria-hidden="true">Accessibility</span><span class="visually-hidden">Accessibility Statement</span></a></li>
+                        <li class="list-inline-item"><a class="govuk-link govuk-link--inverse" href="/system/terms-and-conditions/">Terms &amp; Conditions</a></li>
+                        <li class="list-inline-item"><a class="govuk-link govuk-link--inverse" href="/system/terms-and-conditions/privacy-statement/"><span aria-hidden="true">Privacy</span><span class="visually-hidden">Privacy Statement</span></a></li>
+                        <li class="list-inline-item"><a class="govuk-link govuk-link--inverse" href="/council/have-your-say/contact-us/"><span aria-hidden="true">Contact Us</span><span class="visually-hidden">Contact NPTC</span></a></li>
+                    </ul>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item"><a class="govuk-link govuk-link--inverse" href="#" data-search-trigger>Search</a></li>
+                        <li class="list-inline-item"><a class="govuk-link govuk-link--inverse" href="/system/site-map/">Site Map</a></li>
+                        <li class="list-inline-item"><a class="govuk-link govuk-link--inverse" href="#" id="manageCookies">Manage Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 d-md-none">
+                    &copy; Neath Port Talbot Council
+                </div>
+            </div>
+            
+<div id="recaptchaDisclosure" class="row">
+    <div class="col-12 text-end">
+            <span lang="en">
+                This site is protected by reCAPTCHA and the <span aria-hidden="true">Google</span>
+                <a href="https://policies.google.com/privacy" class="govuk-link govuk-link--inverse text-nowrap" rel="noopener noreferrer" target="_blank" aria-label="Google Privacy Policy (opens in new tab)">Privacy Policy</a>
+                and
+                <a href="https://policies.google.com/terms" class="govuk-link govuk-link--inverse text-nowrap" rel="noopener noreferrer" target="_blank" aria-label="Google Terms of Service (opens in new tab)">Terms of Service</a>
+                apply.
+            </span>
+    </div>
+</div>
+        </div>
+    </footer>
+
+    
+
+
+<script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+    // Wait for content to load
+    window.addEventListener('DOMContentLoaded', function () {
+
+        // Are there any data tables?
+        var dataTableEls = document.querySelectorAll('.table-data:not(.table-data-ignore)');
+        if (dataTableEls.length > 0) {
+
+            dataTables('en-GB');
+
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="application/ld+json" nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">{"@context":"https://schema.org","@type":"Article","headline":"Week 2 route","image":["https://www.npt.gov.uk/images/opengraph/npt_logo_round.jpg"],"author":[{"@type":"Organization","name":"Neath Port Talbot Council","url":"https://www.npt.gov.uk"}],"publisher":{"@type":"Organization","name":"Neath Port Talbot Council","logo":{"@type":"ImageObject","url":"https://www.npt.gov.uk/images/npt/logo_rect.svg"}},"datePublished":"2023-08-21","dateModified":"2026-11-05"}</script>
+
+
+    <script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+        // Do when ready
+        window.addEventListener('DOMContentLoaded', function () {
+            // Offset to clear fixed navbar
+            window.navHeight = 0;
+            // 95
+
+            // Configure UI
+            var configureUI = function () {
+                window.npt = window.npt || {};
+                window.npt.navigation = window.npt.navigation || {};
+                // if (!window.npt.navigation.immobiliseMenu) {
+                // moveMenu("side");
+                // }
+                // fitNavbar();
+                fitFooter();
+                fitBreadcrumbs();
+            }
+
+            configureUI();
+            migrateStyles(['gds']);
+
+            var manageCookiesLink = document.getElementById('manageCookies');
+            if (manageCookiesLink !== null) {
+                manageCookiesLink.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    if (typeof CookieControl !== 'undefined' && typeof CookieControl.open === 'function') {
+                        CookieControl.open();
+                    }
+                });
+            }
+
+            // Do on resize
+            // Set a timer to only do it after resizing has finished
+            var resizeTimer;
+            window.addEventListener('resize', function (e) {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(onResize, 150);
+            });
+            function onResize() {
+                configureUI();
+            }
+
+            // Do on scroll
+            // Set a timer to only do it after scrolling has finished
+            //var scrollTimer;
+            //window.addEventListener('scroll', function (e) {
+            //    clearTimeout(scrollTimer);
+            //    scrollTimer = setTimeout(onScroll, 150);
+            //});
+            //function onScroll() {
+            //    fitNavbar();
+            //}
+
+            // Clear fixed navbar when loading at a named anchor.
+            //if (location.hash && location.hash.indexOf('&&') !== 1) {
+            //    clearNavbar();
+            //}
+            //window.addEventListener('hashchange', function (e) {
+            //    if (location.hash.indexOf('&&') !== 1) {
+            //        clearNavbar();
+            //    }
+            //});
+        });
+    </script>
+
+    <!-- Cookie Control -->
+    
+<script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+    // Only include js.cookie if it isn't already loaded
+    // This library is used by other controls to ckeck consent for cookies before running
+    if (typeof Cookies === 'undefined') {
+        var script = document.createElement("script");
+        //script.src = "https://api.npt.gov.uk/asset?url=www.npt.gov.uk%2Fjs%2Fjs.cookie%2F2.2.1%2Fjs.cookie-2.2.1.min.js";
+        script.src = "/js/js.cookie/2.2.1/js.cookie-2.2.1.min.js";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(script, firstScriptTag);
+    }
+</script>
+
+    <script defer src="/js/cookieControl/9.12/cookieControl-9.12.min.js"></script>
+    <script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+        var config = "";
+
+        window.ccAccept = window.ccAccept || [];
+        window.ccRevoke = window.ccRevoke || [];
+
+        window.ccAccept.preference = function () {
+	        // Record Preferences
+	        ccRunQueue('preference');
+	        ccDisplayIcon();
+        }
+
+        window.ccRevoke.preference = function () {
+	        ccDisplayIcon();
+        }
+
+        window.ccAccept.analytics = function () {
+	        // Add Google Analytics
+	        ccAddAnalytics();
+	        ccDisplayIcon();
+        }
+
+        window.ccRevoke.analytics = function () {
+	        // Disable Google Analytics
+            window['ga-disable-G-HJ9C7ZG7F1'] = true;
+            if (typeof gtag === 'function') {
+                gtag('consent', 'update', { 'analytics_storage': 'denied' });
+            }
+
+            // Stop observing DOM for new analytics links
+            if (ccAnalyticsObserver) {
+                ccAnalyticsObserver.disconnect();
+                ccAnalyticsObserver = null;
+            }
+
+            // Remove all existing analytics listeners from links
+            ccUnbindAllDataAnalyticsLinks();
+
+            // Disable SilkTide
+            window.silktide = null;
+
+            ccDisplayIcon();
+        }
+
+        window.ccAccept.social = function () {
+	        // Add Social Media
+            ccRunQueue('social');
+	        ccDisplayIcon();
+        }
+
+        window.ccRevoke.social = function () {
+	        ccDisplayIcon();
+        }
+
+        function ccBindDataAnalyticsLink(link) {
+            if (link.dataset.analyticsbound) return; // prevent double-binding
+            var analyticsCall = link.getAttribute('data-analytics');
+            if (analyticsCall) {
+                link.dataset.analyticsbound = '1';
+                // Store named handler on the element so it can be removed on revoke
+                link._analyticsHandler = function () {
+                    if (isCookieAccepted('analytics')) {
+                        (new Function(analyticsCall))();
+                    }
+                };
+                link.addEventListener('click', link._analyticsHandler, false);
+            }
+        }
+
+        function ccUnbindAllDataAnalyticsLinks() {
+            var links = document.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                if (link._analyticsHandler) {
+                    link.removeEventListener('click', link._analyticsHandler, false);
+                    delete link._analyticsHandler;
+                    delete link.dataset.analyticsbound; // allow re-binding if consent re-granted
+                }
+            }
+        }
+
+        function ccBindAllDataAnalyticsLinks(root) {
+            root = root || document;
+            var links = root.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                ccBindDataAnalyticsLink(links[i]);
+            }
+        }
+
+        var ccAnalyticsObserver = null;
+
+        function ccAddAnalytics() {
+            window['ga-disable-G-HJ9C7ZG7F1'] = false;
+            if (typeof gtag === 'function') {
+                gtag('consent', 'update', { 'analytics_storage': 'granted' });
+            }
+            
+
+                    var captureOutboundLink = function(url) {
+                        // ga('send', 'event', 'outbound', 'click', url, {
+                        //     'transport': 'beacon',
+                        //     'hitCallback': function () {
+                        //         //document.location = url;
+                        //     }
+                        // });
+                    }
+
+                    var captureBookmark = function(url) {
+                        // ga('send', 'event', 'bookmark', 'click', url);
+                    }
+                    
+                    function isExternal(hrefString) {
+                        var external = false;
+                        if (!isNullOrWhiteSpace(hrefString)) {
+                            try {
+                                var url = new URL(hrefString);
+                                external = url.hostname.length && location.hostname !== url.hostname;
+                            } catch (ex) {
+                                console.log('URL Error: ' + hrefString);
+                            }
+                        }
+                        return external;
+                    }
+
+                    // Bind outbound/bookmark listeners to all existing links
+                    var links = document.getElementsByTagName('a');
+                    for (var i = 0; i < links.length; i++) {
+                        (function(link) {
+                            if (link.href.indexOf('#') !== -1) {
+                                link.addEventListener('click', function () { captureBookmark(this.href); }, false);
+                            }
+                            if (isExternal(link.href)) {
+                                link.addEventListener('click', function () { captureOutboundLink(this.href); }, false);
+                            }
+                        })(links[i]);
+                    }
+                            
+var s = document.createElement("script"); var elem = document.getElementsByTagName("script")[0]; s.src = "//analytics.silktide.com/78765622a093b77c59b6be8831c971e9.js"; s.async = true; elem.parentNode.insertBefore(s, elem);(function(s, i, l, k, y) { s[i] = s[i] || y; s[l] = s[l] || []; s[k] = function(e, p) { p = p || { }; p.event = e; s [l].push(p); }; s[k] ('page_load'); })(window, 'stConfig', 'stEvents', 'silktide', { });var s = document.createElement("script"); var elem = document.getElementsByTagName("script")[0]; s.src = "//script.crazyegg.com/pages/scripts/0035/5624.js"; s.async = true; elem.parentNode.insertBefore(s, elem);
+            // Bind all data-analytics links present now
+            ccBindAllDataAnalyticsLinks();
+
+            // Watch for links added dynamically after consent
+            if (!ccAnalyticsObserver) {
+                ccAnalyticsObserver = new MutationObserver(function (mutations) {
+                    mutations.forEach(function (mutation) {
+                        mutation.addedNodes.forEach(function (node) {
+                            if (node.nodeType !== 1) return;
+                            if (node.tagName === 'A') {
+                                ccBindDataAnalyticsLink(node);
+                            }
+                            var innerLinks = node.getElementsByTagName('a');
+                            for (var i = 0; i < innerLinks.length; i++) {
+                                ccBindDataAnalyticsLink(innerLinks[i]);
+                            }
+                        });
+                    });
+                });
+                ccAnalyticsObserver.observe(document.body, { childList: true, subtree: true });
+            }
+        }
+
+        // Public API: partials that inject content dynamically can call this after rendering
+        window.ccBindAnalytics = function (root) {
+            if (isCookieAccepted('analytics')) {
+                ccBindAllDataAnalyticsLinks(root);
+            }
+        };
+
+        function ccGaElementClick(type, name) {
+            if (isCookieAccepted('analytics')) {
+                gtag('event', 'element_click', { 'element_type': type, 'element_name': name });
+            }
+        }
+
+        function ccGaEvent(category, action, label, value, nonInteraction) {
+            if (isCookieAccepted('analytics')) {
+                // ga('send', 'event', category, action, label, value, nonInteraction);
+                if (action.toLowerCase() == 'click') {
+                    gtag('event', 'element_click', { 'element_type': category, 'element_name': label });
+                }
+            }
+        }
+
+        function ccGaSocial(network, action, target, path) {
+            if (isCookieAccepted('analytics')) {
+                // ga('send', 'social', network, action, target, path);
+            }
+        }
+
+        function ccRunQueue(category) {
+            // This array is a queue for any functions that need cookie control consent to run
+            window.ccQ = window.ccQ || [];
+            window.ccQ[category] = window.ccQ[category] || [];
+            q = window.ccQ[category];
+            while (q.length > 0) {
+                (q.shift())();
+            }
+        }
+
+        function ccDisplayIcon() {
+            var elem = document.getElementById("ccc-icon");
+            if (elem !== null) {
+                var display = "none";
+                elem.style.display = display;
+                setTimeout(function () {
+                    for (i = 0; i < config.optionalCookies.length; i++) {
+                        if (!CookieControl.getCategoryConsent(i)) {
+                            display = "block";
+                        }
+                    }
+                    elem.style.display = display;
+                }, 0);
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            var request = new XMLHttpRequest();
+            request.open('GET', '/system/cookie-control-config/', true);
+            request.onload = function () {
+                if (request.status >= 200 && request.status < 400) {
+                    var data = JSON.parse(request.responseText);
+                    config = data.config;
+                    config.optionalCookies.forEach(function (category) {
+                        category.onAccept = function () {
+                            window.ccAccept = window.ccAccept || [];
+                            if (typeof window.ccAccept[category.name] === "function") {
+                                window.ccAccept[category.name]();
+                            }
+                        }
+                        category.onRevoke = function () {
+                            window.ccRevoke = window.ccRevoke || [];
+                            if (typeof window.ccRevoke[category.name] === "function") {
+                                window.ccRevoke[category.name]();
+                            }
+                        }
+                    });
+                    config.nonce = 'vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=';
+                    // window['ccConfigJSON'] = config.prefetch;
+                    CookieControl.load(config);
+                }
+            };
+            request.send();
+        });
+    </script>
+
+
+    <!-- Search -->
+    
+    <div role="search" class="visually-hidden" aria-hidden="true">
+        <label for="searchWidgetTrigger" class="govuk-label" >Search</label>
+        <input
+        type="search"
+        placeholder="How can we help you?"
+        id="searchWidgetTrigger"
+        aria-label="Search"
+        class="govuk-input"
+        tabindex="-1"/>
+    </div>
+    <div id="searchWidgetTrigger-widget" class="visually-hidden" data-st="valid-controls"></div>
+    <script nonce="vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=">
+      window.addEventListener('DOMContentLoaded', function () {
+        var agentSearchEnabled = false;
+        var trigger = document.getElementById('searchWidgetTrigger');
+        var searchUrl = 'https://www.npt.gov.uk/system/search/';
+        var csp = 'vfgg9N2CSG6Tabu3dAVAFksyFVQI1l9B94fy1Y5qOzk=';
+
+        // When the Google:AgentSearch appsetting is disabled, always force classic
+        // search server-side - regardless of any stored cookie/session preference
+        var searchType = 'ai';
+        if (agentSearchEnabled) {
+            var preferencesAccepted = typeof isCookieAccepted === 'function' && isCookieAccepted('preference');
+            var cookieValue = preferencesAccepted && typeof getNptSetting === 'function' ? getNptSetting('searchType') : undefined;
+            var sessionValue = typeof getSessionSearchType === 'function' ? getSessionSearchType() : undefined;
+            searchType = cookieValue || sessionValue || 'ai';
+        } else {
+            searchType = 'classic';
+        }
+
+
+        // Lazily inject the widget bundle + element only now that we know the active mode.
+        var widgetReady = false;
+        var pendingOpenRequest = null;
+
+        var scriptEl = document.createElement('script');
+        scriptEl.src = 'https://cloud.google.com/ai/gen-app-builder/client?hl=en_GB';
+        if (csp) scriptEl.nonce = csp;
+        scriptEl.async = false;
+        document.head.appendChild(scriptEl);
+
+        var configId = searchType === 'classic' ? 'f06eafef-559b-42bc-9699-1049c34fd598' : '3acee04e-6f5e-4ea1-bb1b-e5db9cfcfc3b';
+
+        var widgetEl = document.createElement('gen-search-widget');
+        widgetEl.setAttribute('configId', configId);
+        widgetEl.setAttribute('location', 'eu');
+        widgetEl.setAttribute('triggerId', 'searchWidgetTrigger');
+        widgetEl.setAttribute('placeholder', 'How can we help you?');
+        widgetEl.setAttribute('aria-haspopup', 'dialog');
+        widgetEl.setAttribute('aria-controls', 'searchWidgetTrigger-widget');
+        document.body.appendChild(widgetEl);
+
+        if (typeof customElements !== 'undefined' && typeof customElements.whenDefined === 'function') {
+            customElements.whenDefined('gen-search-widget').then(function () {
+                widgetReady = true;
+                hookOpenedProperty(widgetEl);
+                if (pendingOpenRequest) {
+                    var req = pendingOpenRequest;
+                    pendingOpenRequest = null;
+                    openWidget(req.opener, req.query);
+                }
+            });
+        } else {
+            widgetReady = true;
+        }
+
+        if (!trigger) return;
+
+        var pendingQuery = '';
+        var lastFocusedOpener = null;
+
+        trigger.setAttribute('aria-expanded', 'false');
+
+        function getWidget() {
+          return document.querySelector('gen-search-widget');
+        }
+
+        function openWidget(opener, query) {
+          if (!widgetReady) {
+            pendingOpenRequest = { opener: opener, query: query };
+            return true;
+          }
+
+          var widget = getWidget();
+          if (!widget || typeof widget.open !== 'function') {
+            return false;
+          }
+
+          pendingQuery = (query || '').trim();
+          lastFocusedOpener = opener || trigger;
+          widget.open();
+          return true;
+        }
+
+        var activeDialogObserver = null;
+        var activeDialog = null;
+        var gdsObservedRoots = [];
+        var currentTrapFocus = null;
+
+        // Returns all focusable elements within the dialog's own shadow root
+        // (shadow DOM boundaries mean querySelectorAll on the dialog itself
+        // won't find elements rendered inside nested shadow roots, so fall
+        // back to the dialog's shadowRoot when present).
+        function getFocusable(dialog) {
+          var root = dialog.shadowRoot || dialog;
+          var selector = [
+            'a[href]',
+            'button:not([disabled])',
+            'input:not([disabled])',
+            'select:not([disabled])',
+            'textarea:not([disabled])',
+            '[tabindex]:not([tabindex="-1"])'
+          ].join(',');
+
+          var elements = Array.prototype.slice.call(root.querySelectorAll(selector));
+          return elements.filter(function (el) {
+            return el.offsetParent !== null || el === document.activeElement;
+          });
+        }
+
+        // Recursively finds every shadow root nested inside the given root -
+        // gen-search-widget nests multiple custom elements, each with their
+        // own encapsulated shadow DOM (gen-search-widget > ucs-results >
+        // ucs-search-bar > ...).
+        function collectShadowRoots(root, found) {
+          found = found || [];
+          if (!root) return found;
+
+          if (root.shadowRoot && found.indexOf(root.shadowRoot) === -1) {
+            found.push(root.shadowRoot);
+            collectShadowRoots(root.shadowRoot, found);
+          }
+
+          var children = root.querySelectorAll ? root.querySelectorAll('*') : [];
+          children.forEach(function (el) {
+            if (el.shadowRoot && found.indexOf(el.shadowRoot) === -1) {
+              found.push(el.shadowRoot);
+              collectShadowRoots(el.shadowRoot, found);
+            }
+          });
+
+          return found;
+        }
+
+        // Applies GDS classes to known interactive elements inside a single
+        // root (either a shadow root or the dialog itself), and ensures the
+        // GDS stylesheet is injected into shadow roots so the classes take
+        // visual effect (shadow DOM fully encapsulates styles).
+        function applyGdsStylesToRoot(r) {
+          var inputs = r.querySelectorAll('input[type="search"].main-input, input.main-input');
+          inputs.forEach(function (input) {
+            if (!input.dataset.gdsStyled) {
+              input.dataset.gdsStyled = 'true';
+              input.classList.add('govuk-input', 'w-100');
+              input.setAttribute('data-gds-styled', '');
+            }
+          });
+
+          var closeButtons = r.querySelectorAll(
+            'button[aria-label="Close"], button[aria-label="close"], ' +
+            'button[aria-label*="Close" i], button[aria-label*="close" i]'
+          );
+          closeButtons.forEach(function (btn) {
+            if (!btn.dataset.gdsStyled) {
+              btn.dataset.gdsStyled = 'true';
+              btn.classList.add('govuk-link', 'govuk-link--inverse', 'shadow-none');
+              btn.setAttribute('data-gds-styled', '');
+            }
+          });
+
+          if (r.nodeType !== 11) return; // only shadow roots need a scoped stylesheet
+          if (r.querySelector('style[data-gds-overrides]')) return; // already injected
+
+          // CSP-safe: a <style> element with a matching nonce is explicitly
+          // allowed by the 'nonce-...' directive, unlike inline style="..."
+          // attributes (style-src-attr) or assigning element.style directly.
+          var overrideStyle = document.createElement('style');
+          overrideStyle.setAttribute('data-gds-overrides', 'true');
+          if (csp) {
+            overrideStyle.setAttribute('nonce', csp);
+            overrideStyle.nonce = csp;
+          }
+          overrideStyle.textContent =
+            'input[data-gds-styled] {' +
+            '  font-family: arial, sans-serif !important;' +
+            '  font-size: 1.1875rem !important;' +
+            '  line-height: 1.25 !important;' +
+            '  box-sizing: border-box !important;' +
+            '  width: 100% !important;' +
+            '  height: 2.5rem !important;' +
+            '  padding: 5px !important;' +
+            '  border: 2px solid #0b0c0c !important;' +
+            '  border-radius: 0 !important;' +
+            '  background-color: #fff !important;' +
+            '  color: #0b0c0c !important;' +
+            '}' +
+            'button[data-gds-styled] {' +
+            '  font-family: arial, sans-serif !important;' +
+            '  font-size: 19px !important;' +
+            //'  line-height: 1.25 !important;' +
+            //'  box-sizing: border-box !important;' +
+            //'  display: inline-block !important;' +
+            //'  padding: 8px 10px !important;' +
+            //'  border: 2px solid transparent !important;' +
+            //'  border-radius: 0 !important;' +
+            //'  color: #0b0c0c !important;' +
+            //'  background-color: #f3f2f1 !important;' +
+            //'  box-shadow: 0 2px 0 #929191 !important;' +
+            //'  cursor: pointer !important;' +
+            //'  outline: none !important;' +
+            '}' +
+            'button[data-gds-styled]:hover {' +
+            //'  background-color: #dbdad9 !important;' +
+            '}' +
+            'button[data-gds-styled]:focus {' +
+            '  border-color: #ffdd00 !important;' +
+            '  outline: 3px solid transparent !important;' +
+            '  outline-offset: 0 !important;' +
+            '  box-shadow: inset 0 0 0 1px #ffdd00 !important;' +
+            '  background-color: #ffdd00 !important;' +
+            '  color: #0b0c0c !important;' +
+            '}' +
+            'button[data-gds-styled]:focus:not(:active):not(:hover) {' +
+            '  box-shadow: 0 2px 0 #0b0c0c !important;' +
+            '}' +
+            'input[data-gds-styled]:focus {' +
+            '  outline: 3px solid #ffdd00 !important;' +
+            '  outline-offset: 0 !important;' +
+            '}'
+          r.appendChild(overrideStyle);
+        }
+
+        function applyGdsStyles(dialog) {
+          var containingRoot = dialog.getRootNode ? dialog.getRootNode() : null;
+          var roots = [dialog].concat(collectShadowRoots(dialog));
+
+          // The close button (and other chrome) may live as a sibling of
+          // `dialog` within the shadow root that directly contains it,
+          // rather than nested inside `dialog` itself - collectShadowRoots
+          // only walks downward from `dialog`, so that containing root
+          // would otherwise never be scanned/styled.
+          if (containingRoot && containingRoot.nodeType === 11 && roots.indexOf(containingRoot) === -1) {
+            roots.push(containingRoot);
+          }
+
+          roots.forEach(function (r) {
+            try {
+              applyGdsStylesToRoot(r);
+            } catch (err) {
+              console.warn('GDS style pass failed for a root', err);
+            }
+
+            if (gdsObservedRoots.indexOf(r) === -1 && typeof MutationObserver !== 'undefined') {
+              gdsObservedRoots.push(r);
+              var observer = new MutationObserver(function () {
+                try {
+                  applyGdsStyles(dialog);
+                } catch (err) {
+                  console.warn('GDS style mutation pass failed', err);
+                }
+              });
+              observer.observe(r, { childList: true, subtree: true });
+            }
+          });
+        }
+
+        // Finds the search input even when it's nested inside a deeper
+        // shadow root (e.g. gen-search-widget > ... > ucs-search-bar's own
+        // shadow DOM) - a plain querySelector on `dialog` cannot pierce
+        // shadow boundaries, so we must walk every nested root the same way
+        // collectShadowRoots does for styling.
+        function findSearchInput(dialog) {
+          var roots = [dialog].concat(collectShadowRoots(dialog));
+          var selector = 'input[type="search"], input[type="text"], input:not([type])';
+
+          for (var i = 0; i < roots.length; i++) {
+            var found = roots[i].querySelector ? roots[i].querySelector(selector) : null;
+            if (found) return found;
+          }
+          return null;
+        }
+
+        function onDialogOpened(dialog) {
+          activeDialog = dialog;
+          trigger.setAttribute('aria-expanded', 'true');
+
+          var preferredInput = findSearchInput(dialog);
+
+          if (pendingQuery) {
+            if (preferredInput) {
+              preferredInput.value = pendingQuery;
+              preferredInput.dispatchEvent(new Event('input', { bubbles: true }));
+              preferredInput.dispatchEvent(new Event('change', { bubbles: true }));
+            }
+            pendingQuery = '';
+          }
+
+          function focusPreferred() {
+            if (preferredInput) {
+              preferredInput.focus();
+            } else {
+              var focusable = getFocusable(dialog);
+              if (focusable.length) {
+                focusable[0].focus();
+              } else {
+                dialog.setAttribute('tabindex', '-1');
+                dialog.focus();
+              }
+            }
+          }
+
+          focusPreferred();
+
+          currentTrapFocus = function (e) {
+            if (e.key !== 'Tab') return;
+            var items = getFocusable(dialog);
+            if (!items.length) return;
+            var first = items[0];
+            var last = items[items.length - 1];
+
+            if (e.shiftKey) {
+              if (document.activeElement === first) {
+                e.preventDefault();
+                last.focus();
+              }
+            } else {
+              if (document.activeElement === last) {
+                e.preventDefault();
+                first.focus();
+              }
+            }
+          };
+
+          dialog.addEventListener('keydown', currentTrapFocus);
+
+          try {
+            applyGdsStyles(dialog);
+          } catch (err) {
+            console.warn('GDS styling failed', err);
+          }
+        }
+
+        function onDialogClosed(dialog) {
+          activeDialog = null;
+          trigger.setAttribute('aria-expanded', 'false');
+          gdsObservedRoots = [];
+
+          if (currentTrapFocus && dialog) {
+            dialog.removeEventListener('keydown', currentTrapFocus);
+            currentTrapFocus = null;
+          }
+
+          var returnTarget = lastFocusedOpener || trigger;
+          lastFocusedOpener = null;
+          returnTarget.focus();
+        }
+
+        function hookOpenedProperty(widget) {
+          if (widget.__gdsOpenedHooked) return;
+          widget.__gdsOpenedHooked = true;
+
+          var proto = Object.getPrototypeOf(widget);
+          var descriptor = Object.getOwnPropertyDescriptor(proto, 'opened');
+
+          if (!descriptor || !descriptor.set) {
+            // Fallback: no accessor found on the prototype, poll instead.
+            pollOpenedState(widget);
+            return;
+          }
+
+          Object.defineProperty(widget, 'opened', {
+            configurable: true,
+            enumerable: descriptor.enumerable,
+            get: function () {
+              return descriptor.get.call(widget);
+            },
+            set: function (value) {
+              descriptor.set.call(widget, value);
+              handleOpenedChanged(widget, value);
+            }
+          });
+        }
+
+        function handleOpenedChanged(widget, isOpened) {
+          if (!isOpened) {
+            if (activeDialog) {
+              var closedDialog = activeDialog;
+              onDialogClosed(closedDialog);
+            }
+            return;
+          }
+
+          // The widget's internal dialog may not exist in the shadow DOM yet
+          // on the same tick the 'opened' property flips (its own render can
+          // be async/micro-task deferred), so poll briefly instead of
+          // assuming a single 0ms timeout is enough.
+          var attempts = 0;
+          var maxAttempts = 20; // ~1s at 50ms intervals
+
+          (function tryFind() {
+            var dialog = widget.shadowRoot && widget.shadowRoot.querySelector('[role="dialog"]');
+            if (dialog) {
+              onDialogOpened(dialog);
+              return;
+            }
+
+            attempts++;
+            if (attempts < maxAttempts) {
+              setTimeout(tryFind, 50);
+            } else {
+              console.warn('GDS: could not locate [role="dialog"] inside gen-search-widget shadow root after widget opened.');
+            }
+          })();
+        }
+
+        // Fallback only used if the 'opened' accessor isn't found.
+        function pollOpenedState(widget) {
+          var lastOpened = widget.opened;
+          setInterval(function () {
+            if (widget.opened !== lastOpened) {
+              lastOpened = widget.opened;
+              handleOpenedChanged(widget, lastOpened);
+            }
+          }, 150);
+        }
+
+        document.querySelectorAll('[data-search-trigger]').forEach(function (el) {
+          function activate(e) {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+
+            var query = el.value ? el.value.trim() : '';
+            var opened = openWidget(el, query);
+
+            if (!opened) {
+              if (searchUrl) {
+                window.location.href = searchUrl + '?q=' + encodeURIComponent(query);
+              }
+            }
+          }
+
+          el.addEventListener('click', activate);
+          el.addEventListener('keydown', function (e) {
+            var isPrintable = e.key.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey;
+            var isActivation = e.key === 'Enter' || e.key === ' ';
+            if (isPrintable || isActivation) {
+              activate(e);
+            }
+          });
+        });
+      });
+    </script>
+
+
+    <!-- Google Translate -->
+
+</body>
+</html>

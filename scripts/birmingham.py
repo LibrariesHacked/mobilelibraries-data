@@ -1,3 +1,9 @@
+"""Birmingham: convert the hand-saved timetable (raw/birmingham.csv) into data/birmingham.csv.
+
+Legacy script: reads a saved copy rather than fetching it. The service has since been
+withdrawn - see history/ for the archived stops.
+"""
+
 import csv
 from _common import create_mobile_library_file
 
@@ -5,6 +11,7 @@ DATA_SOURCE = '../raw/birmingham.csv'
 
 
 def run():
+    """Read rows from the hand-saved Birmingham CSV and write data/birmingham.csv."""
 
     timetable = 'https://www.birmingham.gov.uk/info/50163/library_services/1479/mobile_library_service/3'
     mobiles = []

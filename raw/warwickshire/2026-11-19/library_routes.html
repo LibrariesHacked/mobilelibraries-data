@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mobile Libraries : Library routes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/MobileLibraries/assets/application-9fccb4596cd7e041ba7e7fe29d85f1a5.css" media="all" rel="stylesheet" />
+  <script src="/MobileLibraries/assets/application-7f74a165bed16529e049c12f0104d746.js"></script>
+  <link href="https://warwickshire.github.io/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" media="all" href="https://warwickshire.github.io/wcc_style_modifier.css" />
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="EQQ34XI4Nw7uvWlK01h9hdYRPuEnX181wTMmhQbbW3Y=" name="csrf-token" />
+  <!--[if lt IE 9]>
+    <script src="/MobileLibraries/assets/html5-e258638e942019b1ce1b40fe0b979706.js"></script>
+  <![endif]-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129085183-11"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129085183-11');
+</script>
+
+</head>
+<body lang="en">
+
+  <div id="wrap">
+    <header>
+  <nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-full">
+
+    <div class="navbar-header">
+
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="search btn-search pull-right" alt="Warwickshire County Council Search">
+        <span class="glyphicon glyphicon-search icon-white"></span>
+      </a>
+
+      <a class="govdelmobile pull-right" alt="GDS logo" href="https://public.govdelivery.com/accounts/UKWarwickshire/subscriber/new">
+        <img src="https://static.warwickshire.gov.uk/img/keep_me_posted_envelope_17px.png" alt="GDSl" style="width:17px;">
+      </a>
+
+      <a class="navbar-brand" alt="Warwickshire County Council logo" href="//www.warwickshire.gov.uk/">
+        <img src="https://static.warwickshire.gov.uk/img/corpwhitelogo.png" alt="Warwickshire County Council">
+      </a>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="left-topbar">
+
+      <ul class="nav navbar-nav">
+
+        <a class="gdslogo2" alt="GDS logo" href="https://public.govdelivery.com/accounts/UKWarwickshire/subscriber/new">
+          <img src="https://static.warwickshire.gov.uk/img/keep_me_posted_envelope_17px.png" alt="GDSl" style="width:17px;">
+        </a>
+
+        <a class="gdstext" href="https://public.govdelivery.com/accounts/UKWarwickshire/subscriber/new">Email alerts</a>
+        
+      </ul>
+      <div class="pull-right">
+
+      
+        <form action="https://warwickshire.gov.uk/search-results-page" method="get" name="kbs" class="navbar-form" id="site-search">
+
+          <label for="qtbottom" class="skip" style="display:none;">Search again</label>
+          <input class="span3" type="text" maxlength="1000" size="40" name="q" id="qtbottom" alt="Search" placeholder="Search (eg. libraries, blue badge, potholes)">
+          <button type="submit" value="Search" id="kbsubmitbottom" class="btn btn-mini searchbutton">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="row style-1-gradient" id="top-header">
+  <div class="container">
+    <div class="span12" style="height:100px;">
+      <div class="row">
+        <div class="row">
+          <div class="span9">
+            <form action="https://warwickshire.gov.uk/search-results-page" method="get" name="kbs" class="mobile-search" id="site-search">
+              <input class="span3" type="text" maxlength="1000" size="40" name="q" id="qtbottom" alt="Search" placeholder="Search (eg. libraries, blue badge, potholes)">
+              <button type="submit" value="Search" id="kbsubmitbottom" class="btn btn-mini searchbutton">Search</button>
+            </form>
+            <script type="text/javascript">
+              var button = $('.btn-search');
+              button.on('click', function () {
+                  $('#top-header').toggleClass('show-search');
+              });
+            </script>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+</div>
+
+</header>
+   
+    <div class="container-full dynamic-content">
+
+      <main role="main">
+        <ul class="nav nav-pills app_nav">
+  <li><a href="/MobileLibraries/locations" role="presentation">Locations</a></li>
+  <li class="active"><a class="active" href="#" role="presentation">Routes</a></li>
+</ul>
+
+        
+
+        <div class="search_form">
+          <form accept-charset="UTF-8" action="/MobileLibraries/library_stops" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+            <input id="stops_near" name="stops_near" type="text" />
+            <input class="btn btn-primary" name="commit" type="submit" value="Search for stops" />
+</form>        </div>
+          
+        <script src="//cdn.rawgit.com/mahnunchik/markerclustererplus/master/dist/markerclusterer.min.js"></script>
+        <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDE51KYzNA1_o4D_0bNjKr9IuL3f-RYNi8&libraries=places" type="text/javascript"></script>
+        
+        <script>
+//<![CDATA[
+
+
+          if (typeof google !== 'undefined') {
+            new google.maps.places.Autocomplete(
+              /** @type {HTMLInputElement} */(document.getElementById('stops_near')),
+               { types: ['geocode'], componentRestrictions: {country: 'uk'} }
+            );
+          };
+
+
+//]]>
+</script>
+        <h2>Routes</h2>
+
+<table class="table table-condensed">
+  <tr>
+    <th>Route Name</th>
+    <th>Locations</th>
+  </tr>
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/118">Hawkes Point Mobile -  B Route</a></td>
+    <td>Farnborough, Shotteswell, Radway, Ratley, Middle Tysoe, Bishops Tachbrook
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/151">Hawkes Point Mobile - Binley Woods</a></td>
+    <td>Binley Woods
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/119">Hawkes Point Mobile - C Route</a></td>
+    <td>Rugby, Bilton, Church Lawford, Binley Woods
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/120">Hawkes Point Mobile - D Route</a></td>
+    <td>Aspley Heath, Forshaw Heath, Earlswood, Ullenhall, Wootton Wawen, Wilmcote
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/121">Hawkes Point Mobile - E Route</a></td>
+    <td>Barford, Wellesbourne, Hampton Lucy, Charlecote
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/122">Hawkes Point Mobile - G Route</a></td>
+    <td>Clifford Chambers, Long Marston, Lower Quinton, Welford on Avon, Stratford upon Avon
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/123">Hawkes Point Mobile - H Route</a></td>
+    <td>Bearley, Aston Cantlow, Great Alne, Snitterfield, Norton Lindsey, Warwick
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/124">Hawkes Point Mobile - J Route</a></td>
+    <td>Preston on Stour, Alderminster, Newbold on Stour, Stratford upon Avon, Tiddington, Moreton Morrell, Leamington Spa
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/125">Hawkes Point Mobile - K Route</a></td>
+    <td>Ashorne, Warwick, Lighthorne, Northend, Fenny Compton, Knightcote, Bishop&#39;s Itchington, Gaydon
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/126">Hawkes Point Mobile - L Route</a></td>
+    <td>Great Wolford, Long Compton, Little Compton, Ilmington, Combrook, Lighthorne Heath
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/127">Hawkes Point Mobile - N Route</a></td>
+    <td>Long Lawford, Cawston, Stretton on Dunsmore, Binley Woods
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/128">Hawkes Point Mobile - O Route</a></td>
+    <td>Salford Priors, Exhall, Broom, Haselor, Temple Grafton, Binton, Stratford upon Avon
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/129">Hawkes Point Mobile - P Route</a></td>
+    <td>Mappleborough Green, Studley, Sambourne, Barton, Stratford upon Avon, Stratford-upon-Avon, Clopton
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/130">Hawkes Point Mobile - S Route</a></td>
+    <td>Langley, Claverdon, Preston Bagot, Lowsonford, Little Shrewley, Heathcote Park
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/131">Hawkes Point Mobile - T Route</a></td>
+    <td>Stratford upon Avon, Bishopton, Ettington, Honington, Upper Brailes, Idlicote, Whatcote, Oxhill, Butlers Marston
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/132">Hawkes Point Mobile - U Route</a></td>
+    <td>Hatton , Hatton, Hatton Park, Budbrooke, Hampton on the Hill, Warwick, Chase Meadow
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/133">Hawkes Point Mobile - W Route</a></td>
+    <td>Offchurch, Long Itchington, Princethorpe, Bourton-On-Dunsmore, Marton, Eathorpe, Birdingbury, Stockton, Napton
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/134">Kenilworth Mobile -  A Route</a></td>
+    <td>Hillmorton, Rugby, Stretton under Fosse, Brinklow
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/139">Kenilworth Mobile - Bedworth Heath and Kingsbury</a></td>
+    <td>Bedworth Heath, Kingsbury
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/135">Kenilworth Mobile - C Route</a></td>
+    <td>Baginton, Bubbenhall, Ryton on Dunsmore, Hampton Magna, Budbrooke, Leek Wootton
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/136">Kenilworth Mobile - D Route</a></td>
+    <td>Leamington Spa, Warwick
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/137">Kenilworth Mobile - E Route</a></td>
+    <td>Harborough Magna, Newbold on Avon, Churchover, Newton, Clifton upon Dunsmore
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/138">Kenilworth Mobile - G Route</a></td>
+    <td>Ash Green, Corley, Shustoke, Curdworth, Middleton, Lea Marston
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/140">Kenilworth Mobile - J Route</a></td>
+    <td>Beausale, Haseley Knob, Baddesley Clinton, Lapworth, Rowington
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/141">Kenilworth Mobile - K Route</a></td>
+    <td>Lapworth, Henley, Five Ways, Kenilworth
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/142">Kenilworth Mobile - L Route</a></td>
+    <td>Wolvey, Withybrook, Monks Kirby, Willey, Bramcote
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/152">Kenilworth Mobile - M Route</a></td>
+    <td>Warton, Newton Regis, Austrey, Burton Green, Kenilworth
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/144">Kenilworth Mobile - N Route</a></td>
+    <td>Bedworth, Nuneaton, Attleborough, St Nicholas Park
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/145">Kenilworth Mobile - P Route</a></td>
+    <td>Shilton, Weston in Arden, Nuneaton, Attleborough, Pailton, Easenhall
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/146">Kenilworth Mobile - R Route</a></td>
+    <td>Lillington, Sydenham, Radford Semele, Cubbington, Stoneleigh Park, Stoneleigh
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/147">Kenilworth Mobile - S Route</a></td>
+    <td>Fillongley, Galley Common, Ansley, Bedworth
+  </tr>
+
+
+  <tr>
+    <td><a href="/MobileLibraries/library_routes/149">Kenilworth Mobile - U Route</a></td>
+    <td>Devitts Green, Arley, Whitacre Heath, Hurley, Wood End, Baddesley Ensor
+  </tr>
+
+</table>
+
+
+      </main>
+    </div>
+    <div id="push"></div>
+  </div>
+  <footer>
+  <div class="container">
+  
+    <div class="row">
+
+      <div class="col col-sm-3"><a href="http://www.warwickshire.gov.uk/" class="footer-logo">
+    <img src="https://warwickshire.github.io/logo.png" class="footer-logo-image" alt="WCC Logo"> 
+    <p class="footer-logo-text">Warwickshire County Council</p>
+    <p class="footer-logo-subtext">© Warwickshire County Council</p>
+  </a>
+      </div>
+
+      <div class="col col-sm-2">
+        <aside id="text-3" class="widget widget_text">
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/az">A-Z of services</a></p></div>
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/accessibility">Accessibility</a></p></div>
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/contactus">Contact us</a></p></div>
+        </aside>
+      </div>
+
+      <div class="col col-sm-3">
+        <aside id="text-4" class="widget widget_text">
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/customerservice">Customer service and complaints</a></p></div>
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/help">Help using the website</a></p></div>
+          <div class="textwidget"><p><a href="//www.warwickshire.gov.uk/disclaimer">Privacy and disclaimer</a></p></div>
+        </aside>
+      </div>
+
+      <div class="col col-lg-2">
+        <aside id="text-6" class="widget widget_text">
+          <div class="textwidget">
+            <a href="https://public.govdelivery.com/accounts/UKWarwickshire/subscriber/new">
+              <img class="keep_me_posted" src="https://static.warwickshire.gov.uk/img/keep me posted white on trans 155x39.png" alt="gov delivery">
+            </a>
+          </div>
+        </aside>
+        <aside id="text-11" class="widget widget_text">
+          <div class="textwidget">
+            <script type="text/javascript">
+              function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-9510501-3'}, 'google_translate_element');
+              }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <div id="google_translate_element"></div>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
