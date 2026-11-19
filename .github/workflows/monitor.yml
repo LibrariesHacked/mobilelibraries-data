@@ -1,16 +1,14 @@
 name: Validate mobile library datasets
 
-'on':
+on:
   push:
-    branches:
-      - main
-      - '**'
     paths:
       - 'data/**'
       - 'schemas/**'
       - 'scripts/**'
       - 'services.csv'
       - 'datapackage.json'
+      - 'requirements.txt'
       - '.github/workflows/**'
   pull_request:
     branches:

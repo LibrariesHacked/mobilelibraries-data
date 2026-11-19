@@ -50,6 +50,7 @@ def main() -> int:
     coord_issues = 0
     freq_issues = 0
     exc_issues = 0
+    time_issues = 0
 
     for csv_file in csv_files:
         if csv_file.name.startswith("uk_") or csv_file.name.startswith("library-services"):
@@ -62,6 +63,8 @@ def main() -> int:
                 lng_str = (row.get("GeoX") or row.get("Longitude", "")).strip()
                 freq_str = row.get("Frequency", "").strip()
                 exc_str = row.get("Exceptions", "").strip()
+                arr_str = row.get("Arrival", "").strip()
+                dep_str = row.get("Departure", "").strip()
 
                 if lat_str and lng_str:
                     if not COORD_5DP_RE.match(lat_str) or not COORD_5DP_RE.match(lng_str):
@@ -81,6 +84,11 @@ def main() -> int:
                         if exc_issues <= 3:
                             print(f"  [Exceptions Warning] {csv_file.name}:{i} ({row.get('Stop')}) invalid Exceptions: '{exc_str}' (must be comma-separated YYYY-MM-DD)")
 
+                if arr_str and dep_str and arr_str > dep_str:
+                    time_issues += 1
+                    if time_issues <= 3:
+                        print(f"  [Time Warning] {csv_file.name}:{i} ({row.get('Stop')}) Arrival ({arr_str}) > Departure ({dep_str})")
+
     if coord_issues > 0:
         print(f"❌ Found {coord_issues} coordinate precision warnings.")
         errors += 1
@@ -98,6 +106,12 @@ def main() -> int:
         errors += 1
     else:
         print(f"✓ All Exceptions fields are either empty or valid ISO-8601 date lists.")
+
+    if time_issues > 0:
+        print(f"❌ Found {time_issues} time order issues (Arrival > Departure).")
+        errors += 1
+    else:
+        print(f"✓ All stops have valid chronologically ordered times (Arrival <= Departure).")
 
     print("\n" + "=" * 60)
     if errors == 0:
