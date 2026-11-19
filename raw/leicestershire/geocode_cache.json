@@ -1,0 +1,1283 @@
+{
+  "Ab Kettleby": {
+    "longitude": -0.9280052714969868,
+    "latitude": 52.80007412270988,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Appleby Magna": {
+    "longitude": -1.5308872459597966,
+    "latitude": 52.68490154700595,
+    "postcode": "DE12",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Arnesby": {
+    "longitude": -1.092207462850752,
+    "latitude": 52.52641317673128,
+    "postcode": "LE8",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Asfordby": {
+    "longitude": -0.9514134537945601,
+    "latitude": 52.76419776659411,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Asfordby Hill": {
+    "longitude": -0.9248384290986753,
+    "latitude": 52.767286221940005,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Ashby": {
+    "longitude": -1.5508615971810167,
+    "latitude": 52.742225106155814,
+    "postcode": "DE12",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Ashby Magna": {
+    "longitude": -1.1773795789632366,
+    "latitude": 52.51198610235892,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Ashby Parva": {
+    "longitude": -1.2259973679911096,
+    "latitude": 52.49063873279954,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Bagworth": {
+    "longitude": -1.3396904868616684,
+    "latitude": 52.66794434640353,
+    "postcode": "LE67",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Bardon": {
+    "longitude": -1.333079699412072,
+    "latitude": 52.70102579273698,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Barkestone": {
+    "longitude": -0.8426906373193447,
+    "latitude": 52.905497409531336,
+    "postcode": "NG13",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Barlestone": {
+    "longitude": -1.3691319583830999,
+    "latitude": 52.64741904758138,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Barsby": {
+    "longitude": -0.967990806641293,
+    "latitude": 52.69547998595623,
+    "postcode": "LE7",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Barton in the Beans": {
+    "longitude": -1.411759609266541,
+    "latitude": 52.65397604675022,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Barwell": {
+    "longitude": -1.3472153309861927,
+    "latitude": 52.56675074370348,
+    "postcode": "LE9",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Battleflat": {
+    "longitude": -1.3536136,
+    "latitude": 52.7007684,
+    "postcode": "",
+    "district": "",
+    "county": "Leicestershire"
+  },
+  "Battram": {
+    "longitude": -1.3649737756799711,
+    "latitude": 52.68143231004809,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Belton": {
+    "longitude": -1.3394925676972005,
+    "latitude": 52.782041048097646,
+    "postcode": "LE12",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Billesdon": {
+    "longitude": -0.9392309512681174,
+    "latitude": 52.618270998954266,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Bilstone": {
+    "longitude": -1.465971159250696,
+    "latitude": 52.64397524956276,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Bitteswell": {
+    "longitude": -1.2112334042977515,
+    "latitude": 52.47700206793296,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Blackfordby": {
+    "longitude": -1.5131968212592275,
+    "latitude": 52.75788935023186,
+    "postcode": "DE11",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Blaston": {
+    "longitude": -0.8140290426236606,
+    "latitude": 52.5515985936963,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Botcheston": {
+    "longitude": -1.2874757550160667,
+    "latitude": 52.64339638108777,
+    "postcode": "LE9",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Branston": {
+    "longitude": -0.7982613578416533,
+    "latitude": 52.856088463415794,
+    "postcode": "NG32",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Braunstone Town": {
+    "longitude": -1.1811600679198564,
+    "latitude": 52.619308742866586,
+    "postcode": "LE3",
+    "district": "Blaby",
+    "county": "Leicestershire"
+  },
+  "Breedon": {
+    "longitude": -1.3983278660748337,
+    "latitude": 52.80207705128933,
+    "postcode": "DE73",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Bringhurst": {
+    "longitude": -0.7607542256270569,
+    "latitude": 52.521285725660874,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Bruntingthorpe": {
+    "longitude": -1.1127313373628105,
+    "latitude": 52.50344601624957,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Buckminster": {
+    "longitude": -0.6952427841681069,
+    "latitude": 52.796799650067165,
+    "postcode": "NG33",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Burrough": {
+    "longitude": -0.8795118678600584,
+    "latitude": 52.689957113973044,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Burton Lazars": {
+    "longitude": -0.8630657456220865,
+    "latitude": 52.74381286492961,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Burton Overy": {
+    "longitude": -1.0005809736590099,
+    "latitude": 52.576487778460766,
+    "postcode": "LE8",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Burton on the Wolds": {
+    "longitude": -1.1277673150904055,
+    "latitude": 52.78462950890223,
+    "postcode": "LE12",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Carlton": {
+    "longitude": -1.3925207345767108,
+    "latitude": 54.58959704014018,
+    "postcode": "TS21",
+    "district": null,
+    "county": "Stockton-on-Tees"
+  },
+  "Cathorpe": {
+    "longitude": -1.1940851,
+    "latitude": 52.4030947,
+    "postcode": "",
+    "district": "",
+    "county": "Leicestershire"
+  },
+  "Chilcote": {
+    "longitude": -1.5803004393995679,
+    "latitude": 52.699874727678406,
+    "postcode": "DE12",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Church Langton": {
+    "longitude": -0.9335278646562594,
+    "latitude": 52.53317235295997,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Claybrooke Magna": {
+    "longitude": -1.2806624483651523,
+    "latitude": 52.49546964414531,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Claybrooke Parva": {
+    "longitude": -1.2712044613022782,
+    "latitude": 52.48754542875733,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Coalville": {
+    "longitude": -1.360212470866902,
+    "latitude": 52.7207998822593,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Cold Overton": {
+    "longitude": -0.8033517748595053,
+    "latitude": 52.68104984280126,
+    "postcode": "LE15",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Coleorton": {
+    "longitude": -1.4040085826334547,
+    "latitude": 52.75323805755931,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Coleorton Moor": {
+    "longitude": -1.404100325387542,
+    "latitude": 52.74433873855436,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Congerstone": {
+    "longitude": -1.4572641939410682,
+    "latitude": 52.64532913086025,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Cotesbach": {
+    "longitude": -1.212649113631227,
+    "latitude": 52.43395736621616,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Croft": {
+    "longitude": -1.2464284090163096,
+    "latitude": 52.55678481741509,
+    "postcode": "LE9",
+    "district": "Blaby",
+    "county": "Leicestershire"
+  },
+  "Cropston": {
+    "longitude": -1.1825549819590402,
+    "latitude": 52.692694176694836,
+    "postcode": "LE7",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Croxton Kerrial": {
+    "longitude": -0.7607695840250258,
+    "latitude": 52.85367142130858,
+    "postcode": "NG32",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Diseworth": {
+    "longitude": -1.3392686796624753,
+    "latitude": 52.815427291531954,
+    "postcode": "DE74",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Donisthorpe": {
+    "longitude": -1.5363953530419427,
+    "latitude": 52.722149526412345,
+    "postcode": "DE12",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Drayton": {
+    "longitude": -1.1713339359368096,
+    "latitude": 52.2602503726723,
+    "postcode": "NN11",
+    "district": null,
+    "county": "West Northamptonshire"
+  },
+  "Dunton Bassestt": {
+    "longitude": -1.1987162,
+    "latitude": 52.5120336,
+    "postcode": "",
+    "district": "",
+    "county": "Leicestershire"
+  },
+  "Dunton Bassett": {
+    "longitude": -1.1968231685074209,
+    "latitude": 52.510744124228054,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Easthorpe": {
+    "longitude": -0.9450988529237596,
+    "latitude": 53.07519444017424,
+    "postcode": "NG25",
+    "district": "Newark and Sherwood",
+    "county": "Nottinghamshire"
+  },
+  "Eaton": {
+    "longitude": -0.8146645116657861,
+    "latitude": 52.853664226019795,
+    "postcode": "NG32",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Edmondthorpe": {
+    "longitude": -0.7333755825627392,
+    "latitude": 52.749295526519255,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Ellistown": {
+    "longitude": -1.364136880085388,
+    "latitude": 52.69424726091341,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Elmesthorpe": {
+    "longitude": -1.3242510270670085,
+    "latitude": 52.56439244900372,
+    "postcode": "LE9",
+    "district": "Blaby",
+    "county": "Leicestershire"
+  },
+  "Fenny Drayton": {
+    "longitude": -1.4845205686247398,
+    "latitude": 52.56835374168438,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Foxton": {
+    "longitude": -0.9694394252675447,
+    "latitude": 52.50361571170968,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Freeby": {
+    "longitude": -0.8123206495167048,
+    "latitude": 52.771904020165245,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Frisby": {
+    "longitude": -0.9571538710855122,
+    "latitude": 52.6056011600674,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Gaddesby": {
+    "longitude": -0.9848236566469165,
+    "latitude": 52.70978452517985,
+    "postcode": "LE7",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Gaulby": {
+    "longitude": -0.9768530899754554,
+    "latitude": 52.6024195954632,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Gilmorton": {
+    "longitude": -1.160074187662642,
+    "latitude": 52.48679997051052,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Goadby": {
+    "longitude": -0.8947268799166245,
+    "latitude": 52.581840436496506,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Grace Dieu": {
+    "longitude": -1.3584863,
+    "latitude": 52.7564061,
+    "postcode": "",
+    "district": "",
+    "county": "Leicestershire"
+  },
+  "Great Dalby": {
+    "longitude": -0.8982871944427598,
+    "latitude": 52.72345917725684,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Great Easton": {
+    "longitude": -0.7513928737867087,
+    "latitude": 52.529161869647936,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Griffydam": {
+    "longitude": -1.3908463383786447,
+    "latitude": 52.76743782474704,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Grimston": {
+    "longitude": -0.9851227467490201,
+    "latitude": 52.7900041487311,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Groby": {
+    "longitude": -1.2249573702113392,
+    "latitude": 52.66275492734049,
+    "postcode": "LE6",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Gumley": {
+    "longitude": -1.0032399641735883,
+    "latitude": 52.50604486693974,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Hallaton": {
+    "longitude": -0.8367519576066518,
+    "latitude": 52.56127283536611,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Harby": {
+    "longitude": -0.890527339987487,
+    "latitude": 52.87273644156092,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Harston": {
+    "longitude": -0.7541137023188249,
+    "latitude": 52.87658007438751,
+    "postcode": "NG32",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Heather": {
+    "longitude": -1.4240300104911994,
+    "latitude": 52.69329466597897,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Hemington": {
+    "longitude": -1.3248821734731184,
+    "latitude": 52.84857188481299,
+    "postcode": "DE74",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Higham on the Hill": {
+    "longitude": -1.443803580458892,
+    "latitude": 52.55523305284627,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Hose": {
+    "longitude": -0.9071406208468528,
+    "latitude": 52.85785050082109,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Houghton-on-the-Hill": {
+    "longitude": -0.997431825508954,
+    "latitude": 52.625259603346194,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Hugglescote": {
+    "longitude": -1.371216672235978,
+    "latitude": 52.712291494639594,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Huncote": {
+    "longitude": -1.2388779547740516,
+    "latitude": 52.57203757538427,
+    "postcode": "LE9",
+    "district": "Blaby",
+    "county": "Leicestershire"
+  },
+  "Husbands Bosworth": {
+    "longitude": -1.0539803943303614,
+    "latitude": 52.45322986692696,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Ibstock": {
+    "longitude": -1.3976388905616774,
+    "latitude": 52.68756294675625,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Kibworth": {
+    "longitude": -0.9968354910081889,
+    "latitude": 52.53690823283603,
+    "postcode": "LE8",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Kimcote": {
+    "longitude": -1.1422085451824795,
+    "latitude": 52.474031588723115,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Kings Norton": {
+    "longitude": -0.9849400963131753,
+    "latitude": 52.59814692119237,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Kirby Bellars": {
+    "longitude": -0.9393732631430195,
+    "latitude": 52.75224200976062,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Kirkby Mallory": {
+    "longitude": -1.3291921772990063,
+    "latitude": 52.601207454878235,
+    "postcode": "LE9",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Knipton": {
+    "longitude": -0.7749956049890236,
+    "latitude": 52.87323726579575,
+    "postcode": "NG32",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Knossington": {
+    "longitude": -0.8152266416203359,
+    "latitude": 52.66914925715968,
+    "postcode": "LE15",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Laughton": {
+    "longitude": -1.0296511611578674,
+    "latitude": 52.49492761281204,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Loddington": {
+    "longitude": -0.8361467281645593,
+    "latitude": 52.61311381898122,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Long Clawson": {
+    "longitude": -0.9237117324145766,
+    "latitude": 52.83940188729787,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Long Whatton": {
+    "longitude": -1.2898265049255786,
+    "latitude": 52.806547783261365,
+    "postcode": "LE12",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Loughborough": {
+    "longitude": -1.2061638967666577,
+    "latitude": 52.77209966208864,
+    "postcode": "LE11",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Lubenham": {
+    "longitude": -0.9629876378215427,
+    "latitude": 52.47977097603245,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Marefield": {
+    "longitude": -0.8981090100958307,
+    "latitude": 52.66411406651914,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Markfield": {
+    "longitude": -1.2779389109241186,
+    "latitude": 52.686732740626645,
+    "postcode": "LE67",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Medbourne": {
+    "longitude": -0.821737906937593,
+    "latitude": 52.53029648584273,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Melton Mowbray": {
+    "longitude": -0.8881191016523681,
+    "latitude": 52.76637246889799,
+    "postcode": "LE13",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Moira": {
+    "longitude": -1.5320661735437877,
+    "latitude": 52.73792735720006,
+    "postcode": "DE12",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Mowsley": {
+    "longitude": -1.0488639353388252,
+    "latitude": 52.495362269860294,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Muston": {
+    "longitude": -0.7684616674227316,
+    "latitude": 52.9318466208946,
+    "postcode": "NG13",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Nailstone": {
+    "longitude": -1.385629967026056,
+    "latitude": 52.65986670687854,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "New Inn": {
+    "longitude": -4.227071225880838,
+    "latitude": 52.007931692316774,
+    "postcode": "SA39",
+    "district": null,
+    "county": "Sir Gaerfyrddin - Carmarthenshire"
+  },
+  "Newbold Coleorton": {
+    "longitude": -1.407224,
+    "latitude": 52.7649936,
+    "postcode": "",
+    "district": "",
+    "county": "Leicestershire"
+  },
+  "Newbold Heath": {
+    "longitude": -1.344592242143461,
+    "latitude": 52.64175715389859,
+    "postcode": "LE9",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Newton Burgoland": {
+    "longitude": -1.4565150404646519,
+    "latitude": 52.67954082202809,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Newton Harcourt": {
+    "longitude": -1.057706741337693,
+    "latitude": 52.56746243461151,
+    "postcode": "LE8",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Normanton Le Heath": {
+    "longitude": -1.4438151392983893,
+    "latitude": 52.7105325085346,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Norton Juxta Twycross": {
+    "longitude": -1.5244941656710842,
+    "latitude": 52.65787089060528,
+    "postcode": "CV9",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Oakthorpe": {
+    "longitude": -1.5189819136739313,
+    "latitude": 52.71559865479164,
+    "postcode": "DE12",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Old Dalby": {
+    "longitude": -1.0013443623024367,
+    "latitude": 52.807555059248614,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Osbaston": {
+    "longitude": -1.3724546271156988,
+    "latitude": 52.63522846266406,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Owston": {
+    "longitude": -0.8535784799600452,
+    "latitude": 52.66328720192435,
+    "postcode": "LE15",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Packington": {
+    "longitude": -1.466471906466139,
+    "latitude": 52.72912836845864,
+    "postcode": "LE65",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Peatling Parva": {
+    "longitude": -1.1334691266794212,
+    "latitude": 52.50072278475173,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Peckleton": {
+    "longitude": -1.3101604713407136,
+    "latitude": 52.60494587974521,
+    "postcode": "LE9",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Peggs Green": {
+    "longitude": -1.3895033454692907,
+    "latitude": 52.754306014170176,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Queniborough": {
+    "longitude": -1.0440228720425315,
+    "latitude": 52.7040734246071,
+    "postcode": "LE7",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Quorn": {
+    "longitude": -1.1700495030103704,
+    "latitude": 52.7427796374408,
+    "postcode": "LE12",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Ratcliffe Culey": {
+    "longitude": -1.5190970736959202,
+    "latitude": 52.593230312306915,
+    "postcode": "CV9",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Ravenstone": {
+    "longitude": -1.4045221714458898,
+    "latitude": 52.71881010173153,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Rearsby School": {
+    "longitude": -1.0299617,
+    "latitude": 52.7228157,
+    "postcode": "",
+    "district": "",
+    "county": "Leicestershire"
+  },
+  "Redmile": {
+    "longitude": -0.8152656740245829,
+    "latitude": 52.91065697283194,
+    "postcode": "NG13",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Sapcote": {
+    "longitude": -1.280698946694413,
+    "latitude": 52.53656354731847,
+    "postcode": "LE9",
+    "district": "Blaby",
+    "county": "Leicestershire"
+  },
+  "Saxelby": {
+    "longitude": -0.9687213515632643,
+    "latitude": 52.78249107007906,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Scraptoft": {
+    "longitude": -1.0462452407336158,
+    "latitude": 52.64350777621843,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Seagrave": {
+    "longitude": -1.0864478269402562,
+    "latitude": 52.75398701030371,
+    "postcode": "LE12",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Sewstern": {
+    "longitude": -0.6838916027846372,
+    "latitude": 52.7861468883139,
+    "postcode": "NG33",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Shackerstone": {
+    "longitude": -1.4494720870118778,
+    "latitude": 52.65735752198909,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Sharnford": {
+    "longitude": -1.2905142036128103,
+    "latitude": 52.522157753655506,
+    "postcode": "LE10",
+    "district": "Blaby",
+    "county": "Leicestershire"
+  },
+  "Shawell": {
+    "longitude": -1.2035751845272669,
+    "latitude": 52.41346175132868,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Shearsby": {
+    "longitude": -1.082944876723903,
+    "latitude": 52.51253285279706,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Sheepy Magna": {
+    "longitude": -1.5199468772345117,
+    "latitude": 52.60732985235512,
+    "postcode": "CV9",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Sheepy Parva": {
+    "longitude": -1.510973220965635,
+    "latitude": 52.609567597639426,
+    "postcode": "CV9",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Shenton": {
+    "longitude": -1.429926568729923,
+    "latitude": 52.5994514498333,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Sibson": {
+    "longitude": -1.478990742016736,
+    "latitude": 52.60422619140591,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Skeffington": {
+    "longitude": -0.9029666501977467,
+    "latitude": 52.615953960364195,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Slawston": {
+    "longitude": -0.8545807059827536,
+    "latitude": 52.54226129718683,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Somerby": {
+    "longitude": -0.8503794297756901,
+    "latitude": 52.68715200227028,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "South Croxton": {
+    "longitude": -0.9832019911867506,
+    "latitude": 52.68466156227626,
+    "postcode": "LE7",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "South Kilworth": {
+    "longitude": -1.1116900829810688,
+    "latitude": 52.43153415345609,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Stanton under Bardon": {
+    "longitude": -1.3113148102039103,
+    "latitude": 52.68854942730567,
+    "postcode": "LE67",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Stapleton": {
+    "longitude": -2.776810625715055,
+    "latitude": 55.035040695309135,
+    "postcode": "CA6",
+    "district": null,
+    "county": "Cumberland"
+  },
+  "Stathern": {
+    "longitude": -0.8543588700734455,
+    "latitude": 52.87180876167157,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Stoke Golding": {
+    "longitude": -1.4146309628793368,
+    "latitude": 52.57061812788811,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Sutton Cheney": {
+    "longitude": -1.3843229491530136,
+    "latitude": 52.601317935495416,
+    "postcode": "CV13",
+    "district": "Hinckley and Bosworth",
+    "county": "Leicestershire"
+  },
+  "Swannington": {
+    "longitude": -1.386483104337001,
+    "latitude": 52.74253193118587,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Swepstone": {
+    "longitude": -1.455694367376231,
+    "latitude": 52.69321046724563,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Swinford": {
+    "longitude": -1.16523391304668,
+    "latitude": 52.41022156349783,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Theddingworth": {
+    "longitude": -1.021594279307393,
+    "latitude": 52.46570575809433,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Thornton": {
+    "longitude": -2.0810512396013565,
+    "latitude": 55.7220343657586,
+    "postcode": "TD15",
+    "district": null,
+    "county": "Northumberland"
+  },
+  "Thorpe Arnold": {
+    "longitude": -0.859059644010044,
+    "latitude": 52.772416568299306,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Thorpe Langton": {
+    "longitude": -0.9086661583146919,
+    "latitude": 52.52567263096186,
+    "postcode": "LE16",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Thorpe Satchville": {
+    "longitude": -0.9165645589423208,
+    "latitude": 52.69871616805571,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Thringstone": {
+    "longitude": -1.370616780709065,
+    "latitude": 52.75398261159947,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Thrussington": {
+    "longitude": -1.042528338418562,
+    "latitude": 52.73787246617266,
+    "postcode": "LE7",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Thurcaston": {
+    "longitude": -1.157323222790591,
+    "latitude": 52.69216695922187,
+    "postcode": "LE7",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Thurlaston": {
+    "longitude": -1.2616470220830054,
+    "latitude": 52.58687134741315,
+    "postcode": "LE9",
+    "district": "Blaby",
+    "county": "Leicestershire"
+  },
+  "Thurnby": {
+    "longitude": -1.047348699415543,
+    "latitude": 52.63217121687225,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Tilton on the hill": {
+    "longitude": -0.9060838076430803,
+    "latitude": 52.64378035009039,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Tugby": {
+    "longitude": -0.876600179573056,
+    "latitude": 52.60099891100578,
+    "postcode": "LE7",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Twyford": {
+    "longitude": -0.9239324864358531,
+    "latitude": 52.68433624228356,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Ullesthorpe": {
+    "longitude": -1.25525837936797,
+    "latitude": 52.48474013491565,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Upton": {
+    "longitude": -0.9014855534702331,
+    "latitude": 53.08150608328774,
+    "postcode": "NG23",
+    "district": "Newark and Sherwood",
+    "county": "Nottinghamshire"
+  },
+  "Walcote": {
+    "longitude": -1.1650287515256101,
+    "latitude": 52.44755674688547,
+    "postcode": "LE17",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Waltham": {
+    "longitude": 1.0164817532372386,
+    "latitude": 51.198003112764624,
+    "postcode": "CT4",
+    "district": "Canterbury",
+    "county": "Kent"
+  },
+  "Walton": {
+    "longitude": -1.3268155583800276,
+    "latitude": 53.92388985441486,
+    "postcode": "LS23",
+    "district": "Leeds",
+    "county": null
+  },
+  "Wanlip": {
+    "longitude": -1.1138173305024481,
+    "latitude": 52.69174194058812,
+    "postcode": "LE7",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Whetstone": {
+    "longitude": -1.1795012506592752,
+    "latitude": 52.57132651177154,
+    "postcode": "LE8",
+    "district": "Blaby",
+    "county": "Leicestershire"
+  },
+  "Whitwick": {
+    "longitude": -1.3546342972284142,
+    "latitude": 52.73963011524168,
+    "postcode": "LE67",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Willoughby Waterleys": {
+    "longitude": -1.1544415059668307,
+    "latitude": 52.52633458942789,
+    "postcode": "LE8",
+    "district": "Harborough",
+    "county": "Leicestershire"
+  },
+  "Wilson": {
+    "longitude": -1.3994178738853633,
+    "latitude": 52.81878521971355,
+    "postcode": "DE73",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Witherly": {
+    "longitude": -1.4957472,
+    "latitude": 52.5820082,
+    "postcode": "",
+    "district": "",
+    "county": "Leicestershire"
+  },
+  "Woodhouse Eaves": {
+    "longitude": -1.2161993364642267,
+    "latitude": 52.72583308457763,
+    "postcode": "LE12",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Worthington": {
+    "longitude": -1.3961465350198035,
+    "latitude": 52.78178540631108,
+    "postcode": "LE65",
+    "district": "North West Leicestershire",
+    "county": "Leicestershire"
+  },
+  "Wycomb": {
+    "longitude": -0.8527952584853064,
+    "latitude": 52.81504050552818,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  },
+  "Wymeswold": {
+    "longitude": -1.107303659514151,
+    "latitude": 52.8057471539151,
+    "postcode": "LE12",
+    "district": "Charnwood",
+    "county": "Leicestershire"
+  },
+  "Wymondham": {
+    "longitude": -0.7435441216922415,
+    "latitude": 52.76045251180834,
+    "postcode": "LE14",
+    "district": "Melton",
+    "county": "Leicestershire"
+  }
+}

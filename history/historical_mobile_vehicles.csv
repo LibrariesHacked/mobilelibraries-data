@@ -1,0 +1,136 @@
+Local authority,Mobile name,Dataset slug,Status,Notes
+Aberdeenshire,Central,aberdeenshire,Historical Vehicle Record,Archived from legacy dataset
+Aberdeenshire,North,aberdeenshire,Historical Vehicle Record,Archived from legacy dataset
+Aberdeenshire,South,aberdeenshire,Historical Vehicle Record,Archived from legacy dataset
+Angus,Van 1,angus,Historical Vehicle Record,Archived from legacy dataset
+Angus,Van 2,angus,Historical Vehicle Record,Archived from legacy dataset
+Barnet,Mobile,barnet,Historical Vehicle Record,Archived from legacy dataset
+Bath and North East Somerset,Mobile,bath_and_north_east_somerset,Historical Vehicle Record,Archived from legacy dataset
+Birmingham,Mobile,birmingham,Historical Vehicle Record,Archived from legacy dataset
+Cambridgeshire,CMOB,cambridgeshire,Historical Vehicle Record,Archived from legacy dataset
+Cambridgeshire,HMOB,cambridgeshire,Historical Vehicle Record,Archived from legacy dataset
+Cambridgeshire,MMOB,cambridgeshire,Historical Vehicle Record,Archived from legacy dataset
+East Riding of Yorkshire,Mobile,east_riding_of_yorkshire,Historical Vehicle Record,Archived from legacy dataset
+Essex,County Mobile 1,essex,Historical Vehicle Record,Archived from legacy dataset
+Essex,County Mobile 2,essex,Historical Vehicle Record,Archived from legacy dataset
+Hillingdon,Mobile,hillingdon,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Armagh,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Ballymena,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Bangor,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Belfast 1,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Belfast 2,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Carrickfergus,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Causeway,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Craigavon,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Cross border,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Down Week 1,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Down Week 2,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Dungannon,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Fermanagh,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Lisburn Week 1,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Lisburn Week 2,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Newry,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,North West,librariesni,Historical Vehicle Record,Archived from legacy dataset
+LibrariesNI,Tyrone - Omagh,librariesni,Historical Vehicle Record,Archived from legacy dataset
+Midlothian,Mobile,midlothian,Historical Vehicle Record,Archived from legacy dataset
+Milton Keynes,Mobile,milton_keynes,Historical Vehicle Record,Archived from legacy dataset
+Norfolk,CEN1,norfolk,Historical Vehicle Record,Archived from legacy dataset
+Norfolk,CEN2,norfolk,Historical Vehicle Record,Archived from legacy dataset
+Norfolk,CEN3,norfolk,Historical Vehicle Record,Archived from legacy dataset
+Norfolk,DER,norfolk,Historical Vehicle Record,Archived from legacy dataset
+Norfolk,DOW,norfolk,Historical Vehicle Record,Archived from legacy dataset
+Norfolk,EDE,norfolk,Historical Vehicle Record,Archived from legacy dataset
+Norfolk,NWA,norfolk,Historical Vehicle Record,Archived from legacy dataset
+North Lincolnshire,Mobile,north_lincolnshire,Historical Vehicle Record,Archived from legacy dataset
+North Somerset,Mobile,north_somerset,Historical Vehicle Record,Archived from legacy dataset
+North Yorkshire,Supermobile,north_yorkshire,Historical Vehicle Record,Archived from legacy dataset
+Perth and Kinross,Mobile 1,perth_and_kinross,Active Vehicle,Active vehicle operating 3-weekly rota across Perth and Kinross
+Perth and Kinross,Mobile 2,perth_and_kinross,Active Vehicle,Active vehicle operating 3-weekly rota across Perth and Kinross
+Perth and Kinross,Mobile 3,perth_and_kinross,Retired Vehicle,"Previously operated mobile library route, now retired"
+Portsmouth,Mobile,portsmouth,Historical Vehicle Record,Archived from legacy dataset
+Shropshire,Brookes,shropshire,Historical Vehicle Record,Archived from legacy dataset
+Shropshire,Owen,shropshire,Historical Vehicle Record,Archived from legacy dataset
+Shropshire,Sabrina,shropshire,Historical Vehicle Record,Archived from legacy dataset
+Somerset,Mobile,somerset,Historical Vehicle Record,Archived from legacy dataset
+South Gloucestershire,Mobile,south_gloucestershire,Historical Vehicle Record,Archived from legacy dataset
+Suffolk,Bury St Edmunds,suffolk,Historical Vehicle Record,Archived from legacy dataset
+Suffolk,Ipswich,suffolk,Historical Vehicle Record,Archived from legacy dataset
+Suffolk,Leiston,suffolk,Historical Vehicle Record,Archived from legacy dataset
+Warwickshire,Alcester,warwickshire,Historical Vehicle Record,Archived from legacy dataset
+Warwickshire,Bedworth,warwickshire,Historical Vehicle Record,Archived from legacy dataset
+Warwickshire,Kenilworth,warwickshire,Historical Vehicle Record,Archived from legacy dataset
+West Berkshire,Mobile,west_berkshire,Historical Vehicle Record,Archived from legacy dataset
+West Dunbartonshire,Mobile,west_dunbartonshire,Historical Vehicle Record,Archived from legacy dataset
+Wiltshire,North,wiltshire,Historical Vehicle Record,Archived from legacy dataset
+Wiltshire,Residential homes,wiltshire,Historical Vehicle Record,Archived from legacy dataset
+Wiltshire,South,wiltshire,Historical Vehicle Record,Archived from legacy dataset
+Worcestershire,Mobile,worcestershire,Historical Vehicle Record,Archived from legacy dataset
+Wrexham,Mobile 1,wrexham,Historical Vehicle Record,Archived from legacy dataset
+York,Mobile,york,Historical Vehicle Record,Archived from legacy dataset
+Warwickshire,Hawkes Point Mobile,warwickshire,Active Electric Vehicle,New electric mobile library vehicle introduced 2024/2026
+Warwickshire,Kenilworth Mobile,warwickshire,Active Electric Vehicle,New electric mobile library vehicle introduced 2024/2026
+Worcestershire,County Mobile Library,worcestershire,Active Vehicle,Traditional mobile library visiting 160 villages on 4-week rota
+Worcestershire,Mobile Library Hub,worcestershire,Active Electric Vehicle,New electric outreach vehicle launched October 2026
+East Riding of Yorkshire,Terry Dispatchit,east_riding_of_yorkshire,Active Named Vehicle,Active named mobile library vehicle (voted by public)
+East Riding of Yorkshire,Wheeliam Shakespeare,east_riding_of_yorkshire,Active Named Vehicle,Active named mobile library vehicle (voted by public)
+East Riding of Yorkshire,Road Dahl,east_riding_of_yorkshire,Active Named Vehicle,Active named compact mobile library vehicle for community events & streets
+East Riding of Yorkshire,Brum Stoker,east_riding_of_yorkshire,Active Named Vehicle,Active named mobile library vehicle (voted by public)
+Midlothian,Mabel,midlothian,Active Named Vehicle,Custom-built mobile library vehicle Mabel operating 2-week schedule
+The Scottish Borders,Mobile West (LBMB1),the_scottish_borders,Active,Serves western Borders communities from Galashiels base.
+The Scottish Borders,Mobile East (LBMB2),the_scottish_borders,Active,Serves eastern Borders communities from Duns base.
+York,Explore York Mobile Library,york,Active,Operated by Explore York Libraries and Archives Mutual Ltd (Manager: Dean Audsley).
+Stirling,Mobile Library Van 1,stirling,Active,Stirling rural routes van.
+Stirling,Mobile Library Van 2,stirling,Active,Stirling second active van.
+Essex,Mobile Library 1,essex,Active,Essex County Council three-weekly rural mobile fleet vehicle.
+Essex,Mobile Library 2,essex,Active,Essex County Council three-weekly rural mobile fleet vehicle.
+Cheshire East,Cheshire East Mobile Library,cheshire_east,Active,"Based at Alsager Library, operating on a 3-week rotation."
+Cheshire West and Chester,Electric Mobile Library,cheshire_west_and_chester,Active,Cheshire West and Chester custom zero-emission electric mobile library van.
+Na h-Eileanan Siar,Lexy,eilean_siar,Active,Covers Lewis and Harris routes.
+Na h-Eileanan Siar,Lachaidh,eilean_siar,Active,Covers Uist and Benbecula routes.
+Bedford,Bedford Borough Mobile Library,bedford,Active,Bedford Borough Council fortnightly mobile library van.
+County Durham,Durham Mobile Library,county_durham,Active,Durham County Council accessible mobile library van serving 85 communities.
+Kent,Ashford Mobile Library,kent,Active,Extracted from Kent County Council directory service pages
+Kent,Dover Mobile Library,kent,Active,Extracted from Kent County Council directory service pages
+Kent,Maidstone Mobile Library,kent,Active,Extracted from Kent County Council directory service pages
+Kent,Northfleet Mobile Library,kent,Active,Extracted from Kent County Council directory service pages
+Kent,Sturry Mobile Library,kent,Active,Extracted from Kent County Council directory service pages
+Norfolk,Central Mobile Library,norfolk,Active,Extracted from Norfolk County Council ArcGIS MapServer Layer 16
+Norfolk,Dereham Mobile Library,norfolk,Active,Extracted from Norfolk County Council ArcGIS MapServer Layer 16
+Norfolk,East Dereham Mobile Library,norfolk,Active,Extracted from Norfolk County Council ArcGIS MapServer Layer 16
+North Lincolnshire,North Lincolnshire Mobile Library,north_lincolnshire,Active,North Lincolnshire Mobile Library serving rural parishes
+Portsmouth,Portsmouth Mobile Library,portsmouth,Active,Portsmouth Mobile Library operating weekly routes across city
+Hillingdon,Hillingdon Mobile Library,hillingdon,Active,London Borough of Hillingdon Mobile Library
+Northumberland,North Mobile Library,northumberland,Active,Northumberland County Council mobile library vehicle (3-weekly rural rota)
+Northumberland,West Mobile Library,northumberland,Active,Northumberland County Council mobile library vehicle (3-weekly rural rota)
+Fife,East Fife Mobile Library,fife,Active,OnFife mobile library fleet
+Fife,West and Central Fife Mobile Library,fife,Active,OnFife mobile library fleet
+Wiltshire,North Mobile Library,wiltshire,Active,Wiltshire Council active mobile library fleet
+Wiltshire,Residential Homes Mobile Library,wiltshire,Active,Wiltshire Council active mobile library fleet
+Wiltshire,South Mobile Library,wiltshire,Active,Wiltshire Council active mobile library fleet
+Suffolk,Bury St Edmunds Mobile Library,suffolk,Active,Suffolk Community Libraries active mobile fleet
+Suffolk,Ipswich Mobile Library,suffolk,Active,Suffolk Community Libraries active mobile fleet
+Suffolk,Leiston Mobile Library,suffolk,Active,Suffolk Community Libraries active mobile fleet
+Isle of Wight,Isle of Wight Mobile Library 1 (Mercedes),isle_of_wight,Decommissioned / Historical Vehicle,"Introduced August 2013 (£200k pair investment, 1,200 book capacity); subsequently withdrawn and replaced by Home Library Service."
+Isle of Wight,Isle of Wight Mobile Library 2 (Mercedes),isle_of_wight,Decommissioned / Historical Vehicle,"Introduced August 2013 (£200k pair investment, 1,200 book capacity); subsequently withdrawn and replaced by Home Library Service."
+Orkney Islands,Booky McBookface,orkney_islands,Active,Orkney Library & Archive mobile library van serving Mainland Orkney and outer islands
+East Ayrshire,East Ayrshire Mobile Library,east_ayrshire,Active,East Ayrshire Leisure (Ayrshire360) mobile library operating 4-weekly North & South routes
+Shetland Islands,Mobile Library (Big Van),shetland_islands,Active,Shetland Library mobile fleet operating 6-weekly rotation across Mainland and islands
+Shetland Islands,Mobile Library (Peerie Van),shetland_islands,Active,Shetland Library mobile fleet operating 6-weekly rotation across Mainland and islands
+South Ayrshire,South Ayrshire Mobile Library,south_ayrshire,Active,South Ayrshire Council mobile library operating 4-weekly routes
+South Lanarkshire,East Area Mobile Library,south_lanarkshire,Decommissioned / Historical Vehicle,Operated fortnightly East Area (Clydesdale) mobile schedule prior to closure; replaced by Home Delivery service.
+South Lanarkshire,West Area Mobile Library,south_lanarkshire,Decommissioned / Historical Vehicle,Operated fortnightly West Area (Avondale/Lesmahagow) mobile schedule prior to closure; replaced by Home Delivery service.
+Argyll and Bute,Islay Mobile Library,argyll_and_bute,Off Road / Historical Vehicle,LiveArgyll Islay & Jura mobile library vehicle (currently listed as off the road on liveargyll.co.uk).
+North Ayrshire,Arran Mobile Library,north_ayrshire,Decommissioned / Historical Vehicle,Isle of Arran mobile library van formerly operated from Brodick (Arran Library).
+Conwy,Conwy Mobile Library,conwy,Active,Conwy 4-weekly rural mobile library service
+Neath Port Talbot,Neath Port Talbot Mobile Library,neath_port_talbot,Active,Neath Port Talbot 3-weekly mobile library service
+Pembrokeshire,Pembrokeshire Mobile Library,pembrokeshire,Active,Pembrokeshire 4-weekly village mobile library routes A-H
+Carmarthenshire,Carmarthenshire Mobile Library,carmarthenshire,Active,Carmarthenshire 3-weekly rural mobile library service with Wi-Fi hotspot
+Flintshire,Flintshire Mobile Library,flintshire,Active,Flintshire fortnightly mobile library service operated by Gwella Wales (formerly Aura Libraries)
+Rhondda Cynon Taff,East Mobile 1 (E1),rhondda_cynon_taff,Retired,Historical RCT East Mobile 1; service discontinued following 2022 consultation
+Rhondda Cynon Taff,East Mobile 2 (E2),rhondda_cynon_taff,Retired,Historical RCT East Mobile 2; service discontinued following 2022 consultation
+Rhondda Cynon Taff,West Mobile 1 (W1),rhondda_cynon_taff,Retired,Historical RCT West Mobile 1; service discontinued following 2022 consultation
+Rhondda Cynon Taff,West Mobile 2 (W2),rhondda_cynon_taff,Retired,Historical RCT West Mobile 2; service discontinued following 2022 consultation
+Ceredigion,Ceredigion Mobile Library 1,ceredigion,Active,Ceredigion County Council operates 3 mobile libraries on 4-weekly village & farm routes (schedules via 01970 633717)
+Ceredigion,Ceredigion Mobile Library 2,ceredigion,Active,Ceredigion County Council operates 3 mobile libraries on 4-weekly village & farm routes (schedules via 01970 633717)
+Ceredigion,Ceredigion Mobile Library 3,ceredigion,Active,Ceredigion County Council operates 3 mobile libraries on 4-weekly village & farm routes (schedules via 01970 633717)
+Isle of Anglesey,Anglesey Mobile Library Van,isle_of_anglesey,Active,Isle of Anglesey library van visits ~110 locations at least 10 times a year (timetable via Llangefni Library 01248 752093)

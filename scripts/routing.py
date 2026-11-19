@@ -1,149 +1,138 @@
-import csv
+"""
+Unified Routing Engine for Mobile Library Datasets.
+Uses OpenRouteService (driving-hgv profile) to generate route geometries
+(GeoJSON) and road trip segments (CSV).
+"""
+
+import argparse
 import collections
-from datetime import datetime
-import requests
-import pandas as pd
-import geopandas
+import csv
 import json
 import time
-from shapely.geometry import Point
-from shapely.geometry import LineString
+from pathlib import Path
+import requests
 
 API_KEY = '5b3ce3597851110001cf624843265134879f4af891bea9acf99ebbc7'
-STOP_DATA = '../data/north_somerset.csv'
-OUTPUT_DATA = '../data/north_somerset_routes.geojson'
+DATA_DIR = Path(__file__).resolve().parent.parent / 'data'
+ORS_URL = 'https://api.openrouteservice.org/v2/directions/driving-hgv/geojson'
 
 
-def run():
-    """Runs the main script"""
+def generate_routes_for_authority(slug, force=False):
+    stop_file = DATA_DIR / f"{slug}.csv"
+    output_geojson = DATA_DIR / f"{slug}_routes.geojson"
+    output_csv = DATA_DIR / f"{slug}_routes.csv"
 
-    routes = {}
-    geodata = []
-    with open(STOP_DATA, 'rt', encoding="utf-8") as mobile_csv:
+    if not stop_file.exists():
+        print(f"Error: {stop_file} does not exist.")
+        return False
 
-        reader = csv.reader(mobile_csv, delimiter=',', quotechar='"')
-        next(reader, None)  # skip the headers
-        # make sure the rows are sorted by mobile, route, and arrival time
-        sorted_rows = sorted(reader, key=lambda row: (
-            row[1], row[2], datetime.strptime('01/01/2020 ' + row[11], '%d/%m/%Y %H:%M')))
+    if output_geojson.exists() and output_csv.exists() and not force:
+        print(f"Routes already exist for {slug}. Use --force to regenerate.")
+        return True
 
-        for (idx, row) in enumerate(sorted_rows):
+    routes = collections.defaultdict(list)
+    with open(stop_file, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            # Handle new and legacy schema column names
+            mobile = row.get('Mobile name') or row.get('mobile') or 'Mobile'
+            route = row.get('Route') or row.get('route') or 'Default'
+            routes[(mobile, route)].append(row)
 
-            mobile = str(row[1])
-            route = str(row[2])
-            stop = str(row[4])
-            longitude = float(row[7])
-            latitude = float(row[8])
+    features = []
+    trip_rows = []
+    headers = {'Authorization': API_KEY}
 
-            # Add to object
-            if route not in routes:
-                # Create an ordered dictionary so we keep track of stop order
-                routes[route] = collections.OrderedDict()
+    print(f"[{slug}] Processing {len(routes)} route schedules...")
 
-            routes[route][idx] = {
-                'longitude': str(longitude),
-                'latitude': str(latitude),
-                'mobile': str(mobile),
-                'stop': str(stop)
-            }
+    for (mobile, route), stops in routes.items():
+        coords = []
+        valid_stops = []
+        for s in stops:
+            x = s.get('GeoX') or s.get('geox') or ''
+            y = s.get('GeoY') or s.get('geoy') or ''
+            if x and y:
+                try:
+                    coords.append([float(x), float(y)])
+                    valid_stops.append(s)
+                except ValueError:
+                    continue
 
-    for route in routes:
+        if len(coords) < 2:
+            continue
 
-        trip_lookup = []
-        trip_stops = {
-        }
+        try:
+            res = requests.post(ORS_URL, json={'coordinates': coords}, headers=headers, timeout=25)
+            res_data = res.json()
+            if 'error' in res_data:
+                print(f"[{slug}] ORS notice for {mobile} {route}: {res_data.get('error')}")
+                time.sleep(1.5)
+                continue
 
-        # construct the URL from the stops
-        url = 'https://api.openrouteservice.org/v2/directions/driving-hgv/geojson'
-        headers = {'Authorization': API_KEY}
-        coordinates = []
-        for (tr, idx) in enumerate(routes[route]):
+            feature = res_data['features'][0]
+            feature['properties']['mobile'] = mobile
+            feature['properties']['route'] = route
+            features.append(feature)
 
-            route_stop = routes[route][idx]
-            coordinates.append(
-                [route_stop['longitude'], route_stop['latitude']])
+            waypoints = feature['properties'].get('way_points', [])
+            segments = feature['properties'].get('segments', [])
+            geometry_coords = feature['geometry']['coordinates']
 
-            # Keep track of our trips for later
-            if 'origin_stop' in trip_stops and 'destination_stop' not in trip_stops:
-                trip_stops['destination_stop'] = route_stop['stop']
-                trip_stops['destination_stop_longitude'] = route_stop['longitude']
-                trip_stops['destination_stop_latitude'] = route_stop['latitude']
-            if 'origin_stop' not in trip_stops:
-                trip_stops['origin_stop'] = route_stop['stop']
-                trip_stops['origin_stop_longitude'] = route_stop['longitude']
-                trip_stops['origin_stop_latitude'] = route_stop['latitude']
-            if 'origin_stop' in trip_stops and 'destination_stop' in trip_stops:
-                trip_lookup.append({
-                    'origin_stop': trip_stops['origin_stop'],
-                    'origin_stop_longitude': trip_stops['origin_stop_longitude'],
-                    'origin_stop_latitude': trip_stops['origin_stop_latitude'],
-                    'destination_stop': trip_stops['destination_stop'],
-                    'destination_stop_longitude': trip_stops['destination_stop_longitude'],
-                    'destination_stop_latitude': trip_stops['destination_stop_latitude']
+            for i in range(len(segments)):
+                origin = valid_stops[i]
+                destination = valid_stops[i + 1]
+                start_idx = waypoints[i]
+                end_idx = waypoints[i + 1] + 1
+                segment_coords = geometry_coords[start_idx:end_idx]
+                wkt_linestring = "LINESTRING (" + ",".join([f"{c[0]} {c[1]}" for c in segment_coords]) + ")"
+
+                trip_rows.append({
+                    'WKT': wkt_linestring,
+                    'destination_stop': destination.get('Stop') or destination.get('stop') or '',
+                    'destination_stop_latitude': destination.get('GeoY') or destination.get('geoy') or '',
+                    'destination_stop_longitude': destination.get('GeoX') or destination.get('geox') or '',
+                    'distance': segments[i].get('distance', 0),
+                    'duration': segments[i].get('duration', 0),
+                    'mobile': mobile,
+                    'origin_stop': origin.get('Stop') or origin.get('stop') or '',
+                    'origin_stop_latitude': origin.get('GeoY') or origin.get('geoy') or '',
+                    'origin_stop_longitude': origin.get('GeoX') or origin.get('geox') or '',
+                    'route': route
                 })
-                trip_stops['origin_stop'] = route_stop['stop']
-                trip_stops['origin_stop_longitude'] = route_stop['longitude']
-                trip_stops['origin_stop_latitude'] = route_stop['latitude']
-                del trip_stops['destination_stop']
-                del trip_stops['destination_stop_longitude']
-                del trip_stops['destination_stop_latitude']
 
-        # Only continue if there is more than one stop
-        if len(routes[route]) > 1:
-            res_data = requests.post(
-                url, json={'coordinates': coordinates}, headers=headers).json()
+            time.sleep(1.2)
+        except Exception as e:
+            print(f"[{slug}] Routing failed for {mobile} {route}: {e}")
 
-            if 'error' not in res_data:
+    with open(output_geojson, 'w', encoding='utf-8') as f:
+        json.dump({'type': 'FeatureCollection', 'features': features}, f, indent=2)
 
-                # In the properties are the indexes of the waypoints
-                waypoints = res_data['features'][0]['properties']['way_points']
-                segments = res_data['features'][0]['properties']['segments']
+    fieldnames = [
+        'WKT', 'destination_stop', 'destination_stop_latitude', 'destination_stop_longitude',
+        'distance', 'duration', 'mobile', 'origin_stop', 'origin_stop_latitude',
+        'origin_stop_longitude', 'route'
+    ]
+    with open(output_csv, 'w', encoding='utf-8', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(trip_rows)
 
-                # We need to create an array of origin/destination index
-                trips = []
-                origin = None
-                destination = None
-                for stop in waypoints:
-                    if origin is None:
-                        origin = stop
-                    elif destination is None:
-                        destination = stop
-                        trips.append([origin, destination])
-                        origin = stop
-                        destination = None
-
-                for trip_idx, trip_item in enumerate(trips):
-
-                    line_points = res_data['features'][0]['geometry']['coordinates'][trip_item[0]:trip_item[1] + 1]
-                    if len(line_points) > 1:
-                        line = LineString(
-                            res_data['features'][0]['geometry']['coordinates'][trip_item[0]:trip_item[1] + 1])
-
-                        route_list = [val for key,
-                                      val in routes[route].items()]
-                        geodata.append(
-                            {
-                                'geo': line,
-                                'destination_stop': trip_lookup[trip_idx]['destination_stop'],
-                                'destination_stop_latitude': trip_lookup[trip_idx]['destination_stop_latitude'],
-                                'destination_stop_longitude': trip_lookup[trip_idx]['destination_stop_longitude'],
-                                'distance': segments[trip_idx]['distance'],
-                                'duration': segments[trip_idx]['duration'],
-                                'mobile': route_list[0]['mobile'],
-                                'origin_stop': trip_lookup[trip_idx]['origin_stop'],
-                                'origin_stop_latitude': trip_lookup[trip_idx]['origin_stop_latitude'],
-                                'origin_stop_longitude': trip_lookup[trip_idx]['origin_stop_longitude'],
-                                'route': route
-                            })
-
-            time.sleep(6)
-
-    frame = pd.DataFrame(data=geodata)
-    geodf = geopandas.GeoDataFrame(
-        frame, crs={'init': 'epsg:4326'}, geometry='geo')
-
-    # output route as geojson format file
-    geodf.to_file(OUTPUT_DATA, driver="GeoJSON")
+    print(f"[{slug}] Saved {len(features)} route geometries and {len(trip_rows)} trip segments.")
+    return True
 
 
-run()
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='Generate routes for mobile library datasets.')
+    parser.add_argument('--authority', '-a', help='Dataset slug (e.g. leicestershire, north_somerset)')
+    parser.add_argument('--all', action='store_true', help='Generate routes for all datasets in data/')
+    parser.add_argument('--force', '-f', action='store_true', help='Force regenerate existing route files')
+    args = parser.parse_args()
+
+    if args.authority:
+        generate_routes_for_authority(args.authority, force=args.force)
+    elif args.all:
+        for p in sorted(DATA_DIR.glob('*.csv')):
+            if not p.stem.endswith('_routes'):
+                generate_routes_for_authority(p.stem, force=args.force)
+    else:
+        parser.print_help()

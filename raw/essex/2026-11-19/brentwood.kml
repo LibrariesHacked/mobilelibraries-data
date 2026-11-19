@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Brentwood Mobile Library Stops</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>West Horndon, Fyfield Close</name>
+        <description>Mobile Library 1 Saturday 10:00-10:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.344339,51.5684655,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brentwood, Bishops Hall Shops</name>
+        <description>Mobile Library 1 Saturday 10:55-11:25</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.2907105,51.6354074,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Kelvedon Hatch, Glovers Field</name>
+        <description>Mobile Library 1 Saturday 11:40-12:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.277815,51.6643471,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Doddinghurst, Village Hall Shops</name>
+        <description>Mobile Library 1 Saturday 13:10-13:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.2952148,51.6667062,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wyatts Green, Wyatts Green Lane</name>
+        <description>Mobile Library 1 Saturday 13:50-14:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3120697,51.6697835,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hook End, Second Avenue</name>
+        <description>Mobile Library 1 Saturday 14:30-15:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3016285,51.6794089,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blackmore, Fingrith Hall Lane</name>
+        <description>Mobile Library 1 Saturday 15:10-15:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3195595,51.6935715,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Maldon Mobile Library Stops</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>Little Totham, The Swan</name>
+        <description>Mobile Library 1 Wednesday 9:35-10:05 </description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.7372898,51.7710175,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tolleshunt Major, The Bell</name>
+        <description>Mobile Library 1 Wednesday 10:10-10:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.7521248,51.7680631,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Tolleshunt D'arcy, Festival Gardens]]></name>
+        <description>Mobile Library 1 Wednesday 10:55-11:25</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.7905549,51.7704892,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tollesbury, Masonic Hall Car Park</name>
+        <description>Mobile Library 1 Wednesday 11:35-12:05</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.836154,51.758413,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Goldhanger, Village Hall</name>
+        <description>Mobile Library 1 Wednesday 13:10-13:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.754762,51.7460758,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Heybridge, Plantation Hall</name>
+        <description>Mobile Library 1 Wednesday 13:55 - 14:25</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6919311,51.7424889,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Woodham Mortimer Pre-School</name>
+        <description>Mobile Library 2 Wednesday 09:50-10:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6537583,51.7151537,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hazeleigh, Goat House Lane</name>
+        <description>Mobile Library 2 Wednesday 10:45 - 11:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6299601,51.7017724,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Purleigh Snows, Corner Outside Shop</name>
+        <description>Mobile Library 2 Wednesday 11:25-12:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6604558,51.6871706,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>North Fambridge, Stephenson Road</name>
+        <description>Mobile Library 2 Wednesday 13:15-13:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.6791079,51.6478047,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Althorne, Summerhill Village Hall</name>
+        <description>Mobile Library 2 Wednesday 14:00-14:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.7472065,51.6538614,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Tillingham, The Square</name>
+        <description>Mobile Library 1 Thursday 10:10-10:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8827492,51.6971443,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bradwell on Sea, East End Road</name>
+        <description>Mobile Library 1 Thursday 10:55-11:25</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9007527,51.7241871,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>St Lawrence Bay, Village Hall Diddycots Preschool</name>
+        <description>Mobile Library 1 Thursday 11:40-12:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.82723,51.714666,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Maylandsea, School Bus Layby</name>
+        <description>Mobile Library 1 Thursday 13:20-13:50</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.7603339,51.6849877,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Latchingdon, Meadow Way</name>
+        <description>Mobile Library 1 Thursday 14:00-14:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.7238632,51.6718767,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

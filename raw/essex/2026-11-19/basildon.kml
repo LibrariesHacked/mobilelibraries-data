@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Basildon Mobile Library Stops</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>Billericay, Park Lodge</name>
+        <description>Mobile Library 1 Tuesday 9:50-10:20 </description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4153603,51.638211,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Noak Bridge, Noak Bridge Centre
+</name>
+        <description>Mobile Library 2 Thursday 9:50-10:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4459808,51.5871979,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bowers Gifford, Pound Lane</name>
+        <description>Mobile Library 2 Thursday 11:00-11:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5331052,51.5750026,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

@@ -1,0 +1,202 @@
+{
+    "fields": [
+        {
+            "name": "Local authority",
+            "description": "Local authority responsible for the library service",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Local authority code",
+            "description": "Official Government Statistical Service (GSS/ONS) 9-character code for the local authority",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": true,
+                "pattern": "^[ENSW][0-9]{8}$"
+            }
+        },
+        {
+            "name": "Mobile name",
+            "description": "A name for the mobile library vehicle or service point",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Route",
+            "description": "A name for the route e.g. Route B",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Community",
+            "description": "The community served by the stop e.g. village or town name",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "Stop",
+            "description": "The individual stop name",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Address",
+            "description": "An address for the stop",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "Postcode",
+            "description": "Nearest postcode for the stop",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": false,
+                "pattern": "^$|^([A-Za-z][A-Ha-hJ-Yj-y]?[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}|[Gg][Ii][Rr] ?0[Aa]{2})$"
+            }
+        },
+        {
+            "name": "GeoX",
+            "description": "X coordinate (e.g. longitude) for stop location in decimal degrees",
+            "type": "number",
+            "format": "default",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "GeoY",
+            "description": "Y coordinate (e.g. latitude) for stop location in decimal degrees",
+            "type": "number",
+            "format": "default",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "Day",
+            "description": "The day of the week the mobile library visits this stop",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            }
+        },
+        {
+            "name": "Type",
+            "description": "The type of stop this is",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Public",
+                    "Private",
+                    "Dynamic",
+                    "Other"
+                ]
+            }
+        },
+        {
+            "name": "Arrival",
+            "description": "The time the mobile library arrives at the stop in 24-hour HH:MM format",
+            "type": "time",
+            "format": "%H:%M",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Departure",
+            "description": "The time the mobile library departs the stop in 24-hour HH:MM format",
+            "type": "time",
+            "format": "%H:%M",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "Frequency",
+            "description": "The schedule for repeated visits to this stop in iCal Recurrence Rule format",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": true,
+                "pattern": "^FREQ=(WEEKLY;INTERVAL=[1-9][0-9]*|MONTHLY;BYDAY=[1-5](MO|TU|WE|TH|FR|SA|SU)(,[1-5](MO|TU|WE|TH|FR|SA|SU))*)$"
+            }
+        },
+        {
+            "name": "Start",
+            "description": "The start date for this stop and timetable",
+            "type": "date",
+            "format": "default",
+            "constraints": {
+                "required": true
+            }
+        },
+        {
+            "name": "End",
+            "description": "The end date for this stop and timetable",
+            "type": "date",
+            "format": "default",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "Exceptions",
+            "description": "A comma separated list of exception dates for this stop and timetable",
+            "type": "string",
+            "format": "default",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "name": "Timetable",
+            "description": "A link to a web page, or PDF for the stop, route, mobile or service timetable",
+            "type": "string",
+            "format": "uri",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "foreignKeys": [
+        {
+            "fields": "Local authority code",
+            "reference": {
+                "resource": "library-services.csv",
+                "fields": "Local authority code"
+            }
+        }
+    ]
+}

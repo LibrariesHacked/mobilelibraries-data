@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Colchester Mobile Library Stops</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>Valley Car Park, University of Essex </name>
+        <description>Tuesday, Week 1 at 15:30 to 16:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9484291,51.8740921,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Langham, Moor Road</name>
+        <description>Mobile Library 1 Thursday 9:35-10:05 </description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9317039,51.9443263,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Boxted, Village Hall</name>
+        <description>Mobile Library 1 Thursday 10:10-10:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.918063,51.9537536,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mylands Primary School, Mill Road</name>
+        <description>Mobile Library 1 Thursday 11:05-11:35</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8937948,51.9127982,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Horkesley, Keelers Way</name>
+        <description>Mobile Library 1 Thursday 11:45-12:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8776033,51.9258705,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Little Horkesley, The Beehive</name>
+        <description>Mobile Library 1 Thursday 12:30-13:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8528391,51.9528605,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wormingford, Robletts Way</name>
+        <description>Mobile Library 1 Thursday 14:10-14:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8096005,51.9496714,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>West Bergholt, Lexden Road (Scout Hut)</name>
+        <description>Mobile Library 1 Thursday 14:55-15:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.845341,51.9122411,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fordham, Lucas Avenue</name>
+        <description>Mobile Library 1 Thursday 16:00-16:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8015486,51.9193988,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Aldham, Hardings Close</name>
+        <description>Mobile Library 1 Thursday 16:45-17:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.786821,51.8990258,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Colchester, Bright Lives Ladbrook Drive</name>
+        <description>Mobile Library 1 Friday 10:20-10:50</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9181142,51.8752302,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Colchester, Cheveling Road</name>
+        <description>Mobile Library 1 Friday 9:40-10:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9267087,51.8675216,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Colchester, Broadlands, Ripple Way</name>
+        <description>Mobile Library 1 Friday 10:30-11:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9179836,51.8974905,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Colchester, St John's Church]]></name>
+        <description>Mobile Library 1 Friday 11:15-11:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9279751,51.9111864,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Highwoods, Community Centre</name>
+        <description>Mobile Library 1 Friday 11:55-12:25</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.918505,51.9110056,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Colchester, Severalls Lane Caravan Park</name>
+        <description>Mobile Library 1 Friday 13:20-13:50</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9148085,51.9271844,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dedham, Mill Road Car Park</name>
+        <description>Mobile Library 1 Friday 15:30 - 16:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9940205,51.9614578,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Colchester, St Michaels School</name>
+        <description>Mobile Library 1 Friday 9:30-10:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8762381,51.8637349,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blackheath, Cherrytree School</name>
+        <description>Mobile Library 1 Friday 10:20-11:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9100692,51.8561958,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rowhedge, Village Hall</name>
+        <description>Mobile Library 1 Friday 11:10-11:35</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9418548,51.8562636,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bracken Way, Langenhoe</name>
+        <description>Mobile Library 1 Friday 11:50-12:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9099255,51.8324885,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Peldon, Little Doves Day Nursery</name>
+        <description>Mobile Library 1 Friday 12:30-13:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8812327,51.8099064,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Langenhoe School, Abberton</name>
+        <description>Mobile Library 1 Friday 13:10-14:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9096029,51.8316808,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Village Stores, Messing</name>
+        <description>Mobile Library 2 Tuesday 10:00-10:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.752067,51.8371579,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Copford, Orchard Close</name>
+        <description>Mobile library 2 Wednesday 11:00-11:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8012936,51.868952,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Marks Tey, Leyfield</name>
+        <description>Mobile library 2 Wednesday 11:40-12:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.7614489,51.87668,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Tey,Village Hall</name>
+        <description>Mobile library 2 Wednesday 12:20-12:50</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.7486958,51.8999862,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Chapple, Swan Grove</name>
+        <description>Mobile library 2 Wednesday 13:45-14:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.7538932,51.9202902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lexden, Hargood Close</name>
+        <description>Mobile library 2 Wednesday 15:40-16:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8497262,51.8899625,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Eight Ash Green, Doulcecroft School</name>
+        <description>Mobile library 2 Wednesday 10:00-10:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.8229667,51.8931982,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

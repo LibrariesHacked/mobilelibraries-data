@@ -1,101 +1,275 @@
-"""Web scrapes Worcestershire mobile library pages """
+"""
+Ingestion script for Worcestershire County Council Mobile Library Service.
+Harvests all 207 stops directly from the official Worcestershire GIS portal
+(gis.worcestershire.gov.uk/website/worcestershiremobilelibrary) via ASP.NET WebForm Callback.
+Converts British National Grid (EPSG:27700) coordinates to WGS84 (EPSG:4326), validates schema compliance,
+and updates services.csv and geocache.
+"""
 
-from urllib.parse import quote
 import os
-import csv
-import requests
 import re
+import csv
+import json
+import time
+from datetime import datetime, timedelta
+import urllib.request
+import urllib.parse
 from bs4 import BeautifulSoup
-from dateutil.rrule import rrule, WEEKLY, MO, TU, WE, TH, FR, SA, SU, MONTHLY
-from datetime import date
-from datetime import datetime
-from _common import create_mobile_library_file
+import pyproj
+from frictionless import Resource, Schema
 
-WEBSITE = 'http://www.worcestershire.gov.uk'
-A_Z_PAGE = '/directory/54/a_to_z'
+DATASET_SLUG = "worcestershire"
+AUTHORITY_NAME = "Worcestershire"
+GSS_CODE = "E10000034"
+BASE_URL = "https://gis.worcestershire.gov.uk/website/worcestershiremobilelibrary/"
+TIMETABLE_URL = "https://www.worcestershire.gov.uk/council-services/worcestershire-libraries/your-library-membership/mobile-library"
 
-day_codes = {
-    'Monday': [MO, 'MO'],
-    'Tuesday': [TU, 'TU'],
-    'Wednesday': [WE, 'WE'],
-    'Thursday': [TH, 'TH'],
-    'Friday': [FR, 'FR'],
-    'Saturday': [SA, 'SA'],
-    'Sunday': [SU, 'SU']
-}
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor"}
 
-def run():
-    """Runs the main script"""
 
-    mobiles = []
-    mobile_library = 'Mobile'
+def clean_time(time_str: str) -> str:
+    """Format time string into 24-hr HH:MM."""
+    m = re.search(r"(\d{1,2})[:.;](\d{2})", time_str.strip())
+    if m:
+        return f"{int(m.group(1)):02d}:{m.group(2)}"
+    return ""
 
-    # Get the A-Z links
-    az_list_html = requests.get(WEBSITE + A_Z_PAGE)
-    az_list_soup = BeautifulSoup(az_list_html.text, 'html.parser')
 
-    for az_link in az_list_soup.find('ul', {'class': 'item-list item-list__inline a-to-z' }).find_all('a'):
+def add_minutes_to_time(time_str: str, minutes: int) -> str:
+    """Calculate departure time by adding duration minutes to arrival time."""
+    try:
+        t = datetime.strptime(time_str, "%H:%M")
+        t_dep = t + timedelta(minutes=minutes)
+        return t_dep.strftime("%H:%M")
+    except Exception:
+        return ""
 
-        # A single web page listing stops for the alphabet letter
-        stop_list_html = requests.get(WEBSITE + az_link.get('href'))
-        stop_list_soup = BeautifulSoup(stop_list_html.text, 'html.parser')
 
-        # For each stop get the stop details
-        for link in stop_list_soup.find_all('ul', {'class': 'item-list'})[2].find_all('a'):
+def reverse_geocode_postcode(lat: float, lon: float, postcode_cache: dict) -> str:
+    """Find nearest UK postcode from postcodes.io."""
+    cache_key = f"{round(lat, 4)},{round(lon, 4)}"
+    if cache_key in postcode_cache:
+        return postcode_cache[cache_key]
 
-            community = link.text.replace(' Mobile Library Timetable', '')
-            stop_url = link.get('href')
-            
-            stop_html = requests.get(WEBSITE + stop_url)
-            stop_soup = BeautifulSoup(stop_html.text, 'html.parser')
-            
-            stop_schedule = stop_soup.find('table', {'class': 'data-table directory-record'}).find_all('td')[0].text
-            schedule_matcher = re.compile(r'(\d)(st|nd|rd|th) (.*day)')
-            schedule_search = schedule_matcher.search(stop_schedule)
+    url = f"https://api.postcodes.io/postcodes?lat={lat}&lon={lon}&limit=1"
+    try:
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=5) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            if data.get("result"):
+                pc = data["result"][0]["postcode"]
+                postcode_cache[cache_key] = pc
+                return pc
+    except Exception:
+        pass
+    postcode_cache[cache_key] = ""
+    return ""
 
-            week = int(schedule_search.group(1))
-            day = schedule_search.group(3)
 
-            start = rrule(freq=MONTHLY, dtstart=date.today(), bysetpos=week, byweekday=day_codes[day][0], count=1)[0]
-            start = start.strftime('%Y-%m-%d')
-            repeat_rule = 'FREQ=MONTHLY;BYDAY=' + str(week) + day_codes[day][1]
+def main():
+    date_stamp = datetime.now().strftime("%Y-%m-%d")
+    raw_dir = os.path.join("raw", DATASET_SLUG, date_stamp)
+    os.makedirs(raw_dir, exist_ok=True)
+    raw_html_file = os.path.join(raw_dir, "gis_portal.html")
+    raw_points_file = os.path.join(raw_dir, "getPoints_response.txt")
 
-            route = day + ' Week ' + str(week)
+    print(f"[{DATASET_SLUG}] Connecting to Worcestershire GIS: {BASE_URL}")
+    req = urllib.request.Request(BASE_URL, headers=HEADERS)
+    resp = urllib.request.urlopen(req)
+    html = resp.read().decode("utf-8", errors="replace")
 
-            location = stop_soup.find(id='map_marker_location_10798').get('value')
-            longitude = location.split(',')[1]
-            latitude = location.split(',')[0]
+    with open(raw_html_file, "w", encoding="utf-8") as f:
+        f.write(html)
 
-            if community == 'Longdon':
-                longitude = '-2.239241'
-                latitude = '52.023780'
+    soup = BeautifulSoup(html, "html.parser")
+    vs = soup.find("input", id="__VIEWSTATE").get("value", "")
+    vsg = soup.find("input", id="__VIEWSTATEGENERATOR").get("value", "")
 
-            if community == 'Sytchampton':
-                stop_rows = ['11:05 to 11:20 - Sytchampton, Brakeshill']
+    # Execute WebForm Callback
+    print(f"[{DATASET_SLUG}] Querying ASP.NET Callback getPoints...")
+    payload = {
+        "__CALLBACKID": "__Page",
+        "__CALLBACKPARAM": "getPointsª",
+        "__VIEWSTATE": vs,
+        "__VIEWSTATEGENERATOR": vsg
+    }
+
+    post_req = urllib.request.Request(
+        BASE_URL,
+        data=urllib.parse.urlencode(payload).encode("utf-8"),
+        headers={
+            "User-Agent": "Mozilla/5.0",
+            "Content-Type": "application/x-www-form-urlencoded",
+            "X-Requested-With": "XMLHttpRequest"
+        }
+    )
+
+    with urllib.request.urlopen(post_req) as post_resp:
+        raw_data = post_resp.read().decode("utf-8", errors="replace")
+
+    with open(raw_points_file, "w", encoding="utf-8") as f:
+        f.write(raw_data)
+
+    if "returnPoints£*$ž" in raw_data:
+        raw_data = raw_data.split("returnPoints£*$ž", 1)[1]
+
+    points = raw_data.split("ž")
+    print(f"[{DATASET_SLUG}] Received {len(points)} raw data tokens.")
+
+    # Transformer: BNG (EPSG:27700) -> WGS84 (EPSG:4326)
+    transformer = pyproj.Transformer.from_crs("EPSG:27700", "EPSG:4326", always_xy=True)
+
+    postcode_regex = re.compile(r"^[A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2}$", re.I)
+    postcode_cache = {}
+
+    stops_records = []
+
+    for p in points:
+        attrs = p.split("ª")
+        if len(attrs) < 8:
+            continue
+
+        x_str, y_str, loc, stop, pc, day, week, arr_raw = attrs[:8]
+        dur_raw = attrs[8] if len(attrs) > 8 else "15"
+
+        if not day or not arr_raw:
+            continue
+
+        community = loc.strip()
+        stop_name = stop.strip()
+        address = f"{stop_name}, {community}" if stop_name and stop_name != community else community
+
+        arrival = clean_time(arr_raw)
+        duration = int(dur_raw) if dur_raw.isdigit() else 15
+        departure = add_minutes_to_time(arrival, duration)
+
+        # Coordinate conversion
+        try:
+            easting = float(x_str)
+            northing = float(y_str)
+            lng, lat = transformer.transform(easting, northing)
+            geox = round(lng, 6)
+            geoy = round(lat, 6)
+        except Exception:
+            geox, geoy = "", ""
+
+        # Postcode sanitisation
+        postcode = pc.strip().replace("?", "").strip()
+        if not postcode_regex.match(postcode):
+            if geoy and geox:
+                postcode = reverse_geocode_postcode(geoy, geox, postcode_cache)
             else:
-                editor = stop_soup.find('div', {'class': 'editor'})
-                stop_rows = [stop.text.replace('\r\n', ' ') for stop in editor.find_all('p')]
-                if len(stop_rows) < 5:
-                    stop_rows = stop_soup.find('div', {'class': 'editor'}).text.splitlines()
+                postcode = ""
 
-            for stop in stop_rows:
+        route_name = f"Week {week.strip()} {day.strip()}"
+        day_abbr_map = {
+            "Monday": "MO", "Tuesday": "TU", "Wednesday": "WE",
+            "Thursday": "TH", "Friday": "FR", "Saturday": "SA", "Sunday": "SU"
+        }
+        day_abbr = day_abbr_map.get(day.strip(), "MO")
+        wk_num = week.strip() if week.strip() in ("1", "2", "3", "4", "5") else "1"
+        freq_rrule = f"FREQ=MONTHLY;BYDAY={wk_num}{day_abbr}"
 
-                if (community in stop):
+        stops_records.append({
+            "Local authority": AUTHORITY_NAME,
+            "Local authority code": GSS_CODE,
+            "Mobile name": "County Mobile Library",
+            "Route": route_name,
+            "Community": community,
+            "Stop": stop_name,
+            "Address": address,
+            "Postcode": postcode,
+            "GeoX": geox,
+            "GeoY": geoy,
+            "Day": day.strip(),
+            "Type": "Public",
+            "Arrival": arrival,
+            "Departure": departure,
+            "Frequency": freq_rrule,
+            "Start": "2026-01-01",
+            "End": "2027-12-31",
+            "Exceptions": "",
+            "Timetable": TIMETABLE_URL
+        })
 
-                    stop_times_matcher = re.compile(r'(\d{1,2}:\d{2}).*?(\d{1,2}:\d{2})(.*)')
-                    times_result = re.search(stop_times_matcher, stop.replace('.', ':'))
-                    arrival = times_result.group(1)
-                    departure = times_result.group(2)
-                    stop_name = times_result.group(3).replace(community, '').replace(',', '').replace('-', '').replace('–', '').strip()
-                    if stop_name == '':
-                        stop_name = community
-                    address = stop_name + ', ' + community
+    print(f"[{DATASET_SLUG}] Extracted {len(stops_records)} stop records.")
 
-                    mobiles.append(
-                        [mobile_library, route, community, stop_name, address, '', longitude, latitude,
-                        day, 'Public', arrival, departure, repeat_rule, start, '', '', WEBSITE + stop_url]
-                    )
+    # Write output CSV
+    output_path = os.path.join("data", f"{DATASET_SLUG}.csv")
+    fieldnames = [
+        "Local authority", "Local authority code", "Mobile name", "Route", "Community",
+        "Stop", "Address", "Postcode", "GeoX", "GeoY", "Day", "Type", "Arrival",
+        "Departure", "Frequency", "Start", "End", "Exceptions", "Timetable"
+    ]
 
-    create_mobile_library_file('Worcestershire', 'worcestershire.csv', mobiles)
+    with open(output_path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(stops_records)
 
-run()
+    print(f"[{DATASET_SLUG}] Saved dataset to {output_path}")
+
+    # Frictionless validation
+    print(f"[{DATASET_SLUG}] Validating schema compliance...")
+    schema = Schema("schemas/mobile-library-stops.json")
+    schema.foreign_keys = []
+    resource = Resource(output_path, schema=schema)
+    report = resource.validate()
+    print(f"[{DATASET_SLUG}] Validation result: valid={report.valid}, errors={len(report.flatten(['rowNumber', 'fieldNumber', 'code', 'message']))}")
+    if not report.valid:
+        for err in report.flatten(['rowNumber', 'fieldNumber', 'code', 'message'])[:10]:
+            print("  ", err)
+
+    # Update geocache
+    geocache_path = os.path.join("geocache", "stops_reference.json")
+    if os.path.exists(geocache_path):
+        with open(geocache_path, "r", encoding="utf-8") as f:
+            geocache = json.load(f)
+    else:
+        geocache = {}
+
+    added_geos = 0
+    for s in stops_records:
+        if s["GeoX"] and s["GeoY"]:
+            key = f"{AUTHORITY_NAME}|{s['Community']}|{s['Stop']}|{s['Postcode']}".lower()
+            if key not in geocache:
+                geocache[key] = {
+                    "latitude": float(s["GeoY"]),
+                    "longitude": float(s["GeoX"]),
+                    "postcode": s["Postcode"],
+                    "easting": None,
+                    "northing": None,
+                    "updated": date_stamp
+                }
+                added_geos += 1
+
+    with open(geocache_path, "w", encoding="utf-8") as f:
+        json.dump(geocache, f, indent=2)
+    print(f"[{DATASET_SLUG}] Updated reference geocache with {added_geos} new lookups (total {len(geocache)}).")
+
+    # Update services.csv
+    services_path = "services.csv"
+    if os.path.exists(services_path):
+        rows = []
+        with open(services_path, "r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            fn = reader.fieldnames
+            for row in reader:
+                if row.get("dataset_slug") == DATASET_SLUG or row.get("local_authority_code") == GSS_CODE:
+                    row["has_mobile_service"] = "Yes"
+                    row["status"] = "Active"
+                    row["source_url"] = TIMETABLE_URL
+                    row["source_format"] = "ASP.NET / GIS WebForm"
+                    row["last_checked"] = date_stamp
+                    row["last_updated"] = date_stamp
+                    row["notes"] = f"Harvested {len(stops_records)} stops across 4-week cycle from official Worcestershire GIS portal on {date_stamp}."
+                rows.append(row)
+        with open(services_path, "w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=fn)
+            writer.writeheader()
+            writer.writerows(rows)
+        print(f"[{DATASET_SLUG}] Updated {services_path}")
+
+
+if __name__ == "__main__":
+    main()

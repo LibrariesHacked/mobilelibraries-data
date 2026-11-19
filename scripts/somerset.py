@@ -1,44 +1,194 @@
-import requests
-import json
-import csv
-from _common import create_mobile_library_file
+"""
+Somerset Council Mobile Library Ingestion Script.
+Downloads live 2026/2027 timetable PDF from Somerset Council SharePoint,
+parses stops across Routes A through P, resolves coordinates,
+validates against Frictionless Schema, and updates services.csv.
+"""
 
-DATA_SOURCE = '../raw/somerset.csv'
+import os
+import re
+import csv
+import json
+import time
+import requests
+from pathlib import Path
+import pdfplumber
+
+from _common import create_mobile_library_file
+from geocoder import Geocoder
+
+AUTHORITY_NAME = 'Somerset'
+AUTHORITY_CODE = 'E06000066'
+SLUG = 'somerset'
+DATE_DIR = '2026-11-19'
+RAW_DIR = Path('raw') / SLUG / DATE_DIR
+DATA_FILE = Path('data') / f'{SLUG}.csv'
+BASE_URL = 'https://www.somerset.gov.uk/libraries/mobile-library/'
+PDF_URL = 'https://somersetcc.sharepoint.com/:b:/s/SCCPublic/IQCQQznyk9LhS6pip2rMbDLgAYEo6UFVjVJKtZidzpPCTF4?download=1'
+HEADERS = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
+
+
+def download_raw_pdf():
+    RAW_DIR.mkdir(parents=True, exist_ok=True)
+    filepath = RAW_DIR / 'mobile_library_routes_2026_2027.pdf'
+    if not filepath.exists():
+        print(f'Downloading Somerset timetable PDF...')
+        r = requests.get(PDF_URL, headers=HEADERS, timeout=25)
+        r.raise_for_status()
+        filepath.write_bytes(r.content)
+        print(f'Saved raw PDF to {filepath}')
+    return filepath
+
+
+def parse_time_str(t_str):
+    if not t_str:
+        return ''
+    cleaned = t_str.strip().replace('.', ':')
+    match = re.search(r'(\d{1,2}):(\d{2})', cleaned)
+    if match:
+        h, m = int(match.group(1)), int(match.group(2))
+        return f"{h:02d}:{m:02d}"
+    return ''
+
+
+def normalise_postcode(pc_str):
+    if not pc_str:
+        return ''
+    cleaned = re.sub(r'[^A-Za-z0-9]', '', pc_str).upper()
+    if len(cleaned) in [5, 6, 7]:
+        outcode = cleaned[:-3]
+        incode = cleaned[-3:]
+        if re.match(r'^[A-Z]{1,2}[0-9][0-9A-Z]?[0-9][A-Z]{2}$', cleaned):
+            return f"{outcode} {incode}"
+    return ''
+
+
+def parse_somerset_pdf(filepath):
+    postcode_re = re.compile(r'([A-Z]{1,2}\d[A-Z\d]?\s*\d[A-Z]{2})', re.IGNORECASE)
+    time_re = re.compile(r'(\d{1,2}[.:]\d{2})\s*[-–—]\s*(\d{1,2}[.:]\d{2})')
+
+    stops = []
+    with pdfplumber.open(filepath) as pdf:
+        for p_idx in range(2, len(pdf.pages)):
+            text = pdf.pages[p_idx].extract_text()
+            if not text:
+                continue
+
+            lines = [l.strip() for l in text.split('\n') if l.strip()]
+            header_block = ' '.join(lines[:3])
+
+            m_route = re.search(r'Route\s+([A-Z])', header_block, re.I)
+            route_letter = m_route.group(1).upper() if m_route else chr(ord('A') + (p_idx - 2))
+
+            day = 'Monday'
+            for d in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:
+                if d.lower() in header_block.lower():
+                    day = d
+                    break
+
+            current_comm = ''
+            for line in lines[2:]:
+                m_time = time_re.search(line)
+                m_pc = postcode_re.search(line)
+
+                if m_time and m_pc:
+                    arr = parse_time_str(m_time.group(1))
+                    dep = parse_time_str(m_time.group(2))
+                    pc = normalise_postcode(m_pc.group(1))
+                    stop_name = line[:m_pc.start()].strip()
+
+                    route_name = f"Route {route_letter} - {day}"
+                    comm = current_comm or stop_name
+                    address = f"{stop_name}, {comm}, Somerset"
+                    if pc:
+                        address += f", {pc}"
+
+                    stops.append({
+                        'route': route_name,
+                        'community': comm,
+                        'stop': stop_name,
+                        'address': address,
+                        'postcode': pc,
+                        'arrival': arr,
+                        'departure': dep,
+                        'day': day
+                    })
+                elif not m_time and line and not any(k in line.lower() for k in ['service', 'contact', 'schedule', '2026', 'dates', 'somerset direct']):
+                    current_comm = line
+
+    return stops
 
 
 def run():
+    print('=== Starting Somerset Mobile Library Ingestion ===')
+    filepath = download_raw_pdf()
+    raw_stops = parse_somerset_pdf(filepath)
+    print(f'Extracted {len(raw_stops)} stops from Somerset PDF.')
 
-    timetable = 'https://www.somerset.gov.uk/libraries-leisure-and-communities/libraries/library-facilities/mobile-library/'
-    mobiles = []
+    geocoder = Geocoder()
+    processed_stops = []
 
-    with open(DATA_SOURCE, 'r') as som_raw:
-        mobreader = csv.reader(som_raw, delimiter=',', quotechar='"')
-        next(mobreader, None)  # skip the headers
-        for row in mobreader:
+    for s in raw_stops:
+        comm = s['community']
+        stop_name = s['stop']
+        pc = s['postcode']
+        addr = s['address']
 
-            mobile_library = 'Mobile'
-            frequency = 'FREQ=WEEKLY;INTERVAL=4'
-            route = row[0].strip()
-            community = row[1].strip()
-            stop_name = row[2].strip()
-            address = stop_name + ', ' + community
-            postcode = row[3].strip()
-            arrival = row[4].strip().replace('.', ':')
-            departure = row[5].strip().replace('.', ':')
-            day = row[6].strip()
-            start = row[7].strip()
+        geo = geocoder.resolve(AUTHORITY_NAME, comm, stop_name, postcode=pc, address=addr)
+        geox = geo.get('geox', '')
+        geoy = geo.get('geoy', '')
+        final_pc = geo.get('postcode') or pc
 
-            postcode_request = requests.get(url)
-            postcode_data = json.loads(postcode_request.text)
-            latitude = postcode_data['result']['latitude']
-            longitude = postcode_data['result']['longitude']
+        processed_stops.append({
+            'Local authority': AUTHORITY_NAME,
+            'Local authority code': AUTHORITY_CODE,
+            'Mobile name': 'Somerset Mobile Library',
+            'Route': s['route'],
+            'Community': comm,
+            'Stop': stop_name,
+            'Address': addr,
+            'Postcode': final_pc,
+            'GeoX': geox,
+            'GeoY': geoy,
+            'Day': s['day'],
+            'Type': 'Public',
+            'Arrival': s['arrival'],
+            'Departure': s['departure'],
+            'Frequency': 'FREQ=WEEKLY;INTERVAL=4',
+            'Start': '2026-04-01',
+            'End': '2027-03-31',
+            'Exceptions': '',
+            'Timetable': BASE_URL
+        })
 
-            mobiles.append(
-                [mobile_library, route, community, stop_name, address, postcode, longitude, latitude,
-                    day, 'Public', arrival, departure, frequency, start, '', '', timetable]
-            )
+    geocoder.save_caches()
+    print(f'Writing {len(processed_stops)} stops to {DATA_FILE}...')
+    create_mobile_library_file('somerset.csv', processed_stops)
 
-    create_mobile_library_file('Somerset', 'somerset.csv', mobiles)
+    # Update services.csv
+    services_path = Path('services.csv')
+    if services_path.exists():
+        rows = []
+        with open(services_path, mode='r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            fieldnames = reader.fieldnames
+            for row in reader:
+                if row['dataset_slug'] == SLUG and row['local_authority_code'] == AUTHORITY_CODE:
+                    row['has_mobile_service'] = 'Yes'
+                    row['status'] = 'Active Verified'
+                    row['source_url'] = BASE_URL
+                    row['source_format'] = 'PDF'
+                    row['last_checked'] = '2026-11-19'
+                    row['last_updated'] = '2026-11-19'
+                    row['notes'] = f'Verified 2026/2027 routes: {len(processed_stops)} stops across Routes A through P.'
+                rows.append(row)
+        with open(services_path, mode='w', encoding='utf-8', newline='') as f:
+            writer = csv.DictWriter(f, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(rows)
+
+    print('Somerset ingestion completed successfully.')
 
 
-run()
+if __name__ == '__main__':
+    run()

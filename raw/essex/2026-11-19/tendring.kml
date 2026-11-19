@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Tendring Mobile Library Stops</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>St Osyth, Village Hall</name>
+        <description>Mobile Library 1 Tuesday 10:10-10:40 </description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.0822492,51.8003961,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Clacton, St Clements Court</name>
+        <description>Mobile Library 1 Tuesday 10:55 - 11:25</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.1305634,51.8029412,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Clacton, Lymington Avenue</name>
+        <description>Mobile Library 1 Tuesday 11:40-12:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.161015,51.8153846,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Little Clacton, The Street Pharmacy</name>
+        <description>Mobile Library 1 Tuesday 13:10 - 13:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.1422182,51.826718,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thorpe-Le-Soken, Byng Crescent</name>
+        <description>Mobile Library 1 Tuesday 13:50 - 14:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.1757157,51.8551947,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Bromley, St Georges Church</name>
+        <description>Mobile Library 2 Thursday 9:45-10:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.0262488,51.8957081,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Frating, Village Hall</name>
+        <description>Mobile Library 2 Thursday 10:30-11:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.0351748,51.8689002,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Elmstead Market, Meadow Close</name>
+        <description>Mobile Library 2 Thursday 11:10-11:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9883634,51.882562,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Alresford, Village Hall</name>
+        <description>Mobile Library 2 Thursday 11:55-12:25</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.0012857,51.8519876,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Thorrington, Hazel Close</name>
+        <description>Mobile Library 2 Thursday 13:20-13:50</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.038069,51.8422473,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Bentley, Larkfield Road</name>
+        <description>Mobile Library 2 Thursday 14:00-14:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.0609444,51.8571374,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Aingers Green, Crossroads Triangle</name>
+        <description>Mobile Library 2 Thursday 14:45-15:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.0710868,51.838788,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Weeley, Thornberry Avenue</name>
+        <description>Mobile Library 2 Thursday 15:40-16:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.1171823,51.8554892,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Ardleigh, St Mary's Church]]></name>
+        <description>Mobile Library 1 Friday 14:15-14:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.9855639,51.9261331,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Little Bentley, Bricklayer's Arms]]></name>
+        <description>Mobile Library 2 Monday 9:50-10:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.074449,51.8903627,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Thorpe Le Soken, Sports & Social Club]]></name>
+        <description>Mobile Library 2 Monday 10::50-11:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.1646413,51.8548907,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ramsey Village, Castle Inn</name>
+        <description>Mobile Library 2 Monday 12:00-12:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.2160562,51.9286729,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ramsey, Clayton Road</name>
+        <description>Mobile Library 2 Monday 13:30-14:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.2352214,51.9303095,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wrabness, Holbrook View</name>
+        <description>Mobile Library 2 Monday 14:15-14:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.171317,51.9382675,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bradfield, Windmill Road</name>
+        <description>Mobile Library 2 Monday 15:00-15:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            1.1033713,51.9265151,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

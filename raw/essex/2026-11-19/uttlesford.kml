@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Uttlesford Mobile Library Stops</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>High Easter, Village Hall, The Street</name>
+        <description>Mobile Library 1 Wednesday 10:00-10:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3585913,51.8083508,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leaden Roding Primary School</name>
+        <description>Mobile Library 1 Wednesday 10:40-11:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3096505,51.7988916,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[White Roding, St Martin's Close]]></name>
+        <description>Mobile Library 1 Wednesday 11:20-11:50</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.2649831,51.797543,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hatfield Heath, Broomfields</name>
+        <description>Mobile Library 1, Wednesday, 12:00-12:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.204872,51.8155075,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hatfield Broad Oak, Broad Street Green</name>
+        <description>Mobile Library 1, Wednesday, 14:15-14:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.2478724,51.8257777,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Takeley, Mobile Home Park</name>
+        <description>Mobile 1, Wednesday, 14:55-15:25</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.2680194,51.8646269,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Canfield, Church End</name>
+        <description>Mobile Library 1, Wednesday, 15:55-16:25</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3119691,51.8390726,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Felsted, Whipper-snappers Nursery</name>
+        <description>Mobile Library 1, Friday, 9:30-10:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4510702,51.8672054,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Stebbing, Primary School</name>
+        <description>Mobile Library 1, Friday, 10:35-11:05</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4115047,51.8937951,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lindsell, Old School House</name>
+        <description>Mobile Library 1, Friday, 11:15-11:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3832444,51.9242919,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Little Easton, Butchers Pasture</name>
+        <description>Mobile Library 1, Friday, 12:00-12:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3352745,51.8931003,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Elsenham, Glebe End</name>
+        <description>Mobile Library 1, Saturday, 9:30-10:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.2304629,51.9135675,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Clements Close, Clavering</name>
+        <description>Mobile Library 1, Saturday, 10:20-11:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.1438875,51.9606938,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Berden Village Centre, Telephone Kiosk </name>
+        <description>Mobile Library 1, Saturday, 11:10-11:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.1368101,51.947727,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Birchanger, Working Men's Club]]></name>
+        <description>Mobile Library 1, Saturday, 12:50 - 13:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.191854,51.8831588,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bedlars Green, Hop Poles Pub</name>
+        <description>Mobile Library 1, Saturday, 13:45 - 14:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.2135955,51.8605379,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Little Hallingbury, Village Hall</name>
+        <description>Mobile Library 1, Saturday, 14:30 - 15:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.1795192,51.8344954,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Chesterford, Jacksons Lane</name>
+        <description>Mobile Library 2, Thursday, 14:10-14:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.1989526,52.0655789,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Long Ley, Langley Upper Green</name>
+        <description>Mobile Library 2, Thursday, 15:10-15:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.1064921,51.9927994,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Little Sampford, Pre-School Westwood Montessori</name>
+        <description>Mobile Library 2, Thursday, 10:05-10:35</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3639965,51.9712968,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Sampford, The Red Lion</name>
+        <description>Mobile Library 2, Thursday, 10:45-11:15</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3928486,51.9927237,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Radwinter, Primary School</name>
+        <description>Mobile Library 2, Thursday, 11:30-12:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.3395313,52.0116287,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ashdon, Baptist Church Car Park</name>
+        <description>Mobile Library 2, Thursday, 13:10-13:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.314146,52.0537804,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

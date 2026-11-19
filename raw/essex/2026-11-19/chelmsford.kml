@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Chelmsford Mobile Library Stops</name>
+    <description/>
+    <Style id="icon-25-normal">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-25-highlight">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/25-bus.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-25">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-25-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-25-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Untitled layer</name>
+      <Placemark>
+        <name>Great Leighs, Chatley Road</name>
+        <description>Mobile Library 1 Monday 14:30-15:00 </description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5074176,51.826899,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Terling, School Green</name>
+        <description>Mobile Library 1 Monday 15:15-15:45</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5703597,51.8066544,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ramsden Heath, Preschool/Village Hall</name>
+        <description>Mobile Library 1 Tuesday 10:30 - 11:10</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4814255,51.6214627,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>South Hanningfield, Village Hall</name>
+        <description>Mobile Library 1 Tuesday 11:25-11:55</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.517668,51.6503168,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rettendon, Salforal Close</name>
+        <description>Mobile Library 1 Tuesday 12:50-13:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5534811,51.6553383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>East Hanningfield, The Folly Bistro</name>
+        <description>Mobile Library 1 Tuesday 13:30 - 14:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5577392,51.6817762,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Howe Green, Alexander Mews</name>
+        <description>Mobile Library 1 Tuesday 14:15 - 14:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5308313,51.6984112,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bicknacre, Priory School</name>
+        <description>Mobile Library 1 Tuesday 14:40 - 15:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5842525,51.6971041,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Waltham, Hatchfields by Woolmers Hey</name>
+        <description>Mobile Library 2 Thursday 14:10-14:40</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4576825,51.7920531,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Battlesbridge, Hayes Country Park </name>
+        <description>Mobile Library 2 Thursday 15:50 -16:20</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.5822474,51.6329644,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Little Baddow, Spring Close</name>
+        <description>Mobile Library 1 Tuesday 15:30 - 16:00</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.571245,51.7451597,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Little Waltham, Belstead School</name>
+        <description>Mobile Library 1 Friday 13:45 - 14:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4839326,51.7782505,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Waltham, Scouts Hut, Blossom Way</name>
+        <description>Mobile Library 1 Friday 14:45 - 15:30</description>
+        <styleUrl>#icon-25</styleUrl>
+        <Point>
+          <coordinates>
+            0.4543116,51.79294,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
