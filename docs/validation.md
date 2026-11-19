@@ -2,8 +2,6 @@
 
 This guide explains how we check that the data is accurate, complete, and properly formatted before it is published.
 
----
-
 ## 1. Running the automated test script
 
 You can test all datasets by running a single command from your terminal:
@@ -19,8 +17,6 @@ This checks the following:
 * **Holiday closures:** Ensures that any exception dates are written as clean dates (`YYYY-MM-DD`) rather than plain text words like "Bank holidays".
 * **Chronological times:** Verifies that arrival times always come before departure times for every stop.
 
----
-
 ## 2. Checking with the Frictionless tool
 
 You can also use the Frictionless Data tool directly:
@@ -34,8 +30,6 @@ python -m frictionless validate datapackage.json
 ```bash
 python -m frictionless validate data/conwy.csv --schema schemas/mobile-library-stops.json
 ```
-
----
 
 ## 3. Automated checks on GitHub
 

@@ -4,8 +4,6 @@ The [`services.csv`](../services.csv) file is a master list tracking mobile libr
 
 It records whether each council operates a mobile library van, links to their timetable pages, and notes services that have closed or changed over time.
 
----
-
 ## Columns in services.csv
 
 | Column | What it means | Example |
@@ -22,8 +20,6 @@ It records whether each council operates a mobile library van, links to their ti
 | `last_checked` | Date the website was last checked by us | `2026-11-19` |
 | `last_updated` | Date the timetable data was last updated | `2026-11-19` |
 | `notes` | Extra context, such as vehicle numbers or reasons for closure | `2 vehicles; 3-weekly cycle` |
-
----
 
 ## Mobile service status types
 

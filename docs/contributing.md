@@ -2,8 +2,6 @@
 
 We welcome contributions to help keep mobile library data accurate, add new councils, or fix timetable changes.
 
----
-
 ## Adding or updating a council
 
 ### 1. Creating a council script
@@ -48,8 +46,6 @@ After generating or updating a council file:
    ```bash
    python scripts/validate.py
    ```
-
----
 
 ## Submitting your changes
 

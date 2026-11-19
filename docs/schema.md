@@ -4,8 +4,6 @@ This guide explains how mobile library stops are stored in the data files, what 
 
 The formal specification is stored in [`schemas/mobile-library-stops.json`](../schemas/mobile-library-stops.json).
 
----
-
 ## Stop columns and descriptions
 
 Every council file in `data/<council>.csv` and the combined nationwide file `data/uk_mobile_library_stops.csv` uses the same 19 columns:
@@ -32,8 +30,6 @@ Every council file in `data/<council>.csv` and the combined nationwide file `dat
 | `Exceptions` | text | Optional | Specific dates when the van will not visit | `2026-05-04,2026-05-25` |
 | `Timetable` | link | Optional | Web address for the council's timetable page | `https://www.conwy.gov.uk/...` |
 
----
-
 ## How exceptions and closures are written
 
 The `Exceptions` column lists specific dates when a scheduled stop will not happen (for example, on a bank holiday or when a van is in for servicing).
@@ -41,8 +37,6 @@ The `Exceptions` column lists specific dates when a scheduled stop will not happ
 * **Format:** Dates must be written as a comma-separated list in year-month-day order (`YYYY-MM-DD`). For example: `2026-05-04,2026-05-25`.
 * **No plain text words:** General phrases like `"Public holidays"`, `"Bank holidays"`, or `"Closed over Christmas"` cannot be used here.
 * **If dates are not published:** If the council only says "does not run on public holidays" without listing specific dates, leave this column blank.
-
----
 
 ## How visit frequency is recorded
 

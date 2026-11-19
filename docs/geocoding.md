@@ -2,8 +2,6 @@
 
 This guide explains how mobile library stop locations are found, how accurate the coordinates need to be, and how we check that stops are in the right council area.
 
----
-
 ## Why coordinates use 5 decimal places
 
 All coordinates (`GeoX` longitude and `GeoY` latitude) are stored to **5 decimal places** (for example, `53.02340` and `-3.56120`).
@@ -13,8 +11,6 @@ Here is why:
 * **Avoiding false precision:** Using 7 or 8 decimal places would suggest we know where the van parks down to the nearest millimetre, which is unrealistic.
 * **Smaller file sizes:** Keeping coordinates to 5 decimal places keeps the files compact and easy to download.
 
----
-
 ## Keeping stops within council boundaries
 
 Sometimes different places across the country share the same name (for example, there is a Newport in Wales, Shropshire, and the Isle of Wight).
@@ -23,8 +19,6 @@ To stop computer tools from placing a stop in the wrong county:
 1. **Boundary boxes:** Every council has an official boundary area stored in `geocache/authority_bboxes.json`.
 2. **Automatic checking:** When an address is converted into map coordinates, the script checks whether the coordinates fall inside that council's area. If they fall outside, they are rejected.
 3. **Leaving unknown spots blank:** If a location cannot be verified with confidence, we leave the coordinates blank rather than guessing or putting a pin in the wrong place.
-
----
 
 ## Saved verified locations
 

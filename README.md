@@ -7,8 +7,6 @@ This project collects and publishes open data about UK mobile library services. 
 
 It is part of the [Libraries Hacked](https://www.librarieshacked.org) project. For background and analysis, see the [Mobile Library Data Project](https://blog.librarydata.uk/mobile-library-data-project).
 
----
-
 ## Getting started
 
 ### What you need
@@ -32,8 +30,6 @@ pip install -r requirements.txt
 
 For more details, see [how to run the scripts](docs/usage.md).
 
----
-
 ## Documentation
 
 More information is available in these guides:
@@ -46,8 +42,6 @@ More information is available in these guides:
 * **[Data checking and quality](docs/validation.md)** - How we test that files are complete and correctly formatted.
 * **[How to contribute](docs/contributing.md)** - How to help by adding a council or updating a timetable.
 
----
-
 ## Built with
 
 * [Python 3](https://www.python.org/) - Code for collecting and cleaning data
@@ -56,13 +50,9 @@ More information is available in these guides:
 * [OpenStreetMap](https://www.openstreetmap.org/) and [OSRM](http://project-osrm.org/) - Map data and road routing
 * [OpenRouteService](https://openrouteservice.org/) - Lorry-friendly road routing
 
----
-
 ## Versioning
 
 We use [SemVer](http://semver.org/) version numbers in [`datapackage.json`](datapackage.json).
-
----
 
 ## Authors
 
@@ -70,14 +60,10 @@ We use [SemVer](http://semver.org/) version numbers in [`datapackage.json`](data
 
 See the list of [contributors](https://github.com/librarieshacked/mobilelibraries-data/contributors) who have helped with this project.
 
----
-
 ## License
 
 * **Code:** Licensed under the [MIT License](LICENSE.md).
 * **Data:** Sourced and adapted from council publications under the [Open Government Licence v3.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) where applicable.
-
----
 
 ## Acknowledgments
 

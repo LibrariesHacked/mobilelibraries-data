@@ -2,8 +2,6 @@
 
 This guide explains how to collect timetable data for a council, combine all stops into a single UK file, and work out driving routes.
 
----
-
 ## 1. Updating data for a council
 
 Each council that runs a mobile library has its own Python script in the `scripts/` folder.
@@ -24,8 +22,6 @@ What the script does:
 * Works out map coordinates for each stop to 5 decimal places.
 * Checks the file to make sure it matches the required standard.
 
----
-
 ## 2. Combining all stops into a single UK file
 
 To merge all individual council files into one nationwide dataset, run:
@@ -37,8 +33,6 @@ python scripts/combine.py
 This updates two files in the `data/` folder:
 * **`data/uk_mobile_library_stops.csv`**: A single spreadsheet containing all 8,100+ stops across the UK.
 * **`data/uk_mobile_library_stops.geojson`**: A map file that can be opened in mapping tools (such as QGIS, ArcGIS, or web map viewers) to see every stop as a pin on a map.
-
----
 
 ## 3. Calculating driving routes between stops
 
