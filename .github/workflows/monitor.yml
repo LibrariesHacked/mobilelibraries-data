@@ -1,22 +1,24 @@
-# Validates every dataset in data/ against schemas/mobile-library-stops.json.
-# Runs on pushes to main that touch data/schema/scripts, twice a year
-# (1 January and 1 July), and on demand via "Run workflow".
-# Live timetable monitoring (content-hash change detection) is not wired up yet.
 name: Validate mobile library datasets
 
-on:
-  schedule:
-    # Runs at 00:00 on day 1 of every 6th month (January and July)
-    - cron: '0 0 1 */6 *'
-  workflow_dispatch:
+'on':
   push:
     branches:
       - main
+      - '**'
     paths:
       - 'data/**'
       - 'schemas/**'
       - 'scripts/**'
       - 'services.csv'
+      - 'datapackage.json'
+      - '.github/workflows/**'
+  pull_request:
+    branches:
+      - main
+  schedule:
+    # Runs at 00:00 on day 1 of every 6th month (January and July)
+    - cron: '0 0 1 */6 *'
+  workflow_dispatch:
 
 jobs:
   validate-and-monitor:
@@ -37,35 +39,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Validate all authority datasets against Table Schema
+      - name: Validate datapackage and datasets
         run: |
-          python -c "
-          from frictionless import Resource, Schema
-          from pathlib import Path
-          import sys
+          python scripts/validate.py
 
-          schema = Schema('schemas/mobile-library-stops.json')
-          schema.foreign_keys = []
-          errors = 0
-
-          for f in sorted(Path('data').glob('*.csv')):
-              if f.name.startswith('uk_'): continue
-              res = Resource(str(f), schema=schema)
-              rep = res.validate()
-              if not rep.valid:
-                  errors += 1
-                  print(f'❌ {f.name} validation failed:')
-                  for err in rep.flatten(['rowNumber', 'fieldName', 'message'])[:5]:
-                      print('  ', err)
-              else:
-                  print(f'✓ {f.name} valid ({len(res.read_rows())} stops)')
-
-          if errors > 0:
-              print(f'Validation failed for {errors} dataset(s).')
-              sys.exit(1)
-          print('All authority datasets passed schema validation!')
-          "
-
-      - name: Build and validate unified UK dataset
+      - name: Build and verify unified UK dataset
         run: |
           python scripts/combine.py
