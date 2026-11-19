@@ -7,7 +7,10 @@ into a single nationwide dataset:
 
 import csv
 import json
+import sys
 from pathlib import Path
+
+csv.field_size_limit(10_000_000)
 
 DATA_DIR = Path(__file__).resolve().parent.parent / 'data'
 ROOT_DIR = Path(__file__).resolve().parent.parent

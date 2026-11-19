@@ -4,61 +4,50 @@ This repository includes a routing engine in [`scripts/routing.py`](../scripts/r
 
 ---
 
-## 1. Routing Profile & Technology
+## 1. Routing Engines & Technology
 
-Mobile libraries are large, heavy commercial vehicles that cannot travel down pedestrian alleys, restricted lanes, or narrow bridges. 
+Mobile libraries travel on public roads between scheduled stops. The routing engine supports two providers:
 
-- **Routing Provider:** [OpenRouteService (ORS)](https://openrouteservice.org/)
-- **Driving Profile:** `driving-hgv` (Heavy Goods Vehicle)
-- **Geometry Format:** Full road network linestrings following realistic driving paths, not straight-line (crow-flies) vectors.
+1. **OpenRouteService (ORS):**
+   - **Profile:** `driving-hgv` (Heavy Goods Vehicle restrictions: weight, height, axle limits).
+   - **Authentication:** Requires `ORS_API_KEY` environment variable.
+2. **Open Source Routing Machine (OSRM):**
+   - **Profile:** Standard driving road network based on live OpenStreetMap data.
+   - **Authentication:** None required (zero-config open fallback).
+
+### Chronological Waypoint Sequencing
+Before generating directions, stops on each route schedule are automatically sorted chronologically by scheduled `Arrival` time. This guarantees that road geometries follow the true driving sequence rather than arbitrary timetable order.
 
 ---
 
-## 2. Setting Up OpenRouteService
+## 2. Running the Routing Engine
 
-To generate route geometries, you need an OpenRouteService API key (free tier available):
-
+### Using OpenRouteService (HGV Profile)
 1. Register at [openrouteservice.org/sign-up](https://openrouteservice.org/sign-up).
-2. Export your token in your environment:
-   - **Linux / macOS:**
-     ```bash
-     export ORS_API_KEY="your-api-key"
-     ```
-   - **Windows (PowerShell):**
-     ```powershell
-     $env:ORS_API_KEY="your-api-key"
-     ```
+2. Set your API key:
+   - **Linux / macOS:** `export ORS_API_KEY="your-api-key"`
+   - **Windows (PowerShell):** `$env:ORS_API_KEY="your-api-key"`
 
----
-
-## 3. Generating Routes
-
-Run [`scripts/routing.py`](../scripts/routing.py) directly from the repository root:
+### Using OSRM (Zero-Config Open Default)
+No API key is required. Simply run the routing command:
 
 ```bash
 # Generate road geometries for a single authority
-python scripts/routing.py --authority conwy
+python scripts/routing.py --authority shropshire
 
 # Generate road geometries across all active authorities
 python scripts/routing.py --all
+
+# Force regenerate existing route files
+python scripts/routing.py --authority somerset --force
 ```
 
 ---
 
-## 4. Output Formats
+## 3. Output Formats
 
 Outputs are saved directly to `data/routes/`:
 
-### 1. `data/routes/<slug>_routes.geojson`
-A GeoJSON `FeatureCollection` containing:
-- **Geometry:** `LineString` coordinate sequences following the road network.
-- **Properties:**
-  - `route`: Route identifier.
-  - `from_stop`: Departure stop name.
-  - `to_stop`: Destination stop name.
-  - `distance_km`: Driving distance in kilometres.
-  - `duration_mins`: Driving duration in minutes.
-
-### 2. `data/routes/<slug>_routes.csv`
-A tabular representation with Well-Known Text (WKT) linestring geometries:
-- `Route`, `Day`, `From_Stop`, `To_Stop`, `Distance_km`, `Duration_mins`, `WKT_Geometry`.
+- `data/routes/<slug>_routes.geojson`: GeoJSON FeatureCollection containing `LineString` road network coordinates with trip distances and durations.
+- `data/routes/<slug>_routes.csv`: Tabular trip segments with Well-Known Text (WKT) geometries:
+  - `WKT`, `origin_stop`, `origin_stop_latitude`, `origin_stop_longitude`, `destination_stop`, `destination_stop_latitude`, `destination_stop_longitude`, `distance` (metres), `duration` (seconds), `mobile`, `route`.
