@@ -254,7 +254,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Automated Coordinate Upgrader using OpenStreetMap Nominatim")
     parser.add_argument("--authority", type=str, help="Specific local authority to upgrade (e.g. leicestershire)")
     parser.add_argument("--all", action="store_true", help="Upgrade across all authorities with coarse stops")
-    parser.add_argument("--limit", type=int, default=25, help="Maximum number of stops to upgrade per run")
+    parser.add_argument("--limit", type=int, default=None, help="Maximum number of stops to upgrade (default: unlimited)")
     parser.add_argument("--delay", type=float, default=1.0, help="Delay in seconds between requests (default 1.0s)")
     parser.add_argument("--dry-run", action="store_true", help="Preview matches without writing files")
 
@@ -288,9 +288,10 @@ def main() -> None:
         total_upgraded = 0
         for auth in authorities:
             print(f"\n--- Processing {auth} ---")
+            remaining = (args.limit - total_upgraded) if args.limit else None
             upg, _ = upgrade_authority_stops(
                 auth,
-                limit=args.limit,
+                limit=remaining,
                 delay=args.delay,
                 dry_run=args.dry_run,
                 bboxes=bboxes,
@@ -298,7 +299,9 @@ def main() -> None:
                 ref_stops=ref_stops,
             )
             total_upgraded += upg
-            if total_upgraded >= args.limit:
+            if not args.dry_run and STOPS_REF_FILE.exists():
+                STOPS_REF_FILE.write_text(json.dumps(ref_stops, indent=2), encoding="utf-8")
+            if args.limit and total_upgraded >= args.limit:
                 break
         print(f"\nTotal stops upgraded: {total_upgraded}")
     else:
