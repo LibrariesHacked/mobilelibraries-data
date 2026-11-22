@@ -17,9 +17,13 @@ import argparse
 import csv
 import json
 import re
+import sys
 import urllib.parse
 from pathlib import Path
 from typing import Any
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from _common import describe_frequency
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
@@ -234,6 +238,8 @@ def export_review_queue(output_path: Path) -> None:
         pc = r.get("Postcode", "")
         lat = r.get("GeoY", "")
         lon = r.get("GeoX", "")
+        freq_raw = r.get("Frequency", "")
+        visit_freq = describe_frequency(freq_raw)
 
         tier, source, radius_m, priority = determine_accuracy_tier(r, manual_pins)
 
@@ -251,6 +257,7 @@ def export_review_queue(output_path: Path) -> None:
             "stop": stop,
             "address": addr,
             "postcode": pc,
+            "visit_frequency": visit_freq,
             "current_latitude": lat,
             "current_longitude": lon,
             "geocoding_source": source,
@@ -267,7 +274,7 @@ def export_review_queue(output_path: Path) -> None:
 
     fieldnames = [
         "review_priority", "accuracy_tier", "estimated_radius_m", "local_authority",
-        "community", "stop", "address", "postcode", "current_latitude", "current_longitude",
+        "community", "stop", "address", "postcode", "visit_frequency", "current_latitude", "current_longitude",
         "geocoding_source", "google_maps_search", "streetview_link",
         "new_latitude", "new_longitude", "notes"
     ]

@@ -408,6 +408,33 @@ def reverse_geocode_postcode(lat, lng, cache):
     return cache[key]
 
 
+def describe_frequency(rrule: str) -> str:
+    """Translates an RFC 5545 RRULE string into plain English."""
+    if not rrule:
+        return ''
+    days_map = {
+        'MO': 'Monday', 'TU': 'Tuesday', 'WE': 'Wednesday',
+        'TH': 'Thursday', 'FR': 'Friday', 'SA': 'Saturday', 'SU': 'Sunday'
+    }
+    ord_map = {'1': '1st', '2': '2nd', '3': '3rd', '4': '4th', '5': '5th'}
+    if rrule.startswith('FREQ=WEEKLY;INTERVAL='):
+        interval = rrule.split('=')[-1]
+        if interval == '1':
+            return 'Weekly'
+        elif interval == '2':
+            return 'Every 2 weeks'
+        return f'Every {interval} weeks'
+    elif rrule.startswith('FREQ=MONTHLY;BYDAY='):
+        bydays = rrule.split('=')[-1].split(',')
+        parts = []
+        for bd in bydays:
+            ord_num = bd[:-2]
+            day_code = bd[-2:]
+            parts.append(f"{ord_map.get(ord_num, ord_num)} {days_map.get(day_code, day_code)}")
+        return f"Monthly ({', '.join(parts)})"
+    return rrule
+
+
 def validate_dataset(csv_path):
     """Validate a stops CSV against the Frictionless schema; prints and returns validity."""
     from frictionless import Resource, Schema

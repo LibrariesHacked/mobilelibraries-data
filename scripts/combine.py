@@ -20,6 +20,9 @@ SCHEMA_PATH = ROOT_DIR / 'schemas' / 'mobile-library-stops.json'
 OUTPUT_CSV = DATA_DIR / 'uk_mobile_library_stops.csv'
 OUTPUT_GEOJSON = DATA_DIR / 'uk_mobile_library_stops.geojson'
 OUTPUT_ACCURACY_CSV = DATA_DIR / 'uk_mobile_library_stops_accuracy.csv'
+SUMMARY_JSON = DATA_DIR / 'summary.json'
+ROUTES_CSV = DATA_DIR / 'uk_mobile_library_routes.csv'
+ROUTES_GEOJSON = DATA_DIR / 'uk_mobile_library_routes.geojson'
 REF_SERVICES_CSV = DATA_DIR / 'library-services.csv'
 MANUAL_PINS_FILE = ROOT_DIR / 'geocache' / 'manual_pins.json'
 
@@ -217,7 +220,18 @@ def combine_datasets():
 
     print(f"Saved {len(accuracy_rows)} accuracy records to {OUTPUT_ACCURACY_CSV.name}")
 
-    # 3. Validate combined CSV against Frictionless Schema
+    # 4. Combine nationwide route datasets if routes exist
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from routing import combine_routes
+        combine_routes()
+    except Exception as e:
+        print(f"Notice: Route combination skipped: {e}")
+
+    # 5. Generate comprehensive summary JSON
+    generate_summary(all_rows, accuracy_rows)
+
+    # 6. Validate combined CSV against Frictionless Schema
     try:
         from frictionless import Resource, Schema
         schema = Schema(str(SCHEMA_PATH))
@@ -232,6 +246,145 @@ def combine_datasets():
                 print('  ', err)
     except ImportError:
         print("Frictionless not installed; skipped schema validation.")
+
+
+def generate_summary(all_rows, accuracy_rows):
+    """Calculates nationwide service metrics and saves data/summary.json."""
+    from collections import Counter, defaultdict
+    from datetime import datetime, timezone
+
+    # 1. Authority mappings
+    services_map = {}
+    if SERVICES_CSV.exists():
+        with open(SERVICES_CSV, mode='r', encoding='utf-8') as f:
+            for r in csv.DictReader(f):
+                if r.get('dataset_slug'):
+                    services_map[r['dataset_slug']] = r
+                    services_map[r['local_authority']] = r
+
+    # 2. Stops and accuracy metrics
+    authorities = set()
+    vehicles = set()
+    routes = set()
+    auth_stops = defaultdict(list)
+    for r in all_rows:
+        auth = r.get('Local authority', '')
+        mob = r.get('Mobile name', '')
+        rt = r.get('Route', '')
+        authorities.add(auth)
+        vehicles.add((auth, mob))
+        routes.add((auth, mob, rt))
+        auth_stops[auth].append(r)
+
+    total_acc = Counter()
+    auth_acc = defaultdict(Counter)
+    for r in accuracy_rows:
+        auth = r.get('Local authority', '')
+        tier = r.get('Accuracy tier', '')
+        total_acc[tier] += 1
+        auth_acc[auth][tier] += 1
+
+    total_stops = len(all_rows)
+
+    # 3. Route & travel metrics
+    auth_routes = defaultdict(lambda: {'trips': 0, 'dist': 0.0, 'dur': 0.0})
+    total_trips = 0
+    total_dist_m = 0.0
+    total_dur_s = 0.0
+
+    if ROUTES_CSV.exists():
+        with open(ROUTES_CSV, mode='r', encoding='utf-8') as f:
+            for r in csv.DictReader(f):
+                auth = r.get('local_authority', '')
+                d = float(r.get('distance', 0) or 0)
+                t = float(r.get('duration', 0) or 0)
+                total_trips += 1
+                total_dist_m += d
+                total_dur_s += t
+                auth_routes[auth]['trips'] += 1
+                auth_routes[auth]['dist'] += d
+                auth_routes[auth]['dur'] += t
+
+    total_dist_km = round(total_dist_m / 1000.0, 1)
+    total_dist_mi = round(total_dist_km * 0.621371, 1)
+    total_dur_hrs = round(total_dur_s / 3600.0, 1)
+    avg_leg_dist_km = round((total_dist_km / total_trips), 2) if total_trips else 0.0
+    avg_leg_dist_mi = round((avg_leg_dist_km * 0.621371), 2) if total_trips else 0.0
+    avg_leg_dur_min = round((total_dur_s / total_trips) / 60.0, 1) if total_trips else 0.0
+
+    exact_c = total_acc.get('exact', 0)
+    landmark_c = total_acc.get('landmark', 0)
+    postcode_c = total_acc.get('postcode', 0)
+    community_c = total_acc.get('community', 0)
+    high_conf_c = exact_c + landmark_c + postcode_c
+
+    # 4. Per-authority list
+    authorities_list = []
+    for auth in sorted(authorities):
+        s_rows = auth_stops[auth]
+        auth_code = s_rows[0].get('Local authority code', '') if s_rows else ''
+        auth_slug = ''
+        if auth in services_map:
+            auth_slug = services_map[auth].get('dataset_slug', '')
+        elif auth_code:
+            for s_info in services_map.values():
+                if s_info.get('local_authority_code') == auth_code:
+                    auth_slug = s_info.get('dataset_slug', '')
+                    break
+
+        auth_v = {r.get('Mobile name', '') for r in s_rows}
+        auth_r = {(r.get('Mobile name', ''), r.get('Route', '')) for r in s_rows}
+        r_info = auth_routes[auth]
+        a_acc = auth_acc[auth]
+
+        authorities_list.append({
+            'local_authority': auth,
+            'local_authority_code': auth_code,
+            'dataset_slug': auth_slug,
+            'vehicles': len(auth_v),
+            'routes': len(auth_r),
+            'stops': len(s_rows),
+            'trips': r_info['trips'],
+            'distance_km': round(r_info['dist'] / 1000.0, 1),
+            'distance_miles': round((r_info['dist'] / 1000.0) * 0.621371, 1),
+            'duration_hours': round(r_info['dur'] / 3600.0, 1),
+            'accuracy': {
+                'exact': a_acc.get('exact', 0),
+                'landmark': a_acc.get('landmark', 0),
+                'postcode': a_acc.get('postcode', 0),
+                'community': a_acc.get('community', 0)
+            }
+        })
+
+    summary_data = {
+        'generated_at': datetime.now(timezone.utc).isoformat(),
+        'national_totals': {
+            'authorities_with_mobile_service': len(authorities),
+            'active_vehicles': len(vehicles),
+            'routes': len(routes),
+            'stops': total_stops,
+            'trips': total_trips,
+            'distance_km': total_dist_km,
+            'distance_miles': total_dist_mi,
+            'duration_hours': total_dur_hrs,
+            'average_trip_distance_km': avg_leg_dist_km,
+            'average_trip_distance_miles': avg_leg_dist_mi,
+            'average_trip_duration_minutes': avg_leg_dur_min
+        },
+        'coordinate_accuracy': {
+            'exact': {'count': exact_c, 'percentage': round(exact_c / total_stops * 100, 1) if total_stops else 0},
+            'landmark': {'count': landmark_c, 'percentage': round(landmark_c / total_stops * 100, 1) if total_stops else 0},
+            'postcode': {'count': postcode_c, 'percentage': round(postcode_c / total_stops * 100, 1) if total_stops else 0},
+            'community': {'count': community_c, 'percentage': round(community_c / total_stops * 100, 1) if total_stops else 0},
+            'high_confidence_total': {'count': high_conf_c, 'percentage': round(high_conf_c / total_stops * 100, 1) if total_stops else 0}
+        },
+        'authorities': authorities_list
+    }
+
+    with open(SUMMARY_JSON, mode='w', encoding='utf-8') as f:
+        json.dump(summary_data, f, indent=2)
+
+    print(f"✓ Saved national statistics summary to {SUMMARY_JSON.name}")
 
 
 if __name__ == '__main__':

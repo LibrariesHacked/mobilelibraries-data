@@ -41,6 +41,10 @@ jobs:
         run: |
           python scripts/validate.py
 
-      - name: Build and verify unified UK dataset
+      - name: Verify routes and routing engine
+        run: |
+          python scripts/routing.py --all
+
+      - name: Build and verify unified UK dataset and summary
         run: |
           python scripts/combine.py

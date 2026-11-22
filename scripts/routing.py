@@ -291,16 +291,93 @@ def generate_routes_for_authority(slug: str, force: bool = False, engine: str = 
     return True
 
 
+def combine_routes() -> None:
+    """Combines all authority route GeoJSONs and CSVs into nationwide UK datasets:
+    - data/uk_mobile_library_routes.geojson
+    - data/uk_mobile_library_routes.csv
+    """
+    slug_to_auth = {}
+    services_file = DATA_DIR.parent / "services.csv"
+    if services_file.exists():
+        with open(services_file, mode="r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                slug = row.get("dataset_slug")
+                if slug:
+                    slug_to_auth[slug] = {
+                        "name": row.get("local_authority", ""),
+                        "code": row.get("local_authority_code", ""),
+                    }
+
+    geojson_files = sorted(ROUTES_DIR.glob("*_routes.geojson"))
+    csv_files = sorted(ROUTES_DIR.glob("*_routes.csv"))
+
+    all_features = []
+    for gf in geojson_files:
+        if gf.name.startswith("uk_"):
+            continue
+        slug = gf.name.replace("_routes.geojson", "")
+        auth_info = slug_to_auth.get(slug, {"name": slug.replace("_", " ").title(), "code": ""})
+        try:
+            with open(gf, mode="r", encoding="utf-8") as f:
+                data = json.load(f)
+                for feat in data.get("features", []):
+                    feat_copy = dict(feat)
+                    feat_copy["properties"] = dict(feat.get("properties", {}))
+                    feat_copy["properties"]["local_authority"] = auth_info["name"]
+                    feat_copy["properties"]["local_authority_code"] = auth_info["code"]
+                    all_features.append(feat_copy)
+        except Exception as e:
+            print(f"Warning: Failed to read {gf.name}: {e}")
+
+    out_geojson = DATA_DIR / "uk_mobile_library_routes.geojson"
+    with open(out_geojson, mode="w", encoding="utf-8") as f:
+        json.dump({"type": "FeatureCollection", "features": all_features}, f, separators=(",", ":"))
+    print(f"✓ Combined {len(all_features)} routes into {out_geojson.name}")
+
+    all_trips = []
+    fieldnames = [
+        "local_authority", "local_authority_code", "mobile", "route",
+        "origin_stop", "origin_stop_latitude", "origin_stop_longitude",
+        "destination_stop", "destination_stop_latitude", "destination_stop_longitude",
+        "distance", "duration", "WKT",
+    ]
+    for cf in csv_files:
+        if cf.name.startswith("uk_"):
+            continue
+        slug = cf.name.replace("_routes.csv", "")
+        auth_info = slug_to_auth.get(slug, {"name": slug.replace("_", " ").title(), "code": ""})
+        try:
+            with open(cf, mode="r", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    row["local_authority"] = auth_info["name"]
+                    row["local_authority_code"] = auth_info["code"]
+                    all_trips.append(row)
+        except Exception as e:
+            print(f"Warning: Failed to read {cf.name}: {e}")
+
+    out_csv = DATA_DIR / "uk_mobile_library_routes.csv"
+    with open(out_csv, mode="w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(all_trips)
+    print(f"✓ Combined {len(all_trips)} trip legs into {out_csv.name}")
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate routes for mobile library datasets.")
     parser.add_argument("--authority", "-a", help="Dataset slug (e.g. shropshire, north_somerset)")
     parser.add_argument("--all", action="store_true", help="Generate routes for all datasets in data/")
+    parser.add_argument("--combine", action="store_true", help="Combine existing route files into UK datasets")
     parser.add_argument("--force", "-f", action="store_true", help="Force regenerate existing route files")
     parser.add_argument("--engine", choices=["auto", "ors", "osrm"], default="auto", help="Routing engine")
     args = parser.parse_args()
 
     if args.authority:
         generate_routes_for_authority(args.authority, force=args.force, engine=args.engine)
+    elif args.combine:
+        combine_routes()
     elif args.all:
         for p in sorted(DATA_DIR.glob("*.csv")):
             if (
@@ -311,5 +388,6 @@ if __name__ == "__main__":
             ):
                 continue
             generate_routes_for_authority(p.stem, force=args.force, engine=args.engine)
+        combine_routes()
     else:
         parser.print_help()

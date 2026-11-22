@@ -29,8 +29,11 @@ You can work out routes from your terminal:
 # Calculate routes for a single council
 python scripts/routing.py --authority shropshire
 
-# Calculate routes for all councils
+# Calculate routes for all councils and combine into UK files
 python scripts/routing.py --all
+
+# Combine existing council route files into UK datasets
+python scripts/routing.py --combine
 
 # Force the script to recalculate routes that already exist
 python scripts/routing.py --authority somerset --force
@@ -38,7 +41,12 @@ python scripts/routing.py --authority somerset --force
 
 ## Where route files are saved
 
-All route files are saved in the `data/routes/` folder:
+All individual council route files are stored in `data/routes/`:
 
-* **`data/routes/<council>_routes.csv`**: A spreadsheet of journeys between stops. Each row shows the starting stop, destination stop, driving distance, driving time, and the road line geometry.
+* **`data/routes/<council>_routes.csv`**: A spreadsheet of journeys between stops for that council. Each row shows the starting stop, destination stop, driving distance, driving time, and the road line geometry.
 * **`data/routes/<council>_routes.geojson`**: A map file that can be opened in mapping tools (like QGIS or web maps) to display the road lines visually.
+
+All council routes are also combined into single nationwide files:
+
+* **`data/uk_mobile_library_routes.csv`**: All 6,940 scheduled road trip legs across all 48 UK mobile library services.
+* **`data/uk_mobile_library_routes.geojson`**: Compact GeoJSON file containing all 1,160 route line geometries for the entire UK.

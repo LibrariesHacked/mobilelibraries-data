@@ -1,0 +1,904 @@
+{
+  "generated_at": "2026-11-22T21:53:36.122475+00:00",
+  "national_totals": {
+    "authorities_with_mobile_service": 48,
+    "active_vehicles": 101,
+    "routes": 1255,
+    "stops": 8195,
+    "trips": 6940,
+    "distance_km": 62172.9,
+    "distance_miles": 38632.4,
+    "duration_hours": 1177.6,
+    "average_trip_distance_km": 8.96,
+    "average_trip_distance_miles": 5.57,
+    "average_trip_duration_minutes": 10.2
+  },
+  "coordinate_accuracy": {
+    "exact": {
+      "count": 2051,
+      "percentage": 25.0
+    },
+    "landmark": {
+      "count": 1626,
+      "percentage": 19.8
+    },
+    "postcode": {
+      "count": 3773,
+      "percentage": 46.0
+    },
+    "community": {
+      "count": 745,
+      "percentage": 9.1
+    },
+    "high_confidence_total": {
+      "count": 7450,
+      "percentage": 90.9
+    }
+  },
+  "authorities": [
+    {
+      "local_authority": "Angus",
+      "local_authority_code": "S12000041",
+      "dataset_slug": "angus",
+      "vehicles": 2,
+      "routes": 16,
+      "stops": 122,
+      "trips": 106,
+      "distance_km": 1229.3,
+      "distance_miles": 763.8,
+      "duration_hours": 23.4,
+      "accuracy": {
+        "exact": 15,
+        "landmark": 40,
+        "postcode": 26,
+        "community": 41
+      }
+    },
+    {
+      "local_authority": "Bath and North East Somerset",
+      "local_authority_code": "E06000022",
+      "dataset_slug": "bath_and_north_east_somerset",
+      "vehicles": 1,
+      "routes": 7,
+      "stops": 35,
+      "trips": 28,
+      "distance_km": 97.1,
+      "distance_miles": 60.3,
+      "duration_hours": 2.9,
+      "accuracy": {
+        "exact": 35,
+        "landmark": 0,
+        "postcode": 0,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Bedford",
+      "local_authority_code": "E06000055",
+      "dataset_slug": "bedford",
+      "vehicles": 1,
+      "routes": 11,
+      "stops": 114,
+      "trips": 103,
+      "distance_km": 371.6,
+      "distance_miles": 230.9,
+      "duration_hours": 8.6,
+      "accuracy": {
+        "exact": 1,
+        "landmark": 28,
+        "postcode": 84,
+        "community": 1
+      }
+    },
+    {
+      "local_authority": "Cambridgeshire",
+      "local_authority_code": "E10000003",
+      "dataset_slug": "cambridgeshire",
+      "vehicles": 1,
+      "routes": 49,
+      "stops": 387,
+      "trips": 338,
+      "distance_km": 1449.7,
+      "distance_miles": 900.8,
+      "duration_hours": 33.4,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 86,
+        "postcode": 301,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Carmarthenshire",
+      "local_authority_code": "W06000010",
+      "dataset_slug": "carmarthenshire",
+      "vehicles": 1,
+      "routes": 27,
+      "stops": 57,
+      "trips": 30,
+      "distance_km": 420.0,
+      "distance_miles": 260.9,
+      "duration_hours": 8.5,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 35,
+        "postcode": 16,
+        "community": 6
+      }
+    },
+    {
+      "local_authority": "Cheshire East",
+      "local_authority_code": "E06000049",
+      "dataset_slug": "cheshire_east",
+      "vehicles": 1,
+      "routes": 14,
+      "stops": 92,
+      "trips": 78,
+      "distance_km": 1294.1,
+      "distance_miles": 804.1,
+      "duration_hours": 23.0,
+      "accuracy": {
+        "exact": 7,
+        "landmark": 23,
+        "postcode": 56,
+        "community": 6
+      }
+    },
+    {
+      "local_authority": "Cheshire West and Chester",
+      "local_authority_code": "E06000050",
+      "dataset_slug": "cheshire_west_and_chester",
+      "vehicles": 1,
+      "routes": 14,
+      "stops": 72,
+      "trips": 58,
+      "distance_km": 332.5,
+      "distance_miles": 206.6,
+      "duration_hours": 6.9,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 28,
+        "postcode": 44,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Conwy",
+      "local_authority_code": "W06000003",
+      "dataset_slug": "conwy",
+      "vehicles": 1,
+      "routes": 4,
+      "stops": 27,
+      "trips": 23,
+      "distance_km": 180.0,
+      "distance_miles": 111.8,
+      "duration_hours": 4.1,
+      "accuracy": {
+        "exact": 1,
+        "landmark": 4,
+        "postcode": 21,
+        "community": 1
+      }
+    },
+    {
+      "local_authority": "Cornwall",
+      "local_authority_code": "E06000052",
+      "dataset_slug": "cornwall",
+      "vehicles": 2,
+      "routes": 18,
+      "stops": 144,
+      "trips": 126,
+      "distance_km": 3454.6,
+      "distance_miles": 2146.6,
+      "duration_hours": 57.7,
+      "accuracy": {
+        "exact": 22,
+        "landmark": 42,
+        "postcode": 27,
+        "community": 53
+      }
+    },
+    {
+      "local_authority": "County Durham",
+      "local_authority_code": "E06000047",
+      "dataset_slug": "county_durham",
+      "vehicles": 1,
+      "routes": 15,
+      "stops": 95,
+      "trips": 80,
+      "distance_km": 889.5,
+      "distance_miles": 552.7,
+      "duration_hours": 16.4,
+      "accuracy": {
+        "exact": 11,
+        "landmark": 15,
+        "postcode": 62,
+        "community": 7
+      }
+    },
+    {
+      "local_authority": "Derbyshire",
+      "local_authority_code": "E10000007",
+      "dataset_slug": "derbyshire",
+      "vehicles": 3,
+      "routes": 39,
+      "stops": 179,
+      "trips": 140,
+      "distance_km": 1421.8,
+      "distance_miles": 883.4,
+      "duration_hours": 26.3,
+      "accuracy": {
+        "exact": 6,
+        "landmark": 55,
+        "postcode": 82,
+        "community": 36
+      }
+    },
+    {
+      "local_authority": "East Ayrshire",
+      "local_authority_code": "S12000008",
+      "dataset_slug": "east_ayrshire",
+      "vehicles": 1,
+      "routes": 19,
+      "stops": 93,
+      "trips": 74,
+      "distance_km": 531.0,
+      "distance_miles": 329.9,
+      "duration_hours": 10.0,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 8,
+        "postcode": 81,
+        "community": 4
+      }
+    },
+    {
+      "local_authority": "East Riding of Yorkshire",
+      "local_authority_code": "E06000011",
+      "dataset_slug": "east_riding_of_yorkshire",
+      "vehicles": 1,
+      "routes": 19,
+      "stops": 150,
+      "trips": 131,
+      "distance_km": 2216.4,
+      "distance_miles": 1377.2,
+      "duration_hours": 41.8,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 45,
+        "postcode": 105,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Essex",
+      "local_authority_code": "E10000012",
+      "dataset_slug": "essex",
+      "vehicles": 3,
+      "routes": 36,
+      "stops": 161,
+      "trips": 125,
+      "distance_km": 771.6,
+      "distance_miles": 479.4,
+      "duration_hours": 15.7,
+      "accuracy": {
+        "exact": 161,
+        "landmark": 0,
+        "postcode": 0,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Fife",
+      "local_authority_code": "S12000047",
+      "dataset_slug": "fife",
+      "vehicles": 2,
+      "routes": 19,
+      "stops": 119,
+      "trips": 100,
+      "distance_km": 785.5,
+      "distance_miles": 488.1,
+      "duration_hours": 14.8,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 35,
+        "postcode": 78,
+        "community": 6
+      }
+    },
+    {
+      "local_authority": "Flintshire",
+      "local_authority_code": "W06000005",
+      "dataset_slug": "flintshire",
+      "vehicles": 1,
+      "routes": 7,
+      "stops": 45,
+      "trips": 38,
+      "distance_km": 340.6,
+      "distance_miles": 211.6,
+      "duration_hours": 6.9,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 18,
+        "postcode": 25,
+        "community": 2
+      }
+    },
+    {
+      "local_authority": "Highland",
+      "local_authority_code": "S12000017",
+      "dataset_slug": "highland",
+      "vehicles": 5,
+      "routes": 48,
+      "stops": 469,
+      "trips": 421,
+      "distance_km": 12642.1,
+      "distance_miles": 7855.4,
+      "duration_hours": 190.8,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 78,
+        "postcode": 206,
+        "community": 185
+      }
+    },
+    {
+      "local_authority": "Hillingdon",
+      "local_authority_code": "E09000017",
+      "dataset_slug": "hillingdon",
+      "vehicles": 1,
+      "routes": 13,
+      "stops": 39,
+      "trips": 26,
+      "distance_km": 144.1,
+      "distance_miles": 89.5,
+      "duration_hours": 3.9,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 10,
+        "postcode": 29,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Kent",
+      "local_authority_code": "E10000016",
+      "dataset_slug": "kent",
+      "vehicles": 6,
+      "routes": 52,
+      "stops": 274,
+      "trips": 222,
+      "distance_km": 1318.6,
+      "distance_miles": 819.3,
+      "duration_hours": 26.5,
+      "accuracy": {
+        "exact": 21,
+        "landmark": 69,
+        "postcode": 184,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Lancashire",
+      "local_authority_code": "E10000017",
+      "dataset_slug": "lancashire",
+      "vehicles": 5,
+      "routes": 66,
+      "stops": 498,
+      "trips": 432,
+      "distance_km": 1131.0,
+      "distance_miles": 702.8,
+      "duration_hours": 31.1,
+      "accuracy": {
+        "exact": 498,
+        "landmark": 0,
+        "postcode": 0,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Leicestershire",
+      "local_authority_code": "E10000018",
+      "dataset_slug": "leicestershire",
+      "vehicles": 3,
+      "routes": 34,
+      "stops": 242,
+      "trips": 208,
+      "distance_km": 1311.1,
+      "distance_miles": 814.7,
+      "duration_hours": 28.3,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 68,
+        "postcode": 99,
+        "community": 75
+      }
+    },
+    {
+      "local_authority": "LibrariesNI",
+      "local_authority_code": "N92000002",
+      "dataset_slug": "librariesni",
+      "vehicles": 13,
+      "routes": 132,
+      "stops": 287,
+      "trips": 155,
+      "distance_km": 1696.7,
+      "distance_miles": 1054.3,
+      "duration_hours": 28.7,
+      "accuracy": {
+        "exact": 23,
+        "landmark": 43,
+        "postcode": 221,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Lincolnshire",
+      "local_authority_code": "E10000019",
+      "dataset_slug": "lincolnshire",
+      "vehicles": 3,
+      "routes": 45,
+      "stops": 203,
+      "trips": 158,
+      "distance_km": 4481.8,
+      "distance_miles": 2784.9,
+      "duration_hours": 71.1,
+      "accuracy": {
+        "exact": 11,
+        "landmark": 90,
+        "postcode": 54,
+        "community": 48
+      }
+    },
+    {
+      "local_authority": "Midlothian",
+      "local_authority_code": "S12000019",
+      "dataset_slug": "midlothian",
+      "vehicles": 1,
+      "routes": 10,
+      "stops": 64,
+      "trips": 54,
+      "distance_km": 242.5,
+      "distance_miles": 150.7,
+      "duration_hours": 5.7,
+      "accuracy": {
+        "exact": 15,
+        "landmark": 16,
+        "postcode": 32,
+        "community": 1
+      }
+    },
+    {
+      "local_authority": "Neath Port Talbot",
+      "local_authority_code": "W06000012",
+      "dataset_slug": "neath_port_talbot",
+      "vehicles": 1,
+      "routes": 15,
+      "stops": 63,
+      "trips": 48,
+      "distance_km": 316.9,
+      "distance_miles": 196.9,
+      "duration_hours": 6.4,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 23,
+        "postcode": 36,
+        "community": 4
+      }
+    },
+    {
+      "local_authority": "Norfolk",
+      "local_authority_code": "E10000020",
+      "dataset_slug": "norfolk",
+      "vehicles": 3,
+      "routes": 81,
+      "stops": 952,
+      "trips": 871,
+      "distance_km": 2143.6,
+      "distance_miles": 1332.0,
+      "duration_hours": 47.4,
+      "accuracy": {
+        "exact": 952,
+        "landmark": 0,
+        "postcode": 0,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "North Lincolnshire",
+      "local_authority_code": "E06000013",
+      "dataset_slug": "north_lincolnshire",
+      "vehicles": 1,
+      "routes": 15,
+      "stops": 147,
+      "trips": 132,
+      "distance_km": 406.9,
+      "distance_miles": 252.9,
+      "duration_hours": 10.7,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 22,
+        "postcode": 122,
+        "community": 3
+      }
+    },
+    {
+      "local_authority": "North Somerset",
+      "local_authority_code": "E06000024",
+      "dataset_slug": "north_somerset",
+      "vehicles": 1,
+      "routes": 8,
+      "stops": 35,
+      "trips": 27,
+      "distance_km": 161.7,
+      "distance_miles": 100.5,
+      "duration_hours": 4.2,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 22,
+        "postcode": 6,
+        "community": 7
+      }
+    },
+    {
+      "local_authority": "North Yorkshire",
+      "local_authority_code": "E06000065",
+      "dataset_slug": "north_yorkshire",
+      "vehicles": 1,
+      "routes": 16,
+      "stops": 42,
+      "trips": 26,
+      "distance_km": 1576.7,
+      "distance_miles": 979.7,
+      "duration_hours": 22.8,
+      "accuracy": {
+        "exact": 3,
+        "landmark": 23,
+        "postcode": 2,
+        "community": 14
+      }
+    },
+    {
+      "local_authority": "Northumberland",
+      "local_authority_code": "E06000057",
+      "dataset_slug": "northumberland",
+      "vehicles": 2,
+      "routes": 24,
+      "stops": 215,
+      "trips": 191,
+      "distance_km": 1263.0,
+      "distance_miles": 784.8,
+      "duration_hours": 26.7,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 27,
+        "postcode": 188,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Nottinghamshire",
+      "local_authority_code": "E10000024",
+      "dataset_slug": "nottinghamshire",
+      "vehicles": 3,
+      "routes": 45,
+      "stops": 398,
+      "trips": 353,
+      "distance_km": 3231.1,
+      "distance_miles": 2007.7,
+      "duration_hours": 55.2,
+      "accuracy": {
+        "exact": 5,
+        "landmark": 91,
+        "postcode": 158,
+        "community": 144
+      }
+    },
+    {
+      "local_authority": "Orkney Islands",
+      "local_authority_code": "S12000023",
+      "dataset_slug": "orkney_islands",
+      "vehicles": 1,
+      "routes": 14,
+      "stops": 63,
+      "trips": 49,
+      "distance_km": 414.8,
+      "distance_miles": 257.7,
+      "duration_hours": 16.1,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 24,
+        "postcode": 28,
+        "community": 11
+      }
+    },
+    {
+      "local_authority": "Pembrokeshire",
+      "local_authority_code": "W06000009",
+      "dataset_slug": "pembrokeshire",
+      "vehicles": 1,
+      "routes": 8,
+      "stops": 58,
+      "trips": 50,
+      "distance_km": 478.3,
+      "distance_miles": 297.2,
+      "duration_hours": 9.6,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 23,
+        "postcode": 31,
+        "community": 4
+      }
+    },
+    {
+      "local_authority": "Perth and Kinross",
+      "local_authority_code": "S12000048",
+      "dataset_slug": "perth_and_kinross",
+      "vehicles": 2,
+      "routes": 22,
+      "stops": 129,
+      "trips": 107,
+      "distance_km": 893.3,
+      "distance_miles": 555.1,
+      "duration_hours": 16.9,
+      "accuracy": {
+        "exact": 14,
+        "landmark": 16,
+        "postcode": 86,
+        "community": 13
+      }
+    },
+    {
+      "local_authority": "Portsmouth",
+      "local_authority_code": "E06000044",
+      "dataset_slug": "portsmouth",
+      "vehicles": 1,
+      "routes": 5,
+      "stops": 9,
+      "trips": 4,
+      "distance_km": 12.8,
+      "distance_miles": 8.0,
+      "duration_hours": 0.3,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 1,
+        "postcode": 8,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Shetland Islands",
+      "local_authority_code": "S12000027",
+      "dataset_slug": "shetland_islands",
+      "vehicles": 2,
+      "routes": 13,
+      "stops": 61,
+      "trips": 48,
+      "distance_km": 730.3,
+      "distance_miles": 453.8,
+      "duration_hours": 23.7,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 15,
+        "postcode": 16,
+        "community": 30
+      }
+    },
+    {
+      "local_authority": "Shropshire",
+      "local_authority_code": "E06000051",
+      "dataset_slug": "shropshire",
+      "vehicles": 3,
+      "routes": 27,
+      "stops": 233,
+      "trips": 206,
+      "distance_km": 1102.9,
+      "distance_miles": 685.3,
+      "duration_hours": 28.5,
+      "accuracy": {
+        "exact": 233,
+        "landmark": 0,
+        "postcode": 0,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Somerset",
+      "local_authority_code": "E06000066",
+      "dataset_slug": "somerset",
+      "vehicles": 1,
+      "routes": 16,
+      "stops": 107,
+      "trips": 91,
+      "distance_km": 1337.3,
+      "distance_miles": 830.9,
+      "duration_hours": 25.9,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 39,
+        "postcode": 68,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "South Ayrshire",
+      "local_authority_code": "S12000028",
+      "dataset_slug": "south_ayrshire",
+      "vehicles": 1,
+      "routes": 16,
+      "stops": 86,
+      "trips": 70,
+      "distance_km": 335.5,
+      "distance_miles": 208.5,
+      "duration_hours": 5.8,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 36,
+        "postcode": 50,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Staffordshire",
+      "local_authority_code": "E10000028",
+      "dataset_slug": "staffordshire",
+      "vehicles": 2,
+      "routes": 10,
+      "stops": 56,
+      "trips": 46,
+      "distance_km": 733.0,
+      "distance_miles": 455.4,
+      "duration_hours": 13.5,
+      "accuracy": {
+        "exact": 1,
+        "landmark": 32,
+        "postcode": 10,
+        "community": 13
+      }
+    },
+    {
+      "local_authority": "Stirling",
+      "local_authority_code": "S12000030",
+      "dataset_slug": "stirling",
+      "vehicles": 2,
+      "routes": 12,
+      "stops": 62,
+      "trips": 50,
+      "distance_km": 290.9,
+      "distance_miles": 180.7,
+      "duration_hours": 5.7,
+      "accuracy": {
+        "exact": 1,
+        "landmark": 15,
+        "postcode": 46,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Suffolk",
+      "local_authority_code": "E10000029",
+      "dataset_slug": "suffolk",
+      "vehicles": 3,
+      "routes": 53,
+      "stops": 487,
+      "trips": 434,
+      "distance_km": 2505.0,
+      "distance_miles": 1556.6,
+      "duration_hours": 53.8,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 149,
+        "postcode": 338,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "The Scottish Borders",
+      "local_authority_code": "S12000026",
+      "dataset_slug": "the_scottish_borders",
+      "vehicles": 2,
+      "routes": 15,
+      "stops": 132,
+      "trips": 117,
+      "distance_km": 1202.8,
+      "distance_miles": 747.4,
+      "duration_hours": 19.8,
+      "accuracy": {
+        "exact": 15,
+        "landmark": 25,
+        "postcode": 78,
+        "community": 14
+      }
+    },
+    {
+      "local_authority": "Warwickshire",
+      "local_authority_code": "E10000031",
+      "dataset_slug": "warwickshire",
+      "vehicles": 2,
+      "routes": 32,
+      "stops": 238,
+      "trips": 206,
+      "distance_km": 1022.9,
+      "distance_miles": 635.6,
+      "duration_hours": 23.8,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 61,
+        "postcode": 165,
+        "community": 12
+      }
+    },
+    {
+      "local_authority": "West Dunbartonshire",
+      "local_authority_code": "S12000039",
+      "dataset_slug": "west_dunbartonshire",
+      "vehicles": 1,
+      "routes": 5,
+      "stops": 54,
+      "trips": 49,
+      "distance_km": 258.1,
+      "distance_miles": 160.4,
+      "duration_hours": 5.5,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 4,
+        "postcode": 48,
+        "community": 2
+      }
+    },
+    {
+      "local_authority": "Wiltshire",
+      "local_authority_code": "E06000054",
+      "dataset_slug": "wiltshire",
+      "vehicles": 3,
+      "routes": 62,
+      "stops": 360,
+      "trips": 298,
+      "distance_km": 1977.4,
+      "distance_miles": 1228.7,
+      "duration_hours": 44.0,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 93,
+        "postcode": 265,
+        "community": 2
+      }
+    },
+    {
+      "local_authority": "Worcestershire",
+      "local_authority_code": "E10000034",
+      "dataset_slug": "worcestershire",
+      "vehicles": 1,
+      "routes": 20,
+      "stops": 207,
+      "trips": 187,
+      "distance_km": 894.3,
+      "distance_miles": 555.7,
+      "duration_hours": 21.7,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 42,
+        "postcode": 165,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "York",
+      "local_authority_code": "E06000014",
+      "dataset_slug": "york",
+      "vehicles": 1,
+      "routes": 7,
+      "stops": 33,
+      "trips": 26,
+      "distance_km": 130.2,
+      "distance_miles": 80.9,
+      "duration_hours": 2.9,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 7,
+        "postcode": 26,
+        "community": 0
+      }
+    }
+  ]
+}
