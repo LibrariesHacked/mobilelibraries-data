@@ -41108,7 +41108,7 @@
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "11:05",
-        "Departure": "23:35",
+        "Departure": "11:35",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-09-01",
         "End": "2026-12-31",
