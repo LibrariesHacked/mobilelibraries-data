@@ -104683,8 +104683,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.88812,
-          52.76637
+          -0.89508,
+          52.77297
         ]
       },
       "properties": {
@@ -104695,7 +104695,7 @@
         "Community": "Melton Mowbray",
         "Stop": "Springfield Street",
         "Address": "Springfield Street, Melton Mowbray, Leicestershire",
-        "Postcode": "",
+        "Postcode": "LE13 0PD",
         "Day": "Monday",
         "Type": "Public",
         "Arrival": "09:15",
@@ -104705,9 +104705,9 @@
         "End": "",
         "Exceptions": "",
         "Timetable": "https://www.leicestershire.gov.uk/sites/default/files/2025-02/Mobile-Library-A-Timetable-Melton.pdf",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -104716,8 +104716,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.92484,
-          52.76729
+          -0.92647,
+          52.76591
         ]
       },
       "properties": {
@@ -104728,7 +104728,7 @@
         "Community": "Asfordby Hill",
         "Stop": "School",
         "Address": "School, Asfordby Hill, Leicestershire",
-        "Postcode": "",
+        "Postcode": "LE14 3QX",
         "Day": "Monday",
         "Type": "Public",
         "Arrival": "09:45",
@@ -104739,8 +104739,8 @@
         "Exceptions": "",
         "Timetable": "https://www.leicestershire.gov.uk/sites/default/files/2025-02/Mobile-Library-A-Timetable-Melton.pdf",
         "accuracy_tier": "landmark",
-        "geocoding_source": "community_facility",
-        "estimated_radius_m": 50,
+        "geocoding_source": "named_facility",
+        "estimated_radius_m": 25,
         "verified": false
       }
     },
@@ -104749,8 +104749,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.95141,
-          52.7642
+          -0.95996,
+          52.76283
         ]
       },
       "properties": {
@@ -104761,7 +104761,7 @@
         "Community": "Asfordby",
         "Stop": "Chadwell Close",
         "Address": "Chadwell Close, Asfordby, Leicestershire",
-        "Postcode": "",
+        "Postcode": "LE14 3TQ",
         "Day": "Monday",
         "Type": "Public",
         "Arrival": "10:55",
@@ -104771,9 +104771,9 @@
         "End": "",
         "Exceptions": "",
         "Timetable": "https://www.leicestershire.gov.uk/sites/default/files/2025-02/Mobile-Library-A-Timetable-Melton.pdf",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -104848,8 +104848,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.95141,
-          52.7642
+          -0.95897,
+          52.76625
         ]
       },
       "properties": {
@@ -104860,7 +104860,7 @@
         "Community": "Asfordby",
         "Stop": "Captains Close School",
         "Address": "Captains Close School, Asfordby, Leicestershire",
-        "Postcode": "",
+        "Postcode": "LE14 3TU",
         "Day": "Monday",
         "Type": "Public",
         "Arrival": "13:15",
@@ -104871,8 +104871,8 @@
         "Exceptions": "",
         "Timetable": "https://www.leicestershire.gov.uk/sites/default/files/2025-02/Mobile-Library-A-Timetable-Melton.pdf",
         "accuracy_tier": "landmark",
-        "geocoding_source": "community_facility",
-        "estimated_radius_m": 50,
+        "geocoding_source": "named_facility",
+        "estimated_radius_m": 25,
         "verified": false
       }
     },
@@ -104881,8 +104881,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.928,
-          52.80007
+          -0.9264,
+          52.80035
         ]
       },
       "properties": {
@@ -104893,7 +104893,7 @@
         "Community": "Ab Kettleby",
         "Stop": "Wartnaby Road",
         "Address": "Wartnaby Road, Ab Kettleby, Leicestershire",
-        "Postcode": "",
+        "Postcode": "LE14 3HT",
         "Day": "Tuesday",
         "Type": "Public",
         "Arrival": "09:30",
@@ -104903,9 +104903,9 @@
         "End": "",
         "Exceptions": "",
         "Timetable": "https://www.leicestershire.gov.uk/sites/default/files/2025-02/Mobile-Library-A-Timetable-Melton.pdf",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -104914,8 +104914,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.90714,
-          52.85785
+          -0.90845,
+          52.85573
         ]
       },
       "properties": {
@@ -104926,7 +104926,7 @@
         "Community": "Hose",
         "Stop": "10 Bolton Lane",
         "Address": "10 Bolton Lane, Hose, Leicestershire",
-        "Postcode": "",
+        "Postcode": "LE14 4LA",
         "Day": "Tuesday",
         "Type": "Public",
         "Arrival": "10:50",
@@ -104936,9 +104936,9 @@
         "End": "",
         "Exceptions": "",
         "Timetable": "https://www.leicestershire.gov.uk/sites/default/files/2025-02/Mobile-Library-A-Timetable-Melton.pdf",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -104947,8 +104947,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.92371,
-          52.8394
+          -0.92388,
+          52.83893
         ]
       },
       "properties": {
@@ -104959,7 +104959,7 @@
         "Community": "Long Clawson",
         "Stop": "The Sands",
         "Address": "The Sands, Long Clawson, Leicestershire",
-        "Postcode": "",
+        "Postcode": "LE14 4PA",
         "Day": "Tuesday",
         "Type": "Public",
         "Arrival": "12:00",
@@ -104969,9 +104969,9 @@
         "End": "",
         "Exceptions": "",
         "Timetable": "https://www.leicestershire.gov.uk/sites/default/files/2025-02/Mobile-Library-A-Timetable-Melton.pdf",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -105079,8 +105079,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.81466,
-          52.85366
+          -0.84506,
+          52.82816
         ]
       },
       "properties": {
@@ -105091,7 +105091,7 @@
         "Community": "Eaton",
         "Stop": "Village Hall",
         "Address": "Village Hall, Eaton, Leicestershire",
-        "Postcode": "",
+        "Postcode": "LE14 4LN",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "11:30",
@@ -105102,8 +105102,8 @@
         "Exceptions": "",
         "Timetable": "https://www.leicestershire.gov.uk/sites/default/files/2025-02/Mobile-Library-A-Timetable-Melton.pdf",
         "accuracy_tier": "landmark",
-        "geocoding_source": "community_facility",
-        "estimated_radius_m": 50,
+        "geocoding_source": "named_facility",
+        "estimated_radius_m": 25,
         "verified": false
       }
     },
@@ -105145,8 +105145,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.76077,
-          52.85367
+          -0.76198,
+          52.85227
         ]
       },
       "properties": {
@@ -105157,7 +105157,7 @@
         "Community": "Croxton Kerrial",
         "Stop": "The Nook / Layby",
         "Address": "The Nook / Layby, Croxton Kerrial, Leicestershire",
-        "Postcode": "",
+        "Postcode": "NG32 1QT",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "12:35",
@@ -105167,9 +105167,9 @@
         "End": "",
         "Exceptions": "",
         "Timetable": "https://www.leicestershire.gov.uk/sites/default/files/2025-02/Mobile-Library-A-Timetable-Melton.pdf",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -105244,8 +105244,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.04625,
-          52.64351
+          -1.04329,
+          52.64644
         ]
       },
       "properties": {
@@ -105256,7 +105256,7 @@
         "Community": "Scraptoft",
         "Stop": "Hinks Avenue",
         "Address": "Hinks Avenue, Scraptoft, Leicestershire",
-        "Postcode": "",
+        "Postcode": "LE7 9SW",
         "Day": "Tuesday",
         "Type": "Public",
         "Arrival": "09:45",
@@ -105266,9 +105266,9 @@
         "End": "",
         "Exceptions": "",
         "Timetable": "https://www.leicestershire.gov.uk/sites/default/files/2025-02/Mobile-Library-A-Timetable-Melton.pdf",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -178999,8 +178999,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.00328,
-          53.09268
+          -0.98948,
+          53.09829
         ]
       },
       "properties": {
@@ -179011,7 +179011,7 @@
         "Community": "Edingley",
         "Stop": "Station Rd",
         "Address": "Station Rd, Edingley, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG22 8FU",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "11:00",
@@ -179021,9 +179021,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_3._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179065,8 +179065,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.09936,
-          53.08829
+          -1.10248,
+          53.09098
         ]
       },
       "properties": {
@@ -179077,7 +179077,7 @@
         "Community": "Haywood Oaks",
         "Stop": "Cottages",
         "Address": "Cottages, Haywood Oaks, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG21 0TL",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "12:00",
@@ -179087,9 +179087,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_3._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179098,8 +179098,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.06204,
-          53.05859
+          -1.06184,
+          53.05846
         ]
       },
       "properties": {
@@ -179110,7 +179110,7 @@
         "Community": "Oxton",
         "Stop": "Post Office",
         "Address": "Post Office, Oxton, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG25 0SA",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "12:40",
@@ -179120,9 +179120,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_3._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179296,8 +179296,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.99537,
-          52.8698
+          -0.99704,
+          52.87056
         ]
       },
       "properties": {
@@ -179308,7 +179308,7 @@
         "Community": "Kinoulton",
         "Stop": "Pinfold Close",
         "Address": "Pinfold Close, Kinoulton, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG12 3EW",
         "Day": "Tuesday",
         "Type": "Public",
         "Arrival": "12:00",
@@ -179318,9 +179318,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_5._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179329,8 +179329,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.99537,
-          52.8698
+          -0.99527,
+          52.87126
         ]
       },
       "properties": {
@@ -179341,7 +179341,7 @@
         "Community": "Kinoulton",
         "Stop": "Lindy Close",
         "Address": "Lindy Close, Kinoulton, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG12 3RD",
         "Day": "Tuesday",
         "Type": "Public",
         "Arrival": "12:25",
@@ -179351,9 +179351,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_5._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179395,8 +179395,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.97521,
-          52.85412
+          -0.97435,
+          52.85155
         ]
       },
       "properties": {
@@ -179407,7 +179407,7 @@
         "Community": "Hickling",
         "Stop": "Village Hall",
         "Address": "Village Hall, Hickling, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "LE14 3AQ",
         "Day": "Tuesday",
         "Type": "Public",
         "Arrival": "13:50",
@@ -179418,8 +179418,8 @@
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_5._2026.docx",
         "accuracy_tier": "landmark",
-        "geocoding_source": "community_facility",
-        "estimated_radius_m": 50,
+        "geocoding_source": "named_facility",
+        "estimated_radius_m": 25,
         "verified": false
       }
     },
@@ -179461,8 +179461,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.07661,
-          52.96325
+          -1.07201,
+          52.96381
         ]
       },
       "properties": {
@@ -179473,7 +179473,7 @@
         "Community": "Netherfield",
         "Stop": "Brierley Green",
         "Address": "Brierley Green, Netherfield, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG4 2PP",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "10:30",
@@ -179483,9 +179483,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_6._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179494,8 +179494,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.07805,
-          52.95693
+          -1.08444,
+          52.95331
         ]
       },
       "properties": {
@@ -179506,7 +179506,7 @@
         "Community": "Colwick",
         "Stop": "Egling Croft",
         "Address": "Egling Croft, Colwick, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG4 2DB",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "11:10",
@@ -179516,9 +179516,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_6._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179626,8 +179626,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.06306,
-          53.00071
+          -1.05751,
+          53.0013
         ]
       },
       "properties": {
@@ -179638,7 +179638,7 @@
         "Community": "Lambley",
         "Stop": "Grange Close",
         "Address": "Grange Close, Lambley, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG4 4QJ",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "13:55",
@@ -179648,9 +179648,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_6._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179659,8 +179659,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.06306,
-          53.00071
+          -1.06211,
+          53.00328
         ]
       },
       "properties": {
@@ -179671,7 +179671,7 @@
         "Community": "Lambley",
         "Stop": "Lambley Day Nursery",
         "Address": "Lambley Day Nursery, Lambley, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG4 4QB",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "14:30",
@@ -179681,9 +179681,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_6._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179824,8 +179824,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.81089,
-          53.12009
+          -0.81085,
+          53.12106
         ]
       },
       "properties": {
@@ -179836,7 +179836,7 @@
         "Community": "North Muskham",
         "Stop": "Trent Close",
         "Address": "Trent Close, North Muskham, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG23 6HA",
         "Day": "Monday",
         "Type": "Public",
         "Arrival": "12:00",
@@ -179846,9 +179846,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_1._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179857,8 +179857,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.81089,
-          53.12009
+          -0.80926,
+          53.11677
         ]
       },
       "properties": {
@@ -179869,7 +179869,7 @@
         "Community": "North Muskham",
         "Stop": "Meadow Close",
         "Address": "Meadow Close, North Muskham, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG23 6FH",
         "Day": "Monday",
         "Type": "Public",
         "Arrival": "12:35",
@@ -179879,9 +179879,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_1._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179890,8 +179890,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.82084,
-          53.10724
+          -0.82103,
+          53.10583
         ]
       },
       "properties": {
@@ -179902,7 +179902,7 @@
         "Community": "South Muskham",
         "Stop": "Forge Close",
         "Address": "Forge Close, South Muskham, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG23 6EF",
         "Day": "Monday",
         "Type": "Public",
         "Arrival": "13:00",
@@ -179912,9 +179912,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_1._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -179956,8 +179956,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.86139,
-          53.08199
+          -0.86534,
+          53.08427
         ]
       },
       "properties": {
@@ -179968,7 +179968,7 @@
         "Community": "Averham",
         "Stop": "Staythorpe Rd",
         "Address": "Staythorpe Rd, Averham, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG23 5RR",
         "Day": "Monday",
         "Type": "Public",
         "Arrival": "14:10",
@@ -179978,9 +179978,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_1._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -180055,8 +180055,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -0.97171,
-          52.9811
+          -0.96035,
+          52.98084
         ]
       },
       "properties": {
@@ -180067,7 +180067,7 @@
         "Community": "East Bridgford",
         "Stop": "Holloway Close",
         "Address": "Holloway Close, East Bridgford, Nottinghamshire",
-        "Postcode": "",
+        "Postcode": "NG13 8NG",
         "Day": "Tuesday",
         "Type": "Public",
         "Arrival": "11:00",
@@ -180077,9 +180077,9 @@
         "End": "2026-12-31",
         "Exceptions": "",
         "Timetable": "https://www.inspireculture.org.uk/uploads/mobilelibries/timetables/East_Mob._Route_10._2026.docx",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },

@@ -23097,61 +23097,67 @@
     "authority": "Leicestershire",
     "community": "Melton Mowbray",
     "stop": "Springfield Street",
-    "address": "Springfield Street, Melton Mowbray, Leicestershire",
-    "postcode": "",
-    "geox": -0.888119,
-    "geoy": 52.766372,
-    "source": "leicestershire.csv"
+    "postcode": "LE13 0PD",
+    "geox": -0.89508,
+    "geoy": 52.77297,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::springfieldstreet": {
     "authority": "Leicestershire",
     "community": "Melton Mowbray",
     "stop": "Springfield Street",
-    "address": "Springfield Street, Melton Mowbray, Leicestershire",
-    "postcode": "",
-    "geox": -0.888119,
-    "geoy": 52.766372,
-    "source": "leicestershire.csv"
+    "postcode": "LE13 0PD",
+    "geox": -0.89508,
+    "geoy": 52.77297,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::asfordbyhill::school": {
     "authority": "Leicestershire",
     "community": "Asfordby Hill",
     "stop": "School",
-    "address": "School, Asfordby Hill, Leicestershire",
-    "postcode": "",
-    "geox": -0.924838,
-    "geoy": 52.767286,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 3QX",
+    "geox": -0.92647,
+    "geoy": 52.76591,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::school": {
     "authority": "Leicestershire",
     "community": "Asfordby Hill",
     "stop": "School",
-    "address": "School, Asfordby Hill, Leicestershire",
-    "postcode": "",
-    "geox": -0.924838,
-    "geoy": 52.767286,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 3QX",
+    "geox": -0.92647,
+    "geoy": 52.76591,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::asfordby::chadwellclose": {
     "authority": "Leicestershire",
     "community": "Asfordby",
     "stop": "Chadwell Close",
-    "address": "Chadwell Close, Asfordby, Leicestershire",
-    "postcode": "",
-    "geox": -0.951413,
-    "geoy": 52.764198,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 3TQ",
+    "geox": -0.95996,
+    "geoy": 52.76283,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::chadwellclose": {
     "authority": "Leicestershire",
     "community": "Asfordby",
     "stop": "Chadwell Close",
-    "address": "Chadwell Close, Asfordby, Leicestershire",
-    "postcode": "",
-    "geox": -0.951413,
-    "geoy": 52.764198,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 3TQ",
+    "geox": -0.95996,
+    "geoy": 52.76283,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::asfordby::bradgateflats": {
     "authority": "Leicestershire",
@@ -23197,81 +23203,89 @@
     "authority": "Leicestershire",
     "community": "Asfordby",
     "stop": "Captains Close School",
-    "address": "Captains Close School, Asfordby, Leicestershire",
-    "postcode": "",
-    "geox": -0.951413,
-    "geoy": 52.764198,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 3TU",
+    "geox": -0.95897,
+    "geoy": 52.76625,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::captainscloseschool": {
     "authority": "Leicestershire",
     "community": "Asfordby",
     "stop": "Captains Close School",
-    "address": "Captains Close School, Asfordby, Leicestershire",
-    "postcode": "",
-    "geox": -0.951413,
-    "geoy": 52.764198,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 3TU",
+    "geox": -0.95897,
+    "geoy": 52.76625,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::abkettleby::wartnabyroad": {
     "authority": "Leicestershire",
     "community": "Ab Kettleby",
     "stop": "Wartnaby Road",
-    "address": "Wartnaby Road, Ab Kettleby, Leicestershire",
-    "postcode": "",
-    "geox": -0.928005,
-    "geoy": 52.800074,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 3HT",
+    "geox": -0.9264,
+    "geoy": 52.80035,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::wartnabyroad": {
     "authority": "Leicestershire",
     "community": "Ab Kettleby",
     "stop": "Wartnaby Road",
-    "address": "Wartnaby Road, Ab Kettleby, Leicestershire",
-    "postcode": "",
-    "geox": -0.928005,
-    "geoy": 52.800074,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 3HT",
+    "geox": -0.9264,
+    "geoy": 52.80035,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::hose::10boltonlane": {
     "authority": "Leicestershire",
     "community": "Hose",
     "stop": "10 Bolton Lane",
-    "address": "10 Bolton Lane, Hose, Leicestershire",
-    "postcode": "",
-    "geox": -0.907141,
-    "geoy": 52.857851,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 4LA",
+    "geox": -0.90845,
+    "geoy": 52.85573,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::10boltonlane": {
     "authority": "Leicestershire",
     "community": "Hose",
     "stop": "10 Bolton Lane",
-    "address": "10 Bolton Lane, Hose, Leicestershire",
-    "postcode": "",
-    "geox": -0.907141,
-    "geoy": 52.857851,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 4LA",
+    "geox": -0.90845,
+    "geoy": 52.85573,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::longclawson::thesands": {
     "authority": "Leicestershire",
     "community": "Long Clawson",
     "stop": "The Sands",
-    "address": "The Sands, Long Clawson, Leicestershire",
-    "postcode": "",
-    "geox": -0.923712,
-    "geoy": 52.839402,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 4PA",
+    "geox": -0.92388,
+    "geoy": 52.83893,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::thesands": {
     "authority": "Leicestershire",
     "community": "Long Clawson",
     "stop": "The Sands",
-    "address": "The Sands, Long Clawson, Leicestershire",
-    "postcode": "",
-    "geox": -0.923712,
-    "geoy": 52.839402,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 4PA",
+    "geox": -0.92388,
+    "geoy": 52.83893,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::olddalby::cemetery": {
     "authority": "Leicestershire",
@@ -23327,21 +23341,23 @@
     "authority": "Leicestershire",
     "community": "Eaton",
     "stop": "Village Hall",
-    "address": "Village Hall, Eaton, Leicestershire",
-    "postcode": "",
-    "geox": -0.814665,
-    "geoy": 52.853664,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 4LN",
+    "geox": -0.84506,
+    "geoy": 52.82816,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::villagehall": {
     "authority": "Leicestershire",
     "community": "Eaton",
     "stop": "Village Hall",
-    "address": "Village Hall, Eaton, Leicestershire",
-    "postcode": "",
-    "geox": -0.814665,
-    "geoy": 52.853664,
-    "source": "leicestershire.csv"
+    "postcode": "LE14 4LN",
+    "geox": -0.84506,
+    "geoy": 52.82816,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::branston::church": {
     "authority": "Leicestershire",
@@ -23367,21 +23383,23 @@
     "authority": "Leicestershire",
     "community": "Croxton Kerrial",
     "stop": "The Nook / Layby",
-    "address": "The Nook / Layby, Croxton Kerrial, Leicestershire",
-    "postcode": "",
-    "geox": -0.76077,
-    "geoy": 52.853671,
-    "source": "leicestershire.csv"
+    "postcode": "NG32 1QT",
+    "geox": -0.76198,
+    "geoy": 52.85227,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::thenooklayby": {
     "authority": "Leicestershire",
     "community": "Croxton Kerrial",
     "stop": "The Nook / Layby",
-    "address": "The Nook / Layby, Croxton Kerrial, Leicestershire",
-    "postcode": "",
-    "geox": -0.76077,
-    "geoy": 52.853671,
-    "source": "leicestershire.csv"
+    "postcode": "NG32 1QT",
+    "geox": -0.76198,
+    "geoy": 52.85227,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::knipton::thecouncilhouse": {
     "authority": "Leicestershire",
@@ -23427,21 +23445,23 @@
     "authority": "Leicestershire",
     "community": "Scraptoft",
     "stop": "Hinks Avenue",
-    "address": "Hinks Avenue, Scraptoft, Leicestershire",
-    "postcode": "",
-    "geox": -1.046245,
-    "geoy": 52.643508,
-    "source": "leicestershire.csv"
+    "postcode": "LE7 9SW",
+    "geox": -1.04329,
+    "geoy": 52.64644,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::hinksavenue": {
     "authority": "Leicestershire",
     "community": "Scraptoft",
     "stop": "Hinks Avenue",
-    "address": "Hinks Avenue, Scraptoft, Leicestershire",
-    "postcode": "",
-    "geox": -1.046245,
-    "geoy": 52.643508,
-    "source": "leicestershire.csv"
+    "postcode": "LE7 9SW",
+    "geox": -1.04329,
+    "geoy": 52.64644,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "leicestershire::thurnby::47charnwooddrive": {
     "authority": "Leicestershire",
@@ -116441,19 +116461,23 @@
     "authority": "Nottinghamshire",
     "community": "Edingley",
     "stop": "Station Rd",
-    "postcode": "",
-    "geox": -1.003284,
-    "geoy": 53.092677,
-    "source": "place_api"
+    "postcode": "NG22 8FU",
+    "geox": -0.98948,
+    "geoy": 53.09829,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::stationrd": {
     "authority": "Nottinghamshire",
     "community": "Edingley",
     "stop": "Station Rd",
-    "postcode": "",
-    "geox": -1.003284,
-    "geoy": 53.092677,
-    "source": "place_api"
+    "postcode": "NG22 8FU",
+    "geox": -0.98948,
+    "geoy": 53.09829,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::halam::spindlewoodbungalow": {
     "authority": "Nottinghamshire",
@@ -116477,37 +116501,45 @@
     "authority": "Nottinghamshire",
     "community": "Haywood Oaks",
     "stop": "Cottages",
-    "postcode": "",
-    "geox": -1.099364,
-    "geoy": 53.088292,
-    "source": "place_api"
+    "postcode": "NG21 0TL",
+    "geox": -1.10248,
+    "geoy": 53.09098,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::cottages": {
     "authority": "Nottinghamshire",
     "community": "Haywood Oaks",
     "stop": "Cottages",
-    "postcode": "",
-    "geox": -1.099364,
-    "geoy": 53.088292,
-    "source": "place_api"
+    "postcode": "NG21 0TL",
+    "geox": -1.10248,
+    "geoy": 53.09098,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::oxton::postoffice": {
     "authority": "Nottinghamshire",
     "community": "Oxton",
     "stop": "Post Office",
-    "postcode": "",
-    "geox": -1.062039,
-    "geoy": 53.05859,
-    "source": "place_api"
+    "postcode": "NG25 0SA",
+    "geox": -1.06184,
+    "geoy": 53.05846,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::postoffice": {
     "authority": "Nottinghamshire",
     "community": "Oxton",
     "stop": "Post Office",
-    "postcode": "",
-    "geox": -1.062039,
-    "geoy": 53.05859,
-    "source": "place_api"
+    "postcode": "NG25 0SA",
+    "geox": -1.06184,
+    "geoy": 53.05846,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::oxton::littleelmspreschool": {
     "authority": "Nottinghamshire",
@@ -116603,37 +116635,45 @@
     "authority": "Nottinghamshire",
     "community": "Kinoulton",
     "stop": "Pinfold Close",
-    "postcode": "",
-    "geox": -0.99537,
-    "geoy": 52.869804,
-    "source": "place_api"
+    "postcode": "NG12 3EW",
+    "geox": -0.99704,
+    "geoy": 52.87056,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::pinfoldclose": {
     "authority": "Nottinghamshire",
     "community": "Kinoulton",
     "stop": "Pinfold Close",
-    "postcode": "",
-    "geox": -0.99537,
-    "geoy": 52.869804,
-    "source": "place_api"
+    "postcode": "NG12 3EW",
+    "geox": -0.99704,
+    "geoy": 52.87056,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::kinoulton::lindyclose": {
     "authority": "Nottinghamshire",
     "community": "Kinoulton",
     "stop": "Lindy Close",
-    "postcode": "",
-    "geox": -0.99537,
-    "geoy": 52.869804,
-    "source": "place_api"
+    "postcode": "NG12 3RD",
+    "geox": -0.99527,
+    "geoy": 52.87126,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::lindyclose": {
     "authority": "Nottinghamshire",
     "community": "Kinoulton",
     "stop": "Lindy Close",
-    "postcode": "",
-    "geox": -0.99537,
-    "geoy": 52.869804,
-    "source": "place_api"
+    "postcode": "NG12 3RD",
+    "geox": -0.99527,
+    "geoy": 52.87126,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::kinoulton::nevilleclose": {
     "authority": "Nottinghamshire",
@@ -116657,19 +116697,23 @@
     "authority": "Nottinghamshire",
     "community": "Hickling",
     "stop": "Village Hall",
-    "postcode": "",
-    "geox": -0.975208,
-    "geoy": 52.854124,
-    "source": "place_api"
+    "postcode": "LE14 3AQ",
+    "geox": -0.97435,
+    "geoy": 52.85155,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::villagehall": {
     "authority": "Nottinghamshire",
     "community": "Hickling",
     "stop": "Village Hall",
-    "postcode": "",
-    "geox": -0.975208,
-    "geoy": 52.854124,
-    "source": "place_api"
+    "postcode": "LE14 3AQ",
+    "geox": -0.97435,
+    "geoy": 52.85155,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::stokebardolph::stokelanecorner": {
     "authority": "Nottinghamshire",
@@ -116693,37 +116737,45 @@
     "authority": "Nottinghamshire",
     "community": "Netherfield",
     "stop": "Brierley Green",
-    "postcode": "",
-    "geox": -1.07661,
-    "geoy": 52.963245,
-    "source": "place_api"
+    "postcode": "NG4 2PP",
+    "geox": -1.07201,
+    "geoy": 52.96381,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::brierleygreen": {
     "authority": "Nottinghamshire",
     "community": "Netherfield",
     "stop": "Brierley Green",
-    "postcode": "",
-    "geox": -1.07661,
-    "geoy": 52.963245,
-    "source": "place_api"
+    "postcode": "NG4 2PP",
+    "geox": -1.07201,
+    "geoy": 52.96381,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::colwick::eglingcroft": {
     "authority": "Nottinghamshire",
     "community": "Colwick",
     "stop": "Egling Croft",
-    "postcode": "",
-    "geox": -1.078054,
-    "geoy": 52.956927,
-    "source": "place_api"
+    "postcode": "NG4 2DB",
+    "geox": -1.08444,
+    "geoy": 52.95331,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::eglingcroft": {
     "authority": "Nottinghamshire",
     "community": "Colwick",
     "stop": "Egling Croft",
-    "postcode": "",
-    "geox": -1.078054,
-    "geoy": 52.956927,
-    "source": "place_api"
+    "postcode": "NG4 2DB",
+    "geox": -1.08444,
+    "geoy": 52.95331,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::gedling::daisydaynursery": {
     "authority": "Nottinghamshire",
@@ -116783,37 +116835,45 @@
     "authority": "Nottinghamshire",
     "community": "Lambley",
     "stop": "Grange Close",
-    "postcode": "",
-    "geox": -1.063055,
-    "geoy": 53.000706,
-    "source": "place_api"
+    "postcode": "NG4 4QJ",
+    "geox": -1.05751,
+    "geoy": 53.0013,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::grangeclose": {
     "authority": "Nottinghamshire",
     "community": "Lambley",
     "stop": "Grange Close",
-    "postcode": "",
-    "geox": -1.063055,
-    "geoy": 53.000706,
-    "source": "place_api"
+    "postcode": "NG4 4QJ",
+    "geox": -1.05751,
+    "geoy": 53.0013,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::lambley::lambleydaynursery": {
     "authority": "Nottinghamshire",
     "community": "Lambley",
     "stop": "Lambley Day Nursery",
-    "postcode": "",
-    "geox": -1.063055,
-    "geoy": 53.000706,
-    "source": "place_api"
+    "postcode": "NG4 4QB",
+    "geox": -1.06211,
+    "geoy": 53.00328,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::lambleydaynursery": {
     "authority": "Nottinghamshire",
     "community": "Lambley",
     "stop": "Lambley Day Nursery",
-    "postcode": "",
-    "geox": -1.063055,
-    "geoy": 53.000706,
-    "source": "place_api"
+    "postcode": "NG4 4QB",
+    "geox": -1.06211,
+    "geoy": 53.00328,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::winkburn::postbox": {
     "authority": "Nottinghamshire",
@@ -116891,55 +116951,67 @@
     "authority": "Nottinghamshire",
     "community": "North Muskham",
     "stop": "Trent Close",
-    "postcode": "",
-    "geox": -0.810891,
-    "geoy": 53.120091,
-    "source": "place_api"
+    "postcode": "NG23 6HA",
+    "geox": -0.81085,
+    "geoy": 53.12106,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::trentclose": {
     "authority": "Nottinghamshire",
     "community": "North Muskham",
     "stop": "Trent Close",
-    "postcode": "",
-    "geox": -0.810891,
-    "geoy": 53.120091,
-    "source": "place_api"
+    "postcode": "NG23 6HA",
+    "geox": -0.81085,
+    "geoy": 53.12106,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::northmuskham::meadowclose": {
     "authority": "Nottinghamshire",
     "community": "North Muskham",
     "stop": "Meadow Close",
-    "postcode": "",
-    "geox": -0.810891,
-    "geoy": 53.120091,
-    "source": "place_api"
+    "postcode": "NG23 6FH",
+    "geox": -0.80926,
+    "geoy": 53.11677,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::meadowclose": {
     "authority": "Nottinghamshire",
     "community": "North Muskham",
     "stop": "Meadow Close",
-    "postcode": "",
-    "geox": -0.810891,
-    "geoy": 53.120091,
-    "source": "place_api"
+    "postcode": "NG23 6FH",
+    "geox": -0.80926,
+    "geoy": 53.11677,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::southmuskham::forgeclose": {
     "authority": "Nottinghamshire",
     "community": "South Muskham",
     "stop": "Forge Close",
-    "postcode": "",
-    "geox": -0.820836,
-    "geoy": 53.107245,
-    "source": "place_api"
+    "postcode": "NG23 6EF",
+    "geox": -0.82103,
+    "geoy": 53.10583,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::forgeclose": {
     "authority": "Nottinghamshire",
     "community": "South Muskham",
     "stop": "Forge Close",
-    "postcode": "",
-    "geox": -0.820836,
-    "geoy": 53.107245,
-    "source": "place_api"
+    "postcode": "NG23 6EF",
+    "geox": -0.82103,
+    "geoy": 53.10583,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::littlecarlton::oppositeplayingfield": {
     "authority": "Nottinghamshire",
@@ -116963,19 +117035,23 @@
     "authority": "Nottinghamshire",
     "community": "Averham",
     "stop": "Staythorpe Rd",
-    "postcode": "",
-    "geox": -0.861388,
-    "geoy": 53.081992,
-    "source": "place_api"
+    "postcode": "NG23 5RR",
+    "geox": -0.86534,
+    "geoy": 53.08427,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::staythorperd": {
     "authority": "Nottinghamshire",
     "community": "Averham",
     "stop": "Staythorpe Rd",
-    "postcode": "",
-    "geox": -0.861388,
-    "geoy": 53.081992,
-    "source": "place_api"
+    "postcode": "NG23 5RR",
+    "geox": -0.86534,
+    "geoy": 53.08427,
+    "source": "osm_search",
+    "accuracy": "street",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::upton::topofthecloseorcricketscarpark": {
     "authority": "Nottinghamshire",
@@ -117665,19 +117741,23 @@
     "authority": "Nottinghamshire",
     "community": "East Bridgford",
     "stop": "Holloway Close",
-    "postcode": "",
-    "geox": -0.971715,
-    "geoy": 52.9811,
-    "source": "place_api"
+    "postcode": "NG13 8NG",
+    "geox": -0.96035,
+    "geoy": 52.98084,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::hollowayclose": {
     "authority": "Nottinghamshire",
     "community": "East Bridgford",
     "stop": "Holloway Close",
-    "postcode": "",
-    "geox": -0.971715,
-    "geoy": 52.9811,
-    "source": "place_api"
+    "postcode": "NG13 8NG",
+    "geox": -0.96035,
+    "geoy": 52.98084,
+    "source": "osm_search",
+    "accuracy": "landmark",
+    "updated_at": "2026-11-22"
   },
   "nottinghamshire::eastbridgford::strawslane": {
     "authority": "Nottinghamshire",
