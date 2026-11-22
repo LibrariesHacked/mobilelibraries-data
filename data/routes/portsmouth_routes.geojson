@@ -2406,8 +2406,8 @@
             50.826091
           ],
           [
-            -1.046731,
-            50.826092
+            -1.046765,
+            50.826093
           ]
         ],
         "type": "LineString"
@@ -2415,8 +2415,8 @@
       "properties": {
         "segments": [
           {
-            "distance": 2877.8,
-            "duration": 385.5
+            "distance": 2880.2,
+            "duration": 386.1
           }
         ],
         "way_points": [
@@ -2424,8 +2424,8 @@
           202
         ],
         "summary": {
-          "distance": 2877.8,
-          "duration": 385.5
+          "distance": 2880.2,
+          "duration": 386.1
         },
         "mobile": "Portsmouth Mobile Library",
         "route": "Portsmouth Mobile Library Thursday"
