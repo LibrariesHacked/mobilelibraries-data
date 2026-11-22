@@ -1,118 +1,74 @@
 # Location and map coordinates
 
-This guide explains how mobile library stop locations are found, how accurate the coordinates are, and how we check that stops are in the right place.
+This guide explains how mobile library stop locations are found, how accurate they are, and how to improve them.
 
-## Levels of coordinate accuracy
+## Levels of accuracy
 
-Not all coordinates have the same level of precision. Depending on the information published by the council, stops fall into one of four accuracy levels:
+Depending on the information published by the council, stops fall into one of four accuracy levels:
 
-1. **Exact stop or parking space (within 1 to 10 metres):**
-   * The pin is placed directly on the parking bay, village hall car park, school gate, or road layby where the van actually stops.
-   * Sourced directly from council map layers (such as ArcGIS or web maps), what3words locations, or manual aerial checks.
-2. **Named building or landmark (within 10 to 30 metres):**
-   * The pin is placed on the building or facility named in the timetable (such as "Stanton Drew Village Hall" or "Ubley Primary School") using OpenStreetMap or Ordnance Survey data.
-3. **Postcode area centre (within 50 to 200 metres):**
-   * The pin is placed at the centre of the stop's postcode using Postcodes.io or Code-Point Open. In towns, this is usually very close to the stop. In large rural postcodes, it can be a short walk away.
-4. **Village or community centre (within 500 metres to 2 kilometres):**
-   * Used as a temporary fallback when a council lists only a village name without a street, building, or postcode.
+* **Exact stop (within 1 to 10 metres):** The actual parking bay, layby, or school gate from council GIS maps or manual checks.
+* **Named building (within 10 to 30 metres):** The physical building named in the timetable (such as a village hall or school).
+* **Postcode centre (within 50 to 200 metres):** The geographic centre of the postcode.
+* **Community centre (within 500 metres to 2 kilometres):** The village or settlement centre, used when a council only publishes a village name.
 
-Currently, across the 8,195 stops in the UK dataset:
-* Around 35% are at exact stop or building level.
-* Around 33% are at postcode centre level.
-* Around 32% are at village or community centre level (mostly in rural areas where councils do not publish postcodes).
+Coordinates are stored to 5 decimal places (e.g. `53.02340`, `-3.56120`), which gives about 1-metre precision on the ground.
 
-## How the script finds coordinates
+Each council also has a boundary box in `geocache/authority_bboxes.json` to ensure coordinates stay within the right area.
 
-When an authority script runs, it looks for coordinates in this order of priority:
+## How coordinates are resolved
 
-1. **Saved list of verified manual pins:**
-   * It checks `geocache/manual_pins.json` first. If someone has manually verified the exact parking spot on Street View or aerial photos, those coordinates are locked in and are never overwritten.
-2. **Saved list of known reference stops:**
-   * It checks `geocache/stops_reference.json` for previously resolved stops.
-3. **Council map layers:**
-   * If the council publishes an interactive map or GIS feed (such as an ArcGIS FeatureServer), the script extracts the exact coordinates directly from the council's data.
-4. **Named building search:**
-   * If the stop names a specific building (like a village hall, community centre, or school), the script looks for that building in OpenStreetMap within the council's area.
-5. **Postcode lookup:**
-   * If a valid UK postcode is available, the script looks up the postcode on Postcodes.io to get its geographic centre.
-6. **Village or community lookup:**
-   * If no postcode or building is available, the script looks up the community or village name to find its central coordinates.
+When a script runs, it looks for coordinates in this order:
 
-## Why coordinates use 5 decimal places
+1. **Manual pins (`geocache/manual_pins.json`):** Manually checked stops that are permanently locked against automated changes.
+2. **Saved reference stops (`geocache/stops_reference.json`):** Previously checked stops.
+3. **Council map layers:** Interactive GIS maps and map servers.
+4. **OpenStreetMap search:** Matching named buildings and streets via `scripts/upgrade_coordinates.py`.
+5. **Postcode lookup:** Postcode centroids from Postcodes.io.
+6. **Community lookup:** Village centre fallbacks from Postcodes.io.
 
-All coordinates (`GeoX` longitude and `GeoY` latitude) are stored to **5 decimal places** (for example, `53.02340` and `-3.56120`).
+## Upgrading coordinates automatically
 
-Here is why:
-* **The right size:** In the UK, 5 decimal places is accurate to about 1 metre. A mobile library is a large vehicle (usually 8 to 11 metres long), so 1 metre is accurate enough to pinpoint the exact parking bay, village hall layby, or school gates.
-* **Avoiding false precision:** Using 7 or 8 decimal places would suggest we know where the van parks down to the nearest millimetre, which is unrealistic.
-* **Smaller file sizes:** Keeping coordinates to 5 decimal places keeps the files compact and easy to download.
+To search OpenStreetMap for named buildings (schools, village halls, pubs) and streets that currently have rough village coordinates:
 
-## Keeping stops within council boundaries
+```bash
+# Upgrade stops for one council
+python scripts/upgrade_coordinates.py --authority leicestershire --limit 50
 
-Sometimes different places across the country share the same name (for example, there is a Newport in Wales, Shropshire, and the Isle of Wight).
+# Run across all councils
+python scripts/upgrade_coordinates.py --all --limit 100
+```
 
-To stop computer tools from placing a stop in the wrong county:
-1. **Boundary boxes:** Every council has an official boundary area stored in `geocache/authority_bboxes.json`.
-2. **Automatic checking:** When an address is converted into map coordinates, the script checks whether the coordinates fall inside that council's area. If they fall outside, they are rejected.
-3. **Leaving unknown spots blank:** If a location cannot be verified with confidence, we leave the coordinates blank rather than guessing or putting a pin in the wrong place.
-
-## How we can improve accuracy
-
-We are actively working to upgrade stops from postcode or village level to exact building and parking space coordinates:
-
-1. **Scraping council interactive maps:**
-   * Many councils publish PDF brochures for the public, but also have public GIS maps or web map finders where exact coordinates are stored. We can connect our scrapers directly to these map layers.
-2. **Matching community buildings in OpenStreetMap:**
-   * Over 2,300 stops (28%) explicitly name a building like a village hall, church, school, or pub. We can search OpenStreetMap for the named building within that community to find its exact building outline and car park.
-3. **What3words in council leaflets:**
-   * Some councils (such as Highland and Cornwall) print what3words addresses in their timetables. Converting these gives an exact 3-metre square location.
-4. **Local knowledge and manual checks:**
-   * Contributors can check stops using satellite imagery or street-level photos to find the actual layby or parking bay, and save the coordinates using the manual geocoding tool.
+Matches are checked against the council boundary, saved to the council CSV, and cached.
 
 ## Checking and updating coordinates manually
 
-To make manual review quick and ensure that verified coordinates are never overwritten by automated scrapers, we have a manual geocoding tool (`scripts/manual_geocode.py`).
+You can review stops on Street View and lock in exact coordinates so automated scripts never overwrite them:
 
-### 1. Exporting stops that need review
-
-To export a prioritized review spreadsheet:
+### 1. Export the review queue
 
 ```bash
 python scripts/manual_geocode.py --export-queue
 ```
 
-This creates `data/geocoding_review_queue.csv`, sorted with the most uncertain stops at the top:
-* **High priority:** Stops that only have village or community centre coordinates (about 1 kilometre estimated radius).
-* **Medium priority:** Stops that only have postcode centre coordinates (about 100 metres estimated radius).
-* **Low priority:** Stops that already have exact council GIS or verified coordinates.
+This creates `data/geocoding_review_queue.csv` sorted by priority (rough village centres first), with direct Google Maps and Street View links for each stop.
 
-Each row in the spreadsheet includes:
-* Direct links to Google Maps and Street View pre-centred on the stop.
-* Empty columns for `new_latitude`, `new_longitude`, and `notes`.
+### 2. Import completed coordinates
 
-### 2. Importing your verified coordinates
-
-Once you have checked a stop on Google Maps or Street View and filled in the coordinates:
+After adding coordinates in the spreadsheet:
 
 ```bash
 python scripts/manual_geocode.py --import-queue data/geocoding_review_queue.csv
 ```
 
-This automatically:
-1. Updates the council's CSV file in `data/`.
-2. Adds the verified coordinates to `geocache/manual_pins.json`.
-3. Locks the coordinates so automated scrapers will never overwrite your manual work.
+This updates the council CSV and saves the coordinates to `geocache/manual_pins.json`.
 
-### 3. Updating a single stop directly
-
-You can also update and lock a single stop from the command line:
+### 3. Update a single stop directly
 
 ```bash
 python scripts/manual_geocode.py --update --authority conwy --community "Capel Curig" --stop "Caffi Siabod" --lat 53.10264 --lon -3.90615 --notes "Checked on Street View"
 ```
 
-## Accuracy dataset and map properties
+## Accuracy dataset and map files
 
-To see the accuracy of every stop in the nationwide dataset, check:
-* **`data/uk_mobile_library_stops_accuracy.csv`**: A companion dataset listing every stop alongside its accuracy tier (`exact`, `landmark`, `postcode`, or `community`), estimated error radius in metres, and whether it has been manually verified.
-* **`data/uk_mobile_library_stops.geojson`**: Every map pin includes `accuracy_tier`, `geocoding_source`, `estimated_radius_m`, and `verified` properties so map viewers can style pins by accuracy (for example, showing exact pins in green and community centroids in orange).
+* **`data/uk_mobile_library_stops_accuracy.csv`**: Lists every stop with its accuracy level (`exact`, `landmark`, `postcode`, or `community`), estimated error radius, and verification status.
+* **`data/uk_mobile_library_stops.geojson`**: Includes accuracy properties on every map pin for styling in GIS or web maps.

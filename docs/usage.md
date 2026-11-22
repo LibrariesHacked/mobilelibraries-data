@@ -53,11 +53,14 @@ By default, the script uses the free OpenStreetMap road network (OSRM) with no s
 
 All route files are saved in `data/routes/`. For more information, see [driving routes between stops](routing.md).
 
-## 4. Checking and improving stop coordinates manually
+## 4. Improving stop coordinates
 
-To check stop accuracy, review uncertain stops on Street View, and lock in exact coordinates so scrapers never overwrite them:
+To improve coordinates automatically or check uncertain stops on Street View:
 
 ```bash
+# Search OpenStreetMap for named buildings and streets
+python scripts/upgrade_coordinates.py --authority leicestershire --limit 50
+
 # Export stops sorted by review priority with Street View links
 python scripts/manual_geocode.py --export-queue
 
