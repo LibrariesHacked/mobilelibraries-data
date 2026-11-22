@@ -8,6 +8,7 @@ Mobile library vehicles travel on public roads between scheduled stops. Rather t
 
 * **Driving order:** Stops on each route are automatically sorted by their scheduled arrival time, so the path follows the van's real journey through the day.
 * **Travel measurements:** The script measures the driving distance in metres and the estimated driving time in seconds between each stop.
+* **Efficient change detection:** The script checks the coordinates on each route against existing route files. If no stop coordinates have changed on that route, it reuses the existing geometry, only requesting new road paths for routes where a stop has actually moved.
 
 ## Routing services
 
