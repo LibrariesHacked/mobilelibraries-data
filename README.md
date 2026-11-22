@@ -7,6 +7,13 @@ This project collects and publishes open data about UK mobile library services. 
 
 It is part of the [Libraries Hacked](https://www.librarieshacked.org) project. For background and analysis, see the [Mobile Library Data Project](https://blog.librarydata.uk/mobile-library-data-project).
 
+## The data at a glance
+
+* **8,195 stops** across the UK
+* **1,255 routes** on regular visiting cycles
+* **101 mobile library vehicles** operated by 48 library services
+* **Over 90%** of stop coordinates mapped to an exact building, parking space, or postcode
+
 ## Getting started
 
 ### What you need
