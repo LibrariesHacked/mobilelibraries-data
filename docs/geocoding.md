@@ -11,6 +11,14 @@ Depending on the information published by the council, stops fall into one of fo
 * **Postcode centre (within 50 to 200 metres):** The geographic centre of the postcode.
 * **Community centre (within 500 metres to 2 kilometres):** The village or settlement centre, used when a council only publishes a village name.
 
+Currently, across all 8,195 stops in the UK dataset:
+* **Postcode centre:** 46.0% (3,773 stops)
+* **Exact stop / council GIS:** 25.0% (2,051 stops)
+* **Named building / landmark:** 19.8% (1,626 stops)
+* **Community centre fallback:** 9.1% (745 stops)
+
+Over 90% of all stops across the UK are mapped to an exact stop, physical building, or postcode.
+
 Coordinates are stored to 5 decimal places (e.g. `53.02340`, `-3.56120`), which gives about 1-metre precision on the ground.
 
 Each council also has a boundary box in `geocache/authority_bboxes.json` to ensure coordinates stay within the right area.
