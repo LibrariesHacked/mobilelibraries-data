@@ -48,5 +48,5 @@ All individual council route files are stored in `data/routes/`:
 
 All council routes are also combined into single nationwide files:
 
-* **`data/uk_mobile_library_routes.csv`**: All 6,940 scheduled road trip legs across all 48 UK mobile library services.
+* **`data/uk_mobile_library_routes.csv`**: All 6,937 scheduled road trip legs across all 48 UK mobile library services.
 * **`data/uk_mobile_library_routes.geojson`**: Compact GeoJSON file containing all 1,160 route line geometries for the entire UK.

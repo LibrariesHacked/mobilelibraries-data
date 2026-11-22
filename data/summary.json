@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-22T21:53:36.122475+00:00",
+  "generated_at": "2026-11-22T22:12:03.879205+00:00",
   "national_totals": {
     "authorities_with_mobile_service": 48,
     "active_vehicles": 101,
     "routes": 1255,
-    "stops": 8195,
-    "trips": 6940,
-    "distance_km": 62172.9,
-    "distance_miles": 38632.4,
-    "duration_hours": 1177.6,
-    "average_trip_distance_km": 8.96,
-    "average_trip_distance_miles": 5.57,
-    "average_trip_duration_minutes": 10.2
+    "stops": 8192,
+    "trips": 6937,
+    "distance_km": 61324.8,
+    "distance_miles": 38105.5,
+    "duration_hours": 1165.5,
+    "average_trip_distance_km": 8.84,
+    "average_trip_distance_miles": 5.49,
+    "average_trip_duration_minutes": 10.1
   },
   "coordinate_accuracy": {
     "exact": {
@@ -19,19 +19,19 @@
       "percentage": 25.0
     },
     "landmark": {
-      "count": 1626,
+      "count": 1624,
       "percentage": 19.8
     },
     "postcode": {
       "count": 3773,
-      "percentage": 46.0
+      "percentage": 46.1
     },
     "community": {
-      "count": 745,
+      "count": 744,
       "percentage": 9.1
     },
     "high_confidence_total": {
-      "count": 7450,
+      "count": 7448,
       "percentage": 90.9
     }
   },
@@ -301,9 +301,9 @@
       "duration_hours": 14.8,
       "accuracy": {
         "exact": 0,
-        "landmark": 35,
+        "landmark": 36,
         "postcode": 78,
-        "community": 6
+        "community": 5
       }
     },
     {
@@ -547,10 +547,10 @@
       "vehicles": 1,
       "routes": 16,
       "stops": 42,
-      "trips": 26,
-      "distance_km": 1576.7,
-      "distance_miles": 979.7,
-      "duration_hours": 22.8,
+      "trips": 0,
+      "distance_km": 0.0,
+      "distance_miles": 0.0,
+      "duration_hours": 0.0,
       "accuracy": {
         "exact": 3,
         "landmark": 23,
@@ -709,10 +709,10 @@
       "vehicles": 1,
       "routes": 16,
       "stops": 107,
-      "trips": 91,
-      "distance_km": 1337.3,
-      "distance_miles": 830.9,
-      "duration_hours": 25.9,
+      "trips": 0,
+      "distance_km": 0.0,
+      "distance_miles": 0.0,
+      "duration_hours": 0.0,
       "accuracy": {
         "exact": 0,
         "landmark": 39,
@@ -744,14 +744,14 @@
       "dataset_slug": "staffordshire",
       "vehicles": 2,
       "routes": 10,
-      "stops": 56,
-      "trips": 46,
+      "stops": 55,
+      "trips": 45,
       "distance_km": 733.0,
       "distance_miles": 455.4,
       "duration_hours": 13.5,
       "accuracy": {
         "exact": 1,
-        "landmark": 32,
+        "landmark": 31,
         "postcode": 10,
         "community": 13
       }
@@ -870,14 +870,14 @@
       "dataset_slug": "worcestershire",
       "vehicles": 1,
       "routes": 20,
-      "stops": 207,
-      "trips": 187,
-      "distance_km": 894.3,
-      "distance_miles": 555.7,
-      "duration_hours": 21.7,
+      "stops": 205,
+      "trips": 185,
+      "distance_km": 784.8,
+      "distance_miles": 487.7,
+      "duration_hours": 19.9,
       "accuracy": {
         "exact": 0,
-        "landmark": 42,
+        "landmark": 40,
         "postcode": 165,
         "community": 0
       }

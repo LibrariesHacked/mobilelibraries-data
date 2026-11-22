@@ -15,7 +15,7 @@ import requests
 from pathlib import Path
 import pdfplumber
 
-from _common import create_mobile_library_file, normalise_postcode
+from _common import create_mobile_library_file, normalise_postcode, clean_time_24h
 from geocoder import Geocoder
 
 AUTHORITY_NAME = 'Somerset'
@@ -43,15 +43,8 @@ def download_raw_pdf():
 
 
 def parse_time_str(t_str):
-    """Extract the first HH:MM or H.MM time from t_str and return zero-padded HH:MM, or ''."""
-    if not t_str:
-        return ''
-    cleaned = t_str.strip().replace('.', ':')
-    match = re.search(r'(\d{1,2}):(\d{2})', cleaned)
-    if match:
-        h, m = int(match.group(1)), int(match.group(2))
-        return f"{h:02d}:{m:02d}"
-    return ''
+    """Normalise time string to 24-hour HH:MM format using clean_time_24h."""
+    return clean_time_24h(t_str)
 
 
 
@@ -136,7 +129,7 @@ def run():
         geo = geocoder.resolve(AUTHORITY_NAME, comm, stop_name, postcode=pc, address=addr)
         geox = geo.get('geox', '')
         geoy = geo.get('geoy', '')
-        final_pc = geo.get('postcode') or pc
+        final_pc = pc or geo.get('postcode') or ''
 
         processed_stops.append({
             'Local authority': AUTHORITY_NAME,

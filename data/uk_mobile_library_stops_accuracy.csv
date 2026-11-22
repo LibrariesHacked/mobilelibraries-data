@@ -1778,7 +1778,7 @@ Fife,S12000047,East Fife Mobile Library,East Fife Mobile Library Tuesday Route 2
 Fife,S12000047,East Fife Mobile Library,East Fife Mobile Library Tuesday Route 2,Giffordtown,Main Street,"Main Street, Giffordtown, Fife",KY15 7UW,-3.14812,56.28749,postcode,postcode_centroid,100,False
 Fife,S12000047,East Fife Mobile Library,East Fife Mobile Library Tuesday Route 2,Dunshalt,Regent Terrace,"Regent Terrace, Dunshalt, Fife",KY14 7HL,-3.21268,56.28137,postcode,postcode_centroid,100,False
 Fife,S12000047,East Fife Mobile Library,East Fife Mobile Library Tuesday Route 2,Freuchie,Albany Cres. Car park,"Albany Cres. Car park, Freuchie, Fife",KY15 7EL,-3.15786,56.24775,landmark,named_facility,25,False
-Fife,S12000047,East Fife Mobile Library,East Fife Mobile Library Wednesday Route 1,,Little Beehive Nursery,"Little Beehive Nursery, , Fife",,-3.14950,56.20820,community,settlement_centroid,1000,False
+Fife,S12000047,East Fife Mobile Library,East Fife Mobile Library Wednesday Route 1,Strathkinness,Little Beehive Nursery,"Little Beehive Nursery, Strathkinness, Fife, KY16 9SA",KY16 9SA,-2.87641,56.33059,landmark,named_facility,25,False
 Fife,S12000047,East Fife Mobile Library,East Fife Mobile Library Wednesday Route 1,Strathkinness,Church Road,"Church Road, Strathkinness, Fife",KY16 9SD,-2.87470,56.33592,landmark,named_facility,25,False
 Fife,S12000047,East Fife Mobile Library,East Fife Mobile Library Wednesday Route 1,Strathkinness,Strathkinness Primary School,"Strathkinness Primary School, Strathkinness, Fife",KY16 9SD,-2.87611,56.33595,landmark,named_facility,25,False
 Fife,S12000047,East Fife Mobile Library,East Fife Mobile Library Wednesday Route 1,Guardbridge,Guardbridge Primary School,"Guardbridge Primary School, Guardbridge, Fife",KY16 0UE,-2.89355,56.36563,landmark,named_facility,25,False
@@ -6380,109 +6380,109 @@ Shropshire,E06000051,Sabrina Mobile Library,Sabrina Mobile Library - Route 9,Car
 Shropshire,E06000051,Sabrina Mobile Library,Sabrina Mobile Library - Route 9,Wall,hardstanding,"hardstanding, Wall, Shropshire",,-2.72463,52.52873,exact,council_gis,10,False
 Shropshire,E06000051,Sabrina Mobile Library,Sabrina Mobile Library - Route 9,Aston Munslow,The Swan Inn,"The Swan Inn, Aston Munslow, Shropshire",,-2.71947,52.47567,exact,council_gis,10,False
 Shropshire,E06000051,Sabrina Mobile Library,Sabrina Mobile Library - Route 9,All Stretton,Village Hall,"Village Hall, All Stretton, Shropshire",,-2.79893,52.55412,exact,council_gis,10,False
-Somerset,E06000066,Somerset Mobile Library,Route A - Tuesday,Exford,Centre,"Centre, Exford, Somerset, TA24 7PU",TA24 7PU,-3.64087,51.13265,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route A - Tuesday,Brompton Regis,Lower Holworthy,"Lower Holworthy, Brompton Regis, Somerset, TA22 9NY",TA22 9NY,-3.45626,51.07374,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route A - Tuesday,Brompton Regis,South Greenslade Farm,"South Greenslade Farm, Brompton Regis, Somerset, TA22 9NU",TA22 9NU,-3.47537,51.06482,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route A - Tuesday,Brompton Regis,George Inn,"George Inn, Brompton Regis, Somerset, TA22 9NL",TA22 9NL,-3.49911,51.07304,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route A - Tuesday,Brompton Regis,Combeshead,"Combeshead, Brompton Regis, Somerset, TA22 9LE",TA22 9LE,-3.51497,51.08688,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route A - Tuesday,Bridgetown (Exe Valley),Week Lane,"Week Lane, Bridgetown (Exe Valley), Somerset, TA22 9JN",TA22 9JN,-3.54004,51.08737,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route A - Tuesday,Winsford,Winsford Centre,"Winsford Centre, Winsford, Somerset, TA24 7JQ",TA24 7JQ,-3.56524,51.10372,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,West Camel,Davis Hall,"Davis Hall, West Camel, Somerset, BA22 7QW",BA22 7QW,-2.60571,51.02053,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,Ilchester,West Street/Pill Bridge Lane,"West Street/Pill Bridge Lane, Ilchester, Somerset, BA22 8NW",BA22 8NW,-2.68532,50.99982,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,Ilchester,Taranto Hill,"Taranto Hill, Ilchester, Somerset, BA22 8JP",BA22 8JP,-2.68322,51.01120,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route A - Tuesday,Exford,Centre,"Centre, Exford, Somerset, TA24 7PU",TA24 7PU,-3.64087,51.13265,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,Templecombe,Sticky Fingers Playgroup,"Sticky Fingers Playgroup, Templecombe, Somerset, BA8 0HP",BA8 0HP,-2.41608,51.00247,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,Horsington,The Half Moon Inn,"The Half Moon Inn, Horsington, Somerset, BA8 0EF",BA8 0EF,-2.42681,51.01291,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,Charlton Horethorne,Village Stores,"Village Stores, Charlton Horethorne, Somerset, DT9 4NS",DT9 4NS,-2.48194,51.01118,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,South Barrow,South Barrow Church,"South Barrow Church, South Barrow, Somerset, BA22 7LN",BA22 7LN,-2.56898,51.04970,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,Rimpton,Home Farm Lane,"Home Farm Lane, Rimpton, Somerset, BA22 8AS",BA22 8AS,-2.56411,50.99535,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route C - Thursday,Sparkford,Village Hall,"Village Hall, Sparkford, Somerset, BA22 7JZ",BA22 7JZ,-2.56072,51.03034,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route C - Thursday,Butleigh,Village Stores,"Village Stores, Butleigh, Somerset, BA6 8TH",DT9 4NS,-2.48194,51.01118,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,West Camel,Davis Hall,"Davis Hall, West Camel, Somerset, BA22 7QW",BA22 7QW,-2.60571,51.02053,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,Ilchester,West Street/Pill Bridge Lane,"West Street/Pill Bridge Lane, Ilchester, Somerset, BA22 8NW",BA22 8NW,-2.68532,50.99982,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route B - Wednesday,Ilchester,Taranto Hill,"Taranto Hill, Ilchester, Somerset, BA22 8JP",BA22 8JP,-2.68322,51.01120,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route C - Thursday,Butleigh,Village Stores,"Village Stores, Butleigh, Somerset, BA6 8TH",BA6 8TH,-2.68395,51.09512,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route C - Thursday,Baltonsborough,Baltonsborough Village Hall,"Baltonsborough Village Hall, Baltonsborough, Somerset, BA6 8PN",BA6 8PN,-2.63280,51.11258,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route C - Thursday,Southwood,Middle Farm,"Middle Farm, Southwood, Somerset, BA6 8PG",BA6 8PG,-2.63409,51.09777,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route C - Thursday,Barton St David,Main Street (Telephone box),"Main Street (Telephone box), Barton St David, Somerset, TA11 6BX",TA11 6BX,-2.65687,51.08514,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route C - Thursday,Keinton Mandeville,Queen Street Layby,"Queen Street Layby, Keinton Mandeville, Somerset, TA11 6EH",TA11 6EH,-2.64434,51.07067,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route C - Thursday,Babcary,Baker Street (Bus shelter),"Baker Street (Bus shelter), Babcary, Somerset, TA11 7DU",TA11 7DU,-2.62625,51.05541,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route C - Thursday,Sparkford,Village Hall,"Village Hall, Sparkford, Somerset, BA22 7JZ",BA22 7JZ,-2.56072,51.03034,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Stogumber,Village Car Park,"Village Car Park, Stogumber, Somerset, TA4 3TQ",TA4 3TQ,-3.28876,51.12669,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Monksilver,Notley Arms,"Notley Arms, Monksilver, Somerset, TA4 4JB",TA4 4JB,-3.32589,51.12917,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Roadwater,Village Hall,"Village Hall, Roadwater, Somerset, TA23 0RE",TA23 0RE,-3.38154,51.13943,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Cutcombe,Higher Park Lane,"Higher Park Lane, Cutcombe, Somerset, TA25 7AG",TA25 7AG,-3.53416,51.14120,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Minehead,Butlins,"Butlins, Minehead, Somerset, TA24 5SH",TA24 5SH,-3.45899,51.20595,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Blue Anchor,Blue Anchor Bay Garage,"Blue Anchor Bay Garage, Blue Anchor, Somerset, TA24 6JZ",TA24 6JZ,-3.40355,51.17864,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Watchet,Watchet Children’s Centre,"Watchet Children’s Centre, Watchet, Somerset, TA23 0EX",TA23 0EX,-3.32112,51.17712,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Stogumber,Village Car Park,"Village Car Park, Stogumber, Somerset, TA4 3TQ",TA4 3TQ,-3.28876,51.12669,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Monksilver,Notley Arms,"Notley Arms, Monksilver, Somerset, TA4 4JB",TA4 4JB,-3.32589,51.12917,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Roadwater,Village Hall,"Village Hall, Roadwater, Somerset, TA23 0RE",BA22 7JZ,-2.56072,51.03034,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route D - Friday,Cutcombe,Higher Park Lane,"Higher Park Lane, Cutcombe, Somerset, TA25 7AG",TA24 7AG,-3.53416,51.14120,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route E - Tuesday,Odcombe,Westbury Gardens,"Westbury Gardens, Odcombe, Somerset, BA22 8UR",BA22 8UR,-2.70509,50.93449,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route E - Tuesday,East Coker,Helyar Arms,"Helyar Arms, East Coker, Somerset, BA22 9JR",BA22 9JR,-2.65292,50.90870,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route E - Tuesday,Chiselborough,Village Hall,"Village Hall, Chiselborough, Somerset, TA14 6TR",BA22 7JZ,-2.56072,51.03034,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route E - Tuesday,Chiselborough,Village Hall,"Village Hall, Chiselborough, Somerset, TA14 6TR",TA14 6TR,-2.75750,50.93031,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route E - Tuesday,Norton sub Hamdon,Higher Steet/Little Street,"Higher Steet/Little Street, Norton sub Hamdon, Somerset, TA14 6SN",TA14 6SN,-2.75945,50.93814,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route E - Tuesday,Merriott,Church,"Church, Merriott, Somerset, TA16 5PT",TA16 5PT,-2.79663,50.91155,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route E - Tuesday,West Chinnock,Noticeboard,"Noticeboard, West Chinnock, Somerset, TA18 7PT",TA18 7PT,-2.75711,50.91992,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route E - Tuesday,East Chinnock,Weston Street,"Weston Street, East Chinnock, Somerset, BA22 9EQ",BA22 9EQ,-2.72062,50.91627,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route E - Tuesday,Odcombe,Westbury Gardens,"Westbury Gardens, Odcombe, Somerset, BA22 8UR",BA22 8UR,-2.70509,50.93449,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route E - Tuesday,East Coker,Helyar Arms,"Helyar Arms, East Coker, Somerset, BA22 9JR",BA22 9JR,-2.65292,50.90870,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route F - Wednesday,Blagdon Hill,Adcombe Close/Lamb & Flag,"Adcombe Close/Lamb & Flag, Blagdon Hill, Somerset, TA3 7SL",TA3 7SL,-3.12483,50.95650,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route F - Wednesday,Stapley,Pear Tree Cottage,"Pear Tree Cottage, Stapley, Somerset, TA3 7QB",TA3 7QB,-3.15134,50.91921,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route F - Wednesday,Churchinford,Churchinford Village Hall,"Churchinford Village Hall, Churchinford, Somerset, TA3 7RG",TA3 7RG,-3.11991,50.90801,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route F - Wednesday,Tatworth,Tatworth Memorial Hall,"Tatworth Memorial Hall, Tatworth, Somerset, TA20 2QA",TA20 2QA,-2.94928,50.84264,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route F - Wednesday,Winsham,Davies Close,"Davies Close, Winsham, Somerset, TA20 4JL",TA20 4JL,-2.89333,50.85350,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route F - Wednesday,Chillington,Moor Cottage,"Moor Cottage, Chillington, Somerset, TA19 0PT",TA19 0PT,-2.87027,50.88878,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Stogursey,Greyhound Inn,"Greyhound Inn, Stogursey, Somerset, TA5 1QR",TA5 1QR,-3.14133,51.18062,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Stogursey,Town Close (No 30),"Town Close (No 30), Stogursey, Somerset, TA5 1RN",TA5 1RN,-3.14683,51.18147,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Kilve,Hill Top,"Hill Top, Kilve, Somerset, TA5 1SR",TA5 1SR,-3.20668,51.17736,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Cannington,Brook Street,"Brook Street, Cannington, Somerset, TA5 2HP",TA5 2HP,-3.06108,51.15012,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Combwich,Harbour,"Harbour, Combwich, Somerset, TA5 2QU",TA5 2QU,-3.06107,51.17449,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Combwich,Combwich Post Office,"Combwich Post Office, Combwich, Somerset, TA5 2QW",TA5 2QW,-3.06567,51.17314,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Stockland Bristol,Sports Club,"Sports Club, Stockland Bristol, Somerset, TA5 2PZ",TA5 2PZ,-3.08964,51.18633,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Shurton,The Babbling Brook Inn,"The Babbling Brook Inn, Shurton, Somerset, TA5 1QE",TA5 1QE,-3.14359,51.19239,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Wedmore,Central Car Park,"Central Car Park, Wedmore, Somerset, BS28 4AN",BS28 4AN,-2.81370,51.22737,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Bagley,Snake Lane,"Snake Lane, Bagley, Somerset, BS28 4TD",BS28 4TD,-2.77402,51.21128,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Brent Knoll,Old Post Office,"Old Post Office, Brent Knoll, Somerset, TA9 4DT",TA4 3SB,-3.24606,51.08428,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Stogursey,Greyhound Inn,"Greyhound Inn, Stogursey, Somerset, TA5 1QR",TA5 1QR,-3.14133,51.18062,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Stogursey,Town Close (No 30),"Town Close (No 30), Stogursey, Somerset, TA5 1RN",TA5 1RN,-3.14683,51.18147,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route G - Thursday,Kilve,Hill Top,"Hill Top, Kilve, Somerset, TA5 1SR",TA5 1SR,-3.20668,51.17736,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Brent Knoll,Old Post Office,"Old Post Office, Brent Knoll, Somerset, TA9 4DT",TA9 4DT,-2.95087,51.24684,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Lympsham,Village Shop Layby,"Village Shop Layby, Lympsham, Somerset, BS24 0DS",BS24 0DS,-2.95307,51.28292,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route H - Friday,East Brent,East Drive (off Strowlands),"East Drive (off Strowlands), East Brent, Somerset, TA9 4JQ",TA9 4JQ,-2.93295,51.26326,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Biddisham,Yew Tree Nursery,"Yew Tree Nursery, Biddisham, Somerset, BS26 2SA",BS26 2SA,-2.88900,51.26983,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Shipham,Village Hall,"Village Hall, Shipham, Somerset, BS25 1TX",BA22 7JZ,-2.56072,51.03034,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Shipham,Village Hall,"Village Hall, Shipham, Somerset, BS25 1TX",BS25 1TX,-2.79823,51.31535,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Badgworth,Old School,"Old School, Badgworth, Somerset, BS26 2QP",BS26 2QP,-2.86769,51.26849,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Chapel Allerton,Front Street,"Front Street, Chapel Allerton, Somerset, BS26 2PB",BS26 2PB,-2.85011,51.24666,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Wedmore,Central Car Park,"Central Car Park, Wedmore, Somerset, BS28 4AN",BS28 4AN,-2.81370,51.22737,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route H - Friday,Bagley,Snake Lane,"Snake Lane, Bagley, Somerset, BS28 4TD",BS28 4TD,-2.77402,51.21128,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route I - Tuesday,Greenham,Greenham Bridge,"Greenham Bridge, Greenham, Somerset, TA21 0JN",TA21 0JN,-3.31267,50.97336,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route I - Tuesday,Lydeard St Lawrence,Old Post Office,"Old Post Office, Lydeard St Lawrence, Somerset, TA4 3SB",TA4 3SB,-3.24606,51.08428,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route I - Tuesday,Cotford St Luke,Graham Way,"Graham Way, Cotford St Luke, Somerset, TA4 1GQ",TA4 1GQ,-3.18693,51.03788,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route I - Tuesday,Hillfarance,Hillfarance Church,"Hillfarance Church, Hillfarance, Somerset, TA4 1AW",TA4 1AW,-3.18975,51.01550,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route J - Wednesday,Chantry,Bullen Mead,"Bullen Mead, Chantry, Somerset, BA11 3LG",BA11 3LG,-2.40820,51.21985,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route J - Wednesday,Benter,Fire Engine,"Fire Engine, Benter, Somerset, BA3 5BJ",BA3 5BJ,-2.51100,51.24250,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route J - Wednesday,Stratton-on-the-Fosse,Red House Farm,"Red House Farm, Stratton-on-the-Fosse, Somerset, BA3 4QE",BA3 4QE,-2.46887,51.27017,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route J - Wednesday,Coleford,British Legion Car park,"British Legion Car park, Coleford, Somerset, BA3 5PB",BA3 5PB,-2.45158,51.24355,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route J - Wednesday,Stoke St Michael,St Michael’s Close,"St Michael’s Close, Stoke St Michael, Somerset, BA3 5LG",BA3 5LG,-2.48323,51.22242,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route J - Wednesday,Leigh upon Mendip,Vicky’s Place,"Vicky’s Place, Leigh upon Mendip, Somerset, BA3 5QQ",BA3 5QQ,-2.44352,51.22347,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route K - Thursday,East Lydford,Blossomfield,"Blossomfield, East Lydford, Somerset, TA11 7HD",TA11 7HD,-2.60946,51.07834,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route K - Thursday,West Lydford,Old School,"Old School, West Lydford, Somerset, TA11 7DB",TA11 7DB,-2.62139,51.08135,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route J - Wednesday,Chantry,Bullen Mead,"Bullen Mead, Chantry, Somerset, BA11 3LG",BA11 3LG,-2.40820,51.21985,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route K - Thursday,Prestleigh,Next Steps Children’s Centre,"Next Steps Children’s Centre, Prestleigh, Somerset, BA4 6QL",BA4 6QL,-2.52350,51.15580,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route K - Thursday,North Wootton,Church Hall,"Church Hall, North Wootton, Somerset, BA4 4HA",BA4 4HA,-2.62601,51.17382,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route K - Thursday,Doulting,Doulting School Car Park,"Doulting School Car Park, Doulting, Somerset, BA4 4PL",BA4 4PL,-2.50548,51.18846,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route K - Thursday,Evercreech,Gartons Mead,"Gartons Mead, Evercreech, Somerset, BA4 6JH",BA4 6JH,-2.50652,51.14402,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route K - Thursday,East Lydford,Blossomfield,"Blossomfield, East Lydford, Somerset, TA11 7HD",TA11 7HD,-2.60946,51.07834,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route K - Thursday,West Lydford,Old School,"Old School, West Lydford, Somerset, TA11 7DB",TA11 7DB,-2.62139,51.08135,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route L - Friday,Norton St Philip,Tellisford Lane Estate,"Tellisford Lane Estate, Norton St Philip, Somerset, BA2 7LL",BA2 7LL,-2.32060,51.29872,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route L - Friday,Rode,High Street,"High Street, Rode, Somerset, BA11 6PB",BA11 6PB,-2.28082,51.28508,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route L - Friday,Pen Selwood,Old Orchard layby,"Old Orchard layby, Pen Selwood, Somerset, BA9 8NE",BA9 8NE,-2.33946,51.07812,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Westham,Westham Farm,"Westham Farm, Westham, Somerset, BS28 4UR",BS28 4UR,-2.84404,51.21561,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Burtle,Burtle Rd,"Burtle Rd, Burtle, Somerset, TA7 8NB",TA7 8NB,-2.86016,51.18432,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Edington,Lower Holywell Rd,"Lower Holywell Rd, Edington, Somerset, TA7 9LB",TA7 9LB,-2.87571,51.15621,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Chilton Polden,Old Vicarage Close,"Old Vicarage Close, Chilton Polden, Somerset, TA7 9DY",TA7 9DY,-2.89382,51.15438,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Pawlett,Grange Way,"Grange Way, Pawlett, Somerset, TA6 4SF",TA6 4SF,-3.00371,51.17956,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Puriton,Puriton Village Hall,"Puriton Village Hall, Puriton, Somerset, TA7 8BP",TA7 8BP,-2.97675,51.16921,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Catcott,King William Road Bus Stop,"King William Road Bus Stop, Catcott, Somerset, TA7 9HT",TA7 9HT,-2.86489,51.15016,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Ashcott,Middle St,"Middle St, Ashcott, Somerset, TA7 9QB",TA7 9QB,-2.80664,51.12976,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Shapwick,Cricket Club,"Cricket Club, Shapwick, Somerset, TA7 9LN",TA7 9LN,-2.83224,51.13995,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Westham,Westham Farm,"Westham Farm, Westham, Somerset, BS28 4UR",BS28 4UR,-2.84404,51.21561,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Burtle,Burtle Rd,"Burtle Rd, Burtle, Somerset, TA7 8NB",TA7 8NB,-2.86016,51.18432,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Edington,Lower Holywell Rd,"Lower Holywell Rd, Edington, Somerset, TA7 9LB",TA7 9LB,-2.87571,51.15621,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route M - Tuesday,Chilton Polden,Old Vicarage Close,"Old Vicarage Close, Chilton Polden, Somerset, TA7 9DY",TA7 9DY,-2.89382,51.15438,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Monkton Heathfield,Village Hall,"Village Hall, Monkton Heathfield, Somerset, TA2 8QZ",TA2 8QZ,-3.05465,51.05249,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Kingston St Mary,Leach’s Field,"Leach’s Field, Kingston St Mary, Somerset, TA2 8JL",TA2 8JL,-3.11546,51.06027,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Spaxton,Village Hall,"Village Hall, Spaxton, Somerset, TA5 1BS",TA5 1BS,-3.10667,51.12561,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Goathurst,Entrance to Halswell House,"Entrance to Halswell House, Goathurst, Somerset, TA5 2DE",TA5 2DE,-3.06306,51.10437,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Durston,Durston Village Hall,"Durston Village Hall, Durston, Somerset, TA3 5AG",TA3 5AG,-3.01543,51.04763,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Durston,"Outwood Rd, Station Post Box","Outwood Rd, Station Post Box, Durston, Somerset, TA3 5AJ",TA3 5AJ,-2.99128,51.04971,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,North Curry,Queens Square,"Queens Square, North Curry, Somerset, TA3 6JS",TA3 6JS,-2.97271,51.02334,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Stoke St Gregory,Church,"Church, Stoke St Gregory, Somerset, TA3 6EG",TA16 5PT,-2.79663,50.91155,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Monkton Heathfield,Village Hall,"Village Hall, Monkton Heathfield, Somerset, TA2 8QZ",BA22 7JZ,-2.56072,51.03034,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Kingston St Mary,Leach’s Field,"Leach’s Field, Kingston St Mary, Somerset, TA2 8JL",TA2 8JL,-3.11546,51.06027,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Spaxton,Village Hall,"Village Hall, Spaxton, Somerset, TA5 1BS",BA22 7JZ,-2.56072,51.03034,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Goathurst,Entrance to Halswell House,"Entrance to Halswell House, Goathurst, Somerset, TA5 2DE",TA5 2DE,-3.06306,51.10437,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Isle Brewers,Willow Trees,"Willow Trees, Isle Brewers, Somerset, TA3 6QN",TA3 6QN,-2.90035,50.98495,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Beercrocombe,Allen’s Farm,"Allen’s Farm, Beercrocombe, Somerset, TA3 6AG",TA3 6AG,-2.96597,50.97907,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Creech St Michael,Village Hall,"Village Hall, Creech St Michael, Somerset, TA3 5QQ",BA22 7JZ,-2.56072,51.03034,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Hatch Beauchamp,Village Hall,"Village Hall, Hatch Beauchamp, Somerset, TA3 6SQ",BA22 7JZ,-2.56072,51.03034,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route N - Wednesday,Stoke St Gregory,Church,"Church, Stoke St Gregory, Somerset, TA3 6EG",TA3 6EG,-2.93336,51.03925,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Creech St Michael,Village Hall,"Village Hall, Creech St Michael, Somerset, TA3 5QQ",TA3 5QQ,-3.03889,51.02544,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Hatch Beauchamp,Village Hall,"Village Hall, Hatch Beauchamp, Somerset, TA3 6SQ",TA3 6SQ,-2.99260,50.97886,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Broadway,Bus Stop,"Bus Stop, Broadway, Somerset, TA19 9RG",TA19 9RG,-2.96554,50.93447,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Ilton,Merrifields,"Merrifields, Ilton, Somerset, TA19 9HA",TA19 9HA,-2.93122,50.95088,postcode,postcode_centroid,100,False
-Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Isle Abbotts,Village Hall,"Village Hall, Isle Abbotts, Somerset, TA3 6RR",BA22 7JZ,-2.56072,51.03034,landmark,named_facility,25,False
-Somerset,E06000066,Somerset Mobile Library,Route P - Friday,Bawdrip,Church,"Church, Bawdrip, Somerset, TA7 8PY",TA16 5PT,-2.79663,50.91155,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Isle Abbotts,Village Hall,"Village Hall, Isle Abbotts, Somerset, TA3 6RR",TA3 6RR,-2.92864,50.98073,landmark,named_facility,25,False
+Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Isle Brewers,Willow Trees,"Willow Trees, Isle Brewers, Somerset, TA3 6QN",TA3 6QN,-2.90035,50.98495,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route O - Thursday,Beercrocombe,Allen’s Farm,"Allen’s Farm, Beercrocombe, Somerset, TA3 6AG",TA3 6AG,-2.96597,50.97907,postcode,postcode_centroid,100,False
+Somerset,E06000066,Somerset Mobile Library,Route P - Friday,Bawdrip,Church,"Church, Bawdrip, Somerset, TA7 8PY",TA7 8PY,-2.94308,51.15134,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route P - Friday,Stawell,Stawell Village Hall,"Stawell Village Hall, Stawell, Somerset, TA7 9AE",TA7 9AE,-2.90314,51.14004,landmark,named_facility,25,False
 Somerset,E06000066,Somerset Mobile Library,Route P - Friday,Moorlinch,"Tapmoor Road, Junction","Tapmoor Road, Junction, Moorlinch, Somerset, TA7 9BZ",TA7 9BZ,-2.86994,51.13193,postcode,postcode_centroid,100,False
 Somerset,E06000066,Somerset Mobile Library,Route P - Friday,Westonzoyland,Community Centre,"Community Centre, Westonzoyland, Somerset, TA7 0EX",TA7 0EX,-2.92218,51.10990,landmark,named_facility,25,False
@@ -6619,7 +6619,6 @@ Staffordshire,E10000028,Mobile 1,Week 2 - Monday,Salt,The Holly Bush,"The Holly 
 Staffordshire,E10000028,Mobile 1,Week 2 - Monday,Kingstone,Whitehall Close,"Whitehall Close, Kingstone, Staffordshire",ST14 8RN,-1.90976,52.86350,landmark,named_facility,25,False
 Staffordshire,E10000028,Mobile 1,Week 2 - Monday,Stowe,Church,"Church, Stowe, Staffordshire",,-2.22175,52.71085,landmark,community_facility,50,False
 Staffordshire,E10000028,Mobile 1,Week 2 - Monday,Hixon,Village Hall,"Village Hall, Hixon, Staffordshire",,-1.87684,52.74175,landmark,community_facility,50,False
-Staffordshire,E10000028,Mobile 1,Week 2 - Thursday,Bradwell,Bradwell Methodist Church,"Bradwell Methodist Church, Bradwell, Staffordshire",ST5 8NW,-2.23261,53.04106,landmark,named_facility,25,False
 Staffordshire,E10000028,Mobile 1,Week 2 - Thursday,Bradwell,Bradwell Methodist Church,"Bradwell Methodist Church, Bradwell, Staffordshire",ST5 8NW,-2.23261,53.04106,landmark,named_facility,25,False
 Staffordshire,E10000028,Mobile 1,Week 2 - Thursday,Wolstanton,Bus stop opposite Moreton Parade,"Bus stop opposite Moreton Parade, Wolstanton, Staffordshire",,-2.22017,53.03089,community,settlement_centroid,1000,False
 Staffordshire,E10000028,Mobile 1,Week 2 - Tuesday,Shareshill,Opposite St. Mary's Close,"Opposite St. Mary's Close, Shareshill, Staffordshire",WV10 7LA,-2.08365,52.65705,postcode,postcode_centroid,100,False
@@ -8149,7 +8148,6 @@ Worcestershire,E10000034,County Mobile Library,Week 1 Monday,Bushley,Village Hal
 Worcestershire,E10000034,County Mobile Library,Week 1 Monday,Longdon,Village Hall,"Village Hall, Longdon",GL20 6AZ,-2.23915,52.02391,landmark,named_facility,25,False
 Worcestershire,E10000034,County Mobile Library,Week 1 Friday,Shrawley,Village Hall,"Village Hall, Shrawley",WR6 6TT,-2.28771,52.28354,landmark,named_facility,25,False
 Worcestershire,E10000034,County Mobile Library,Week 2 Tuesday,Crowle,Village Hall,"Village Hall, Crowle",WR7 4AZ,-2.11533,52.19856,landmark,named_facility,25,False
-Worcestershire,E10000034,County Mobile Library,Week 2 Tuesday,Crowle,Village Hall,"Village Hall, Crowle",WR7 4AZ,-2.11532,52.19856,landmark,named_facility,25,False
 Worcestershire,E10000034,County Mobile Library,Week 4 Wednesday,Little Witley,Village Hall,"Village Hall, Little Witley",WR6 6LS,-2.31664,52.27243,landmark,named_facility,25,False
 Worcestershire,E10000034,County Mobile Library,Week 4 Tuesday,Aston Somerville,Village Hall,"Village Hall, Aston Somerville",WR12 7JD,-1.93442,52.04369,landmark,named_facility,25,False
 Worcestershire,E10000034,County Mobile Library,Week 4 Tuesday,Middle Littleton,Village Hall,"Village Hall, Middle Littleton",WR11 8LJ,-1.88788,52.12084,landmark,named_facility,25,False
@@ -8158,7 +8156,6 @@ Worcestershire,E10000034,County Mobile Library,Week 3 Friday,Stoke Bliss,Village
 Worcestershire,E10000034,County Mobile Library,Week 4 Thursday,Rock,Village Hall,"Village Hall, Rock",DY14 9SD,-2.39190,52.33787,landmark,named_facility,25,False
 Worcestershire,E10000034,County Mobile Library,Week 4 Friday,Honeybourne,Village Hall,"Village Hall, Honeybourne",WR11 7RH,-1.83088,52.09251,landmark,named_facility,25,False
 Worcestershire,E10000034,County Mobile Library,Week 1 Thursday,Castlemorton,Village Hall,"Village Hall, Castlemorton",WR13 6BE,-2.31332,52.03690,landmark,named_facility,25,False
-Worcestershire,E10000034,County Mobile Library,Week 1 Thursday,Castlemorton,Village Hall,"Village Hall, Castlemorton",DY12 1RU,-2.31085,52.42900,landmark,named_facility,25,False
 Worcestershire,E10000034,County Mobile Library,Week 3 Wednesday,Shatterford,Village Hall,"Village Hall, Shatterford",DY12 1RU,-2.31086,52.42900,landmark,named_facility,25,False
 Worcestershire,E10000034,County Mobile Library,Week 3 Wednesday,Pound Green,Village Hall and Pub,"Village Hall and Pub, Pound Green",DY12 3LL,-2.35899,52.41082,landmark,named_facility,25,False
 Worcestershire,E10000034,County Mobile Library,Week 2 Monday,Stoke Prior,Walls Road,"Walls Road, Stoke Prior",B60 4LZ,-2.08698,52.30334,postcode,postcode_centroid,100,False

@@ -7,7 +7,9 @@ withdrawn - see history/ for the archived stops.
 import csv
 from _common import create_mobile_library_file
 
-DATA_SOURCE = '../raw/birmingham.csv'
+from pathlib import Path
+ROOT_DIR = Path(__file__).resolve().parent.parent
+DATA_SOURCE = str(ROOT_DIR / 'raw' / 'birmingham.csv')
 
 
 def run():

@@ -58516,8 +58516,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.1495,
-          56.2082
+          -2.87641,
+          56.33059
         ]
       },
       "properties": {
@@ -58525,10 +58525,10 @@
         "Local authority code": "S12000047",
         "Mobile name": "East Fife Mobile Library",
         "Route": "East Fife Mobile Library Wednesday Route 1",
-        "Community": "",
+        "Community": "Strathkinness",
         "Stop": "Little Beehive Nursery",
-        "Address": "Little Beehive Nursery, , Fife",
-        "Postcode": "",
+        "Address": "Little Beehive Nursery, Strathkinness, Fife, KY16 9SA",
+        "Postcode": "KY16 9SA",
         "Day": "Wednesday",
         "Type": "Private",
         "Arrival": "10:00",
@@ -58538,9 +58538,9 @@
         "End": "2026-12-22",
         "Exceptions": "",
         "Timetable": "https://www.onfife.com/wp-content/uploads/2026/09/East-12.10.26-22.12.26.pdf",
-        "accuracy_tier": "community",
-        "geocoding_source": "settlement_centroid",
-        "estimated_radius_m": 1000,
+        "accuracy_tier": "landmark",
+        "geocoding_source": "named_facility",
+        "estimated_radius_m": 25,
         "verified": false
       }
     },
@@ -114136,7 +114136,7 @@
         "Postcode": "BT26 6NS",
         "Day": "Friday",
         "Type": "Public",
-        "Arrival": "00:30",
+        "Arrival": "12:30",
         "Departure": "13:00",
         "Frequency": "FREQ=WEEKLY;INTERVAL=2",
         "Start": "2026-01-05",
@@ -189640,8 +189640,8 @@
         "Postcode": "NG17 9BH",
         "Day": "Friday",
         "Type": "Public",
-        "Arrival": "02:00",
-        "Departure": "02:30",
+        "Arrival": "14:00",
+        "Departure": "14:30",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-01-05",
         "End": "2026-12-31",
@@ -210316,39 +210316,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.64087,
-          51.13265
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route A - Tuesday",
-        "Community": "Exford",
-        "Stop": "Centre",
-        "Address": "Centre, Exford, Somerset, TA24 7PU",
-        "Postcode": "TA24 7PU",
-        "Day": "Tuesday",
-        "Type": "Public",
-        "Arrival": "01:45",
-        "Departure": "02:10",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "landmark",
-        "geocoding_source": "named_facility",
-        "estimated_radius_m": 25,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -3.45626,
           51.07374
         ]
@@ -210547,23 +210514,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.60571,
-          51.02053
+          -3.64087,
+          51.13265
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route B - Wednesday",
-        "Community": "West Camel",
-        "Stop": "Davis Hall",
-        "Address": "Davis Hall, West Camel, Somerset, BA22 7QW",
-        "Postcode": "BA22 7QW",
-        "Day": "Wednesday",
+        "Route": "Route A - Tuesday",
+        "Community": "Exford",
+        "Stop": "Centre",
+        "Address": "Centre, Exford, Somerset, TA24 7PU",
+        "Postcode": "TA24 7PU",
+        "Day": "Tuesday",
         "Type": "Public",
-        "Arrival": "01:45",
-        "Departure": "02:10",
+        "Arrival": "13:45",
+        "Departure": "14:10",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -210572,72 +210539,6 @@
         "accuracy_tier": "landmark",
         "geocoding_source": "named_facility",
         "estimated_radius_m": 25,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.68532,
-          50.99982
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route B - Wednesday",
-        "Community": "Ilchester",
-        "Stop": "West Street/Pill Bridge Lane",
-        "Address": "West Street/Pill Bridge Lane, Ilchester, Somerset, BA22 8NW",
-        "Postcode": "BA22 8NW",
-        "Day": "Wednesday",
-        "Type": "Public",
-        "Arrival": "02:25",
-        "Departure": "02:55",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.68322,
-          51.0112
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route B - Wednesday",
-        "Community": "Ilchester",
-        "Stop": "Taranto Hill",
-        "Address": "Taranto Hill, Ilchester, Somerset, BA22 8JP",
-        "Postcode": "BA22 8JP",
-        "Day": "Wednesday",
-        "Type": "Public",
-        "Arrival": "03:05",
-        "Departure": "03:45",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -210811,23 +210712,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.56072,
-          51.03034
+          -2.60571,
+          51.02053
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route C - Thursday",
-        "Community": "Sparkford",
-        "Stop": "Village Hall",
-        "Address": "Village Hall, Sparkford, Somerset, BA22 7JZ",
-        "Postcode": "BA22 7JZ",
-        "Day": "Thursday",
+        "Route": "Route B - Wednesday",
+        "Community": "West Camel",
+        "Stop": "Davis Hall",
+        "Address": "Davis Hall, West Camel, Somerset, BA22 7QW",
+        "Postcode": "BA22 7QW",
+        "Day": "Wednesday",
         "Type": "Public",
-        "Arrival": "01:35",
-        "Departure": "02:00",
+        "Arrival": "13:45",
+        "Departure": "14:10",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -210844,8 +210745,74 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.48194,
-          51.01118
+          -2.68532,
+          50.99982
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route B - Wednesday",
+        "Community": "Ilchester",
+        "Stop": "West Street/Pill Bridge Lane",
+        "Address": "West Street/Pill Bridge Lane, Ilchester, Somerset, BA22 8NW",
+        "Postcode": "BA22 8NW",
+        "Day": "Wednesday",
+        "Type": "Public",
+        "Arrival": "14:25",
+        "Departure": "14:55",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.68322,
+          51.0112
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route B - Wednesday",
+        "Community": "Ilchester",
+        "Stop": "Taranto Hill",
+        "Address": "Taranto Hill, Ilchester, Somerset, BA22 8JP",
+        "Postcode": "BA22 8JP",
+        "Day": "Wednesday",
+        "Type": "Public",
+        "Arrival": "15:05",
+        "Departure": "15:45",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.68395,
+          51.09512
         ]
       },
       "properties": {
@@ -210856,7 +210823,7 @@
         "Community": "Butleigh",
         "Stop": "Village Stores",
         "Address": "Village Stores, Butleigh, Somerset, BA6 8TH",
-        "Postcode": "DT9 4NS",
+        "Postcode": "BA6 8TH",
         "Day": "Thursday",
         "Type": "Public",
         "Arrival": "09:45",
@@ -211042,89 +211009,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.45899,
-          51.20595
+          -2.56072,
+          51.03034
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route D - Friday",
-        "Community": "Minehead",
-        "Stop": "Butlins",
-        "Address": "Butlins, Minehead, Somerset, TA24 5SH",
-        "Postcode": "TA24 5SH",
-        "Day": "Friday",
+        "Route": "Route C - Thursday",
+        "Community": "Sparkford",
+        "Stop": "Village Hall",
+        "Address": "Village Hall, Sparkford, Somerset, BA22 7JZ",
+        "Postcode": "BA22 7JZ",
+        "Day": "Thursday",
         "Type": "Public",
-        "Arrival": "01:20",
-        "Departure": "01:35",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -3.40355,
-          51.17864
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route D - Friday",
-        "Community": "Blue Anchor",
-        "Stop": "Blue Anchor Bay Garage",
-        "Address": "Blue Anchor Bay Garage, Blue Anchor, Somerset, TA24 6JZ",
-        "Postcode": "TA24 6JZ",
-        "Day": "Friday",
-        "Type": "Public",
-        "Arrival": "01:50",
-        "Departure": "02:15",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -3.32112,
-          51.17712
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route D - Friday",
-        "Community": "Watchet",
-        "Stop": "Watchet Children’s Centre",
-        "Address": "Watchet Children’s Centre, Watchet, Somerset, TA23 0EX",
-        "Postcode": "TA23 0EX",
-        "Day": "Friday",
-        "Type": "Public",
-        "Arrival": "02:35",
-        "Departure": "02:50",
+        "Arrival": "13:35",
+        "Departure": "14:00",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -211207,8 +211108,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.56072,
-          51.03034
+          -3.38154,
+          51.13943
         ]
       },
       "properties": {
@@ -211219,7 +211120,7 @@
         "Community": "Roadwater",
         "Stop": "Village Hall",
         "Address": "Village Hall, Roadwater, Somerset, TA23 0RE",
-        "Postcode": "BA22 7JZ",
+        "Postcode": "TA23 0RE",
         "Day": "Friday",
         "Type": "Public",
         "Arrival": "10:50",
@@ -211252,7 +211153,7 @@
         "Community": "Cutcombe",
         "Stop": "Higher Park Lane",
         "Address": "Higher Park Lane, Cutcombe, Somerset, TA25 7AG",
-        "Postcode": "TA24 7AG",
+        "Postcode": "TA25 7AG",
         "Day": "Friday",
         "Type": "Public",
         "Arrival": "11:45",
@@ -211273,23 +211174,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.70509,
-          50.93449
+          -3.45899,
+          51.20595
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route E - Tuesday",
-        "Community": "Odcombe",
-        "Stop": "Westbury Gardens",
-        "Address": "Westbury Gardens, Odcombe, Somerset, BA22 8UR",
-        "Postcode": "BA22 8UR",
-        "Day": "Tuesday",
+        "Route": "Route D - Friday",
+        "Community": "Minehead",
+        "Stop": "Butlins",
+        "Address": "Butlins, Minehead, Somerset, TA24 5SH",
+        "Postcode": "TA24 5SH",
+        "Day": "Friday",
         "Type": "Public",
-        "Arrival": "01:10",
-        "Departure": "01:35",
+        "Arrival": "13:20",
+        "Departure": "13:35",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -211306,23 +211207,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.65292,
-          50.9087
+          -3.40355,
+          51.17864
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route E - Tuesday",
-        "Community": "East Coker",
-        "Stop": "Helyar Arms",
-        "Address": "Helyar Arms, East Coker, Somerset, BA22 9JR",
-        "Postcode": "BA22 9JR",
-        "Day": "Tuesday",
+        "Route": "Route D - Friday",
+        "Community": "Blue Anchor",
+        "Stop": "Blue Anchor Bay Garage",
+        "Address": "Blue Anchor Bay Garage, Blue Anchor, Somerset, TA24 6JZ",
+        "Postcode": "TA24 6JZ",
+        "Day": "Friday",
         "Type": "Public",
-        "Arrival": "01:50",
-        "Departure": "02:10",
+        "Arrival": "13:50",
+        "Departure": "14:15",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -211339,8 +211240,41 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.56072,
-          51.03034
+          -3.32112,
+          51.17712
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route D - Friday",
+        "Community": "Watchet",
+        "Stop": "Watchet Children’s Centre",
+        "Address": "Watchet Children’s Centre, Watchet, Somerset, TA23 0EX",
+        "Postcode": "TA23 0EX",
+        "Day": "Friday",
+        "Type": "Public",
+        "Arrival": "14:35",
+        "Departure": "14:50",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "landmark",
+        "geocoding_source": "named_facility",
+        "estimated_radius_m": 25,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7575,
+          50.93031
         ]
       },
       "properties": {
@@ -211351,7 +211285,7 @@
         "Community": "Chiselborough",
         "Stop": "Village Hall",
         "Address": "Village Hall, Chiselborough, Somerset, TA14 6TR",
-        "Postcode": "BA22 7JZ",
+        "Postcode": "TA14 6TR",
         "Day": "Tuesday",
         "Type": "Public",
         "Arrival": "09:30",
@@ -211496,6 +211430,72 @@
         "accuracy_tier": "landmark",
         "geocoding_source": "named_facility",
         "estimated_radius_m": 25,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.70509,
+          50.93449
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route E - Tuesday",
+        "Community": "Odcombe",
+        "Stop": "Westbury Gardens",
+        "Address": "Westbury Gardens, Odcombe, Somerset, BA22 8UR",
+        "Postcode": "BA22 8UR",
+        "Day": "Tuesday",
+        "Type": "Public",
+        "Arrival": "13:10",
+        "Departure": "13:35",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.65292,
+          50.9087
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route E - Tuesday",
+        "Community": "East Coker",
+        "Stop": "Helyar Arms",
+        "Address": "Helyar Arms, East Coker, Somerset, BA22 9JR",
+        "Postcode": "BA22 9JR",
+        "Day": "Tuesday",
+        "Type": "Public",
+        "Arrival": "13:50",
+        "Departure": "14:10",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -211702,105 +211702,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.14133,
-          51.18062
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route G - Thursday",
-        "Community": "Stogursey",
-        "Stop": "Greyhound Inn",
-        "Address": "Greyhound Inn, Stogursey, Somerset, TA5 1QR",
-        "Postcode": "TA5 1QR",
-        "Day": "Thursday",
-        "Type": "Public",
-        "Arrival": "01:10",
-        "Departure": "01:40",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "landmark",
-        "geocoding_source": "named_facility",
-        "estimated_radius_m": 25,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -3.14683,
-          51.18147
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route G - Thursday",
-        "Community": "Stogursey",
-        "Stop": "Town Close (No 30)",
-        "Address": "Town Close (No 30), Stogursey, Somerset, TA5 1RN",
-        "Postcode": "TA5 1RN",
-        "Day": "Thursday",
-        "Type": "Public",
-        "Arrival": "01:45",
-        "Departure": "02:10",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -3.20668,
-          51.17736
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route G - Thursday",
-        "Community": "Kilve",
-        "Stop": "Hill Top",
-        "Address": "Hill Top, Kilve, Somerset, TA5 1SR",
-        "Postcode": "TA5 1SR",
-        "Day": "Thursday",
-        "Type": "Public",
-        "Arrival": "02:20",
-        "Departure": "02:50",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -3.06108,
           51.15012
         ]
@@ -211966,23 +211867,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.8137,
-          51.22737
+          -3.14133,
+          51.18062
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route H - Friday",
-        "Community": "Wedmore",
-        "Stop": "Central Car Park",
-        "Address": "Central Car Park, Wedmore, Somerset, BS28 4AN",
-        "Postcode": "BS28 4AN",
-        "Day": "Friday",
+        "Route": "Route G - Thursday",
+        "Community": "Stogursey",
+        "Stop": "Greyhound Inn",
+        "Address": "Greyhound Inn, Stogursey, Somerset, TA5 1QR",
+        "Postcode": "TA5 1QR",
+        "Day": "Thursday",
         "Type": "Public",
-        "Arrival": "01:55",
-        "Departure": "02:25",
+        "Arrival": "13:10",
+        "Departure": "13:40",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -211999,23 +211900,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.77402,
-          51.21128
+          -3.14683,
+          51.18147
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route H - Friday",
-        "Community": "Bagley",
-        "Stop": "Snake Lane",
-        "Address": "Snake Lane, Bagley, Somerset, BS28 4TD",
-        "Postcode": "BS28 4TD",
-        "Day": "Friday",
+        "Route": "Route G - Thursday",
+        "Community": "Stogursey",
+        "Stop": "Town Close (No 30)",
+        "Address": "Town Close (No 30), Stogursey, Somerset, TA5 1RN",
+        "Postcode": "TA5 1RN",
+        "Day": "Thursday",
         "Type": "Public",
-        "Arrival": "02:40",
-        "Departure": "03:05",
+        "Arrival": "13:45",
+        "Departure": "14:10",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -212032,8 +211933,41 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.24606,
-          51.08428
+          -3.20668,
+          51.17736
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route G - Thursday",
+        "Community": "Kilve",
+        "Stop": "Hill Top",
+        "Address": "Hill Top, Kilve, Somerset, TA5 1SR",
+        "Postcode": "TA5 1SR",
+        "Day": "Thursday",
+        "Type": "Public",
+        "Arrival": "14:20",
+        "Departure": "14:50",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.95087,
+          51.24684
         ]
       },
       "properties": {
@@ -212044,7 +211978,7 @@
         "Community": "Brent Knoll",
         "Stop": "Old Post Office",
         "Address": "Old Post Office, Brent Knoll, Somerset, TA9 4DT",
-        "Postcode": "TA4 3SB",
+        "Postcode": "TA9 4DT",
         "Day": "Friday",
         "Type": "Public",
         "Arrival": "09:15",
@@ -212164,8 +212098,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.56072,
-          51.03034
+          -2.79823,
+          51.31535
         ]
       },
       "properties": {
@@ -212176,7 +212110,7 @@
         "Community": "Shipham",
         "Stop": "Village Hall",
         "Address": "Village Hall, Shipham, Somerset, BS25 1TX",
-        "Postcode": "BA22 7JZ",
+        "Postcode": "BS25 1TX",
         "Day": "Friday",
         "Type": "Public",
         "Arrival": "11:45",
@@ -212247,6 +212181,72 @@
         "Type": "Public",
         "Arrival": "12:50",
         "Departure": "13:10",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.8137,
+          51.22737
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route H - Friday",
+        "Community": "Wedmore",
+        "Stop": "Central Car Park",
+        "Address": "Central Car Park, Wedmore, Somerset, BS28 4AN",
+        "Postcode": "BS28 4AN",
+        "Day": "Friday",
+        "Type": "Public",
+        "Arrival": "13:55",
+        "Departure": "14:25",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "landmark",
+        "geocoding_source": "named_facility",
+        "estimated_radius_m": 25,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.77402,
+          51.21128
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route H - Friday",
+        "Community": "Bagley",
+        "Stop": "Snake Lane",
+        "Address": "Snake Lane, Bagley, Somerset, BS28 4TD",
+        "Postcode": "BS28 4TD",
+        "Day": "Friday",
+        "Type": "Public",
+        "Arrival": "14:40",
+        "Departure": "15:05",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -212387,39 +212387,6 @@
         "accuracy_tier": "landmark",
         "geocoding_source": "named_facility",
         "estimated_radius_m": 25,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.4082,
-          51.21985
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route J - Wednesday",
-        "Community": "Chantry",
-        "Stop": "Bullen Mead",
-        "Address": "Bullen Mead, Chantry, Somerset, BA11 3LG",
-        "Postcode": "BA11 3LG",
-        "Day": "Wednesday",
-        "Type": "Public",
-        "Arrival": "01:45",
-        "Departure": "02:00",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -212593,23 +212560,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.60946,
-          51.07834
+          -2.4082,
+          51.21985
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route K - Thursday",
-        "Community": "East Lydford",
-        "Stop": "Blossomfield",
-        "Address": "Blossomfield, East Lydford, Somerset, TA11 7HD",
-        "Postcode": "TA11 7HD",
-        "Day": "Thursday",
+        "Route": "Route J - Wednesday",
+        "Community": "Chantry",
+        "Stop": "Bullen Mead",
+        "Address": "Bullen Mead, Chantry, Somerset, BA11 3LG",
+        "Postcode": "BA11 3LG",
+        "Day": "Wednesday",
         "Type": "Public",
-        "Arrival": "01:35",
-        "Departure": "01:55",
+        "Arrival": "13:45",
+        "Departure": "14:00",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -212618,39 +212585,6 @@
         "accuracy_tier": "postcode",
         "geocoding_source": "postcode_centroid",
         "estimated_radius_m": 100,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.62139,
-          51.08135
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route K - Thursday",
-        "Community": "West Lydford",
-        "Stop": "Old School",
-        "Address": "Old School, West Lydford, Somerset, TA11 7DB",
-        "Postcode": "TA11 7DB",
-        "Day": "Thursday",
-        "Type": "Public",
-        "Arrival": "02:00",
-        "Departure": "02:30",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "landmark",
-        "geocoding_source": "named_facility",
-        "estimated_radius_m": 25,
         "verified": false
       }
     },
@@ -212791,6 +212725,72 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -2.60946,
+          51.07834
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route K - Thursday",
+        "Community": "East Lydford",
+        "Stop": "Blossomfield",
+        "Address": "Blossomfield, East Lydford, Somerset, TA11 7HD",
+        "Postcode": "TA11 7HD",
+        "Day": "Thursday",
+        "Type": "Public",
+        "Arrival": "13:35",
+        "Departure": "13:55",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.62139,
+          51.08135
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route K - Thursday",
+        "Community": "West Lydford",
+        "Stop": "Old School",
+        "Address": "Old School, West Lydford, Somerset, TA11 7DB",
+        "Postcode": "TA11 7DB",
+        "Day": "Thursday",
+        "Type": "Public",
+        "Arrival": "14:00",
+        "Departure": "14:30",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "landmark",
+        "geocoding_source": "named_facility",
+        "estimated_radius_m": 25,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           -2.3206,
           51.29872
         ]
@@ -212874,138 +212874,6 @@
         "Type": "Public",
         "Arrival": "12:25",
         "Departure": "12:50",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.84404,
-          51.21561
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route M - Tuesday",
-        "Community": "Westham",
-        "Stop": "Westham Farm",
-        "Address": "Westham Farm, Westham, Somerset, BS28 4UR",
-        "Postcode": "BS28 4UR",
-        "Day": "Tuesday",
-        "Type": "Public",
-        "Arrival": "01:15",
-        "Departure": "01:35",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.86016,
-          51.18432
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route M - Tuesday",
-        "Community": "Burtle",
-        "Stop": "Burtle Rd",
-        "Address": "Burtle Rd, Burtle, Somerset, TA7 8NB",
-        "Postcode": "TA7 8NB",
-        "Day": "Tuesday",
-        "Type": "Public",
-        "Arrival": "01:45",
-        "Departure": "02:15",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.87571,
-          51.15621
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route M - Tuesday",
-        "Community": "Edington",
-        "Stop": "Lower Holywell Rd",
-        "Address": "Lower Holywell Rd, Edington, Somerset, TA7 9LB",
-        "Postcode": "TA7 9LB",
-        "Day": "Tuesday",
-        "Type": "Public",
-        "Arrival": "02:30",
-        "Departure": "02:50",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "postcode",
-        "geocoding_source": "postcode_centroid",
-        "estimated_radius_m": 100,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.89382,
-          51.15438
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route M - Tuesday",
-        "Community": "Chilton Polden",
-        "Stop": "Old Vicarage Close",
-        "Address": "Old Vicarage Close, Chilton Polden, Somerset, TA7 9DY",
-        "Postcode": "TA7 9DY",
-        "Day": "Tuesday",
-        "Type": "Public",
-        "Arrival": "03:00",
-        "Departure": "03:25",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -213187,56 +213055,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -3.01543,
-          51.04763
+          -2.84404,
+          51.21561
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route N - Wednesday",
-        "Community": "Durston",
-        "Stop": "Durston Village Hall",
-        "Address": "Durston Village Hall, Durston, Somerset, TA3 5AG",
-        "Postcode": "TA3 5AG",
-        "Day": "Wednesday",
+        "Route": "Route M - Tuesday",
+        "Community": "Westham",
+        "Stop": "Westham Farm",
+        "Address": "Westham Farm, Westham, Somerset, BS28 4UR",
+        "Postcode": "BS28 4UR",
+        "Day": "Tuesday",
         "Type": "Public",
-        "Arrival": "01:20",
-        "Departure": "01:40",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
-        "Start": "2026-04-01",
-        "End": "2027-03-31",
-        "Exceptions": "",
-        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "landmark",
-        "geocoding_source": "named_facility",
-        "estimated_radius_m": 25,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.99128,
-          51.04971
-        ]
-      },
-      "properties": {
-        "Local authority": "Somerset",
-        "Local authority code": "E06000066",
-        "Mobile name": "Somerset Mobile Library",
-        "Route": "Route N - Wednesday",
-        "Community": "Durston",
-        "Stop": "Outwood Rd, Station Post Box",
-        "Address": "Outwood Rd, Station Post Box, Durston, Somerset, TA3 5AJ",
-        "Postcode": "TA3 5AJ",
-        "Day": "Wednesday",
-        "Type": "Public",
-        "Arrival": "01:45",
-        "Departure": "02:05",
+        "Arrival": "13:15",
+        "Departure": "13:35",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -213253,23 +213088,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.97271,
-          51.02334
+          -2.86016,
+          51.18432
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route N - Wednesday",
-        "Community": "North Curry",
-        "Stop": "Queens Square",
-        "Address": "Queens Square, North Curry, Somerset, TA3 6JS",
-        "Postcode": "TA3 6JS",
-        "Day": "Wednesday",
+        "Route": "Route M - Tuesday",
+        "Community": "Burtle",
+        "Stop": "Burtle Rd",
+        "Address": "Burtle Rd, Burtle, Somerset, TA7 8NB",
+        "Postcode": "TA7 8NB",
+        "Day": "Tuesday",
         "Type": "Public",
-        "Arrival": "02:15",
-        "Departure": "02:55",
+        "Arrival": "13:45",
+        "Departure": "14:15",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -213286,31 +213121,31 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.79663,
-          50.91155
+          -2.87571,
+          51.15621
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route N - Wednesday",
-        "Community": "Stoke St Gregory",
-        "Stop": "Church",
-        "Address": "Church, Stoke St Gregory, Somerset, TA3 6EG",
-        "Postcode": "TA16 5PT",
-        "Day": "Wednesday",
+        "Route": "Route M - Tuesday",
+        "Community": "Edington",
+        "Stop": "Lower Holywell Rd",
+        "Address": "Lower Holywell Rd, Edington, Somerset, TA7 9LB",
+        "Postcode": "TA7 9LB",
+        "Day": "Tuesday",
         "Type": "Public",
-        "Arrival": "03:05",
-        "Departure": "03:45",
+        "Arrival": "14:30",
+        "Departure": "14:50",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
         "Exceptions": "",
         "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
-        "accuracy_tier": "landmark",
-        "geocoding_source": "named_facility",
-        "estimated_radius_m": 25,
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
         "verified": false
       }
     },
@@ -213319,8 +213154,41 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.56072,
-          51.03034
+          -2.89382,
+          51.15438
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route M - Tuesday",
+        "Community": "Chilton Polden",
+        "Stop": "Old Vicarage Close",
+        "Address": "Old Vicarage Close, Chilton Polden, Somerset, TA7 9DY",
+        "Postcode": "TA7 9DY",
+        "Day": "Tuesday",
+        "Type": "Public",
+        "Arrival": "15:00",
+        "Departure": "15:25",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.05465,
+          51.05249
         ]
       },
       "properties": {
@@ -213331,7 +213199,7 @@
         "Community": "Monkton Heathfield",
         "Stop": "Village Hall",
         "Address": "Village Hall, Monkton Heathfield, Somerset, TA2 8QZ",
-        "Postcode": "BA22 7JZ",
+        "Postcode": "TA2 8QZ",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "09:10",
@@ -213385,8 +213253,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.56072,
-          51.03034
+          -3.10667,
+          51.12561
         ]
       },
       "properties": {
@@ -213397,7 +213265,7 @@
         "Community": "Spaxton",
         "Stop": "Village Hall",
         "Address": "Village Hall, Spaxton, Somerset, TA5 1BS",
-        "Postcode": "BA22 7JZ",
+        "Postcode": "TA5 1BS",
         "Day": "Wednesday",
         "Type": "Public",
         "Arrival": "11:10",
@@ -213451,23 +213319,56 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.90035,
-          50.98495
+          -3.01543,
+          51.04763
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route O - Thursday",
-        "Community": "Isle Brewers",
-        "Stop": "Willow Trees",
-        "Address": "Willow Trees, Isle Brewers, Somerset, TA3 6QN",
-        "Postcode": "TA3 6QN",
-        "Day": "Thursday",
+        "Route": "Route N - Wednesday",
+        "Community": "Durston",
+        "Stop": "Durston Village Hall",
+        "Address": "Durston Village Hall, Durston, Somerset, TA3 5AG",
+        "Postcode": "TA3 5AG",
+        "Day": "Wednesday",
         "Type": "Public",
-        "Arrival": "01:30",
-        "Departure": "02:00",
+        "Arrival": "13:20",
+        "Departure": "13:40",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "landmark",
+        "geocoding_source": "named_facility",
+        "estimated_radius_m": 25,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.99128,
+          51.04971
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route N - Wednesday",
+        "Community": "Durston",
+        "Stop": "Outwood Rd, Station Post Box",
+        "Address": "Outwood Rd, Station Post Box, Durston, Somerset, TA3 5AJ",
+        "Postcode": "TA3 5AJ",
+        "Day": "Wednesday",
+        "Type": "Public",
+        "Arrival": "13:45",
+        "Departure": "14:05",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -213484,23 +213385,23 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.96597,
-          50.97907
+          -2.97271,
+          51.02334
         ]
       },
       "properties": {
         "Local authority": "Somerset",
         "Local authority code": "E06000066",
         "Mobile name": "Somerset Mobile Library",
-        "Route": "Route O - Thursday",
-        "Community": "Beercrocombe",
-        "Stop": "Allen’s Farm",
-        "Address": "Allen’s Farm, Beercrocombe, Somerset, TA3 6AG",
-        "Postcode": "TA3 6AG",
-        "Day": "Thursday",
+        "Route": "Route N - Wednesday",
+        "Community": "North Curry",
+        "Stop": "Queens Square",
+        "Address": "Queens Square, North Curry, Somerset, TA3 6JS",
+        "Postcode": "TA3 6JS",
+        "Day": "Wednesday",
         "Type": "Public",
-        "Arrival": "02:10",
-        "Departure": "02:40",
+        "Arrival": "14:15",
+        "Departure": "14:55",
         "Frequency": "FREQ=WEEKLY;INTERVAL=4",
         "Start": "2026-04-01",
         "End": "2027-03-31",
@@ -213517,8 +213418,41 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.56072,
-          51.03034
+          -2.93336,
+          51.03925
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route N - Wednesday",
+        "Community": "Stoke St Gregory",
+        "Stop": "Church",
+        "Address": "Church, Stoke St Gregory, Somerset, TA3 6EG",
+        "Postcode": "TA3 6EG",
+        "Day": "Wednesday",
+        "Type": "Public",
+        "Arrival": "15:05",
+        "Departure": "15:45",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "landmark",
+        "geocoding_source": "named_facility",
+        "estimated_radius_m": 25,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.03889,
+          51.02544
         ]
       },
       "properties": {
@@ -213529,7 +213463,7 @@
         "Community": "Creech St Michael",
         "Stop": "Village Hall",
         "Address": "Village Hall, Creech St Michael, Somerset, TA3 5QQ",
-        "Postcode": "BA22 7JZ",
+        "Postcode": "TA3 5QQ",
         "Day": "Thursday",
         "Type": "Public",
         "Arrival": "09:10",
@@ -213550,8 +213484,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.56072,
-          51.03034
+          -2.9926,
+          50.97886
         ]
       },
       "properties": {
@@ -213562,7 +213496,7 @@
         "Community": "Hatch Beauchamp",
         "Stop": "Village Hall",
         "Address": "Village Hall, Hatch Beauchamp, Somerset, TA3 6SQ",
-        "Postcode": "BA22 7JZ",
+        "Postcode": "TA3 6SQ",
         "Day": "Thursday",
         "Type": "Public",
         "Arrival": "10:15",
@@ -213649,8 +213583,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.56072,
-          51.03034
+          -2.92864,
+          50.98073
         ]
       },
       "properties": {
@@ -213661,7 +213595,7 @@
         "Community": "Isle Abbotts",
         "Stop": "Village Hall",
         "Address": "Village Hall, Isle Abbotts, Somerset, TA3 6RR",
-        "Postcode": "BA22 7JZ",
+        "Postcode": "TA3 6RR",
         "Day": "Thursday",
         "Type": "Public",
         "Arrival": "12:15",
@@ -213682,8 +213616,74 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.79663,
-          50.91155
+          -2.90035,
+          50.98495
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route O - Thursday",
+        "Community": "Isle Brewers",
+        "Stop": "Willow Trees",
+        "Address": "Willow Trees, Isle Brewers, Somerset, TA3 6QN",
+        "Postcode": "TA3 6QN",
+        "Day": "Thursday",
+        "Type": "Public",
+        "Arrival": "13:30",
+        "Departure": "14:00",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.96597,
+          50.97907
+        ]
+      },
+      "properties": {
+        "Local authority": "Somerset",
+        "Local authority code": "E06000066",
+        "Mobile name": "Somerset Mobile Library",
+        "Route": "Route O - Thursday",
+        "Community": "Beercrocombe",
+        "Stop": "Allen’s Farm",
+        "Address": "Allen’s Farm, Beercrocombe, Somerset, TA3 6AG",
+        "Postcode": "TA3 6AG",
+        "Day": "Thursday",
+        "Type": "Public",
+        "Arrival": "14:10",
+        "Departure": "14:40",
+        "Frequency": "FREQ=WEEKLY;INTERVAL=4",
+        "Start": "2026-04-01",
+        "End": "2027-03-31",
+        "Exceptions": "",
+        "Timetable": "https://www.somerset.gov.uk/libraries/mobile-library/",
+        "accuracy_tier": "postcode",
+        "geocoding_source": "postcode_centroid",
+        "estimated_radius_m": 100,
+        "verified": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.94308,
+          51.15134
         ]
       },
       "properties": {
@@ -213694,7 +213694,7 @@
         "Community": "Bawdrip",
         "Stop": "Church",
         "Address": "Church, Bawdrip, Somerset, TA7 8PY",
-        "Postcode": "TA16 5PT",
+        "Postcode": "TA7 8PY",
         "Day": "Friday",
         "Type": "Public",
         "Arrival": "09:30",
@@ -218195,39 +218195,6 @@
         "accuracy_tier": "landmark",
         "geocoding_source": "community_facility",
         "estimated_radius_m": 50,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.23261,
-          53.04106
-        ]
-      },
-      "properties": {
-        "Local authority": "Staffordshire",
-        "Local authority code": "E10000028",
-        "Mobile name": "Mobile 1",
-        "Route": "Week 2 - Thursday",
-        "Community": "Bradwell",
-        "Stop": "Bradwell Methodist Church",
-        "Address": "Bradwell Methodist Church, Bradwell, Staffordshire",
-        "Postcode": "ST5 8NW",
-        "Day": "Thursday",
-        "Type": "Public",
-        "Arrival": "09:30",
-        "Departure": "10:00",
-        "Frequency": "FREQ=WEEKLY;INTERVAL=2",
-        "Start": "2026-01-05",
-        "End": "",
-        "Exceptions": "",
-        "Timetable": "https://www.staffordshire.gov.uk/libraries/mobile-libraries/mobile-1-thursdays-week-2",
-        "accuracy_tier": "landmark",
-        "geocoding_source": "named_facility",
-        "estimated_radius_m": 25,
         "verified": false
       }
     },
@@ -264979,8 +264946,8 @@
         "Postcode": "WR8 9EF",
         "Day": "Tuesday",
         "Type": "Public",
-        "Arrival": "02:15",
-        "Departure": "02:30",
+        "Arrival": "14:15",
+        "Departure": "14:30",
         "Frequency": "FREQ=MONTHLY;BYDAY=3TU",
         "Start": "2026-01-01",
         "End": "2027-12-31",
@@ -268693,39 +268660,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -2.11532,
-          52.19856
-        ]
-      },
-      "properties": {
-        "Local authority": "Worcestershire",
-        "Local authority code": "E10000034",
-        "Mobile name": "County Mobile Library",
-        "Route": "Week 2 Tuesday",
-        "Community": "Crowle",
-        "Stop": "Village Hall",
-        "Address": "Village Hall, Crowle",
-        "Postcode": "WR7 4AZ",
-        "Day": "Tuesday",
-        "Type": "Public",
-        "Arrival": "09:40",
-        "Departure": "10:00",
-        "Frequency": "FREQ=MONTHLY;BYDAY=2TU",
-        "Start": "2026-01-01",
-        "End": "2027-12-31",
-        "Exceptions": "",
-        "Timetable": "https://www.worcestershire.gov.uk/council-services/worcestershire-libraries/your-library-membership/mobile-library",
-        "accuracy_tier": "landmark",
-        "geocoding_source": "named_facility",
-        "estimated_radius_m": 25,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           -2.31664,
           52.27243
         ]
@@ -268972,41 +268906,8 @@
         "Postcode": "WR13 6BE",
         "Day": "Thursday",
         "Type": "Public",
-        "Arrival": "01:45",
-        "Departure": "02:00",
-        "Frequency": "FREQ=MONTHLY;BYDAY=1TH",
-        "Start": "2026-01-01",
-        "End": "2027-12-31",
-        "Exceptions": "",
-        "Timetable": "https://www.worcestershire.gov.uk/council-services/worcestershire-libraries/your-library-membership/mobile-library",
-        "accuracy_tier": "landmark",
-        "geocoding_source": "named_facility",
-        "estimated_radius_m": 25,
-        "verified": false
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.31085,
-          52.429
-        ]
-      },
-      "properties": {
-        "Local authority": "Worcestershire",
-        "Local authority code": "E10000034",
-        "Mobile name": "County Mobile Library",
-        "Route": "Week 1 Thursday",
-        "Community": "Castlemorton",
-        "Stop": "Village Hall",
-        "Address": "Village Hall, Castlemorton",
-        "Postcode": "DY12 1RU",
-        "Day": "Thursday",
-        "Type": "Public",
-        "Arrival": "01:45",
-        "Departure": "02:00",
+        "Arrival": "13:45",
+        "Departure": "14:00",
         "Frequency": "FREQ=MONTHLY;BYDAY=1TH",
         "Start": "2026-01-01",
         "End": "2027-12-31",

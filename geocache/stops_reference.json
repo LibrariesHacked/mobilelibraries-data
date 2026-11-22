@@ -193403,5 +193403,113 @@
     "source": "osm_search",
     "accuracy": "street",
     "updated_at": "2026-11-22"
+  },
+  "somerset::butleigh::villagestores": {
+    "authority": "Somerset",
+    "community": "Butleigh",
+    "stop": "Village Stores",
+    "postcode": "BA6 8TH",
+    "geox": -2.68395,
+    "geoy": 51.09512,
+    "source": "postcode_api"
+  },
+  "somerset::roadwater::villagehall": {
+    "authority": "Somerset",
+    "community": "Roadwater",
+    "stop": "Village Hall",
+    "postcode": "TA23 0RE",
+    "geox": -3.38154,
+    "geoy": 51.13943,
+    "source": "postcode_api"
+  },
+  "somerset::chiselborough::villagehall": {
+    "authority": "Somerset",
+    "community": "Chiselborough",
+    "stop": "Village Hall",
+    "postcode": "TA14 6TR",
+    "geox": -2.7575,
+    "geoy": 50.93031,
+    "source": "postcode_api"
+  },
+  "somerset::brentknoll::oldpostoffice": {
+    "authority": "Somerset",
+    "community": "Brent Knoll",
+    "stop": "Old Post Office",
+    "postcode": "TA9 4DT",
+    "geox": -2.95087,
+    "geoy": 51.24684,
+    "source": "postcode_api"
+  },
+  "somerset::shipham::villagehall": {
+    "authority": "Somerset",
+    "community": "Shipham",
+    "stop": "Village Hall",
+    "postcode": "BS25 1TX",
+    "geox": -2.79823,
+    "geoy": 51.31535,
+    "source": "postcode_api"
+  },
+  "somerset::monktonheathfield::villagehall": {
+    "authority": "Somerset",
+    "community": "Monkton Heathfield",
+    "stop": "Village Hall",
+    "postcode": "TA2 8QZ",
+    "geox": -3.05465,
+    "geoy": 51.05249,
+    "source": "postcode_api"
+  },
+  "somerset::spaxton::villagehall": {
+    "authority": "Somerset",
+    "community": "Spaxton",
+    "stop": "Village Hall",
+    "postcode": "TA5 1BS",
+    "geox": -3.10667,
+    "geoy": 51.12561,
+    "source": "postcode_api"
+  },
+  "somerset::stokestgregory::church": {
+    "authority": "Somerset",
+    "community": "Stoke St Gregory",
+    "stop": "Church",
+    "postcode": "TA3 6EG",
+    "geox": -2.93336,
+    "geoy": 51.03925,
+    "source": "postcode_api"
+  },
+  "somerset::creechstmichael::villagehall": {
+    "authority": "Somerset",
+    "community": "Creech St Michael",
+    "stop": "Village Hall",
+    "postcode": "TA3 5QQ",
+    "geox": -3.03889,
+    "geoy": 51.02544,
+    "source": "postcode_api"
+  },
+  "somerset::hatchbeauchamp::villagehall": {
+    "authority": "Somerset",
+    "community": "Hatch Beauchamp",
+    "stop": "Village Hall",
+    "postcode": "TA3 6SQ",
+    "geox": -2.9926,
+    "geoy": 50.97886,
+    "source": "postcode_api"
+  },
+  "somerset::isleabbotts::villagehall": {
+    "authority": "Somerset",
+    "community": "Isle Abbotts",
+    "stop": "Village Hall",
+    "postcode": "TA3 6RR",
+    "geox": -2.92864,
+    "geoy": 50.98073,
+    "source": "postcode_api"
+  },
+  "somerset::bawdrip::church": {
+    "authority": "Somerset",
+    "community": "Bawdrip",
+    "stop": "Church",
+    "postcode": "TA7 8PY",
+    "geox": -2.94308,
+    "geoy": 51.15134,
+    "source": "postcode_api"
   }
 }

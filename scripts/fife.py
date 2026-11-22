@@ -142,11 +142,12 @@ def parse_pdf_timetable(pdf_path: str, vehicle: str, source_url: str):
                         if "," in loc_raw:
                             parts = [p.strip() for p in loc_raw.split(",", 1)]
                             stop_name = parts[0]
-                            community = parts[1]
+                            community = parts[1] or ("Strathkinness" if "Little Beehive" in stop_name else "")
                         else:
-                            # E.g. "Thornton Primary School" or "Boarhills"
-                            # Strip school/nursery suffixes to derive the community name
-                            community = re.sub(r"\s+(Primary School|P\.S|Nursery|Kindergarten|Prim\.\s*School)$", "", loc_raw, flags=re.I).strip()
+                            if "Little Beehive" in loc_raw:
+                                community = "Strathkinness"
+                            else:
+                                community = re.sub(r"\s+(Primary School|P\.S|Nursery|Kindergarten|Prim\.\s*School)$", "", loc_raw, flags=re.I).strip()
                             stop_name = loc_raw
 
                         stops.append({

@@ -12,8 +12,10 @@ import csv
 from _common import create_mobile_library_file
 
 # Data extracted using https://gis1.westberks.gov.uk/arcgis/rest/services/maps/Wbc_Leisure/MapServer/1/query?f=json&returnGeometry=true&spatialRel=esriSpatialRelIntersects&geometry={%22xmin%22:-1.5881,%22ymin%22:51.329,%22xmax%22:51.5637,%22ymax%22:51.5637,%22spatialReference%22:{%22wkid%22:4326,%22latestWkid%22:4326}}&geometryType=esriGeometryEnvelope&inSR=4326&outFields=*&outSR=4326
-DATA_SOURCE = '../raw/west_berkshire.json'
-DATA_OUTPUT = '../data/west_berkshire.csv'
+from pathlib import Path
+ROOT_DIR = Path(__file__).resolve().parent.parent
+DATA_SOURCE = str(ROOT_DIR / 'raw' / 'west_berkshire.json')
+DATA_OUTPUT = str(ROOT_DIR / 'data' / 'west_berkshire.csv')
 TIMETABLE = 'http://info.westberks.gov.uk/mobilelibraries'
 
 def read_data(data_source):

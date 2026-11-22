@@ -10,8 +10,10 @@ from datetime import datetime
 from _common import create_mobile_library_file
 
 # The original raw data for Aberdeenshire is web JSON data
-DATA_SOURCE = '../raw/aberdeenshire.json'
-DATA_OUTPUT = '../data/aberdeenshire.csv'
+from pathlib import Path
+ROOT_DIR = Path(__file__).resolve().parent.parent
+DATA_SOURCE = str(ROOT_DIR / 'raw' / 'aberdeenshire.json')
+DATA_OUTPUT = str(ROOT_DIR / 'data' / 'aberdeenshire.csv')
 
 
 def run():

@@ -9,11 +9,11 @@ It is part of the [Libraries Hacked](https://www.librarieshacked.org) project. F
 
 ## The data at a glance
 
-* **8,195 stops** across the UK
+* **8,192 stops** across the UK
 * **1,255 routes** on regular visiting cycles
 * **101 mobile library vehicles** operated by 48 library services
-* **62,170 km (38,630 miles)** of scheduled road routes across 6,940 trip legs
-* **10 minutes (9.0 km)** average driving time between stops
+* **61,320 km (38,100 miles)** of scheduled road routes across 6,937 trip legs
+* **10 minutes (8.8 km)** average driving time between stops
 * **Over 90%** of stop coordinates mapped to an exact building, parking space, or postcode
 
 ## Published datasets

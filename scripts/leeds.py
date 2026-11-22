@@ -11,12 +11,14 @@ import csv
 from _common import create_mobile_library_file
 
 # https://gis2.leeds.gov.uk/arcgis/rest/services/Public/Amenities/FeatureServer/3/query?f=json&returnGeometry=true&spatialRel=esriSpatialRelIntersects&geometry={"xmin":-2.0114,"ymin":53.6252,"xmax":-0.9429,"ymax":54.0337,"spatialReference":{"wkid":4326,"latestWkid":4326}}&geometryType=esriGeometryEnvelope&inSR=4326&outFields=*&outSR=4326
-DATA_SOURCE_1 = '../raw/leeds_children.json'
+from pathlib import Path
+ROOT_DIR = Path(__file__).resolve().parent.parent
+DATA_SOURCE_1 = str(ROOT_DIR / 'raw' / 'leeds_children.json')
 # https://gis2.leeds.gov.uk/arcgis/rest/services/Public/Amenities/FeatureServer/5/query?f=json&returnGeometry=true&spatialRel=esriSpatialRelIntersects&geometry={"xmin":-2.0114,"ymin":53.6252,"xmax":-0.9429,"ymax":54.0337,"spatialReference":{"wkid":4326,"latestWkid":4326}}&geometryType=esriGeometryEnvelope&inSR=4326&outFields=*&outSR=4326
-DATA_SOURCE_2 = '../raw/leeds_older.json'
+DATA_SOURCE_2 = str(ROOT_DIR / 'raw' / 'leeds_older.json')
 # https://gis2.leeds.gov.uk/arcgis/rest/services/Public/Amenities/FeatureServer/4/query?f=json&returnGeometry=true&spatialRel=esriSpatialRelIntersects&geometry={"xmin":-2.0114,"ymin":53.6252,"xmax":-0.9429,"ymax":54.0337,"spatialReference":{"wkid":4326,"latestWkid":4326}}&geometryType=esriGeometryEnvelope&inSR=4326&outFields=*&outSR=4326
 # Note: overwrites DATA_SOURCE_2 above; third layer is not yet merged separately
-DATA_SOURCE_2 = '../raw/leeds_community.json'
+DATA_SOURCE_2 = str(ROOT_DIR / 'raw' / 'leeds_community.json')
 
 TIMETABLE = ''
 

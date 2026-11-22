@@ -160,7 +160,7 @@ class Geocoder:
                     'accuracy': 'exact'
                 }
 
-        # 1. Match full reference key
+        # 1. Match full reference key (auth + community + stop)
         if full_k in self.reference_stops:
             entry = self.reference_stops[full_k]
             if self.is_in_bbox(entry.get('geoy'), entry.get('geox'), bbox):
@@ -174,7 +174,15 @@ class Geocoder:
                     'accuracy': acc
                 }
 
-        # 2. Match short key (auth + stop)
+        # 2. Postcode lookup if valid full UK postcode (highest spatial precision for specific address)
+        clean_pc = postcode.strip().upper()
+        if clean_pc and len(clean_pc.split()) == 2:
+            geo = self._lookup_postcode(clean_pc)
+            if geo and self.is_in_bbox(geo.get('geoy'), geo.get('geox'), bbox):
+                self.remember_stop(authority, community, stop, geo['geox'], geo['geoy'], clean_pc, 'postcode_api')
+                return geo
+
+        # 3. Match short key (auth + stop) only if no valid postcode was provided
         if short_k in self.reference_stops:
             entry = self.reference_stops[short_k]
             if self.is_in_bbox(entry.get('geoy'), entry.get('geox'), bbox):
@@ -187,15 +195,6 @@ class Geocoder:
                     'source': f"ref_cache_short:{src}",
                     'accuracy': acc
                 }
-
-        # 3. Postcode lookup if valid full UK postcode
-        clean_pc = postcode.strip().upper()
-        # Full UK postcodes consist of outward and inward parts separated by a space
-        if clean_pc and len(clean_pc.split()) == 2:
-            geo = self._lookup_postcode(clean_pc)
-            if geo and self.is_in_bbox(geo.get('geoy'), geo.get('geox'), bbox):
-                self.remember_stop(authority, community, stop, geo['geox'], geo['geoy'], clean_pc, 'postcode_api')
-                return geo
 
         # 4. Lookup community/village in places cache or API
         if community:

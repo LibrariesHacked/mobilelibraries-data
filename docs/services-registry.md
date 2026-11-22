@@ -25,9 +25,9 @@ It records whether each council operates a mobile library van, links to their ti
 
 Every council is given one of these verified statuses:
 
-1. **`Active Verified` (50 councils):**
+1. **`Active Verified` (48 councils):**
    * The council currently runs a mobile library and publishes a timetable of public stops. Data is collected and kept up to date in `data/<council>.csv`.
-2. **`No Mobile (Urban/Home Delivery)` (123 councils):**
+2. **`No Mobile (Urban/Home Delivery)` (125 councils):**
    * The council does not operate a mobile library vehicle. Most of these are city and town councils where residents live close to a physical library building, or councils that deliver books directly to people's homes.
 3. **`Discontinued` (34 councils):**
    * The council used to run a mobile library, but the service has closed down.
@@ -35,5 +35,5 @@ Every council is given one of these verified statuses:
    * A mobile van exists, but stops are not published as a fixed public timetable (for example, stops visit schools, care homes, or are booked privately).
 5. **`Active - On Demand` (1 council):**
    * Mobile services that visit communities when residents request them (such as in the Western Isles).
-6. **`Dissolved Historic Council` (4 councils):**
+6. **`Dissolved Historic Council` (6 councils):**
    * Older councils that no longer exist due to local government mergers.
