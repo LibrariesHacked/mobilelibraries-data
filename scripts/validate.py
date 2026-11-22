@@ -53,7 +53,11 @@ def main() -> int:
     time_issues = 0
 
     for csv_file in csv_files:
-        if csv_file.name.startswith("uk_") or csv_file.name.startswith("library-services"):
+        if (
+            csv_file.name.startswith("uk_")
+            or csv_file.name.startswith("library-services")
+            or "review_queue" in csv_file.name
+        ):
             continue
         with open(csv_file, mode="r", encoding="utf-8") as f:
             reader = csv.DictReader(f)

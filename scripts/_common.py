@@ -53,6 +53,13 @@ def create_mobile_library_file(filename, stops):
             row = [item.get(col, '') for col in SCHEMA_COLUMNS]
         else:
             row = list(item)
+        for col_idx in (8, 9):
+            val = str(row[col_idx]).strip()
+            if val:
+                try:
+                    row[col_idx] = f"{float(val):.5f}"
+                except ValueError:
+                    pass
         normalized_stops.append(row)
 
     # Sort by Mobile name (index 2), Route (index 3), and Arrival time (index 12)
@@ -89,6 +96,7 @@ def create_mobile_library_file(filename, stops):
 
 ROOT = Path(__file__).resolve().parent.parent
 GEOCACHE_PATH = ROOT / 'geocache' / 'stops_reference.json'
+MANUAL_PINS_PATH = ROOT / 'geocache' / 'manual_pins.json'
 BBOX_PATH = ROOT / 'geocache' / 'authority_bboxes.json'
 SERVICES_PATH = ROOT / 'services.csv'
 VEHICLES_PATH = ROOT / 'history' / 'historical_mobile_vehicles.csv'
@@ -300,10 +308,29 @@ def to_24h(text, pm_from=1, pm_to=5):
 
 
 def load_geocache():
-    """Load the shared place -> (lat, lng) cache (empty dict if missing)."""
+    """Load the shared place -> (lat, lng) cache, overlaying manually verified pins."""
+    cache = {}
     if GEOCACHE_PATH.exists():
-        return json.loads(GEOCACHE_PATH.read_text(encoding='utf-8'))
-    return {}
+        try:
+            cache = json.loads(GEOCACHE_PATH.read_text(encoding='utf-8'))
+        except Exception:
+            cache = {}
+    if MANUAL_PINS_PATH.exists():
+        try:
+            manual = json.loads(MANUAL_PINS_PATH.read_text(encoding='utf-8'))
+            for k, entry in manual.items():
+                if isinstance(entry, dict) and 'geoy' in entry and 'geox' in entry:
+                    lat, lng = round(float(entry['geoy']), 5), round(float(entry['geox']), 5)
+                    cache[k] = [lat, lng]
+                    auth = entry.get('authority', '')
+                    comm = entry.get('community', '')
+                    stop = entry.get('stop', '')
+                    if auth and stop:
+                        cache[f"{auth}:{comm}:{stop}".lower()] = [lat, lng]
+                        cache[f"{auth}:{stop}".lower()] = [lat, lng]
+        except Exception:
+            pass
+    return cache
 
 
 def save_geocache(cache):
@@ -316,7 +343,7 @@ def geocode_place(authority, community, stop, cache, session, bbox, county, defa
                   renames=None):
     """Resolve a community name to (lat, lng) using the Postcodes.io places API.
 
-    Lookup order: shared cache (authority:community:stop) -> this run's cache
+    Lookup order: shared cache (authority:community:stop or manual pins) -> this run's cache
     -> Postcodes.io (enforcing candidate is strictly inside `bbox`) -> `default` centroid.
     `renames` maps awkward timetable spellings to searchable place names.
     """
@@ -325,6 +352,19 @@ def geocode_place(authority, community, stop, cache, session, bbox, county, defa
         res = tuple(cache[full_key])
         if is_in_bbox(res[0], res[1], bbox):
             return res
+
+    short_key = f'{authority}:{stop}'.lower()
+    if short_key in cache:
+        res = tuple(cache[short_key])
+        if is_in_bbox(res[0], res[1], bbox):
+            return res
+
+    norm_full = re.sub(r'[^a-z0-9]', '', f'{authority}{community}{stop}'.lower())
+    for k, v in cache.items():
+        if re.sub(r'[^a-z0-9]', '', k) == norm_full:
+            res = tuple(v) if isinstance(v, (list, tuple)) else (v.get('geoy'), v.get('geox'))
+            if is_in_bbox(res[0], res[1], bbox):
+                return res
 
     comm_key = f'{authority}:{community}'.lower()
     if comm_key in session:

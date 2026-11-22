@@ -105811,66 +105811,30 @@
     "geoy": 53.291144,
     "source": "place_api"
   },
-  "derbyshire::walton::waltonbacklane": {
-    "authority": "Derbyshire",
-    "community": "Walton",
-    "stop": "Walton Back Lane",
-    "address": "Walton Back Lane, Walton, Derbyshire",
-    "postcode": "S42 7LT",
-    "geox": -1.466994,
-    "geoy": 53.219166,
-    "source": "curated_verification"
-  },
-  "derbyshire::waltonbacklane": {
-    "authority": "Derbyshire",
-    "community": "Walton",
-    "stop": "Walton Back Lane",
-    "address": "Walton Back Lane, Walton, Derbyshire",
-    "postcode": "S42 7LT",
-    "geox": -1.466994,
-    "geoy": 53.219166,
-    "source": "curated_verification"
-  },
-  "derbyshire::walton::elginclose": {
-    "authority": "Derbyshire",
-    "community": "Walton",
-    "stop": "Elgin Close",
-    "address": "Elgin Close, Walton, Derbyshire",
-    "postcode": "S40 3LL",
-    "geox": -1.462622,
-    "geoy": 53.223874,
-    "source": "curated_verification"
-  },
-  "derbyshire::elginclose": {
-    "authority": "Derbyshire",
-    "community": "Walton",
-    "stop": "Elgin Close",
-    "address": "Elgin Close, Walton, Derbyshire",
-    "postcode": "S40 3LL",
-    "geox": -1.462622,
-    "geoy": 53.223874,
-    "source": "curated_verification"
-  },
-  "derbyshire::walton::fenlandway": {
-    "authority": "Derbyshire",
-    "community": "Walton",
-    "stop": "Fenland Way",
-    "address": "Fenland Way, Walton, Derbyshire",
-    "postcode": "S40 3LX",
-    "geox": -1.471815,
-    "geoy": 53.224131,
-    "source": "curated_verification"
-  },
-  "derbyshire::fenlandway": {
-    "authority": "Derbyshire",
-    "community": "Walton",
-    "stop": "Fenland Way",
-    "address": "Fenland Way, Walton, Derbyshire",
-    "postcode": "S40 3LX",
-    "geox": -1.471815,
-    "geoy": 53.224131,
-    "source": "curated_verification"
-  },
+  "derbyshire::walton::waltonbacklane": [
+    53.21917,
+    -1.46699
+  ],
+  "derbyshire::waltonbacklane": [
+    53.21917,
+    -1.46699
+  ],
+  "derbyshire::walton::elginclose": [
+    53.22387,
+    -1.46262
+  ],
+  "derbyshire::elginclose": [
+    53.22387,
+    -1.46262
+  ],
+  "derbyshire::walton::fenlandway": [
+    53.22413,
+    -1.47182
+  ],
+  "derbyshire::fenlandway": [
+    53.22413,
+    -1.47182
+  ],
   "derbyshire::waltonontrent::bellsendroad": {
     "authority": "Derbyshire",
     "community": "Walton on Trent",
@@ -123052,16 +123016,10 @@
     "geoy": 50.141794,
     "source": "place_api"
   },
-  "cornwall::busstop": {
-    "authority": "Cornwall",
-    "community": "Trebah Cross",
-    "stop": "Bus Stop",
-    "address": "Bus Stop, Trebah Cross, Cornwall",
-    "postcode": "TR11 5JZ",
-    "geox": -5.121825,
-    "geoy": 50.106671,
-    "source": "curated_verification"
-  },
+  "cornwall::busstop": [
+    50.10667,
+    -5.12183
+  ],
   "cornwall::rame::parkpedrek": {
     "authority": "Cornwall",
     "community": "Rame",
@@ -171393,8 +171351,8 @@
     -3.801067
   ],
   "conwy:capel curig:caffi siabod": [
-    53.102721,
-    -3.906291
+    53.10264,
+    -3.90615
   ],
   "conwy:dolwyddelan:cenotaph": [
     53.051883,
@@ -173428,2636 +173386,1058 @@
     "geoy": 53.897886,
     "source": "york.csv"
   },
-  "bedford::kempstonrural::themaypolewilkinsonroad": {
-    "authority": "Bedford",
-    "community": "Kempston Rural",
-    "stop": "The Maypole, Wilkinson Road",
-    "address": "The Maypole, Wilkinson Road, Kempston Rural, Bedford",
-    "postcode": "MK42 7NN",
-    "geox": -0.514762,
-    "geoy": 52.109725,
-    "source": "curated_verification"
-  },
-  "bedford::themaypolewilkinsonroad": {
-    "authority": "Bedford",
-    "community": "Kempston Rural",
-    "stop": "The Maypole, Wilkinson Road",
-    "address": "The Maypole, Wilkinson Road, Kempston Rural, Bedford",
-    "postcode": "MK42 7NN",
-    "geox": -0.514762,
-    "geoy": 52.109725,
-    "source": "curated_verification"
-  },
-  "kent::bidborough::villagehall": {
-    "authority": "Kent",
-    "community": "Bidborough",
-    "stop": "Village Hall",
-    "address": "Village Hall, Bidborough, Kent",
-    "postcode": "TN3 0XD",
-    "geox": 0.234956,
-    "geoy": 51.169754,
-    "source": "curated_verification"
-  },
-  "kent::villagehall": {
-    "authority": "Kent",
-    "community": "Bidborough",
-    "stop": "Village Hall",
-    "address": "Village Hall, Bidborough, Kent",
-    "postcode": "TN3 0XD",
-    "geox": 0.234956,
-    "geoy": 51.169754,
-    "source": "curated_verification"
-  },
-  "staffordshire::hoptonheights::battleridge": {
-    "authority": "Staffordshire",
-    "community": "Hopton Heights",
-    "stop": "Battle Ridge",
-    "address": "Battle Ridge, Hopton Heights, Staffordshire",
-    "postcode": "ST18 0BG",
-    "geox": -2.078928,
-    "geoy": 52.83119,
-    "source": "curated_verification"
-  },
-  "staffordshire::battleridge": {
-    "authority": "Staffordshire",
-    "community": "Hopton Heights",
-    "stop": "Battle Ridge",
-    "address": "Battle Ridge, Hopton Heights, Staffordshire",
-    "postcode": "ST18 0BG",
-    "geox": -2.078928,
-    "geoy": 52.83119,
-    "source": "curated_verification"
-  },
-  "stirling::brigoturk::duncraggonroad": {
-    "authority": "Stirling",
-    "community": "Brig O'Turk",
-    "stop": "Duncraggon Road",
-    "address": "Duncraggon Road, Brig O'Turk, Stirling",
-    "postcode": "FK17 8HT",
-    "geox": -4.366441,
-    "geoy": 56.231482,
-    "source": "curated_verification"
-  },
-  "stirling::duncraggonroad": {
-    "authority": "Stirling",
-    "community": "Brig O'Turk",
-    "stop": "Duncraggon Road",
-    "address": "Duncraggon Road, Brig O'Turk, Stirling",
-    "postcode": "FK17 8HT",
-    "geox": -4.366441,
-    "geoy": 56.231482,
-    "source": "curated_verification"
-  },
-  "northyorkshire::alanbrookebarracks::garagesoffelmroad": {
-    "authority": "North Yorkshire",
-    "community": "Alanbrooke Barracks",
-    "stop": "garages off Elm Road",
-    "address": "garages off Elm Road, Alanbrooke Barracks, North Yorkshire",
-    "postcode": "YO7 3EY",
-    "geox": -1.397239,
-    "geoy": 54.2057,
-    "source": "curated_verification"
-  },
-  "northyorkshire::garagesoffelmroad": {
-    "authority": "North Yorkshire",
-    "community": "Alanbrooke Barracks",
-    "stop": "garages off Elm Road",
-    "address": "garages off Elm Road, Alanbrooke Barracks, North Yorkshire",
-    "postcode": "YO7 3EY",
-    "geox": -1.397239,
-    "geoy": 54.2057,
-    "source": "curated_verification"
-  },
-  "northyorkshire::rafleeming::nexttotherafakidznursery": {
-    "authority": "North Yorkshire",
-    "community": "RAF Leeming",
-    "stop": "next to the RAFAKidz Nursery",
-    "address": "next to the RAFAKidz Nursery, RAF Leeming, North Yorkshire",
-    "postcode": "DL7 9NJ",
-    "geox": -1.528562,
-    "geoy": 54.293324,
-    "source": "curated_verification"
-  },
-  "northyorkshire::nexttotherafakidznursery": {
-    "authority": "North Yorkshire",
-    "community": "RAF Leeming",
-    "stop": "next to the RAFAKidz Nursery",
-    "address": "next to the RAFAKidz Nursery, RAF Leeming, North Yorkshire",
-    "postcode": "DL7 9NJ",
-    "geox": -1.528562,
-    "geoy": 54.293324,
-    "source": "curated_verification"
-  },
-  "northyorkshire::yorkshiregateway::yorkshiregateway": {
-    "authority": "North Yorkshire",
-    "community": "Yorkshire Gateway",
-    "stop": "Yorkshire Gateway",
-    "address": "Yorkshire Gateway, Yorkshire Gateway, North Yorkshire",
-    "postcode": "LS25 5LF",
-    "geox": -1.290148,
-    "geoy": 53.765892,
-    "source": "curated_verification"
-  },
-  "northyorkshire::yorkshiregateway": {
-    "authority": "North Yorkshire",
-    "community": "Yorkshire Gateway",
-    "stop": "Yorkshire Gateway",
-    "address": "Yorkshire Gateway, Yorkshire Gateway, North Yorkshire",
-    "postcode": "LS25 5LF",
-    "geox": -1.290148,
-    "geoy": 53.765892,
-    "source": "curated_verification"
-  },
-  "nottinghamshire::welbeck::thewinnings": {
-    "authority": "Nottinghamshire",
-    "community": "Welbeck",
-    "stop": "The Winnings",
-    "address": "The Winnings, Welbeck, Nottinghamshire",
-    "postcode": "S80 3LL",
-    "geox": -1.185208,
-    "geoy": 53.259929,
-    "source": "curated_verification"
-  },
-  "nottinghamshire::thewinnings": {
-    "authority": "Nottinghamshire",
-    "community": "Welbeck",
-    "stop": "The Winnings",
-    "address": "The Winnings, Welbeck, Nottinghamshire",
-    "postcode": "S80 3LL",
-    "geox": -1.185208,
-    "geoy": 53.259929,
-    "source": "curated_verification"
-  },
-  "nottinghamshire::newnuthall::ayscoughavenue": {
-    "authority": "Nottinghamshire",
-    "community": "New Nuthall",
-    "stop": "Ayscough Avenue",
-    "address": "Ayscough Avenue, New Nuthall, Nottinghamshire",
-    "postcode": "NG16 1BY",
-    "geox": -1.239611,
-    "geoy": 52.990833,
-    "source": "curated_verification"
-  },
-  "nottinghamshire::ayscoughavenue": {
-    "authority": "Nottinghamshire",
-    "community": "New Nuthall",
-    "stop": "Ayscough Avenue",
-    "address": "Ayscough Avenue, New Nuthall, Nottinghamshire",
-    "postcode": "NG16 1BY",
-    "geox": -1.239611,
-    "geoy": 52.990833,
-    "source": "curated_verification"
-  },
-  "nottinghamshire::lindy::churchlaneno11": {
-    "authority": "Nottinghamshire",
-    "community": "Lindy",
-    "stop": "Church Lane, No. 11",
-    "address": "Church Lane, No. 11, Lindy, Nottinghamshire",
-    "postcode": "NG15 8FX",
-    "geox": -1.202236,
-    "geoy": 53.051274,
-    "source": "curated_verification"
-  },
-  "nottinghamshire::churchlaneno11": {
-    "authority": "Nottinghamshire",
-    "community": "Lindy",
-    "stop": "Church Lane, No. 11",
-    "address": "Church Lane, No. 11, Lindy, Nottinghamshire",
-    "postcode": "NG15 8FX",
-    "geox": -1.202236,
-    "geoy": 53.051274,
-    "source": "curated_verification"
-  },
-  "nottinghamshire::oldbrinsley::churchwalkno1": {
-    "authority": "Nottinghamshire",
-    "community": "Old Brinsley",
-    "stop": "Church Walk, No. 1",
-    "address": "Church Walk, No. 1, Old Brinsley, Nottinghamshire",
-    "postcode": "NG16 5AT",
-    "geox": -1.314355,
-    "geoy": 53.035954,
-    "source": "curated_verification"
-  },
-  "nottinghamshire::churchwalkno1": {
-    "authority": "Nottinghamshire",
-    "community": "Old Brinsley",
-    "stop": "Church Walk, No. 1",
-    "address": "Church Walk, No. 1, Old Brinsley, Nottinghamshire",
-    "postcode": "NG16 5AT",
-    "geox": -1.314355,
-    "geoy": 53.035954,
-    "source": "curated_verification"
-  },
-  "nottinghamshire::underwoodwestwood::palmerstonstreetoppositeno1": {
-    "authority": "Nottinghamshire",
-    "community": "Underwood (Westwood)",
-    "stop": "Palmerston Street Opposite No.1",
-    "address": "Palmerston Street Opposite No.1, Underwood (Westwood), Nottinghamshire",
-    "postcode": "NG16 5JE",
-    "geox": -1.326345,
-    "geoy": 53.062238,
-    "source": "curated_verification"
-  },
-  "nottinghamshire::palmerstonstreetoppositeno1": {
-    "authority": "Nottinghamshire",
-    "community": "Underwood (Westwood)",
-    "stop": "Palmerston Street Opposite No.1",
-    "address": "Palmerston Street Opposite No.1, Underwood (Westwood), Nottinghamshire",
-    "postcode": "NG16 5JE",
-    "geox": -1.326345,
-    "geoy": 53.062238,
-    "source": "curated_verification"
-  },
-  "derbyshire::crichcarr::cliffinncarpark": {
-    "authority": "Derbyshire",
-    "community": "Crich Carr",
-    "stop": "Cliff Inn Car Park",
-    "address": "Cliff Inn Car Park, Crich Carr, Derbyshire",
-    "postcode": "DE4 5EE",
-    "geox": -1.503312,
-    "geoy": 53.084253,
-    "source": "curated_verification"
-  },
-  "derbyshire::cliffinncarpark": {
-    "authority": "Derbyshire",
-    "community": "Crich Carr",
-    "stop": "Cliff Inn Car Park",
-    "address": "Cliff Inn Car Park, Crich Carr, Derbyshire",
-    "postcode": "DE4 5EE",
-    "geox": -1.503312,
-    "geoy": 53.084253,
-    "source": "curated_verification"
-  },
-  "derbyshire::holmehall::wardgatewaysupermarket": {
-    "authority": "Derbyshire",
-    "community": "Holme Hall",
-    "stop": "Wardgate Way Supermarket",
-    "address": "Wardgate Way Supermarket, Holme Hall, Derbyshire",
-    "postcode": "S40 4UR",
-    "geox": -1.457079,
-    "geoy": 53.250016,
-    "source": "curated_verification"
-  },
-  "derbyshire::wardgatewaysupermarket": {
-    "authority": "Derbyshire",
-    "community": "Holme Hall",
-    "stop": "Wardgate Way Supermarket",
-    "address": "Wardgate Way Supermarket, Holme Hall, Derbyshire",
-    "postcode": "S40 4UR",
-    "geox": -1.457079,
-    "geoy": 53.250016,
-    "source": "curated_verification"
-  },
-  "derbyshire::holmehall::carsingtonclosenrschool": {
-    "authority": "Derbyshire",
-    "community": "Holme Hall",
-    "stop": "Carsington Close (nr school)",
-    "address": "Carsington Close (nr school), Holme Hall, Derbyshire",
-    "postcode": "S40 4UZ",
-    "geox": -1.472904,
-    "geoy": 53.245322,
-    "source": "curated_verification"
-  },
-  "derbyshire::carsingtonclosenrschool": {
-    "authority": "Derbyshire",
-    "community": "Holme Hall",
-    "stop": "Carsington Close (nr school)",
-    "address": "Carsington Close (nr school), Holme Hall, Derbyshire",
-    "postcode": "S40 4UZ",
-    "geox": -1.472904,
-    "geoy": 53.245322,
-    "source": "curated_verification"
-  },
-  "cheshireeast::gradeleygreen::greenfieldsfarm": {
-    "authority": "Cheshire East",
-    "community": "Gradeley Green",
-    "stop": "Greenfields Farm",
-    "address": "Greenfields Farm, Gradeley Green, Cheshire East",
-    "postcode": "CW5 8NN",
-    "geox": -2.593685,
-    "geoy": 53.076822,
-    "source": "curated_verification"
-  },
-  "cheshireeast::greenfieldsfarm": {
-    "authority": "Cheshire East",
-    "community": "Gradeley Green",
-    "stop": "Greenfields Farm",
-    "address": "Greenfields Farm, Gradeley Green, Cheshire East",
-    "postcode": "CW5 8NN",
-    "geox": -2.593685,
-    "geoy": 53.076822,
-    "source": "curated_verification"
-  },
-  "cheshireeast::cholmondeley::postoffice": {
-    "authority": "Cheshire East",
-    "community": "Cholmondeley",
-    "stop": "Post Office",
-    "address": "Post Office, Cholmondeley, Cheshire East",
-    "postcode": "SY14 8HN",
-    "geox": -2.668718,
-    "geoy": 53.049831,
-    "source": "curated_verification"
-  },
-  "cheshireeast::postoffice": {
-    "authority": "Cheshire East",
-    "community": "Cholmondeley",
-    "stop": "Post Office",
-    "address": "Post Office, Cholmondeley, Cheshire East",
-    "postcode": "SY14 8HN",
-    "geox": -2.668718,
-    "geoy": 53.049831,
-    "source": "curated_verification"
-  },
-  "cheshireeast::wychwoodpark::conferencecentre": {
-    "authority": "Cheshire East",
-    "community": "Wychwood Park",
-    "stop": "Conference Centre",
-    "address": "Conference Centre, Wychwood Park, Cheshire East",
-    "postcode": "CW2 5GP",
-    "geox": -2.393175,
-    "geoy": 53.0501,
-    "source": "curated_verification"
-  },
-  "cheshireeast::conferencecentre": {
-    "authority": "Cheshire East",
-    "community": "Wychwood Park",
-    "stop": "Conference Centre",
-    "address": "Conference Centre, Wychwood Park, Cheshire East",
-    "postcode": "CW2 5GP",
-    "geox": -2.393175,
-    "geoy": 53.0501,
-    "source": "curated_verification"
-  },
-  "cheshireeast::lymegreen::lymeview": {
-    "authority": "Cheshire East",
-    "community": "Lyme Green",
-    "stop": "Lyme View",
-    "address": "Lyme View, Lyme Green, Cheshire East",
-    "postcode": "SK11 0LD",
-    "geox": -2.125946,
-    "geoy": 53.231866,
-    "source": "curated_verification"
-  },
-  "cheshireeast::lymeview": {
-    "authority": "Cheshire East",
-    "community": "Lyme Green",
-    "stop": "Lyme View",
-    "address": "Lyme View, Lyme Green, Cheshire East",
-    "postcode": "SK11 0LD",
-    "geox": -2.125946,
-    "geoy": 53.231866,
-    "source": "curated_verification"
-  },
-  "cheshireeast::astonbybudworth::hieldgrove": {
-    "authority": "Cheshire East",
-    "community": "Aston by Budworth",
-    "stop": "Hield Grove",
-    "address": "Hield Grove, Aston by Budworth, Cheshire East",
-    "postcode": "CW9 6LH",
-    "geox": -2.536105,
-    "geoy": 53.31317,
-    "source": "curated_verification"
-  },
-  "cheshireeast::hieldgrove": {
-    "authority": "Cheshire East",
-    "community": "Aston by Budworth",
-    "stop": "Hield Grove",
-    "address": "Hield Grove, Aston by Budworth, Cheshire East",
-    "postcode": "CW9 6LH",
-    "geox": -2.536105,
-    "geoy": 53.31317,
-    "source": "curated_verification"
-  },
-  "cheshireeast::overalderley::festivaldrive": {
-    "authority": "Cheshire East",
-    "community": "Over Alderley",
-    "stop": "Festival Drive",
-    "address": "Festival Drive, Over Alderley, Cheshire East",
-    "postcode": "SK10 4SL",
-    "geox": -2.201544,
-    "geoy": 53.290116,
-    "source": "curated_verification"
-  },
-  "cheshireeast::festivaldrive": {
-    "authority": "Cheshire East",
-    "community": "Over Alderley",
-    "stop": "Festival Drive",
-    "address": "Festival Drive, Over Alderley, Cheshire East",
-    "postcode": "SK10 4SL",
-    "geox": -2.201544,
-    "geoy": 53.290116,
-    "source": "curated_verification"
-  },
-  "cheshireeast::rope::glaisdaleclose": {
-    "authority": "Cheshire East",
-    "community": "Rope",
-    "stop": "Glaisdale Close",
-    "address": "Glaisdale Close, Rope, Cheshire East",
-    "postcode": "CW2 6SB",
-    "geox": -2.458963,
-    "geoy": 53.076931,
-    "source": "curated_verification"
-  },
-  "cheshireeast::glaisdaleclose": {
-    "authority": "Cheshire East",
-    "community": "Rope",
-    "stop": "Glaisdale Close",
-    "address": "Glaisdale Close, Rope, Cheshire East",
-    "postcode": "CW2 6SB",
-    "geox": -2.458963,
-    "geoy": 53.076931,
-    "source": "curated_verification"
-  },
-  "thescottishborders::romannobr::schoolarea": {
-    "authority": "The Scottish Borders",
-    "community": "Romanno Br",
-    "stop": "School Area",
-    "address": "School Area, Romanno Br, The Scottish Borders",
-    "postcode": "EH46 7BY",
-    "geox": -3.328227,
-    "geoy": 55.723313,
-    "source": "curated_verification"
-  },
-  "thescottishborders::schoolarea": {
-    "authority": "The Scottish Borders",
-    "community": "Romanno Br",
-    "stop": "School Area",
-    "address": "School Area, Romanno Br, The Scottish Borders",
-    "postcode": "EH46 7BY",
-    "geox": -3.328227,
-    "geoy": 55.723313,
-    "source": "curated_verification"
-  },
-  "thescottishborders::wolfelee::wolfeleelodge": {
-    "authority": "The Scottish Borders",
-    "community": "Wolfelee",
-    "stop": "Wolfelee lodge",
-    "address": "Wolfelee lodge, Wolfelee, The Scottish Borders",
-    "postcode": "TD9 8JU",
-    "geox": -2.655677,
-    "geoy": 55.390236,
-    "source": "curated_verification"
-  },
-  "thescottishborders::wolfeleelodge": {
-    "authority": "The Scottish Borders",
-    "community": "Wolfelee",
-    "stop": "Wolfelee lodge",
-    "address": "Wolfelee lodge, Wolfelee, The Scottish Borders",
-    "postcode": "TD9 8JU",
-    "geox": -2.655677,
-    "geoy": 55.390236,
-    "source": "curated_verification"
-  },
-  "thescottishborders::upperburnmouth::upperburnmouthfarmcottages": {
-    "authority": "The Scottish Borders",
-    "community": "Upper Burnmouth",
-    "stop": "Upper burnmouth farm cottages",
-    "address": "Upper burnmouth farm cottages, Upper Burnmouth, The Scottish Borders",
-    "postcode": "TD14 5SL",
-    "geox": -2.075305,
-    "geoy": 55.84229,
-    "source": "curated_verification"
-  },
-  "thescottishborders::upperburnmouthfarmcottages": {
-    "authority": "The Scottish Borders",
-    "community": "Upper Burnmouth",
-    "stop": "Upper burnmouth farm cottages",
-    "address": "Upper burnmouth farm cottages, Upper Burnmouth, The Scottish Borders",
-    "postcode": "TD14 5SL",
-    "geox": -2.075305,
-    "geoy": 55.84229,
-    "source": "curated_verification"
-  },
-  "thescottishborders::thepeel::peelgardens": {
-    "authority": "The Scottish Borders",
-    "community": "The Peel",
-    "stop": "Peel Gardens",
-    "address": "Peel Gardens, The Peel, The Scottish Borders",
-    "postcode": "TD1 3LP",
-    "geox": -2.900891,
-    "geoy": 55.605438,
-    "source": "curated_verification"
-  },
-  "thescottishborders::peelgardens": {
-    "authority": "The Scottish Borders",
-    "community": "The Peel",
-    "stop": "Peel Gardens",
-    "address": "Peel Gardens, The Peel, The Scottish Borders",
-    "postcode": "TD1 3LP",
-    "geox": -2.900891,
-    "geoy": 55.605438,
-    "source": "curated_verification"
-  },
-  "thescottishborders::newtownstbos::whitefieldcresc": {
-    "authority": "The Scottish Borders",
-    "community": "Newtown StBos",
-    "stop": "Whitefield Cresc",
-    "address": "Whitefield Cresc, Newtown StBos, The Scottish Borders",
-    "postcode": "TD6 0PP",
-    "geox": -2.671307,
-    "geoy": 55.57733,
-    "source": "curated_verification"
-  },
-  "thescottishborders::whitefieldcresc": {
-    "authority": "The Scottish Borders",
-    "community": "Newtown StBos",
-    "stop": "Whitefield Cresc",
-    "address": "Whitefield Cresc, Newtown StBos, The Scottish Borders",
-    "postcode": "TD6 0PP",
-    "geox": -2.671307,
-    "geoy": 55.57733,
-    "source": "curated_verification"
-  },
-  "thescottishborders::newtownstbos::sproustonroad": {
-    "authority": "The Scottish Borders",
-    "community": "Newtown StBos",
-    "stop": "Sprouston road",
-    "address": "Sprouston road, Newtown StBos, The Scottish Borders",
-    "postcode": "TD6 0QZ",
-    "geox": -2.671192,
-    "geoy": 55.571439,
-    "source": "curated_verification"
-  },
-  "thescottishborders::sproustonroad": {
-    "authority": "The Scottish Borders",
-    "community": "Newtown StBos",
-    "stop": "Sprouston road",
-    "address": "Sprouston road, Newtown StBos, The Scottish Borders",
-    "postcode": "TD6 0QZ",
-    "geox": -2.671192,
-    "geoy": 55.571439,
-    "source": "curated_verification"
-  },
-  "thescottishborders::macksmill::macksmill": {
-    "authority": "The Scottish Borders",
-    "community": "Macksmill",
-    "stop": "Macksmill",
-    "address": "Macksmill, Macksmill, The Scottish Borders",
-    "postcode": "TD3 6LW",
-    "geox": -2.563936,
-    "geoy": 55.680743,
-    "source": "curated_verification"
-  },
-  "thescottishborders::macksmill": {
-    "authority": "The Scottish Borders",
-    "community": "Macksmill",
-    "stop": "Macksmill",
-    "address": "Macksmill, Macksmill, The Scottish Borders",
-    "postcode": "TD3 6LW",
-    "geox": -2.563936,
-    "geoy": 55.680743,
-    "source": "curated_verification"
-  },
-  "thescottishborders::carfraemill::carpark": {
-    "authority": "The Scottish Borders",
-    "community": "Carfraemill",
-    "stop": "Car Park",
-    "address": "Car Park, Carfraemill, The Scottish Borders",
-    "postcode": "TD2 6RA",
-    "geox": -2.784886,
-    "geoy": 55.7725,
-    "source": "curated_verification"
-  },
-  "thescottishborders::carpark": {
-    "authority": "The Scottish Borders",
-    "community": "Carfraemill",
-    "stop": "Car Park",
-    "address": "Car Park, Carfraemill, The Scottish Borders",
-    "postcode": "TD2 6RA",
-    "geox": -2.784886,
-    "geoy": 55.7725,
-    "source": "curated_verification"
-  },
-  "thescottishborders::easterhowlaws::cottages": {
-    "authority": "The Scottish Borders",
-    "community": "Easter Howlaws",
-    "stop": "Cottages",
-    "address": "Cottages, Easter Howlaws, The Scottish Borders",
-    "postcode": "TD11 3SF",
-    "geox": -2.438326,
-    "geoy": 55.826096,
-    "source": "curated_verification"
-  },
-  "thescottishborders::cottages": {
-    "authority": "The Scottish Borders",
-    "community": "Easter Howlaws",
-    "stop": "Cottages",
-    "address": "Cottages, Easter Howlaws, The Scottish Borders",
-    "postcode": "TD11 3SF",
-    "geox": -2.438326,
-    "geoy": 55.826096,
-    "source": "curated_verification"
-  },
-  "countydurham::cockfieldstation::cockfieldstation": {
-    "authority": "County Durham",
-    "community": "Cockfield Station",
-    "stop": "Cockfield Station",
-    "address": "Cockfield Station, Cockfield Station, County Durham",
-    "postcode": "DL13 5EN",
-    "geox": -1.810706,
-    "geoy": 54.612891,
-    "source": "curated_verification"
-  },
-  "countydurham::cockfieldstation": {
-    "authority": "County Durham",
-    "community": "Cockfield Station",
-    "stop": "Cockfield Station",
-    "address": "Cockfield Station, Cockfield Station, County Durham",
-    "postcode": "DL13 5EN",
-    "geox": -1.810706,
-    "geoy": 54.612891,
-    "source": "curated_verification"
-  },
-  "countydurham::copleylane::glencrest": {
-    "authority": "County Durham",
-    "community": "Copley Lane",
-    "stop": "Glen Crest",
-    "address": "Glen Crest, Copley Lane, County Durham",
-    "postcode": "DL13 5LW",
-    "geox": -1.855232,
-    "geoy": 54.622918,
-    "source": "curated_verification"
-  },
-  "countydurham::glencrest": {
-    "authority": "County Durham",
-    "community": "Copley Lane",
-    "stop": "Glen Crest",
-    "address": "Glen Crest, Copley Lane, County Durham",
-    "postcode": "DL13 5LW",
-    "geox": -1.855232,
-    "geoy": 54.622918,
-    "source": "curated_verification"
-  },
-  "countydurham::esperley::oakwoodhall": {
-    "authority": "County Durham",
-    "community": "Esperley",
-    "stop": "Oakwood Hall",
-    "address": "Oakwood Hall, Esperley, County Durham",
-    "postcode": "DL13 5HJ",
-    "geox": -1.799008,
-    "geoy": 54.608208,
-    "source": "curated_verification"
-  },
-  "countydurham::oakwoodhall": {
-    "authority": "County Durham",
-    "community": "Esperley",
-    "stop": "Oakwood Hall",
-    "address": "Oakwood Hall, Esperley, County Durham",
-    "postcode": "DL13 5HJ",
-    "geox": -1.799008,
-    "geoy": 54.608208,
-    "source": "curated_verification"
-  },
-  "countydurham::hamsterleycolliery::denecourt": {
-    "authority": "County Durham",
-    "community": "Hamsterley Colliery",
-    "stop": "Dene Court",
-    "address": "Dene Court, Hamsterley Colliery, County Durham",
-    "postcode": "NE17 7SY",
-    "geox": -1.815228,
-    "geoy": 54.903503,
-    "source": "curated_verification"
-  },
-  "countydurham::denecourt": {
-    "authority": "County Durham",
-    "community": "Hamsterley Colliery",
-    "stop": "Dene Court",
-    "address": "Dene Court, Hamsterley Colliery, County Durham",
-    "postcode": "NE17 7SY",
-    "geox": -1.815228,
-    "geoy": 54.903503,
-    "source": "curated_verification"
-  },
-  "countydurham::hamsterleyforest::informationcentre": {
-    "authority": "County Durham",
-    "community": "Hamsterley Forest",
-    "stop": "Information Centre",
-    "address": "Information Centre, Hamsterley Forest, County Durham",
-    "postcode": "DL13 3NL",
-    "geox": -1.885137,
-    "geoy": 54.673114,
-    "source": "curated_verification"
-  },
-  "countydurham::informationcentre": {
-    "authority": "County Durham",
-    "community": "Hamsterley Forest",
-    "stop": "Information Centre",
-    "address": "Information Centre, Hamsterley Forest, County Durham",
-    "postcode": "DL13 3NL",
-    "geox": -1.885137,
-    "geoy": 54.673114,
-    "source": "curated_verification"
-  },
-  "countydurham::lunedale::chapelcottage": {
-    "authority": "County Durham",
-    "community": "Lunedale",
-    "stop": "Chapel Cottage",
-    "address": "Chapel Cottage, Lunedale, County Durham",
-    "postcode": "DL12 0NL",
-    "geox": -2.145497,
-    "geoy": 54.636828,
-    "source": "curated_verification"
-  },
-  "countydurham::chapelcottage": {
-    "authority": "County Durham",
-    "community": "Lunedale",
-    "stop": "Chapel Cottage",
-    "address": "Chapel Cottage, Lunedale, County Durham",
-    "postcode": "DL12 0NL",
-    "geox": -2.145497,
-    "geoy": 54.636828,
-    "source": "curated_verification"
-  },
-  "countydurham::sherburnvillage::communitycentre": {
-    "authority": "County Durham",
-    "community": "Sherburn Village",
-    "stop": "Community Centre",
-    "address": "Community Centre, Sherburn Village, County Durham",
-    "postcode": "DH6 1HB",
-    "geox": -1.502662,
-    "geoy": 54.774157,
-    "source": "curated_verification"
-  },
-  "countydurham::communitycentre": {
-    "authority": "County Durham",
-    "community": "Sherburn Village",
-    "stop": "Community Centre",
-    "address": "Community Centre, Sherburn Village, County Durham",
-    "postcode": "DH6 1HB",
-    "geox": -1.502662,
-    "geoy": 54.774157,
-    "source": "curated_verification"
-  },
-  "countydurham::southside::crowehowle": {
-    "authority": "County Durham",
-    "community": "Southside",
-    "stop": "Crowe Howle",
-    "address": "Crowe Howle, Southside, County Durham",
-    "postcode": "DL13 5JW",
-    "geox": -1.837915,
-    "geoy": 54.635226,
-    "source": "curated_verification"
-  },
-  "countydurham::crowehowle": {
-    "authority": "County Durham",
-    "community": "Southside",
-    "stop": "Crowe Howle",
-    "address": "Crowe Howle, Southside, County Durham",
-    "postcode": "DL13 5JW",
-    "geox": -1.837915,
-    "geoy": 54.635226,
-    "source": "curated_verification"
-  },
-  "countydurham::tofthillhwf::highwetherfarm": {
-    "authority": "County Durham",
-    "community": "Toft Hill HWF",
-    "stop": "High Wether Farm",
-    "address": "High Wether Farm, Toft Hill HWF, County Durham",
-    "postcode": "DL14 0JH",
-    "geox": -1.748874,
-    "geoy": 54.651709,
-    "source": "curated_verification"
-  },
-  "countydurham::highwetherfarm": {
-    "authority": "County Durham",
-    "community": "Toft Hill HWF",
-    "stop": "High Wether Farm",
-    "address": "High Wether Farm, Toft Hill HWF, County Durham",
-    "postcode": "DL14 0JH",
-    "geox": -1.748874,
-    "geoy": 54.651709,
-    "source": "curated_verification"
-  },
-  "countydurham::wham::hawthornehouse": {
-    "authority": "County Durham",
-    "community": "Wham",
-    "stop": "Hawthorne House",
-    "address": "Hawthorne House, Wham, County Durham",
-    "postcode": "DL13 5HY",
-    "geox": -1.825804,
-    "geoy": 54.626977,
-    "source": "curated_verification"
-  },
-  "countydurham::hawthornehouse": {
-    "authority": "County Durham",
-    "community": "Wham",
-    "stop": "Hawthorne House",
-    "address": "Hawthorne House, Wham, County Durham",
-    "postcode": "DL13 5HY",
-    "geox": -1.825804,
-    "geoy": 54.626977,
-    "source": "curated_verification"
-  },
-  "perthandkinross::kinlochrannochprimaryschool::kinlochrannochprimaryschool": {
-    "authority": "Perth and Kinross",
-    "community": "Kinloch Rannoch Primary School",
-    "stop": "Kinloch Rannoch Primary School",
-    "address": "Kinloch Rannoch Primary School, Kinloch Rannoch Primary School, Perth and Kinross",
-    "postcode": "PH16 5PW",
-    "geox": -4.188478,
-    "geoy": 56.700546,
-    "source": "curated_verification"
-  },
-  "perthandkinross::kinlochrannochprimaryschool": {
-    "authority": "Perth and Kinross",
-    "community": "Kinloch Rannoch Primary School",
-    "stop": "Kinloch Rannoch Primary School",
-    "address": "Kinloch Rannoch Primary School, Kinloch Rannoch Primary School, Perth and Kinross",
-    "postcode": "PH16 5PW",
-    "geox": -4.188478,
-    "geoy": 56.700546,
-    "source": "curated_verification"
-  },
-  "perthandkinross::stfillans::villageshop": {
-    "authority": "Perth and Kinross",
-    "community": "St Fillans",
-    "stop": "village shop",
-    "address": "village shop, St Fillans, Perth and Kinross",
-    "postcode": "PH6 2NF",
-    "geox": -4.116982,
-    "geoy": 56.392352,
-    "source": "curated_verification"
-  },
-  "perthandkinross::villageshop": {
-    "authority": "Perth and Kinross",
-    "community": "St Fillans",
-    "stop": "village shop",
-    "address": "village shop, St Fillans, Perth and Kinross",
-    "postcode": "PH6 2NF",
-    "geox": -4.116982,
-    "geoy": 56.392352,
-    "source": "curated_verification"
-  },
-  "perthandkinross::pitcairngreenprimaryschool::pitcairngreenprimaryschool": {
-    "authority": "Perth and Kinross",
-    "community": "PitcairngreenPrimary School",
-    "stop": "PitcairngreenPrimary School",
-    "address": "PitcairngreenPrimary School, PitcairngreenPrimary School, Perth and Kinross",
-    "postcode": "PH1 3LR",
-    "geox": -3.515372,
-    "geoy": 56.426512,
-    "source": "curated_verification"
-  },
-  "perthandkinross::pitcairngreenprimaryschool": {
-    "authority": "Perth and Kinross",
-    "community": "PitcairngreenPrimary School",
-    "stop": "PitcairngreenPrimary School",
-    "address": "PitcairngreenPrimary School, PitcairngreenPrimary School, Perth and Kinross",
-    "postcode": "PH1 3LR",
-    "geox": -3.515372,
-    "geoy": 56.426512,
-    "source": "curated_verification"
-  },
-  "perthandkinross::connachercourt::connachercourt": {
-    "authority": "Perth and Kinross",
-    "community": "Connacher Court",
-    "stop": "Connacher Court",
-    "address": "Connacher Court, Connacher Court, Perth and Kinross",
-    "postcode": "PH16 5HS",
-    "geox": -3.725241,
-    "geoy": 56.703476,
-    "source": "curated_verification"
-  },
-  "perthandkinross::connachercourt": {
-    "authority": "Perth and Kinross",
-    "community": "Connacher Court",
-    "stop": "Connacher Court",
-    "address": "Connacher Court, Connacher Court, Perth and Kinross",
-    "postcode": "PH16 5HS",
-    "geox": -3.725241,
-    "geoy": 56.703476,
-    "source": "curated_verification"
-  },
-  "perthandkinross::causewaycourt::shelteredhousing": {
-    "authority": "Perth and Kinross",
-    "community": "Causeway Court",
-    "stop": "Sheltered Housing",
-    "address": "Sheltered Housing, Causeway Court, Perth and Kinross",
-    "postcode": "KY13 8TG",
-    "geox": -3.425466,
-    "geoy": 56.205751,
-    "source": "curated_verification"
-  },
-  "perthandkinross::shelteredhousing": {
-    "authority": "Perth and Kinross",
-    "community": "Causeway Court",
-    "stop": "Sheltered Housing",
-    "address": "Sheltered Housing, Causeway Court, Perth and Kinross",
-    "postcode": "KY13 8TG",
-    "geox": -3.425466,
-    "geoy": 56.205751,
-    "source": "curated_verification"
-  },
-  "perthandkinross::pitlochry::aldourgardenshousing": {
-    "authority": "Perth and Kinross",
-    "community": "Pitlochry",
-    "stop": "Aldour Gardens Housing",
-    "address": "Aldour Gardens Housing, Pitlochry, Perth and Kinross",
-    "postcode": "PH16 5HR",
-    "geox": -3.72613,
-    "geoy": 56.703985,
-    "source": "curated_verification"
-  },
-  "perthandkinross::aldourgardenshousing": {
-    "authority": "Perth and Kinross",
-    "community": "Pitlochry",
-    "stop": "Aldour Gardens Housing",
-    "address": "Aldour Gardens Housing, Pitlochry, Perth and Kinross",
-    "postcode": "PH16 5HR",
-    "geox": -3.72613,
-    "geoy": 56.703985,
-    "source": "curated_verification"
-  },
-  "perthandkinross::pitlochry::fishersviewhousing": {
-    "authority": "Perth and Kinross",
-    "community": "Pitlochry",
-    "stop": "Fisher\u2019s View Housing",
-    "address": "Fisher\u2019s View Housing, Pitlochry, Perth and Kinross",
-    "postcode": "PH16 5JY",
-    "geox": -3.746818,
-    "geoy": 56.705925,
-    "source": "curated_verification"
-  },
-  "perthandkinross::fishersviewhousing": {
-    "authority": "Perth and Kinross",
-    "community": "Pitlochry",
-    "stop": "Fisher\u2019s View Housing",
-    "address": "Fisher\u2019s View Housing, Pitlochry, Perth and Kinross",
-    "postcode": "PH16 5JY",
-    "geox": -3.746818,
-    "geoy": 56.705925,
-    "source": "curated_verification"
-  },
-  "perthandkinross::meiglevillage::thesquarenearcommunitygarden": {
-    "authority": "Perth and Kinross",
-    "community": "MeigleVillage",
-    "stop": "The Square (near Community Garden)",
-    "address": "The Square (near Community Garden), MeigleVillage, Perth and Kinross",
-    "postcode": "PH12 8RN",
-    "geox": -3.162684,
-    "geoy": 56.588286,
-    "source": "curated_verification"
-  },
-  "perthandkinross::thesquarenearcommunitygarden": {
-    "authority": "Perth and Kinross",
-    "community": "MeigleVillage",
-    "stop": "The Square (near Community Garden)",
-    "address": "The Square (near Community Garden), MeigleVillage, Perth and Kinross",
-    "postcode": "PH12 8RN",
-    "geox": -3.162684,
-    "geoy": 56.588286,
-    "source": "curated_verification"
-  },
-  "perthandkinross::couparangus::outsidetownhall": {
-    "authority": "Perth and Kinross",
-    "community": "Coupar Angus",
-    "stop": "Outside Town Hall",
-    "address": "Outside Town Hall, Coupar Angus, Perth and Kinross",
-    "postcode": "PH13 9AE",
-    "geox": -3.266164,
-    "geoy": 56.546485,
-    "source": "curated_verification"
-  },
-  "perthandkinross::outsidetownhall": {
-    "authority": "Perth and Kinross",
-    "community": "Coupar Angus",
-    "stop": "Outside Town Hall",
-    "address": "Outside Town Hall, Coupar Angus, Perth and Kinross",
-    "postcode": "PH13 9AE",
-    "geox": -3.266164,
-    "geoy": 56.546485,
-    "source": "curated_verification"
-  },
-  "perthandkinross::meiklour::monument": {
-    "authority": "Perth and Kinross",
-    "community": "Meiklour",
-    "stop": "Monument",
-    "address": "Monument, Meiklour, Perth and Kinross",
-    "postcode": "PH2 6EB",
-    "geox": -3.371677,
-    "geoy": 56.541574,
-    "source": "curated_verification"
-  },
-  "perthandkinross::monument": {
-    "authority": "Perth and Kinross",
-    "community": "Meiklour",
-    "stop": "Monument",
-    "address": "Monument, Meiklour, Perth and Kinross",
-    "postcode": "PH2 6EB",
-    "geox": -3.371677,
-    "geoy": 56.541574,
-    "source": "curated_verification"
-  },
-  "perthandkinross::errolprimary::schoolpupilsonly": {
-    "authority": "Perth and Kinross",
-    "community": "Errol Primary",
-    "stop": "(School pupils only)",
-    "address": "(School pupils only), Errol Primary, Perth and Kinross",
-    "postcode": "PH2 7QQ",
-    "geox": -3.213077,
-    "geoy": 56.392378,
-    "source": "curated_verification"
-  },
-  "perthandkinross::schoolpupilsonly": {
-    "authority": "Perth and Kinross",
-    "community": "Errol Primary",
-    "stop": "(School pupils only)",
-    "address": "(School pupils only), Errol Primary, Perth and Kinross",
-    "postcode": "PH2 7QQ",
-    "geox": -3.213077,
-    "geoy": 56.392378,
-    "source": "curated_verification"
-  },
-  "perthandkinross::cleishprimaryschool::cleishprimaryschool": {
-    "authority": "Perth and Kinross",
-    "community": "Cleish Primary School",
-    "stop": "Cleish Primary School",
-    "address": "Cleish Primary School, Cleish Primary School, Perth and Kinross",
-    "postcode": "KY13 0LR",
-    "geox": -3.458595,
-    "geoy": 56.166269,
-    "source": "curated_verification"
-  },
-  "perthandkinross::cleishprimaryschool": {
-    "authority": "Perth and Kinross",
-    "community": "Cleish Primary School",
-    "stop": "Cleish Primary School",
-    "address": "Cleish Primary School, Cleish Primary School, Perth and Kinross",
-    "postcode": "KY13 0LR",
-    "geox": -3.458595,
-    "geoy": 56.166269,
-    "source": "curated_verification"
-  },
-  "perthandkinross::bridgeoftiltstore::bridgeoftiltstore": {
-    "authority": "Perth and Kinross",
-    "community": "Bridge of TiltStore",
-    "stop": "Bridge of TiltStore",
-    "address": "Bridge of TiltStore, Bridge of TiltStore, Perth and Kinross",
-    "postcode": "PH18 5SU",
-    "geox": -3.838508,
-    "geoy": 56.767153,
-    "source": "curated_verification"
-  },
-  "perthandkinross::bridgeoftiltstore": {
-    "authority": "Perth and Kinross",
-    "community": "Bridge of TiltStore",
-    "stop": "Bridge of TiltStore",
-    "address": "Bridge of TiltStore, Bridge of TiltStore, Perth and Kinross",
-    "postcode": "PH18 5SU",
-    "geox": -3.838508,
-    "geoy": 56.767153,
-    "source": "curated_verification"
-  },
-  "midlothian::northmiddleton::northmiddletonvillagehall": {
-    "authority": "Midlothian",
-    "community": "North Middleton",
-    "stop": "North Middleton Village Hall",
-    "address": "North Middleton Village Hall, North Middleton, Midlothian",
-    "postcode": "EH23 4QS",
-    "geox": -3.024052,
-    "geoy": 55.82024,
-    "source": "curated_verification"
-  },
-  "midlothian::northmiddletonvillagehall": {
-    "authority": "Midlothian",
-    "community": "North Middleton",
-    "stop": "North Middleton Village Hall",
-    "address": "North Middleton Village Hall, North Middleton, Midlothian",
-    "postcode": "EH23 4QS",
-    "geox": -3.024052,
-    "geoy": 55.82024,
-    "source": "curated_verification"
-  },
-  "midlothian::auchendinny::glencorsecentre": {
-    "authority": "Midlothian",
-    "community": "Auchendinny",
-    "stop": "Glencorse Centre",
-    "address": "Glencorse Centre, Auchendinny, Midlothian",
-    "postcode": "EH26 0QZ",
-    "geox": -3.190957,
-    "geoy": 55.847697,
-    "source": "curated_verification"
-  },
-  "midlothian::glencorsecentre": {
-    "authority": "Midlothian",
-    "community": "Auchendinny",
-    "stop": "Glencorse Centre",
-    "address": "Glencorse Centre, Auchendinny, Midlothian",
-    "postcode": "EH26 0QZ",
-    "geox": -3.190957,
-    "geoy": 55.847697,
-    "source": "curated_verification"
-  },
-  "midlothian::penicuik::aaronhouse": {
-    "authority": "Midlothian",
-    "community": "Penicuik",
-    "stop": "Aaron House",
-    "address": "Aaron House, Penicuik, Midlothian",
-    "postcode": "EH26 0JJ",
-    "geox": -3.225828,
-    "geoy": 55.837174,
-    "source": "curated_verification"
-  },
-  "midlothian::aaronhouse": {
-    "authority": "Midlothian",
-    "community": "Penicuik",
-    "stop": "Aaron House",
-    "address": "Aaron House, Penicuik, Midlothian",
-    "postcode": "EH26 0JJ",
-    "geox": -3.225828,
-    "geoy": 55.837174,
-    "source": "curated_verification"
-  },
-  "midlothian::penicuik::broomhilldaycentre": {
-    "authority": "Midlothian",
-    "community": "Penicuik",
-    "stop": "Broomhill Day Centre",
-    "address": "Broomhill Day Centre, Penicuik, Midlothian",
-    "postcode": "EH26 9EB",
-    "geox": -3.224124,
-    "geoy": 55.82462,
-    "source": "curated_verification"
-  },
-  "midlothian::broomhilldaycentre": {
-    "authority": "Midlothian",
-    "community": "Penicuik",
-    "stop": "Broomhill Day Centre",
-    "address": "Broomhill Day Centre, Penicuik, Midlothian",
-    "postcode": "EH26 9EB",
-    "geox": -3.224124,
-    "geoy": 55.82462,
-    "source": "curated_verification"
-  },
-  "midlothian::auchendinny::glencorsecarehomearea": {
-    "authority": "Midlothian",
-    "community": "Auchendinny",
-    "stop": "Glencorse Care Home Area",
-    "address": "Glencorse Care Home Area, Auchendinny, Midlothian",
-    "postcode": "EH26 0QZ",
-    "geox": -3.190957,
-    "geoy": 55.847697,
-    "source": "curated_verification"
-  },
-  "midlothian::glencorsecarehomearea": {
-    "authority": "Midlothian",
-    "community": "Auchendinny",
-    "stop": "Glencorse Care Home Area",
-    "address": "Glencorse Care Home Area, Auchendinny, Midlothian",
-    "postcode": "EH26 0QZ",
-    "geox": -3.190957,
-    "geoy": 55.847697,
-    "source": "curated_verification"
-  },
-  "midlothian::penicuik::scotscorner": {
-    "authority": "Midlothian",
-    "community": "Penicuik",
-    "stop": "Scots Corner",
-    "address": "Scots Corner, Penicuik, Midlothian",
-    "postcode": "EH26 0NA",
-    "geox": -3.208913,
-    "geoy": 55.844737,
-    "source": "curated_verification"
-  },
-  "midlothian::scotscorner": {
-    "authority": "Midlothian",
-    "community": "Penicuik",
-    "stop": "Scots Corner",
-    "address": "Scots Corner, Penicuik, Midlothian",
-    "postcode": "EH26 0NA",
-    "geox": -3.208913,
-    "geoy": 55.844737,
-    "source": "curated_verification"
-  },
-  "midlothian::roslin::stclairmews": {
-    "authority": "Midlothian",
-    "community": "Roslin",
-    "stop": "St Clair Mews",
-    "address": "St Clair Mews, Roslin, Midlothian",
-    "postcode": "EH25 9PN",
-    "geox": -3.166112,
-    "geoy": 55.859122,
-    "source": "curated_verification"
-  },
-  "midlothian::stclairmews": {
-    "authority": "Midlothian",
-    "community": "Roslin",
-    "stop": "St Clair Mews",
-    "address": "St Clair Mews, Roslin, Midlothian",
-    "postcode": "EH25 9PN",
-    "geox": -3.166112,
-    "geoy": 55.859122,
-    "source": "curated_verification"
-  },
-  "midlothian::roslin::sinclairgardens": {
-    "authority": "Midlothian",
-    "community": "Roslin",
-    "stop": "Sinclair Gardens",
-    "address": "Sinclair Gardens, Roslin, Midlothian",
-    "postcode": "EH25 9PU",
-    "geox": -3.15909,
-    "geoy": 55.856143,
-    "source": "curated_verification"
-  },
-  "midlothian::sinclairgardens": {
-    "authority": "Midlothian",
-    "community": "Roslin",
-    "stop": "Sinclair Gardens",
-    "address": "Sinclair Gardens, Roslin, Midlothian",
-    "postcode": "EH25 9PU",
-    "geox": -3.15909,
-    "geoy": 55.856143,
-    "source": "curated_verification"
-  },
-  "midlothian::pathhead::pathheadromancampway": {
-    "authority": "Midlothian",
-    "community": "Pathhead",
-    "stop": "Pathhead - Roman Camp Way",
-    "address": "Pathhead - Roman Camp Way, Pathhead, Midlothian",
-    "postcode": "EH37 5RA",
-    "geox": -2.973259,
-    "geoy": 55.865947,
-    "source": "curated_verification"
-  },
-  "midlothian::pathheadromancampway": {
-    "authority": "Midlothian",
-    "community": "Pathhead",
-    "stop": "Pathhead - Roman Camp Way",
-    "address": "Pathhead - Roman Camp Way, Pathhead, Midlothian",
-    "postcode": "EH37 5RA",
-    "geox": -2.973259,
-    "geoy": 55.865947,
-    "source": "curated_verification"
-  },
-  "midlothian::pathhead::pathheadcrichtonterrace": {
-    "authority": "Midlothian",
-    "community": "Pathhead",
-    "stop": "Pathhead - Crichton Terrace",
-    "address": "Pathhead - Crichton Terrace, Pathhead, Midlothian",
-    "postcode": "EH37 5QB",
-    "geox": -2.968884,
-    "geoy": 55.868013,
-    "source": "curated_verification"
-  },
-  "midlothian::pathheadcrichtonterrace": {
-    "authority": "Midlothian",
-    "community": "Pathhead",
-    "stop": "Pathhead - Crichton Terrace",
-    "address": "Pathhead - Crichton Terrace, Pathhead, Midlothian",
-    "postcode": "EH37 5QB",
-    "geox": -2.968884,
-    "geoy": 55.868013,
-    "source": "curated_verification"
-  },
-  "midlothian::fala::fala": {
-    "authority": "Midlothian",
-    "community": "Fala",
-    "stop": "Fala",
-    "address": "Fala, Fala, Midlothian",
-    "postcode": "EH37 5ST",
-    "geox": -2.904589,
-    "geoy": 55.858017,
-    "source": "curated_verification"
-  },
-  "midlothian::fala": {
-    "authority": "Midlothian",
-    "community": "Fala",
-    "stop": "Fala",
-    "address": "Fala, Fala, Midlothian",
-    "postcode": "EH37 5ST",
-    "geox": -2.904589,
-    "geoy": 55.858017,
-    "source": "curated_verification"
-  },
-  "midlothian::shawfair::chapteronenurseryshawfair": {
-    "authority": "Midlothian",
-    "community": "Shawfair",
-    "stop": "Chapter One Nursery Shawfair",
-    "address": "Chapter One Nursery Shawfair, Shawfair, Midlothian",
-    "postcode": "EH22 1FA",
-    "geox": -3.08736,
-    "geoy": 55.912067,
-    "source": "curated_verification"
-  },
-  "midlothian::chapteronenurseryshawfair": {
-    "authority": "Midlothian",
-    "community": "Shawfair",
-    "stop": "Chapter One Nursery Shawfair",
-    "address": "Chapter One Nursery Shawfair, Shawfair, Midlothian",
-    "postcode": "EH22 1FA",
-    "geox": -3.08736,
-    "geoy": 55.912067,
-    "source": "curated_verification"
-  },
-  "angus::muirfieldnursery::muirfieldnursery": {
-    "authority": "Angus",
-    "community": "Muirfield Nursery",
-    "stop": "Muirfield Nursery",
-    "address": "Muirfield Nursery, Muirfield Nursery, Angus",
-    "postcode": "DD11 3ER",
-    "geox": -2.609755,
-    "geoy": 56.565185,
-    "source": "curated_verification"
-  },
-  "angus::muirfieldnursery": {
-    "authority": "Angus",
-    "community": "Muirfield Nursery",
-    "stop": "Muirfield Nursery",
-    "address": "Muirfield Nursery, Muirfield Nursery, Angus",
-    "postcode": "DD11 3ER",
-    "geox": -2.609755,
-    "geoy": 56.565185,
-    "source": "curated_verification"
-  },
-  "angus::crachie::crachie": {
-    "authority": "Angus",
-    "community": "Crachie",
-    "stop": "Crachie",
-    "address": "Crachie, Crachie, Angus",
-    "postcode": "DD8 2LW",
-    "geox": -2.800638,
-    "geoy": 56.617252,
-    "source": "curated_verification"
-  },
-  "angus::crachie": {
-    "authority": "Angus",
-    "community": "Crachie",
-    "stop": "Crachie",
-    "address": "Crachie, Crachie, Angus",
-    "postcode": "DD8 2LW",
-    "geox": -2.800638,
-    "geoy": 56.617252,
-    "source": "curated_verification"
-  },
-  "angus::steppingstonesnursery::forfarcamous": {
-    "authority": "Angus",
-    "community": "Stepping Stones Nursery",
-    "stop": "Forfar Camous",
-    "address": "Forfar Camous, Stepping Stones Nursery, Angus",
-    "postcode": "DD8 3TG",
-    "geox": -2.895788,
-    "geoy": 56.653941,
-    "source": "curated_verification"
-  },
-  "angus::forfarcamous": {
-    "authority": "Angus",
-    "community": "Stepping Stones Nursery",
-    "stop": "Forfar Camous",
-    "address": "Forfar Camous, Stepping Stones Nursery, Angus",
-    "postcode": "DD8 3TG",
-    "geox": -2.895788,
-    "geoy": 56.653941,
-    "source": "curated_verification"
-  },
-  "angus::tannadicenursery::tannadicenursery": {
-    "authority": "Angus",
-    "community": "Tannadice Nursery",
-    "stop": "Tannadice Nursery",
-    "address": "Tannadice Nursery, Tannadice Nursery, Angus",
-    "postcode": "DD8 3RP",
-    "geox": -2.85791,
-    "geoy": 56.712613,
-    "source": "curated_verification"
-  },
-  "angus::tannadicenursery": {
-    "authority": "Angus",
-    "community": "Tannadice Nursery",
-    "stop": "Tannadice Nursery",
-    "address": "Tannadice Nursery, Tannadice Nursery, Angus",
-    "postcode": "DD8 3RP",
-    "geox": -2.85791,
-    "geoy": 56.712613,
-    "source": "curated_verification"
-  },
-  "angus::charletonfruitfarm::charletonfruitfarm": {
-    "authority": "Angus",
-    "community": "Charleton Fruit Farm",
-    "stop": "Charleton Fruit Farm",
-    "address": "Charleton Fruit Farm, Charleton Fruit Farm, Angus",
-    "postcode": "DD10 9EW",
-    "geox": -2.454845,
-    "geoy": 56.739666,
-    "source": "curated_verification"
-  },
-  "angus::charletonfruitfarm": {
-    "authority": "Angus",
-    "community": "Charleton Fruit Farm",
-    "stop": "Charleton Fruit Farm",
-    "address": "Charleton Fruit Farm, Charleton Fruit Farm, Angus",
-    "postcode": "DD10 9EW",
-    "geox": -2.454845,
-    "geoy": 56.739666,
-    "source": "curated_verification"
-  },
-  "angus::charlestonnursery::charlestonnursery": {
-    "authority": "Angus",
-    "community": "Charleston nursery",
-    "stop": "Charleston nursery",
-    "address": "Charleston nursery, Charleston nursery, Angus",
-    "postcode": "DD8 1UG",
-    "geox": -3.007927,
-    "geoy": 56.598424,
-    "source": "curated_verification"
-  },
-  "angus::charlestonnursery": {
-    "authority": "Angus",
-    "community": "Charleston nursery",
-    "stop": "Charleston nursery",
-    "address": "Charleston nursery, Charleston nursery, Angus",
-    "postcode": "DD8 1UG",
-    "geox": -3.007927,
-    "geoy": 56.598424,
-    "source": "curated_verification"
-  },
-  "angus::kinpurniegardens::kinpurniegardens": {
-    "authority": "Angus",
-    "community": "Kinpurnie Gardens",
-    "stop": "Kinpurnie Gardens",
-    "address": "Kinpurnie Gardens, Kinpurnie Gardens, Angus",
-    "postcode": "PH12 8TY",
-    "geox": -3.145289,
-    "geoy": 56.558511,
-    "source": "curated_verification"
-  },
-  "angus::kinpurniegardens": {
-    "authority": "Angus",
-    "community": "Kinpurnie Gardens",
-    "stop": "Kinpurnie Gardens",
-    "address": "Kinpurnie Gardens, Kinpurnie Gardens, Angus",
-    "postcode": "PH12 8TY",
-    "geox": -3.145289,
-    "geoy": 56.558511,
-    "source": "curated_verification"
-  },
-  "angus::eassiehallbookchat::eassiehallbookchat": {
-    "authority": "Angus",
-    "community": "Eassie Hall Book Chat:",
-    "stop": "Eassie Hall Book Chat:",
-    "address": "Eassie Hall Book Chat:, Eassie Hall Book Chat:, Angus",
-    "postcode": "DD8 1SG",
-    "geox": -3.058421,
-    "geoy": 56.61317,
-    "source": "curated_verification"
-  },
-  "angus::eassiehallbookchat": {
-    "authority": "Angus",
-    "community": "Eassie Hall Book Chat:",
-    "stop": "Eassie Hall Book Chat:",
-    "address": "Eassie Hall Book Chat:, Eassie Hall Book Chat:, Angus",
-    "postcode": "DD8 1SG",
-    "geox": -3.058421,
-    "geoy": 56.61317,
-    "source": "curated_verification"
-  },
-  "angus::glamissquare::glamissquare": {
-    "authority": "Angus",
-    "community": "Glamis Square",
-    "stop": "Glamis Square",
-    "address": "Glamis Square, Glamis Square, Angus",
-    "postcode": "DD8 1ED",
-    "geox": -2.893824,
-    "geoy": 56.64056,
-    "source": "curated_verification"
-  },
-  "angus::glamissquare": {
-    "authority": "Angus",
-    "community": "Glamis Square",
-    "stop": "Glamis Square",
-    "address": "Glamis Square, Glamis Square, Angus",
-    "postcode": "DD8 1ED",
-    "geox": -2.893824,
-    "geoy": 56.64056,
-    "source": "curated_verification"
-  },
-  "angus::glenclova::uppergellabridge": {
-    "authority": "Angus",
-    "community": "Glen Clova",
-    "stop": "Upper Gella Bridge",
-    "address": "Upper Gella Bridge, Glen Clova, Angus",
-    "postcode": "DD8 4SB",
-    "geox": -3.125343,
-    "geoy": 56.78517,
-    "source": "curated_verification"
-  },
-  "angus::uppergellabridge": {
-    "authority": "Angus",
-    "community": "Glen Clova",
-    "stop": "Upper Gella Bridge",
-    "address": "Upper Gella Bridge, Glen Clova, Angus",
-    "postcode": "DD8 4SB",
-    "geox": -3.125343,
-    "geoy": 56.78517,
-    "source": "curated_verification"
-  },
-  "angus::glenprosen::churchcarpark": {
-    "authority": "Angus",
-    "community": "Glen Prosen",
-    "stop": "Church Car Park",
-    "address": "Church Car Park, Glen Prosen, Angus",
-    "postcode": "DD8 4SA",
-    "geox": -3.114723,
-    "geoy": 56.783055,
-    "source": "curated_verification"
-  },
-  "angus::churchcarpark": {
-    "authority": "Angus",
-    "community": "Glen Prosen",
-    "stop": "Church Car Park",
-    "address": "Church Car Park, Glen Prosen, Angus",
-    "postcode": "DD8 4SA",
-    "geox": -3.114723,
-    "geoy": 56.783055,
-    "source": "curated_verification"
-  },
-  "angus::glenprosen::homefarm": {
-    "authority": "Angus",
-    "community": "Glen Prosen",
-    "stop": "Home Farm",
-    "address": "Home Farm, Glen Prosen, Angus",
-    "postcode": "DD8 4SA",
-    "geox": -3.114723,
-    "geoy": 56.783055,
-    "source": "curated_verification"
-  },
-  "angus::homefarm": {
-    "authority": "Angus",
-    "community": "Glen Prosen",
-    "stop": "Home Farm",
-    "address": "Home Farm, Glen Prosen, Angus",
-    "postcode": "DD8 4SA",
-    "geox": -3.114723,
-    "geoy": 56.783055,
-    "source": "curated_verification"
-  },
-  "angus::lemontreenursery::byreidhall": {
-    "authority": "Angus",
-    "community": "Lemon Tree Nursery",
-    "stop": "by Reid Hall",
-    "address": "by Reid Hall, Lemon Tree Nursery, Angus",
-    "postcode": "DD8 3JA",
-    "geox": -2.891297,
-    "geoy": 56.646813,
-    "source": "curated_verification"
-  },
-  "angus::byreidhall": {
-    "authority": "Angus",
-    "community": "Lemon Tree Nursery",
-    "stop": "by Reid Hall",
-    "address": "by Reid Hall, Lemon Tree Nursery, Angus",
-    "postcode": "DD8 3JA",
-    "geox": -2.891297,
-    "geoy": 56.646813,
-    "source": "curated_verification"
-  },
-  "angus::glenislabyvillagehall::glenislabyvillagehall": {
-    "authority": "Angus",
-    "community": "Glenisla (by Village Hall",
-    "stop": "Glenisla (by Village Hall",
-    "address": "Glenisla (by Village Hall, Glenisla (by Village Hall, Angus",
-    "postcode": "PH11 8PH",
-    "geox": -3.285178,
-    "geoy": 56.730069,
-    "source": "curated_verification"
-  },
-  "angus::glenislabyvillagehall": {
-    "authority": "Angus",
-    "community": "Glenisla (by Village Hall",
-    "stop": "Glenisla (by Village Hall",
-    "address": "Glenisla (by Village Hall, Glenisla (by Village Hall, Angus",
-    "postcode": "PH11 8PH",
-    "geox": -3.285178,
-    "geoy": 56.730069,
-    "source": "curated_verification"
-  },
-  "angus::gowanbankdunnichenavenue::gowanbankdunnichenavenue": {
-    "authority": "Angus",
-    "community": "Gowanbank (Dunnichen Avenue",
-    "stop": "Gowanbank (Dunnichen Avenue",
-    "address": "Gowanbank (Dunnichen Avenue, Gowanbank (Dunnichen Avenue, Angus",
-    "postcode": "DD11 2NH",
-    "geox": -2.609382,
-    "geoy": 56.553148,
-    "source": "curated_verification"
-  },
-  "angus::gowanbankdunnichenavenue": {
-    "authority": "Angus",
-    "community": "Gowanbank (Dunnichen Avenue",
-    "stop": "Gowanbank (Dunnichen Avenue",
-    "address": "Gowanbank (Dunnichen Avenue, Gowanbank (Dunnichen Avenue, Angus",
-    "postcode": "DD11 2NH",
-    "geox": -2.609382,
-    "geoy": 56.553148,
-    "source": "curated_verification"
-  },
-  "librariesni::edenderryvillage::edenderryvillage": {
-    "authority": "Libraries NI",
-    "community": "Edenderry Village",
-    "stop": "Edenderry Village",
-    "address": "Edenderry Village, Edenderry Village, Libraries NI",
-    "postcode": "BT8 8LG",
-    "geox": -5.960552,
-    "geoy": 54.540149,
-    "source": "curated_verification"
-  },
-  "librariesni::edenderryvillage": {
-    "authority": "Libraries NI",
-    "community": "Edenderry Village",
-    "stop": "Edenderry Village",
-    "address": "Edenderry Village, Edenderry Village, Libraries NI",
-    "postcode": "BT8 8LG",
-    "geox": -5.960552,
-    "geoy": 54.540149,
-    "source": "curated_verification"
-  },
-  "librariesni::braniel::glenroadshops": {
-    "authority": "Libraries NI",
-    "community": "Braniel",
-    "stop": "Glen Road shops",
-    "address": "Glen Road shops, Braniel, Libraries NI",
-    "postcode": "BT5 7JG",
-    "geox": -5.869298,
-    "geoy": 54.58024,
-    "source": "curated_verification"
-  },
-  "librariesni::glenroadshops": {
-    "authority": "Libraries NI",
-    "community": "Braniel",
-    "stop": "Glen Road shops",
-    "address": "Glen Road shops, Braniel, Libraries NI",
-    "postcode": "BT5 7JG",
-    "geox": -5.869298,
-    "geoy": 54.58024,
-    "source": "curated_verification"
-  },
-  "librariesni::castlereaghroad::orbyparade": {
-    "authority": "Libraries NI",
-    "community": "Castlereagh Road",
-    "stop": "Orby Parade",
-    "address": "Orby Parade, Castlereagh Road, Libraries NI",
-    "postcode": "BT5 5HN",
-    "geox": -5.890292,
-    "geoy": 54.588263,
-    "source": "curated_verification"
-  },
-  "librariesni::orbyparade": {
-    "authority": "Libraries NI",
-    "community": "Castlereagh Road",
-    "stop": "Orby Parade",
-    "address": "Orby Parade, Castlereagh Road, Libraries NI",
-    "postcode": "BT5 5HN",
-    "geox": -5.890292,
-    "geoy": 54.588263,
-    "source": "curated_verification"
-  },
-  "librariesni::cliftonvilleroad::wyndhamavenue": {
-    "authority": "Libraries NI",
-    "community": "Cliftonville Road",
-    "stop": "Wyndham Avenue",
-    "address": "Wyndham Avenue, Cliftonville Road, Libraries NI",
-    "postcode": "BT14 6LN",
-    "geox": -5.945747,
-    "geoy": 54.617934,
-    "source": "curated_verification"
-  },
-  "librariesni::wyndhamavenue": {
-    "authority": "Libraries NI",
-    "community": "Cliftonville Road",
-    "stop": "Wyndham Avenue",
-    "address": "Wyndham Avenue, Cliftonville Road, Libraries NI",
-    "postcode": "BT14 6LN",
-    "geox": -5.945747,
-    "geoy": 54.617934,
-    "source": "curated_verification"
-  },
-  "librariesni::oldparkroad::cliftondenecrescent": {
-    "authority": "Libraries NI",
-    "community": "Oldpark Road",
-    "stop": "Cliftondene Crescent",
-    "address": "Cliftondene Crescent, Oldpark Road, Libraries NI",
-    "postcode": "BT14 7PA",
-    "geox": -5.949452,
-    "geoy": 54.611689,
-    "source": "curated_verification"
-  },
-  "librariesni::cliftondenecrescent": {
-    "authority": "Libraries NI",
-    "community": "Oldpark Road",
-    "stop": "Cliftondene Crescent",
-    "address": "Cliftondene Crescent, Oldpark Road, Libraries NI",
-    "postcode": "BT14 7PA",
-    "geox": -5.949452,
-    "geoy": 54.611689,
-    "source": "curated_verification"
-  },
-  "librariesni::ligonielroad::wolfhillcentre": {
-    "authority": "Libraries NI",
-    "community": "Ligoniel Road",
-    "stop": "Wolfhill Centre",
-    "address": "Wolfhill Centre, Ligoniel Road, Libraries NI",
-    "postcode": "BT14 8BW",
-    "geox": -5.978985,
-    "geoy": 54.624244,
-    "source": "curated_verification"
-  },
-  "librariesni::wolfhillcentre": {
-    "authority": "Libraries NI",
-    "community": "Ligoniel Road",
-    "stop": "Wolfhill Centre",
-    "address": "Wolfhill Centre, Ligoniel Road, Libraries NI",
-    "postcode": "BT14 8BW",
-    "geox": -5.978985,
-    "geoy": 54.624244,
-    "source": "curated_verification"
-  },
-  "librariesni::crumlinroad::ligonielroadjunction": {
-    "authority": "Libraries NI",
-    "community": "Crumlin Road",
-    "stop": "Ligoniel Road Junction",
-    "address": "Ligoniel Road Junction, Crumlin Road, Libraries NI",
-    "postcode": "BT14 8NP",
-    "geox": -5.991351,
-    "geoy": 54.629077,
-    "source": "curated_verification"
-  },
-  "librariesni::ligonielroadjunction": {
-    "authority": "Libraries NI",
-    "community": "Crumlin Road",
-    "stop": "Ligoniel Road Junction",
-    "address": "Ligoniel Road Junction, Crumlin Road, Libraries NI",
-    "postcode": "BT14 8NP",
-    "geox": -5.991351,
-    "geoy": 54.629077,
-    "source": "curated_verification"
-  },
-  "librariesni::sydenhamavenue::sycamoregrove": {
-    "authority": "Libraries NI",
-    "community": "Sydenham Avenue",
-    "stop": "Sycamore Grove",
-    "address": "Sycamore Grove, Sydenham Avenue, Libraries NI",
-    "postcode": "BT4 2DU",
-    "geox": -5.862476,
-    "geoy": 54.603589,
-    "source": "curated_verification"
-  },
-  "librariesni::sycamoregrove": {
-    "authority": "Libraries NI",
-    "community": "Sydenham Avenue",
-    "stop": "Sycamore Grove",
-    "address": "Sycamore Grove, Sydenham Avenue, Libraries NI",
-    "postcode": "BT4 2DU",
-    "geox": -5.862476,
-    "geoy": 54.603589,
-    "source": "curated_verification"
-  },
-  "librariesni::donegallparkavenue::castlegardens": {
-    "authority": "Libraries NI",
-    "community": "Donegall Park Avenue",
-    "stop": "Castle Gardens",
-    "address": "Castle Gardens, Donegall Park Avenue, Libraries NI",
-    "postcode": "BT15 4EN",
-    "geox": -5.934758,
-    "geoy": 54.64383,
-    "source": "curated_verification"
-  },
-  "librariesni::castlegardens": {
-    "authority": "Libraries NI",
-    "community": "Donegall Park Avenue",
-    "stop": "Castle Gardens",
-    "address": "Castle Gardens, Donegall Park Avenue, Libraries NI",
-    "postcode": "BT15 4EN",
-    "geox": -5.934758,
-    "geoy": 54.64383,
-    "source": "curated_verification"
-  },
-  "librariesni::shoreroad::greenislandclose": {
-    "authority": "Libraries NI",
-    "community": "Shore Road",
-    "stop": "Greenisland Close",
-    "address": "Greenisland Close, Shore Road, Libraries NI",
-    "postcode": "BT15 4FN",
-    "geox": -5.92832,
-    "geoy": 54.637916,
-    "source": "curated_verification"
-  },
-  "librariesni::greenislandclose": {
-    "authority": "Libraries NI",
-    "community": "Shore Road",
-    "stop": "Greenisland Close",
-    "address": "Greenisland Close, Shore Road, Libraries NI",
-    "postcode": "BT15 4FN",
-    "geox": -5.92832,
-    "geoy": 54.637916,
-    "source": "curated_verification"
-  },
-  "librariesni::ballygomartinroad::cairnmartincourt": {
-    "authority": "Libraries NI",
-    "community": "Ballygomartin Road",
-    "stop": "Cairnmartin Court",
-    "address": "Cairnmartin Court, Ballygomartin Road, Libraries NI",
-    "postcode": "BT13 3LE",
-    "geox": -5.966183,
-    "geoy": 54.612996,
-    "source": "curated_verification"
-  },
-  "librariesni::cairnmartincourt": {
-    "authority": "Libraries NI",
-    "community": "Ballygomartin Road",
-    "stop": "Cairnmartin Court",
-    "address": "Cairnmartin Court, Ballygomartin Road, Libraries NI",
-    "postcode": "BT13 3LE",
-    "geox": -5.966183,
-    "geoy": 54.612996,
-    "source": "curated_verification"
-  },
-  "librariesni::westcircularroad::springfieldparade": {
-    "authority": "Libraries NI",
-    "community": "West Circular Road",
-    "stop": "Springfield Parade",
-    "address": "Springfield Parade, West Circular Road, Libraries NI",
-    "postcode": "BT13 3QR",
-    "geox": -5.976587,
-    "geoy": 54.606277,
-    "source": "curated_verification"
-  },
-  "librariesni::springfieldparade": {
-    "authority": "Libraries NI",
-    "community": "West Circular Road",
-    "stop": "Springfield Parade",
-    "address": "Springfield Parade, West Circular Road, Libraries NI",
-    "postcode": "BT13 3QR",
-    "geox": -5.976587,
-    "geoy": 54.606277,
-    "source": "curated_verification"
-  },
-  "librariesni::glencairn::glencairnwalk": {
-    "authority": "Libraries NI",
-    "community": "Glencairn",
-    "stop": "Glencairn Walk",
-    "address": "Glencairn Walk, Glencairn, Libraries NI",
-    "postcode": "BT13 3XP",
-    "geox": -5.983,
-    "geoy": 54.608506,
-    "source": "curated_verification"
-  },
-  "librariesni::glencairnwalk": {
-    "authority": "Libraries NI",
-    "community": "Glencairn",
-    "stop": "Glencairn Walk",
-    "address": "Glencairn Walk, Glencairn, Libraries NI",
-    "postcode": "BT13 3XP",
-    "geox": -5.983,
-    "geoy": 54.608506,
-    "source": "curated_verification"
-  },
-  "librariesni::forthrivercrescent::corkeyhouse": {
-    "authority": "Libraries NI",
-    "community": "Forthriver Crescent",
-    "stop": "Corkey House",
-    "address": "Corkey House, Forthriver Crescent, Libraries NI",
-    "postcode": "BT13 3UR",
-    "geox": -5.978173,
-    "geoy": 54.617824,
-    "source": "curated_verification"
-  },
-  "librariesni::corkeyhouse": {
-    "authority": "Libraries NI",
-    "community": "Forthriver Crescent",
-    "stop": "Corkey House",
-    "address": "Corkey House, Forthriver Crescent, Libraries NI",
-    "postcode": "BT13 3UR",
-    "geox": -5.978173,
-    "geoy": 54.617824,
-    "source": "curated_verification"
-  },
-  "librariesni::brookeboroughmainstreet::brookeboroughmainstreet": {
-    "authority": "Libraries NI",
-    "community": "Brookeborough Main Street",
-    "stop": "Brookeborough Main Street",
-    "address": "Brookeborough Main Street, Brookeborough Main Street, Libraries NI",
-    "postcode": "BT94 4EZ",
-    "geox": -7.405276,
-    "geoy": 54.315118,
-    "source": "curated_verification"
-  },
-  "librariesni::brookeboroughmainstreet": {
-    "authority": "Libraries NI",
-    "community": "Brookeborough Main Street",
-    "stop": "Brookeborough Main Street",
-    "address": "Brookeborough Main Street, Brookeborough Main Street, Libraries NI",
-    "postcode": "BT94 4EZ",
-    "geox": -7.405276,
-    "geoy": 54.315118,
-    "source": "curated_verification"
-  },
-  "librariesni::newtowncunninghammainstreetcodonegalroi::newtowncunninghammainstreetcodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Newtowncunningham Main Street Co Donegal (ROI)",
-    "stop": "Newtowncunningham Main Street Co Donegal (ROI)",
-    "address": "Newtowncunningham Main Street Co Donegal (ROI), Newtowncunningham Main Street Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.516943,
-    "geoy": 54.992634,
-    "source": "curated_verification"
-  },
-  "librariesni::newtowncunninghammainstreetcodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Newtowncunningham Main Street Co Donegal (ROI)",
-    "stop": "Newtowncunningham Main Street Co Donegal (ROI)",
-    "address": "Newtowncunningham Main Street Co Donegal (ROI), Newtowncunningham Main Street Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.516943,
-    "geoy": 54.992634,
-    "source": "curated_verification"
-  },
-  "librariesni::manorcunninghammainstreetroi::manorcunninghammainstreetroi": {
-    "authority": "Libraries NI",
-    "community": "Manorcunningham Main Street (ROI)",
-    "stop": "Manorcunningham Main Street (ROI)",
-    "address": "Manorcunningham Main Street (ROI), Manorcunningham Main Street (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.62227,
-    "geoy": 54.954641,
-    "source": "curated_verification"
-  },
-  "librariesni::manorcunninghammainstreetroi": {
-    "authority": "Libraries NI",
-    "community": "Manorcunningham Main Street (ROI)",
-    "stop": "Manorcunningham Main Street (ROI)",
-    "address": "Manorcunningham Main Street (ROI), Manorcunningham Main Street (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.62227,
-    "geoy": 54.954641,
-    "source": "curated_verification"
-  },
-  "librariesni::swillyviewinchislandcodonegalroi::swillyviewinchislandcodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Swilly View Inch Island Co Donegal (ROI)",
-    "stop": "Swilly View Inch Island Co Donegal (ROI)",
-    "address": "Swilly View Inch Island Co Donegal (ROI), Swilly View Inch Island Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.497544,
-    "geoy": 55.066348,
-    "source": "curated_verification"
-  },
-  "librariesni::swillyviewinchislandcodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Swilly View Inch Island Co Donegal (ROI)",
-    "stop": "Swilly View Inch Island Co Donegal (ROI)",
-    "address": "Swilly View Inch Island Co Donegal (ROI), Swilly View Inch Island Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.497544,
-    "geoy": 55.066348,
-    "source": "curated_verification"
-  },
-  "librariesni::burnfootvillagecodonegalroi::burnfootvillagecodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Burnfoot Village Co Donegal (ROI)",
-    "stop": "Burnfoot Village Co Donegal (ROI)",
-    "address": "Burnfoot Village Co Donegal (ROI), Burnfoot Village Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.405106,
-    "geoy": 55.058356,
-    "source": "curated_verification"
-  },
-  "librariesni::burnfootvillagecodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Burnfoot Village Co Donegal (ROI)",
-    "stop": "Burnfoot Village Co Donegal (ROI)",
-    "address": "Burnfoot Village Co Donegal (ROI), Burnfoot Village Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.405106,
-    "geoy": 55.058356,
-    "source": "curated_verification"
-  },
-  "librariesni::carrigansvillagemainstreetcodonegalroi::carrigansvillagemainstreetcodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Carrigans Village Main Street Co Donegal (ROI)",
-    "stop": "Carrigans Village Main Street Co Donegal (ROI)",
-    "address": "Carrigans Village Main Street Co Donegal (ROI), Carrigans Village Main Street Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.429475,
-    "geoy": 54.950926,
-    "source": "curated_verification"
-  },
-  "librariesni::carrigansvillagemainstreetcodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Carrigans Village Main Street Co Donegal (ROI)",
-    "stop": "Carrigans Village Main Street Co Donegal (ROI)",
-    "address": "Carrigans Village Main Street Co Donegal (ROI), Carrigans Village Main Street Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.429475,
-    "geoy": 54.950926,
-    "source": "curated_verification"
-  },
-  "librariesni::killeavillagemainstreetcodonegalroi::killeavillagemainstreetcodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Killea Village Main Street Co Donegal (ROI)",
-    "stop": "Killea Village Main Street Co Donegal (ROI)",
-    "address": "Killea Village Main Street Co Donegal (ROI), Killea Village Main Street Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.409389,
-    "geoy": 54.977991,
-    "source": "curated_verification"
-  },
-  "librariesni::killeavillagemainstreetcodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Killea Village Main Street Co Donegal (ROI)",
-    "stop": "Killea Village Main Street Co Donegal (ROI)",
-    "address": "Killea Village Main Street Co Donegal (ROI), Killea Village Main Street Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.409389,
-    "geoy": 54.977991,
-    "source": "curated_verification"
-  },
-  "librariesni::stbaithainschurchstjohnstoncodonegalroi::stbaithainschurchstjohnstoncodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "St Baithains Church St Johnston Co Donegal (ROI)",
-    "stop": "St Baithains Church St Johnston Co Donegal (ROI)",
-    "address": "St Baithains Church St Johnston Co Donegal (ROI), St Baithains Church St Johnston Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.45824,
-    "geoy": 54.934519,
-    "source": "curated_verification"
-  },
-  "librariesni::stbaithainschurchstjohnstoncodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "St Baithains Church St Johnston Co Donegal (ROI)",
-    "stop": "St Baithains Church St Johnston Co Donegal (ROI)",
-    "address": "St Baithains Church St Johnston Co Donegal (ROI), St Baithains Church St Johnston Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.45824,
-    "geoy": 54.934519,
-    "source": "curated_verification"
-  },
-  "librariesni::ardbaithainestatestjonnstoncodonegalroi::ardbaithainestatestjonnstoncodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Ardbaithain Estate St Jonnston Co Donegal (ROI)",
-    "stop": "Ardbaithain Estate St Jonnston Co Donegal (ROI)",
-    "address": "Ardbaithain Estate St Jonnston Co Donegal (ROI), Ardbaithain Estate St Jonnston Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.45824,
-    "geoy": 54.934519,
-    "source": "curated_verification"
-  },
-  "librariesni::ardbaithainestatestjonnstoncodonegalroi": {
-    "authority": "Libraries NI",
-    "community": "Ardbaithain Estate St Jonnston Co Donegal (ROI)",
-    "stop": "Ardbaithain Estate St Jonnston Co Donegal (ROI)",
-    "address": "Ardbaithain Estate St Jonnston Co Donegal (ROI), Ardbaithain Estate St Jonnston Co Donegal (ROI), Libraries NI",
-    "postcode": "",
-    "geox": -7.45824,
-    "geoy": 54.934519,
-    "source": "curated_verification"
-  },
-  "cornwall::linkroadcarpark::linkroadcarpark": {
-    "authority": "Cornwall",
-    "community": "Link Road Car Park",
-    "stop": "Link Road Car Park",
-    "address": "Link Road Car Park, Link Road Car Park, Cornwall",
-    "postcode": "PL28 8AY",
-    "geox": -4.940562,
-    "geoy": 50.537905,
-    "source": "curated_verification"
-  },
-  "cornwall::linkroadcarpark": {
-    "authority": "Cornwall",
-    "community": "Link Road Car Park",
-    "stop": "Link Road Car Park",
-    "address": "Link Road Car Park, Link Road Car Park, Cornwall",
-    "postcode": "PL28 8AY",
-    "geox": -4.940562,
-    "geoy": 50.537905,
-    "source": "curated_verification"
-  },
-  "cornwall::quethiockbusstop::quethiockbusstop": {
-    "authority": "Cornwall",
-    "community": "Quethiock Bus stop",
-    "stop": "Quethiock Bus stop",
-    "address": "Quethiock Bus stop, Quethiock Bus stop, Cornwall",
-    "postcode": "PL14 3SQ",
-    "geox": -4.378448,
-    "geoy": 50.458483,
-    "source": "curated_verification"
-  },
-  "cornwall::quethiockbusstop": {
-    "authority": "Cornwall",
-    "community": "Quethiock Bus stop",
-    "stop": "Quethiock Bus stop",
-    "address": "Quethiock Bus stop, Quethiock Bus stop, Cornwall",
-    "postcode": "PL14 3SQ",
-    "geox": -4.378448,
-    "geoy": 50.458483,
-    "source": "curated_verification"
-  },
-  "cornwall::stdominicshop::stdominicshop": {
-    "authority": "Cornwall",
-    "community": "St Dominic shop",
-    "stop": "St Dominic shop",
-    "address": "St Dominic shop, St Dominic shop, Cornwall",
-    "postcode": "PL12 6TD",
-    "geox": -4.254498,
-    "geoy": 50.487773,
-    "source": "curated_verification"
-  },
-  "cornwall::stdominicshop": {
-    "authority": "Cornwall",
-    "community": "St Dominic shop",
-    "stop": "St Dominic shop",
-    "address": "St Dominic shop, St Dominic shop, Cornwall",
-    "postcode": "PL12 6TD",
-    "geox": -4.254498,
-    "geoy": 50.487773,
-    "source": "curated_verification"
-  },
-  "cornwall::truscotthouse::truscotthouse": {
-    "authority": "Cornwall",
-    "community": "Truscott House",
-    "stop": "Truscott House",
-    "address": "Truscott House, Truscott House, Cornwall",
-    "postcode": "PL15 8LA",
-    "geox": -4.403869,
-    "geoy": 50.646398,
-    "source": "curated_verification"
-  },
-  "cornwall::truscotthouse": {
-    "authority": "Cornwall",
-    "community": "Truscott House",
-    "stop": "Truscott House",
-    "address": "Truscott House, Truscott House, Cornwall",
-    "postcode": "PL15 8LA",
-    "geox": -4.403869,
-    "geoy": 50.646398,
-    "source": "curated_verification"
-  },
-  "cornwall::honicombepark::honicombepark": {
-    "authority": "Cornwall",
-    "community": "Honicombe Park",
-    "stop": "Honicombe Park",
-    "address": "Honicombe Park, Honicombe Park, Cornwall",
-    "postcode": "PL17 8JY",
-    "geox": -4.30541,
-    "geoy": 50.53298,
-    "source": "curated_verification"
-  },
-  "cornwall::honicombepark": {
-    "authority": "Cornwall",
-    "community": "Honicombe Park",
-    "stop": "Honicombe Park",
-    "address": "Honicombe Park, Honicombe Park, Cornwall",
-    "postcode": "PL17 8JY",
-    "geox": -4.30541,
-    "geoy": 50.53298,
-    "source": "curated_verification"
-  },
-  "cornwall::lowermetherell::lowermetherell": {
-    "authority": "Cornwall",
-    "community": "Lower Metherell",
-    "stop": "Lower Metherell",
-    "address": "Lower Metherell, Lower Metherell, Cornwall",
-    "postcode": "PL17 8BJ",
-    "geox": -4.245389,
-    "geoy": 50.502017,
-    "source": "curated_verification"
-  },
-  "cornwall::lowermetherell": {
-    "authority": "Cornwall",
-    "community": "Lower Metherell",
-    "stop": "Lower Metherell",
-    "address": "Lower Metherell, Lower Metherell, Cornwall",
-    "postcode": "PL17 8BJ",
-    "geox": -4.245389,
-    "geoy": 50.502017,
-    "source": "curated_verification"
-  },
-  "cornwall::marshgatevillagehall::marshgatevillagehall": {
-    "authority": "Cornwall",
-    "community": "MarshgateVillage Hall",
-    "stop": "MarshgateVillage Hall",
-    "address": "MarshgateVillage Hall, MarshgateVillage Hall, Cornwall",
-    "postcode": "PL32 9YN",
-    "geox": -4.618879,
-    "geoy": 50.697241,
-    "source": "curated_verification"
-  },
-  "cornwall::marshgatevillagehall": {
-    "authority": "Cornwall",
-    "community": "MarshgateVillage Hall",
-    "stop": "MarshgateVillage Hall",
-    "address": "MarshgateVillage Hall, MarshgateVillage Hall, Cornwall",
-    "postcode": "PL32 9YN",
-    "geox": -4.618879,
-    "geoy": 50.697241,
-    "source": "curated_verification"
-  },
-  "cornwall::stbrewardmethodistchurch::stbrewardmethodistchurch": {
-    "authority": "Cornwall",
-    "community": "St Breward Methodist Church",
-    "stop": "St Breward Methodist Church",
-    "address": "St Breward Methodist Church, St Breward Methodist Church, Cornwall",
-    "postcode": "PL30 4PP",
-    "geox": -4.688316,
-    "geoy": 50.564154,
-    "source": "curated_verification"
-  },
-  "cornwall::stbrewardmethodistchurch": {
-    "authority": "Cornwall",
-    "community": "St Breward Methodist Church",
-    "stop": "St Breward Methodist Church",
-    "address": "St Breward Methodist Church, St Breward Methodist Church, Cornwall",
-    "postcode": "PL30 4PP",
-    "geox": -4.688316,
-    "geoy": 50.564154,
-    "source": "curated_verification"
-  },
-  "cornwall::tregonethagreen::tregonethagreen": {
-    "authority": "Cornwall",
-    "community": "Tregonetha Green",
-    "stop": "Tregonetha Green",
-    "address": "Tregonetha Green, Tregonetha Green, Cornwall",
-    "postcode": "TR9 6EL",
-    "geox": -4.880425,
-    "geoy": 50.4393,
-    "source": "curated_verification"
-  },
-  "cornwall::tregonethagreen": {
-    "authority": "Cornwall",
-    "community": "Tregonetha Green",
-    "stop": "Tregonetha Green",
-    "address": "Tregonetha Green, Tregonetha Green, Cornwall",
-    "postcode": "TR9 6EL",
-    "geox": -4.880425,
-    "geoy": 50.4393,
-    "source": "curated_verification"
-  },
-  "cornwall::pednacarne::pednacarne": {
-    "authority": "Cornwall",
-    "community": "Pedna Carne",
-    "stop": "Pedna Carne",
-    "address": "Pedna Carne, Pedna Carne, Cornwall",
-    "postcode": "TR9 6DG",
-    "geox": -4.922088,
-    "geoy": 50.461226,
-    "source": "curated_verification"
-  },
-  "cornwall::pednacarne": {
-    "authority": "Cornwall",
-    "community": "Pedna Carne",
-    "stop": "Pedna Carne",
-    "address": "Pedna Carne, Pedna Carne, Cornwall",
-    "postcode": "TR9 6DG",
-    "geox": -4.922088,
-    "geoy": 50.461226,
-    "source": "curated_verification"
-  },
-  "cornwall::heliganhouse::heliganhouse": {
-    "authority": "Cornwall",
-    "community": "Heligan House",
-    "stop": "Heligan House",
-    "address": "Heligan House, Heligan House, Cornwall",
-    "postcode": "PL26 6EN",
-    "geox": -4.80959,
-    "geoy": 50.284091,
-    "source": "curated_verification"
-  },
-  "cornwall::heliganhouse": {
-    "authority": "Cornwall",
-    "community": "Heligan House",
-    "stop": "Heligan House",
-    "address": "Heligan House, Heligan House, Cornwall",
-    "postcode": "PL26 6EN",
-    "geox": -4.80959,
-    "geoy": 50.284091,
-    "source": "curated_verification"
-  },
-  "cornwall::ruanhighlaneslayby::ruanhighlaneslayby": {
-    "authority": "Cornwall",
-    "community": "Ruan High Lanes Layby",
-    "stop": "Ruan High Lanes Layby",
-    "address": "Ruan High Lanes Layby, Ruan High Lanes Layby, Cornwall",
-    "postcode": "TR2 5LD",
-    "geox": -4.928521,
-    "geoy": 50.237498,
-    "source": "curated_verification"
-  },
-  "cornwall::ruanhighlaneslayby": {
-    "authority": "Cornwall",
-    "community": "Ruan High Lanes Layby",
-    "stop": "Ruan High Lanes Layby",
-    "address": "Ruan High Lanes Layby, Ruan High Lanes Layby, Cornwall",
-    "postcode": "TR2 5LD",
-    "geox": -4.928521,
-    "geoy": 50.237498,
-    "source": "curated_verification"
-  },
-  "cornwall::gwennappit::gwennappit": {
-    "authority": "Cornwall",
-    "community": "Gwennap Pit",
-    "stop": "Gwennap Pit",
-    "address": "Gwennap Pit, Gwennap Pit, Cornwall",
-    "postcode": "TR16 5HG",
-    "geox": -5.206773,
-    "geoy": 50.225865,
-    "source": "curated_verification"
-  },
-  "cornwall::gwennappit": {
-    "authority": "Cornwall",
-    "community": "Gwennap Pit",
-    "stop": "Gwennap Pit",
-    "address": "Gwennap Pit, Gwennap Pit, Cornwall",
-    "postcode": "TR16 5HG",
-    "geox": -5.206773,
-    "geoy": 50.225865,
-    "source": "curated_verification"
-  },
-  "cornwall::mounthawke::highfieldroad": {
-    "authority": "Cornwall",
-    "community": "MountHawke",
-    "stop": "Highfield Road",
-    "address": "Highfield Road, MountHawke, Cornwall",
-    "postcode": "TR4 8DF",
-    "geox": -5.213555,
-    "geoy": 50.278728,
-    "source": "curated_verification"
-  },
-  "cornwall::highfieldroad": {
-    "authority": "Cornwall",
-    "community": "MountHawke",
-    "stop": "Highfield Road",
-    "address": "Highfield Road, MountHawke, Cornwall",
-    "postcode": "TR4 8DF",
-    "geox": -5.213555,
-    "geoy": 50.278728,
-    "source": "curated_verification"
-  },
-  "cornwall::trebahcross::busstop": {
-    "authority": "Cornwall",
-    "community": "Trebah Cross",
-    "stop": "Bus Stop",
-    "address": "Bus Stop, Trebah Cross, Cornwall",
-    "postcode": "TR11 5JZ",
-    "geox": -5.121825,
-    "geoy": 50.106671,
-    "source": "curated_verification"
-  },
-  "cornwall::restronguetpoint::restronguetpoint": {
-    "authority": "Cornwall",
-    "community": "Restronguet Point",
-    "stop": "Restronguet Point",
-    "address": "Restronguet Point, Restronguet Point, Cornwall",
-    "postcode": "TR3 6RB",
-    "geox": -5.057024,
-    "geoy": 50.196925,
-    "source": "curated_verification"
-  },
-  "cornwall::restronguetpoint": {
-    "authority": "Cornwall",
-    "community": "Restronguet Point",
-    "stop": "Restronguet Point",
-    "address": "Restronguet Point, Restronguet Point, Cornwall",
-    "postcode": "TR3 6RB",
-    "geox": -5.057024,
-    "geoy": 50.196925,
-    "source": "curated_verification"
-  },
-  "cornwall::cosawespark::cosawespark": {
-    "authority": "Cornwall",
-    "community": "Cosawes Park",
-    "stop": "Cosawes Park",
-    "address": "Cosawes Park, Cosawes Park, Cornwall",
-    "postcode": "TR3 7QS",
-    "geox": -5.128359,
-    "geoy": 50.196113,
-    "source": "curated_verification"
-  },
-  "cornwall::cosawespark": {
-    "authority": "Cornwall",
-    "community": "Cosawes Park",
-    "stop": "Cosawes Park",
-    "address": "Cosawes Park, Cosawes Park, Cornwall",
-    "postcode": "TR3 7QS",
-    "geox": -5.128359,
-    "geoy": 50.196113,
-    "source": "curated_verification"
-  },
-  "cornwall::perranwellinfokiosk::perranwellinfokiosk": {
-    "authority": "Cornwall",
-    "community": "Perranwell Info Kiosk",
-    "stop": "Perranwell Info Kiosk",
-    "address": "Perranwell Info Kiosk, Perranwell Info Kiosk, Cornwall",
-    "postcode": "TR3 7PT",
-    "geox": -5.119185,
-    "geoy": 50.213174,
-    "source": "curated_verification"
-  },
-  "cornwall::perranwellinfokiosk": {
-    "authority": "Cornwall",
-    "community": "Perranwell Info Kiosk",
-    "stop": "Perranwell Info Kiosk",
-    "address": "Perranwell Info Kiosk, Perranwell Info Kiosk, Cornwall",
-    "postcode": "TR3 7PT",
-    "geox": -5.119185,
-    "geoy": 50.213174,
-    "source": "curated_verification"
-  },
-  "cornwall::porthreath::porthreatharms": {
-    "authority": "Cornwall",
-    "community": "Porthreath",
-    "stop": "Porthreath Arms",
-    "address": "Porthreath Arms, Porthreath, Cornwall",
-    "postcode": "TR16 4LA",
-    "geox": -5.288148,
-    "geoy": 50.261095,
-    "source": "curated_verification"
-  },
-  "cornwall::porthreatharms": {
-    "authority": "Cornwall",
-    "community": "Porthreath",
-    "stop": "Porthreath Arms",
-    "address": "Porthreath Arms, Porthreath, Cornwall",
-    "postcode": "TR16 4LA",
-    "geox": -5.288148,
-    "geoy": 50.261095,
-    "source": "curated_verification"
-  },
-  "lincolnshire::brantroad::librarysite": {
-    "authority": "Lincolnshire",
-    "community": "Brant Road",
-    "stop": "Library Site",
-    "address": "Library Site, Brant Road, Lincolnshire",
-    "postcode": "LN5 8RX",
-    "geox": -0.548321,
-    "geoy": 53.195214,
-    "source": "curated_verification"
-  },
-  "lincolnshire::librarysite": {
-    "authority": "Lincolnshire",
-    "community": "Brant Road",
-    "stop": "Library Site",
-    "address": "Library Site, Brant Road, Lincolnshire",
-    "postcode": "LN5 8RX",
-    "geox": -0.548321,
-    "geoy": 53.195214,
-    "source": "curated_verification"
-  },
-  "lincolnshire::greatlimber::grasbyroadcottage": {
-    "authority": "Lincolnshire",
-    "community": "Great Limber",
-    "stop": "Grasby Road Cottage",
-    "address": "Grasby Road Cottage, Great Limber, Lincolnshire",
-    "postcode": "DN37 8LB",
-    "geox": -0.286124,
-    "geoy": 53.560124,
-    "source": "curated_verification"
-  },
-  "lincolnshire::grasbyroadcottage": {
-    "authority": "Lincolnshire",
-    "community": "Great Limber",
-    "stop": "Grasby Road Cottage",
-    "address": "Grasby Road Cottage, Great Limber, Lincolnshire",
-    "postcode": "DN37 8LB",
-    "geox": -0.286124,
-    "geoy": 53.560124,
-    "source": "curated_verification"
-  },
-  "lincolnshire::hawthornhillrosewoodpark::hawthornhillrosewoodpark": {
-    "authority": "Lincolnshire",
-    "community": "Hawthorn Hill Rosewood Park",
-    "stop": "Hawthorn Hill Rosewood Park",
-    "address": "Hawthorn Hill Rosewood Park, Hawthorn Hill Rosewood Park, Lincolnshire",
-    "postcode": "LN4 4JS",
-    "geox": -0.193245,
-    "geoy": 53.111823,
-    "source": "curated_verification"
-  },
-  "lincolnshire::hawthornhillrosewoodpark": {
-    "authority": "Lincolnshire",
-    "community": "Hawthorn Hill Rosewood Park",
-    "stop": "Hawthorn Hill Rosewood Park",
-    "address": "Hawthorn Hill Rosewood Park, Hawthorn Hill Rosewood Park, Lincolnshire",
-    "postcode": "LN4 4JS",
-    "geox": -0.193245,
-    "geoy": 53.111823,
-    "source": "curated_verification"
-  },
-  "lincolnshire::kealcoates::laybycoachhouseph": {
-    "authority": "Lincolnshire",
-    "community": "Keal Coates",
-    "stop": "Layby-Coach House PH",
-    "address": "Layby-Coach House PH, Keal Coates, Lincolnshire",
-    "postcode": "PE23 4EF",
-    "geox": 0.024125,
-    "geoy": 53.155412,
-    "source": "curated_verification"
-  },
-  "lincolnshire::laybycoachhouseph": {
-    "authority": "Lincolnshire",
-    "community": "Keal Coates",
-    "stop": "Layby-Coach House PH",
-    "address": "Layby-Coach House PH, Keal Coates, Lincolnshire",
-    "postcode": "PE23 4EF",
-    "geox": 0.024125,
-    "geoy": 53.155412,
-    "source": "curated_verification"
-  },
-  "lincolnshire::morton::longmeadows": {
-    "authority": "Lincolnshire",
-    "community": "Morton",
-    "stop": "Long Meadows",
-    "address": "Long Meadows, Morton, Lincolnshire",
-    "postcode": "PE10 0NW",
-    "geox": -0.378124,
-    "geoy": 52.793145,
-    "source": "curated_verification"
-  },
-  "lincolnshire::longmeadows": {
-    "authority": "Lincolnshire",
-    "community": "Morton",
-    "stop": "Long Meadows",
-    "address": "Long Meadows, Morton, Lincolnshire",
-    "postcode": "PE10 0NW",
-    "geox": -0.378124,
-    "geoy": 52.793145,
-    "source": "curated_verification"
-  },
-  "lincolnshire::nettlehamfields::marigoldclose": {
-    "authority": "Lincolnshire",
-    "community": "Nettleham Fields",
-    "stop": "Marigold Close",
-    "address": "Marigold Close, Nettleham Fields, Lincolnshire",
-    "postcode": "LN2 4FZ",
-    "geox": -0.518241,
-    "geoy": 53.254125,
-    "source": "curated_verification"
-  },
-  "lincolnshire::marigoldclose": {
-    "authority": "Lincolnshire",
-    "community": "Nettleham Fields",
-    "stop": "Marigold Close",
-    "address": "Marigold Close, Nettleham Fields, Lincolnshire",
-    "postcode": "LN2 4FZ",
-    "geox": -0.518241,
-    "geoy": 53.254125,
-    "source": "curated_verification"
-  },
-  "lincolnshire::toyntonstpeters::9eastvilleroad": {
-    "authority": "Lincolnshire",
-    "community": "Toynton St Peters",
-    "stop": "9 Eastville Road",
-    "address": "9 Eastville Road, Toynton St Peters, Lincolnshire",
-    "postcode": "PE23 5LA",
-    "geox": 0.071245,
-    "geoy": 53.141254,
-    "source": "curated_verification"
-  },
-  "lincolnshire::9eastvilleroad": {
-    "authority": "Lincolnshire",
-    "community": "Toynton St Peters",
-    "stop": "9 Eastville Road",
-    "address": "9 Eastville Road, Toynton St Peters, Lincolnshire",
-    "postcode": "PE23 5LA",
-    "geox": 0.071245,
-    "geoy": 53.141254,
-    "source": "curated_verification"
-  },
-  "lincolnshire::westcommon::longleysroad": {
-    "authority": "Lincolnshire",
-    "community": "West Common",
-    "stop": "Long Leys Road",
-    "address": "Long Leys Road, West Common, Lincolnshire",
-    "postcode": "LN1 1DT",
-    "geox": -0.558124,
-    "geoy": 53.240125,
-    "source": "curated_verification"
-  },
-  "lincolnshire::longleysroad": {
-    "authority": "Lincolnshire",
-    "community": "West Common",
-    "stop": "Long Leys Road",
-    "address": "Long Leys Road, West Common, Lincolnshire",
-    "postcode": "LN1 1DT",
-    "geox": -0.558124,
-    "geoy": 53.240125,
-    "source": "curated_verification"
-  },
-  "lincolnshire::withamsthughessouth::academyschool": {
-    "authority": "Lincolnshire",
-    "community": "Witham St Hughes South",
-    "stop": "Academy School",
-    "address": "Academy School, Witham St Hughes South, Lincolnshire",
-    "postcode": "LN6 9WF",
-    "geox": -0.665124,
-    "geoy": 53.159412,
-    "source": "curated_verification"
-  },
-  "lincolnshire::academyschool": {
-    "authority": "Lincolnshire",
-    "community": "Witham St Hughes South",
-    "stop": "Academy School",
-    "address": "Academy School, Witham St Hughes South, Lincolnshire",
-    "postcode": "LN6 9WF",
-    "geox": -0.665124,
-    "geoy": 53.159412,
-    "source": "curated_verification"
-  },
+  "bedford::kempstonrural::themaypolewilkinsonroad": [
+    52.10972,
+    -0.51476
+  ],
+  "bedford::themaypolewilkinsonroad": [
+    52.10972,
+    -0.51476
+  ],
+  "kent::bidborough::villagehall": [
+    51.16975,
+    0.23496
+  ],
+  "kent::villagehall": [
+    51.16975,
+    0.23496
+  ],
+  "staffordshire::hoptonheights::battleridge": [
+    52.83119,
+    -2.07893
+  ],
+  "staffordshire::battleridge": [
+    52.83119,
+    -2.07893
+  ],
+  "stirling::brigoturk::duncraggonroad": [
+    56.23148,
+    -4.36644
+  ],
+  "stirling::duncraggonroad": [
+    56.23148,
+    -4.36644
+  ],
+  "northyorkshire::alanbrookebarracks::garagesoffelmroad": [
+    54.2057,
+    -1.39724
+  ],
+  "northyorkshire::garagesoffelmroad": [
+    54.2057,
+    -1.39724
+  ],
+  "northyorkshire::rafleeming::nexttotherafakidznursery": [
+    54.29332,
+    -1.52856
+  ],
+  "northyorkshire::nexttotherafakidznursery": [
+    54.29332,
+    -1.52856
+  ],
+  "northyorkshire::yorkshiregateway::yorkshiregateway": [
+    53.76589,
+    -1.29015
+  ],
+  "northyorkshire::yorkshiregateway": [
+    53.76589,
+    -1.29015
+  ],
+  "nottinghamshire::welbeck::thewinnings": [
+    53.25993,
+    -1.18521
+  ],
+  "nottinghamshire::thewinnings": [
+    53.25993,
+    -1.18521
+  ],
+  "nottinghamshire::newnuthall::ayscoughavenue": [
+    52.99083,
+    -1.23961
+  ],
+  "nottinghamshire::ayscoughavenue": [
+    52.99083,
+    -1.23961
+  ],
+  "nottinghamshire::lindy::churchlaneno11": [
+    53.05127,
+    -1.20224
+  ],
+  "nottinghamshire::churchlaneno11": [
+    53.05127,
+    -1.20224
+  ],
+  "nottinghamshire::oldbrinsley::churchwalkno1": [
+    53.03595,
+    -1.31435
+  ],
+  "nottinghamshire::churchwalkno1": [
+    53.03595,
+    -1.31435
+  ],
+  "nottinghamshire::underwoodwestwood::palmerstonstreetoppositeno1": [
+    53.06224,
+    -1.32635
+  ],
+  "nottinghamshire::palmerstonstreetoppositeno1": [
+    53.06224,
+    -1.32635
+  ],
+  "derbyshire::crichcarr::cliffinncarpark": [
+    53.08425,
+    -1.50331
+  ],
+  "derbyshire::cliffinncarpark": [
+    53.08425,
+    -1.50331
+  ],
+  "derbyshire::holmehall::wardgatewaysupermarket": [
+    53.25002,
+    -1.45708
+  ],
+  "derbyshire::wardgatewaysupermarket": [
+    53.25002,
+    -1.45708
+  ],
+  "derbyshire::holmehall::carsingtonclosenrschool": [
+    53.24532,
+    -1.4729
+  ],
+  "derbyshire::carsingtonclosenrschool": [
+    53.24532,
+    -1.4729
+  ],
+  "cheshireeast::gradeleygreen::greenfieldsfarm": [
+    53.07682,
+    -2.59368
+  ],
+  "cheshireeast::greenfieldsfarm": [
+    53.07682,
+    -2.59368
+  ],
+  "cheshireeast::cholmondeley::postoffice": [
+    53.04983,
+    -2.66872
+  ],
+  "cheshireeast::postoffice": [
+    53.04983,
+    -2.66872
+  ],
+  "cheshireeast::wychwoodpark::conferencecentre": [
+    53.0501,
+    -2.39317
+  ],
+  "cheshireeast::conferencecentre": [
+    53.0501,
+    -2.39317
+  ],
+  "cheshireeast::lymegreen::lymeview": [
+    53.23187,
+    -2.12595
+  ],
+  "cheshireeast::lymeview": [
+    53.23187,
+    -2.12595
+  ],
+  "cheshireeast::astonbybudworth::hieldgrove": [
+    53.31317,
+    -2.53611
+  ],
+  "cheshireeast::hieldgrove": [
+    53.31317,
+    -2.53611
+  ],
+  "cheshireeast::overalderley::festivaldrive": [
+    53.29012,
+    -2.20154
+  ],
+  "cheshireeast::festivaldrive": [
+    53.29012,
+    -2.20154
+  ],
+  "cheshireeast::rope::glaisdaleclose": [
+    53.07693,
+    -2.45896
+  ],
+  "cheshireeast::glaisdaleclose": [
+    53.07693,
+    -2.45896
+  ],
+  "thescottishborders::romannobr::schoolarea": [
+    55.72331,
+    -3.32823
+  ],
+  "thescottishborders::schoolarea": [
+    55.72331,
+    -3.32823
+  ],
+  "thescottishborders::wolfelee::wolfeleelodge": [
+    55.39024,
+    -2.65568
+  ],
+  "thescottishborders::wolfeleelodge": [
+    55.39024,
+    -2.65568
+  ],
+  "thescottishborders::upperburnmouth::upperburnmouthfarmcottages": [
+    55.84229,
+    -2.07531
+  ],
+  "thescottishborders::upperburnmouthfarmcottages": [
+    55.84229,
+    -2.07531
+  ],
+  "thescottishborders::thepeel::peelgardens": [
+    55.60544,
+    -2.90089
+  ],
+  "thescottishborders::peelgardens": [
+    55.60544,
+    -2.90089
+  ],
+  "thescottishborders::newtownstbos::whitefieldcresc": [
+    55.57733,
+    -2.67131
+  ],
+  "thescottishborders::whitefieldcresc": [
+    55.57733,
+    -2.67131
+  ],
+  "thescottishborders::newtownstbos::sproustonroad": [
+    55.57144,
+    -2.67119
+  ],
+  "thescottishborders::sproustonroad": [
+    55.57144,
+    -2.67119
+  ],
+  "thescottishborders::macksmill::macksmill": [
+    55.68074,
+    -2.56394
+  ],
+  "thescottishborders::macksmill": [
+    55.68074,
+    -2.56394
+  ],
+  "thescottishborders::carfraemill::carpark": [
+    55.7725,
+    -2.78489
+  ],
+  "thescottishborders::carpark": [
+    55.7725,
+    -2.78489
+  ],
+  "thescottishborders::easterhowlaws::cottages": [
+    55.8261,
+    -2.43833
+  ],
+  "thescottishborders::cottages": [
+    55.8261,
+    -2.43833
+  ],
+  "countydurham::cockfieldstation::cockfieldstation": [
+    54.61289,
+    -1.81071
+  ],
+  "countydurham::cockfieldstation": [
+    54.61289,
+    -1.81071
+  ],
+  "countydurham::copleylane::glencrest": [
+    54.62292,
+    -1.85523
+  ],
+  "countydurham::glencrest": [
+    54.62292,
+    -1.85523
+  ],
+  "countydurham::esperley::oakwoodhall": [
+    54.60821,
+    -1.79901
+  ],
+  "countydurham::oakwoodhall": [
+    54.60821,
+    -1.79901
+  ],
+  "countydurham::hamsterleycolliery::denecourt": [
+    54.9035,
+    -1.81523
+  ],
+  "countydurham::denecourt": [
+    54.9035,
+    -1.81523
+  ],
+  "countydurham::hamsterleyforest::informationcentre": [
+    54.67311,
+    -1.88514
+  ],
+  "countydurham::informationcentre": [
+    54.67311,
+    -1.88514
+  ],
+  "countydurham::lunedale::chapelcottage": [
+    54.63683,
+    -2.1455
+  ],
+  "countydurham::chapelcottage": [
+    54.63683,
+    -2.1455
+  ],
+  "countydurham::sherburnvillage::communitycentre": [
+    54.77416,
+    -1.50266
+  ],
+  "countydurham::communitycentre": [
+    54.77416,
+    -1.50266
+  ],
+  "countydurham::southside::crowehowle": [
+    54.63523,
+    -1.83791
+  ],
+  "countydurham::crowehowle": [
+    54.63523,
+    -1.83791
+  ],
+  "countydurham::tofthillhwf::highwetherfarm": [
+    54.65171,
+    -1.74887
+  ],
+  "countydurham::highwetherfarm": [
+    54.65171,
+    -1.74887
+  ],
+  "countydurham::wham::hawthornehouse": [
+    54.62698,
+    -1.8258
+  ],
+  "countydurham::hawthornehouse": [
+    54.62698,
+    -1.8258
+  ],
+  "perthandkinross::kinlochrannochprimaryschool::kinlochrannochprimaryschool": [
+    56.70055,
+    -4.18848
+  ],
+  "perthandkinross::kinlochrannochprimaryschool": [
+    56.70055,
+    -4.18848
+  ],
+  "perthandkinross::stfillans::villageshop": [
+    56.39235,
+    -4.11698
+  ],
+  "perthandkinross::villageshop": [
+    56.39235,
+    -4.11698
+  ],
+  "perthandkinross::pitcairngreenprimaryschool::pitcairngreenprimaryschool": [
+    56.42651,
+    -3.51537
+  ],
+  "perthandkinross::pitcairngreenprimaryschool": [
+    56.42651,
+    -3.51537
+  ],
+  "perthandkinross::connachercourt::connachercourt": [
+    56.70348,
+    -3.72524
+  ],
+  "perthandkinross::connachercourt": [
+    56.70348,
+    -3.72524
+  ],
+  "perthandkinross::causewaycourt::shelteredhousing": [
+    56.20575,
+    -3.42547
+  ],
+  "perthandkinross::shelteredhousing": [
+    56.20575,
+    -3.42547
+  ],
+  "perthandkinross::pitlochry::aldourgardenshousing": [
+    56.70399,
+    -3.72613
+  ],
+  "perthandkinross::aldourgardenshousing": [
+    56.70399,
+    -3.72613
+  ],
+  "perthandkinross::pitlochry::fishersviewhousing": [
+    56.70593,
+    -3.74682
+  ],
+  "perthandkinross::fishersviewhousing": [
+    56.70593,
+    -3.74682
+  ],
+  "perthandkinross::meiglevillage::thesquarenearcommunitygarden": [
+    56.58829,
+    -3.16268
+  ],
+  "perthandkinross::thesquarenearcommunitygarden": [
+    56.58829,
+    -3.16268
+  ],
+  "perthandkinross::couparangus::outsidetownhall": [
+    56.54648,
+    -3.26616
+  ],
+  "perthandkinross::outsidetownhall": [
+    56.54648,
+    -3.26616
+  ],
+  "perthandkinross::meiklour::monument": [
+    56.54157,
+    -3.37168
+  ],
+  "perthandkinross::monument": [
+    56.54157,
+    -3.37168
+  ],
+  "perthandkinross::errolprimary::schoolpupilsonly": [
+    56.39238,
+    -3.21308
+  ],
+  "perthandkinross::schoolpupilsonly": [
+    56.39238,
+    -3.21308
+  ],
+  "perthandkinross::cleishprimaryschool::cleishprimaryschool": [
+    56.16627,
+    -3.45859
+  ],
+  "perthandkinross::cleishprimaryschool": [
+    56.16627,
+    -3.45859
+  ],
+  "perthandkinross::bridgeoftiltstore::bridgeoftiltstore": [
+    56.76715,
+    -3.83851
+  ],
+  "perthandkinross::bridgeoftiltstore": [
+    56.76715,
+    -3.83851
+  ],
+  "midlothian::northmiddleton::northmiddletonvillagehall": [
+    55.82024,
+    -3.02405
+  ],
+  "midlothian::northmiddletonvillagehall": [
+    55.82024,
+    -3.02405
+  ],
+  "midlothian::auchendinny::glencorsecentre": [
+    55.8477,
+    -3.19096
+  ],
+  "midlothian::glencorsecentre": [
+    55.8477,
+    -3.19096
+  ],
+  "midlothian::penicuik::aaronhouse": [
+    55.83717,
+    -3.22583
+  ],
+  "midlothian::aaronhouse": [
+    55.83717,
+    -3.22583
+  ],
+  "midlothian::penicuik::broomhilldaycentre": [
+    55.82462,
+    -3.22412
+  ],
+  "midlothian::broomhilldaycentre": [
+    55.82462,
+    -3.22412
+  ],
+  "midlothian::auchendinny::glencorsecarehomearea": [
+    55.8477,
+    -3.19096
+  ],
+  "midlothian::glencorsecarehomearea": [
+    55.8477,
+    -3.19096
+  ],
+  "midlothian::penicuik::scotscorner": [
+    55.84474,
+    -3.20891
+  ],
+  "midlothian::scotscorner": [
+    55.84474,
+    -3.20891
+  ],
+  "midlothian::roslin::stclairmews": [
+    55.85912,
+    -3.16611
+  ],
+  "midlothian::stclairmews": [
+    55.85912,
+    -3.16611
+  ],
+  "midlothian::roslin::sinclairgardens": [
+    55.85614,
+    -3.15909
+  ],
+  "midlothian::sinclairgardens": [
+    55.85614,
+    -3.15909
+  ],
+  "midlothian::pathhead::pathheadromancampway": [
+    55.86595,
+    -2.97326
+  ],
+  "midlothian::pathheadromancampway": [
+    55.86595,
+    -2.97326
+  ],
+  "midlothian::pathhead::pathheadcrichtonterrace": [
+    55.86801,
+    -2.96888
+  ],
+  "midlothian::pathheadcrichtonterrace": [
+    55.86801,
+    -2.96888
+  ],
+  "midlothian::fala::fala": [
+    55.85802,
+    -2.90459
+  ],
+  "midlothian::fala": [
+    55.85802,
+    -2.90459
+  ],
+  "midlothian::shawfair::chapteronenurseryshawfair": [
+    55.91207,
+    -3.08736
+  ],
+  "midlothian::chapteronenurseryshawfair": [
+    55.91207,
+    -3.08736
+  ],
+  "angus::muirfieldnursery::muirfieldnursery": [
+    56.56518,
+    -2.60975
+  ],
+  "angus::muirfieldnursery": [
+    56.56518,
+    -2.60975
+  ],
+  "angus::crachie::crachie": [
+    56.61725,
+    -2.80064
+  ],
+  "angus::crachie": [
+    56.61725,
+    -2.80064
+  ],
+  "angus::steppingstonesnursery::forfarcamous": [
+    56.65394,
+    -2.89579
+  ],
+  "angus::forfarcamous": [
+    56.65394,
+    -2.89579
+  ],
+  "angus::tannadicenursery::tannadicenursery": [
+    56.71261,
+    -2.85791
+  ],
+  "angus::tannadicenursery": [
+    56.71261,
+    -2.85791
+  ],
+  "angus::charletonfruitfarm::charletonfruitfarm": [
+    56.73967,
+    -2.45485
+  ],
+  "angus::charletonfruitfarm": [
+    56.73967,
+    -2.45485
+  ],
+  "angus::charlestonnursery::charlestonnursery": [
+    56.59842,
+    -3.00793
+  ],
+  "angus::charlestonnursery": [
+    56.59842,
+    -3.00793
+  ],
+  "angus::kinpurniegardens::kinpurniegardens": [
+    56.55851,
+    -3.14529
+  ],
+  "angus::kinpurniegardens": [
+    56.55851,
+    -3.14529
+  ],
+  "angus::eassiehallbookchat::eassiehallbookchat": [
+    56.61317,
+    -3.05842
+  ],
+  "angus::eassiehallbookchat": [
+    56.61317,
+    -3.05842
+  ],
+  "angus::glamissquare::glamissquare": [
+    56.64056,
+    -2.89382
+  ],
+  "angus::glamissquare": [
+    56.64056,
+    -2.89382
+  ],
+  "angus::glenclova::uppergellabridge": [
+    56.78517,
+    -3.12534
+  ],
+  "angus::uppergellabridge": [
+    56.78517,
+    -3.12534
+  ],
+  "angus::glenprosen::churchcarpark": [
+    56.78305,
+    -3.11472
+  ],
+  "angus::churchcarpark": [
+    56.78305,
+    -3.11472
+  ],
+  "angus::glenprosen::homefarm": [
+    56.78305,
+    -3.11472
+  ],
+  "angus::homefarm": [
+    56.78305,
+    -3.11472
+  ],
+  "angus::lemontreenursery::byreidhall": [
+    56.64681,
+    -2.8913
+  ],
+  "angus::byreidhall": [
+    56.64681,
+    -2.8913
+  ],
+  "angus::glenislabyvillagehall::glenislabyvillagehall": [
+    56.73007,
+    -3.28518
+  ],
+  "angus::glenislabyvillagehall": [
+    56.73007,
+    -3.28518
+  ],
+  "angus::gowanbankdunnichenavenue::gowanbankdunnichenavenue": [
+    56.55315,
+    -2.60938
+  ],
+  "angus::gowanbankdunnichenavenue": [
+    56.55315,
+    -2.60938
+  ],
+  "librariesni::edenderryvillage::edenderryvillage": [
+    54.54015,
+    -5.96055
+  ],
+  "librariesni::edenderryvillage": [
+    54.54015,
+    -5.96055
+  ],
+  "librariesni::braniel::glenroadshops": [
+    54.58024,
+    -5.8693
+  ],
+  "librariesni::glenroadshops": [
+    54.58024,
+    -5.8693
+  ],
+  "librariesni::castlereaghroad::orbyparade": [
+    54.58826,
+    -5.89029
+  ],
+  "librariesni::orbyparade": [
+    54.58826,
+    -5.89029
+  ],
+  "librariesni::cliftonvilleroad::wyndhamavenue": [
+    54.61793,
+    -5.94575
+  ],
+  "librariesni::wyndhamavenue": [
+    54.61793,
+    -5.94575
+  ],
+  "librariesni::oldparkroad::cliftondenecrescent": [
+    54.61169,
+    -5.94945
+  ],
+  "librariesni::cliftondenecrescent": [
+    54.61169,
+    -5.94945
+  ],
+  "librariesni::ligonielroad::wolfhillcentre": [
+    54.62424,
+    -5.97898
+  ],
+  "librariesni::wolfhillcentre": [
+    54.62424,
+    -5.97898
+  ],
+  "librariesni::crumlinroad::ligonielroadjunction": [
+    54.62908,
+    -5.99135
+  ],
+  "librariesni::ligonielroadjunction": [
+    54.62908,
+    -5.99135
+  ],
+  "librariesni::sydenhamavenue::sycamoregrove": [
+    54.60359,
+    -5.86248
+  ],
+  "librariesni::sycamoregrove": [
+    54.60359,
+    -5.86248
+  ],
+  "librariesni::donegallparkavenue::castlegardens": [
+    54.64383,
+    -5.93476
+  ],
+  "librariesni::castlegardens": [
+    54.64383,
+    -5.93476
+  ],
+  "librariesni::shoreroad::greenislandclose": [
+    54.63792,
+    -5.92832
+  ],
+  "librariesni::greenislandclose": [
+    54.63792,
+    -5.92832
+  ],
+  "librariesni::ballygomartinroad::cairnmartincourt": [
+    54.613,
+    -5.96618
+  ],
+  "librariesni::cairnmartincourt": [
+    54.613,
+    -5.96618
+  ],
+  "librariesni::westcircularroad::springfieldparade": [
+    54.60628,
+    -5.97659
+  ],
+  "librariesni::springfieldparade": [
+    54.60628,
+    -5.97659
+  ],
+  "librariesni::glencairn::glencairnwalk": [
+    54.60851,
+    -5.983
+  ],
+  "librariesni::glencairnwalk": [
+    54.60851,
+    -5.983
+  ],
+  "librariesni::forthrivercrescent::corkeyhouse": [
+    54.61782,
+    -5.97817
+  ],
+  "librariesni::corkeyhouse": [
+    54.61782,
+    -5.97817
+  ],
+  "librariesni::brookeboroughmainstreet::brookeboroughmainstreet": [
+    54.31512,
+    -7.40528
+  ],
+  "librariesni::brookeboroughmainstreet": [
+    54.31512,
+    -7.40528
+  ],
+  "librariesni::newtowncunninghammainstreetcodonegalroi::newtowncunninghammainstreetcodonegalroi": [
+    54.99263,
+    -7.51694
+  ],
+  "librariesni::newtowncunninghammainstreetcodonegalroi": [
+    54.99263,
+    -7.51694
+  ],
+  "librariesni::manorcunninghammainstreetroi::manorcunninghammainstreetroi": [
+    54.95464,
+    -7.62227
+  ],
+  "librariesni::manorcunninghammainstreetroi": [
+    54.95464,
+    -7.62227
+  ],
+  "librariesni::swillyviewinchislandcodonegalroi::swillyviewinchislandcodonegalroi": [
+    55.06635,
+    -7.49754
+  ],
+  "librariesni::swillyviewinchislandcodonegalroi": [
+    55.06635,
+    -7.49754
+  ],
+  "librariesni::burnfootvillagecodonegalroi::burnfootvillagecodonegalroi": [
+    55.05836,
+    -7.40511
+  ],
+  "librariesni::burnfootvillagecodonegalroi": [
+    55.05836,
+    -7.40511
+  ],
+  "librariesni::carrigansvillagemainstreetcodonegalroi::carrigansvillagemainstreetcodonegalroi": [
+    54.95093,
+    -7.42948
+  ],
+  "librariesni::carrigansvillagemainstreetcodonegalroi": [
+    54.95093,
+    -7.42948
+  ],
+  "librariesni::killeavillagemainstreetcodonegalroi::killeavillagemainstreetcodonegalroi": [
+    54.97799,
+    -7.40939
+  ],
+  "librariesni::killeavillagemainstreetcodonegalroi": [
+    54.97799,
+    -7.40939
+  ],
+  "librariesni::stbaithainschurchstjohnstoncodonegalroi::stbaithainschurchstjohnstoncodonegalroi": [
+    54.93452,
+    -7.45824
+  ],
+  "librariesni::stbaithainschurchstjohnstoncodonegalroi": [
+    54.93452,
+    -7.45824
+  ],
+  "librariesni::ardbaithainestatestjonnstoncodonegalroi::ardbaithainestatestjonnstoncodonegalroi": [
+    54.93452,
+    -7.45824
+  ],
+  "librariesni::ardbaithainestatestjonnstoncodonegalroi": [
+    54.93452,
+    -7.45824
+  ],
+  "cornwall::linkroadcarpark::linkroadcarpark": [
+    50.53791,
+    -4.94056
+  ],
+  "cornwall::linkroadcarpark": [
+    50.53791,
+    -4.94056
+  ],
+  "cornwall::quethiockbusstop::quethiockbusstop": [
+    50.45848,
+    -4.37845
+  ],
+  "cornwall::quethiockbusstop": [
+    50.45848,
+    -4.37845
+  ],
+  "cornwall::stdominicshop::stdominicshop": [
+    50.48777,
+    -4.2545
+  ],
+  "cornwall::stdominicshop": [
+    50.48777,
+    -4.2545
+  ],
+  "cornwall::truscotthouse::truscotthouse": [
+    50.6464,
+    -4.40387
+  ],
+  "cornwall::truscotthouse": [
+    50.6464,
+    -4.40387
+  ],
+  "cornwall::honicombepark::honicombepark": [
+    50.53298,
+    -4.30541
+  ],
+  "cornwall::honicombepark": [
+    50.53298,
+    -4.30541
+  ],
+  "cornwall::lowermetherell::lowermetherell": [
+    50.50202,
+    -4.24539
+  ],
+  "cornwall::lowermetherell": [
+    50.50202,
+    -4.24539
+  ],
+  "cornwall::marshgatevillagehall::marshgatevillagehall": [
+    50.69724,
+    -4.61888
+  ],
+  "cornwall::marshgatevillagehall": [
+    50.69724,
+    -4.61888
+  ],
+  "cornwall::stbrewardmethodistchurch::stbrewardmethodistchurch": [
+    50.56415,
+    -4.68832
+  ],
+  "cornwall::stbrewardmethodistchurch": [
+    50.56415,
+    -4.68832
+  ],
+  "cornwall::tregonethagreen::tregonethagreen": [
+    50.4393,
+    -4.88042
+  ],
+  "cornwall::tregonethagreen": [
+    50.4393,
+    -4.88042
+  ],
+  "cornwall::pednacarne::pednacarne": [
+    50.46123,
+    -4.92209
+  ],
+  "cornwall::pednacarne": [
+    50.46123,
+    -4.92209
+  ],
+  "cornwall::heliganhouse::heliganhouse": [
+    50.28409,
+    -4.80959
+  ],
+  "cornwall::heliganhouse": [
+    50.28409,
+    -4.80959
+  ],
+  "cornwall::ruanhighlaneslayby::ruanhighlaneslayby": [
+    50.2375,
+    -4.92852
+  ],
+  "cornwall::ruanhighlaneslayby": [
+    50.2375,
+    -4.92852
+  ],
+  "cornwall::gwennappit::gwennappit": [
+    50.22586,
+    -5.20677
+  ],
+  "cornwall::gwennappit": [
+    50.22586,
+    -5.20677
+  ],
+  "cornwall::mounthawke::highfieldroad": [
+    50.27873,
+    -5.21356
+  ],
+  "cornwall::highfieldroad": [
+    50.27873,
+    -5.21356
+  ],
+  "cornwall::trebahcross::busstop": [
+    50.10667,
+    -5.12183
+  ],
+  "cornwall::restronguetpoint::restronguetpoint": [
+    50.19693,
+    -5.05702
+  ],
+  "cornwall::restronguetpoint": [
+    50.19693,
+    -5.05702
+  ],
+  "cornwall::cosawespark::cosawespark": [
+    50.19611,
+    -5.12836
+  ],
+  "cornwall::cosawespark": [
+    50.19611,
+    -5.12836
+  ],
+  "cornwall::perranwellinfokiosk::perranwellinfokiosk": [
+    50.21317,
+    -5.11918
+  ],
+  "cornwall::perranwellinfokiosk": [
+    50.21317,
+    -5.11918
+  ],
+  "cornwall::porthreath::porthreatharms": [
+    50.26109,
+    -5.28815
+  ],
+  "cornwall::porthreatharms": [
+    50.26109,
+    -5.28815
+  ],
+  "lincolnshire::brantroad::librarysite": [
+    53.19521,
+    -0.54832
+  ],
+  "lincolnshire::librarysite": [
+    53.19521,
+    -0.54832
+  ],
+  "lincolnshire::greatlimber::grasbyroadcottage": [
+    53.56012,
+    -0.28612
+  ],
+  "lincolnshire::grasbyroadcottage": [
+    53.56012,
+    -0.28612
+  ],
+  "lincolnshire::hawthornhillrosewoodpark::hawthornhillrosewoodpark": [
+    53.11182,
+    -0.19325
+  ],
+  "lincolnshire::hawthornhillrosewoodpark": [
+    53.11182,
+    -0.19325
+  ],
+  "lincolnshire::kealcoates::laybycoachhouseph": [
+    53.15541,
+    0.02413
+  ],
+  "lincolnshire::laybycoachhouseph": [
+    53.15541,
+    0.02413
+  ],
+  "lincolnshire::morton::longmeadows": [
+    52.79315,
+    -0.37812
+  ],
+  "lincolnshire::longmeadows": [
+    52.79315,
+    -0.37812
+  ],
+  "lincolnshire::nettlehamfields::marigoldclose": [
+    53.25413,
+    -0.51824
+  ],
+  "lincolnshire::marigoldclose": [
+    53.25413,
+    -0.51824
+  ],
+  "lincolnshire::toyntonstpeters::9eastvilleroad": [
+    53.14125,
+    0.07125
+  ],
+  "lincolnshire::9eastvilleroad": [
+    53.14125,
+    0.07125
+  ],
+  "lincolnshire::westcommon::longleysroad": [
+    53.24012,
+    -0.55812
+  ],
+  "lincolnshire::longleysroad": [
+    53.24012,
+    -0.55812
+  ],
+  "lincolnshire::withamsthughessouth::academyschool": [
+    53.15941,
+    -0.66512
+  ],
+  "lincolnshire::academyschool": [
+    53.15941,
+    -0.66512
+  ],
   "lincolnshire::ancaster::erminestreet": {
     "authority": "Lincolnshire",
     "community": "Ancaster",
@@ -178056,46 +176436,22 @@
     "geoy": 53.038306,
     "source": "place_api"
   },
-  "lincolnshire::upton::rosecrown": {
-    "authority": "Lincolnshire",
-    "community": "Upton",
-    "stop": "Rose & Crown",
-    "address": "Rose & Crown, Upton, Lincolnshire",
-    "postcode": "DN21 5NL",
-    "geox": -0.694807,
-    "geoy": 53.371608,
-    "source": "curated_verification"
-  },
-  "lincolnshire::rosecrown": {
-    "authority": "Lincolnshire",
-    "community": "Upton",
-    "stop": "Rose & Crown",
-    "address": "Rose & Crown, Upton, Lincolnshire",
-    "postcode": "DN21 5NL",
-    "geox": -0.694807,
-    "geoy": 53.371608,
-    "source": "curated_verification"
-  },
-  "lincolnshire::gosbertonrisegate::majorumhall": {
-    "authority": "Lincolnshire",
-    "community": "Gosberton Risegate",
-    "stop": "Majorum Hall",
-    "address": "Majorum Hall, Gosberton Risegate, Lincolnshire",
-    "postcode": "PE11 4ET",
-    "geox": -0.196005,
-    "geoy": 52.853837,
-    "source": "curated_verification"
-  },
-  "lincolnshire::majorumhall": {
-    "authority": "Lincolnshire",
-    "community": "Gosberton Risegate",
-    "stop": "Majorum Hall",
-    "address": "Majorum Hall, Gosberton Risegate, Lincolnshire",
-    "postcode": "PE11 4ET",
-    "geox": -0.196005,
-    "geoy": 52.853837,
-    "source": "curated_verification"
-  },
+  "lincolnshire::upton::rosecrown": [
+    53.37161,
+    -0.69481
+  ],
+  "lincolnshire::rosecrown": [
+    53.37161,
+    -0.69481
+  ],
+  "lincolnshire::gosbertonrisegate::majorumhall": [
+    52.85384,
+    -0.19601
+  ],
+  "lincolnshire::majorumhall": [
+    52.85384,
+    -0.19601
+  ],
   "highland::golspiehospital::golspiehospital": {
     "authority": "Highland",
     "community": "Golspie Hospital",
@@ -183775,5 +182131,1113 @@
     "geox": -5.482635,
     "geoy": 57.40527,
     "source": "highland_gazetteer"
-  }
+  },
+  "conwy::capelcurig::caffisiabod": [
+    53.10264,
+    -3.90615
+  ],
+  "conwy::caffisiabod": [
+    53.10264,
+    -3.90615
+  ],
+  "derbyshire:walton:walton back lane": [
+    53.21917,
+    -1.46699
+  ],
+  "derbyshire:walton back lane": [
+    53.21917,
+    -1.46699
+  ],
+  "derbyshire:walton:elgin close": [
+    53.22387,
+    -1.46262
+  ],
+  "derbyshire:elgin close": [
+    53.22387,
+    -1.46262
+  ],
+  "derbyshire:walton:fenland way": [
+    53.22413,
+    -1.47182
+  ],
+  "derbyshire:fenland way": [
+    53.22413,
+    -1.47182
+  ],
+  "cornwall:trebah cross:bus stop": [
+    50.10667,
+    -5.12183
+  ],
+  "cornwall:bus stop": [
+    50.10667,
+    -5.12183
+  ],
+  "bedford:kempston rural:the maypole, wilkinson road": [
+    52.10972,
+    -0.51476
+  ],
+  "bedford:the maypole, wilkinson road": [
+    52.10972,
+    -0.51476
+  ],
+  "kent:bidborough:village hall": [
+    51.16975,
+    0.23496
+  ],
+  "kent:village hall": [
+    51.16975,
+    0.23496
+  ],
+  "staffordshire:hopton heights:battle ridge": [
+    52.83119,
+    -2.07893
+  ],
+  "staffordshire:battle ridge": [
+    52.83119,
+    -2.07893
+  ],
+  "stirling:brig o'turk:duncraggon road": [
+    56.23148,
+    -4.36644
+  ],
+  "stirling:duncraggon road": [
+    56.23148,
+    -4.36644
+  ],
+  "north yorkshire:alanbrooke barracks:garages off elm road": [
+    54.2057,
+    -1.39724
+  ],
+  "north yorkshire:garages off elm road": [
+    54.2057,
+    -1.39724
+  ],
+  "north yorkshire:raf leeming:next to the rafakidz nursery": [
+    54.29332,
+    -1.52856
+  ],
+  "north yorkshire:next to the rafakidz nursery": [
+    54.29332,
+    -1.52856
+  ],
+  "north yorkshire:yorkshire gateway:yorkshire gateway": [
+    53.76589,
+    -1.29015
+  ],
+  "north yorkshire:yorkshire gateway": [
+    53.76589,
+    -1.29015
+  ],
+  "nottinghamshire:welbeck:the winnings": [
+    53.25993,
+    -1.18521
+  ],
+  "nottinghamshire:the winnings": [
+    53.25993,
+    -1.18521
+  ],
+  "nottinghamshire:new nuthall:ayscough avenue": [
+    52.99083,
+    -1.23961
+  ],
+  "nottinghamshire:ayscough avenue": [
+    52.99083,
+    -1.23961
+  ],
+  "nottinghamshire:lindy:church lane, no. 11": [
+    53.05127,
+    -1.20224
+  ],
+  "nottinghamshire:church lane, no. 11": [
+    53.05127,
+    -1.20224
+  ],
+  "nottinghamshire:old brinsley:church walk, no. 1": [
+    53.03595,
+    -1.31435
+  ],
+  "nottinghamshire:church walk, no. 1": [
+    53.03595,
+    -1.31435
+  ],
+  "nottinghamshire:underwood (westwood):palmerston street opposite no.1": [
+    53.06224,
+    -1.32635
+  ],
+  "nottinghamshire:palmerston street opposite no.1": [
+    53.06224,
+    -1.32635
+  ],
+  "derbyshire:crich carr:cliff inn car park": [
+    53.08425,
+    -1.50331
+  ],
+  "derbyshire:cliff inn car park": [
+    53.08425,
+    -1.50331
+  ],
+  "derbyshire:holme hall:wardgate way supermarket": [
+    53.25002,
+    -1.45708
+  ],
+  "derbyshire:wardgate way supermarket": [
+    53.25002,
+    -1.45708
+  ],
+  "derbyshire:holme hall:carsington close (nr school)": [
+    53.24532,
+    -1.4729
+  ],
+  "derbyshire:carsington close (nr school)": [
+    53.24532,
+    -1.4729
+  ],
+  "cheshire east:gradeley green:greenfields farm": [
+    53.07682,
+    -2.59368
+  ],
+  "cheshire east:greenfields farm": [
+    53.07682,
+    -2.59368
+  ],
+  "cheshire east:cholmondeley:post office": [
+    53.04983,
+    -2.66872
+  ],
+  "cheshire east:post office": [
+    53.04983,
+    -2.66872
+  ],
+  "cheshire east:wychwood park:conference centre": [
+    53.0501,
+    -2.39317
+  ],
+  "cheshire east:conference centre": [
+    53.0501,
+    -2.39317
+  ],
+  "cheshire east:lyme green:lyme view": [
+    53.23187,
+    -2.12595
+  ],
+  "cheshire east:lyme view": [
+    53.23187,
+    -2.12595
+  ],
+  "cheshire east:aston by budworth:hield grove": [
+    53.31317,
+    -2.53611
+  ],
+  "cheshire east:hield grove": [
+    53.31317,
+    -2.53611
+  ],
+  "cheshire east:over alderley:festival drive": [
+    53.29012,
+    -2.20154
+  ],
+  "cheshire east:festival drive": [
+    53.29012,
+    -2.20154
+  ],
+  "cheshire east:rope:glaisdale close": [
+    53.07693,
+    -2.45896
+  ],
+  "cheshire east:glaisdale close": [
+    53.07693,
+    -2.45896
+  ],
+  "the scottish borders:romanno br:school area": [
+    55.72331,
+    -3.32823
+  ],
+  "the scottish borders:school area": [
+    55.72331,
+    -3.32823
+  ],
+  "the scottish borders:wolfelee:wolfelee lodge": [
+    55.39024,
+    -2.65568
+  ],
+  "the scottish borders:wolfelee lodge": [
+    55.39024,
+    -2.65568
+  ],
+  "the scottish borders:upper burnmouth:upper burnmouth farm cottages": [
+    55.84229,
+    -2.07531
+  ],
+  "the scottish borders:upper burnmouth farm cottages": [
+    55.84229,
+    -2.07531
+  ],
+  "the scottish borders:the peel:peel gardens": [
+    55.60544,
+    -2.90089
+  ],
+  "the scottish borders:peel gardens": [
+    55.60544,
+    -2.90089
+  ],
+  "the scottish borders:newtown stbos:whitefield cresc": [
+    55.57733,
+    -2.67131
+  ],
+  "the scottish borders:whitefield cresc": [
+    55.57733,
+    -2.67131
+  ],
+  "the scottish borders:newtown stbos:sprouston road": [
+    55.57144,
+    -2.67119
+  ],
+  "the scottish borders:sprouston road": [
+    55.57144,
+    -2.67119
+  ],
+  "the scottish borders:macksmill:macksmill": [
+    55.68074,
+    -2.56394
+  ],
+  "the scottish borders:macksmill": [
+    55.68074,
+    -2.56394
+  ],
+  "the scottish borders:carfraemill:car park": [
+    55.7725,
+    -2.78489
+  ],
+  "the scottish borders:car park": [
+    55.7725,
+    -2.78489
+  ],
+  "the scottish borders:easter howlaws:cottages": [
+    55.8261,
+    -2.43833
+  ],
+  "the scottish borders:cottages": [
+    55.8261,
+    -2.43833
+  ],
+  "county durham:cockfield station:cockfield station": [
+    54.61289,
+    -1.81071
+  ],
+  "county durham:cockfield station": [
+    54.61289,
+    -1.81071
+  ],
+  "county durham:copley lane:glen crest": [
+    54.62292,
+    -1.85523
+  ],
+  "county durham:glen crest": [
+    54.62292,
+    -1.85523
+  ],
+  "county durham:esperley:oakwood hall": [
+    54.60821,
+    -1.79901
+  ],
+  "county durham:oakwood hall": [
+    54.60821,
+    -1.79901
+  ],
+  "county durham:hamsterley colliery:dene court": [
+    54.9035,
+    -1.81523
+  ],
+  "county durham:dene court": [
+    54.9035,
+    -1.81523
+  ],
+  "county durham:hamsterley forest:information centre": [
+    54.67311,
+    -1.88514
+  ],
+  "county durham:information centre": [
+    54.67311,
+    -1.88514
+  ],
+  "county durham:lunedale:chapel cottage": [
+    54.63683,
+    -2.1455
+  ],
+  "county durham:chapel cottage": [
+    54.63683,
+    -2.1455
+  ],
+  "county durham:sherburn village:community centre": [
+    54.77416,
+    -1.50266
+  ],
+  "county durham:community centre": [
+    54.77416,
+    -1.50266
+  ],
+  "county durham:southside:crowe howle": [
+    54.63523,
+    -1.83791
+  ],
+  "county durham:crowe howle": [
+    54.63523,
+    -1.83791
+  ],
+  "county durham:toft hill hwf:high wether farm": [
+    54.65171,
+    -1.74887
+  ],
+  "county durham:high wether farm": [
+    54.65171,
+    -1.74887
+  ],
+  "county durham:wham:hawthorne house": [
+    54.62698,
+    -1.8258
+  ],
+  "county durham:hawthorne house": [
+    54.62698,
+    -1.8258
+  ],
+  "perth and kinross:kinloch rannoch primary school:kinloch rannoch primary school": [
+    56.70055,
+    -4.18848
+  ],
+  "perth and kinross:kinloch rannoch primary school": [
+    56.70055,
+    -4.18848
+  ],
+  "perth and kinross:st fillans:village shop": [
+    56.39235,
+    -4.11698
+  ],
+  "perth and kinross:village shop": [
+    56.39235,
+    -4.11698
+  ],
+  "perth and kinross:pitcairngreenprimary school:pitcairngreenprimary school": [
+    56.42651,
+    -3.51537
+  ],
+  "perth and kinross:pitcairngreenprimary school": [
+    56.42651,
+    -3.51537
+  ],
+  "perth and kinross:connacher court:connacher court": [
+    56.70348,
+    -3.72524
+  ],
+  "perth and kinross:connacher court": [
+    56.70348,
+    -3.72524
+  ],
+  "perth and kinross:causeway court:sheltered housing": [
+    56.20575,
+    -3.42547
+  ],
+  "perth and kinross:sheltered housing": [
+    56.20575,
+    -3.42547
+  ],
+  "perth and kinross:pitlochry:aldour gardens housing": [
+    56.70399,
+    -3.72613
+  ],
+  "perth and kinross:aldour gardens housing": [
+    56.70399,
+    -3.72613
+  ],
+  "perth and kinross:pitlochry:fisher\u2019s view housing": [
+    56.70593,
+    -3.74682
+  ],
+  "perth and kinross:fisher\u2019s view housing": [
+    56.70593,
+    -3.74682
+  ],
+  "perth and kinross:meiglevillage:the square (near community garden)": [
+    56.58829,
+    -3.16268
+  ],
+  "perth and kinross:the square (near community garden)": [
+    56.58829,
+    -3.16268
+  ],
+  "perth and kinross:coupar angus:outside town hall": [
+    56.54648,
+    -3.26616
+  ],
+  "perth and kinross:outside town hall": [
+    56.54648,
+    -3.26616
+  ],
+  "perth and kinross:meiklour:monument": [
+    56.54157,
+    -3.37168
+  ],
+  "perth and kinross:monument": [
+    56.54157,
+    -3.37168
+  ],
+  "perth and kinross:errol primary:(school pupils only)": [
+    56.39238,
+    -3.21308
+  ],
+  "perth and kinross:(school pupils only)": [
+    56.39238,
+    -3.21308
+  ],
+  "perth and kinross:cleish primary school:cleish primary school": [
+    56.16627,
+    -3.45859
+  ],
+  "perth and kinross:cleish primary school": [
+    56.16627,
+    -3.45859
+  ],
+  "perth and kinross:bridge of tiltstore:bridge of tiltstore": [
+    56.76715,
+    -3.83851
+  ],
+  "perth and kinross:bridge of tiltstore": [
+    56.76715,
+    -3.83851
+  ],
+  "midlothian:north middleton:north middleton village hall": [
+    55.82024,
+    -3.02405
+  ],
+  "midlothian:north middleton village hall": [
+    55.82024,
+    -3.02405
+  ],
+  "midlothian:auchendinny:glencorse centre": [
+    55.8477,
+    -3.19096
+  ],
+  "midlothian:glencorse centre": [
+    55.8477,
+    -3.19096
+  ],
+  "midlothian:penicuik:aaron house": [
+    55.83717,
+    -3.22583
+  ],
+  "midlothian:aaron house": [
+    55.83717,
+    -3.22583
+  ],
+  "midlothian:penicuik:broomhill day centre": [
+    55.82462,
+    -3.22412
+  ],
+  "midlothian:broomhill day centre": [
+    55.82462,
+    -3.22412
+  ],
+  "midlothian:auchendinny:glencorse care home area": [
+    55.8477,
+    -3.19096
+  ],
+  "midlothian:glencorse care home area": [
+    55.8477,
+    -3.19096
+  ],
+  "midlothian:penicuik:scots corner": [
+    55.84474,
+    -3.20891
+  ],
+  "midlothian:scots corner": [
+    55.84474,
+    -3.20891
+  ],
+  "midlothian:roslin:st clair mews": [
+    55.85912,
+    -3.16611
+  ],
+  "midlothian:st clair mews": [
+    55.85912,
+    -3.16611
+  ],
+  "midlothian:roslin:sinclair gardens": [
+    55.85614,
+    -3.15909
+  ],
+  "midlothian:sinclair gardens": [
+    55.85614,
+    -3.15909
+  ],
+  "midlothian:pathhead:pathhead - roman camp way": [
+    55.86595,
+    -2.97326
+  ],
+  "midlothian:pathhead - roman camp way": [
+    55.86595,
+    -2.97326
+  ],
+  "midlothian:pathhead:pathhead - crichton terrace": [
+    55.86801,
+    -2.96888
+  ],
+  "midlothian:pathhead - crichton terrace": [
+    55.86801,
+    -2.96888
+  ],
+  "midlothian:fala:fala": [
+    55.85802,
+    -2.90459
+  ],
+  "midlothian:fala": [
+    55.85802,
+    -2.90459
+  ],
+  "midlothian:shawfair:chapter one nursery shawfair": [
+    55.91207,
+    -3.08736
+  ],
+  "midlothian:chapter one nursery shawfair": [
+    55.91207,
+    -3.08736
+  ],
+  "angus:muirfield nursery:muirfield nursery": [
+    56.56518,
+    -2.60975
+  ],
+  "angus:muirfield nursery": [
+    56.56518,
+    -2.60975
+  ],
+  "angus:crachie:crachie": [
+    56.61725,
+    -2.80064
+  ],
+  "angus:crachie": [
+    56.61725,
+    -2.80064
+  ],
+  "angus:stepping stones nursery:forfar camous": [
+    56.65394,
+    -2.89579
+  ],
+  "angus:forfar camous": [
+    56.65394,
+    -2.89579
+  ],
+  "angus:tannadice nursery:tannadice nursery": [
+    56.71261,
+    -2.85791
+  ],
+  "angus:tannadice nursery": [
+    56.71261,
+    -2.85791
+  ],
+  "angus:charleton fruit farm:charleton fruit farm": [
+    56.73967,
+    -2.45485
+  ],
+  "angus:charleton fruit farm": [
+    56.73967,
+    -2.45485
+  ],
+  "angus:charleston nursery:charleston nursery": [
+    56.59842,
+    -3.00793
+  ],
+  "angus:charleston nursery": [
+    56.59842,
+    -3.00793
+  ],
+  "angus:kinpurnie gardens:kinpurnie gardens": [
+    56.55851,
+    -3.14529
+  ],
+  "angus:kinpurnie gardens": [
+    56.55851,
+    -3.14529
+  ],
+  "angus:eassie hall book chat::eassie hall book chat:": [
+    56.61317,
+    -3.05842
+  ],
+  "angus:eassie hall book chat:": [
+    56.61317,
+    -3.05842
+  ],
+  "angus:glamis square:glamis square": [
+    56.64056,
+    -2.89382
+  ],
+  "angus:glamis square": [
+    56.64056,
+    -2.89382
+  ],
+  "angus:glen clova:upper gella bridge": [
+    56.78517,
+    -3.12534
+  ],
+  "angus:upper gella bridge": [
+    56.78517,
+    -3.12534
+  ],
+  "angus:glen prosen:church car park": [
+    56.78305,
+    -3.11472
+  ],
+  "angus:church car park": [
+    56.78305,
+    -3.11472
+  ],
+  "angus:glen prosen:home farm": [
+    56.78305,
+    -3.11472
+  ],
+  "angus:home farm": [
+    56.78305,
+    -3.11472
+  ],
+  "angus:lemon tree nursery:by reid hall": [
+    56.64681,
+    -2.8913
+  ],
+  "angus:by reid hall": [
+    56.64681,
+    -2.8913
+  ],
+  "angus:glenisla (by village hall:glenisla (by village hall": [
+    56.73007,
+    -3.28518
+  ],
+  "angus:glenisla (by village hall": [
+    56.73007,
+    -3.28518
+  ],
+  "angus:gowanbank (dunnichen avenue:gowanbank (dunnichen avenue": [
+    56.55315,
+    -2.60938
+  ],
+  "angus:gowanbank (dunnichen avenue": [
+    56.55315,
+    -2.60938
+  ],
+  "libraries ni:edenderry village:edenderry village": [
+    54.54015,
+    -5.96055
+  ],
+  "libraries ni:edenderry village": [
+    54.54015,
+    -5.96055
+  ],
+  "libraries ni:braniel:glen road shops": [
+    54.58024,
+    -5.8693
+  ],
+  "libraries ni:glen road shops": [
+    54.58024,
+    -5.8693
+  ],
+  "libraries ni:castlereagh road:orby parade": [
+    54.58826,
+    -5.89029
+  ],
+  "libraries ni:orby parade": [
+    54.58826,
+    -5.89029
+  ],
+  "libraries ni:cliftonville road:wyndham avenue": [
+    54.61793,
+    -5.94575
+  ],
+  "libraries ni:wyndham avenue": [
+    54.61793,
+    -5.94575
+  ],
+  "libraries ni:oldpark road:cliftondene crescent": [
+    54.61169,
+    -5.94945
+  ],
+  "libraries ni:cliftondene crescent": [
+    54.61169,
+    -5.94945
+  ],
+  "libraries ni:ligoniel road:wolfhill centre": [
+    54.62424,
+    -5.97898
+  ],
+  "libraries ni:wolfhill centre": [
+    54.62424,
+    -5.97898
+  ],
+  "libraries ni:crumlin road:ligoniel road junction": [
+    54.62908,
+    -5.99135
+  ],
+  "libraries ni:ligoniel road junction": [
+    54.62908,
+    -5.99135
+  ],
+  "libraries ni:sydenham avenue:sycamore grove": [
+    54.60359,
+    -5.86248
+  ],
+  "libraries ni:sycamore grove": [
+    54.60359,
+    -5.86248
+  ],
+  "libraries ni:donegall park avenue:castle gardens": [
+    54.64383,
+    -5.93476
+  ],
+  "libraries ni:castle gardens": [
+    54.64383,
+    -5.93476
+  ],
+  "libraries ni:shore road:greenisland close": [
+    54.63792,
+    -5.92832
+  ],
+  "libraries ni:greenisland close": [
+    54.63792,
+    -5.92832
+  ],
+  "libraries ni:ballygomartin road:cairnmartin court": [
+    54.613,
+    -5.96618
+  ],
+  "libraries ni:cairnmartin court": [
+    54.613,
+    -5.96618
+  ],
+  "libraries ni:west circular road:springfield parade": [
+    54.60628,
+    -5.97659
+  ],
+  "libraries ni:springfield parade": [
+    54.60628,
+    -5.97659
+  ],
+  "libraries ni:glencairn:glencairn walk": [
+    54.60851,
+    -5.983
+  ],
+  "libraries ni:glencairn walk": [
+    54.60851,
+    -5.983
+  ],
+  "libraries ni:forthriver crescent:corkey house": [
+    54.61782,
+    -5.97817
+  ],
+  "libraries ni:corkey house": [
+    54.61782,
+    -5.97817
+  ],
+  "libraries ni:brookeborough main street:brookeborough main street": [
+    54.31512,
+    -7.40528
+  ],
+  "libraries ni:brookeborough main street": [
+    54.31512,
+    -7.40528
+  ],
+  "libraries ni:newtowncunningham main street co donegal (roi):newtowncunningham main street co donegal (roi)": [
+    54.99263,
+    -7.51694
+  ],
+  "libraries ni:newtowncunningham main street co donegal (roi)": [
+    54.99263,
+    -7.51694
+  ],
+  "libraries ni:manorcunningham main street (roi):manorcunningham main street (roi)": [
+    54.95464,
+    -7.62227
+  ],
+  "libraries ni:manorcunningham main street (roi)": [
+    54.95464,
+    -7.62227
+  ],
+  "libraries ni:swilly view inch island co donegal (roi):swilly view inch island co donegal (roi)": [
+    55.06635,
+    -7.49754
+  ],
+  "libraries ni:swilly view inch island co donegal (roi)": [
+    55.06635,
+    -7.49754
+  ],
+  "libraries ni:burnfoot village co donegal (roi):burnfoot village co donegal (roi)": [
+    55.05836,
+    -7.40511
+  ],
+  "libraries ni:burnfoot village co donegal (roi)": [
+    55.05836,
+    -7.40511
+  ],
+  "libraries ni:carrigans village main street co donegal (roi):carrigans village main street co donegal (roi)": [
+    54.95093,
+    -7.42948
+  ],
+  "libraries ni:carrigans village main street co donegal (roi)": [
+    54.95093,
+    -7.42948
+  ],
+  "libraries ni:killea village main street co donegal (roi):killea village main street co donegal (roi)": [
+    54.97799,
+    -7.40939
+  ],
+  "libraries ni:killea village main street co donegal (roi)": [
+    54.97799,
+    -7.40939
+  ],
+  "libraries ni:st baithains church st johnston co donegal (roi):st baithains church st johnston co donegal (roi)": [
+    54.93452,
+    -7.45824
+  ],
+  "libraries ni:st baithains church st johnston co donegal (roi)": [
+    54.93452,
+    -7.45824
+  ],
+  "libraries ni:ardbaithain estate st jonnston co donegal (roi):ardbaithain estate st jonnston co donegal (roi)": [
+    54.93452,
+    -7.45824
+  ],
+  "libraries ni:ardbaithain estate st jonnston co donegal (roi)": [
+    54.93452,
+    -7.45824
+  ],
+  "cornwall:link road car park:link road car park": [
+    50.53791,
+    -4.94056
+  ],
+  "cornwall:link road car park": [
+    50.53791,
+    -4.94056
+  ],
+  "cornwall:quethiock bus stop:quethiock bus stop": [
+    50.45848,
+    -4.37845
+  ],
+  "cornwall:quethiock bus stop": [
+    50.45848,
+    -4.37845
+  ],
+  "cornwall:st dominic shop:st dominic shop": [
+    50.48777,
+    -4.2545
+  ],
+  "cornwall:st dominic shop": [
+    50.48777,
+    -4.2545
+  ],
+  "cornwall:truscott house:truscott house": [
+    50.6464,
+    -4.40387
+  ],
+  "cornwall:truscott house": [
+    50.6464,
+    -4.40387
+  ],
+  "cornwall:honicombe park:honicombe park": [
+    50.53298,
+    -4.30541
+  ],
+  "cornwall:honicombe park": [
+    50.53298,
+    -4.30541
+  ],
+  "cornwall:lower metherell:lower metherell": [
+    50.50202,
+    -4.24539
+  ],
+  "cornwall:lower metherell": [
+    50.50202,
+    -4.24539
+  ],
+  "cornwall:marshgatevillage hall:marshgatevillage hall": [
+    50.69724,
+    -4.61888
+  ],
+  "cornwall:marshgatevillage hall": [
+    50.69724,
+    -4.61888
+  ],
+  "cornwall:st breward methodist church:st breward methodist church": [
+    50.56415,
+    -4.68832
+  ],
+  "cornwall:st breward methodist church": [
+    50.56415,
+    -4.68832
+  ],
+  "cornwall:tregonetha green:tregonetha green": [
+    50.4393,
+    -4.88042
+  ],
+  "cornwall:tregonetha green": [
+    50.4393,
+    -4.88042
+  ],
+  "cornwall:pedna carne:pedna carne": [
+    50.46123,
+    -4.92209
+  ],
+  "cornwall:pedna carne": [
+    50.46123,
+    -4.92209
+  ],
+  "cornwall:heligan house:heligan house": [
+    50.28409,
+    -4.80959
+  ],
+  "cornwall:heligan house": [
+    50.28409,
+    -4.80959
+  ],
+  "cornwall:ruan high lanes layby:ruan high lanes layby": [
+    50.2375,
+    -4.92852
+  ],
+  "cornwall:ruan high lanes layby": [
+    50.2375,
+    -4.92852
+  ],
+  "cornwall:gwennap pit:gwennap pit": [
+    50.22586,
+    -5.20677
+  ],
+  "cornwall:gwennap pit": [
+    50.22586,
+    -5.20677
+  ],
+  "cornwall:mounthawke:highfield road": [
+    50.27873,
+    -5.21356
+  ],
+  "cornwall:highfield road": [
+    50.27873,
+    -5.21356
+  ],
+  "cornwall:restronguet point:restronguet point": [
+    50.19693,
+    -5.05702
+  ],
+  "cornwall:restronguet point": [
+    50.19693,
+    -5.05702
+  ],
+  "cornwall:cosawes park:cosawes park": [
+    50.19611,
+    -5.12836
+  ],
+  "cornwall:cosawes park": [
+    50.19611,
+    -5.12836
+  ],
+  "cornwall:perranwell info kiosk:perranwell info kiosk": [
+    50.21317,
+    -5.11918
+  ],
+  "cornwall:perranwell info kiosk": [
+    50.21317,
+    -5.11918
+  ],
+  "cornwall:porthreath:porthreath arms": [
+    50.26109,
+    -5.28815
+  ],
+  "cornwall:porthreath arms": [
+    50.26109,
+    -5.28815
+  ],
+  "lincolnshire:brant road:library site": [
+    53.19521,
+    -0.54832
+  ],
+  "lincolnshire:library site": [
+    53.19521,
+    -0.54832
+  ],
+  "lincolnshire:great limber:grasby road cottage": [
+    53.56012,
+    -0.28612
+  ],
+  "lincolnshire:grasby road cottage": [
+    53.56012,
+    -0.28612
+  ],
+  "lincolnshire:hawthorn hill rosewood park:hawthorn hill rosewood park": [
+    53.11182,
+    -0.19325
+  ],
+  "lincolnshire:hawthorn hill rosewood park": [
+    53.11182,
+    -0.19325
+  ],
+  "lincolnshire:keal coates:layby-coach house ph": [
+    53.15541,
+    0.02413
+  ],
+  "lincolnshire:layby-coach house ph": [
+    53.15541,
+    0.02413
+  ],
+  "lincolnshire:morton:long meadows": [
+    52.79315,
+    -0.37812
+  ],
+  "lincolnshire:long meadows": [
+    52.79315,
+    -0.37812
+  ],
+  "lincolnshire:nettleham fields:marigold close": [
+    53.25413,
+    -0.51824
+  ],
+  "lincolnshire:marigold close": [
+    53.25413,
+    -0.51824
+  ],
+  "lincolnshire:toynton st peters:9 eastville road": [
+    53.14125,
+    0.07125
+  ],
+  "lincolnshire:9 eastville road": [
+    53.14125,
+    0.07125
+  ],
+  "lincolnshire:west common:long leys road": [
+    53.24012,
+    -0.55812
+  ],
+  "lincolnshire:long leys road": [
+    53.24012,
+    -0.55812
+  ],
+  "lincolnshire:witham st hughes south:academy school": [
+    53.15941,
+    -0.66512
+  ],
+  "lincolnshire:academy school": [
+    53.15941,
+    -0.66512
+  ],
+  "lincolnshire:upton:rose & crown": [
+    53.37161,
+    -0.69481
+  ],
+  "lincolnshire:rose & crown": [
+    53.37161,
+    -0.69481
+  ],
+  "lincolnshire:gosberton risegate:majorum hall": [
+    52.85384,
+    -0.19601
+  ],
+  "lincolnshire:majorum hall": [
+    52.85384,
+    -0.19601
+  ],
+  "conwy:caffi siabod": [
+    53.10264,
+    -3.90615
+  ]
 }

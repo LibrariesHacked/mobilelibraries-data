@@ -21,6 +21,7 @@ CACHE_DIR = Path(__file__).resolve().parent.parent / 'geocache'
 CACHE_FILE = CACHE_DIR / 'stops_reference.json'
 PLACES_CACHE_FILE = CACHE_DIR / 'places_cache.json'
 BBOX_FILE = CACHE_DIR / 'authority_bboxes.json'
+MANUAL_PINS_FILE = CACHE_DIR / 'manual_pins.json'
 
 
 def normalise_key(text):
@@ -32,14 +33,21 @@ def normalise_key(text):
 
 class Geocoder:
     def __init__(self):
-        """Initialize stop and place caches and load existing JSON cache files."""
+        """Initialize stop, place, and manual pin caches and load existing JSON cache files."""
+        self.manual_pins = {}
         self.reference_stops = {}
         self.places_cache = {}
         self.bboxes = {}
         self._load_caches()
 
     def _load_caches(self):
-        """Load persisted reference stop and place caches from disk if present."""
+        """Load persisted manual pins, reference stops, and place caches from disk."""
+        if MANUAL_PINS_FILE.exists():
+            try:
+                self.manual_pins = json.loads(MANUAL_PINS_FILE.read_text(encoding='utf-8'))
+            except Exception as e:
+                print(f"Warning: could not read {MANUAL_PINS_FILE}: {e}")
+
         if CACHE_FILE.exists():
             try:
                 self.reference_stops = json.loads(CACHE_FILE.read_text(encoding='utf-8'))
@@ -83,43 +91,101 @@ class Geocoder:
                 bbox.get('min_lon', -180) <= lon <= bbox.get('max_lon', 180))
 
     def save_caches(self):
-        """Write reference_stops and places_cache dictionaries to disk as JSON."""
+        """Write manual_pins, reference_stops, and places_cache dictionaries to disk as JSON."""
         CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        MANUAL_PINS_FILE.write_text(json.dumps(self.manual_pins, indent=2), encoding='utf-8')
         CACHE_FILE.write_text(json.dumps(self.reference_stops, indent=2), encoding='utf-8')
         PLACES_CACHE_FILE.write_text(json.dumps(self.places_cache, indent=2), encoding='utf-8')
+
+    def add_manual_pin(self, authority, community, stop, geox, geoy, postcode='', notes=''):
+        """Record a manually verified pin, permanently protected from automated overwrite."""
+        auth_k = normalise_key(authority)
+        comm_k = normalise_key(community)
+        stop_k = normalise_key(stop)
+        full_k = f"{auth_k}::{comm_k}::{stop_k}"
+        short_k = f"{auth_k}::{stop_k}"
+
+        entry = {
+            'authority': authority,
+            'community': community,
+            'stop': stop,
+            'postcode': postcode,
+            'geox': round(float(geox), 5),
+            'geoy': round(float(geoy), 5),
+            'source': 'manual_verified',
+            'accuracy': 'exact',
+            'verified': True,
+            'notes': notes,
+            'updated_at': time.strftime('%Y-%m-%d')
+        }
+        self.manual_pins[full_k] = entry
+        self.reference_stops[full_k] = entry
+        if short_k not in self.manual_pins:
+            self.manual_pins[short_k] = entry
+            self.reference_stops[short_k] = entry
+        self.save_caches()
+        return entry
 
     def resolve(self, authority, community, stop, postcode='', address=''):
         """
         Attempts to resolve GeoX (longitude), GeoY (latitude), and full Postcode.
-        Returns dict: {'geox': float, 'geoy': float, 'postcode': str, 'source': str}
+        Returns dict: {'geox': float, 'geoy': float, 'postcode': str, 'source': str, 'accuracy': str}
         """
         auth_k = normalise_key(authority)
         comm_k = normalise_key(community)
         stop_k = normalise_key(stop)
         bbox = self.get_bbox(authority)
 
-        # 1. Match full reference key
+        # 0. Check manually verified pins first (highest priority, cannot be overridden)
         full_k = f"{auth_k}::{comm_k}::{stop_k}"
+        short_k = f"{auth_k}::{stop_k}"
+        if full_k in self.manual_pins:
+            entry = self.manual_pins[full_k]
+            if self.is_in_bbox(entry.get('geoy'), entry.get('geox'), bbox):
+                return {
+                    'geox': entry['geox'],
+                    'geoy': entry['geoy'],
+                    'postcode': entry.get('postcode') or postcode,
+                    'source': 'manual_verified',
+                    'accuracy': 'exact'
+                }
+        if short_k in self.manual_pins:
+            entry = self.manual_pins[short_k]
+            if self.is_in_bbox(entry.get('geoy'), entry.get('geox'), bbox):
+                return {
+                    'geox': entry['geox'],
+                    'geoy': entry['geoy'],
+                    'postcode': entry.get('postcode') or postcode,
+                    'source': 'manual_verified',
+                    'accuracy': 'exact'
+                }
+
+        # 1. Match full reference key
         if full_k in self.reference_stops:
             entry = self.reference_stops[full_k]
             if self.is_in_bbox(entry.get('geoy'), entry.get('geox'), bbox):
+                src = entry.get('source', 'known')
+                acc = 'exact' if any(w in src for w in ('gis', 'arcgis', 'gazetteer', 'manual', 'verified')) else 'landmark'
                 return {
                     'geox': entry['geox'],
                     'geoy': entry['geoy'],
                     'postcode': entry.get('postcode') or postcode,
-                    'source': f"ref_cache:{entry.get('source', 'known')}"
+                    'source': f"ref_cache:{src}",
+                    'accuracy': acc
                 }
 
         # 2. Match short key (auth + stop)
-        short_k = f"{auth_k}::{stop_k}"
         if short_k in self.reference_stops:
             entry = self.reference_stops[short_k]
             if self.is_in_bbox(entry.get('geoy'), entry.get('geox'), bbox):
+                src = entry.get('source', 'known')
+                acc = 'exact' if any(w in src for w in ('gis', 'arcgis', 'gazetteer', 'manual', 'verified')) else 'landmark'
                 return {
                     'geox': entry['geox'],
                     'geoy': entry['geoy'],
                     'postcode': entry.get('postcode') or postcode,
-                    'source': f"ref_cache_short:{entry.get('source', 'known')}"
+                    'source': f"ref_cache_short:{src}",
+                    'accuracy': acc
                 }
 
         # 3. Postcode lookup if valid full UK postcode
@@ -155,6 +221,12 @@ class Geocoder:
         comm_k = normalise_key(community)
         stop_k = normalise_key(stop)
 
+        full_k = f"{auth_k}::{comm_k}::{stop_k}"
+        short_k = f"{auth_k}::{stop_k}"
+        if full_k in self.manual_pins or short_k in self.manual_pins:
+            # Protected manually verified pin - never overwrite
+            return
+
         entry = {
             'authority': authority,
             'community': community,
@@ -165,8 +237,6 @@ class Geocoder:
             'source': source
         }
 
-        full_k = f"{auth_k}::{comm_k}::{stop_k}"
-        short_k = f"{auth_k}::{stop_k}"
         self.reference_stops[full_k] = entry
         if short_k not in self.reference_stops:
             self.reference_stops[short_k] = entry

@@ -52,3 +52,20 @@ python scripts/routing.py --authority somerset --force
 By default, the script uses the free OpenStreetMap road network (OSRM) with no setup required.
 
 All route files are saved in `data/routes/`. For more information, see [driving routes between stops](routing.md).
+
+## 4. Checking and improving stop coordinates manually
+
+To check stop accuracy, review uncertain stops on Street View, and lock in exact coordinates so scrapers never overwrite them:
+
+```bash
+# Export stops sorted by review priority with Street View links
+python scripts/manual_geocode.py --export-queue
+
+# Import verified coordinates from the spreadsheet
+python scripts/manual_geocode.py --import-queue data/geocoding_review_queue.csv
+
+# Update a single stop directly
+python scripts/manual_geocode.py --update --authority conwy --community "Capel Curig" --stop "Caffi Siabod" --lat 53.10264 --lon -3.90615 --notes "Checked on Street View"
+```
+
+For full details on accuracy levels and the verification process, see [location and map coordinates](geocoding.md).

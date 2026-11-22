@@ -2,3 +2,4 @@
 *.pyo
 __pycache__/
 .pytest_cache/
+data/geocoding_review_queue.csv
