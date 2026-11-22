@@ -34,7 +34,7 @@ def parse_page(html):
 
     Returns (route, day, community, stop, arrival, departure) tuples.
     """
-    lines = [l.replace('\xa0', ' ').replace('\ufeff', '').strip()
+    lines = [c.sanitize_text(l)
              for l in bs4.BeautifulSoup(html, 'html.parser').get_text('\n').splitlines()]
     route = day = ''
     stops = []

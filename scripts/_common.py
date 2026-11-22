@@ -38,6 +38,33 @@ SCHEMA_COLUMNS = [
 ]
 
 
+def sanitize_text(value):
+    """
+    Sanitize text to guarantee single-line CSV data:
+    - Strips byte-order marks (\ufeff)
+    - Replaces non-breaking spaces (\xa0) with standard spaces
+    - Converts newlines (\r\n, \r, \n) into a single space
+    - Collapses multiple whitespace/tabs into a single space
+    - Strips leading and trailing whitespace
+    """
+    if value is None:
+        return ''
+    s = str(value).replace('\ufeff', '').replace('\xa0', ' ')
+    s = re.sub(r'[\r\n]+', ' ', s)
+    s = re.sub(r'[ \t]+', ' ', s)
+    return s.strip()
+
+
+def sanitize_row(row):
+    """
+    Sanitize all values in a CSV row (dict or sequence of fields) to ensure
+    no field contains embedded newlines or irregular whitespace.
+    """
+    if isinstance(row, dict):
+        return {k: sanitize_text(v) for k, v in row.items()}
+    return [sanitize_text(cell) for cell in row]
+
+
 def create_mobile_library_file(filename, stops):
     """
     Writes stops into a standard CSV file adhering to mobile-library-stops.json.
@@ -53,6 +80,8 @@ def create_mobile_library_file(filename, stops):
             row = [item.get(col, '') for col in SCHEMA_COLUMNS]
         else:
             row = list(item)
+        row = sanitize_row(row)
+        row = sanitize_row(row)
         for col_idx in (8, 9):
             val = str(row[col_idx]).strip()
             if val:
@@ -183,7 +212,7 @@ def clean_time_24h(t_str: str, default: str = "") -> str:
     """Normalise arbitrary time strings (e.g. '10.30am', '2pm', '14.15', 'midday', 'noon') to 24-hour HH:MM."""
     if not t_str:
         return default
-    s = str(t_str).strip().lower().replace('\xa0', ' ')
+    s = sanitize_text(t_str).lower()
     if 'midday' in s or 'noon' in s:
         return '12:00'
     m = re.search(r'(\d{1,2})[:.](\d{2})\s*([ap]m)?', s)
@@ -218,7 +247,7 @@ def parse_time_range(raw: str) -> tuple:
     """Parse time range string (e.g. '10:00 - 11:30', '10.15am-12.00pm', '1015-1045') into ('HH:MM', 'HH:MM')."""
     if not raw:
         return ("", "")
-    cleaned = str(raw).replace('\xa0', ' ').replace('–', '-').replace('—', '-')
+    cleaned = sanitize_text(raw).replace('–', '-').replace('—', '-')
     parts = cleaned.split('-')
     if len(parts) >= 2:
         t1 = clean_time_24h(parts[0])

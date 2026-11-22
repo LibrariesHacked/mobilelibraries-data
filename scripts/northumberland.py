@@ -6,7 +6,7 @@ Harvests live timetables from Northumberland Libraries Spydus portal:
 Resolves postcodes, validates schema compliance, and updates services.csv, geocache, and historical vehicle registries.
 """
 
-from _common import batch_lookup_postcodes, clean_time_24h
+from _common import batch_lookup_postcodes, clean_time_24h, normalise_postcode
 import os
 import re
 import json
@@ -122,7 +122,7 @@ def run():
 
                 # Clean postcode
                 m_pc = POSTCODE_RE.search(pc_raw)
-                postcode = m_pc.group(1).upper() if m_pc else ""
+                postcode = normalise_postcode(m_pc.group(1)) if m_pc else ""
 
                 # Split stop and community
                 if " - " in stop_raw:

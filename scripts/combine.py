@@ -11,6 +11,12 @@ import re
 import sys
 from pathlib import Path
 
+# Add scripts directory to path to import _common
+SCRIPTS_DIR = Path(__file__).resolve().parent
+if str(SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(SCRIPTS_DIR))
+from _common import sanitize_row
+
 csv.field_size_limit(10_000_000)
 
 DATA_DIR = Path(__file__).resolve().parent.parent / 'data'
@@ -128,6 +134,7 @@ def combine_datasets():
                 print(f"Warning: Header mismatch in {file_path.name}")
 
             for row in reader:
+                row = sanitize_row(row)
                 all_rows.append(row)
 
                 tier, source, radius_m, verified = determine_accuracy(row, manual_pins)

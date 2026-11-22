@@ -107965,8 +107965,8 @@
     "community": "Blacko",
     "stop": "Willaston Avenue",
     "postcode": "",
-    "geox": -2.209654,
-    "geoy": 53.870483,
+    "geox": -2.20965,
+    "geoy": 53.87048,
     "source": "lancashire_arcgis"
   },
   "lancashire::willastonavenue": {
@@ -107983,8 +107983,8 @@
     "community": "Roughlee Booth",
     "stop": "Old Hall Close",
     "postcode": "",
-    "geox": -2.236935,
-    "geoy": 53.859611,
+    "geox": -2.23693,
+    "geoy": 53.85961,
     "source": "lancashire_arcgis"
   },
   "lancashire::oldhallclose": {
@@ -108001,8 +108001,8 @@
     "community": "Barley",
     "stop": "Barley New Road",
     "postcode": "",
-    "geox": -2.253245,
-    "geoy": 53.856495,
+    "geox": -2.25325,
+    "geoy": 53.8565,
     "source": "lancashire_arcgis"
   },
   "lancashire::barleynewroad": {
@@ -108019,8 +108019,8 @@
     "community": "Barley",
     "stop": "Barley Lane",
     "postcode": "",
-    "geox": -2.271083,
-    "geoy": 53.858239,
+    "geox": -2.27108,
+    "geoy": 53.85824,
     "source": "lancashire_arcgis"
   },
   "lancashire::barleylane": {
@@ -108037,8 +108037,8 @@
     "community": "Padiham",
     "stop": "Quarry Street BB12",
     "postcode": "",
-    "geox": -2.311736,
-    "geoy": 53.803886,
+    "geox": -2.31174,
+    "geoy": 53.80389,
     "source": "lancashire_arcgis"
   },
   "lancashire::quarrystreetbb12": {
@@ -108055,8 +108055,8 @@
     "community": "Rose Grove",
     "stop": "Lowerhouse Lane",
     "postcode": "",
-    "geox": -2.281232,
-    "geoy": 53.789857,
+    "geox": -2.28123,
+    "geoy": 53.78986,
     "source": "lancashire_arcgis"
   },
   "lancashire::lowerhouselane": {
@@ -108074,7 +108074,7 @@
     "stop": "Alma Avenue",
     "postcode": "",
     "geox": -2.17054,
-    "geoy": 53.874536,
+    "geoy": 53.87454,
     "source": "lancashire_arcgis"
   },
   "lancashire::almaavenue": {
@@ -108091,8 +108091,8 @@
     "community": "Salterforth",
     "stop": "Cragg Row",
     "postcode": "",
-    "geox": -2.170196,
-    "geoy": 53.905647,
+    "geox": -2.1702,
+    "geoy": 53.90565,
     "source": "lancashire_arcgis"
   },
   "lancashire::craggrow": {
@@ -108109,8 +108109,8 @@
     "community": "Salterforth",
     "stop": "Park Avenue (Near junction with Alpha St.) BB18",
     "postcode": "",
-    "geox": -2.162309,
-    "geoy": 53.905813,
+    "geox": -2.16231,
+    "geoy": 53.90581,
     "source": "lancashire_arcgis"
   },
   "lancashire::parkavenuenearjunctionwithalphastbb18": {
@@ -108127,8 +108127,8 @@
     "community": "Rawtenstall",
     "stop": "Burnley Road East",
     "postcode": "",
-    "geox": -2.250185,
-    "geoy": 53.709165,
+    "geox": -2.25019,
+    "geoy": 53.70916,
     "source": "lancashire_arcgis"
   },
   "lancashire::burnleyroadeast": {
@@ -108145,8 +108145,8 @@
     "community": "Rawtenstall",
     "stop": "Staghills Road",
     "postcode": "",
-    "geox": -2.257459,
-    "geoy": 53.696492,
+    "geox": -2.25746,
+    "geoy": 53.69649,
     "source": "lancashire_arcgis"
   },
   "lancashire::staghillsroad": {
@@ -108163,7 +108163,7 @@
     "community": "Edenfield",
     "stop": "Eden Avenue",
     "postcode": "",
-    "geox": -2.306414,
+    "geox": -2.30641,
     "geoy": 53.66579,
     "source": "lancashire_arcgis"
   },
@@ -108181,8 +108181,8 @@
     "community": "Edenfield",
     "stop": "Market Street (Opposite Heycrofts View) BL0",
     "postcode": "",
-    "geox": -2.305137,
-    "geoy": 53.670338,
+    "geox": -2.30514,
+    "geoy": 53.67034,
     "source": "lancashire_arcgis"
   },
   "lancashire::marketstreetoppositeheycroftsviewbl0": {
@@ -108200,7 +108200,7 @@
     "stop": "Aitken Street",
     "postcode": "",
     "geox": -2.31639,
-    "geoy": 53.678266,
+    "geoy": 53.67827,
     "source": "lancashire_arcgis"
   },
   "lancashire::aitkenstreet": {
@@ -108217,7 +108217,7 @@
     "community": "Haslingden",
     "stop": "Horncliffe View",
     "postcode": "",
-    "geox": -2.327474,
+    "geox": -2.32747,
     "geoy": 53.69059,
     "source": "lancashire_arcgis"
   },
@@ -108235,8 +108235,8 @@
     "community": "Haslingden",
     "stop": "Lancaster Avenue by Raven Park Walkway BB4",
     "postcode": "",
-    "geox": -2.325665,
-    "geoy": 53.691086,
+    "geox": -2.32566,
+    "geoy": 53.69109,
     "source": "lancashire_arcgis"
   },
   "lancashire::lancasteravenuebyravenparkwalkwaybb4": {
@@ -108254,7 +108254,7 @@
     "stop": "St Veronica's BB4",
     "postcode": "",
     "geox": -2.32882,
-    "geoy": 53.688111,
+    "geoy": 53.68811,
     "source": "lancashire_arcgis"
   },
   "lancashire::stveronicasbb4": {
@@ -108271,8 +108271,8 @@
     "community": "Nelson",
     "stop": "Halifax Road",
     "postcode": "",
-    "geox": -2.213325,
-    "geoy": 53.826023,
+    "geox": -2.21333,
+    "geoy": 53.82602,
     "source": "lancashire_arcgis"
   },
   "lancashire::halifaxroad": {
@@ -108289,8 +108289,8 @@
     "community": "Briercliffe",
     "stop": "Stirling Court",
     "postcode": "",
-    "geox": -2.184847,
-    "geoy": 53.816975,
+    "geox": -2.18485,
+    "geoy": 53.81697,
     "source": "lancashire_arcgis"
   },
   "lancashire::stirlingcourt": {
@@ -108307,8 +108307,8 @@
     "community": "Burnley",
     "stop": "Briercliffe Road",
     "postcode": "",
-    "geox": -2.223796,
-    "geoy": 53.808732,
+    "geox": -2.2238,
+    "geoy": 53.80873,
     "source": "lancashire_arcgis"
   },
   "lancashire::brierclifferoad": {
@@ -108325,8 +108325,8 @@
     "community": "Burnley",
     "stop": "Antley Court",
     "postcode": "",
-    "geox": -2.226986,
-    "geoy": 53.805262,
+    "geox": -2.22699,
+    "geoy": 53.80526,
     "source": "lancashire_arcgis"
   },
   "lancashire::antleycourt": {
@@ -108343,8 +108343,8 @@
     "community": "Burnley",
     "stop": "Thornber Court",
     "postcode": "",
-    "geox": -2.227999,
-    "geoy": 53.803395,
+    "geox": -2.228,
+    "geoy": 53.8034,
     "source": "lancashire_arcgis"
   },
   "lancashire::thornbercourt": {
@@ -108361,8 +108361,8 @@
     "community": "Loveclough",
     "stop": "Burnley Road",
     "postcode": "",
-    "geox": -2.283536,
-    "geoy": 53.742936,
+    "geox": -2.28354,
+    "geoy": 53.74294,
     "source": "lancashire_arcgis"
   },
   "lancashire::burnleyroad": {
@@ -108379,8 +108379,8 @@
     "community": "Loveclough",
     "stop": "Gambleside Close",
     "postcode": "",
-    "geox": -2.285328,
-    "geoy": 53.732299,
+    "geox": -2.28533,
+    "geoy": 53.7323,
     "source": "lancashire_arcgis"
   },
   "lancashire::gamblesideclose": {
@@ -108397,8 +108397,8 @@
     "community": "Crawshawbooth",
     "stop": "Harvey Longworth Court, Goodshaw BB4",
     "postcode": "",
-    "geox": -2.283054,
-    "geoy": 53.732161,
+    "geox": -2.28305,
+    "geoy": 53.73216,
     "source": "lancashire_arcgis"
   },
   "lancashire::harveylongworthcourtgoodshawbb4": {
@@ -108415,8 +108415,8 @@
     "community": "Burnley",
     "stop": "Manchester Road",
     "postcode": "",
-    "geox": -2.246453,
-    "geoy": 53.776443,
+    "geox": -2.24645,
+    "geoy": 53.77644,
     "source": "lancashire_arcgis"
   },
   "lancashire::manchesterroad": {
@@ -108433,8 +108433,8 @@
     "community": "Burnley",
     "stop": "Rose Hill Road at Gainsborough Avenue BB11",
     "postcode": "",
-    "geox": -2.247269,
-    "geoy": 53.777962,
+    "geox": -2.24727,
+    "geoy": 53.77796,
     "source": "lancashire_arcgis"
   },
   "lancashire::rosehillroadatgainsboroughavenuebb11": {
@@ -108452,7 +108452,7 @@
     "stop": "Burnley road, near junction with Park Road BB10",
     "postcode": "",
     "geox": -2.2065,
-    "geoy": 53.766278,
+    "geoy": 53.76628,
     "source": "lancashire_arcgis"
   },
   "lancashire::burnleyroadnearjunctionwithparkroadbb10": {
@@ -108469,7 +108469,7 @@
     "community": "Cliviger",
     "stop": "Broad Ing Close, near to junction with Park Road BB10",
     "postcode": "",
-    "geox": -2.208608,
+    "geox": -2.20861,
     "geoy": 53.76864,
     "source": "lancashire_arcgis"
   },
@@ -108487,8 +108487,8 @@
     "community": "Burnley",
     "stop": "Brownsholme Ave at junction with Brandwood Grove BB10",
     "postcode": "",
-    "geox": -2.226635,
-    "geoy": 53.788981,
+    "geox": -2.22663,
+    "geoy": 53.78898,
     "source": "lancashire_arcgis"
   },
   "lancashire::brownsholmeaveatjunctionwithbrandwoodgrovebb10": {
@@ -108505,8 +108505,8 @@
     "community": "Burnley",
     "stop": "St Mary's Gate BB11",
     "postcode": "",
-    "geox": -2.233755,
-    "geoy": 53.788353,
+    "geox": -2.23375,
+    "geoy": 53.78835,
     "source": "lancashire_arcgis"
   },
   "lancashire::stmarysgatebb11": {
@@ -108523,8 +108523,8 @@
     "community": "Stacksteads",
     "stop": "Haworth Drive",
     "postcode": "",
-    "geox": -2.223005,
-    "geoy": 53.693586,
+    "geox": -2.22301,
+    "geoy": 53.69359,
     "source": "lancashire_arcgis"
   },
   "lancashire::haworthdrive": {
@@ -108541,8 +108541,8 @@
     "community": "Whitworth",
     "stop": "Wallbank Drive",
     "postcode": "",
-    "geox": -2.182864,
-    "geoy": 53.651798,
+    "geox": -2.18286,
+    "geoy": 53.6518,
     "source": "lancashire_arcgis"
   },
   "lancashire::wallbankdrive": {
@@ -108559,8 +108559,8 @@
     "community": "Rawtenstall",
     "stop": "Hardman Drive",
     "postcode": "",
-    "geox": -2.248248,
-    "geoy": 53.688089,
+    "geox": -2.24825,
+    "geoy": 53.68809,
     "source": "lancashire_arcgis"
   },
   "lancashire::hardmandrive": {
@@ -108578,7 +108578,7 @@
     "stop": "Kings Highway",
     "postcode": "",
     "geox": -2.32372,
-    "geoy": 53.729748,
+    "geoy": 53.72975,
     "source": "lancashire_arcgis"
   },
   "lancashire::kingshighway": {
@@ -108595,8 +108595,8 @@
     "community": "Hapton",
     "stop": "Burnley Road, Hapton BB11",
     "postcode": "",
-    "geox": -2.319215,
-    "geoy": 53.770947,
+    "geox": -2.31921,
+    "geoy": 53.77095,
     "source": "lancashire_arcgis"
   },
   "lancashire::burnleyroadhaptonbb11": {
@@ -108613,8 +108613,8 @@
     "community": "Burnley",
     "stop": "Crow Wood Avenue BB12",
     "postcode": "",
-    "geox": -2.259863,
-    "geoy": 53.795639,
+    "geox": -2.25986,
+    "geoy": 53.79564,
     "source": "lancashire_arcgis"
   },
   "lancashire::crowwoodavenuebb12": {
@@ -108631,8 +108631,8 @@
     "community": "Burnley",
     "stop": "Wheatley Close",
     "postcode": "",
-    "geox": -2.261637,
-    "geoy": 53.795539,
+    "geox": -2.26164,
+    "geoy": 53.79554,
     "source": "lancashire_arcgis"
   },
   "lancashire::wheatleyclose": {
@@ -108649,8 +108649,8 @@
     "community": "Ightenhill",
     "stop": "Gawthorpe Edge BB12",
     "postcode": "",
-    "geox": -2.294524,
-    "geoy": 53.797033,
+    "geox": -2.29452,
+    "geoy": 53.79703,
     "source": "lancashire_arcgis"
   },
   "lancashire::gawthorpeedgebb12": {
@@ -108667,8 +108667,8 @@
     "community": "Ightenhill",
     "stop": "Gawthorpe Edge - Church Close BB12",
     "postcode": "",
-    "geox": -2.292886,
-    "geoy": 53.797674,
+    "geox": -2.29289,
+    "geoy": 53.79767,
     "source": "lancashire_arcgis"
   },
   "lancashire::gawthorpeedgechurchclosebb12": {
@@ -108685,8 +108685,8 @@
     "community": "Fence",
     "stop": "Wheatley Lane Road",
     "postcode": "",
-    "geox": -2.268493,
-    "geoy": 53.829929,
+    "geox": -2.26849,
+    "geoy": 53.82993,
     "source": "lancashire_arcgis"
   },
   "lancashire::wheatleylaneroad": {
@@ -108703,8 +108703,8 @@
     "community": "Barrowford",
     "stop": "Lower Parrock Road",
     "postcode": "",
-    "geox": -2.226682,
-    "geoy": 53.841592,
+    "geox": -2.22668,
+    "geoy": 53.84159,
     "source": "lancashire_arcgis"
   },
   "lancashire::lowerparrockroad": {
@@ -108721,8 +108721,8 @@
     "community": "Barrowford",
     "stop": "Bedford Street",
     "postcode": "",
-    "geox": -2.227975,
-    "geoy": 53.839073,
+    "geox": -2.22797,
+    "geoy": 53.83907,
     "source": "lancashire_arcgis"
   },
   "lancashire::bedfordstreet": {
@@ -108739,8 +108739,8 @@
     "community": "Accrington",
     "stop": "Milnshaw Gardens",
     "postcode": "",
-    "geox": -2.372586,
-    "geoy": 53.757343,
+    "geox": -2.37259,
+    "geoy": 53.75734,
     "source": "lancashire_arcgis"
   },
   "lancashire::milnshawgardens": {
@@ -108757,8 +108757,8 @@
     "community": "Accrington",
     "stop": "Dale Street",
     "postcode": "",
-    "geox": -2.377669,
-    "geoy": 53.752222,
+    "geox": -2.37767,
+    "geoy": 53.75222,
     "source": "lancashire_arcgis"
   },
   "lancashire::dalestreet": {
@@ -108775,7 +108775,7 @@
     "community": "Church",
     "stop": "Princess Street",
     "postcode": "",
-    "geox": -2.390271,
+    "geox": -2.39027,
     "geoy": 53.7554,
     "source": "lancashire_arcgis"
   },
@@ -108793,8 +108793,8 @@
     "community": "Church",
     "stop": "York Street",
     "postcode": "",
-    "geox": -2.389414,
-    "geoy": 53.754647,
+    "geox": -2.38941,
+    "geoy": 53.75465,
     "source": "lancashire_arcgis"
   },
   "lancashire::yorkstreet": {
@@ -108811,8 +108811,8 @@
     "community": "Oswaldtwistle",
     "stop": "Stanhill Road",
     "postcode": "",
-    "geox": -2.432504,
-    "geoy": 53.744577,
+    "geox": -2.4325,
+    "geoy": 53.74458,
     "source": "lancashire_arcgis"
   },
   "lancashire::stanhillroad": {
@@ -108830,7 +108830,7 @@
     "stop": "Belthorn Road",
     "postcode": "",
     "geox": -2.43179,
-    "geoy": 53.718898,
+    "geoy": 53.7189,
     "source": "lancashire_arcgis"
   },
   "lancashire::belthornroad": {
@@ -108847,8 +108847,8 @@
     "community": "Belthorn",
     "stop": "Rydal Mount",
     "postcode": "",
-    "geox": -2.430601,
-    "geoy": 53.718698,
+    "geox": -2.4306,
+    "geoy": 53.7187,
     "source": "lancashire_arcgis"
   },
   "lancashire::rydalmount": {
@@ -108865,8 +108865,8 @@
     "community": "Rimington",
     "stop": "Newby Lane  (lay-by) BB7",
     "postcode": "",
-    "geox": -2.285635,
-    "geoy": 53.908749,
+    "geox": -2.28564,
+    "geoy": 53.90875,
     "source": "lancashire_arcgis"
   },
   "lancashire::newbylanelaybybb7": {
@@ -108883,8 +108883,8 @@
     "community": "Rimington",
     "stop": "Long Lover Lane",
     "postcode": "",
-    "geox": -2.273692,
-    "geoy": 53.907411,
+    "geox": -2.27369,
+    "geoy": 53.90741,
     "source": "lancashire_arcgis"
   },
   "lancashire::longloverlane": {
@@ -108901,8 +108901,8 @@
     "community": "Rimington",
     "stop": "Newby Lane",
     "postcode": "",
-    "geox": -2.282604,
-    "geoy": 53.909153,
+    "geox": -2.2826,
+    "geoy": 53.90915,
     "source": "lancashire_arcgis"
   },
   "lancashire::newbylane": {
@@ -108919,8 +108919,8 @@
     "community": "Rimington",
     "stop": "Rimington Lane",
     "postcode": "",
-    "geox": -2.300036,
-    "geoy": 53.907067,
+    "geox": -2.30004,
+    "geoy": 53.90707,
     "source": "lancashire_arcgis"
   },
   "lancashire::rimingtonlane": {
@@ -108937,8 +108937,8 @@
     "community": "Downham",
     "stop": "Road From Chatburn Road Leading To Twiston Lane",
     "postcode": "",
-    "geox": -2.329164,
-    "geoy": 53.894607,
+    "geox": -2.32916,
+    "geoy": 53.89461,
     "source": "lancashire_arcgis"
   },
   "lancashire::roadfromchatburnroadleadingtotwistonlane": {
@@ -108955,8 +108955,8 @@
     "community": "Grindleton",
     "stop": "Sawley Road",
     "postcode": "",
-    "geox": -2.366061,
-    "geoy": 53.905736,
+    "geox": -2.36606,
+    "geoy": 53.90574,
     "source": "lancashire_arcgis"
   },
   "lancashire::sawleyroad": {
@@ -108973,8 +108973,8 @@
     "community": "Sawley",
     "stop": "Sawley Road",
     "postcode": "",
-    "geox": -2.348481,
-    "geoy": 53.913553,
+    "geox": -2.34848,
+    "geoy": 53.91355,
     "source": "lancashire_arcgis"
   },
   "lancashire::tosside::theplantation": {
@@ -108983,7 +108983,7 @@
     "stop": "The Plantation",
     "postcode": "",
     "geox": -2.35385,
-    "geoy": 54.001144,
+    "geoy": 54.00114,
     "source": "lancashire_arcgis"
   },
   "lancashire::theplantation": {
@@ -109001,7 +109001,7 @@
     "stop": "Tosside Gravel Car park BD23",
     "postcode": "",
     "geox": -2.35347,
-    "geoy": 53.999419,
+    "geoy": 53.99942,
     "source": "lancashire_arcgis"
   },
   "lancashire::tossidegravelcarparkbd23": {
@@ -109018,8 +109018,8 @@
     "community": "Slaidburn",
     "stop": "The Skaithe",
     "postcode": "",
-    "geox": -2.438883,
-    "geoy": 53.965944,
+    "geox": -2.43888,
+    "geoy": 53.96594,
     "source": "lancashire_arcgis"
   },
   "lancashire::theskaithe": {
@@ -109036,7 +109036,7 @@
     "community": "Bolton-by-Bowland",
     "stop": "Barret Hill Brow",
     "postcode": "",
-    "geox": -2.380778,
+    "geox": -2.38078,
     "geoy": 53.94777,
     "source": "lancashire_arcgis"
   },
@@ -109054,8 +109054,8 @@
     "community": "West Bradford",
     "stop": "Hillside Drive",
     "postcode": "",
-    "geox": -2.389117,
-    "geoy": 53.897718,
+    "geox": -2.38912,
+    "geoy": 53.89772,
     "source": "lancashire_arcgis"
   },
   "lancashire::hillsidedrive": {
@@ -109072,8 +109072,8 @@
     "community": "West Bradford",
     "stop": "Fell View",
     "postcode": "",
-    "geox": -2.402541,
-    "geoy": 53.902626,
+    "geox": -2.40254,
+    "geoy": 53.90263,
     "source": "lancashire_arcgis"
   },
   "lancashire::fellview": {
@@ -109090,8 +109090,8 @@
     "community": "Waddington",
     "stop": "Queensway",
     "postcode": "",
-    "geox": -2.412828,
-    "geoy": 53.886961,
+    "geox": -2.41283,
+    "geoy": 53.88696,
     "source": "lancashire_arcgis"
   },
   "lancashire::queensway": {
@@ -109108,8 +109108,8 @@
     "community": "Newton",
     "stop": "Slaidburn Road",
     "postcode": "",
-    "geox": -2.462694,
-    "geoy": 53.949792,
+    "geox": -2.46269,
+    "geoy": 53.94979,
     "source": "lancashire_arcgis"
   },
   "lancashire::slaidburnroad": {
@@ -109126,8 +109126,8 @@
     "community": "Paythorne",
     "stop": "Buck Inn BB7",
     "postcode": "",
-    "geox": -2.261491,
-    "geoy": 53.962669,
+    "geox": -2.26149,
+    "geoy": 53.96267,
     "source": "lancashire_arcgis"
   },
   "lancashire::buckinnbb7": {
@@ -109145,7 +109145,7 @@
     "stop": "Main Street",
     "postcode": "",
     "geox": -2.32885,
-    "geoy": 53.939998,
+    "geoy": 53.94,
     "source": "lancashire_arcgis"
   },
   "lancashire::mainstreet": {
@@ -109162,8 +109162,8 @@
     "community": "Gisburn",
     "stop": "Main Street",
     "postcode": "",
-    "geox": -2.262953,
-    "geoy": 53.934121,
+    "geox": -2.26295,
+    "geoy": 53.93412,
     "source": "lancashire_arcgis"
   },
   "lancashire::gisburn::strawberrygardens": {
@@ -109171,8 +109171,8 @@
     "community": "Gisburn",
     "stop": "Strawberry Gardens",
     "postcode": "",
-    "geox": -2.256396,
-    "geoy": 53.936428,
+    "geox": -2.2564,
+    "geoy": 53.93643,
     "source": "lancashire_arcgis"
   },
   "lancashire::strawberrygardens": {
@@ -109189,8 +109189,8 @@
     "community": "Higham",
     "stop": "Higham Hall Road",
     "postcode": "",
-    "geox": -2.290174,
-    "geoy": 53.824939,
+    "geox": -2.29017,
+    "geoy": 53.82494,
     "source": "lancashire_arcgis"
   },
   "lancashire::highamhallroad": {
@@ -109208,7 +109208,7 @@
     "stop": "Sabden Car Park BB7",
     "postcode": "",
     "geox": -2.3366,
-    "geoy": 53.832316,
+    "geoy": 53.83232,
     "source": "lancashire_arcgis"
   },
   "lancashire::sabdencarparkbb7": {
@@ -109225,8 +109225,8 @@
     "community": "Sabden",
     "stop": "Back Pendle Street West",
     "postcode": "",
-    "geox": -2.340454,
-    "geoy": 53.830852,
+    "geox": -2.34045,
+    "geoy": 53.83085,
     "source": "lancashire_arcgis"
   },
   "lancashire::backpendlestreetwest": {
@@ -109243,8 +109243,8 @@
     "community": "Sabden",
     "stop": "Crowtrees Road",
     "postcode": "",
-    "geox": -2.336874,
-    "geoy": 53.835046,
+    "geox": -2.33687,
+    "geoy": 53.83505,
     "source": "lancashire_arcgis"
   },
   "lancashire::crowtreesroad": {
@@ -109261,7 +109261,7 @@
     "community": "Pendleton",
     "stop": "Near All Saints Church BB7",
     "postcode": "",
-    "geox": -2.368864,
+    "geox": -2.36886,
     "geoy": 53.85174,
     "source": "lancashire_arcgis"
   },
@@ -109279,8 +109279,8 @@
     "community": "Pendleton",
     "stop": "Main Street",
     "postcode": "",
-    "geox": -2.371568,
-    "geoy": 53.851522,
+    "geox": -2.37157,
+    "geoy": 53.85152,
     "source": "lancashire_arcgis"
   },
   "lancashire::warton::hazelmountdrive": {
@@ -109288,7 +109288,7 @@
     "community": "Warton",
     "stop": "Hazelmount Drive",
     "postcode": "",
-    "geox": -2.772695,
+    "geox": -2.7727,
     "geoy": 54.13516,
     "source": "lancashire_arcgis"
   },
@@ -109306,8 +109306,8 @@
     "community": "Warton",
     "stop": "Rupert Street",
     "postcode": "",
-    "geox": -2.769782,
-    "geoy": 54.136545,
+    "geox": -2.76978,
+    "geoy": 54.13654,
     "source": "lancashire_arcgis"
   },
   "lancashire::rupertstreet": {
@@ -109324,8 +109324,8 @@
     "community": "Warton",
     "stop": "Sand Lane",
     "postcode": "",
-    "geox": -2.782004,
-    "geoy": 54.138587,
+    "geox": -2.782,
+    "geoy": 54.13859,
     "source": "lancashire_arcgis"
   },
   "lancashire::sandlane": {
@@ -109342,8 +109342,8 @@
     "community": "Warton",
     "stop": "Main Street",
     "postcode": "",
-    "geox": -2.769322,
-    "geoy": 54.144753,
+    "geox": -2.76932,
+    "geoy": 54.14475,
     "source": "lancashire_arcgis"
   },
   "lancashire::warton::monasteryofourladyofhyninghyninghallla5": {
@@ -109351,8 +109351,8 @@
     "community": "Warton",
     "stop": "Monastery of Our Lady of Hyning, Hyning Hall LA5",
     "postcode": "",
-    "geox": -2.756694,
-    "geoy": 54.153555,
+    "geox": -2.75669,
+    "geoy": 54.15355,
     "source": "lancashire_arcgis"
   },
   "lancashire::monasteryofourladyofhyninghyninghallla5": {
@@ -109369,8 +109369,8 @@
     "community": "Yealand Redmayne",
     "stop": "Silverdale Road",
     "postcode": "",
-    "geox": -2.766936,
-    "geoy": 54.177142,
+    "geox": -2.76694,
+    "geoy": 54.17714,
     "source": "lancashire_arcgis"
   },
   "lancashire::silverdaleroad": {
@@ -109387,7 +109387,7 @@
     "community": "Yealand Redmayne",
     "stop": "The Meadows",
     "postcode": "",
-    "geox": -2.762426,
+    "geox": -2.76243,
     "geoy": 54.17265,
     "source": "lancashire_arcgis"
   },
@@ -109405,8 +109405,8 @@
     "community": "Yealand Conyers",
     "stop": "New Inn car park, Yealand Conyers LA5",
     "postcode": "",
-    "geox": -2.760938,
-    "geoy": 54.166762,
+    "geox": -2.76094,
+    "geoy": 54.16676,
     "source": "lancashire_arcgis"
   },
   "lancashire::newinncarparkyealandconyersla5": {
@@ -109423,8 +109423,8 @@
     "community": "Yealand Conyers",
     "stop": "Dykes Lane",
     "postcode": "",
-    "geox": -2.759634,
-    "geoy": 54.164911,
+    "geox": -2.75963,
+    "geoy": 54.16491,
     "source": "lancashire_arcgis"
   },
   "lancashire::dykeslane": {
@@ -109441,8 +109441,8 @@
     "community": "Yealand Redmayne",
     "stop": "Hilderstone Lane",
     "postcode": "",
-    "geox": -2.739051,
-    "geoy": 54.183357,
+    "geox": -2.73905,
+    "geoy": 54.18336,
     "source": "lancashire_arcgis"
   },
   "lancashire::hilderstonelane": {
@@ -109459,8 +109459,8 @@
     "community": "Arkholme",
     "stop": "Main Street",
     "postcode": "",
-    "geox": -2.639452,
-    "geoy": 54.143276,
+    "geox": -2.63945,
+    "geoy": 54.14328,
     "source": "lancashire_arcgis"
   },
   "lancashire::arkholme::caruspark": {
@@ -109468,8 +109468,8 @@
     "community": "Arkholme",
     "stop": "Carus Park",
     "postcode": "",
-    "geox": -2.632448,
-    "geoy": 54.141111,
+    "geox": -2.63245,
+    "geoy": 54.14111,
     "source": "lancashire_arcgis"
   },
   "lancashire::caruspark": {
@@ -109486,8 +109486,8 @@
     "community": "Whittington",
     "stop": "Main Street",
     "postcode": "",
-    "geox": -2.612286,
-    "geoy": 54.178918,
+    "geox": -2.61229,
+    "geoy": 54.17892,
     "source": "lancashire_arcgis"
   },
   "lancashire::whittington::loynepark": {
@@ -109495,8 +109495,8 @@
     "community": "Whittington",
     "stop": "Loyne Park",
     "postcode": "",
-    "geox": -2.611528,
-    "geoy": 54.181583,
+    "geox": -2.61153,
+    "geoy": 54.18158,
     "source": "lancashire_arcgis"
   },
   "lancashire::loynepark": {
@@ -109513,8 +109513,8 @@
     "community": "Leck",
     "stop": "Saint Peter's school LA6",
     "postcode": "",
-    "geox": -2.547095,
-    "geoy": 54.184607,
+    "geox": -2.5471,
+    "geoy": 54.18461,
     "source": "lancashire_arcgis"
   },
   "lancashire::saintpetersschoolla6": {
@@ -109531,8 +109531,8 @@
     "community": "Ireby",
     "stop": "High Barn Road",
     "postcode": "",
-    "geox": -2.531249,
-    "geoy": 54.173713,
+    "geox": -2.53125,
+    "geoy": 54.17371,
     "source": "lancashire_arcgis"
   },
   "lancashire::highbarnroad": {
@@ -109549,8 +109549,8 @@
     "community": "Burrow",
     "stop": "Long Level",
     "postcode": "",
-    "geox": -2.559665,
-    "geoy": 54.182769,
+    "geox": -2.55966,
+    "geoy": 54.18277,
     "source": "lancashire_arcgis"
   },
   "lancashire::longlevel": {
@@ -109568,7 +109568,7 @@
     "stop": "Church Lane",
     "postcode": "",
     "geox": -2.59831,
-    "geoy": 54.157428,
+    "geoy": 54.15743,
     "source": "lancashire_arcgis"
   },
   "lancashire::churchlane": {
@@ -109585,8 +109585,8 @@
     "community": "Cantsfield",
     "stop": "Cantsfield House Gates LA6",
     "postcode": "",
-    "geox": -2.583434,
-    "geoy": 54.150401,
+    "geox": -2.58343,
+    "geoy": 54.1504,
     "source": "lancashire_arcgis"
   },
   "lancashire::cantsfieldhousegatesla6": {
@@ -109603,8 +109603,8 @@
     "community": "Wrayton",
     "stop": "Back Lane",
     "postcode": "",
-    "geox": -2.596443,
-    "geoy": 54.144728,
+    "geox": -2.59644,
+    "geoy": 54.14473,
     "source": "lancashire_arcgis"
   },
   "lancashire::backlane": {
@@ -109621,8 +109621,8 @@
     "community": "Borwick",
     "stop": "Borwick Lane",
     "postcode": "",
-    "geox": -2.728108,
-    "geoy": 54.151562,
+    "geox": -2.72811,
+    "geoy": 54.15156,
     "source": "lancashire_arcgis"
   },
   "lancashire::borwicklane": {
@@ -109639,8 +109639,8 @@
     "community": "Priest Hutton",
     "stop": "Borwick Lane",
     "postcode": "",
-    "geox": -2.720375,
-    "geoy": 54.157666,
+    "geox": -2.72038,
+    "geoy": 54.15767,
     "source": "lancashire_arcgis"
   },
   "lancashire::tewitfield::gatelandshousela6": {
@@ -109648,8 +109648,8 @@
     "community": "Tewitfield",
     "stop": "Gatelands House LA6",
     "postcode": "",
-    "geox": -2.735434,
-    "geoy": 54.157523,
+    "geox": -2.73543,
+    "geoy": 54.15752,
     "source": "lancashire_arcgis"
   },
   "lancashire::gatelandshousela6": {
@@ -109666,8 +109666,8 @@
     "community": "Gressingham",
     "stop": "Eskrigge Lane",
     "postcode": "",
-    "geox": -2.660668,
-    "geoy": 54.118413,
+    "geox": -2.66067,
+    "geoy": 54.11841,
     "source": "lancashire_arcgis"
   },
   "lancashire::eskriggelane": {
@@ -109684,8 +109684,8 @@
     "community": "Gressingham",
     "stop": "Silverhill",
     "postcode": "",
-    "geox": -2.656187,
-    "geoy": 54.123454,
+    "geox": -2.65619,
+    "geoy": 54.12345,
     "source": "lancashire_arcgis"
   },
   "lancashire::silverhill": {
@@ -109702,8 +109702,8 @@
     "community": "Aughton",
     "stop": "High Tarn LA2",
     "postcode": "",
-    "geox": -2.684108,
-    "geoy": 54.102595,
+    "geox": -2.68411,
+    "geoy": 54.1026,
     "source": "lancashire_arcgis"
   },
   "lancashire::hightarnla2": {
@@ -109720,8 +109720,8 @@
     "community": "Aughton",
     "stop": "Aughton Brow",
     "postcode": "",
-    "geox": -2.688883,
-    "geoy": 54.099264,
+    "geox": -2.68888,
+    "geoy": 54.09926,
     "source": "lancashire_arcgis"
   },
   "lancashire::aughtonbrow": {
@@ -109738,8 +109738,8 @@
     "community": "Carnforth",
     "stop": "Longmere Crescent",
     "postcode": "",
-    "geox": -2.776261,
-    "geoy": 54.121299,
+    "geox": -2.77626,
+    "geoy": 54.1213,
     "source": "lancashire_arcgis"
   },
   "lancashire::longmerecrescent": {
@@ -109756,8 +109756,8 @@
     "community": "Carnforth",
     "stop": "Crag Bank Crescent",
     "postcode": "",
-    "geox": -2.778735,
-    "geoy": 54.120974,
+    "geox": -2.77874,
+    "geoy": 54.12097,
     "source": "lancashire_arcgis"
   },
   "lancashire::cragbankcrescent": {
@@ -109775,7 +109775,7 @@
     "stop": "Gummers Howe Walk",
     "postcode": "",
     "geox": -2.75986,
-    "geoy": 54.122111,
+    "geoy": 54.12211,
     "source": "lancashire_arcgis"
   },
   "lancashire::gummershowewalk": {
@@ -109792,8 +109792,8 @@
     "community": "Nether Kellet",
     "stop": "Hornby Bank",
     "postcode": "",
-    "geox": -2.756753,
-    "geoy": 54.108806,
+    "geox": -2.75675,
+    "geoy": 54.10881,
     "source": "lancashire_arcgis"
   },
   "lancashire::hornbybank": {
@@ -109810,8 +109810,8 @@
     "community": "Nether Kellet",
     "stop": "Meadowcroft",
     "postcode": "",
-    "geox": -2.758141,
-    "geoy": 54.104842,
+    "geox": -2.75814,
+    "geoy": 54.10484,
     "source": "lancashire_arcgis"
   },
   "lancashire::meadowcroft": {
@@ -109829,7 +109829,7 @@
     "stop": "Shaw Lane",
     "postcode": "",
     "geox": -2.76086,
-    "geoy": 54.105747,
+    "geoy": 54.10575,
     "source": "lancashire_arcgis"
   },
   "lancashire::shawlane": {
@@ -109847,7 +109847,7 @@
     "stop": "Birkland Barrow Road",
     "postcode": "",
     "geox": -2.73004,
-    "geoy": 54.115204,
+    "geoy": 54.1152,
     "source": "lancashire_arcgis"
   },
   "lancashire::birklandbarrowroad": {
@@ -109864,8 +109864,8 @@
     "community": "Over Kellet",
     "stop": "Nether Kellet Road",
     "postcode": "",
-    "geox": -2.736498,
-    "geoy": 54.123807,
+    "geox": -2.7365,
+    "geoy": 54.12381,
     "source": "lancashire_arcgis"
   },
   "lancashire::netherkelletroad": {
@@ -109882,8 +109882,8 @@
     "community": "Over Kellet",
     "stop": "Greenways",
     "postcode": "",
-    "geox": -2.728635,
-    "geoy": 54.122304,
+    "geox": -2.72864,
+    "geoy": 54.1223,
     "source": "lancashire_arcgis"
   },
   "lancashire::greenways": {
@@ -109901,7 +109901,7 @@
     "stop": "Winder Garth",
     "postcode": "",
     "geox": -2.72769,
-    "geoy": 54.124632,
+    "geoy": 54.12463,
     "source": "lancashire_arcgis"
   },
   "lancashire::windergarth": {
@@ -109918,8 +109918,8 @@
     "community": "Over Kellet",
     "stop": "Church Hall, Church Bank LA6",
     "postcode": "",
-    "geox": -2.731602,
-    "geoy": 54.121534,
+    "geox": -2.7316,
+    "geoy": 54.12153,
     "source": "lancashire_arcgis"
   },
   "lancashire::churchhallchurchbankla6": {
@@ -109936,8 +109936,8 @@
     "community": "Over Kellet",
     "stop": "Church Bank",
     "postcode": "",
-    "geox": -2.731708,
-    "geoy": 54.121297,
+    "geox": -2.73171,
+    "geoy": 54.1213,
     "source": "lancashire_arcgis"
   },
   "lancashire::churchbank": {
@@ -109954,8 +109954,8 @@
     "community": "Lancaster",
     "stop": "Storey Avenue",
     "postcode": "",
-    "geox": -2.814071,
-    "geoy": 54.048091,
+    "geox": -2.81407,
+    "geoy": 54.04809,
     "source": "lancashire_arcgis"
   },
   "lancashire::storeyavenue": {
@@ -109972,8 +109972,8 @@
     "community": "Lancaster",
     "stop": "EH Booth car park, Hala Road LA1",
     "postcode": "",
-    "geox": -2.793907,
-    "geoy": 54.027974,
+    "geox": -2.79391,
+    "geoy": 54.02797,
     "source": "lancashire_arcgis"
   },
   "lancashire::ehboothcarparkhalaroadla1": {
@@ -109990,8 +109990,8 @@
     "community": "Lancaster",
     "stop": "Melling House, Hala Road LA1",
     "postcode": "",
-    "geox": -2.792545,
-    "geoy": 54.027789,
+    "geox": -2.79255,
+    "geoy": 54.02779,
     "source": "lancashire_arcgis"
   },
   "lancashire::mellinghousehalaroadla1": {
@@ -110008,8 +110008,8 @@
     "community": "Quernmore",
     "stop": "Conderside Barn, off Littlefell Lane LA2",
     "postcode": "",
-    "geox": -2.760016,
-    "geoy": 54.019266,
+    "geox": -2.76002,
+    "geoy": 54.01927,
     "source": "lancashire_arcgis"
   },
   "lancashire::condersidebarnofflittlefelllanela2": {
@@ -110026,8 +110026,8 @@
     "community": "Quernmore",
     "stop": "Conder Mill Farm, Wyersdale Road LA2",
     "postcode": "",
-    "geox": -2.750316,
-    "geoy": 54.028984,
+    "geox": -2.75032,
+    "geoy": 54.02898,
     "source": "lancashire_arcgis"
   },
   "lancashire::condermillfarmwyersdaleroadla2": {
@@ -110044,8 +110044,8 @@
     "community": "Quernmore",
     "stop": "Rigg Lane",
     "postcode": "",
-    "geox": -2.734112,
-    "geoy": 54.025365,
+    "geox": -2.73411,
+    "geoy": 54.02537,
     "source": "lancashire_arcgis"
   },
   "lancashire::rigglane": {
@@ -110062,7 +110062,7 @@
     "community": "Ellel",
     "stop": "Far field, Bay Horse Road (CALL IF REQUESTED) LA2",
     "postcode": "",
-    "geox": -2.741095,
+    "geox": -2.7411,
     "geoy": 54.01209,
     "source": "lancashire_arcgis"
   },
@@ -110080,8 +110080,8 @@
     "community": "Ellel",
     "stop": "Scriffen Lane",
     "postcode": "",
-    "geox": -2.780365,
-    "geoy": 53.989626,
+    "geox": -2.78037,
+    "geoy": 53.98963,
     "source": "lancashire_arcgis"
   },
   "lancashire::scriffenlane": {
@@ -110098,8 +110098,8 @@
     "community": "Galgate",
     "stop": "Beech Avenue",
     "postcode": "",
-    "geox": -2.794599,
-    "geoy": 53.994602,
+    "geox": -2.7946,
+    "geoy": 53.9946,
     "source": "lancashire_arcgis"
   },
   "lancashire::beechavenue": {
@@ -110116,8 +110116,8 @@
     "community": "Galgate",
     "stop": "Leachfield Close",
     "postcode": "",
-    "geox": -2.792957,
-    "geoy": 53.993327,
+    "geox": -2.79296,
+    "geoy": 53.99333,
     "source": "lancashire_arcgis"
   },
   "lancashire::leachfieldclose": {
@@ -110134,8 +110134,8 @@
     "community": "Morecambe",
     "stop": "Back Beach Street (West)",
     "postcode": "",
-    "geox": -2.840438,
-    "geoy": 54.077813,
+    "geox": -2.84044,
+    "geoy": 54.07781,
     "source": "lancashire_arcgis"
   },
   "lancashire::backbeachstreetwest": {
@@ -110152,8 +110152,8 @@
     "community": "Morecambe",
     "stop": "Princes Crescent",
     "postcode": "",
-    "geox": -2.837277,
-    "geoy": 54.076433,
+    "geox": -2.83728,
+    "geoy": 54.07643,
     "source": "lancashire_arcgis"
   },
   "lancashire::princescrescent": {
@@ -110170,7 +110170,7 @@
     "community": "Morecambe",
     "stop": "Dog & Partridge Hotel Car Park, Bare Lane LA4",
     "postcode": "",
-    "geox": -2.838251,
+    "geox": -2.83825,
     "geoy": 54.07702,
     "source": "lancashire_arcgis"
   },
@@ -110188,8 +110188,8 @@
     "community": "Morecambe",
     "stop": "Wakefield Avenue",
     "postcode": "",
-    "geox": -2.842418,
-    "geoy": 54.073737,
+    "geox": -2.84242,
+    "geoy": 54.07374,
     "source": "lancashire_arcgis"
   },
   "lancashire::wakefieldavenue": {
@@ -110206,8 +110206,8 @@
     "community": "Morecambe",
     "stop": "Matthias Court, Matthias Street LA4",
     "postcode": "",
-    "geox": -2.858644,
-    "geoy": 54.075044,
+    "geox": -2.85864,
+    "geoy": 54.07504,
     "source": "lancashire_arcgis"
   },
   "lancashire::matthiascourtmatthiasstreetla4": {
@@ -110224,8 +110224,8 @@
     "community": "Wray",
     "stop": "Main Street",
     "postcode": "",
-    "geox": -2.608854,
-    "geoy": 54.102676,
+    "geox": -2.60885,
+    "geoy": 54.10268,
     "source": "lancashire_arcgis"
   },
   "lancashire::tatham::millhousesla2": {
@@ -110233,7 +110233,7 @@
     "community": "Tatham",
     "stop": "Mill Houses LA2",
     "postcode": "",
-    "geox": -2.583132,
+    "geox": -2.58313,
     "geoy": 54.10381,
     "source": "lancashire_arcgis"
   },
@@ -110251,8 +110251,8 @@
     "community": "Tatham",
     "stop": "Lowgill Lane",
     "postcode": "",
-    "geox": -2.531921,
-    "geoy": 54.078263,
+    "geox": -2.53192,
+    "geoy": 54.07826,
     "source": "lancashire_arcgis"
   },
   "lancashire::lowgilllane": {
@@ -110269,8 +110269,8 @@
     "community": "Wennington",
     "stop": "Lodge Lane",
     "postcode": "",
-    "geox": -2.588161,
-    "geoy": 54.125293,
+    "geox": -2.58816,
+    "geoy": 54.12529,
     "source": "lancashire_arcgis"
   },
   "lancashire::lodgelane": {
@@ -110287,8 +110287,8 @@
     "community": "Overton",
     "stop": "Ship Hotel Car Park LA3",
     "postcode": "",
-    "geox": -2.861381,
-    "geoy": 54.015106,
+    "geox": -2.86138,
+    "geoy": 54.01511,
     "source": "lancashire_arcgis"
   },
   "lancashire::shiphotelcarparkla3": {
@@ -110305,8 +110305,8 @@
     "community": "Overton",
     "stop": "First Terrace",
     "postcode": "",
-    "geox": -2.876021,
-    "geoy": 53.998351,
+    "geox": -2.87602,
+    "geoy": 53.99835,
     "source": "lancashire_arcgis"
   },
   "lancashire::firstterrace": {
@@ -110323,7 +110323,7 @@
     "community": "Middleton",
     "stop": "Carr Lane",
     "postcode": "",
-    "geox": -2.883482,
+    "geox": -2.88348,
     "geoy": 54.02054,
     "source": "lancashire_arcgis"
   },
@@ -110342,7 +110342,7 @@
     "stop": "Badger Wood",
     "postcode": "",
     "geox": -2.89847,
-    "geoy": 54.015041,
+    "geoy": 54.01504,
     "source": "lancashire_arcgis"
   },
   "lancashire::badgerwood": {
@@ -110359,8 +110359,8 @@
     "community": "Middleton",
     "stop": "Old Trafford Park LA3",
     "postcode": "",
-    "geox": -2.887488,
-    "geoy": 54.030151,
+    "geox": -2.88749,
+    "geoy": 54.03015,
     "source": "lancashire_arcgis"
   },
   "lancashire::oldtraffordparkla3": {
@@ -110377,8 +110377,8 @@
     "community": "Heysham",
     "stop": "Penhale Gardens",
     "postcode": "",
-    "geox": -2.896843,
-    "geoy": 54.039173,
+    "geox": -2.89684,
+    "geoy": 54.03917,
     "source": "lancashire_arcgis"
   },
   "lancashire::penhalegardens": {
@@ -110395,8 +110395,8 @@
     "community": "Heysham",
     "stop": "Kingsway Court, Kingsway LA3",
     "postcode": "",
-    "geox": -2.886089,
-    "geoy": 54.052851,
+    "geox": -2.88609,
+    "geoy": 54.05285,
     "source": "lancashire_arcgis"
   },
   "lancashire::kingswaycourtkingswayla3": {
@@ -110414,7 +110414,7 @@
     "stop": "Draycombe Court, Furness Road LA3",
     "postcode": "",
     "geox": -2.88779,
-    "geoy": 54.057244,
+    "geoy": 54.05724,
     "source": "lancashire_arcgis"
   },
   "lancashire::draycombecourtfurnessroadla3": {
@@ -110431,8 +110431,8 @@
     "community": "Morecambe",
     "stop": "Altham Road",
     "postcode": "",
-    "geox": -2.855407,
-    "geoy": 54.062501,
+    "geox": -2.85541,
+    "geoy": 54.0625,
     "source": "lancashire_arcgis"
   },
   "lancashire::althamroad": {
@@ -110449,8 +110449,8 @@
     "community": "Morecambe",
     "stop": "Parkside Court, Braddon Close, Morecambe LA4",
     "postcode": "",
-    "geox": -2.856924,
-    "geoy": 54.061259,
+    "geox": -2.85692,
+    "geoy": 54.06126,
     "source": "lancashire_arcgis"
   },
   "lancashire::parksidecourtbraddonclosemorecambela4": {
@@ -110467,8 +110467,8 @@
     "community": "Morecambe",
     "stop": "Altham Walk",
     "postcode": "",
-    "geox": -2.855698,
-    "geoy": 54.061259,
+    "geox": -2.8557,
+    "geoy": 54.06126,
     "source": "lancashire_arcgis"
   },
   "lancashire::althamwalk": {
@@ -110485,8 +110485,8 @@
     "community": "Morecambe",
     "stop": "William Mitchell Inn, Glentworth Drive West, Morecambe LA4",
     "postcode": "",
-    "geox": -2.854027,
-    "geoy": 54.061299,
+    "geox": -2.85403,
+    "geoy": 54.0613,
     "source": "lancashire_arcgis"
   },
   "lancashire::williammitchellinnglentworthdrivewestmorecambela4": {
@@ -110503,8 +110503,8 @@
     "community": "Morecambe",
     "stop": "Church of the Ascension, Michaelson Avenue LA4",
     "postcode": "",
-    "geox": -2.834852,
-    "geoy": 54.067168,
+    "geox": -2.83485,
+    "geoy": 54.06717,
     "source": "lancashire_arcgis"
   },
   "lancashire::churchoftheascensionmichaelsonavenuela4": {
@@ -110521,8 +110521,8 @@
     "community": "Morecambe",
     "stop": "Prospect Grove",
     "postcode": "",
-    "geox": -2.851023,
-    "geoy": 54.068226,
+    "geox": -2.85102,
+    "geoy": 54.06823,
     "source": "lancashire_arcgis"
   },
   "lancashire::prospectgrove": {
@@ -110539,8 +110539,8 @@
     "community": "Lancaster",
     "stop": "John Kay Court LA1",
     "postcode": "",
-    "geox": -2.811736,
-    "geoy": 54.061928,
+    "geox": -2.81174,
+    "geoy": 54.06193,
     "source": "lancashire_arcgis"
   },
   "lancashire::johnkaycourtla1": {
@@ -110557,8 +110557,8 @@
     "community": "Lancaster",
     "stop": "Drive Up To Derwent Court",
     "postcode": "",
-    "geox": -2.818604,
-    "geoy": 54.056085,
+    "geox": -2.8186,
+    "geoy": 54.05609,
     "source": "lancashire_arcgis"
   },
   "lancashire::driveuptoderwentcourt": {
@@ -110575,8 +110575,8 @@
     "community": "Lancaster",
     "stop": "Eastington",
     "postcode": "",
-    "geox": -2.823149,
-    "geoy": 54.056901,
+    "geox": -2.82315,
+    "geoy": 54.0569,
     "source": "lancashire_arcgis"
   },
   "lancashire::eastington": {
@@ -110593,8 +110593,8 @@
     "community": "Morecambe",
     "stop": "Lancambe Court",
     "postcode": "",
-    "geox": -2.826274,
-    "geoy": 54.057311,
+    "geox": -2.82627,
+    "geoy": 54.05731,
     "source": "lancashire_arcgis"
   },
   "lancashire::lancambecourt": {
@@ -110612,7 +110612,7 @@
     "stop": "Hanging Green Lane",
     "postcode": "",
     "geox": -2.80705,
-    "geoy": 54.090067,
+    "geoy": 54.09007,
     "source": "lancashire_arcgis"
   },
   "lancashire::hanginggreenlane": {
@@ -110629,7 +110629,7 @@
     "community": "Lancaster",
     "stop": "Ryelands Park / Little Nippers Nursery LA1",
     "postcode": "",
-    "geox": -2.802316,
+    "geox": -2.80232,
     "geoy": 54.05715,
     "source": "lancashire_arcgis"
   },
@@ -110648,7 +110648,7 @@
     "stop": "Vale View day Centre LA1",
     "postcode": "",
     "geox": -2.80785,
-    "geoy": 54.064411,
+    "geoy": 54.06441,
     "source": "lancashire_arcgis"
   },
   "lancashire::valeviewdaycentrela1": {
@@ -110665,8 +110665,8 @@
     "community": "Lancaster",
     "stop": "Shakespeare Road",
     "postcode": "",
-    "geox": -2.808647,
-    "geoy": 54.065295,
+    "geox": -2.80865,
+    "geoy": 54.06529,
     "source": "lancashire_arcgis"
   },
   "lancashire::shakespeareroad": {
@@ -110683,7 +110683,7 @@
     "community": "Lancaster",
     "stop": "Elterwater Place",
     "postcode": "",
-    "geox": -2.790623,
+    "geox": -2.79062,
     "geoy": 54.05532,
     "source": "lancashire_arcgis"
   },
@@ -110701,8 +110701,8 @@
     "community": "Lancaster",
     "stop": "Moorside Nursing Home, Wyersdale Road LA1",
     "postcode": "",
-    "geox": -2.784474,
-    "geoy": 54.042644,
+    "geox": -2.78447,
+    "geoy": 54.04264,
     "source": "lancashire_arcgis"
   },
   "lancashire::moorsidenursinghomewyersdaleroadla1": {
@@ -110719,8 +110719,8 @@
     "community": "Lancaster",
     "stop": "Nazareth House Nursery, Ashton Road LA1",
     "postcode": "",
-    "geox": -2.802542,
-    "geoy": 54.037222,
+    "geox": -2.80254,
+    "geoy": 54.03722,
     "source": "lancashire_arcgis"
   },
   "lancashire::nazarethhousenurseryashtonroadla1": {
@@ -110737,8 +110737,8 @@
     "community": "Lancaster",
     "stop": "Nazareth House, Ashton Road LA1",
     "postcode": "",
-    "geox": -2.803079,
-    "geoy": 54.036554,
+    "geox": -2.80308,
+    "geoy": 54.03655,
     "source": "lancashire_arcgis"
   },
   "lancashire::nazarethhouseashtonroadla1": {
@@ -110755,8 +110755,8 @@
     "community": "Lancaster",
     "stop": "Spinners Court LA1",
     "postcode": "",
-    "geox": -2.800969,
-    "geoy": 54.044675,
+    "geox": -2.80097,
+    "geoy": 54.04467,
     "source": "lancashire_arcgis"
   },
   "lancashire::spinnerscourtla1": {
@@ -110773,8 +110773,8 @@
     "community": "Lancaster",
     "stop": "Alder Grove",
     "postcode": "",
-    "geox": -2.816489,
-    "geoy": 54.050098,
+    "geox": -2.81649,
+    "geoy": 54.0501,
     "source": "lancashire_arcgis"
   },
   "lancashire::aldergrove": {
@@ -110792,7 +110792,7 @@
     "stop": "Laurel Bank, Lancaster LA1",
     "postcode": "",
     "geox": -2.81553,
-    "geoy": 54.045655,
+    "geoy": 54.04565,
     "source": "lancashire_arcgis"
   },
   "lancashire::laurelbanklancasterla1": {
@@ -110809,7 +110809,7 @@
     "community": "Lancaster",
     "stop": "City Heights Close",
     "postcode": "",
-    "geox": -2.793406,
+    "geox": -2.79341,
     "geoy": 54.04748,
     "source": "lancashire_arcgis"
   },
@@ -110827,7 +110827,7 @@
     "community": "Lancaster",
     "stop": "Albion Mews",
     "postcode": "",
-    "geox": -2.792891,
+    "geox": -2.79289,
     "geoy": 54.05155,
     "source": "lancashire_arcgis"
   },
@@ -110845,8 +110845,8 @@
     "community": "Lancaster",
     "stop": "St Leonard's Court LA1",
     "postcode": "",
-    "geox": -2.794448,
-    "geoy": 54.051531,
+    "geox": -2.79445,
+    "geoy": 54.05153,
     "source": "lancashire_arcgis"
   },
   "lancashire::stleonardscourtla1": {
@@ -110863,7 +110863,7 @@
     "community": "Caton",
     "stop": "Community Primary School & Infinity Playgroup LA2",
     "postcode": "",
-    "geox": -2.717498,
+    "geox": -2.7175,
     "geoy": 54.07017,
     "source": "lancashire_arcgis"
   },
@@ -110882,7 +110882,7 @@
     "stop": "Broadacre",
     "postcode": "",
     "geox": -2.71789,
-    "geoy": 54.071642,
+    "geoy": 54.07164,
     "source": "lancashire_arcgis"
   },
   "lancashire::broadacre": {
@@ -110899,8 +110899,8 @@
     "community": "Caton",
     "stop": "Station Hotel car park LA2",
     "postcode": "",
-    "geox": -2.717389,
-    "geoy": 54.076063,
+    "geox": -2.71739,
+    "geoy": 54.07606,
     "source": "lancashire_arcgis"
   },
   "lancashire::stationhotelcarparkla2": {
@@ -110917,8 +110917,8 @@
     "community": "Brookhouse",
     "stop": "Methodist Church Car Park LA2",
     "postcode": "",
-    "geox": -2.704665,
-    "geoy": 54.074045,
+    "geox": -2.70466,
+    "geoy": 54.07404,
     "source": "lancashire_arcgis"
   },
   "lancashire::methodistchurchcarparkla2": {
@@ -110935,8 +110935,8 @@
     "community": "Brookhouse",
     "stop": "Caton Green Road",
     "postcode": "",
-    "geox": -2.691233,
-    "geoy": 54.079528,
+    "geox": -2.69123,
+    "geoy": 54.07953,
     "source": "lancashire_arcgis"
   },
   "lancashire::catongreenroad": {
@@ -110953,8 +110953,8 @@
     "community": "Hornby",
     "stop": "Main Street",
     "postcode": "",
-    "geox": -2.635681,
-    "geoy": 54.108899,
+    "geox": -2.63568,
+    "geoy": 54.1089,
     "source": "lancashire_arcgis"
   },
   "lancashire::melling::lodgelane": {
@@ -110962,8 +110962,8 @@
     "community": "Melling",
     "stop": "Lodge Lane",
     "postcode": "",
-    "geox": -2.610368,
-    "geoy": 54.134988,
+    "geox": -2.61037,
+    "geoy": 54.13499,
     "source": "lancashire_arcgis"
   },
   "lancashire::melling::gillisonclose": {
@@ -110971,8 +110971,8 @@
     "community": "Melling",
     "stop": "Gillison Close",
     "postcode": "",
-    "geox": -2.614768,
-    "geoy": 54.135799,
+    "geox": -2.61477,
+    "geoy": 54.1358,
     "source": "lancashire_arcgis"
   },
   "lancashire::gillisonclose": {
@@ -110989,7 +110989,7 @@
     "community": "Hornby",
     "stop": "Melling Road",
     "postcode": "",
-    "geox": -2.620638,
+    "geox": -2.62064,
     "geoy": 54.13197,
     "source": "lancashire_arcgis"
   },
@@ -111007,8 +111007,8 @@
     "community": "Hornby",
     "stop": "Hornby Bank",
     "postcode": "",
-    "geox": -2.636895,
-    "geoy": 54.115311,
+    "geox": -2.63689,
+    "geoy": 54.11531,
     "source": "lancashire_arcgis"
   },
   "lancashire::hornby::hornbyhallclose": {
@@ -111016,8 +111016,8 @@
     "community": "Hornby",
     "stop": "Hornby Hall Close",
     "postcode": "",
-    "geox": -2.637463,
-    "geoy": 54.111776,
+    "geox": -2.63746,
+    "geoy": 54.11178,
     "source": "lancashire_arcgis"
   },
   "lancashire::hornbyhallclose": {
@@ -111034,7 +111034,7 @@
     "community": "Farleton",
     "stop": "Farleton Old Road",
     "postcode": "",
-    "geox": -2.654616,
+    "geox": -2.65462,
     "geoy": 54.09772,
     "source": "lancashire_arcgis"
   },
@@ -111053,7 +111053,7 @@
     "stop": "Startifants Lane",
     "postcode": "",
     "geox": -2.61583,
-    "geoy": 53.890099,
+    "geoy": 53.8901,
     "source": "lancashire_arcgis"
   },
   "lancashire::startifantslane": {
@@ -111070,8 +111070,8 @@
     "community": "Bleasdale",
     "stop": "Bleasdale Lane",
     "postcode": "",
-    "geox": -2.650544,
-    "geoy": 53.895542,
+    "geox": -2.65054,
+    "geoy": 53.89554,
     "source": "lancashire_arcgis"
   },
   "lancashire::bleasdalelane": {
@@ -111088,8 +111088,8 @@
     "community": "Bleasdale",
     "stop": "School Cottages PR3",
     "postcode": "",
-    "geox": -2.651028,
-    "geoy": 53.901636,
+    "geox": -2.65103,
+    "geoy": 53.90164,
     "source": "lancashire_arcgis"
   },
   "lancashire::schoolcottagespr3": {
@@ -111106,8 +111106,8 @@
     "community": "Calder Vale",
     "stop": "St John's School PR3",
     "postcode": "",
-    "geox": -2.704526,
-    "geoy": 53.911184,
+    "geox": -2.70453,
+    "geoy": 53.91118,
     "source": "lancashire_arcgis"
   },
   "lancashire::stjohnsschoolpr3": {
@@ -111124,8 +111124,8 @@
     "community": "Calder Vale",
     "stop": "Calder Vale Road",
     "postcode": "",
-    "geox": -2.713459,
-    "geoy": 53.905827,
+    "geox": -2.71346,
+    "geoy": 53.90583,
     "source": "lancashire_arcgis"
   },
   "lancashire::caldervaleroad": {
@@ -111142,8 +111142,8 @@
     "community": "Great Eccleston",
     "stop": "Raikes Road",
     "postcode": "",
-    "geox": -2.866701,
-    "geoy": 53.855627,
+    "geox": -2.8667,
+    "geoy": 53.85563,
     "source": "lancashire_arcgis"
   },
   "lancashire::raikesroad": {
@@ -111161,7 +111161,7 @@
     "stop": "Blackpool Old Road",
     "postcode": "",
     "geox": -2.8828,
-    "geoy": 53.856291,
+    "geoy": 53.85629,
     "source": "lancashire_arcgis"
   },
   "lancashire::blackpoololdroad": {
@@ -111178,8 +111178,8 @@
     "community": "Barton",
     "stop": "Woodlands Way",
     "postcode": "",
-    "geox": -2.733289,
-    "geoy": 53.822183,
+    "geox": -2.73329,
+    "geoy": 53.82218,
     "source": "lancashire_arcgis"
   },
   "lancashire::woodlandsway": {
@@ -111196,8 +111196,8 @@
     "community": "Barton",
     "stop": "Jepps Lane",
     "postcode": "",
-    "geox": -2.736422,
-    "geoy": 53.832884,
+    "geox": -2.73642,
+    "geoy": 53.83288,
     "source": "lancashire_arcgis"
   },
   "lancashire::jeppslane": {
@@ -111215,7 +111215,7 @@
     "stop": "Holmeswood Crescent",
     "postcode": "",
     "geox": -2.73458,
-    "geoy": 53.832619,
+    "geoy": 53.83262,
     "source": "lancashire_arcgis"
   },
   "lancashire::holmeswoodcrescent": {
@@ -111232,8 +111232,8 @@
     "community": "Barton",
     "stop": "Jepps Avenue",
     "postcode": "",
-    "geox": -2.736203,
-    "geoy": 53.831611,
+    "geox": -2.7362,
+    "geoy": 53.83161,
     "source": "lancashire_arcgis"
   },
   "lancashire::jeppsavenue": {
@@ -111250,8 +111250,8 @@
     "community": "Barton",
     "stop": "Garstang Road",
     "postcode": "",
-    "geox": -2.738293,
-    "geoy": 53.834627,
+    "geox": -2.73829,
+    "geoy": 53.83463,
     "source": "lancashire_arcgis"
   },
   "lancashire::garstangroad": {
@@ -111268,8 +111268,8 @@
     "community": "Bilsborrow",
     "stop": "Church Lane",
     "postcode": "",
-    "geox": -2.742068,
-    "geoy": 53.853057,
+    "geox": -2.74207,
+    "geoy": 53.85306,
     "source": "lancashire_arcgis"
   },
   "lancashire::bilsborrow::bilsborrowlane": {
@@ -111277,8 +111277,8 @@
     "community": "Bilsborrow",
     "stop": "Bilsborrow Lane",
     "postcode": "",
-    "geox": -2.728589,
-    "geoy": 53.851602,
+    "geox": -2.72859,
+    "geoy": 53.8516,
     "source": "lancashire_arcgis"
   },
   "lancashire::bilsborrowlane": {
@@ -111295,8 +111295,8 @@
     "community": "Bilsborrow",
     "stop": "Memorial Gardens",
     "postcode": "",
-    "geox": -2.744098,
-    "geoy": 53.853661,
+    "geox": -2.7441,
+    "geoy": 53.85366,
     "source": "lancashire_arcgis"
   },
   "lancashire::memorialgardens": {
@@ -111313,8 +111313,8 @@
     "community": "Bilsborrow",
     "stop": "Sunnyside Caravan Park PR3",
     "postcode": "",
-    "geox": -2.746764,
-    "geoy": 53.854399,
+    "geox": -2.74676,
+    "geoy": 53.8544,
     "source": "lancashire_arcgis"
   },
   "lancashire::sunnysidecaravanparkpr3": {
@@ -111331,8 +111331,8 @@
     "community": "Bilsborrow",
     "stop": "Sycamore Road",
     "postcode": "",
-    "geox": -2.743341,
-    "geoy": 53.855571,
+    "geox": -2.74334,
+    "geoy": 53.85557,
     "source": "lancashire_arcgis"
   },
   "lancashire::sycamoreroad": {
@@ -111350,7 +111350,7 @@
     "stop": "Whitehead Close",
     "postcode": "",
     "geox": -2.99292,
-    "geoy": 53.816538,
+    "geoy": 53.81654,
     "source": "lancashire_arcgis"
   },
   "lancashire::whiteheadclose": {
@@ -111368,7 +111368,7 @@
     "stop": "Moreton Drive",
     "postcode": "",
     "geox": -2.98965,
-    "geoy": 53.820224,
+    "geoy": 53.82022,
     "source": "lancashire_arcgis"
   },
   "lancashire::moretondrive": {
@@ -111385,8 +111385,8 @@
     "community": "Weeton",
     "stop": "Weeton Village Hall, Knowsley Crescent PR4",
     "postcode": "",
-    "geox": -2.937925,
-    "geoy": 53.803777,
+    "geox": -2.93792,
+    "geoy": 53.80378,
     "source": "lancashire_arcgis"
   },
   "lancashire::weetonvillagehallknowsleycrescentpr4": {
@@ -111403,8 +111403,8 @@
     "community": "Westby-with-Plumptons",
     "stop": "Plumpton Lane",
     "postcode": "",
-    "geox": -2.936934,
-    "geoy": 53.792527,
+    "geox": -2.93693,
+    "geoy": 53.79253,
     "source": "lancashire_arcgis"
   },
   "lancashire::plumptonlane": {
@@ -111421,8 +111421,8 @@
     "community": "Weeton",
     "stop": "Henderson Road",
     "postcode": "",
-    "geox": -2.941463,
-    "geoy": 53.821438,
+    "geox": -2.94146,
+    "geoy": 53.82144,
     "source": "lancashire_arcgis"
   },
   "lancashire::hendersonroad": {
@@ -111440,7 +111440,7 @@
     "stop": "Church Road",
     "postcode": "",
     "geox": -2.93899,
-    "geoy": 53.837196,
+    "geoy": 53.8372,
     "source": "lancashire_arcgis"
   },
   "lancashire::churchroad": {
@@ -111457,8 +111457,8 @@
     "community": "Broughton",
     "stop": "Highrigg Drive",
     "postcode": "",
-    "geox": -2.703525,
-    "geoy": 53.802857,
+    "geox": -2.70352,
+    "geoy": 53.80286,
     "source": "lancashire_arcgis"
   },
   "lancashire::highriggdrive": {
@@ -111475,8 +111475,8 @@
     "community": "Grimsargh",
     "stop": "Plough Inn, Preston Road PR2",
     "postcode": "",
-    "geox": -2.629592,
-    "geoy": 53.804798,
+    "geox": -2.62959,
+    "geoy": 53.8048,
     "source": "lancashire_arcgis"
   },
   "lancashire::ploughinnprestonroadpr2": {
@@ -111493,8 +111493,8 @@
     "community": "Grimsargh",
     "stop": "Old Station Close",
     "postcode": "",
-    "geox": -2.630425,
-    "geoy": 53.804117,
+    "geox": -2.63042,
+    "geoy": 53.80412,
     "source": "lancashire_arcgis"
   },
   "lancashire::oldstationclose": {
@@ -111511,8 +111511,8 @@
     "community": "Grimsargh",
     "stop": "Ribblesdale Drive",
     "postcode": "",
-    "geox": -2.633287,
-    "geoy": 53.799931,
+    "geox": -2.63329,
+    "geoy": 53.79993,
     "source": "lancashire_arcgis"
   },
   "lancashire::ribblesdaledrive": {
@@ -111529,8 +111529,8 @@
     "community": "Broughton",
     "stop": "Grindlestone Court PR3",
     "postcode": "",
-    "geox": -2.664156,
-    "geoy": 53.823133,
+    "geox": -2.66416,
+    "geoy": 53.82313,
     "source": "lancashire_arcgis"
   },
   "lancashire::grindlestonecourtpr3": {
@@ -111547,8 +111547,8 @@
     "community": "Goosnargh",
     "stop": "Church Lane",
     "postcode": "",
-    "geox": -2.673315,
-    "geoy": 53.823961,
+    "geox": -2.67332,
+    "geoy": 53.82396,
     "source": "lancashire_arcgis"
   },
   "lancashire::goosnargh::goosnarghlane": {
@@ -111556,8 +111556,8 @@
     "community": "Goosnargh",
     "stop": "Goosnargh Lane",
     "postcode": "",
-    "geox": -2.680173,
-    "geoy": 53.826297,
+    "geox": -2.68017,
+    "geoy": 53.8263,
     "source": "lancashire_arcgis"
   },
   "lancashire::goosnarghlane": {
@@ -111574,8 +111574,8 @@
     "community": "Goosnargh",
     "stop": "Beacon Drive",
     "postcode": "",
-    "geox": -2.672914,
-    "geoy": 53.822698,
+    "geox": -2.67291,
+    "geoy": 53.8227,
     "source": "lancashire_arcgis"
   },
   "lancashire::beacondrive": {
@@ -111592,8 +111592,8 @@
     "community": "Whittingham",
     "stop": "Whittingham Lane",
     "postcode": "",
-    "geox": -2.695276,
-    "geoy": 53.819982,
+    "geox": -2.69528,
+    "geoy": 53.81998,
     "source": "lancashire_arcgis"
   },
   "lancashire::whittinghamlane": {
@@ -111610,8 +111610,8 @@
     "community": "Broughton",
     "stop": "Moorcroft",
     "postcode": "",
-    "geox": -2.731792,
-    "geoy": 53.806395,
+    "geox": -2.73179,
+    "geoy": 53.8064,
     "source": "lancashire_arcgis"
   },
   "lancashire::moorcroft": {
@@ -111628,8 +111628,8 @@
     "community": "Broughton",
     "stop": "Sunningdale",
     "postcode": "",
-    "geox": -2.730653,
-    "geoy": 53.809809,
+    "geox": -2.73065,
+    "geoy": 53.80981,
     "source": "lancashire_arcgis"
   },
   "lancashire::sunningdale": {
@@ -111646,8 +111646,8 @@
     "community": "Broughton",
     "stop": "Stanley Croft",
     "postcode": "",
-    "geox": -2.733849,
-    "geoy": 53.810293,
+    "geox": -2.73385,
+    "geoy": 53.81029,
     "source": "lancashire_arcgis"
   },
   "lancashire::stanleycroft": {
@@ -111664,8 +111664,8 @@
     "community": "Inskip",
     "stop": "Derby Crescent",
     "postcode": "",
-    "geox": -2.814507,
-    "geoy": 53.832676,
+    "geox": -2.81451,
+    "geoy": 53.83268,
     "source": "lancashire_arcgis"
   },
   "lancashire::derbycrescent": {
@@ -111682,8 +111682,8 @@
     "community": "Inskip",
     "stop": "Bowling Club car park, Nelson Gardens PR4",
     "postcode": "",
-    "geox": -2.816318,
-    "geoy": 53.835299,
+    "geox": -2.81632,
+    "geoy": 53.8353,
     "source": "lancashire_arcgis"
   },
   "lancashire::bowlingclubcarparknelsongardenspr4": {
@@ -111700,8 +111700,8 @@
     "community": "Elswick",
     "stop": "Roseacre Road",
     "postcode": "",
-    "geox": -2.879499,
-    "geoy": 53.836381,
+    "geox": -2.8795,
+    "geoy": 53.83638,
     "source": "lancashire_arcgis"
   },
   "lancashire::roseacreroad": {
@@ -111718,8 +111718,8 @@
     "community": "Treales, Roseacre and Wharles",
     "stop": "Roseacre Road",
     "postcode": "",
-    "geox": -2.857782,
-    "geoy": 53.824646,
+    "geox": -2.85778,
+    "geoy": 53.82465,
     "source": "lancashire_arcgis"
   },
   "lancashire::elswick::highstreet": {
@@ -111727,8 +111727,8 @@
     "community": "Elswick",
     "stop": "High Street",
     "postcode": "",
-    "geox": -2.881882,
-    "geoy": 53.838636,
+    "geox": -2.88188,
+    "geoy": 53.83864,
     "source": "lancashire_arcgis"
   },
   "lancashire::highstreet": {
@@ -111745,8 +111745,8 @@
     "community": "Elswick",
     "stop": "Beech Road",
     "postcode": "",
-    "geox": -2.881403,
-    "geoy": 53.839745,
+    "geox": -2.8814,
+    "geoy": 53.83975,
     "source": "lancashire_arcgis"
   },
   "lancashire::beechroad": {
@@ -111763,8 +111763,8 @@
     "community": "Pilling",
     "stop": "Skitham Lane",
     "postcode": "",
-    "geox": -2.847412,
-    "geoy": 53.890413,
+    "geox": -2.84741,
+    "geoy": 53.89041,
     "source": "lancashire_arcgis"
   },
   "lancashire::skithamlane": {
@@ -111781,8 +111781,8 @@
     "community": "Out Rawcliffe",
     "stop": "Chapel Lane",
     "postcode": "",
-    "geox": -2.913029,
-    "geoy": 53.869763,
+    "geox": -2.91303,
+    "geoy": 53.86976,
     "source": "lancashire_arcgis"
   },
   "lancashire::chapellane": {
@@ -111800,7 +111800,7 @@
     "stop": "Bodkin Lane",
     "postcode": "",
     "geox": -2.93014,
-    "geoy": 53.865645,
+    "geoy": 53.86565,
     "source": "lancashire_arcgis"
   },
   "lancashire::bodkinlane": {
@@ -111817,8 +111817,8 @@
     "community": "Hambleton",
     "stop": "Cutts Lane",
     "postcode": "",
-    "geox": -2.938354,
-    "geoy": 53.875374,
+    "geox": -2.93835,
+    "geoy": 53.87537,
     "source": "lancashire_arcgis"
   },
   "lancashire::cuttslane": {
@@ -111835,8 +111835,8 @@
     "community": "Hambleton",
     "stop": "Arthurs Lane",
     "postcode": "",
-    "geox": -2.947729,
-    "geoy": 53.874914,
+    "geox": -2.94773,
+    "geoy": 53.87491,
     "source": "lancashire_arcgis"
   },
   "lancashire::arthurslane": {
@@ -111853,8 +111853,8 @@
     "community": "Hambleton",
     "stop": "Meadowcroft Avenue",
     "postcode": "",
-    "geox": -2.956269,
-    "geoy": 53.872988,
+    "geox": -2.95627,
+    "geoy": 53.87299,
     "source": "lancashire_arcgis"
   },
   "lancashire::meadowcroftavenue": {
@@ -111871,8 +111871,8 @@
     "community": "Hambleton",
     "stop": "Wyreside Drive",
     "postcode": "",
-    "geox": -2.960872,
-    "geoy": 53.874989,
+    "geox": -2.96087,
+    "geoy": 53.87499,
     "source": "lancashire_arcgis"
   },
   "lancashire::wyresidedrive": {
@@ -111889,8 +111889,8 @@
     "community": "Hambleton",
     "stop": "Wyresdale Park, Kiln Lane FY6",
     "postcode": "",
-    "geox": -2.963818,
-    "geoy": 53.876763,
+    "geox": -2.96382,
+    "geoy": 53.87676,
     "source": "lancashire_arcgis"
   },
   "lancashire::wyresdaleparkkilnlanefy6": {
@@ -111907,8 +111907,8 @@
     "community": "Hambleton",
     "stop": "Birchwood Drive",
     "postcode": "",
-    "geox": -2.956823,
-    "geoy": 53.875507,
+    "geox": -2.95682,
+    "geoy": 53.87551,
     "source": "lancashire_arcgis"
   },
   "lancashire::birchwooddrive": {
@@ -111925,8 +111925,8 @@
     "community": "Hambleton",
     "stop": "Hambleton Country Park FY6",
     "postcode": "",
-    "geox": -2.950333,
-    "geoy": 53.886479,
+    "geox": -2.95033,
+    "geoy": 53.88648,
     "source": "lancashire_arcgis"
   },
   "lancashire::hambletoncountryparkfy6": {
@@ -111943,8 +111943,8 @@
     "community": "Stalmine",
     "stop": "Stalmine Country Park FY6",
     "postcode": "",
-    "geox": -2.949425,
-    "geoy": 53.892881,
+    "geox": -2.94943,
+    "geoy": 53.89288,
     "source": "lancashire_arcgis"
   },
   "lancashire::stalminecountryparkfy6": {
@@ -111961,8 +111961,8 @@
     "community": "Stalmine",
     "stop": "Seven Stars FY6",
     "postcode": "",
-    "geox": -2.953277,
-    "geoy": 53.901856,
+    "geox": -2.95328,
+    "geoy": 53.90186,
     "source": "lancashire_arcgis"
   },
   "lancashire::sevenstarsfy6": {
@@ -111979,8 +111979,8 @@
     "community": "Stalmine",
     "stop": "The Crescent",
     "postcode": "",
-    "geox": -2.951557,
-    "geoy": 53.906517,
+    "geox": -2.95156,
+    "geoy": 53.90652,
     "source": "lancashire_arcgis"
   },
   "lancashire::thecrescent": {
@@ -111997,8 +111997,8 @@
     "community": "Preesall",
     "stop": "Ash Grove",
     "postcode": "",
-    "geox": -2.970005,
-    "geoy": 53.922597,
+    "geox": -2.97001,
+    "geoy": 53.9226,
     "source": "lancashire_arcgis"
   },
   "lancashire::ashgrove": {
@@ -112015,8 +112015,8 @@
     "community": "Preesall",
     "stop": "Rosemount Avenue",
     "postcode": "",
-    "geox": -2.972792,
-    "geoy": 53.927886,
+    "geox": -2.97279,
+    "geoy": 53.92789,
     "source": "lancashire_arcgis"
   },
   "lancashire::rosemountavenue": {
@@ -112033,8 +112033,8 @@
     "community": "Claughton",
     "stop": "Ducketts Lane",
     "postcode": "",
-    "geox": -2.738005,
-    "geoy": 53.867489,
+    "geox": -2.738,
+    "geoy": 53.86749,
     "source": "lancashire_arcgis"
   },
   "lancashire::duckettslane": {
@@ -112051,8 +112051,8 @@
     "community": "Goosnargh",
     "stop": "Langley Lane PR3",
     "postcode": "",
-    "geox": -2.703388,
-    "geoy": 53.838665,
+    "geox": -2.70339,
+    "geoy": 53.83866,
     "source": "lancashire_arcgis"
   },
   "lancashire::langleylanepr3": {
@@ -112069,8 +112069,8 @@
     "community": "Goosnargh",
     "stop": "Cliftons Farm, Silk  Mill Lane PR3",
     "postcode": "",
-    "geox": -2.689413,
-    "geoy": 53.850557,
+    "geox": -2.68941,
+    "geoy": 53.85056,
     "source": "lancashire_arcgis"
   },
   "lancashire::cliftonsfarmsilkmilllanepr3": {
@@ -112087,8 +112087,8 @@
     "community": "Inglewhite",
     "stop": "Button Street",
     "postcode": "",
-    "geox": -2.688653,
-    "geoy": 53.857024,
+    "geox": -2.68865,
+    "geoy": 53.85702,
     "source": "lancashire_arcgis"
   },
   "lancashire::buttonstreet": {
@@ -112105,8 +112105,8 @@
     "community": "Inglewhite",
     "stop": "Whitechapel Village Hall PR3",
     "postcode": "",
-    "geox": -2.675619,
-    "geoy": 53.867101,
+    "geox": -2.67562,
+    "geoy": 53.8671,
     "source": "lancashire_arcgis"
   },
   "lancashire::whitechapelvillagehallpr3": {
@@ -112123,8 +112123,8 @@
     "community": "Thornley-with-Wheatley",
     "stop": "Stoney Lane, nr Barnsfold Cottage PR3",
     "postcode": "",
-    "geox": -2.647419,
-    "geoy": 53.865747,
+    "geox": -2.64742,
+    "geoy": 53.86575,
     "source": "lancashire_arcgis"
   },
   "lancashire::stoneylanenrbarnsfoldcottagepr3": {
@@ -112142,7 +112142,7 @@
     "stop": "Loud Bridge Road",
     "postcode": "",
     "geox": -2.62481,
-    "geoy": 53.864761,
+    "geoy": 53.86476,
     "source": "lancashire_arcgis"
   },
   "lancashire::loudbridgeroad": {
@@ -112159,8 +112159,8 @@
     "community": "Thornley-with-Wheatley",
     "stop": "Chipping Road",
     "postcode": "",
-    "geox": -2.640606,
-    "geoy": 53.859339,
+    "geox": -2.64061,
+    "geoy": 53.85934,
     "source": "lancashire_arcgis"
   },
   "lancashire::chippingroad": {
@@ -112177,8 +112177,8 @@
     "community": "St Michaels",
     "stop": "Rawcliffe Road",
     "postcode": "",
-    "geox": -2.821489,
-    "geoy": 53.865518,
+    "geox": -2.82149,
+    "geoy": 53.86552,
     "source": "lancashire_arcgis"
   },
   "lancashire::rawclifferoad": {
@@ -112195,8 +112195,8 @@
     "community": "Kirkland",
     "stop": "Ainspool Lane",
     "postcode": "",
-    "geox": -2.790546,
-    "geoy": 53.880439,
+    "geox": -2.79055,
+    "geoy": 53.88044,
     "source": "lancashire_arcgis"
   },
   "lancashire::ainspoollane": {
@@ -112213,8 +112213,8 @@
     "community": "Catterall",
     "stop": "Cock Robin Lane",
     "postcode": "",
-    "geox": -2.766696,
-    "geoy": 53.878086,
+    "geox": -2.7667,
+    "geoy": 53.87809,
     "source": "lancashire_arcgis"
   },
   "lancashire::cockrobinlane": {
@@ -112231,8 +112231,8 @@
     "community": "Catterall",
     "stop": "Stones Barn",
     "postcode": "",
-    "geox": -2.762315,
-    "geoy": 53.880203,
+    "geox": -2.76232,
+    "geoy": 53.8802,
     "source": "lancashire_arcgis"
   },
   "lancashire::stonesbarn": {
@@ -112249,8 +112249,8 @@
     "community": "Catterall",
     "stop": "Meadowcroft Avenue",
     "postcode": "",
-    "geox": -2.764787,
-    "geoy": 53.882664,
+    "geox": -2.76479,
+    "geoy": 53.88266,
     "source": "lancashire_arcgis"
   },
   "lancashire::garstang::stransdaleclose": {
@@ -112258,8 +112258,8 @@
     "community": "Garstang",
     "stop": "Stransdale Close",
     "postcode": "",
-    "geox": -2.785081,
-    "geoy": 53.898486,
+    "geox": -2.78508,
+    "geoy": 53.89849,
     "source": "lancashire_arcgis"
   },
   "lancashire::stransdaleclose": {
@@ -112276,8 +112276,8 @@
     "community": "Garstang",
     "stop": "Oak Road",
     "postcode": "",
-    "geox": -2.777871,
-    "geoy": 53.906655,
+    "geox": -2.77787,
+    "geoy": 53.90666,
     "source": "lancashire_arcgis"
   },
   "lancashire::oakroad": {
@@ -112295,7 +112295,7 @@
     "stop": "Jensen Drive",
     "postcode": "",
     "geox": -2.97192,
-    "geoy": 53.787228,
+    "geoy": 53.78723,
     "source": "lancashire_arcgis"
   },
   "lancashire::jensendrive": {
@@ -112313,7 +112313,7 @@
     "stop": "The Hawthorns",
     "postcode": "",
     "geox": -3.01851,
-    "geoy": 53.769332,
+    "geoy": 53.76933,
     "source": "lancashire_arcgis"
   },
   "lancashire::thehawthorns": {
@@ -112330,8 +112330,8 @@
     "community": "St. Annes",
     "stop": "Highbury Road East",
     "postcode": "",
-    "geox": -3.026555,
-    "geoy": 53.762614,
+    "geox": -3.02656,
+    "geoy": 53.76261,
     "source": "lancashire_arcgis"
   },
   "lancashire::highburyroadeast": {
@@ -112348,8 +112348,8 @@
     "community": "St. Annes",
     "stop": "Caryl Road",
     "postcode": "",
-    "geox": -3.039241,
-    "geoy": 53.759338,
+    "geox": -3.03924,
+    "geoy": 53.75934,
     "source": "lancashire_arcgis"
   },
   "lancashire::carylroad": {
@@ -112366,8 +112366,8 @@
     "community": "St. Annes",
     "stop": "St Patricks Road North",
     "postcode": "",
-    "geox": -3.031208,
-    "geoy": 53.758753,
+    "geox": -3.03121,
+    "geoy": 53.75875,
     "source": "lancashire_arcgis"
   },
   "lancashire::stpatricksroadnorth": {
@@ -112384,8 +112384,8 @@
     "community": "St. Annes",
     "stop": "Crosland Road North",
     "postcode": "",
-    "geox": -3.015595,
-    "geoy": 53.761717,
+    "geox": -3.01559,
+    "geoy": 53.76172,
     "source": "lancashire_arcgis"
   },
   "lancashire::croslandroadnorth": {
@@ -112402,8 +112402,8 @@
     "community": "Lytham",
     "stop": "South Hey",
     "postcode": "",
-    "geox": -2.996843,
-    "geoy": 53.750576,
+    "geox": -2.99684,
+    "geoy": 53.75058,
     "source": "lancashire_arcgis"
   },
   "lancashire::southhey": {
@@ -112420,8 +112420,8 @@
     "community": "Wrea Green",
     "stop": "The Green",
     "postcode": "",
-    "geox": -2.917486,
-    "geoy": 53.776379,
+    "geox": -2.91749,
+    "geoy": 53.77638,
     "source": "lancashire_arcgis"
   },
   "lancashire::thegreen": {
@@ -112438,8 +112438,8 @@
     "community": "Wrea Green",
     "stop": "Ribby Road",
     "postcode": "",
-    "geox": -2.908755,
-    "geoy": 53.778105,
+    "geox": -2.90876,
+    "geoy": 53.7781,
     "source": "lancashire_arcgis"
   },
   "lancashire::ribbyroad": {
@@ -112456,8 +112456,8 @@
     "community": "Glasson Dock",
     "stop": "Bowland View",
     "postcode": "",
-    "geox": -2.849984,
-    "geoy": 53.997453,
+    "geox": -2.84998,
+    "geoy": 53.99745,
     "source": "lancashire_arcgis"
   },
   "lancashire::bowlandview": {
@@ -112474,8 +112474,8 @@
     "community": "Glasson Dock",
     "stop": "School Lane",
     "postcode": "",
-    "geox": -2.849991,
-    "geoy": 53.994803,
+    "geox": -2.84999,
+    "geoy": 53.9948,
     "source": "lancashire_arcgis"
   },
   "lancashire::schoollane": {
@@ -112492,8 +112492,8 @@
     "community": "Nether Wyresdale",
     "stop": "Tithebarn Lane",
     "postcode": "",
-    "geox": -2.753031,
-    "geoy": 53.927209,
+    "geox": -2.75303,
+    "geoy": 53.92721,
     "source": "lancashire_arcgis"
   },
   "lancashire::tithebarnlane": {
@@ -112510,8 +112510,8 @@
     "community": "Nether Wyresdale",
     "stop": "Brook Avenue",
     "postcode": "",
-    "geox": -2.761679,
-    "geoy": 53.935155,
+    "geox": -2.76168,
+    "geoy": 53.93516,
     "source": "lancashire_arcgis"
   },
   "lancashire::brookavenue": {
@@ -112528,8 +112528,8 @@
     "community": "Nether Wyresdale",
     "stop": "Snowhill Lane",
     "postcode": "",
-    "geox": -2.759391,
-    "geoy": 53.932747,
+    "geox": -2.75939,
+    "geoy": 53.93275,
     "source": "lancashire_arcgis"
   },
   "lancashire::snowhilllane": {
@@ -112546,8 +112546,8 @@
     "community": "Winmarleigh",
     "stop": "Church Lane",
     "postcode": "",
-    "geox": -2.803775,
-    "geoy": 53.926953,
+    "geox": -2.80377,
+    "geoy": 53.92695,
     "source": "lancashire_arcgis"
   },
   "lancashire::cabus::cabusnooklanepr3": {
@@ -112556,7 +112556,7 @@
     "stop": "Cabus Nook Lane PR3",
     "postcode": "",
     "geox": -2.78272,
-    "geoy": 53.933137,
+    "geoy": 53.93314,
     "source": "lancashire_arcgis"
   },
   "lancashire::cabusnooklanepr3": {
@@ -112573,8 +112573,8 @@
     "community": "Cabus",
     "stop": "Havenlyn Residential Park PR3",
     "postcode": "",
-    "geox": -2.773982,
-    "geoy": 53.931627,
+    "geox": -2.77398,
+    "geoy": 53.93163,
     "source": "lancashire_arcgis"
   },
   "lancashire::havenlynresidentialparkpr3": {
@@ -112591,8 +112591,8 @@
     "community": "Pilling",
     "stop": "Bone Hill Lane",
     "postcode": "",
-    "geox": -2.866177,
-    "geoy": 53.913397,
+    "geox": -2.86618,
+    "geoy": 53.9134,
     "source": "lancashire_arcgis"
   },
   "lancashire::bonehilllane": {
@@ -112610,7 +112610,7 @@
     "stop": "Lancaster Road",
     "postcode": "",
     "geox": -2.89781,
-    "geoy": 53.916822,
+    "geoy": 53.91682,
     "source": "lancashire_arcgis"
   },
   "lancashire::lancasterroad": {
@@ -112628,7 +112628,7 @@
     "stop": "Hooles Lane",
     "postcode": "",
     "geox": -2.9243,
-    "geoy": 53.926373,
+    "geoy": 53.92637,
     "source": "lancashire_arcgis"
   },
   "lancashire::hooleslane": {
@@ -112645,8 +112645,8 @@
     "community": "Pilling",
     "stop": "Carr Close",
     "postcode": "",
-    "geox": -2.911452,
-    "geoy": 53.926633,
+    "geox": -2.91145,
+    "geoy": 53.92663,
     "source": "lancashire_arcgis"
   },
   "lancashire::carrclose": {
@@ -112663,8 +112663,8 @@
     "community": "Pilling",
     "stop": "Higher End Lane",
     "postcode": "",
-    "geox": -2.900103,
-    "geoy": 53.929492,
+    "geox": -2.9001,
+    "geoy": 53.92949,
     "source": "lancashire_arcgis"
   },
   "lancashire::higherendlane": {
@@ -112681,8 +112681,8 @@
     "community": "Cockerham",
     "stop": "Lancaster Road, nr Braides LA2",
     "postcode": "",
-    "geox": -2.849417,
-    "geoy": 53.953055,
+    "geox": -2.84942,
+    "geoy": 53.95305,
     "source": "lancashire_arcgis"
   },
   "lancashire::lancasterroadnrbraidesla2": {
@@ -112699,8 +112699,8 @@
     "community": "Cockerham",
     "stop": "Marsh Close",
     "postcode": "",
-    "geox": -2.828145,
-    "geoy": 53.958406,
+    "geox": -2.82815,
+    "geoy": 53.95841,
     "source": "lancashire_arcgis"
   },
   "lancashire::marshclose": {
@@ -112717,8 +112717,8 @@
     "community": "Cockerham",
     "stop": "Cockerham Village Hall (School & Nursery) LA2",
     "postcode": "",
-    "geox": -2.816077,
-    "geoy": 53.961898,
+    "geox": -2.81608,
+    "geoy": 53.9619,
     "source": "lancashire_arcgis"
   },
   "lancashire::cockerhamvillagehallschoolnurseryla2": {
@@ -112744,8 +112744,8 @@
     "community": "Bay Horse",
     "stop": "Chipping Lane",
     "postcode": "",
-    "geox": -2.759739,
-    "geoy": 53.976735,
+    "geox": -2.75974,
+    "geoy": 53.97673,
     "source": "lancashire_arcgis"
   },
   "lancashire::chippinglane": {
@@ -112762,8 +112762,8 @@
     "community": "Dolphinholme",
     "stop": "Gleaves Hill Lane",
     "postcode": "",
-    "geox": -2.739142,
-    "geoy": 53.973503,
+    "geox": -2.73914,
+    "geoy": 53.9735,
     "source": "lancashire_arcgis"
   },
   "lancashire::gleaveshilllane": {
@@ -112780,8 +112780,8 @@
     "community": "Dolphinholme",
     "stop": "Abbeystead Lane",
     "postcode": "",
-    "geox": -2.737145,
-    "geoy": 53.975959,
+    "geox": -2.73714,
+    "geoy": 53.97596,
     "source": "lancashire_arcgis"
   },
   "lancashire::abbeysteadlane": {
@@ -112798,8 +112798,8 @@
     "community": "Abbeystead",
     "stop": "Procter Moss Road",
     "postcode": "",
-    "geox": -2.720095,
-    "geoy": 53.984511,
+    "geox": -2.7201,
+    "geoy": 53.98451,
     "source": "lancashire_arcgis"
   },
   "lancashire::proctermossroad": {
@@ -112816,8 +112816,8 @@
     "community": "Abbeystead",
     "stop": "The Rake",
     "postcode": "",
-    "geox": -2.667883,
-    "geoy": 53.983703,
+    "geox": -2.66788,
+    "geoy": 53.9837,
     "source": "lancashire_arcgis"
   },
   "lancashire::therake": {
@@ -112834,8 +112834,8 @@
     "community": "Abbeystead",
     "stop": "Rakehouse Brow",
     "postcode": "",
-    "geox": -2.661117,
-    "geoy": 53.991699,
+    "geox": -2.66112,
+    "geoy": 53.9917,
     "source": "lancashire_arcgis"
   },
   "lancashire::rakehousebrow": {
@@ -112852,7 +112852,7 @@
     "community": "Scarisbrick",
     "stop": "Harridge Lane L40",
     "postcode": "",
-    "geox": -2.922216,
+    "geox": -2.92222,
     "geoy": 53.58552,
     "source": "lancashire_arcgis"
   },
@@ -112871,7 +112871,7 @@
     "stop": "Renacres Lane",
     "postcode": "",
     "geox": -2.96843,
-    "geoy": 53.608147,
+    "geoy": 53.60815,
     "source": "lancashire_arcgis"
   },
   "lancashire::renacreslane": {
@@ -112888,7 +112888,7 @@
     "community": "Scarisbrick",
     "stop": "Alderlee Park",
     "postcode": "",
-    "geox": -2.963567,
+    "geox": -2.96357,
     "geoy": 53.62386,
     "source": "lancashire_arcgis"
   },
@@ -112906,8 +112906,8 @@
     "community": "Halsall",
     "stop": "Segars Lane",
     "postcode": "",
-    "geox": -3.027158,
-    "geoy": 53.601354,
+    "geox": -3.02716,
+    "geoy": 53.60135,
     "source": "lancashire_arcgis"
   },
   "lancashire::segarslane": {
@@ -112924,8 +112924,8 @@
     "community": "Halsall",
     "stop": "Moss Road",
     "postcode": "",
-    "geox": -2.990417,
-    "geoy": 53.624405,
+    "geox": -2.99042,
+    "geoy": 53.62441,
     "source": "lancashire_arcgis"
   },
   "lancashire::mossroad": {
@@ -112942,8 +112942,8 @@
     "community": "Scarisbrick",
     "stop": "Snape Green PR8",
     "postcode": "",
-    "geox": -2.945626,
-    "geoy": 53.617878,
+    "geox": -2.94563,
+    "geoy": 53.61788,
     "source": "lancashire_arcgis"
   },
   "lancashire::snapegreenpr8": {
@@ -112960,8 +112960,8 @@
     "community": "Scarisbrick",
     "stop": "Rimmer Green",
     "postcode": "",
-    "geox": -2.939874,
-    "geoy": 53.619743,
+    "geox": -2.93987,
+    "geoy": 53.61974,
     "source": "lancashire_arcgis"
   },
   "lancashire::rimmergreen": {
@@ -112978,8 +112978,8 @@
     "community": "Scarisbrick",
     "stop": "Smithy Lane",
     "postcode": "",
-    "geox": -2.908328,
-    "geoy": 53.596701,
+    "geox": -2.90833,
+    "geoy": 53.5967,
     "source": "lancashire_arcgis"
   },
   "lancashire::smithylane": {
@@ -112997,7 +112997,7 @@
     "stop": "Carmel Close",
     "postcode": "",
     "geox": -2.89343,
-    "geoy": 53.553566,
+    "geoy": 53.55357,
     "source": "lancashire_arcgis"
   },
   "lancashire::carmelclose": {
@@ -113015,7 +113015,7 @@
     "stop": "Scarth Hill Lane",
     "postcode": "",
     "geox": -2.88869,
-    "geoy": 53.551003,
+    "geoy": 53.551,
     "source": "lancashire_arcgis"
   },
   "lancashire::scarthhilllane": {
@@ -113032,8 +113032,8 @@
     "community": "Aughton",
     "stop": "Whalley Drive",
     "postcode": "",
-    "geox": -2.901313,
-    "geoy": 53.542531,
+    "geox": -2.90131,
+    "geoy": 53.54253,
     "source": "lancashire_arcgis"
   },
   "lancashire::whalleydrive": {
@@ -113050,8 +113050,8 @@
     "community": "Aughton",
     "stop": "The Serpentine",
     "postcode": "",
-    "geox": -2.896394,
-    "geoy": 53.543421,
+    "geox": -2.89639,
+    "geoy": 53.54342,
     "source": "lancashire_arcgis"
   },
   "lancashire::theserpentine": {
@@ -113068,8 +113068,8 @@
     "community": "Aughton",
     "stop": "Norris House Drive",
     "postcode": "",
-    "geox": -2.901744,
-    "geoy": 53.545952,
+    "geox": -2.90174,
+    "geoy": 53.54595,
     "source": "lancashire_arcgis"
   },
   "lancashire::norrishousedrive": {
@@ -113086,8 +113086,8 @@
     "community": "Aughton",
     "stop": "Fernhurst Gate",
     "postcode": "",
-    "geox": -2.908099,
-    "geoy": 53.551639,
+    "geox": -2.9081,
+    "geoy": 53.55164,
     "source": "lancashire_arcgis"
   },
   "lancashire::fernhurstgate": {
@@ -113104,8 +113104,8 @@
     "community": "Aughton",
     "stop": "Noel Gate",
     "postcode": "",
-    "geox": -2.911055,
-    "geoy": 53.549423,
+    "geox": -2.91106,
+    "geoy": 53.54942,
     "source": "lancashire_arcgis"
   },
   "lancashire::noelgate": {
@@ -113122,8 +113122,8 @@
     "community": "Aughton",
     "stop": "Springfield Road",
     "postcode": "",
-    "geox": -2.925508,
-    "geoy": 53.536213,
+    "geox": -2.92551,
+    "geoy": 53.53621,
     "source": "lancashire_arcgis"
   },
   "lancashire::springfieldroad": {
@@ -113140,7 +113140,7 @@
     "community": "Aughton",
     "stop": "Springfield Nursing Home L39",
     "postcode": "",
-    "geox": -2.925237,
+    "geox": -2.92524,
     "geoy": 53.53598,
     "source": "lancashire_arcgis"
   },
@@ -113159,7 +113159,7 @@
     "stop": "Brookfield Lane",
     "postcode": "",
     "geox": -2.91828,
-    "geoy": 53.537332,
+    "geoy": 53.53733,
     "source": "lancashire_arcgis"
   },
   "lancashire::brookfieldlane": {
@@ -113177,7 +113177,7 @@
     "stop": "St Michaels Park",
     "postcode": "",
     "geox": -2.91774,
-    "geoy": 53.540985,
+    "geoy": 53.54098,
     "source": "lancashire_arcgis"
   },
   "lancashire::stmichaelspark": {
@@ -113194,8 +113194,8 @@
     "community": "Aughton",
     "stop": "Church Lane",
     "postcode": "",
-    "geox": -2.917831,
-    "geoy": 53.538917,
+    "geox": -2.91783,
+    "geoy": 53.53892,
     "source": "lancashire_arcgis"
   },
   "lancashire::aughton::aughtonvillagehallwinifredlanel39": {
@@ -113203,8 +113203,8 @@
     "community": "Aughton",
     "stop": "Aughton Village Hall, Winifred Lane L39",
     "postcode": "",
-    "geox": -2.906624,
-    "geoy": 53.543353,
+    "geox": -2.90662,
+    "geoy": 53.54335,
     "source": "lancashire_arcgis"
   },
   "lancashire::aughtonvillagehallwinifredlanel39": {
@@ -113221,8 +113221,8 @@
     "community": "Aughton",
     "stop": "Booths Lane",
     "postcode": "",
-    "geox": -2.928643,
-    "geoy": 53.564784,
+    "geox": -2.92864,
+    "geoy": 53.56478,
     "source": "lancashire_arcgis"
   },
   "lancashire::boothslane": {
@@ -113239,8 +113239,8 @@
     "community": "Downholland",
     "stop": "Greens Lane",
     "postcode": "",
-    "geox": -2.942938,
-    "geoy": 53.552412,
+    "geox": -2.94294,
+    "geoy": 53.55241,
     "source": "lancashire_arcgis"
   },
   "lancashire::greenslane": {
@@ -113257,8 +113257,8 @@
     "community": "Downholland",
     "stop": "Station Road",
     "postcode": "",
-    "geox": -2.967942,
-    "geoy": 53.572583,
+    "geox": -2.96794,
+    "geoy": 53.57258,
     "source": "lancashire_arcgis"
   },
   "lancashire::stationroad": {
@@ -113275,8 +113275,8 @@
     "community": "Halsall",
     "stop": "Carr Moss Lane",
     "postcode": "",
-    "geox": -2.960306,
-    "geoy": 53.582143,
+    "geox": -2.96031,
+    "geoy": 53.58214,
     "source": "lancashire_arcgis"
   },
   "lancashire::carrmosslane": {
@@ -113293,8 +113293,8 @@
     "community": "Downholland",
     "stop": "School Lane",
     "postcode": "",
-    "geox": -2.969512,
-    "geoy": 53.565305,
+    "geox": -2.96951,
+    "geoy": 53.56531,
     "source": "lancashire_arcgis"
   },
   "lancashire::aughton::aughtonparkresidentialcarehomel39": {
@@ -113302,8 +113302,8 @@
     "community": "Aughton",
     "stop": "Aughton Park Residential Care Home L39",
     "postcode": "",
-    "geox": -2.893643,
-    "geoy": 53.555109,
+    "geox": -2.89364,
+    "geoy": 53.55511,
     "source": "lancashire_arcgis"
   },
   "lancashire::aughtonparkresidentialcarehomel39": {
@@ -113320,8 +113320,8 @@
     "community": "Aughton",
     "stop": "Mickering Lane",
     "postcode": "",
-    "geox": -2.907546,
-    "geoy": 53.536709,
+    "geox": -2.90755,
+    "geoy": 53.53671,
     "source": "lancashire_arcgis"
   },
   "lancashire::mickeringlane": {
@@ -113338,8 +113338,8 @@
     "community": "Bickerstaffe",
     "stop": "Barrow Nook Lane",
     "postcode": "",
-    "geox": -2.839296,
-    "geoy": 53.517805,
+    "geox": -2.8393,
+    "geoy": 53.51781,
     "source": "lancashire_arcgis"
   },
   "lancashire::barrownooklane": {
@@ -113356,8 +113356,8 @@
     "community": "Bickerstaffe",
     "stop": "Stockley Crescent",
     "postcode": "",
-    "geox": -2.843214,
-    "geoy": 53.535872,
+    "geox": -2.84321,
+    "geoy": 53.53587,
     "source": "lancashire_arcgis"
   },
   "lancashire::stockleycrescent": {
@@ -113374,7 +113374,7 @@
     "community": "Skelmersdale",
     "stop": "Derby Road",
     "postcode": "",
-    "geox": -2.810236,
+    "geox": -2.81024,
     "geoy": 53.54481,
     "source": "lancashire_arcgis"
   },
@@ -113392,8 +113392,8 @@
     "community": "Westhead",
     "stop": "School Lane",
     "postcode": "",
-    "geox": -2.844591,
-    "geoy": 53.561812,
+    "geox": -2.84459,
+    "geoy": 53.56181,
     "source": "lancashire_arcgis"
   },
   "lancashire::westhead::crosshallbrowl40": {
@@ -113401,8 +113401,8 @@
     "community": "Westhead",
     "stop": "Crosshall Brow L40",
     "postcode": "",
-    "geox": -2.854655,
-    "geoy": 53.563747,
+    "geox": -2.85466,
+    "geoy": 53.56375,
     "source": "lancashire_arcgis"
   },
   "lancashire::crosshallbrowl40": {
@@ -113419,8 +113419,8 @@
     "community": "Burscough",
     "stop": "New Lane",
     "postcode": "",
-    "geox": -2.866922,
-    "geoy": 53.610792,
+    "geox": -2.86692,
+    "geoy": 53.61079,
     "source": "lancashire_arcgis"
   },
   "lancashire::newlane": {
@@ -113437,8 +113437,8 @@
     "community": "Holmeswood",
     "stop": "Wiggins Lane",
     "postcode": "",
-    "geox": -2.871652,
-    "geoy": 53.642074,
+    "geox": -2.87165,
+    "geoy": 53.64207,
     "source": "lancashire_arcgis"
   },
   "lancashire::wigginslane": {
@@ -113455,8 +113455,8 @@
     "community": "Rufford",
     "stop": "Hesketh Arms Car park L40",
     "postcode": "",
-    "geox": -2.817697,
-    "geoy": 53.633718,
+    "geox": -2.8177,
+    "geoy": 53.63372,
     "source": "lancashire_arcgis"
   },
   "lancashire::hesketharmscarparkl40": {
@@ -113473,8 +113473,8 @@
     "community": "Rufford",
     "stop": "Thornton Close",
     "postcode": "",
-    "geox": -2.815844,
-    "geoy": 53.633163,
+    "geox": -2.81584,
+    "geoy": 53.63316,
     "source": "lancashire_arcgis"
   },
   "lancashire::thorntonclose": {
@@ -113492,7 +113492,7 @@
     "stop": "Bretherton Court, Junction Lane L40",
     "postcode": "",
     "geox": -2.83842,
-    "geoy": 53.594034,
+    "geoy": 53.59403,
     "source": "lancashire_arcgis"
   },
   "lancashire::brethertoncourtjunctionlanel40": {
@@ -113509,8 +113509,8 @@
     "community": "Lathom",
     "stop": "The Almonry, (off Hall Lane) L40",
     "postcode": "",
-    "geox": -2.821879,
-    "geoy": 53.578934,
+    "geox": -2.82188,
+    "geoy": 53.57893,
     "source": "lancashire_arcgis"
   },
   "lancashire::thealmonryoffhalllanel40": {
@@ -113527,8 +113527,8 @@
     "community": "Lathom",
     "stop": "Daisy Lane",
     "postcode": "",
-    "geox": -2.820147,
-    "geoy": 53.598431,
+    "geox": -2.82015,
+    "geoy": 53.59843,
     "source": "lancashire_arcgis"
   },
   "lancashire::daisylane": {
@@ -113545,8 +113545,8 @@
     "community": "Newburgh",
     "stop": "Sandy Lane",
     "postcode": "",
-    "geox": -2.788228,
-    "geoy": 53.587545,
+    "geox": -2.78823,
+    "geoy": 53.58754,
     "source": "lancashire_arcgis"
   },
   "lancashire::sandylane": {
@@ -113563,8 +113563,8 @@
     "community": "Newburgh",
     "stop": "New Acres",
     "postcode": "",
-    "geox": -2.786691,
-    "geoy": 53.588597,
+    "geox": -2.78669,
+    "geoy": 53.5886,
     "source": "lancashire_arcgis"
   },
   "lancashire::newacres": {
@@ -113581,8 +113581,8 @@
     "community": "Newburgh",
     "stop": "Woodrow Drive",
     "postcode": "",
-    "geox": -2.785231,
-    "geoy": 53.586217,
+    "geox": -2.78523,
+    "geoy": 53.58622,
     "source": "lancashire_arcgis"
   },
   "lancashire::woodrowdrive": {
@@ -113599,8 +113599,8 @@
     "community": "Appley Bridge",
     "stop": "Car Park Pesto Restaurant WN6",
     "postcode": "",
-    "geox": -2.724816,
-    "geoy": 53.591675,
+    "geox": -2.72482,
+    "geoy": 53.59168,
     "source": "lancashire_arcgis"
   },
   "lancashire::carparkpestorestaurantwn6": {
@@ -113617,8 +113617,8 @@
     "community": "Appley Bridge",
     "stop": "Sprodley Drive",
     "postcode": "",
-    "geox": -2.728269,
-    "geoy": 53.590199,
+    "geox": -2.72827,
+    "geoy": 53.5902,
     "source": "lancashire_arcgis"
   },
   "lancashire::sprodleydrive": {
@@ -113635,8 +113635,8 @@
     "community": "Appley Bridge",
     "stop": "North Drive",
     "postcode": "",
-    "geox": -2.726191,
-    "geoy": 53.590562,
+    "geox": -2.72619,
+    "geoy": 53.59056,
     "source": "lancashire_arcgis"
   },
   "lancashire::northdrive": {
@@ -113653,8 +113653,8 @@
     "community": "Appley Bridge",
     "stop": "Stoneygate Lane",
     "postcode": "",
-    "geox": -2.725342,
-    "geoy": 53.589525,
+    "geox": -2.72534,
+    "geoy": 53.58953,
     "source": "lancashire_arcgis"
   },
   "lancashire::stoneygatelane": {
@@ -113671,8 +113671,8 @@
     "community": "Wrightington",
     "stop": "Robin Hood Lane",
     "postcode": "",
-    "geox": -2.722295,
-    "geoy": 53.600446,
+    "geox": -2.72229,
+    "geoy": 53.60045,
     "source": "lancashire_arcgis"
   },
   "lancashire::robinhoodlane": {
@@ -113689,8 +113689,8 @@
     "community": "Wrightington",
     "stop": "Courage Low Lane",
     "postcode": "",
-    "geox": -2.718615,
-    "geoy": 53.601727,
+    "geox": -2.71861,
+    "geoy": 53.60173,
     "source": "lancashire_arcgis"
   },
   "lancashire::couragelowlane": {
@@ -113707,8 +113707,8 @@
     "community": "Appley Bridge",
     "stop": "Speakmans Drive",
     "postcode": "",
-    "geox": -2.722335,
-    "geoy": 53.575234,
+    "geox": -2.72234,
+    "geoy": 53.57523,
     "source": "lancashire_arcgis"
   },
   "lancashire::speakmansdrive": {
@@ -113725,8 +113725,8 @@
     "community": "Up Holland",
     "stop": "Ayrefield Road",
     "postcode": "",
-    "geox": -2.722922,
-    "geoy": 53.562799,
+    "geox": -2.72292,
+    "geoy": 53.5628,
     "source": "lancashire_arcgis"
   },
   "lancashire::ayrefieldroad": {
@@ -113743,8 +113743,8 @@
     "community": "Dalton",
     "stop": "Crow Lane",
     "postcode": "",
-    "geox": -2.741462,
-    "geoy": 53.560168,
+    "geox": -2.74146,
+    "geoy": 53.56017,
     "source": "lancashire_arcgis"
   },
   "lancashire::crowlane": {
@@ -113761,8 +113761,8 @@
     "community": "Up Holland",
     "stop": "School Lane",
     "postcode": "",
-    "geox": -2.728479,
-    "geoy": 53.558826,
+    "geox": -2.72848,
+    "geoy": 53.55883,
     "source": "lancashire_arcgis"
   },
   "lancashire::upholland::crawfordroad": {
@@ -113770,8 +113770,8 @@
     "community": "Up Holland",
     "stop": "Crawford Road",
     "postcode": "",
-    "geox": -2.757224,
-    "geoy": 53.519639,
+    "geox": -2.75722,
+    "geoy": 53.51964,
     "source": "lancashire_arcgis"
   },
   "lancashire::crawfordroad": {
@@ -113788,8 +113788,8 @@
     "community": "Up Holland",
     "stop": "Pimbo Garden Centre Car Park WN8",
     "postcode": "",
-    "geox": -2.742138,
-    "geoy": 53.527788,
+    "geox": -2.74214,
+    "geoy": 53.52779,
     "source": "lancashire_arcgis"
   },
   "lancashire::pimbogardencentrecarparkwn8": {
@@ -113807,7 +113807,7 @@
     "stop": "Welbourne",
     "postcode": "",
     "geox": -2.80613,
-    "geoy": 53.547579,
+    "geoy": 53.54758,
     "source": "lancashire_arcgis"
   },
   "lancashire::welbourne": {
@@ -113824,8 +113824,8 @@
     "community": "Skelmersdale",
     "stop": "Clayton Street",
     "postcode": "",
-    "geox": -2.808137,
-    "geoy": 53.551853,
+    "geox": -2.80814,
+    "geoy": 53.55185,
     "source": "lancashire_arcgis"
   },
   "lancashire::claytonstreet": {
@@ -113842,8 +113842,8 @@
     "community": "Scarisbrick",
     "stop": "Hillock Close",
     "postcode": "",
-    "geox": -2.916897,
-    "geoy": 53.612919,
+    "geox": -2.9169,
+    "geoy": 53.61292,
     "source": "lancashire_arcgis"
   },
   "lancashire::hillockclose": {
@@ -113860,8 +113860,8 @@
     "community": "Scarisbrick",
     "stop": "Everard Close",
     "postcode": "",
-    "geox": -2.924779,
-    "geoy": 53.612971,
+    "geox": -2.92478,
+    "geoy": 53.61297,
     "source": "lancashire_arcgis"
   },
   "lancashire::everardclose": {
@@ -113879,7 +113879,7 @@
     "stop": "Drummersdale Lane",
     "postcode": "",
     "geox": -2.91634,
-    "geoy": 53.621364,
+    "geoy": 53.62136,
     "source": "lancashire_arcgis"
   },
   "lancashire::drummersdalelane": {
@@ -113896,8 +113896,8 @@
     "community": "Scarisbrick",
     "stop": "Wyke Cop Road",
     "postcode": "",
-    "geox": -2.940196,
-    "geoy": 53.625403,
+    "geox": -2.9402,
+    "geoy": 53.6254,
     "source": "lancashire_arcgis"
   },
   "lancashire::wykecoproad": {
@@ -113914,8 +113914,8 @@
     "community": "Banks",
     "stop": "Fleetwood Drive",
     "postcode": "",
-    "geox": -2.922611,
-    "geoy": 53.681068,
+    "geox": -2.92261,
+    "geoy": 53.68107,
     "source": "lancashire_arcgis"
   },
   "lancashire::fleetwooddrive": {
@@ -113932,7 +113932,7 @@
     "community": "Banks",
     "stop": "Schwartzman Drive",
     "postcode": "",
-    "geox": -2.921825,
+    "geox": -2.92183,
     "geoy": 53.67882,
     "source": "lancashire_arcgis"
   },
@@ -113950,8 +113950,8 @@
     "community": "Rufford",
     "stop": "Causeway Lane",
     "postcode": "",
-    "geox": -2.818311,
-    "geoy": 53.626164,
+    "geox": -2.81831,
+    "geoy": 53.62616,
     "source": "lancashire_arcgis"
   },
   "lancashire::causewaylane": {
@@ -113986,8 +113986,8 @@
     "community": "Hesketh Bank",
     "stop": "Station Road",
     "postcode": "",
-    "geox": -2.840649,
-    "geoy": 53.702824,
+    "geox": -2.84065,
+    "geoy": 53.70282,
     "source": "lancashire_arcgis"
   },
   "lancashire::heskethbank::deltaparkdrive": {
@@ -113995,8 +113995,8 @@
     "community": "Hesketh Bank",
     "stop": "Delta Park Drive",
     "postcode": "",
-    "geox": -2.848692,
-    "geoy": 53.705446,
+    "geox": -2.84869,
+    "geoy": 53.70545,
     "source": "lancashire_arcgis"
   },
   "lancashire::deltaparkdrive": {
@@ -114013,8 +114013,8 @@
     "community": "Hesketh-with-Becconsall",
     "stop": "The Green",
     "postcode": "",
-    "geox": -2.845059,
-    "geoy": 53.704087,
+    "geox": -2.84506,
+    "geoy": 53.70409,
     "source": "lancashire_arcgis"
   },
   "lancashire::heskethwithbecconsall::norwoodavenue": {
@@ -114022,8 +114022,8 @@
     "community": "Hesketh-with-Becconsall",
     "stop": "Norwood Avenue",
     "postcode": "",
-    "geox": -2.842088,
-    "geoy": 53.699452,
+    "geox": -2.84209,
+    "geoy": 53.69945,
     "source": "lancashire_arcgis"
   },
   "lancashire::norwoodavenue": {
@@ -114041,7 +114041,7 @@
     "stop": "New Road",
     "postcode": "",
     "geox": -2.81994,
-    "geoy": 53.632948,
+    "geoy": 53.63295,
     "source": "lancashire_arcgis"
   },
   "lancashire::newroad": {
@@ -114058,8 +114058,8 @@
     "community": "Rufford",
     "stop": "Prescott Avenue",
     "postcode": "",
-    "geox": -2.826429,
-    "geoy": 53.631492,
+    "geox": -2.82643,
+    "geoy": 53.63149,
     "source": "lancashire_arcgis"
   },
   "lancashire::prescottavenue": {
@@ -114076,8 +114076,8 @@
     "community": "Rufford",
     "stop": "Brick Kiln Lane",
     "postcode": "",
-    "geox": -2.822717,
-    "geoy": 53.631904,
+    "geox": -2.82272,
+    "geoy": 53.6319,
     "source": "lancashire_arcgis"
   },
   "lancashire::brickkilnlane": {
@@ -114095,7 +114095,7 @@
     "stop": "The Apiary",
     "postcode": "",
     "geox": -2.78781,
-    "geoy": 53.678356,
+    "geoy": 53.67836,
     "source": "lancashire_arcgis"
   },
   "lancashire::theapiary": {
@@ -114112,7 +114112,7 @@
     "community": "Croston",
     "stop": "The Surgery PR26",
     "postcode": "",
-    "geox": -2.773437,
+    "geox": -2.77344,
     "geoy": 53.66172,
     "source": "lancashire_arcgis"
   },
@@ -114130,8 +114130,8 @@
     "community": "Croston",
     "stop": "The Orchard PR26",
     "postcode": "",
-    "geox": -2.772719,
-    "geoy": 53.667391,
+    "geox": -2.77272,
+    "geoy": 53.66739,
     "source": "lancashire_arcgis"
   },
   "lancashire::theorchardpr26": {
@@ -114148,8 +114148,8 @@
     "community": "Croston",
     "stop": "Moor Road",
     "postcode": "",
-    "geox": -2.764022,
-    "geoy": 53.666854,
+    "geox": -2.76402,
+    "geoy": 53.66685,
     "source": "lancashire_arcgis"
   },
   "lancashire::moorroad": {
@@ -114166,8 +114166,8 @@
     "community": "Charnock Richard",
     "stop": "Leeson Avenue",
     "postcode": "",
-    "geox": -2.668822,
-    "geoy": 53.634311,
+    "geox": -2.66882,
+    "geoy": 53.63431,
     "source": "lancashire_arcgis"
   },
   "lancashire::leesonavenue": {
@@ -114184,8 +114184,8 @@
     "community": "Charnock Richard",
     "stop": "Charter Lane",
     "postcode": "",
-    "geox": -2.674293,
-    "geoy": 53.636004,
+    "geox": -2.67429,
+    "geoy": 53.636,
     "source": "lancashire_arcgis"
   },
   "lancashire::charterlane": {
@@ -114203,7 +114203,7 @@
     "stop": "Community Centre, Charter Lane PR7",
     "postcode": "",
     "geox": -2.67345,
-    "geoy": 53.634901,
+    "geoy": 53.6349,
     "source": "lancashire_arcgis"
   },
   "lancashire::communitycentrecharterlanepr7": {
@@ -114220,8 +114220,8 @@
     "community": "Coppull",
     "stop": "Oakwood Road",
     "postcode": "",
-    "geox": -2.654757,
-    "geoy": 53.628744,
+    "geox": -2.65476,
+    "geoy": 53.62874,
     "source": "lancashire_arcgis"
   },
   "lancashire::oakwoodroad": {
@@ -114238,8 +114238,8 @@
     "community": "Coppull",
     "stop": "Coppull Moor Lane",
     "postcode": "",
-    "geox": -2.658577,
-    "geoy": 53.611519,
+    "geox": -2.65858,
+    "geoy": 53.61152,
     "source": "lancashire_arcgis"
   },
   "lancashire::coppullmoorlane": {
@@ -114256,8 +114256,8 @@
     "community": "Charnock Richard",
     "stop": "Chisnall Lane",
     "postcode": "",
-    "geox": -2.679714,
-    "geoy": 53.625903,
+    "geox": -2.67971,
+    "geoy": 53.6259,
     "source": "lancashire_arcgis"
   },
   "lancashire::chisnalllane": {
@@ -114275,7 +114275,7 @@
     "stop": "Brindle Road",
     "postcode": "",
     "geox": -2.65013,
-    "geoy": 53.730579,
+    "geoy": 53.73058,
     "source": "lancashire_arcgis"
   },
   "lancashire::brindleroad": {
@@ -114292,8 +114292,8 @@
     "community": "Leyland",
     "stop": "Bannister Brook House, Pearfield, Golden Hill Lane PR25",
     "postcode": "",
-    "geox": -2.692659,
-    "geoy": 53.697452,
+    "geox": -2.69266,
+    "geoy": 53.69745,
     "source": "lancashire_arcgis"
   },
   "lancashire::bannisterbrookhousepearfieldgoldenhilllanepr25": {
@@ -114310,8 +114310,8 @@
     "community": "Leyland",
     "stop": "Kings Court",
     "postcode": "",
-    "geox": -2.692361,
-    "geoy": 53.693291,
+    "geox": -2.69236,
+    "geoy": 53.69329,
     "source": "lancashire_arcgis"
   },
   "lancashire::kingscourt": {
@@ -114328,8 +114328,8 @@
     "community": "Ulnes Walton",
     "stop": "Wade Brook Road",
     "postcode": "",
-    "geox": -2.743498,
-    "geoy": 53.681436,
+    "geox": -2.7435,
+    "geoy": 53.68144,
     "source": "lancashire_arcgis"
   },
   "lancashire::wadebrookroad": {
@@ -114346,8 +114346,8 @@
     "community": "Ulnes Walton",
     "stop": "The Causeway",
     "postcode": "",
-    "geox": -2.744194,
-    "geoy": 53.681521,
+    "geox": -2.74419,
+    "geoy": 53.68152,
     "source": "lancashire_arcgis"
   },
   "lancashire::thecauseway": {
@@ -114364,8 +114364,8 @@
     "community": "Heskin",
     "stop": "Wood Lane (1st Stop) PR7",
     "postcode": "",
-    "geox": -2.708119,
-    "geoy": 53.624127,
+    "geox": -2.70812,
+    "geoy": 53.62413,
     "source": "lancashire_arcgis"
   },
   "lancashire::woodlane1ststoppr7": {
@@ -114382,8 +114382,8 @@
     "community": "Heskin",
     "stop": "Wood Lane",
     "postcode": "",
-    "geox": -2.705897,
-    "geoy": 53.620274,
+    "geox": -2.7059,
+    "geoy": 53.62027,
     "source": "lancashire_arcgis"
   },
   "lancashire::woodlane": {
@@ -114400,8 +114400,8 @@
     "community": "Wrightington",
     "stop": "Church Lane",
     "postcode": "",
-    "geox": -2.706005,
-    "geoy": 53.615824,
+    "geox": -2.70601,
+    "geoy": 53.61582,
     "source": "lancashire_arcgis"
   },
   "lancashire::wrightington::manseavenue": {
@@ -114410,7 +114410,7 @@
     "stop": "Manse Avenue",
     "postcode": "",
     "geox": -2.70351,
-    "geoy": 53.606688,
+    "geoy": 53.60669,
     "source": "lancashire_arcgis"
   },
   "lancashire::manseavenue": {
@@ -114427,8 +114427,8 @@
     "community": "Wrightington",
     "stop": "Mossy Lea Road",
     "postcode": "",
-    "geox": -2.695782,
-    "geoy": 53.596253,
+    "geox": -2.69578,
+    "geoy": 53.59625,
     "source": "lancashire_arcgis"
   },
   "lancashire::mossylearoad": {
@@ -114445,8 +114445,8 @@
     "community": "Bispham",
     "stop": "Green Lane",
     "postcode": "",
-    "geox": -2.774009,
-    "geoy": 53.615457,
+    "geox": -2.77401,
+    "geoy": 53.61546,
     "source": "lancashire_arcgis"
   },
   "lancashire::greenlane": {
@@ -114463,8 +114463,8 @@
     "community": "Mawdesley",
     "stop": "The Willows",
     "postcode": "",
-    "geox": -2.770846,
-    "geoy": 53.628087,
+    "geox": -2.77085,
+    "geoy": 53.62809,
     "source": "lancashire_arcgis"
   },
   "lancashire::thewillows": {
@@ -114481,8 +114481,8 @@
     "community": "Mawdesley",
     "stop": "Village Hall Car Park, Hurst Green L40",
     "postcode": "",
-    "geox": -2.768787,
-    "geoy": 53.629283,
+    "geox": -2.76879,
+    "geoy": 53.62928,
     "source": "lancashire_arcgis"
   },
   "lancashire::villagehallcarparkhurstgreenl40": {
@@ -114499,8 +114499,8 @@
     "community": "New Longton",
     "stop": "Boundary Close",
     "postcode": "",
-    "geox": -2.745965,
-    "geoy": 53.727675,
+    "geox": -2.74596,
+    "geoy": 53.72767,
     "source": "lancashire_arcgis"
   },
   "lancashire::boundaryclose": {
@@ -114517,7 +114517,7 @@
     "community": "Little Hoole",
     "stop": "Station Road",
     "postcode": "",
-    "geox": -2.803572,
+    "geox": -2.80357,
     "geoy": 53.70911,
     "source": "lancashire_arcgis"
   },
@@ -114526,8 +114526,8 @@
     "community": "Much Hoole",
     "stop": "Liverpool Old Road",
     "postcode": "",
-    "geox": -2.810687,
-    "geoy": 53.697026,
+    "geox": -2.81069,
+    "geoy": 53.69703,
     "source": "lancashire_arcgis"
   },
   "lancashire::liverpoololdroad": {
@@ -114544,8 +114544,8 @@
     "community": "Longton",
     "stop": "School Lane",
     "postcode": "",
-    "geox": -2.788323,
-    "geoy": 53.722451,
+    "geox": -2.78832,
+    "geoy": 53.72245,
     "source": "lancashire_arcgis"
   },
   "lancashire::penwortham::crownlee": {
@@ -114553,8 +114553,8 @@
     "community": "Penwortham",
     "stop": "Crownlee",
     "postcode": "",
-    "geox": -2.740188,
-    "geoy": 53.739639,
+    "geox": -2.74019,
+    "geoy": 53.73964,
     "source": "lancashire_arcgis"
   },
   "lancashire::crownlee": {
@@ -114571,8 +114571,8 @@
     "community": "Penwortham",
     "stop": "Woodcroft Close",
     "postcode": "",
-    "geox": -2.710297,
-    "geoy": 53.733118,
+    "geox": -2.7103,
+    "geoy": 53.73312,
     "source": "lancashire_arcgis"
   },
   "lancashire::woodcroftclose": {
@@ -114590,7 +114590,7 @@
     "stop": "Queenscourt Avenue",
     "postcode": "",
     "geox": -2.71161,
-    "geoy": 53.733886,
+    "geoy": 53.73389,
     "source": "lancashire_arcgis"
   },
   "lancashire::queenscourtavenue": {
@@ -114607,8 +114607,8 @@
     "community": "Farington Moss",
     "stop": "Fylde Avenue",
     "postcode": "",
-    "geox": -2.708575,
-    "geoy": 53.708865,
+    "geox": -2.70858,
+    "geoy": 53.70887,
     "source": "lancashire_arcgis"
   },
   "lancashire::fyldeavenue": {
@@ -114625,8 +114625,8 @@
     "community": "Farington Moss",
     "stop": "Lower Field",
     "postcode": "",
-    "geox": -2.704181,
-    "geoy": 53.717016,
+    "geox": -2.70418,
+    "geoy": 53.71702,
     "source": "lancashire_arcgis"
   },
   "lancashire::lowerfield": {
@@ -114643,8 +114643,8 @@
     "community": "Blackburn",
     "stop": "Blackburn",
     "postcode": "",
-    "geox": -2.469262,
-    "geoy": 53.780255,
+    "geox": -2.46926,
+    "geoy": 53.78025,
     "source": "lancashire_arcgis"
   },
   "lancashire::blackburn": {
@@ -114661,8 +114661,8 @@
     "community": "Mellor",
     "stop": "Branch Road",
     "postcode": "",
-    "geox": -2.547265,
-    "geoy": 53.770882,
+    "geox": -2.54726,
+    "geoy": 53.77088,
     "source": "lancashire_arcgis"
   },
   "lancashire::branchroad": {
@@ -114679,8 +114679,8 @@
     "community": "Mellor Brook",
     "stop": "Intack Lane",
     "postcode": "",
-    "geox": -2.549309,
-    "geoy": 53.770471,
+    "geox": -2.54931,
+    "geoy": 53.77047,
     "source": "lancashire_arcgis"
   },
   "lancashire::intacklane": {
@@ -114697,8 +114697,8 @@
     "community": "Mellor Brook",
     "stop": "Branch Road",
     "postcode": "",
-    "geox": -2.547689,
-    "geoy": 53.772121,
+    "geox": -2.54769,
+    "geoy": 53.77212,
     "source": "lancashire_arcgis"
   },
   "lancashire::salesbury::lovelyhalllane": {
@@ -114706,8 +114706,8 @@
     "community": "Salesbury",
     "stop": "Lovely Hall Lane",
     "postcode": "",
-    "geox": -2.485561,
-    "geoy": 53.790844,
+    "geox": -2.48556,
+    "geoy": 53.79084,
     "source": "lancashire_arcgis"
   },
   "lancashire::lovelyhalllane": {
@@ -114724,8 +114724,8 @@
     "community": "Wilpshire",
     "stop": "Shropshire Drive",
     "postcode": "",
-    "geox": -2.473008,
-    "geoy": 53.792194,
+    "geox": -2.47301,
+    "geoy": 53.79219,
     "source": "lancashire_arcgis"
   },
   "lancashire::shropshiredrive": {
@@ -114742,8 +114742,8 @@
     "community": "Wilpshire",
     "stop": "Durham Road",
     "postcode": "",
-    "geox": -2.474963,
-    "geoy": 53.791962,
+    "geox": -2.47496,
+    "geoy": 53.79196,
     "source": "lancashire_arcgis"
   },
   "lancashire::durhamroad": {
@@ -114760,8 +114760,8 @@
     "community": "Wilpshire",
     "stop": "Ribblesdale Avenue",
     "postcode": "",
-    "geox": -2.467998,
-    "geoy": 53.793499,
+    "geox": -2.468,
+    "geoy": 53.7935,
     "source": "lancashire_arcgis"
   },
   "lancashire::ribblesdaleavenue": {
@@ -114778,8 +114778,8 @@
     "community": "Heapey",
     "stop": "Ryefield",
     "postcode": "",
-    "geox": -2.606007,
-    "geoy": 53.683663,
+    "geox": -2.60601,
+    "geoy": 53.68366,
     "source": "lancashire_arcgis"
   },
   "lancashire::ryefield": {
@@ -114796,8 +114796,8 @@
     "community": "Wheelton",
     "stop": "Whins Lane",
     "postcode": "",
-    "geox": -2.599714,
-    "geoy": 53.693299,
+    "geox": -2.59971,
+    "geoy": 53.6933,
     "source": "lancashire_arcgis"
   },
   "lancashire::whinslane": {
@@ -114814,8 +114814,8 @@
     "community": "Wheelton",
     "stop": "Blackburn Road",
     "postcode": "",
-    "geox": -2.593383,
-    "geoy": 53.696409,
+    "geox": -2.59338,
+    "geoy": 53.69641,
     "source": "lancashire_arcgis"
   },
   "lancashire::blackburnroad": {
@@ -114832,8 +114832,8 @@
     "community": "Withnell",
     "stop": "Pleasant View",
     "postcode": "",
-    "geox": -2.555705,
-    "geoy": 53.694664,
+    "geox": -2.55571,
+    "geoy": 53.69466,
     "source": "lancashire_arcgis"
   },
   "lancashire::pleasantview": {
@@ -114850,8 +114850,8 @@
     "community": "Abbey Village",
     "stop": "Bolton Road",
     "postcode": "",
-    "geox": -2.546859,
-    "geoy": 53.698661,
+    "geox": -2.54686,
+    "geoy": 53.69866,
     "source": "lancashire_arcgis"
   },
   "lancashire::boltonroad": {
@@ -114868,7 +114868,7 @@
     "community": "Brinscall",
     "stop": "School Lane",
     "postcode": "",
-    "geox": -2.560617,
+    "geox": -2.56062,
     "geoy": 53.69045,
     "source": "lancashire_arcgis"
   },
@@ -114877,8 +114877,8 @@
     "community": "Brinscall",
     "stop": "Sandringham Drive",
     "postcode": "",
-    "geox": -2.569256,
-    "geoy": 53.692009,
+    "geox": -2.56926,
+    "geoy": 53.69201,
     "source": "lancashire_arcgis"
   },
   "lancashire::sandringhamdrive": {
@@ -114895,8 +114895,8 @@
     "community": "Walton-le-Dale",
     "stop": "Oakland Glen",
     "postcode": "",
-    "geox": -2.692316,
-    "geoy": 53.740887,
+    "geox": -2.69232,
+    "geoy": 53.74089,
     "source": "lancashire_arcgis"
   },
   "lancashire::oaklandglen": {
@@ -114913,8 +114913,8 @@
     "community": "Ashton-on-Ribble",
     "stop": "Mulgrave Avenue",
     "postcode": "",
-    "geox": -2.737997,
-    "geoy": 53.766156,
+    "geox": -2.738,
+    "geoy": 53.76616,
     "source": "lancashire_arcgis"
   },
   "lancashire::mulgraveavenue": {
@@ -114931,8 +114931,8 @@
     "community": "Ashton-on-Ribble",
     "stop": "Tulketh Avenue",
     "postcode": "",
-    "geox": -2.731848,
-    "geoy": 53.767905,
+    "geox": -2.73185,
+    "geoy": 53.7679,
     "source": "lancashire_arcgis"
   },
   "lancashire::tulkethavenue": {
@@ -114949,8 +114949,8 @@
     "community": "Ashton-on-Ribble",
     "stop": "Newton Road",
     "postcode": "",
-    "geox": -2.734072,
-    "geoy": 53.768843,
+    "geox": -2.73407,
+    "geoy": 53.76884,
     "source": "lancashire_arcgis"
   },
   "lancashire::newtonroad": {
@@ -114967,8 +114967,8 @@
     "community": "Ashton-on-Ribble",
     "stop": "Hunniball Court",
     "postcode": "",
-    "geox": -2.727893,
-    "geoy": 53.768971,
+    "geox": -2.72789,
+    "geoy": 53.76897,
     "source": "lancashire_arcgis"
   },
   "lancashire::hunniballcourt": {
@@ -114985,8 +114985,8 @@
     "community": "Preston",
     "stop": "South Meadow Lane",
     "postcode": "",
-    "geox": -2.710176,
-    "geoy": 53.752234,
+    "geox": -2.71018,
+    "geoy": 53.75223,
     "source": "lancashire_arcgis"
   },
   "lancashire::southmeadowlane": {
@@ -115003,8 +115003,8 @@
     "community": "Preston",
     "stop": "Broadgate",
     "postcode": "",
-    "geox": -2.714385,
-    "geoy": 53.749529,
+    "geox": -2.71439,
+    "geoy": 53.74953,
     "source": "lancashire_arcgis"
   },
   "lancashire::broadgate": {
@@ -115021,8 +115021,8 @@
     "community": "Lostock Hall",
     "stop": "Ward Street",
     "postcode": "",
-    "geox": -2.687109,
-    "geoy": 53.721942,
+    "geox": -2.68711,
+    "geoy": 53.72194,
     "source": "lancashire_arcgis"
   },
   "lancashire::wardstreet": {
@@ -115039,7 +115039,7 @@
     "community": "Langho",
     "stop": "Whalley New Road",
     "postcode": "",
-    "geox": -2.444276,
+    "geox": -2.44428,
     "geoy": 53.80682,
     "source": "lancashire_arcgis"
   },
@@ -115057,8 +115057,8 @@
     "community": "Langho",
     "stop": "Springdale Road",
     "postcode": "",
-    "geox": -2.453515,
-    "geoy": 53.799083,
+    "geox": -2.45351,
+    "geoy": 53.79908,
     "source": "lancashire_arcgis"
   },
   "lancashire::springdaleroad": {
@@ -115075,7 +115075,7 @@
     "community": "Langho",
     "stop": "Hillcrest Road",
     "postcode": "",
-    "geox": -2.450926,
+    "geox": -2.45093,
     "geoy": 53.80009,
     "source": "lancashire_arcgis"
   },
@@ -115093,8 +115093,8 @@
     "community": "Wilpshire",
     "stop": "Hollowhead Avenue",
     "postcode": "",
-    "geox": -2.472827,
-    "geoy": 53.785693,
+    "geox": -2.47283,
+    "geoy": 53.78569,
     "source": "lancashire_arcgis"
   },
   "lancashire::hollowheadavenue": {
@@ -115111,8 +115111,8 @@
     "community": "Langho",
     "stop": "York Road",
     "postcode": "",
-    "geox": -2.441849,
-    "geoy": 53.797711,
+    "geox": -2.44185,
+    "geoy": 53.79771,
     "source": "lancashire_arcgis"
   },
   "lancashire::yorkroad": {
@@ -115129,8 +115129,8 @@
     "community": "Langho",
     "stop": "Whinny Lane",
     "postcode": "",
-    "geox": -2.446866,
-    "geoy": 53.802138,
+    "geox": -2.44687,
+    "geoy": 53.80214,
     "source": "lancashire_arcgis"
   },
   "lancashire::whinnylane": {
@@ -115147,8 +115147,8 @@
     "community": "Billington",
     "stop": "Pasturelands Drive",
     "postcode": "",
-    "geox": -2.424379,
-    "geoy": 53.813576,
+    "geox": -2.42438,
+    "geoy": 53.81358,
     "source": "lancashire_arcgis"
   },
   "lancashire::pasturelandsdrive": {
@@ -115165,8 +115165,8 @@
     "community": "Barrow",
     "stop": "Green Park Court (Off Whiteacre Lane) BB7",
     "postcode": "",
-    "geox": -2.397798,
-    "geoy": 53.835848,
+    "geox": -2.3978,
+    "geoy": 53.83585,
     "source": "lancashire_arcgis"
   },
   "lancashire::greenparkcourtoffwhiteacrelanebb7": {
@@ -115183,8 +115183,8 @@
     "community": "Barrow",
     "stop": "Whalley Road",
     "postcode": "",
-    "geox": -2.401408,
-    "geoy": 53.840101,
+    "geox": -2.40141,
+    "geoy": 53.8401,
     "source": "lancashire_arcgis"
   },
   "lancashire::whalleyroad": {
@@ -115201,8 +115201,8 @@
     "community": "Clitheroe",
     "stop": "Castle View",
     "postcode": "",
-    "geox": -2.395268,
-    "geoy": 53.873178,
+    "geox": -2.39527,
+    "geoy": 53.87318,
     "source": "lancashire_arcgis"
   },
   "lancashire::castleview": {
@@ -115219,8 +115219,8 @@
     "community": "Clitheroe",
     "stop": "Corbridge Court, Kirkmoor Road BB7",
     "postcode": "",
-    "geox": -2.395593,
-    "geoy": 53.874454,
+    "geox": -2.39559,
+    "geoy": 53.87445,
     "source": "lancashire_arcgis"
   },
   "lancashire::corbridgecourtkirkmoorroadbb7": {
@@ -115237,8 +115237,8 @@
     "community": "Waddington",
     "stop": "Shireburn Caravan Park, Eddisford Road BB7",
     "postcode": "",
-    "geox": -2.416571,
-    "geoy": 53.874009,
+    "geox": -2.41657,
+    "geoy": 53.87401,
     "source": "lancashire_arcgis"
   },
   "lancashire::shireburncaravanparkeddisfordroadbb7": {
@@ -115255,8 +115255,8 @@
     "community": "Clitheroe",
     "stop": "Bleasdale Avenue",
     "postcode": "",
-    "geox": -2.406994,
-    "geoy": 53.865976,
+    "geox": -2.40699,
+    "geoy": 53.86598,
     "source": "lancashire_arcgis"
   },
   "lancashire::bleasdaleavenue": {
@@ -115273,8 +115273,8 @@
     "community": "Clitheroe",
     "stop": "Alma Place",
     "postcode": "",
-    "geox": -2.401147,
-    "geoy": 53.866852,
+    "geox": -2.40115,
+    "geoy": 53.86685,
     "source": "lancashire_arcgis"
   },
   "lancashire::almaplace": {
@@ -115291,8 +115291,8 @@
     "community": "Chorley",
     "stop": "Ewell Close",
     "postcode": "",
-    "geox": -2.613372,
-    "geoy": 53.671347,
+    "geox": -2.61337,
+    "geoy": 53.67135,
     "source": "lancashire_arcgis"
   },
   "lancashire::ewellclose": {
@@ -115309,8 +115309,8 @@
     "community": "Heapey",
     "stop": "Coppice Lane",
     "postcode": "",
-    "geox": -2.585174,
-    "geoy": 53.667008,
+    "geox": -2.58517,
+    "geoy": 53.66701,
     "source": "lancashire_arcgis"
   },
   "lancashire::coppicelane": {
@@ -115328,7 +115328,7 @@
     "stop": "Junc Temple fields / Heapey Road PR6",
     "postcode": "",
     "geox": -2.60598,
-    "geoy": 53.667809,
+    "geoy": 53.66781,
     "source": "lancashire_arcgis"
   },
   "lancashire::junctemplefieldsheapeyroadpr6": {
@@ -115345,8 +115345,8 @@
     "community": "Heath Charnock",
     "stop": "The Street",
     "postcode": "",
-    "geox": -2.577652,
-    "geoy": 53.634857,
+    "geox": -2.57765,
+    "geoy": 53.63486,
     "source": "lancashire_arcgis"
   },
   "lancashire::thestreet": {
@@ -115363,8 +115363,8 @@
     "community": "Heath Charnock",
     "stop": "Heathfield",
     "postcode": "",
-    "geox": -2.606565,
-    "geoy": 53.622013,
+    "geox": -2.60656,
+    "geoy": 53.62201,
     "source": "lancashire_arcgis"
   },
   "lancashire::heathfield": {
@@ -115381,8 +115381,8 @@
     "community": "Hoghton",
     "stop": "Gib Lane",
     "postcode": "",
-    "geox": -2.587236,
-    "geoy": 53.740826,
+    "geox": -2.58724,
+    "geoy": 53.74083,
     "source": "lancashire_arcgis"
   },
   "lancashire::giblane": {
@@ -115399,8 +115399,8 @@
     "community": "Coupe Green",
     "stop": "Fox Lane",
     "postcode": "",
-    "geox": -2.619381,
-    "geoy": 53.741384,
+    "geox": -2.61938,
+    "geoy": 53.74138,
     "source": "lancashire_arcgis"
   },
   "lancashire::foxlane": {
@@ -115418,7 +115418,7 @@
     "stop": "Rosewood Avenue",
     "postcode": "",
     "geox": -2.63583,
-    "geoy": 53.740576,
+    "geoy": 53.74058,
     "source": "lancashire_arcgis"
   },
   "lancashire::rosewoodavenue": {
@@ -115435,8 +115435,8 @@
     "community": "Walton-le-Dale",
     "stop": "Queensdale Close",
     "postcode": "",
-    "geox": -2.661854,
-    "geoy": 53.746036,
+    "geox": -2.66185,
+    "geoy": 53.74604,
     "source": "lancashire_arcgis"
   },
   "lancashire::queensdaleclose": {
@@ -115453,7 +115453,7 @@
     "community": "Gregson Lane",
     "stop": "Conway Court",
     "postcode": "",
-    "geox": -2.623272,
+    "geox": -2.62327,
     "geoy": 53.73589,
     "source": "lancashire_arcgis"
   },
@@ -115471,8 +115471,8 @@
     "community": "Gregson Lane",
     "stop": "Gregson Lane car park PR5",
     "postcode": "",
-    "geox": -2.619454,
-    "geoy": 53.734434,
+    "geox": -2.61945,
+    "geoy": 53.73443,
     "source": "lancashire_arcgis"
   },
   "lancashire::gregsonlanecarparkpr5": {
@@ -115489,8 +115489,8 @@
     "community": "Billington",
     "stop": "Hackings Caravan Park, Elker Lane BB7",
     "postcode": "",
-    "geox": -2.436343,
-    "geoy": 53.826713,
+    "geox": -2.43634,
+    "geoy": 53.82671,
     "source": "lancashire_arcgis"
   },
   "lancashire::hackingscaravanparkelkerlanebb7": {
@@ -115507,8 +115507,8 @@
     "community": "Brockhall Village",
     "stop": "Pendle View",
     "postcode": "",
-    "geox": -2.451845,
-    "geoy": 53.824426,
+    "geox": -2.45185,
+    "geoy": 53.82443,
     "source": "lancashire_arcgis"
   },
   "lancashire::pendleview": {
@@ -115526,7 +115526,7 @@
     "stop": "Parsonage Avenue",
     "postcode": "",
     "geox": -2.53542,
-    "geoy": 53.811885,
+    "geoy": 53.81188,
     "source": "lancashire_arcgis"
   },
   "lancashire::parsonageavenue": {
@@ -115543,8 +115543,8 @@
     "community": "Ribchester",
     "stop": "Ribchester Car Park, Church Street PR3",
     "postcode": "",
-    "geox": -2.534606,
-    "geoy": 53.811826,
+    "geox": -2.53461,
+    "geoy": 53.81183,
     "source": "lancashire_arcgis"
   },
   "lancashire::ribchestercarparkchurchstreetpr3": {
@@ -115561,8 +115561,8 @@
     "community": "Ribchester",
     "stop": "Claytonhalgh",
     "postcode": "",
-    "geox": -2.531846,
-    "geoy": 53.814282,
+    "geox": -2.53185,
+    "geoy": 53.81428,
     "source": "lancashire_arcgis"
   },
   "lancashire::claytonhalgh": {
@@ -115579,8 +115579,8 @@
     "community": "Ribchester",
     "stop": "Stoneygate Lane",
     "postcode": "",
-    "geox": -2.531186,
-    "geoy": 53.816928,
+    "geox": -2.53119,
+    "geoy": 53.81693,
     "source": "lancashire_arcgis"
   },
   "lancashire::woodplumpton::woodplumptonroad": {
@@ -115588,8 +115588,8 @@
     "community": "Woodplumpton",
     "stop": "Woodplumpton Road",
     "postcode": "",
-    "geox": -2.758803,
-    "geoy": 53.808425,
+    "geox": -2.7588,
+    "geoy": 53.80842,
     "source": "lancashire_arcgis"
   },
   "lancashire::woodplumptonroad": {
@@ -115606,8 +115606,8 @@
     "community": "Woodplumpton",
     "stop": "The Orchard",
     "postcode": "",
-    "geox": -2.759926,
-    "geoy": 53.804176,
+    "geox": -2.75993,
+    "geoy": 53.80418,
     "source": "lancashire_arcgis"
   },
   "lancashire::theorchard": {
@@ -115624,8 +115624,8 @@
     "community": "Lea",
     "stop": "Church Park",
     "postcode": "",
-    "geox": -2.794278,
-    "geoy": 53.773121,
+    "geox": -2.79428,
+    "geoy": 53.77312,
     "source": "lancashire_arcgis"
   },
   "lancashire::churchpark": {
@@ -115642,8 +115642,8 @@
     "community": "Newton",
     "stop": "Bluecoat Crescent",
     "postcode": "",
-    "geox": -2.832474,
-    "geoy": 53.771427,
+    "geox": -2.83247,
+    "geoy": 53.77143,
     "source": "lancashire_arcgis"
   },
   "lancashire::bluecoatcrescent": {
@@ -115660,8 +115660,8 @@
     "community": "Newton",
     "stop": "Bryning Lane",
     "postcode": "",
-    "geox": -2.841048,
-    "geoy": 53.771123,
+    "geox": -2.84105,
+    "geoy": 53.77112,
     "source": "lancashire_arcgis"
   },
   "lancashire::bryninglane": {
@@ -115678,8 +115678,8 @@
     "community": "Warton",
     "stop": "Clifton Arms, Lytham Road PR4",
     "postcode": "",
-    "geox": -2.892471,
-    "geoy": 53.750007,
+    "geox": -2.89247,
+    "geoy": 53.75001,
     "source": "lancashire_arcgis"
   },
   "lancashire::cliftonarmslythamroadpr4": {
@@ -115696,8 +115696,8 @@
     "community": "Withgill",
     "stop": "The Old Granary BB7",
     "postcode": "",
-    "geox": -2.446185,
-    "geoy": 53.864083,
+    "geox": -2.44618,
+    "geoy": 53.86408,
     "source": "lancashire_arcgis"
   },
   "lancashire::theoldgranarybb7": {
@@ -115714,8 +115714,8 @@
     "community": "Bashall Eaves",
     "stop": "Village Hall BB7",
     "postcode": "",
-    "geox": -2.463768,
-    "geoy": 53.884873,
+    "geox": -2.46377,
+    "geoy": 53.88487,
     "source": "lancashire_arcgis"
   },
   "lancashire::villagehallbb7": {
@@ -115732,8 +115732,8 @@
     "community": "Stonyhurst",
     "stop": "Knowles Brow",
     "postcode": "",
-    "geox": -2.464378,
-    "geoy": 53.848544,
+    "geox": -2.46438,
+    "geoy": 53.84854,
     "source": "lancashire_arcgis"
   },
   "lancashire::knowlesbrow": {
@@ -115750,7 +115750,7 @@
     "community": "Hurst Green",
     "stop": "Whalley Road",
     "postcode": "",
-    "geox": -2.476477,
+    "geox": -2.47648,
     "geoy": 53.83704,
     "source": "lancashire_arcgis"
   },
@@ -115759,8 +115759,8 @@
     "community": "Hurst Green",
     "stop": "Avenue Road",
     "postcode": "",
-    "geox": -2.481362,
-    "geoy": 53.838971,
+    "geox": -2.48136,
+    "geoy": 53.83897,
     "source": "lancashire_arcgis"
   },
   "lancashire::avenueroad": {
@@ -115777,8 +115777,8 @@
     "community": "Knowle Green",
     "stop": "Clitheroe Road",
     "postcode": "",
-    "geox": -2.535175,
-    "geoy": 53.838297,
+    "geox": -2.53518,
+    "geoy": 53.8383,
     "source": "lancashire_arcgis"
   },
   "lancashire::clitheroeroad": {
@@ -115795,8 +115795,8 @@
     "community": "Preston",
     "stop": "Gaythorne Avenue",
     "postcode": "",
-    "geox": -2.658082,
-    "geoy": 53.764205,
+    "geox": -2.65808,
+    "geoy": 53.7642,
     "source": "lancashire_arcgis"
   },
   "lancashire::gaythorneavenue": {
@@ -115813,8 +115813,8 @@
     "community": "Preston",
     "stop": "Malvern Avenue",
     "postcode": "",
-    "geox": -2.687131,
-    "geoy": 53.750246,
+    "geox": -2.68713,
+    "geoy": 53.75025,
     "source": "lancashire_arcgis"
   },
   "lancashire::malvernavenue": {
@@ -115831,7 +115831,7 @@
     "community": "Preston",
     "stop": "College Court",
     "postcode": "",
-    "geox": -2.706647,
+    "geox": -2.70665,
     "geoy": 53.77005,
     "source": "lancashire_arcgis"
   },
@@ -115849,8 +115849,8 @@
     "community": "Preston",
     "stop": "Lovat Road",
     "postcode": "",
-    "geox": -2.703417,
-    "geoy": 53.770096,
+    "geox": -2.70342,
+    "geoy": 53.7701,
     "source": "lancashire_arcgis"
   },
   "lancashire::lovatroad": {
@@ -115867,8 +115867,8 @@
     "community": "Great Mitton",
     "stop": "Birdy Brow",
     "postcode": "",
-    "geox": -2.460121,
-    "geoy": 53.865613,
+    "geox": -2.46012,
+    "geoy": 53.86561,
     "source": "lancashire_arcgis"
   },
   "lancashire::birdybrow": {
@@ -115885,8 +115885,8 @@
     "community": "Chipping",
     "stop": "Kirklands",
     "postcode": "",
-    "geox": -2.577563,
-    "geoy": 53.885059,
+    "geox": -2.57756,
+    "geoy": 53.88506,
     "source": "lancashire_arcgis"
   },
   "lancashire::kirklands": {
@@ -115903,8 +115903,8 @@
     "community": "Nelson",
     "stop": "Town House Road (Near Junction with Hallam Road) BB9",
     "postcode": "",
-    "geox": -2.185792,
-    "geoy": 53.837677,
+    "geox": -2.18579,
+    "geoy": 53.83768,
     "source": "lancashire_arcgis"
   },
   "lancashire::townhouseroadnearjunctionwithhallamroadbb9": {
@@ -115921,8 +115921,8 @@
     "community": "Stacksteads",
     "stop": "Tunstead Road nr Haworth Drive OL13",
     "postcode": "",
-    "geox": -2.224101,
-    "geoy": 53.694545,
+    "geox": -2.2241,
+    "geoy": 53.69454,
     "source": "lancashire_arcgis"
   },
   "lancashire::tunsteadroadnrhaworthdriveol13": {
@@ -115939,8 +115939,8 @@
     "community": "Bacup",
     "stop": "Western Court OL13",
     "postcode": "",
-    "geox": -2.228708,
-    "geoy": 53.692442,
+    "geox": -2.22871,
+    "geoy": 53.69244,
     "source": "lancashire_arcgis"
   },
   "lancashire::westerncourtol13": {
@@ -115957,8 +115957,8 @@
     "community": "Waterfoot",
     "stop": "Car Park BB4",
     "postcode": "",
-    "geox": -2.252001,
-    "geoy": 53.692713,
+    "geox": -2.252,
+    "geoy": 53.69271,
     "source": "lancashire_arcgis"
   },
   "lancashire::carparkbb4": {
@@ -115975,8 +115975,8 @@
     "community": "Accrington",
     "stop": "Burnley Road near Griffin's Head BB5",
     "postcode": "",
-    "geox": -2.337676,
-    "geoy": 53.767019,
+    "geox": -2.33768,
+    "geoy": 53.76702,
     "source": "lancashire_arcgis"
   },
   "lancashire::burnleyroadneargriffinsheadbb5": {
@@ -115993,8 +115993,8 @@
     "community": "Higgen Clough",
     "stop": "Wheatley Lane Road near Inghamite Chapel BB12",
     "postcode": "",
-    "geox": -2.246425,
-    "geoy": 53.841886,
+    "geox": -2.24642,
+    "geoy": 53.84189,
     "source": "lancashire_arcgis"
   },
   "lancashire::wheatleylaneroadnearinghamitechapelbb12": {
@@ -116011,8 +116011,8 @@
     "community": "Fence",
     "stop": "Wheatley Close BB12",
     "postcode": "",
-    "geox": -2.260292,
-    "geoy": 53.833231,
+    "geox": -2.26029,
+    "geoy": 53.83323,
     "source": "lancashire_arcgis"
   },
   "lancashire::wheatleyclosebb12": {
@@ -116029,8 +116029,8 @@
     "community": "Borwick",
     "stop": "Croftlands LA6",
     "postcode": "",
-    "geox": -2.724265,
-    "geoy": 54.150677,
+    "geox": -2.72426,
+    "geoy": 54.15068,
     "source": "lancashire_arcgis"
   },
   "lancashire::croftlandsla6": {
@@ -116065,7 +116065,7 @@
     "community": "Hare Runs",
     "stop": "Morley Close LA1",
     "postcode": "",
-    "geox": -2.809659,
+    "geox": -2.80966,
     "geoy": 54.06277,
     "source": "lancashire_arcgis"
   },
@@ -116083,8 +116083,8 @@
     "community": "Slyne",
     "stop": "Arden Close LA2",
     "postcode": "",
-    "geox": -2.805502,
-    "geoy": 54.085925,
+    "geox": -2.8055,
+    "geoy": 54.08593,
     "source": "lancashire_arcgis"
   },
   "lancashire::ardenclosela2": {
@@ -116101,8 +116101,8 @@
     "community": "Westhead",
     "stop": "Meadow Close L40",
     "postcode": "",
-    "geox": -2.842163,
-    "geoy": 53.563028,
+    "geox": -2.84216,
+    "geoy": 53.56303,
     "source": "lancashire_arcgis"
   },
   "lancashire::meadowclosel40": {
@@ -116119,8 +116119,8 @@
     "community": "Wilpshire",
     "stop": "Grosvenor Lodge, Whalley Road BB1",
     "postcode": "",
-    "geox": -2.473926,
-    "geoy": 53.789929,
+    "geox": -2.47393,
+    "geoy": 53.78993,
     "source": "lancashire_arcgis"
   },
   "lancashire::grosvenorlodgewhalleyroadbb1": {
@@ -116137,8 +116137,8 @@
     "community": "Heapey",
     "stop": "Ryefield PR6",
     "postcode": "",
-    "geox": -2.606707,
-    "geoy": 53.683836,
+    "geox": -2.60671,
+    "geoy": 53.68384,
     "source": "lancashire_arcgis"
   },
   "lancashire::ryefieldpr6": {
@@ -116155,8 +116155,8 @@
     "community": "Larches",
     "stop": "ST Bernards - Larches & Savick Community Hub, Elswick Road PR2",
     "postcode": "",
-    "geox": -2.754925,
-    "geoy": 53.765001,
+    "geox": -2.75493,
+    "geoy": 53.765,
     "source": "lancashire_arcgis"
   },
   "lancashire::stbernardslarchessavickcommunityhubelswickroadpr2": {
@@ -116173,8 +116173,8 @@
     "community": "Euxton",
     "stop": "The Farrington, Runshaw Hall, Runshaw Hall Lane PR7",
     "postcode": "",
-    "geox": -2.697113,
-    "geoy": 53.676269,
+    "geox": -2.69711,
+    "geoy": 53.67627,
     "source": "lancashire_arcgis"
   },
   "lancashire::thefarringtonrunshawhallrunshawhalllanepr7": {
@@ -116191,8 +116191,8 @@
     "community": "Chorley",
     "stop": "Rowan Grove PR6",
     "postcode": "",
-    "geox": -2.630128,
-    "geoy": 53.668236,
+    "geox": -2.63013,
+    "geoy": 53.66824,
     "source": "lancashire_arcgis"
   },
   "lancashire::rowangrovepr6": {
@@ -116209,8 +116209,8 @@
     "community": "Gregson Lane",
     "stop": "Manybrook House, Gregson Lane PR5",
     "postcode": "",
-    "geox": -2.618378,
-    "geoy": 53.733241,
+    "geox": -2.61838,
+    "geoy": 53.73324,
     "source": "lancashire_arcgis"
   },
   "lancashire::manybrookhousegregsonlanepr5": {
@@ -116228,7 +116228,7 @@
     "stop": "Walmersley Old Road BL9",
     "postcode": "",
     "geox": -2.28983,
-    "geoy": 53.630903,
+    "geoy": 53.6309,
     "source": "lancashire_arcgis"
   },
   "lancashire::walmersleyoldroadbl9": {
@@ -116246,7 +116246,7 @@
     "stop": "The Crescent BB7",
     "postcode": "",
     "geox": -2.52238,
-    "geoy": 53.946374,
+    "geoy": 53.94637,
     "source": "lancashire_arcgis"
   },
   "lancashire::thecrescentbb7": {
@@ -116263,8 +116263,8 @@
     "community": "Holmeswood",
     "stop": "Chapel Lane L40",
     "postcode": "",
-    "geox": -2.863862,
-    "geoy": 53.642803,
+    "geox": -2.86386,
+    "geoy": 53.6428,
     "source": "lancashire_arcgis"
   },
   "lancashire::chapellanel40": {
@@ -116281,8 +116281,8 @@
     "community": "Clitheroe",
     "stop": "Castle View BB7",
     "postcode": "",
-    "geox": -2.395777,
-    "geoy": 53.872766,
+    "geox": -2.39578,
+    "geoy": 53.87277,
     "source": "lancashire_arcgis"
   },
   "lancashire::castleviewbb7": {
@@ -116299,8 +116299,8 @@
     "community": "Forton",
     "stop": "Hollin's Lane, Post Office car park",
     "postcode": "",
-    "geox": -2.770541,
-    "geoy": 53.952933,
+    "geox": -2.77054,
+    "geoy": 53.95293,
     "source": "lancashire_arcgis"
   },
   "lancashire::hollinslanepostofficecarpark": {
@@ -116317,8 +116317,8 @@
     "community": "Bay Horse",
     "stop": "Wham's Lane",
     "postcode": "",
-    "geox": -2.768841,
-    "geoy": 53.975028,
+    "geox": -2.76884,
+    "geoy": 53.97503,
     "source": "lancashire_arcgis"
   },
   "lancashire::whamslane": {
@@ -116335,8 +116335,8 @@
     "community": "Catterall",
     "stop": "Meadows Lane",
     "postcode": "",
-    "geox": -2.764897,
-    "geoy": 53.875474,
+    "geox": -2.7649,
+    "geoy": 53.87547,
     "source": "lancashire_arcgis"
   },
   "lancashire::meadowslane": {

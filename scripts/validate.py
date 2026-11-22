@@ -10,6 +10,7 @@ Checks:
 from __future__ import annotations
 
 import csv
+from datetime import datetime, timedelta
 import re
 import sys
 from pathlib import Path
@@ -51,6 +52,7 @@ def main() -> int:
     freq_issues = 0
     exc_issues = 0
     time_issues = 0
+    newline_issues = 0
 
     for csv_file in csv_files:
         if (
@@ -69,6 +71,8 @@ def main() -> int:
                 exc_str = row.get("Exceptions", "").strip()
                 arr_str = row.get("Arrival", "").strip()
                 dep_str = row.get("Departure", "").strip()
+                start_str = row.get("Start", "").strip()
+                end_str = row.get("End", "").strip()
 
                 if lat_str and lng_str:
                     if not COORD_5DP_RE.match(lat_str) or not COORD_5DP_RE.match(lng_str):
@@ -93,6 +97,52 @@ def main() -> int:
                     if time_issues <= 3:
                         print(f"  [Time Warning] {csv_file.name}:{i} ({row.get('Stop')}) Arrival ({arr_str}) > Departure ({dep_str})")
 
+                if start_str and end_str and start_str > end_str:
+                    time_issues += 1
+                    print(f"  [Date Warning] {csv_file.name}:{i} ({row.get('Stop')}) Start ({start_str}) > End ({end_str})")
+
+                for col_name, cell_val in row.items():
+                    if cell_val and ("\n" in cell_val or "\r" in cell_val):
+                        newline_issues += 1
+                        if newline_issues <= 3:
+                            print(f"  [Newline Error] {csv_file.name}:{i} column '{col_name}' contains embedded newline: {repr(cell_val)}")
+
+    # 3. Check timetable expiration and upcoming renewals
+    print("\n3. Checking timetable validity dates...")
+    today = datetime.now().strftime("%Y-%m-%d")
+    soon = (datetime.now() + timedelta(days=30)).strftime("%Y-%m-%d")
+    expired_authorities = {}
+    expiring_soon = {}
+
+    for csv_file in csv_files:
+        if (
+            csv_file.name.startswith("uk_")
+            or csv_file.name.startswith("library-services")
+            or "review_queue" in csv_file.name
+        ):
+            continue
+        with open(csv_file, mode="r", encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                end_str = (row.get("End") or "").strip()
+                if end_str:
+                    if end_str < today:
+                        expired_authorities[csv_file.stem] = end_str
+                    elif today <= end_str <= soon:
+                        expiring_soon[csv_file.stem] = end_str
+                    break
+
+    if expired_authorities:
+        print(f"⚠️ Notice: {len(expired_authorities)} authority timetables have past End dates:")
+        for auth, dt in sorted(expired_authorities.items()):
+            print(f"   - {auth}: expired on {dt}")
+    elif expiring_soon:
+        print(f"ℹ️ Notice: {len(expiring_soon)} authority timetables expire within 30 days:")
+        for auth, dt in sorted(expiring_soon.items()):
+            print(f"   - {auth}: expires on {dt}")
+    else:
+        print(f"✓ All active timetables are current and valid for future visits.")
+
     if coord_issues > 0:
         print(f"❌ Found {coord_issues} coordinate precision warnings.")
         errors += 1
@@ -116,6 +166,12 @@ def main() -> int:
         errors += 1
     else:
         print(f"✓ All stops have valid chronologically ordered times (Arrival <= Departure).")
+
+    if newline_issues > 0:
+        print(f"❌ Found {newline_issues} embedded newline errors.")
+        errors += 1
+    else:
+        print(f"✓ All stop fields are single-line with 0 embedded newlines.")
 
     print("\n" + "=" * 60)
     if errors == 0:
