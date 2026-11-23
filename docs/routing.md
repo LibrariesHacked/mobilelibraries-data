@@ -58,10 +58,11 @@ python scripts/routing.py --authority lancashire --force-engine
 All individual council route files are stored in `data/routes/`:
 
 * **`data/routes/official/<council>_official_routes.geojson`**: Authoritative route line geometries provided directly by local council GIS services (e.g. Lancashire).
+* **`data/routes/official/<council>_official_route_areas.geojson`**: Authoritative route area boundaries provided directly by local council GIS services (e.g. Norfolk).
 * **`data/routes/<council>_routes.csv`**: A spreadsheet of journeys between stops for that council. Each row shows the starting stop, destination stop, driving distance, driving time, and the road line geometry.
 * **`data/routes/<council>_routes.geojson`**: A map file that can be opened in mapping tools (like QGIS or web maps) to display the road lines visually.
 
 All council routes are also combined into single nationwide files:
 
-* **`data/uk_mobile_library_routes.csv`**: All 6,941 scheduled road trip legs across all 48 UK mobile library services.
-* **`data/uk_mobile_library_routes.geojson`**: Compact GeoJSON file containing all 1,160 route line geometries for the entire UK.
+* **`data/uk_mobile_library_routes.csv`**: All 7,016 scheduled road trip legs across all 50 UK mobile library services.
+* **`data/uk_mobile_library_routes.geojson`**: Compact GeoJSON file containing all 1,175 route line geometries for the entire UK.

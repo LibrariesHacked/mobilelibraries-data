@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-23T07:11:10.780957+00:00",
+  "generated_at": "2026-11-23T21:59:00.042283+00:00",
   "national_totals": {
     "authorities_with_mobile_service": 50,
     "active_vehicles": 103,
     "routes": 1267,
     "stops": 8284,
     "trips": 7016,
-    "distance_km": 61255.3,
-    "distance_miles": 38062.3,
-    "duration_hours": 1161.7,
+    "distance_km": 61242.4,
+    "distance_miles": 38054.3,
+    "duration_hours": 1161.4,
     "average_trip_distance_km": 8.73,
     "average_trip_distance_miles": 5.42,
     "average_trip_duration_minutes": 9.9
@@ -23,16 +23,16 @@
       "percentage": 23.3
     },
     "postcode": {
-      "count": 2805,
-      "percentage": 33.9
+      "count": 3487,
+      "percentage": 42.1
     },
     "community": {
-      "count": 682,
-      "percentage": 8.2
+      "count": 0,
+      "percentage": 0.0
     },
     "high_confidence_total": {
-      "count": 7602,
-      "percentage": 91.8
+      "count": 8284,
+      "percentage": 100.0
     }
   },
   "authorities": [
@@ -50,8 +50,8 @@
       "accuracy": {
         "exact": 15,
         "landmark": 44,
-        "postcode": 25,
-        "community": 38
+        "postcode": 63,
+        "community": 0
       }
     },
     {
@@ -86,8 +86,8 @@
       "accuracy": {
         "exact": 1,
         "landmark": 40,
-        "postcode": 72,
-        "community": 1
+        "postcode": 73,
+        "community": 0
       }
     },
     {
@@ -122,8 +122,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 35,
-        "postcode": 16,
-        "community": 6
+        "postcode": 22,
+        "community": 0
       }
     },
     {
@@ -140,8 +140,8 @@
       "accuracy": {
         "exact": 7,
         "landmark": 28,
-        "postcode": 52,
-        "community": 5
+        "postcode": 57,
+        "community": 0
       }
     },
     {
@@ -194,8 +194,8 @@
       "accuracy": {
         "exact": 1,
         "landmark": 4,
-        "postcode": 21,
-        "community": 1
+        "postcode": 22,
+        "community": 0
       }
     },
     {
@@ -212,8 +212,8 @@
       "accuracy": {
         "exact": 22,
         "landmark": 45,
-        "postcode": 26,
-        "community": 51
+        "postcode": 77,
+        "community": 0
       }
     },
     {
@@ -230,8 +230,8 @@
       "accuracy": {
         "exact": 11,
         "landmark": 24,
-        "postcode": 53,
-        "community": 7
+        "postcode": 60,
+        "community": 0
       }
     },
     {
@@ -248,8 +248,8 @@
       "accuracy": {
         "exact": 6,
         "landmark": 62,
-        "postcode": 79,
-        "community": 32
+        "postcode": 111,
+        "community": 0
       }
     },
     {
@@ -266,8 +266,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 14,
-        "postcode": 75,
-        "community": 4
+        "postcode": 79,
+        "community": 0
       }
     },
     {
@@ -320,8 +320,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 46,
-        "postcode": 68,
-        "community": 5
+        "postcode": 73,
+        "community": 0
       }
     },
     {
@@ -338,8 +338,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 21,
-        "postcode": 22,
-        "community": 2
+        "postcode": 24,
+        "community": 0
       }
     },
     {
@@ -356,8 +356,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 111,
-        "postcode": 183,
-        "community": 175
+        "postcode": 358,
+        "community": 0
       }
     },
     {
@@ -428,8 +428,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 82,
-        "postcode": 94,
-        "community": 66
+        "postcode": 160,
+        "community": 0
       }
     },
     {
@@ -464,8 +464,8 @@
       "accuracy": {
         "exact": 11,
         "landmark": 97,
-        "postcode": 52,
-        "community": 43
+        "postcode": 95,
+        "community": 0
       }
     },
     {
@@ -482,8 +482,8 @@
       "accuracy": {
         "exact": 15,
         "landmark": 24,
-        "postcode": 24,
-        "community": 1
+        "postcode": 25,
+        "community": 0
       }
     },
     {
@@ -500,8 +500,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 26,
-        "postcode": 34,
-        "community": 3
+        "postcode": 37,
+        "community": 0
       }
     },
     {
@@ -554,8 +554,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 22,
-        "postcode": 6,
-        "community": 7
+        "postcode": 13,
+        "community": 0
       }
     },
     {
@@ -572,8 +572,8 @@
       "accuracy": {
         "exact": 3,
         "landmark": 26,
-        "postcode": 1,
-        "community": 12
+        "postcode": 13,
+        "community": 0
       }
     },
     {
@@ -608,8 +608,8 @@
       "accuracy": {
         "exact": 5,
         "landmark": 118,
-        "postcode": 146,
-        "community": 129
+        "postcode": 275,
+        "community": 0
       }
     },
     {
@@ -626,8 +626,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 28,
-        "postcode": 25,
-        "community": 10
+        "postcode": 35,
+        "community": 0
       }
     },
     {
@@ -644,8 +644,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 25,
-        "postcode": 29,
-        "community": 4
+        "postcode": 33,
+        "community": 0
       }
     },
     {
@@ -662,8 +662,8 @@
       "accuracy": {
         "exact": 14,
         "landmark": 31,
-        "postcode": 71,
-        "community": 13
+        "postcode": 84,
+        "community": 0
       }
     },
     {
@@ -698,8 +698,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 15,
-        "postcode": 16,
-        "community": 30
+        "postcode": 46,
+        "community": 0
       }
     },
     {
@@ -770,8 +770,8 @@
       "accuracy": {
         "exact": 1,
         "landmark": 33,
-        "postcode": 10,
-        "community": 11
+        "postcode": 21,
+        "community": 0
       }
     },
     {
@@ -800,9 +800,9 @@
       "routes": 12,
       "stops": 52,
       "trips": 40,
-      "distance_km": 139.2,
-      "distance_miles": 86.5,
-      "duration_hours": 3.8,
+      "distance_km": 126.3,
+      "distance_miles": 78.5,
+      "duration_hours": 3.5,
       "accuracy": {
         "exact": 0,
         "landmark": 19,
@@ -842,8 +842,8 @@
       "accuracy": {
         "exact": 15,
         "landmark": 36,
-        "postcode": 67,
-        "community": 14
+        "postcode": 81,
+        "community": 0
       }
     },
     {
@@ -860,8 +860,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 110,
-        "postcode": 120,
-        "community": 8
+        "postcode": 128,
+        "community": 0
       }
     },
     {
@@ -878,8 +878,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 15,
-        "postcode": 37,
-        "community": 2
+        "postcode": 39,
+        "community": 0
       }
     },
     {
@@ -896,8 +896,8 @@
       "accuracy": {
         "exact": 0,
         "landmark": 166,
-        "postcode": 192,
-        "community": 2
+        "postcode": 194,
+        "community": 0
       }
     },
     {

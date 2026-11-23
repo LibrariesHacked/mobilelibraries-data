@@ -315,7 +315,7 @@ def batch_reverse_geocode_postcodes(coords_list: list) -> dict:
     for i in range(0, len(clean_coords), 100):
         chunk = clean_coords[i:i + 100]
         payload = {
-            "geolocations": [{"latitude": lat, "longitude": lon, "limit": 1} for lat, lon in chunk]
+            "geolocations": [{"latitude": lat, "longitude": lon, "radius": 1000, "limit": 1} for lat, lon in chunk]
         }
         try:
             data = http_post_json(url, payload)
@@ -428,7 +428,7 @@ def reverse_geocode_postcode(lat, lng, cache):
     """Nearest postcode for a coordinate via Postcodes.io ('' if none). Cached in `cache`."""
     key = f'{round(lat, 4)},{round(lng, 4)}'
     if key not in cache:
-        url = f'https://api.postcodes.io/postcodes?lat={lat}&lon={lng}&limit=1'
+        url = f'https://api.postcodes.io/postcodes?lat={lat}&lon={lng}&limit=1&radius=1000'
         try:
             result = json.loads(http_get(url, timeout=5, retries=1)).get('result')
             cache[key] = result[0]['postcode'] if result else ''

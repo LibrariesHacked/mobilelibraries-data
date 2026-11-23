@@ -14,7 +14,7 @@ It is part of the [Libraries Hacked](https://www.librarieshacked.org) project. F
 * **103 mobile library vehicles** operated by 50 library services
 * **61,255 km (38,062 miles)** of scheduled road routes across 7,016 trip legs
 * **10 minutes (8.7 km)** average driving time between stops
-* **Over 90%** of stop coordinates mapped to an exact building, parking space, or postcode
+* **100%** of stop coordinates mapped to an exact building, parking space, or postcode
 
 ## Published datasets
 

@@ -48,3 +48,7 @@ jobs:
       - name: Build and verify unified UK dataset and summary
         run: |
           python scripts/combine.py
+
+      - name: Check for uncommitted generated data changes
+        run: |
+          git diff --exit-code data/
