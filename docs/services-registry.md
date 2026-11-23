@@ -25,9 +25,9 @@ It records whether each council operates a mobile library van, links to their ti
 
 Every council is given one of these verified statuses:
 
-1. **`Active Verified` (48 councils):**
+1. **`Active Verified` (50 councils):**
    * The council currently runs a mobile library and publishes a timetable of public stops. Data is collected and kept up to date in `data/<council>.csv`.
-2. **`No Mobile (Urban/Home Delivery)` (125 councils):**
+2. **`No Mobile (Urban/Home Delivery)` (123 councils):**
    * The council does not operate a mobile library vehicle. Most of these are city and town councils where residents live close to a physical library building, or councils that deliver books directly to people's homes.
 3. **`Discontinued` (34 councils):**
    * The council used to run a mobile library, but the service has closed down.

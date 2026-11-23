@@ -488,6 +488,24 @@
       "mediatype": "text/csv",
       "encoding": "utf-8",
       "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-edinburgh",
+      "title": "City of Edinburgh Mobile Library Stops",
+      "path": "data/edinburgh.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
+    },
+    {
+      "name": "stops-stockton_on_tees",
+      "title": "Stockton-on-Tees Mobile Library Stops",
+      "path": "data/stockton_on_tees.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "schema": "schemas/mobile-library-stops.json"
     }
   ]
 }

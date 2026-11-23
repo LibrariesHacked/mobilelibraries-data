@@ -1,0 +1,590 @@
+{
+  "objectIdFieldName": "FID",
+  "uniqueIdField": {
+    "name": "FID",
+    "isSystemMaintained": true
+  },
+  "globalIdFieldName": "",
+  "geometryType": "esriGeometryPoint",
+  "spatialReference": {
+    "wkid": 4326,
+    "latestWkid": 4326
+  },
+  "fields": [
+    {
+      "name": "Title",
+      "type": "esriFieldTypeString",
+      "alias": "Title",
+      "sqlType": "sqlTypeNVarchar",
+      "length": 4000,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Latitude",
+      "type": "esriFieldTypeDouble",
+      "alias": "Latitude",
+      "sqlType": "sqlTypeFloat",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "Longitude",
+      "type": "esriFieldTypeDouble",
+      "alias": "Longitude",
+      "sqlType": "sqlTypeFloat",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "FID",
+      "type": "esriFieldTypeOID",
+      "alias": "FID",
+      "sqlType": "sqlTypeInteger",
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "Title": "Mobile Library garage/Oxgangs Library",
+        "Latitude": 55.905488,
+        "Longitude": -3.2235217,
+        "FID": 1
+      },
+      "geometry": {
+        "x": -3.2235217,
+        "y": 55.905488
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Howdenhall Drive",
+        "Latitude": 55.904001,
+        "Longitude": -3.1746702,
+        "FID": 2
+      },
+      "geometry": {
+        "x": -3.1746702,
+        "y": 55.904000999999994
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Alnwickhill Park",
+        "Latitude": 55.906407,
+        "Longitude": -3.1681725,
+        "FID": 3
+      },
+      "geometry": {
+        "x": -3.1681725,
+        "y": 55.906407
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Walter Scott Avenue/Bellenden Gardens (Red Stop)",
+        "Latitude": 55.921986,
+        "Longitude": -3.1535071,
+        "FID": 4
+      },
+      "geometry": {
+        "x": -3.1535071,
+        "y": 55.92198599999999
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Walter Scott Avenue/Bellenden Gardens (Blue Stop)",
+        "Latitude": 55.922384,
+        "Longitude": -3.1527686,
+        "FID": 5
+      },
+      "geometry": {
+        "x": -3.1527686,
+        "y": 55.922384
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Dumbiedykes, Braidwood Centre",
+        "Latitude": 55.948573,
+        "Longitude": -3.1779501,
+        "FID": 6
+      },
+      "geometry": {
+        "x": -3.1779501,
+        "y": 55.948573
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Prestonfield Avenue",
+        "Latitude": 55.933152,
+        "Longitude": -3.1584209,
+        "FID": 7
+      },
+      "geometry": {
+        "x": -3.1584209,
+        "y": 55.93315200000001
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Gilmerton Road",
+        "Latitude": 55.919126,
+        "Longitude": -3.1560123,
+        "FID": 8
+      },
+      "geometry": {
+        "x": -3.1560123,
+        "y": 55.91912599999999
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Liberton Drive",
+        "Latitude": 55.911988,
+        "Longitude": -3.1653786,
+        "FID": 9
+      },
+      "geometry": {
+        "x": -3.1653786,
+        "y": 55.911988
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Mortonhall Park Gardens",
+        "Latitude": 55.89996,
+        "Longitude": -3.1713367,
+        "FID": 10
+      },
+      "geometry": {
+        "x": -3.1713367,
+        "y": 55.89996
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Craiglockhart Terrace SH",
+        "Latitude": 55.927031,
+        "Longitude": -3.2281011,
+        "FID": 11
+      },
+      "geometry": {
+        "x": -3.2281011000000004,
+        "y": 55.92703099999999
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Gillsland Grove",
+        "Latitude": 55.932782,
+        "Longitude": -3.2221019,
+        "FID": 12
+      },
+      "geometry": {
+        "x": -3.2221019,
+        "y": 55.932782
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Roseburn Court (CLOSED)",
+        "Latitude": 55.943943,
+        "Longitude": -3.2382667,
+        "FID": 13
+      },
+      "geometry": {
+        "x": -3.2382667,
+        "y": 55.94394299999999
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Saughton Cresent",
+        "Latitude": 55.943483,
+        "Longitude": -3.2551396,
+        "FID": 14
+      },
+      "geometry": {
+        "x": -3.2551396000000006,
+        "y": 55.943483
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Carrickvale Community Centre",
+        "Latitude": 55.931184,
+        "Longitude": -3.2645702,
+        "FID": 15
+      },
+      "geometry": {
+        "x": -3.2645702000000005,
+        "y": 55.931183999999995
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Forrester Park Avenue",
+        "Latitude": 55.932684,
+        "Longitude": -3.2815245,
+        "FID": 16
+      },
+      "geometry": {
+        "x": -3.2815245,
+        "y": 55.932683999999995
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Broomhouse Crescent",
+        "Latitude": 55.928225,
+        "Longitude": -3.2776648,
+        "FID": 17
+      },
+      "geometry": {
+        "x": -3.2776648000000006,
+        "y": 55.928225
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Redhall Drive",
+        "Latitude": 55.921503,
+        "Longitude": -3.2580489,
+        "FID": 18
+      },
+      "geometry": {
+        "x": -3.2580489,
+        "y": 55.921502999999994
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Craiglockhart Drive North",
+        "Latitude": 55.923281,
+        "Longitude": -3.240509,
+        "FID": 19
+      },
+      "geometry": {
+        "x": -3.240509,
+        "y": 55.923280999999996
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Foulis Crescent, corner of Baberton Crescent",
+        "Latitude": 55.906251,
+        "Longitude": -3.2824811,
+        "FID": 21
+      },
+      "geometry": {
+        "x": -3.2824811,
+        "y": 55.90625099999999
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Merriliees Gate, Baberton Avenue",
+        "Latitude": 55.906228,
+        "Longitude": -3.2863319,
+        "FID": 22
+      },
+      "geometry": {
+        "x": -3.2863318999999995,
+        "y": 55.90622799999999
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Gogar Bank",
+        "Latitude": 55.921736,
+        "Longitude": -3.3357954,
+        "FID": 23
+      },
+      "geometry": {
+        "x": -3.3357954,
+        "y": 55.92173599999999
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Hermiston Village",
+        "Latitude": 55.918285,
+        "Longitude": -3.3163691,
+        "FID": 24
+      },
+      "geometry": {
+        "x": -3.3163691,
+        "y": 55.918285
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Bonnington Cottages (Bonnington Village)",
+        "Latitude": 55.909508,
+        "Longitude": -3.4084931,
+        "FID": 25
+      },
+      "geometry": {
+        "x": -3.4084930999999994,
+        "y": 55.909508
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Newbridge, Parkside.",
+        "Latitude": 55.93806,
+        "Longitude": -3.4093791,
+        "FID": 26
+      },
+      "geometry": {
+        "x": -3.4093790999999998,
+        "y": 55.93806
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Ratho Station, Hillwood Rise",
+        "Latitude": 55.93806,
+        "Longitude": -3.4093791,
+        "FID": 27
+      },
+      "geometry": {
+        "x": -3.4093790999999998,
+        "y": 55.93806
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Whitehouse Road, junction with Cramond Glebe Road",
+        "Latitude": 55.975431,
+        "Longitude": -3.2997103,
+        "FID": 28
+      },
+      "geometry": {
+        "x": -3.2997103,
+        "y": 55.975431
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Barnton, Whitehouse Road",
+        "Latitude": 55.962994,
+        "Longitude": -3.3069161,
+        "FID": 29
+      },
+      "geometry": {
+        "x": -3.3069161000000005,
+        "y": 55.962994
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Dalmeny Village, Dalmeny Square.",
+        "Latitude": 55.981954,
+        "Longitude": -3.3744076,
+        "FID": 30
+      },
+      "geometry": {
+        "x": -3.3744076000000005,
+        "y": 55.981953999999995
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Scotstoun, (Queen's Retreat), South Queensferry",
+        "Latitude": 55.98339,
+        "Longitude": -3.3917896,
+        "FID": 31
+      },
+      "geometry": {
+        "x": -3.3917896,
+        "y": 55.98338999999999
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Cammo Gardens",
+        "Latitude": 55.959738,
+        "Longitude": -3.3080453,
+        "FID": 32
+      },
+      "geometry": {
+        "x": -3.3080453,
+        "y": 55.959737999999994
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Bartongate Avenue",
+        "Latitude": 55.959057,
+        "Longitude": -3.3035213,
+        "FID": 33
+      },
+      "geometry": {
+        "x": -3.3035213,
+        "y": 55.959056999999994
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Stuart Square/Stuart Crescent (Red Stop)",
+        "Latitude": 55.949633,
+        "Longitude": -3.3032785,
+        "FID": 34
+      },
+      "geometry": {
+        "x": -3.3032785,
+        "y": 55.949633
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Stuart Square/Stuart Crescent (Blue Stop)",
+        "Latitude": 55.949354,
+        "Longitude": -3.303169,
+        "FID": 35
+      },
+      "geometry": {
+        "x": -3.303169,
+        "y": 55.949353999999985
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Turnhouse Road - Turnhouse Golf Club/Lennie Cottages (Red Stop)",
+        "Latitude": 55.949711,
+        "Longitude": -3.3342737,
+        "FID": 36
+      },
+      "geometry": {
+        "x": -3.3342737,
+        "y": 55.949711
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Turnhouse Road - Turnhouse Golf Club/Lennie Cottages (Blue Stop)",
+        "Latitude": 55.949573,
+        "Longitude": -3.333267,
+        "FID": 37
+      },
+      "geometry": {
+        "x": -3.333267,
+        "y": 55.949572999999994
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Turnhouse Road",
+        "Latitude": 55.941947,
+        "Longitude": -3.3173418,
+        "FID": 38
+      },
+      "geometry": {
+        "x": -3.3173418,
+        "y": 55.941946999999985
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Clark Road",
+        "Latitude": 55.974912,
+        "Longitude": -3.2071424,
+        "FID": 39
+      },
+      "geometry": {
+        "x": -3.2071424,
+        "y": 55.97491200000001
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Pilrig House Close",
+        "Latitude": 55.969548,
+        "Longitude": -3.1816006,
+        "FID": 40
+      },
+      "geometry": {
+        "x": -3.1816006,
+        "y": 55.969547999999996
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Claremont Road",
+        "Latitude": 55.96794,
+        "Longitude": -3.1559801,
+        "FID": 41
+      },
+      "geometry": {
+        "x": -3.1559801,
+        "y": 55.96794
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Restalrig Road South (Ripple Project)",
+        "Latitude": 55.964083,
+        "Longitude": -3.154335,
+        "FID": 42
+      },
+      "geometry": {
+        "x": -3.1543349999999997,
+        "y": 55.96408300000001
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Newcraighall Drive",
+        "Latitude": 55.934424,
+        "Longitude": -3.091912,
+        "FID": 43
+      },
+      "geometry": {
+        "x": -3.0919120000000007,
+        "y": 55.93442399999999
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Magdalene Drive, layby at shops",
+        "Latitude": 55.942303,
+        "Longitude": -3.1085837,
+        "FID": 44
+      },
+      "geometry": {
+        "x": -3.1085837,
+        "y": 55.942303
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Glenvarloch Crescent",
+        "Latitude": 55.917462,
+        "Longitude": -3.1592408,
+        "FID": 45
+      },
+      "geometry": {
+        "x": -3.1592407999999996,
+        "y": 55.91746199999999
+      }
+    },
+    {
+      "attributes": {
+        "Title": "Buckstone Circle",
+        "Latitude": 55.903464,
+        "Longitude": -3.1974846,
+        "FID": 46
+      },
+      "geometry": {
+        "x": -3.1974846,
+        "y": 55.90346399999999
+      }
+    }
+  ]
+}

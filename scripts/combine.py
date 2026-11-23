@@ -66,12 +66,41 @@ def determine_accuracy(row, manual_pins):
     if full_k in manual_pins or short_k in manual_pins:
         return "exact", "manual_verified", 5, True
 
-    gis_authorities = {"shropshire", "lancashire", "essex", "norfolk", "bath_and_north_east_somerset"}
+    gis_authorities = {
+        "shropshire",
+        "lancashire",
+        "essex",
+        "norfolk",
+        "bath_and_north_east_somerset",
+        "worcestershire",
+        "north_lincolnshire",
+        "york",
+        "city_of_edinburgh",
+        "edinburgh",
+        "cambridgeshire",
+    }
     auth_slug = re.sub(r"[^a-z0-9]+", "_", auth.lower()).strip("_")
     if auth_slug in gis_authorities:
         return "exact", "council_gis", 10, False
 
-    landmark_keywords = ["hall", "school", "pub", "inn", "church", "centre", "center", "car park", "surgery"]
+    landmark_keywords = [
+        "hall",
+        "school",
+        "pub",
+        "inn",
+        "church",
+        "centre",
+        "center",
+        "car park",
+        "surgery",
+        "court",
+        "house",
+        "club",
+        "nursery",
+        "clinic",
+        "pavilion",
+        "station",
+    ]
     has_landmark = any(kw in stop.lower() or kw in (row.get("Address") or "").lower() for kw in landmark_keywords)
 
     if pc:

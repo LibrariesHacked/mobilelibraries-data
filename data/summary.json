@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-11-22T22:47:55.228507+00:00",
+  "generated_at": "2026-11-23T07:11:10.780957+00:00",
   "national_totals": {
-    "authorities_with_mobile_service": 48,
-    "active_vehicles": 101,
-    "routes": 1250,
-    "stops": 8192,
-    "trips": 6941,
-    "distance_km": 61002.6,
-    "distance_miles": 37905.2,
-    "duration_hours": 1154.3,
-    "average_trip_distance_km": 8.79,
-    "average_trip_distance_miles": 5.46,
-    "average_trip_duration_minutes": 10.0
+    "authorities_with_mobile_service": 50,
+    "active_vehicles": 103,
+    "routes": 1267,
+    "stops": 8284,
+    "trips": 7016,
+    "distance_km": 61255.3,
+    "distance_miles": 38062.3,
+    "duration_hours": 1161.7,
+    "average_trip_distance_km": 8.73,
+    "average_trip_distance_miles": 5.42,
+    "average_trip_duration_minutes": 9.9
   },
   "coordinate_accuracy": {
     "exact": {
-      "count": 2051,
-      "percentage": 25.0
+      "count": 2863,
+      "percentage": 34.6
     },
     "landmark": {
-      "count": 1624,
-      "percentage": 19.8
+      "count": 1934,
+      "percentage": 23.3
     },
     "postcode": {
-      "count": 3773,
-      "percentage": 46.1
+      "count": 2805,
+      "percentage": 33.9
     },
     "community": {
-      "count": 744,
-      "percentage": 9.1
+      "count": 682,
+      "percentage": 8.2
     },
     "high_confidence_total": {
-      "count": 7448,
-      "percentage": 90.9
+      "count": 7602,
+      "percentage": 91.8
     }
   },
   "authorities": [
@@ -49,9 +49,9 @@
       "duration_hours": 23.4,
       "accuracy": {
         "exact": 15,
-        "landmark": 40,
-        "postcode": 26,
-        "community": 41
+        "landmark": 44,
+        "postcode": 25,
+        "community": 38
       }
     },
     {
@@ -85,8 +85,8 @@
       "duration_hours": 8.6,
       "accuracy": {
         "exact": 1,
-        "landmark": 28,
-        "postcode": 84,
+        "landmark": 40,
+        "postcode": 72,
         "community": 1
       }
     },
@@ -102,9 +102,9 @@
       "distance_miles": 900.8,
       "duration_hours": 33.4,
       "accuracy": {
-        "exact": 0,
-        "landmark": 86,
-        "postcode": 301,
+        "exact": 387,
+        "landmark": 0,
+        "postcode": 0,
         "community": 0
       }
     },
@@ -139,9 +139,9 @@
       "duration_hours": 23.0,
       "accuracy": {
         "exact": 7,
-        "landmark": 23,
-        "postcode": 56,
-        "community": 6
+        "landmark": 28,
+        "postcode": 52,
+        "community": 5
       }
     },
     {
@@ -157,8 +157,26 @@
       "duration_hours": 6.9,
       "accuracy": {
         "exact": 0,
-        "landmark": 28,
-        "postcode": 44,
+        "landmark": 32,
+        "postcode": 40,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "City of Edinburgh",
+      "local_authority_code": "S12000036",
+      "dataset_slug": "edinburgh",
+      "vehicles": 1,
+      "routes": 5,
+      "stops": 40,
+      "trips": 35,
+      "distance_km": 113.5,
+      "distance_miles": 70.5,
+      "duration_hours": 3.6,
+      "accuracy": {
+        "exact": 40,
+        "landmark": 0,
+        "postcode": 0,
         "community": 0
       }
     },
@@ -193,9 +211,9 @@
       "duration_hours": 57.7,
       "accuracy": {
         "exact": 22,
-        "landmark": 42,
-        "postcode": 27,
-        "community": 53
+        "landmark": 45,
+        "postcode": 26,
+        "community": 51
       }
     },
     {
@@ -211,8 +229,8 @@
       "duration_hours": 16.4,
       "accuracy": {
         "exact": 11,
-        "landmark": 15,
-        "postcode": 62,
+        "landmark": 24,
+        "postcode": 53,
         "community": 7
       }
     },
@@ -229,9 +247,9 @@
       "duration_hours": 26.3,
       "accuracy": {
         "exact": 6,
-        "landmark": 55,
-        "postcode": 82,
-        "community": 36
+        "landmark": 62,
+        "postcode": 79,
+        "community": 32
       }
     },
     {
@@ -247,8 +265,8 @@
       "duration_hours": 10.0,
       "accuracy": {
         "exact": 0,
-        "landmark": 8,
-        "postcode": 81,
+        "landmark": 14,
+        "postcode": 75,
         "community": 4
       }
     },
@@ -265,8 +283,8 @@
       "duration_hours": 41.8,
       "accuracy": {
         "exact": 0,
-        "landmark": 45,
-        "postcode": 105,
+        "landmark": 64,
+        "postcode": 86,
         "community": 0
       }
     },
@@ -301,8 +319,8 @@
       "duration_hours": 14.8,
       "accuracy": {
         "exact": 0,
-        "landmark": 36,
-        "postcode": 78,
+        "landmark": 46,
+        "postcode": 68,
         "community": 5
       }
     },
@@ -319,8 +337,8 @@
       "duration_hours": 6.9,
       "accuracy": {
         "exact": 0,
-        "landmark": 18,
-        "postcode": 25,
+        "landmark": 21,
+        "postcode": 22,
         "community": 2
       }
     },
@@ -337,9 +355,9 @@
       "duration_hours": 190.8,
       "accuracy": {
         "exact": 0,
-        "landmark": 78,
-        "postcode": 206,
-        "community": 185
+        "landmark": 111,
+        "postcode": 183,
+        "community": 175
       }
     },
     {
@@ -355,8 +373,8 @@
       "duration_hours": 3.9,
       "accuracy": {
         "exact": 0,
-        "landmark": 10,
-        "postcode": 29,
+        "landmark": 23,
+        "postcode": 16,
         "community": 0
       }
     },
@@ -373,8 +391,8 @@
       "duration_hours": 27.3,
       "accuracy": {
         "exact": 21,
-        "landmark": 69,
-        "postcode": 184,
+        "landmark": 88,
+        "postcode": 165,
         "community": 0
       }
     },
@@ -409,9 +427,9 @@
       "duration_hours": 28.3,
       "accuracy": {
         "exact": 0,
-        "landmark": 68,
-        "postcode": 99,
-        "community": 75
+        "landmark": 82,
+        "postcode": 94,
+        "community": 66
       }
     },
     {
@@ -427,8 +445,8 @@
       "duration_hours": 28.7,
       "accuracy": {
         "exact": 23,
-        "landmark": 43,
-        "postcode": 221,
+        "landmark": 54,
+        "postcode": 210,
         "community": 0
       }
     },
@@ -445,9 +463,9 @@
       "duration_hours": 71.1,
       "accuracy": {
         "exact": 11,
-        "landmark": 90,
-        "postcode": 54,
-        "community": 48
+        "landmark": 97,
+        "postcode": 52,
+        "community": 43
       }
     },
     {
@@ -463,8 +481,8 @@
       "duration_hours": 5.7,
       "accuracy": {
         "exact": 15,
-        "landmark": 16,
-        "postcode": 32,
+        "landmark": 24,
+        "postcode": 24,
         "community": 1
       }
     },
@@ -481,9 +499,9 @@
       "duration_hours": 6.4,
       "accuracy": {
         "exact": 0,
-        "landmark": 23,
-        "postcode": 36,
-        "community": 4
+        "landmark": 26,
+        "postcode": 34,
+        "community": 3
       }
     },
     {
@@ -516,10 +534,10 @@
       "distance_miles": 252.9,
       "duration_hours": 10.7,
       "accuracy": {
-        "exact": 0,
-        "landmark": 22,
-        "postcode": 122,
-        "community": 3
+        "exact": 147,
+        "landmark": 0,
+        "postcode": 0,
+        "community": 0
       }
     },
     {
@@ -553,9 +571,9 @@
       "duration_hours": 0.0,
       "accuracy": {
         "exact": 3,
-        "landmark": 23,
-        "postcode": 2,
-        "community": 14
+        "landmark": 26,
+        "postcode": 1,
+        "community": 12
       }
     },
     {
@@ -571,8 +589,8 @@
       "duration_hours": 26.7,
       "accuracy": {
         "exact": 0,
-        "landmark": 27,
-        "postcode": 188,
+        "landmark": 35,
+        "postcode": 180,
         "community": 0
       }
     },
@@ -589,9 +607,9 @@
       "duration_hours": 55.2,
       "accuracy": {
         "exact": 5,
-        "landmark": 91,
-        "postcode": 158,
-        "community": 144
+        "landmark": 118,
+        "postcode": 146,
+        "community": 129
       }
     },
     {
@@ -607,9 +625,9 @@
       "duration_hours": 16.1,
       "accuracy": {
         "exact": 0,
-        "landmark": 24,
-        "postcode": 28,
-        "community": 11
+        "landmark": 28,
+        "postcode": 25,
+        "community": 10
       }
     },
     {
@@ -625,8 +643,8 @@
       "duration_hours": 9.6,
       "accuracy": {
         "exact": 0,
-        "landmark": 23,
-        "postcode": 31,
+        "landmark": 25,
+        "postcode": 29,
         "community": 4
       }
     },
@@ -643,8 +661,8 @@
       "duration_hours": 16.9,
       "accuracy": {
         "exact": 14,
-        "landmark": 16,
-        "postcode": 86,
+        "landmark": 31,
+        "postcode": 71,
         "community": 13
       }
     },
@@ -715,8 +733,8 @@
       "duration_hours": 0.0,
       "accuracy": {
         "exact": 0,
-        "landmark": 39,
-        "postcode": 68,
+        "landmark": 45,
+        "postcode": 62,
         "community": 0
       }
     },
@@ -733,8 +751,8 @@
       "duration_hours": 5.8,
       "accuracy": {
         "exact": 0,
-        "landmark": 36,
-        "postcode": 50,
+        "landmark": 42,
+        "postcode": 44,
         "community": 0
       }
     },
@@ -751,9 +769,9 @@
       "duration_hours": 13.5,
       "accuracy": {
         "exact": 1,
-        "landmark": 31,
+        "landmark": 33,
         "postcode": 10,
-        "community": 13
+        "community": 11
       }
     },
     {
@@ -769,8 +787,26 @@
       "duration_hours": 5.7,
       "accuracy": {
         "exact": 1,
-        "landmark": 15,
-        "postcode": 46,
+        "landmark": 21,
+        "postcode": 40,
+        "community": 0
+      }
+    },
+    {
+      "local_authority": "Stockton-on-Tees",
+      "local_authority_code": "E06000004",
+      "dataset_slug": "stockton_on_tees",
+      "vehicles": 1,
+      "routes": 12,
+      "stops": 52,
+      "trips": 40,
+      "distance_km": 139.2,
+      "distance_miles": 86.5,
+      "duration_hours": 3.8,
+      "accuracy": {
+        "exact": 0,
+        "landmark": 19,
+        "postcode": 33,
         "community": 0
       }
     },
@@ -787,8 +823,8 @@
       "duration_hours": 53.8,
       "accuracy": {
         "exact": 0,
-        "landmark": 149,
-        "postcode": 338,
+        "landmark": 182,
+        "postcode": 305,
         "community": 0
       }
     },
@@ -805,8 +841,8 @@
       "duration_hours": 19.8,
       "accuracy": {
         "exact": 15,
-        "landmark": 25,
-        "postcode": 78,
+        "landmark": 36,
+        "postcode": 67,
         "community": 14
       }
     },
@@ -823,9 +859,9 @@
       "duration_hours": 23.8,
       "accuracy": {
         "exact": 0,
-        "landmark": 61,
-        "postcode": 165,
-        "community": 12
+        "landmark": 110,
+        "postcode": 120,
+        "community": 8
       }
     },
     {
@@ -841,8 +877,8 @@
       "duration_hours": 5.5,
       "accuracy": {
         "exact": 0,
-        "landmark": 4,
-        "postcode": 48,
+        "landmark": 15,
+        "postcode": 37,
         "community": 2
       }
     },
@@ -859,8 +895,8 @@
       "duration_hours": 44.0,
       "accuracy": {
         "exact": 0,
-        "landmark": 93,
-        "postcode": 265,
+        "landmark": 166,
+        "postcode": 192,
         "community": 2
       }
     },
@@ -876,9 +912,9 @@
       "distance_miles": 487.7,
       "duration_hours": 19.9,
       "accuracy": {
-        "exact": 0,
-        "landmark": 40,
-        "postcode": 165,
+        "exact": 205,
+        "landmark": 0,
+        "postcode": 0,
         "community": 0
       }
     },
@@ -894,9 +930,9 @@
       "distance_miles": 80.9,
       "duration_hours": 2.9,
       "accuracy": {
-        "exact": 0,
-        "landmark": 7,
-        "postcode": 26,
+        "exact": 33,
+        "landmark": 0,
+        "postcode": 0,
         "community": 0
       }
     }

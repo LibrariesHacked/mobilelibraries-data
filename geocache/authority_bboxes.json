@@ -1,30 +1,30 @@
 {
   "angus": {
     "min_lat": 56.3958,
-    "max_lat": 56.9002,
-    "min_lon": -3.2862,
-    "max_lon": -2.3218
+    "max_lat": 56.976,
+    "min_lon": -3.4252,
+    "max_lon": -2.3134
   },
   "bath_and_north_east_somerset": {
-    "min_lat": 51.2004,
+    "min_lat": 51.2003,
     "max_lat": 51.4973,
-    "min_lon": -2.8204,
+    "min_lon": -2.8205,
     "max_lon": -2.1614
   },
   "bedford": {
     "min_lat": 51.9802,
-    "max_lat": 52.3875,
+    "max_lat": 52.3874,
     "min_lon": -1.0235,
-    "max_lon": -0.1759
+    "max_lon": -0.1736
   },
   "cambridgeshire": {
     "min_lat": 51.9401,
     "max_lat": 52.8186,
-    "min_lon": -0.6103,
+    "min_lon": -0.6102,
     "max_lon": 0.6288
   },
   "carmarthenshire": {
-    "min_lat": 51.6307,
+    "min_lat": 51.6314,
     "max_lat": 52.1929,
     "min_lon": -4.7858,
     "max_lon": -3.5969
@@ -33,7 +33,7 @@
     "min_lat": 52.4167,
     "max_lat": 53.5139,
     "min_lon": -3.0798,
-    "max_lon": -1.8781
+    "max_lon": -1.8811
   },
   "cheshire_west_and_chester": {
     "min_lat": 52.9161,
@@ -44,31 +44,31 @@
   "conwy": {
     "min_lat": 52.8991,
     "max_lat": 53.3621,
-    "min_lon": -4.0463,
+    "min_lon": -4.0461,
     "max_lon": -3.3426
   },
   "cornwall": {
-    "min_lat": 49.8788,
+    "min_lat": 49.878,
     "max_lat": 50.9673,
-    "min_lon": -5.8042,
-    "max_lon": -4.0664
+    "min_lon": -5.8057,
+    "max_lon": -4.0692
   },
   "county_durham": {
     "min_lat": 54.1772,
-    "max_lat": 54.996,
+    "max_lat": 54.9961,
     "min_lon": -2.387,
     "max_lon": -1.2597
   },
   "derbyshire": {
-    "min_lat": 52.6453,
+    "min_lat": 52.6241,
     "max_lat": 53.8004,
-    "min_lon": -2.1418,
-    "max_lon": -1.1075
+    "min_lon": -2.1356,
+    "max_lon": -1.1102
   },
   "east_ayrshire": {
     "min_lat": 55.2219,
     "max_lat": 55.8343,
-    "min_lon": -4.7291,
+    "min_lon": -4.7309,
     "max_lon": -3.9242
   },
   "east_riding_of_yorkshire": {
@@ -77,6 +77,12 @@
     "min_lon": -1.2063,
     "max_lon": 0.2686
   },
+  "edinburgh": {
+    "min_lat": 55.81,
+    "max_lat": 56.0734,
+    "min_lon": -3.5494,
+    "max_lon": -2.9519
+  },
   "essex": {
     "min_lat": 51.4354,
     "max_lat": 52.1628,
@@ -84,10 +90,10 @@
     "max_lon": 1.3752
   },
   "fife": {
-    "min_lat": 55.9198,
-    "max_lat": 56.5141,
-    "min_lon": -3.7457,
-    "max_lon": -2.4878
+    "min_lat": 55.9222,
+    "max_lat": 56.5197,
+    "min_lon": -3.748,
+    "max_lon": -2.4892
   },
   "flintshire": {
     "min_lat": 53.0007,
@@ -98,13 +104,13 @@
   "highland": {
     "min_lat": 55.8861,
     "max_lat": 58.7334,
-    "min_lon": -6.8346,
+    "min_lon": -6.8356,
     "max_lon": -2.9519
   },
   "hillingdon": {
     "min_lat": 51.3918,
     "max_lat": 51.6982,
-    "min_lon": -0.6309,
+    "min_lon": -0.631,
     "max_lon": -0.2508
   },
   "kent": {
@@ -123,7 +129,7 @@
     "min_lat": 52.1702,
     "max_lat": 53.1715,
     "min_lon": -1.7203,
-    "max_lon": -0.5439
+    "max_lon": -0.5408
   },
   "librariesni": {
     "min_lat": 53.9945,
@@ -132,20 +138,20 @@
     "max_lon": -5.3014
   },
   "lincolnshire": {
-    "min_lat": 52.5679,
-    "max_lat": 53.5445,
-    "min_lon": -0.8981,
-    "max_lon": 0.4774
+    "min_lat": 52.5678,
+    "max_lat": 53.6554,
+    "min_lon": -0.9016,
+    "max_lon": 0.4899
   },
   "midlothian": {
     "min_lat": 55.7208,
-    "max_lat": 55.9961,
+    "max_lat": 56.0021,
     "min_lon": -3.4125,
-    "max_lon": -2.8306
+    "max_lon": -2.7646
   },
   "neath_port_talbot": {
     "min_lat": 51.4519,
-    "max_lat": 51.9025,
+    "max_lat": 51.8956,
     "min_lon": -4.0221,
     "max_lon": -3.4339
   },
@@ -156,22 +162,22 @@
     "max_lon": 1.868
   },
   "north_lincolnshire": {
-    "min_lat": 53.3733,
+    "min_lat": 53.373,
     "max_lat": 53.7986,
-    "min_lon": -1.073,
-    "max_lon": -0.1186
+    "min_lon": -1.0742,
+    "max_lon": -0.1199
   },
   "north_somerset": {
     "min_lat": 51.218,
     "max_lat": 51.5656,
-    "min_lon": -3.1224,
-    "max_lon": -2.4956
+    "min_lon": -3.1188,
+    "max_lon": -2.4977
   },
   "north_yorkshire": {
     "min_lat": 53.5522,
     "max_lat": 54.646,
     "min_lon": -2.3948,
-    "max_lon": -0.1823
+    "max_lon": -0.182
   },
   "northumberland": {
     "min_lat": 54.7151,
@@ -180,13 +186,13 @@
     "max_lon": -1.3703
   },
   "nottinghamshire": {
-    "min_lat": 52.7125,
+    "min_lat": 52.7122,
     "max_lat": 53.5377,
-    "min_lon": -1.4651,
+    "min_lon": -1.4663,
     "max_lon": -0.2598
   },
   "orkney_islands": {
-    "min_lat": 58.7024,
+    "min_lat": 58.6896,
     "max_lat": 59.4107,
     "min_lon": -3.4734,
     "max_lon": -2.6658
@@ -195,11 +201,11 @@
     "min_lat": 51.5399,
     "max_lat": 52.1719,
     "min_lon": -5.3373,
-    "max_lon": -4.4392
+    "max_lon": -4.4131
   },
   "perth_and_kinross": {
     "min_lat": 56.0755,
-    "max_lat": 56.8556,
+    "max_lat": 56.8572,
     "min_lon": -4.5824,
     "max_lon": -2.9166
   },
@@ -223,7 +229,7 @@
   },
   "somerset": {
     "min_lat": 50.7526,
-    "max_lat": 51.3887,
+    "max_lat": 51.4054,
     "min_lon": -3.7809,
     "max_lon": -2.1408
   },
@@ -234,16 +240,22 @@
     "max_lon": -4.352
   },
   "staffordshire": {
-    "min_lat": 52.4992,
+    "min_lat": 52.5008,
     "max_lat": 53.2511,
     "min_lon": -2.5409,
-    "max_lon": -1.5463
+    "max_lon": -1.5471
   },
   "stirling": {
     "min_lat": 55.9554,
     "max_lat": 56.5258,
     "min_lon": -4.8509,
     "max_lon": -3.7089
+  },
+  "stockton_on_tees": {
+    "min_lat": 54.3901,
+    "max_lat": 54.7259,
+    "min_lon": -1.6244,
+    "max_lon": -1.0972
   },
   "suffolk": {
     "min_lat": 51.8529,
@@ -254,14 +266,20 @@
   "the_scottish_borders": {
     "min_lat": 55.0893,
     "max_lat": 56.0538,
-    "min_lon": -4.2653,
+    "min_lon": -3.6092,
     "max_lon": -1.7726
   },
+  "uk_mobile_library_stops_accuracy": {
+    "min_lat": 52.0559,
+    "max_lat": 53.56,
+    "min_lon": -2.9958,
+    "max_lon": -0.378
+  },
   "warwickshire": {
-    "min_lat": 51.8808,
-    "max_lat": 52.7539,
+    "min_lat": 51.9,
+    "max_lat": 52.7671,
     "min_lon": -2.0524,
-    "max_lon": -1.0798
+    "max_lon": -1.0797
   },
   "west_dunbartonshire": {
     "min_lat": 55.8147,
@@ -271,7 +289,7 @@
   },
   "wiltshire": {
     "min_lat": 50.8647,
-    "max_lat": 51.7346,
+    "max_lat": 51.7347,
     "min_lon": -2.4658,
     "max_lon": -1.3984
   },
@@ -279,12 +297,12 @@
     "min_lat": 51.8779,
     "max_lat": 52.519,
     "min_lon": -2.6917,
-    "max_lon": -1.667
+    "max_lon": -1.6669
   },
   "york": {
-    "min_lat": 53.8004,
-    "max_lat": 54.0775,
-    "min_lon": -1.1874,
-    "max_lon": -0.8869
+    "min_lat": 53.7567,
+    "max_lat": 54.0887,
+    "min_lon": -1.3447,
+    "max_lon": -0.7926
   }
 }

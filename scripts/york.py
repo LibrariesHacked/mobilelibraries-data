@@ -5,7 +5,7 @@ Harvests routes, timetables, and stops from Explore York official portal
 Geocodes via postcodes.io, validates schema compliance, and updates services.csv and geocache.
 """
 
-from _common import bulk_lookup_postcodes, clean_time, parse_time_range
+from _common import bulk_lookup_postcodes, clean_time, create_mobile_library_file, parse_time_range
 import os
 import re
 import csv
@@ -22,7 +22,12 @@ BASE_URL = "https://exploreyork.org.uk/getting-involved/mobile-library/"
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) LibrariesHacked/MobileLibrariesMonitor"}
 
-# Curated postcodes for York stops where postcodes.io can provide exact coordinates
+MAPSERVER_URL = (
+    "https://maps.york.gov.uk/arcgis/rest/services/Public/LV_LeisureCulture/MapServer/8/query?"
+    "where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=json"
+)
+
+# Curated postcodes for York stops
 POSTCODE_MAP = {
     "skelton-brecksfield": "YO30 1YF",
     "osbaldwick-theleyes": "YO10 3PR",
@@ -56,6 +61,42 @@ POSTCODE_MAP = {
     "wheldrake-valleyview": "YO19 6AW",
     "wheldrake-southbacklane": "YO19 6AT",
     "wheldrake-whiterosehouse": "YO19 6EE"
+}
+
+# Official council MapServer coordinates (City of York Council Layer 8)
+OFFICIAL_YORK_COORDS = {
+    "skelton-brecksfield": (-1.13029, 53.99931),
+    "osbaldwick-theleyes": (-1.03578, 53.95657),
+    "deighton": (-1.04706, 53.88992),
+    "heslington-mainstreet": (-1.04595, 53.94571),
+    "naburn-school": (-1.08945, 53.90235),
+    "hopgrovelanesouth": (-1.02694, 53.98748),
+    "stocktonlane-beansway": (-1.04025, 53.97405),
+    "stocktonontheforest-gaymeadow": (-1.00107, 53.99289),
+    "stocktonontheforest-villagehall": (-0.99495, 53.99992),
+    "stocktonontheforest-westfieldhouse": (-0.98982, 54.00311),
+    "holtby-churchrise": (-1.01060, 53.96623),
+    "murton-murtongarth": (-1.01459, 53.96612),
+    "acastermalbis-mountpleasant": (-1.10356, 53.90340),
+    "askhambryan-thepub": (-1.16384, 53.92827),
+    "askhamrichard-roseandcrown": (-1.18334, 53.92412),
+    "hessay": (-1.20474, 53.97346),
+    "rufforth-milestoneavenue": (-1.19409, 53.95537),
+    "osbaldwickvillage(nearthepub)": (-1.03346, 53.95937),
+    "badgerhill-yarburghway": (-1.03233, 53.95246),
+    "appletreevillage-meadlands": (-1.04269, 53.96450),
+    "mistralcourt": (-1.07053, 53.97375),
+    "stocktonlane-charlesmoor": (-1.05932, 53.97029),
+    "fieldcourt": (-1.05410, 53.96804),
+    "elvington-greyhorse": (-0.93532, 53.92052),
+    "elvington-surgery": (-0.94026, 53.92352),
+    "heworthwithout-communitycentre": (-1.04574, 53.96837),
+    "woodthorpe-acornway": (-1.12279, 53.93839),
+    "woodthorpe-ryecroftavenue": (-1.12922, 53.93753),
+    "wheldrake-courtneys": (-0.96353, 53.89807),
+    "wheldrake-valleyview": (-0.97429, 53.89473),
+    "wheldrake-southbacklane": (-0.95763, 53.89789),
+    "wheldrake-whiterosehouse": (-0.96296, 53.89643)
 }
 
 
@@ -183,10 +224,21 @@ def main():
         pc = item["postcode"]
 
         lat, lng = None, None
-        if pc in coords_cache:
-            lat = coords_cache[pc]["lat"]
-            lng = coords_cache[pc]["lon"]
-            pc = coords_cache[pc]["postcode"]
+        k_short = re.sub(r'[^a-z0-9]', '', f"{comm}-{stop}".lower())
+        k_full = item["norm_key"]
+        k_comm = re.sub(r'[^a-z0-9]', '', comm.lower())
+        k_stop = re.sub(r'[^a-z0-9]', '', stop.lower())
+
+        if k_short in OFFICIAL_YORK_COORDS:
+            lng, lat = OFFICIAL_YORK_COORDS[k_short]
+        elif k_full in OFFICIAL_YORK_COORDS:
+            lng, lat = OFFICIAL_YORK_COORDS[k_full]
+        elif k_stop in OFFICIAL_YORK_COORDS:
+            lng, lat = OFFICIAL_YORK_COORDS[k_stop]
+        elif k_comm in OFFICIAL_YORK_COORDS:
+            lng, lat = OFFICIAL_YORK_COORDS[k_comm]
+        elif pc in coords_cache:
+            lat, lng = coords_cache[pc]
 
         address = f"{stop}, {comm}" if stop != comm else comm
 
@@ -199,8 +251,8 @@ def main():
             "Stop": stop,
             "Address": address,
             "Postcode": pc,
-            "GeoX": round(float(lng), 6) if lng else "",
-            "GeoY": round(float(lat), 6) if lat else "",
+            "GeoX": round(float(lng), 5) if lng else "",
+            "GeoY": round(float(lat), 5) if lat else "",
             "Day": item["day"],
             "Type": "Public",
             "Arrival": item["arr"],
@@ -214,20 +266,10 @@ def main():
 
     print(f"[{DATASET_SLUG}] Prepared {len(stops_records)} validated stop records.")
 
-    # Write output CSV
+    # Write output CSV using standard creator
     output_path = os.path.join("data", f"{DATASET_SLUG}.csv")
-    fieldnames = [
-        "Local authority", "Local authority code", "Mobile name", "Route", "Community",
-        "Stop", "Address", "Postcode", "GeoX", "GeoY", "Day", "Type", "Arrival",
-        "Departure", "Frequency", "Start", "End", "Exceptions", "Timetable"
-    ]
-
-    with open(output_path, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(stops_records)
-
-    print(f"[{DATASET_SLUG}] Saved dataset to {output_path}")
+    create_mobile_library_file("york.csv", stops_records)
+    print(f"[{DATASET_SLUG}] Saved dataset to data/york.csv")
 
     # Frictionless validation
     print(f"[{DATASET_SLUG}] Validating schema compliance...")

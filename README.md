@@ -9,11 +9,11 @@ It is part of the [Libraries Hacked](https://www.librarieshacked.org) project. F
 
 ## The data at a glance
 
-* **8,192 stops** across the UK
-* **1,255 routes** on regular visiting cycles
-* **101 mobile library vehicles** operated by 48 library services
-* **61,320 km (38,100 miles)** of scheduled road routes across 6,937 trip legs
-* **10 minutes (8.8 km)** average driving time between stops
+* **8,284 stops** across the UK
+* **1,267 routes** on regular visiting cycles
+* **103 mobile library vehicles** operated by 50 library services
+* **61,255 km (38,062 miles)** of scheduled road routes across 7,016 trip legs
+* **10 minutes (8.7 km)** average driving time between stops
 * **Over 90%** of stop coordinates mapped to an exact building, parking space, or postcode
 
 ## Published datasets
@@ -22,7 +22,7 @@ It is part of the [Libraries Hacked](https://www.librarieshacked.org) project. F
 * **`data/uk_mobile_library_routes.csv`** and **`.geojson`**: Nationwide driving paths and road trip legs between consecutive stops.
 * **`data/uk_mobile_library_stops_accuracy.csv`**: Quality ratings and estimated precision radiuses for every stop pin.
 * **`data/summary.json`**: Up-to-date counts, travel distances, and accuracy breakdowns by authority and for the whole UK.
-* **`data/<council>.csv`**: Individual datasets for each of the 48 active local authorities.
+* **`data/<council>.csv`**: Individual datasets for each of the 50 active local authorities.
 
 ## Getting started
 
