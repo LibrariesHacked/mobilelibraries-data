@@ -1,4 +1,4 @@
-Local authority,Local authority code,Mobile name,Route,Community,Stop,Address,Postcode,GeoX,GeoY,Day,Type,Arrival,Departure,Frequency,Start,End,Exceptions,Timetable
+local_authority,local_authority_code,mobile_name,route,community,stop,address,postcode,geox,geoy,day,type,arrival,departure,frequency,start,end,exceptions,timetable
 York,E06000014,Explore York Mobile Library,Week 1 Monday,Skelton,Brecksfield,"Brecksfield, Skelton",YO30 1YF,-1.12968,53.99872,Monday,Public,14:40,15:50,FREQ=WEEKLY;INTERVAL=2,2026-01-12,2026-12-31,,https://exploreyork.org.uk/getting-involved/mobile-library/
 York,E06000014,Explore York Mobile Library,Week 1 Monday,Osbaldwick,The Leyes,"The Leyes, Osbaldwick",YO10 3PR,-1.03710,53.95669,Monday,Public,16:30,17:30,FREQ=WEEKLY;INTERVAL=2,2026-01-12,2026-12-31,,https://exploreyork.org.uk/getting-involved/mobile-library/
 York,E06000014,Explore York Mobile Library,Week 1 Thursday,Acaster Malbis,Mount Pleasant,"Mount Pleasant, Acaster Malbis",YO23 2UQ,-1.10356,53.90340,Thursday,Public,10:00,10:45,FREQ=WEEKLY;INTERVAL=2,2026-01-12,2026-12-31,,https://exploreyork.org.uk/getting-involved/mobile-library/

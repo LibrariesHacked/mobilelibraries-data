@@ -10,29 +10,34 @@ Every council file in `data/<council>.csv` and the combined nationwide file `dat
 
 | Column | Type | Is it required? | What it means | Example |
 | :--- | :--- | :--- | :--- | :--- |
-| `Local authority` | text | Yes | The council responsible for the service | `Conwy County Borough Council` |
-| `Local authority code` | text | Yes | Official 9-character council code (from the ONS) | `W06000003` |
-| `Mobile name` | text | Yes | Name of the van or mobile vehicle | `Mobile Library 1` |
-| `Route` | text | Yes | Name or identifier for the route schedule | `Week 1 Tuesday` |
-| `Community` | text | Optional | Village, town, parish, or neighbourhood | `Cerrigydrudion` |
-| `Stop` | text | Yes | Exact place where the van parks | `Parish Hall Car Park` |
-| `Address` | text | Optional | Street address or helpful directions | `High Street, Cerrigydrudion` |
-| `Postcode` | text | Optional | Nearest UK postcode | `LL21 4ST` |
-| `GeoX` | number | Optional | Longitude coordinate (how far east or west) | `-3.56120` |
-| `GeoY` | number | Optional | Latitude coordinate (how far north or south) | `53.02340` |
-| `Day` | text | Yes | Day of the week the van visits | `Tuesday` |
-| `Type` | text | Yes | Usually `Public` (available to everyone) | `Public` |
-| `Arrival` | time | Yes | When the van arrives (24-hour clock, HH:MM) | `10:15` |
-| `Departure` | time | Yes | When the van leaves (24-hour clock, HH:MM) | `11:00` |
-| `Frequency` | text | Yes | How often the visit repeats (see below) | `FREQ=WEEKLY;INTERVAL=3` |
-| `Start` | date | Yes | First date this timetable applies from | `2026-01-05` |
-| `End` | date | Optional | Last date this timetable applies to (if known) | `2026-12-23` |
-| `Exceptions` | text | Optional | Specific dates when the van will not visit | `2026-05-04,2026-05-25` |
-| `Timetable` | link | Optional | Web address for the council's timetable page | `https://www.conwy.gov.uk/...` |
+| `local_authority` | text | Yes | The council responsible for the service | `Conwy County Borough Council` |
+| `local_authority_code` | text | Yes | Official 9-character council code (from the ONS) | `W06000003` |
+| `mobile_name` | text | Yes | Name of the van or mobile vehicle | `Mobile Library 1` |
+| `route` | text | Yes | Name or identifier for the route schedule | `Week 1 Tuesday` |
+| `community` | text | Optional | Village, town, parish, or neighbourhood | `Cerrigydrudion` |
+| `stop` | text | Yes | Exact place where the van parks | `Parish Hall Car Park` |
+| `address` | text | Optional | Street address or helpful directions | `High Street, Cerrigydrudion` |
+| `postcode` | text | Optional | Nearest UK postcode | `LL21 4ST` |
+| `geox` | number | Optional | Longitude coordinate (how far east or west) | `-3.56120` |
+| `geoy` | number | Optional | Latitude coordinate (how far north or south) | `53.02340` |
+| `day` | text | Yes | Day of the week the van visits | `Tuesday` |
+| `type` | text | Yes | Usually `Public` (available to everyone) | `Public` |
+| `arrival` | time | Yes | When the van arrives (24-hour clock, HH:MM) | `10:15` |
+| `departure` | time | Yes | When the van leaves (24-hour clock, HH:MM) | `11:00` |
+| `frequency` | text | Yes | How often the visit repeats (see below) | `FREQ=WEEKLY;INTERVAL=3` |
+| `start` | date | Yes | First date this timetable applies from | `2026-01-05` |
+| `end` | date | Optional | Last date this timetable applies to (if known) | `2026-12-23` |
+| `exceptions` | text | Optional | Specific dates when the van will not visit | `2026-05-04,2026-05-25` |
+| `timetable` | link | Optional | Web address for the council's timetable page | `https://www.conwy.gov.uk/...` |
+
+## Composite primary key
+
+Each stop record in a table is uniquely identified by the combination of six fields:
+`["local_authority_code", "mobile_name", "route", "stop", "day", "arrival"]`
 
 ## How exceptions and closures are written
 
-The `Exceptions` column lists specific dates when a scheduled stop will not happen (for example, on a bank holiday or when a van is in for servicing).
+The `exceptions` column lists specific dates when a scheduled stop will not happen (for example, on a bank holiday or when a van is in for servicing).
 
 * **Format:** Dates must be written as a comma-separated list in year-month-day order (`YYYY-MM-DD`). For example: `2026-05-04,2026-05-25`.
 * **No plain text words:** General phrases like `"Public holidays"`, `"Bank holidays"`, or `"Closed over Christmas"` cannot be used here.

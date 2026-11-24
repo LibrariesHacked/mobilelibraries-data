@@ -1,4 +1,4 @@
-Local authority,Local authority code,Mobile name,Route,Community,Stop,Address,Postcode,GeoX,GeoY,Day,Type,Arrival,Departure,Frequency,Start,End,Exceptions,Timetable
+local_authority,local_authority_code,mobile_name,route,community,stop,address,postcode,geox,geoy,day,type,arrival,departure,frequency,start,end,exceptions,timetable
 Warwickshire,E10000031,Hawkes Point Mobile,B Route,Farnborough,Village Hall,"Village Hall, Farnborough",OX17 1EA,-1.36545,52.14520,Tuesday,Public,09:30,10:15,FREQ=WEEKLY;INTERVAL=4,2026-11-24,2027-11-30,,https://apps.warwickshire.gov.uk/MobileLibraries/library_routes/118
 Warwickshire,E10000031,Hawkes Point Mobile,B Route,Shotteswell,Bus Shelter,"Bus Shelter, Shotteswell",OX17 1HS,-1.38203,52.10656,Tuesday,Public,10:30,11:15,FREQ=WEEKLY;INTERVAL=4,2026-11-24,2027-11-30,,https://apps.warwickshire.gov.uk/MobileLibraries/library_routes/118
 Warwickshire,E10000031,Hawkes Point Mobile,B Route,Radway,Bus Shelter,"Bus Shelter, Radway",CV35 0UQ,-1.45858,52.13144,Tuesday,Public,11:30,11:50,FREQ=WEEKLY;INTERVAL=4,2026-11-24,2027-11-30,,https://apps.warwickshire.gov.uk/MobileLibraries/library_routes/118

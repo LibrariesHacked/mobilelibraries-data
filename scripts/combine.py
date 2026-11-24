@@ -52,10 +52,10 @@ def load_manual_pins():
 
 def determine_accuracy(row, manual_pins):
     """Classify stop into accuracy tier, source, estimated error radius, and verified flag."""
-    auth = row.get("Local authority", "")
-    comm = row.get("Community", "")
-    stop = row.get("Stop", "")
-    pc = (row.get("Postcode") or "").strip().upper()
+    auth = row.get("local_authority") or row.get("Local authority", "")
+    comm = row.get("community") or row.get("Community", "")
+    stop = row.get("stop") or row.get("Stop", "")
+    pc = (row.get("postcode") or row.get("Postcode") or "").strip().upper()
 
     auth_k = normalise_key(auth)
     comm_k = normalise_key(comm)
@@ -101,7 +101,7 @@ def determine_accuracy(row, manual_pins):
         "pavilion",
         "station",
     ]
-    has_landmark = any(kw in stop.lower() or kw in (row.get("Address") or "").lower() for kw in landmark_keywords)
+    has_landmark = any(kw in stop.lower() or kw in (row.get("address") or row.get("Address") or "").lower() for kw in landmark_keywords)
 
     if pc:
         if has_landmark:
@@ -125,9 +125,9 @@ def sync_library_services_reference():
             code = r.get('local_authority_code')
             name = r.get('official_name') or r.get('local_authority')
             if code:
-                rows.append({'Local authority code': code, 'Local authority': name})
+                rows.append({'local_authority_code': code, 'local_authority': name})
     with open(REF_SERVICES_CSV, mode='w', encoding='utf-8', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=['Local authority code', 'Local authority'])
+        writer = csv.DictWriter(f, fieldnames=['local_authority_code', 'local_authority'])
         writer.writeheader()
         writer.writerows(rows)
 
@@ -168,38 +168,42 @@ def combine_datasets():
 
                 tier, source, radius_m, verified = determine_accuracy(row, manual_pins)
                 accuracy_rows.append({
-                    'Local authority': row.get('Local authority', ''),
-                    'Local authority code': row.get('Local authority code', ''),
-                    'Mobile name': row.get('Mobile name', ''),
-                    'Route': row.get('Route', ''),
-                    'Community': row.get('Community', ''),
-                    'Stop': row.get('Stop', ''),
-                    'Address': row.get('Address', ''),
-                    'Postcode': row.get('Postcode', ''),
-                    'GeoX': row.get('GeoX', ''),
-                    'GeoY': row.get('GeoY', ''),
-                    'Accuracy tier': tier,
-                    'Geocoding source': source,
-                    'Estimated radius (m)': radius_m,
-                    'Verified': verified
+                    'local_authority': row.get('local_authority') or row.get('Local authority', ''),
+                    'local_authority_code': row.get('local_authority_code') or row.get('Local authority code', ''),
+                    'mobile_name': row.get('mobile_name') or row.get('Mobile name', ''),
+                    'route': row.get('route') or row.get('Route', ''),
+                    'community': row.get('community') or row.get('Community', ''),
+                    'stop': row.get('stop') or row.get('Stop', ''),
+                    'address': row.get('address') or row.get('Address', ''),
+                    'postcode': row.get('postcode') or row.get('Postcode', ''),
+                    'geox': row.get('geox') or row.get('GeoX', ''),
+                    'geoy': row.get('geoy') or row.get('GeoY', ''),
+                    'accuracy_tier': tier,
+                    'geocoding_source': source,
+                    'estimated_radius_m': radius_m,
+                    'verified': verified
                 })
 
                 # Build GeoJSON feature if coordinates are valid
-                geox_str = (row.get('GeoX') or '').strip()
-                geoy_str = (row.get('GeoY') or '').strip()
+                geox_str = (row.get('geox') or row.get('GeoX') or '').strip()
+                geoy_str = (row.get('geoy') or row.get('GeoY') or '').strip()
 
                 try:
                     if geox_str and geoy_str:
                         lon = round(float(geox_str), 5)
                         lat = round(float(geoy_str), 5)
-                        row['GeoX'] = f"{lon:.5f}"
-                        row['GeoY'] = f"{lat:.5f}"
+                        if 'geox' in row:
+                            row['geox'] = f"{lon:.5f}"
+                            row['geoy'] = f"{lat:.5f}"
+                        else:
+                            row['GeoX'] = f"{lon:.5f}"
+                            row['GeoY'] = f"{lat:.5f}"
                         # Basic UK bounds check (-9.0 to 2.5 lon, 49.0 to 61.5 lat)
                         if -9.0 <= lon <= 2.5 and 49.0 <= lat <= 61.5:
                             geocoded_count += 1
                             feature_props = {
                                 k: v for k, v in row.items()
-                                if k not in ('GeoX', 'GeoY')
+                                if k not in ('geox', 'geoy', 'GeoX', 'GeoY')
                             }
                             feature_props['accuracy_tier'] = tier
                             feature_props['geocoding_source'] = source
@@ -245,9 +249,9 @@ def combine_datasets():
 
     # 3. Write companion accuracy dataset
     accuracy_fieldnames = [
-        'Local authority', 'Local authority code', 'Mobile name', 'Route',
-        'Community', 'Stop', 'Address', 'Postcode', 'GeoX', 'GeoY',
-        'Accuracy tier', 'Geocoding source', 'Estimated radius (m)', 'Verified'
+        'local_authority', 'local_authority_code', 'mobile_name', 'route',
+        'community', 'stop', 'address', 'postcode', 'geox', 'geoy',
+        'accuracy_tier', 'geocoding_source', 'estimated_radius_m', 'verified'
     ]
     with open(OUTPUT_ACCURACY_CSV, mode='w', encoding='utf-8', newline='') as f:
         writer = csv.DictWriter(f, fieldnames=accuracy_fieldnames)
@@ -304,9 +308,9 @@ def generate_summary(all_rows, accuracy_rows):
     routes = set()
     auth_stops = defaultdict(list)
     for r in all_rows:
-        auth = r.get('Local authority', '')
-        mob = r.get('Mobile name', '')
-        rt = r.get('Route', '')
+        auth = r.get('local_authority') or r.get('Local authority', '')
+        mob = r.get('mobile_name') or r.get('Mobile name', '')
+        rt = r.get('route') or r.get('Route', '')
         authorities.add(auth)
         vehicles.add((auth, mob))
         routes.add((auth, mob, rt))
@@ -315,8 +319,8 @@ def generate_summary(all_rows, accuracy_rows):
     total_acc = Counter()
     auth_acc = defaultdict(Counter)
     for r in accuracy_rows:
-        auth = r.get('Local authority', '')
-        tier = r.get('Accuracy tier', '')
+        auth = r.get('local_authority') or r.get('Local authority', '')
+        tier = r.get('accuracy_tier') or r.get('Accuracy tier', '')
         total_acc[tier] += 1
         auth_acc[auth][tier] += 1
 

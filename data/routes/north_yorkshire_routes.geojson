@@ -4484,7 +4484,7 @@
           "distance": 48760.5,
           "duration": 2865.6
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route A (Friday)"
       }
     },
@@ -15848,7 +15848,7 @@
           "distance": 136667.4,
           "duration": 8436.7
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route A (Monday)"
       }
     },
@@ -23371,7 +23371,7 @@
           "distance": 84225.3,
           "duration": 5237.4
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route A (Thursday)"
       }
     },
@@ -40915,7 +40915,7 @@
           "distance": 250156.3,
           "duration": 12246.5
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route A (Tuesday)"
       }
     },
@@ -44150,7 +44150,7 @@
           "distance": 26805.4,
           "duration": 1481.7
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route A (Wednesday)"
       }
     },
@@ -44591,84 +44591,116 @@
             54.235423
           ],
           [
-            -1.348649,
-            54.235422
+            -1.348671,
+            54.235419
           ],
           [
-            -1.348594,
-            54.235403
+            -1.348608,
+            54.235397
           ],
           [
-            -1.348548,
-            54.235377
+            -1.348572,
+            54.235375
           ],
           [
-            -1.348518,
-            54.23534
+            -1.348527,
+            54.235331
           ],
           [
-            -1.348394,
-            54.235189
+            -1.348485,
+            54.235271
           ],
           [
-            -1.348326,
-            54.235099
+            -1.348423,
+            54.235184
           ],
           [
-            -1.348201,
-            54.235076
+            -1.348375,
+            54.235115
           ],
           [
-            -1.348003,
-            54.235081
+            -1.348301,
+            54.235071
           ],
           [
-            -1.347682,
-            54.235145
+            -1.348204,
+            54.23506
           ],
           [
-            -1.347306,
-            54.23518
+            -1.348109,
+            54.235064
           ],
           [
-            -1.347041,
-            54.235211
+            -1.348028,
+            54.235075
           ],
           [
-            -1.346835,
+            -1.347678,
+            54.235127
+          ],
+          [
+            -1.347302,
+            54.235176
+          ],
+          [
+            -1.347068,
+            54.235191
+          ],
+          [
+            -1.346901,
             54.235179
           ],
           [
-            -1.346691,
-            54.235137
+            -1.346772,
+            54.235162
+          ],
+          [
+            -1.346654,
+            54.23511
           ],
           [
             -1.3466,
             54.235062
           ],
           [
-            -1.346518,
-            54.234958
+            -1.34652,
+            54.234985
           ],
           [
-            -1.346429,
-            54.234691
+            -1.346461,
+            54.234875
           ],
           [
-            -1.346337,
-            54.234582
+            -1.346396,
+            54.234705
           ],
           [
-            -1.346152,
-            54.234523
+            -1.346344,
+            54.234628
           ],
           [
-            -1.345933,
-            54.234493
+            -1.346267,
+            54.234571
           ],
           [
-            -1.345646,
-            54.234483
+            -1.346158,
+            54.234535
+          ],
+          [
+            -1.346065,
+            54.234513
+          ],
+          [
+            -1.345921,
+            54.234498
+          ],
+          [
+            -1.345721,
+            54.234489
+          ],
+          [
+            -1.345645,
+            54.234485
           ],
           [
             -1.345441,
@@ -49328,19 +49360,19 @@
       "properties": {
         "segments": [
           {
-            "distance": 51534.3,
-            "duration": 3090.1
+            "distance": 51532.3,
+            "duration": 3089.6
           }
         ],
         "way_points": [
           0,
-          1290
+          1298
         ],
         "summary": {
-          "distance": 51534.3,
-          "duration": 3090.1
+          "distance": 51532.3,
+          "duration": 3089.6
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route B (Friday)"
       }
     },
@@ -65567,7 +65599,7 @@
           "distance": 194387.5,
           "duration": 9911.7
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route B (Monday)"
       }
     },
@@ -90155,7 +90187,7 @@
           "distance": 257693.1,
           "duration": 14095.7
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route B (Thursday)"
       }
     },
@@ -99494,7 +99526,7 @@
           "distance": 188585,
           "duration": 8036.1
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route B (Tuesday)"
       }
     },
@@ -107720,7 +107752,7 @@
           "distance": 86964.7,
           "duration": 4679.7
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route B (Wednesday)"
       }
     },
@@ -113834,7 +113866,7 @@
           "distance": 55407,
           "duration": 3199.8
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route C (Thursday)"
       }
     },
@@ -120253,7 +120285,7 @@
           "distance": 108804.1,
           "duration": 4876.3
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route C (Tuesday)"
       }
     },
@@ -125632,7 +125664,7 @@
           "distance": 86692.5,
           "duration": 3962.4
         },
-        "mobile": "Supermobile Library",
+        "mobile": "Mobile",
         "route": "Route D (Tuesday)"
       }
     }

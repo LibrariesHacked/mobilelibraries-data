@@ -16,13 +16,13 @@ LOCAL_AUTHORITY = 'Staffordshire'
 LOCAL_AUTHORITY_CODE = 'E10000028'
 BASE_URL = 'https://www.staffordshire.gov.uk/libraries/mobile-libraries'
 
-TIME_RANGE_RE = re.compile(r'(\d{1,2}):(\d{2})\s*(am|pm)\s*to\s*(\d{1,2}):(\d{2})\s*(am|pm)', re.IGNORECASE)
+TIME_RANGE_RE = re.compile(r'(\d{1,2})(?::(\d{2}))?\s*(am|pm)\s*to\s*(\d{1,2})(?::(\d{2}))?\s*(am|pm)', re.IGNORECASE)
 
 
 def parse_ampm(h_str, m_str, meridiem):
     """Convert 12-hour clock strings and 'am'/'pm' meridiem to zero-padded 24-hour 'HH:MM'."""
     hours = int(h_str)
-    minutes = int(m_str)
+    minutes = int(m_str) if m_str else 0
     mer = meridiem.upper()
     if mer == 'PM' and hours != 12:
         hours += 12
@@ -51,7 +51,7 @@ def run():
                 day_name = d
                 break
 
-        route_name = f"{m_week} - {day_name}"
+        route_name = f"{m_mob} - {m_week} - {day_name}"
         html = fpath.read_text(encoding='utf-8')
         soup = BeautifulSoup(html, 'html.parser')
 

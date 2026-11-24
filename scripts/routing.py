@@ -218,7 +218,7 @@ def generate_routes_for_authority(
     for (mobile, route) in sorted(routes.keys()):
         stops = routes[(mobile, route)]
         # Chronological sorting by arrival time ensures sequential driving order
-        stops.sort(key=lambda s: s.get("Arrival", ""))
+        stops.sort(key=lambda s: s.get("arrival") or s.get("Arrival", ""))
 
         valid_stops = []
         for s in stops:
@@ -271,13 +271,13 @@ def generate_routes_for_authority(
                 wkt = "LINESTRING (" + ",".join([f"{c[0]} {c[1]}" for c in seg_coords]) + ")"
                 trip_rows.append({
                     "WKT": wkt,
-                    "destination_stop": st_dest["raw"].get("Stop") or "",
+                    "destination_stop": st_dest["raw"].get("stop") or st_dest["raw"].get("Stop") or "",
                     "destination_stop_latitude": f"{st_dest['y']:.5f}",
                     "destination_stop_longitude": f"{st_dest['x']:.5f}",
                     "distance": dist,
                     "duration": dur,
                     "mobile": mobile,
-                    "origin_stop": st_orig["raw"].get("Stop") or "",
+                    "origin_stop": st_orig["raw"].get("stop") or st_orig["raw"].get("Stop") or "",
                     "origin_stop_latitude": f"{st_orig['y']:.5f}",
                     "origin_stop_longitude": f"{st_orig['x']:.5f}",
                     "route": route,

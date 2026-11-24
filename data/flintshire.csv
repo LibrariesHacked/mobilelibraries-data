@@ -1,4 +1,4 @@
-Local authority,Local authority code,Mobile name,Route,Community,Stop,Address,Postcode,GeoX,GeoY,Day,Type,Arrival,Departure,Frequency,Start,End,Exceptions,Timetable
+local_authority,local_authority_code,mobile_name,route,community,stop,address,postcode,geox,geoy,day,type,arrival,departure,frequency,start,end,exceptions,timetable
 Flintshire,W06000005,Flintshire Mobile Library,Week 1 Friday,Gwernymynydd,Uwch-y-Dre,"Uwch-y-Dre, Gwernymynydd, Flintshire",CH7 5LG,-3.17658,53.15286,Friday,Public,09:30,09:55,FREQ=WEEKLY;INTERVAL=2,2023-05-05,2027-06-27,,https://gwella.wales/libraries
 Flintshire,W06000005,Flintshire Mobile Library,Week 1 Friday,Mancot,Prince William Gardens,"Prince William Gardens, Mancot, Flintshire",CH5 2EH,-3.01324,53.19812,Friday,Public,09:30,10:00,FREQ=WEEKLY;INTERVAL=2,2023-05-05,2027-06-27,,https://gwella.wales/libraries
 Flintshire,W06000005,Flintshire Mobile Library,Week 1 Friday,Gwernaffield,Near The Hand (pub),"Near The Hand (pub), Gwernaffield, Flintshire",CH7 5DU,-3.18874,53.17146,Friday,Public,10:05,10:30,FREQ=WEEKLY;INTERVAL=2,2023-05-05,2027-06-27,,https://gwella.wales/libraries

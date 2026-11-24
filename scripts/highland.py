@@ -61,8 +61,8 @@ def extract_community_and_stop(stop_raw):
     """Clean stop text and extract community and stop name."""
     clean = re.sub(r'[\*\^]', '', stop_raw).strip()
     # Fix mojibake UTF-8 en-dash misdecoded as Latin-1/Windows-1252
-    clean = clean.replace('â\x80\x93', '-').replace('–', '-').replace('—', '-')
-    clean = re.sub(r'\s+', ' ', clean)
+    clean = clean.replace('â\x80\x93', ' - ').replace('â\x80\x99', "'").replace('Â', '').replace('–', '-').replace('—', '-')
+    clean = re.sub(r'\s+', ' ', clean).strip()
 
     if ',' in clean:
         parts = clean.split(',', 1)
@@ -87,18 +87,31 @@ def parse_page(mobile_name, url, filepath):
     tables = soup.find_all('table')
 
     for t_idx, tbl in enumerate(tables):
+        # Look for details/summary container first for the official route name
+        details = tbl.find_parent('details')
+        route_title = None
+        if details:
+            summary = details.find('summary')
+            if summary:
+                s_txt = summary.get_text(strip=True)
+                s_txt = s_txt.replace('â\x80\x93', ' - ').replace('–', ' - ').replace('—', ' - ').replace('Â', '')
+                s_txt = re.sub(r'\s+', ' ', s_txt).strip()
+                if s_txt:
+                    route_title = f"{mobile_name} - {s_txt}"
+
         # Look backwards for preceding headings or paragraphs to find route and day
         prev_elements = tbl.find_all_previous(['h2', 'h3', 'h4', 'p'])
-        route_title = f"{mobile_name} Route {t_idx+1}"
+        if not route_title:
+            route_title = f"{mobile_name} Route {t_idx+1}"
+            for el in prev_elements[:6]:
+                txt = el.get_text(strip=True)
+                if 'route' in txt.lower() and 'route includes' not in txt.lower():
+                    clean_txt = re.sub(r'Mondays?:.*', '', txt, flags=re.I).strip()
+                    clean_txt = clean_txt.replace('â\x80\x93', ' - ').replace('Â', '')
+                    route_title = f"{mobile_name} - {clean_txt}"
+                    break
+
         day = 'Monday'
-
-        # Limit lookback to 6 elements to avoid picking up headings from earlier tables
-        for el in prev_elements[:6]:
-            txt = el.get_text(strip=True)
-            if 'route' in txt.lower():
-                route_title = f"{mobile_name} - {txt}"
-                break
-
         for el in prev_elements[:6]:
             txt = el.get_text(strip=True)
             for d in ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']:

@@ -87,6 +87,9 @@ def run():
                 t_parts = re.split(r"\s+to\s+", time_cell, flags=re.I)
                 arr = clean_time_24h(t_parts[0]) if len(t_parts) > 0 else ""
                 dep = clean_time_24h(t_parts[1]) if len(t_parts) > 1 else ""
+                # Council typo fix: 11.55pm in Tuesday care home route is 11:55 am
+                if dep == "23:55":
+                    dep = "11:55"
 
                 for col_idx in range(1, len(tds)):
                     cell_text = tds[col_idx].get_text(" ", strip=True)
@@ -101,8 +104,8 @@ def run():
                     name = lines[0] if lines else text_no_pc
                     comm = lines[-1] if len(lines) > 1 else "Hillingdon"
 
-                    rota_date = header_cells[col_idx] if col_idx < len(header_cells) else f"Rota {col_idx}"
-                    route = f"{vehicle_name} Tuesday {rota_date}"
+                    rota_label = f"Week {col_idx}"
+                    route = f"{vehicle_name} Tuesday {rota_label}"
 
                     # Type: Day Centre / Sheltered Home / Care Home -> Private
                     stype = "Private" if any(w in name.lower() for w in ["court", "lodge", "centre", "home", "house", "nursing"]) else "Public"
@@ -163,7 +166,7 @@ def run():
                             "comm": comm,
                             "addr": f"{text_no_pc}, {pc}".strip(", "),
                             "postcode": pc,
-                            "route": f"{vehicle_name} {day} {rota_note}".strip(),
+                            "route": f"{vehicle_name} {day}".strip(),
                             # "D1 and D2 Month" indicates fortnightly (2-week) visits; a single date is 4-weekly
                             "freq": 2 if "and" in rota_note else 4,
                             "type": stype

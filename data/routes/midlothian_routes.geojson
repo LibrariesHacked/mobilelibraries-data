@@ -6427,7 +6427,7 @@
           "distance": 51470.9,
           "duration": 3770
         },
-        "mobile": "Mabel",
+        "mobile": "Mobile",
         "route": "Week 1 Friday"
       }
     },
@@ -8702,7 +8702,7 @@
           "distance": 17863.6,
           "duration": 1629.6
         },
-        "mobile": "Mabel",
+        "mobile": "Mobile",
         "route": "Week 1 Monday"
       }
     },
@@ -12343,7 +12343,7 @@
           "distance": 31078.6,
           "duration": 2047.4
         },
-        "mobile": "Mabel",
+        "mobile": "Mobile",
         "route": "Week 1 Thursday"
       }
     },
@@ -15077,7 +15077,7 @@
           "distance": 13902.2,
           "duration": 1740.1
         },
-        "mobile": "Mabel",
+        "mobile": "Mobile",
         "route": "Week 1 Tuesday"
       }
     },
@@ -15374,6 +15374,10 @@
             55.874223
           ],
           [
+            -3.000143,
+            55.874408
+          ],
+          [
             -3.000733,
             55.874635
           ],
@@ -15448,10 +15452,6 @@
           [
             -3.000733,
             55.874635
-          ],
-          [
-            -3.000143,
-            55.874408
           ],
           [
             -2.999662,
@@ -18051,12 +18051,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 2686.9,
-            "duration": 313.2
+            "distance": 2030.6,
+            "duration": 177.8
           },
           {
-            "distance": 1308.2,
-            "duration": 111.6
+            "distance": 1964.5,
+            "duration": 247
           },
           {
             "distance": 1439.2,
@@ -18077,7 +18077,7 @@
         ],
         "way_points": [
           0,
-          102,
+          80,
           148,
           210,
           293,
@@ -18088,7 +18088,7 @@
           "distance": 23389.9,
           "duration": 1912.8
         },
-        "mobile": "Mabel",
+        "mobile": "Mobile",
         "route": "Week 1 Wednesday"
       }
     },
@@ -21655,11 +21655,11 @@
         "segments": [
           {
             "distance": 860.2,
-            "duration": 151.5
+            "duration": 124.1
           },
           {
             "distance": 6423,
-            "duration": 459.7
+            "duration": 487.1
           },
           {
             "distance": 16838.5,
@@ -21686,7 +21686,7 @@
           "distance": 28006.4,
           "duration": 2084.3
         },
-        "mobile": "Mabel",
+        "mobile": "Mobile",
         "route": "Week 2 Friday"
       }
     },
@@ -23961,7 +23961,7 @@
           "distance": 17863.6,
           "duration": 1629.6
         },
-        "mobile": "Mabel",
+        "mobile": "Mobile",
         "route": "Week 2 Monday"
       }
     },
@@ -25810,6 +25810,10 @@
             55.844883
           ],
           [
+            -3.208894,
+            55.844886
+          ],
+          [
             -3.208932,
             55.844887
           ],
@@ -25844,10 +25848,6 @@
           [
             -3.208932,
             55.844887
-          ],
-          [
-            -3.208894,
-            55.844886
           ],
           [
             -3.208819,
@@ -26603,44 +26603,44 @@
       "properties": {
         "segments": [
           {
-            "distance": 3825.9,
-            "duration": 390.8
+            "distance": 3643,
+            "duration": 346
           },
           {
-            "distance": 1922.3,
-            "duration": 210
+            "distance": 2105.2,
+            "duration": 254.8
           },
           {
             "distance": 3919.7,
             "duration": 347.7
           },
           {
-            "distance": 2483.8,
-            "duration": 290.5
+            "distance": 2386.1,
+            "duration": 253.9
           },
           {
-            "distance": 4362.9,
-            "duration": 365.8
+            "distance": 4486.1,
+            "duration": 433.6
           },
           {
-            "distance": 878.4,
-            "duration": 144.7
+            "distance": 853,
+            "duration": 113.5
           }
         ],
         "way_points": [
           0,
-          138,
+          116,
           221,
           401,
-          512,
+          502,
           656,
           656
         ],
         "summary": {
-          "distance": 17393,
+          "distance": 17393.1,
           "duration": 1749.5
         },
-        "mobile": "Mabel",
+        "mobile": "Mobile",
         "route": "Week 2 Thursday"
       }
     },
@@ -30138,7 +30138,7 @@
           "distance": 18181.2,
           "duration": 2152.4
         },
-        "mobile": "Mabel",
+        "mobile": "Mobile",
         "route": "Week 2 Tuesday"
       }
     },
@@ -30435,6 +30435,10 @@
             55.874223
           ],
           [
+            -3.000143,
+            55.874408
+          ],
+          [
             -3.000733,
             55.874635
           ],
@@ -30509,10 +30513,6 @@
           [
             -3.000733,
             55.874635
-          ],
-          [
-            -3.000143,
-            55.874408
           ],
           [
             -2.999662,
@@ -33112,12 +33112,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 2686.9,
-            "duration": 313.2
+            "distance": 2030.6,
+            "duration": 177.8
           },
           {
-            "distance": 1308.2,
-            "duration": 111.6
+            "distance": 1964.5,
+            "duration": 247
           },
           {
             "distance": 1439.2,
@@ -33138,7 +33138,7 @@
         ],
         "way_points": [
           0,
-          102,
+          80,
           148,
           210,
           293,
@@ -33149,7 +33149,7 @@
           "distance": 23389.9,
           "duration": 1912.8
         },
-        "mobile": "Mabel",
+        "mobile": "Mobile",
         "route": "Week 2 Wednesday"
       }
     }

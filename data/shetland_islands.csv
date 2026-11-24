@@ -1,4 +1,4 @@
-Local authority,Local authority code,Mobile name,Route,Community,Stop,Address,Postcode,GeoX,GeoY,Day,Type,Arrival,Departure,Frequency,Start,End,Exceptions,Timetable
+local_authority,local_authority_code,mobile_name,route,community,stop,address,postcode,geox,geoy,day,type,arrival,departure,frequency,start,end,exceptions,timetable
 Shetland Islands,S12000027,Mobile Library (Big Van),Aith & Bixter,Weisdale,Weisdale,"Weisdale, Weisdale, Shetland",ZE2 9LW,-1.28835,60.25829,Tuesday,Public,10:00,10:45,FREQ=WEEKLY;INTERVAL=6,2026-12-15,2027-12-31,,https://www.shetland.gov.uk/libraries/mobile-community-libraries
 Shetland Islands,S12000027,Mobile Library (Big Van),Aith & Bixter,Aith,Aith Hall,"Aith Hall, Aith, Shetland",ZE2 9DJ,-0.84923,60.59051,Tuesday,Public,11:00,11:30,FREQ=WEEKLY;INTERVAL=6,2026-12-15,2027-12-31,,https://www.shetland.gov.uk/libraries/mobile-community-libraries
 Shetland Islands,S12000027,Mobile Library (Big Van),Aith & Bixter,Aith,Clousta,"Clousta, Aith, Shetland",ZE2 9DJ,-0.84923,60.59051,Tuesday,Public,11:45,12:15,FREQ=WEEKLY;INTERVAL=6,2026-12-15,2027-12-31,,https://www.shetland.gov.uk/libraries/mobile-community-libraries

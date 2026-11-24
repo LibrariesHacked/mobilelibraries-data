@@ -53,6 +53,7 @@ def main() -> int:
     exc_issues = 0
     time_issues = 0
     newline_issues = 0
+    syntax_issues = 0
 
     for csv_file in csv_files:
         if (
@@ -65,14 +66,16 @@ def main() -> int:
             reader = csv.DictReader(f)
             for i, row in enumerate(reader, start=2):
                 checked_stops += 1
-                lat_str = (row.get("GeoY") or row.get("Latitude", "")).strip()
-                lng_str = (row.get("GeoX") or row.get("Longitude", "")).strip()
-                freq_str = row.get("Frequency", "").strip()
-                exc_str = row.get("Exceptions", "").strip()
-                arr_str = row.get("Arrival", "").strip()
-                dep_str = row.get("Departure", "").strip()
-                start_str = row.get("Start", "").strip()
-                end_str = row.get("End", "").strip()
+                lat_str = (row.get("geoy") or row.get("GeoY") or row.get("Latitude", "")).strip()
+                lng_str = (row.get("geox") or row.get("GeoX") or row.get("Longitude", "")).strip()
+                freq_str = (row.get("frequency") or row.get("Frequency", "")).strip()
+                exc_str = (row.get("exceptions") or row.get("Exceptions", "")).strip()
+                arr_str = (row.get("arrival") or row.get("Arrival", "")).strip()
+                dep_str = (row.get("departure") or row.get("Departure", "")).strip()
+                start_str = (row.get("start") or row.get("Start", "")).strip()
+                end_str = (row.get("end") or row.get("End", "")).strip()
+                stop_str = (row.get("stop") or row.get("Stop", "")).strip()
+                comm_str = (row.get("community") or row.get("Community", "")).strip()
 
                 if lat_str and lng_str:
                     if not COORD_5DP_RE.match(lat_str) or not COORD_5DP_RE.match(lng_str):
@@ -101,6 +104,18 @@ def main() -> int:
                     time_issues += 1
                     print(f"  [Date Warning] {csv_file.name}:{i} ({row.get('Stop')}) Start ({start_str}) > End ({end_str})")
 
+                # Syntax / corruption checks: unclosed parentheses or corrupted text
+                for text_val in (stop_str, comm_str):
+                    if text_val:
+                        if text_val.count("(") != text_val.count(")"):
+                            syntax_issues += 1
+                            if syntax_issues <= 3:
+                                print(f"  [Syntax Error] {csv_file.name}:{i} unbalanced parentheses in '{text_val}'")
+                        if any(bad in text_val for bad in ["â€™", "â€“", "Â", "RichaRoad", "UndeRoad"]):
+                            syntax_issues += 1
+                            if syntax_issues <= 3:
+                                print(f"  [Corruption Error] {csv_file.name}:{i} corrupted text in '{text_val}'")
+
                 for col_name, cell_val in row.items():
                     if cell_val and ("\n" in cell_val or "\r" in cell_val):
                         newline_issues += 1
@@ -124,7 +139,7 @@ def main() -> int:
         with open(csv_file, mode="r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                end_str = (row.get("End") or "").strip()
+                end_str = (row.get("end") or row.get("End") or "").strip()
                 if end_str:
                     if end_str < today:
                         expired_authorities[csv_file.stem] = end_str
@@ -172,6 +187,12 @@ def main() -> int:
         errors += 1
     else:
         print(f"✓ All stop fields are single-line with 0 embedded newlines.")
+
+    if syntax_issues > 0:
+        print(f"❌ Found {syntax_issues} text syntax/corruption errors.")
+        errors += 1
+    else:
+        print(f"✓ All stop and community names have balanced parentheses and clean text.")
 
     print("\n" + "=" * 60)
     if errors == 0:

@@ -213,6 +213,13 @@ def run():
                 dep_24 = clean_time_24h(t_span.group(2))
 
         # In case departure is empty or before arrival
+        # Council typo fixes for known directory entries
+        if arr_24.startswith("11:") and dep_24 in ("23:50", "23:55"):
+            dep_24 = dep_24.replace("23:", "11:")
+        if arr_24 == "21:10" and dep_24 == "21:40":
+            arr_24 = "09:10"
+            dep_24 = "09:40"
+
         # Default to a 30-minute stop duration when no departure time is listed
         if arr_24 and not dep_24:
             try:

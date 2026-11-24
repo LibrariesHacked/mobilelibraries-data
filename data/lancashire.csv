@@ -1,4 +1,4 @@
-Local authority,Local authority code,Mobile name,Route,Community,Stop,Address,Postcode,GeoX,GeoY,Day,Type,Arrival,Departure,Frequency,Start,End,Exceptions,Timetable
+local_authority,local_authority_code,mobile_name,route,community,stop,address,postcode,geox,geoy,day,type,arrival,departure,frequency,start,end,exceptions,timetable
 Lancashire,E10000017,ML1 (Brierfield),Route 1 - Monday,Blacko,Willaston Avenue,"Willaston Avenue, Blacko, Pendle, Lancashire",BB9 6LU,-2.20965,53.87048,Monday,Public,09:50,10:20,FREQ=WEEKLY;INTERVAL=3,2023-07-10,,,https://www.lancashire.gov.uk/libraries/mobile-library/
 Lancashire,E10000017,ML1 (Brierfield),Route 1 - Monday,Roughlee Booth,Old Hall Close,"Old Hall Close, Roughlee Booth, Pendle, Lancashire",BB9 6ND,-2.23693,53.85961,Monday,Public,10:35,11:00,FREQ=WEEKLY;INTERVAL=3,2023-07-10,,,https://www.lancashire.gov.uk/libraries/mobile-library/
 Lancashire,E10000017,ML1 (Brierfield),Route 1 - Monday,Barley,Barley New Road,"Barley New Road, Barley, Pendle, Lancashire",BB12 9LQ,-2.25325,53.85650,Monday,Public,11:10,11:25,FREQ=WEEKLY;INTERVAL=3,2023-07-10,,,https://www.lancashire.gov.uk/libraries/mobile-library/

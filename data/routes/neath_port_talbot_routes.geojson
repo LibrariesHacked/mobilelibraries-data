@@ -975,7 +975,7 @@
           "distance": 7894.3,
           "duration": 757.8
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Monday"
       }
     },
@@ -1296,6 +1296,22 @@
             51.686685
           ],
           [
+            -3.780075,
+            51.686822
+          ],
+          [
+            -3.780075,
+            51.686822
+          ],
+          [
+            -3.780075,
+            51.686822
+          ],
+          [
+            -3.780075,
+            51.686822
+          ],
+          [
             -3.780066,
             51.686864
           ],
@@ -1330,22 +1346,6 @@
           [
             -3.780066,
             51.686864
-          ],
-          [
-            -3.780075,
-            51.686822
-          ],
-          [
-            -3.780075,
-            51.686822
-          ],
-          [
-            -3.780075,
-            51.686822
-          ],
-          [
-            -3.780075,
-            51.686822
           ],
           [
             -3.780103,
@@ -2469,8 +2469,8 @@
             "duration": 0
           },
           {
-            "distance": 2794.5,
-            "duration": 452.3
+            "distance": 2445.2,
+            "duration": 364.7
           },
           {
             "distance": 0,
@@ -2485,24 +2485,24 @@
             "duration": 0
           },
           {
-            "distance": 10920.2,
-            "duration": 706.5
+            "distance": 11269.6,
+            "duration": 794.1
           }
         ],
         "way_points": [
           0,
           4,
-          103,
-          107,
-          111,
-          115,
+          89,
+          93,
+          97,
+          101,
           368
         ],
         "summary": {
-          "distance": 13714.7,
+          "distance": 13714.8,
           "duration": 1158.8
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Thursday"
       }
     },
@@ -7574,7 +7574,7 @@
           "distance": 37913.7,
           "duration": 3508.3
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Tuesday"
       }
     },
@@ -9332,7 +9332,7 @@
           "distance": 12936.5,
           "duration": 1031.7
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Wednesday"
       }
     },
@@ -11722,7 +11722,7 @@
           "distance": 36920.6,
           "duration": 1866.3
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Monday"
       }
     },
@@ -14366,7 +14366,7 @@
           "distance": 28129.2,
           "duration": 2397.9
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Thursday"
       }
     },
@@ -15052,7 +15052,7 @@
           "distance": 9942.4,
           "duration": 667.5
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Tuesday"
       }
     },
@@ -17061,7 +17061,7 @@
           "distance": 16224.5,
           "duration": 1778.1
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Wednesday"
       }
     },
@@ -19191,7 +19191,7 @@
           "distance": 23382.6,
           "duration": 1602.1
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 3 Monday"
       }
     },
@@ -23936,7 +23936,7 @@
           "distance": 50716.2,
           "duration": 4037.8
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 3 Thursday"
       }
     },
@@ -29048,7 +29048,7 @@
           "distance": 79145.4,
           "duration": 4093.8
         },
-        "mobile": "Neath Port Talbot Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 3 Wednesday"
       }
     }

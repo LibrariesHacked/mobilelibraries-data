@@ -1,4 +1,4 @@
-Local authority,Local authority code,Mobile name,Route,Community,Stop,Address,Postcode,GeoX,GeoY,Day,Type,Arrival,Departure,Frequency,Start,End,Exceptions,Timetable
+local_authority,local_authority_code,mobile_name,route,community,stop,address,postcode,geox,geoy,day,type,arrival,departure,frequency,start,end,exceptions,timetable
 Midlothian,S12000019,Mabel,Week 1 Monday,Easter Bush,Arcadia Nursery - Easter Bush,"Arcadia Nursery - Easter Bush, Easter Bush",EH25 9RG,-3.20054,55.86526,Monday,Public,09:30,10:45,FREQ=WEEKLY;INTERVAL=2,2026-05-11,2027-05-10,,https://www.midlothian.gov.uk/info/427/libraries/446/mobile_library
 Midlothian,S12000019,Mabel,Week 1 Monday,Bilston,Bilston Primary School,"Bilston Primary School, Bilston",EH25 9SB,-3.18419,55.86908,Monday,Public,11:00,11:45,FREQ=WEEKLY;INTERVAL=2,2026-05-11,2027-05-10,,https://www.midlothian.gov.uk/info/427/libraries/446/mobile_library
 Midlothian,S12000019,Mabel,Week 1 Monday,Bilston,Bilston - Corby Craig,"Bilston - Corby Craig, Bilston",EH25 9SB,-3.18264,55.86951,Monday,Public,12:00,12:30,FREQ=WEEKLY;INTERVAL=2,2026-05-11,2027-05-10,,https://www.midlothian.gov.uk/info/427/libraries/446/mobile_library

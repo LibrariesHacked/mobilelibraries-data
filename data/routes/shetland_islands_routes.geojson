@@ -17918,7 +17918,7 @@
           "distance": 198882,
           "duration": 26475.7
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "Aith & Bixter"
       }
     },
@@ -22691,7 +22691,7 @@
           "distance": 63208.2,
           "duration": 4377.6
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "Hillswick - Brae - Mossbank"
       }
     },
@@ -25022,7 +25022,7 @@
           "distance": 32810.1,
           "duration": 2716.4
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "Nesting - Vidlin - Voe"
       }
     },
@@ -29448,7 +29448,7 @@
           "distance": 36529.7,
           "duration": 2795
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "North Roe - Ollaberry"
       }
     },
@@ -33150,7 +33150,7 @@
           "distance": 37752,
           "duration": 2662.8
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "Sandness & Walls"
       }
     },
@@ -35823,7 +35823,7 @@
           "distance": 21643.5,
           "duration": 1662
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "Sandwick"
       }
     },
@@ -39160,12 +39160,12 @@
             60.153054
           ],
           [
-            -1.148915,
-            60.153124
-          ],
-          [
             -1.149337,
             60.153064
+          ],
+          [
+            -1.148915,
+            60.153124
           ],
           [
             -1.149404,
@@ -49353,12 +49353,12 @@
             "duration": 782.1
           },
           {
-            "distance": 9192.7,
-            "duration": 798.8
+            "distance": 9144,
+            "duration": 759.6
           },
           {
-            "distance": 15029.6,
-            "duration": 1181.6
+            "distance": 15078.4,
+            "duration": 1220.8
           },
           {
             "distance": 90906.6,
@@ -49368,15 +49368,15 @@
         "way_points": [
           0,
           443,
-          865,
+          863,
           1465,
           3377
         ],
         "summary": {
-          "distance": 124698.3,
+          "distance": 124698.4,
           "duration": 12632.8
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "Staneyhill - Scalloway - Burra"
       }
     },
@@ -55385,7 +55385,7 @@
           "distance": 46139.9,
           "duration": 3206.4
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "Sumburgh"
       }
     },
@@ -58131,7 +58131,7 @@
           "distance": 31182,
           "duration": 2237.1
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "Unst"
       }
     },
@@ -64959,7 +64959,7 @@
           "distance": 95082.3,
           "duration": 23950
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "Whalsay"
       }
     },
@@ -70360,7 +70360,7 @@
           "distance": 42370.8,
           "duration": 2644.8
         },
-        "mobile": "Mobile Library (Big Van)",
+        "mobile": "Mobile",
         "route": "Yell"
       }
     }

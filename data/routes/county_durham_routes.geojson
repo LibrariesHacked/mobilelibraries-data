@@ -8899,7 +8899,7 @@
           "distance": 101220.3,
           "duration": 5424.4
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Friday"
       }
     },
@@ -23003,7 +23003,7 @@
           "distance": 138835.2,
           "duration": 8302.3
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Monday"
       }
     },
@@ -24228,10 +24228,6 @@
             54.527426
           ],
           [
-            -1.798344,
-            54.527413
-          ],
-          [
             -1.798217,
             54.527165
           ],
@@ -24330,6 +24326,10 @@
           [
             -1.798217,
             54.527165
+          ],
+          [
+            -1.798344,
+            54.527413
           ],
           [
             -1.798351,
@@ -28260,10 +28260,6 @@
             54.638326
           ],
           [
-            -2.150742,
-            54.638423
-          ],
-          [
             -2.150788,
             54.638432
           ],
@@ -28330,6 +28326,10 @@
           [
             -2.150788,
             54.638432
+          ],
+          [
+            -2.150742,
+            54.638423
           ],
           [
             -2.15026,
@@ -30969,24 +30969,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 7895.2,
-            "duration": 471.8
+            "distance": 8451.7,
+            "duration": 583.9
           },
           {
-            "distance": 10576.2,
-            "duration": 797
+            "distance": 10019.8,
+            "duration": 684.9
           },
           {
             "distance": 24959.6,
             "duration": 1518
           },
           {
-            "distance": 5485.8,
-            "duration": 481.3
+            "distance": 6128.9,
+            "duration": 664.6
           },
           {
-            "distance": 1027.6,
-            "duration": 217.8
+            "distance": 384.4,
+            "duration": 34.5
           },
           {
             "distance": 4926.8,
@@ -31007,10 +31007,10 @@
         ],
         "way_points": [
           0,
-          314,
+          342,
           603,
           1261,
-          1364,
+          1384,
           1401,
           1482,
           1574,
@@ -31021,7 +31021,7 @@
           "distance": 72696.9,
           "duration": 4955
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Thursday"
       }
     },
@@ -35926,7 +35926,7 @@
           "distance": 53816.6,
           "duration": 5590.1
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Tuesday"
       }
     },
@@ -47722,7 +47722,7 @@
           "distance": 105435.5,
           "duration": 7371.6
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Wednesday"
       }
     },
@@ -56633,7 +56633,7 @@
           "distance": 77171.5,
           "duration": 5375.7
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Friday"
       }
     },
@@ -62576,7 +62576,7 @@
           "distance": 42674.9,
           "duration": 2835.2
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Monday"
       }
     },
@@ -70399,7 +70399,7 @@
           "distance": 84496.6,
           "duration": 5194.7
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Thursday"
       }
     },
@@ -72413,7 +72413,7 @@
           "distance": 17032.2,
           "duration": 1425
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Tuesday"
       }
     },
@@ -80080,7 +80080,7 @@
           "distance": 66634.4,
           "duration": 4808.8
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Wednesday"
       }
     },
@@ -80379,7 +80379,7 @@
           "distance": 2268.2,
           "duration": 210.1
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 3 Friday"
       }
     },
@@ -83874,7 +83874,7 @@
           "distance": 26397.2,
           "duration": 1664.8
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 3 Monday"
       }
     },
@@ -90636,7 +90636,7 @@
           "distance": 54445.3,
           "duration": 3030.6
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 3 Thursday"
       }
     },
@@ -95695,7 +95695,7 @@
           "distance": 46357.6,
           "duration": 2937.9
         },
-        "mobile": "Durham Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 3 Wednesday"
       }
     }

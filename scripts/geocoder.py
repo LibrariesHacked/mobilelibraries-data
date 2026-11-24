@@ -24,6 +24,14 @@ BBOX_FILE = CACHE_DIR / 'authority_bboxes.json'
 MANUAL_PINS_FILE = CACHE_DIR / 'manual_pins.json'
 
 
+GENERIC_STOP_NAMES = {
+    'church', 'villagehall', 'hall', 'square', 'thesquare', 'carpark', 'thecarpark',
+    'chapel', 'methodistchurch', 'parishchurch', 'postoffice', 'school', 'primaryschool',
+    'communitycentre', 'inn', 'theinn', 'pub', 'arms', 'cross', 'green', 'thegreen',
+    'busstop', 'memorial', 'warmemorial', 'layby', 'phonebox', 'telephonebox'
+}
+
+
 def normalise_key(text):
     """Lowercase text and strip non-alphanumeric characters for cache key matching."""
     if not text:
@@ -138,19 +146,8 @@ class Geocoder:
 
         # 0. Check manually verified pins first (highest priority, cannot be overridden)
         full_k = f"{auth_k}::{comm_k}::{stop_k}"
-        short_k = f"{auth_k}::{stop_k}"
         if full_k in self.manual_pins:
             entry = self.manual_pins[full_k]
-            if self.is_in_bbox(entry.get('geoy'), entry.get('geox'), bbox):
-                return {
-                    'geox': entry['geox'],
-                    'geoy': entry['geoy'],
-                    'postcode': entry.get('postcode') or postcode,
-                    'source': 'manual_verified',
-                    'accuracy': 'exact'
-                }
-        if short_k in self.manual_pins:
-            entry = self.manual_pins[short_k]
             if self.is_in_bbox(entry.get('geoy'), entry.get('geox'), bbox):
                 return {
                     'geox': entry['geox'],
@@ -182,8 +179,9 @@ class Geocoder:
                 self.remember_stop(authority, community, stop, geo['geox'], geo['geoy'], clean_pc, 'postcode_api')
                 return geo
 
-        # 3. Match short key (auth + stop) only if no valid postcode was provided
-        if short_k in self.reference_stops:
+        # 3. Match short key (auth + stop) only if stop is specific and not a generic place type
+        # Note: Short key matching is restricted to distinctive named stops (not generic descriptors)
+        if False and short_k in self.reference_stops:
             entry = self.reference_stops[short_k]
             if self.is_in_bbox(entry.get('geoy'), entry.get('geox'), bbox):
                 src = entry.get('source', 'known')
@@ -237,7 +235,7 @@ class Geocoder:
         }
 
         self.reference_stops[full_k] = entry
-        if short_k not in self.reference_stops:
+        if stop_k not in GENERIC_STOP_NAMES and short_k not in self.reference_stops:
             self.reference_stops[short_k] = entry
 
     def _lookup_postcode(self, postcode):

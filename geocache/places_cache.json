@@ -4873,5 +4873,211 @@
     "geoy": 53.038306,
     "postcode": "",
     "source": "places.io"
+  },
+  "angus::tealing": {
+    "geox": -2.96305,
+    "geoy": 56.53356,
+    "postcode": ""
+  },
+  "angus::murroes": {
+    "geox": -2.87425,
+    "geoy": 56.50411,
+    "postcode": ""
+  },
+  "angus::stracathro": {
+    "geox": -2.63319,
+    "geoy": 56.77842,
+    "postcode": ""
+  },
+  "angus::cortachy": {
+    "geox": -2.99214,
+    "geoy": 56.72494,
+    "postcode": ""
+  },
+  "angus::glenisla": {
+    "geox": -3.28382,
+    "geoy": 56.72965,
+    "postcode": ""
+  },
+  "angus::airlie": {
+    "geox": -3.11676,
+    "geoy": 56.6383,
+    "postcode": ""
+  },
+  "cornwall::porthtowan": {
+    "geox": -5.23917,
+    "geoy": 50.28494,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::nancegollan": {
+    "geox": -5.31108,
+    "geoy": 50.14298,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::bolenowe": {
+    "geox": -5.262,
+    "geoy": 50.19569,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::carnkieredruth": null,
+  "cornwall::stmartin": {
+    "geox": -5.16772,
+    "geoy": 50.07243,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::stburyan": {
+    "geox": -5.62034,
+    "geoy": 50.07418,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::treen": {
+    "geox": -5.64151,
+    "geoy": 50.05207,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::sennen": {
+    "geox": -5.69514,
+    "geoy": 50.06923,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::crowsanwra": {
+    "geox": -5.64272,
+    "geoy": 50.09126,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::newmill": {
+    "geox": -2.94505,
+    "geoy": 57.55872,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::ludgvan": {
+    "geox": -5.49588,
+    "geoy": 50.14478,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::kingsand": {
+    "geox": -4.20282,
+    "geoy": 50.33574,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::seaton": {
+    "geox": -2.09038,
+    "geoy": 57.16653,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::canworthywater": {
+    "geox": -4.51753,
+    "geoy": 50.69689,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::weekstmary": {
+    "geox": -4.50068,
+    "geoy": 50.7499,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::landrake": {
+    "geox": -4.28958,
+    "geoy": 50.4227,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::menheniot": {
+    "geox": -4.41194,
+    "geoy": 50.44054,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::egloskerry": {
+    "geox": -4.44553,
+    "geoy": 50.65367,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::boyton": {
+    "geox": -4.38546,
+    "geoy": 50.70282,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::gunnislake": {
+    "geox": -4.21348,
+    "geoy": 50.52441,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::whitemoor": {
+    "geox": -4.86163,
+    "geoy": 50.38171,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::brentfields": null,
+  "cornwall::sttudy": {
+    "geox": -4.73083,
+    "geoy": 50.55468,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::nanstallon": {
+    "geox": -4.76631,
+    "geoy": 50.46899,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::lanivet": {
+    "geox": -4.76475,
+    "geoy": 50.44445,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::crantock": {
+    "geox": -5.1107,
+    "geoy": 50.40028,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::cubert": {
+    "geox": -5.11656,
+    "geoy": 50.37916,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::gerrans": {
+    "geox": -4.9811,
+    "geoy": 50.17813,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::veryan": {
+    "geox": -4.92467,
+    "geoy": 50.2186,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::gillan": {
+    "geox": -5.09783,
+    "geoy": 50.08377,
+    "postcode": "",
+    "source": "places.io"
+  },
+  "cornwall::crafthole": {
+    "geox": -4.29901,
+    "geoy": 50.36614,
+    "postcode": "",
+    "source": "places.io"
   }
 }

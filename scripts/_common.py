@@ -16,26 +16,48 @@ DATA_OUTPUT = Path(__file__).resolve().parent.parent / 'data'
 SCHEMA_PATH = Path(__file__).resolve().parent.parent / 'schemas' / 'mobile-library-stops.json'
 
 SCHEMA_COLUMNS = [
-    'Local authority',
-    'Local authority code',
-    'Mobile name',
-    'Route',
-    'Community',
-    'Stop',
-    'Address',
-    'Postcode',
-    'GeoX',
-    'GeoY',
-    'Day',
-    'Type',
-    'Arrival',
-    'Departure',
-    'Frequency',
-    'Start',
-    'End',
-    'Exceptions',
-    'Timetable'
+    'local_authority',
+    'local_authority_code',
+    'mobile_name',
+    'route',
+    'community',
+    'stop',
+    'address',
+    'postcode',
+    'geox',
+    'geoy',
+    'day',
+    'type',
+    'arrival',
+    'departure',
+    'frequency',
+    'start',
+    'end',
+    'exceptions',
+    'timetable'
 ]
+
+TITLE_CASE_MAP = {
+    'local_authority': 'Local authority',
+    'local_authority_code': 'Local authority code',
+    'mobile_name': 'Mobile name',
+    'route': 'Route',
+    'community': 'Community',
+    'stop': 'Stop',
+    'address': 'Address',
+    'postcode': 'Postcode',
+    'geox': 'GeoX',
+    'geoy': 'GeoY',
+    'day': 'Day',
+    'type': 'Type',
+    'arrival': 'Arrival',
+    'departure': 'Departure',
+    'frequency': 'Frequency',
+    'start': 'Start',
+    'end': 'End',
+    'exceptions': 'Exceptions',
+    'timetable': 'Timetable'
+}
 
 
 def sanitize_text(value):
@@ -77,7 +99,11 @@ def create_mobile_library_file(filename, stops):
     normalized_stops = []
     for item in stops:
         if isinstance(item, dict):
-            row = [item.get(col, '') for col in SCHEMA_COLUMNS]
+            row = []
+            for col in SCHEMA_COLUMNS:
+                alt = TITLE_CASE_MAP.get(col)
+                val = item.get(col, item.get(alt, ''))
+                row.append(val)
         else:
             row = list(item)
         row = sanitize_row(row)

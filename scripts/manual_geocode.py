@@ -162,11 +162,15 @@ def update_authority_csv(authority: str, stop: str, lat: float, lon: float, comm
         reader = csv.DictReader(f)
         fieldnames = reader.fieldnames
         for r in reader:
-            stop_match = normalise_key(r.get("Stop", "")) == normalise_key(stop)
-            comm_match = not community or normalise_key(r.get("Community", "")) == normalise_key(community)
+            stop_match = normalise_key(r.get("stop") or r.get("Stop", "")) == normalise_key(stop)
+            comm_match = not community or normalise_key(r.get("community") or r.get("Community", "")) == normalise_key(community)
             if stop_match and comm_match:
-                r["GeoX"] = f"{lon:.5f}"
-                r["GeoY"] = f"{lat:.5f}"
+                if "geox" in r:
+                    r["geox"] = f"{lon:.5f}"
+                    r["geoy"] = f"{lat:.5f}"
+                else:
+                    r["GeoX"] = f"{lon:.5f}"
+                    r["GeoY"] = f"{lat:.5f}"
                 matched_count += 1
             rows.append(r)
 
@@ -182,9 +186,9 @@ def update_authority_csv(authority: str, stop: str, lat: float, lon: float, comm
 
 def determine_accuracy_tier(row: dict[str, str], manual_pins: dict[str, Any]) -> tuple[str, str, int, str]:
     """Determine accuracy tier, source, estimated error radius, and review priority."""
-    auth = row.get("Local authority", "")
-    comm = row.get("Community", "")
-    stop = row.get("Stop", "")
+    auth = row.get("local_authority") or row.get("Local authority", "")
+    comm = row.get("community") or row.get("Community", "")
+    stop = row.get("stop") or row.get("Stop", "")
     pc = row.get("Postcode", "").strip().upper()
 
     auth_k = normalise_key(auth)
@@ -231,14 +235,14 @@ def export_review_queue(output_path: Path) -> None:
 
     queue = []
     for r in rows:
-        auth = r.get("Local authority", "")
-        comm = r.get("Community", "")
-        stop = r.get("Stop", "")
-        addr = r.get("Address", "")
-        pc = r.get("Postcode", "")
-        lat = r.get("GeoY", "")
-        lon = r.get("GeoX", "")
-        freq_raw = r.get("Frequency", "")
+        auth = r.get("local_authority") or r.get("Local authority", "")
+        comm = r.get("community") or r.get("Community", "")
+        stop = r.get("stop") or r.get("Stop", "")
+        addr = r.get("address") or r.get("Address", "")
+        pc = r.get("postcode") or r.get("Postcode", "")
+        lat = r.get("geoy") or r.get("GeoY", "")
+        lon = r.get("geox") or r.get("GeoX", "")
+        freq_raw = r.get("frequency") or r.get("Frequency", "")
         visit_freq = describe_frequency(freq_raw)
 
         tier, source, radius_m, priority = determine_accuracy_tier(r, manual_pins)
@@ -342,13 +346,13 @@ def interactive_review(limit: int = 10) -> None:
     print(f"Showing up to {limit} stops. Press Enter without typing coordinates to skip.\n")
 
     for i, r in enumerate(high_priority[:limit], start=1):
-        auth = r.get("Local authority", "")
-        comm = r.get("Community", "")
-        stop = r.get("Stop", "")
-        addr = r.get("Address", "")
-        pc = r.get("Postcode", "")
-        lat = r.get("GeoY", "")
-        lon = r.get("GeoX", "")
+        auth = r.get("local_authority") or r.get("Local authority", "")
+        comm = r.get("community") or r.get("Community", "")
+        stop = r.get("stop") or r.get("Stop", "")
+        addr = r.get("address") or r.get("Address", "")
+        pc = r.get("postcode") or r.get("Postcode", "")
+        lat = r.get("geoy") or r.get("GeoY", "")
+        lon = r.get("geox") or r.get("GeoX", "")
 
         query = f"{stop}, {comm}, {pc}, {auth}, UK".strip(", ")
         gmaps = f"https://www.google.com/maps/search/?api=1&query={urllib.parse.quote(query)}"

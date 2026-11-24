@@ -31,7 +31,7 @@
           "distance": 0,
           "duration": 0
         },
-        "mobile": "Portsmouth Mobile Library",
+        "mobile": "Mobile",
         "route": "Portsmouth Mobile Library Friday"
       }
     },
@@ -1589,7 +1589,7 @@
           "distance": 8913.8,
           "duration": 731.5
         },
-        "mobile": "Portsmouth Mobile Library",
+        "mobile": "Mobile",
         "route": "Portsmouth Mobile Library Monday"
       }
     },
@@ -2427,7 +2427,7 @@
           "distance": 2880.2,
           "duration": 386.1
         },
-        "mobile": "Portsmouth Mobile Library",
+        "mobile": "Mobile",
         "route": "Portsmouth Mobile Library Thursday"
       }
     },
@@ -2561,7 +2561,7 @@
           "distance": 1046.9,
           "duration": 124.7
         },
-        "mobile": "Portsmouth Mobile Library",
+        "mobile": "Mobile",
         "route": "Portsmouth Mobile Library Wednesday"
       }
     }

@@ -5373,7 +5373,7 @@
           "distance": 25987.4,
           "duration": 3051.6
         },
-        "mobile": "Edinburgh Mobile Library",
+        "mobile": "Mobile",
         "route": "Friday Route"
       }
     },
@@ -9665,7 +9665,7 @@
           "distance": 18129.6,
           "duration": 2432.4
         },
-        "mobile": "Edinburgh Mobile Library",
+        "mobile": "Mobile",
         "route": "Monday Route"
       }
     },
@@ -13282,7 +13282,7 @@
           "distance": 29072.5,
           "duration": 2970.3
         },
-        "mobile": "Edinburgh Mobile Library",
+        "mobile": "Mobile",
         "route": "Thursday Route"
       }
     },
@@ -16990,7 +16990,7 @@
           "distance": 15781.1,
           "duration": 2200.1
         },
-        "mobile": "Edinburgh Mobile Library",
+        "mobile": "Mobile",
         "route": "Tuesday Route"
       }
     },
@@ -19993,7 +19993,7 @@
           "distance": 24548,
           "duration": 2207.2
         },
-        "mobile": "Edinburgh Mobile Library",
+        "mobile": "Mobile",
         "route": "Wednesday Route"
       }
     }

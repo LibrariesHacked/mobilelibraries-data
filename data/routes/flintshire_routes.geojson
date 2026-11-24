@@ -10725,7 +10725,7 @@
           "distance": 91556.9,
           "duration": 6154.3
         },
-        "mobile": "Flintshire Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Friday"
       }
     },
@@ -18389,7 +18389,7 @@
           "distance": 63684.1,
           "duration": 4435.6
         },
-        "mobile": "Flintshire Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Thursday"
       }
     },
@@ -19262,12 +19262,12 @@
             53.104232
           ],
           [
-            -3.033735,
-            53.104222
-          ],
-          [
             -3.033498,
             53.103533
+          ],
+          [
+            -3.033735,
+            53.104222
           ],
           [
             -3.033738,
@@ -20427,12 +20427,12 @@
             "duration": 103.2
           },
           {
-            "distance": 4170,
-            "duration": 426.9
+            "distance": 4326.6,
+            "duration": 476.9
           },
           {
-            "distance": 1521.5,
-            "duration": 194.5
+            "distance": 1364.9,
+            "duration": 144.5
           },
           {
             "distance": 5472.1,
@@ -20450,7 +20450,7 @@
         "way_points": [
           0,
           47,
-          231,
+          233,
           278,
           422,
           426,
@@ -20460,7 +20460,7 @@
           "distance": 15786,
           "duration": 1544.3
         },
-        "mobile": "Flintshire Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Tuesday"
       }
     },
@@ -24845,7 +24845,7 @@
           "distance": 42786,
           "duration": 3158.4
         },
-        "mobile": "Flintshire Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 1 Wednesday"
       }
     },
@@ -31317,7 +31317,7 @@
           "distance": 59536.4,
           "duration": 4679.2
         },
-        "mobile": "Flintshire Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Thursday"
       }
     },
@@ -34850,7 +34850,7 @@
           "distance": 22087,
           "duration": 2098.3
         },
-        "mobile": "Flintshire Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Tuesday"
       }
     },
@@ -39254,7 +39254,7 @@
           "distance": 45154.7,
           "duration": 2597.9
         },
-        "mobile": "Flintshire Mobile Library",
+        "mobile": "Mobile",
         "route": "Week 2 Wednesday"
       }
     }

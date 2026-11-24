@@ -3701,7 +3701,7 @@
           "distance": 27631.3,
           "duration": 2686.8
         },
-        "mobile": "Conwy Mobile Library",
+        "mobile": "Mobile",
         "route": "Route 1"
       }
     },
@@ -11243,7 +11243,7 @@
           "distance": 63544.8,
           "duration": 4294.8
         },
-        "mobile": "Conwy Mobile Library",
+        "mobile": "Mobile",
         "route": "Route 2"
       }
     },
@@ -11624,6 +11624,10 @@
             53.049911
           ],
           [
+            -3.684049,
+            53.049893
+          ],
+          [
             -3.684089,
             53.049795
           ],
@@ -11650,10 +11654,6 @@
           [
             -3.684089,
             53.049795
-          ],
-          [
-            -3.684049,
-            53.049893
           ],
           [
             -3.684041,
@@ -13676,10 +13676,6 @@
             52.990405
           ],
           [
-            -3.482592,
-            52.990425
-          ],
-          [
             -3.482469,
             52.990459
           ],
@@ -13698,6 +13694,10 @@
           [
             -3.482469,
             52.990459
+          ],
+          [
+            -3.482592,
+            52.990425
           ],
           [
             -3.482664,
@@ -14141,39 +14141,39 @@
       "properties": {
         "segments": [
           {
-            "distance": 5216.5,
-            "duration": 328.3
+            "distance": 5012,
+            "duration": 272.1
           },
           {
-            "distance": 5418.8,
-            "duration": 301.1
+            "distance": 5623.4,
+            "duration": 357.3
           },
           {
             "distance": 8046,
             "duration": 613.4
           },
           {
-            "distance": 11784.6,
-            "duration": 700.6
+            "distance": 11900.8,
+            "duration": 752.9
           },
           {
-            "distance": 5276.3,
-            "duration": 467.2
+            "distance": 5160.1,
+            "duration": 414.9
           }
         ],
         "way_points": [
           0,
-          107,
+          99,
           215,
           363,
-          639,
+          647,
           720
         ],
         "summary": {
-          "distance": 35742.2,
+          "distance": 35742.3,
           "duration": 2410.6
         },
-        "mobile": "Conwy Mobile Library",
+        "mobile": "Mobile",
         "route": "Route 3"
       }
     },
@@ -15122,6 +15122,10 @@
             53.192241
           ],
           [
+            -3.686845,
+            53.192158
+          ],
+          [
             -3.686862,
             53.192154
           ],
@@ -15164,10 +15168,6 @@
           [
             -3.686862,
             53.192154
-          ],
-          [
-            -3.686845,
-            53.192158
           ],
           [
             -3.686461,
@@ -21715,12 +21715,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 8311.4,
-            "duration": 555.1
+            "distance": 8083.1,
+            "duration": 486.6
           },
           {
-            "distance": 8619.1,
-            "duration": 838.7
+            "distance": 8847.4,
+            "duration": 907.2
           },
           {
             "distance": 3402,
@@ -21741,7 +21741,7 @@
         ],
         "way_points": [
           0,
-          258,
+          244,
           504,
           660,
           914,
@@ -21752,7 +21752,7 @@
           "distance": 53073.9,
           "duration": 5495.1
         },
-        "mobile": "Conwy Mobile Library",
+        "mobile": "Mobile",
         "route": "Route 4"
       }
     }

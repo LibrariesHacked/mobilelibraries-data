@@ -134,8 +134,48 @@ def run():
                     })
 
     geocoder.save_caches()
-    print(f"Extracted {len(stops)} stops for Lincolnshire.")
-    create_mobile_library_file('lincolnshire.csv', stops)
+
+    # Disambiguate parallel runs in Lincolnshire:
+    # When a synthesized route has overlapping stop time windows, it represents multiple
+    # distinct vehicle circuits operating in the sector. Separate them into Route 1, Route 2, etc.
+    from collections import defaultdict
+
+    def to_min(t_str):
+        if not t_str or ':' not in t_str:
+            return 0
+        h, m = t_str.split(':')
+        return int(h) * 60 + int(m)
+
+    by_route = defaultdict(list)
+    for s in stops:
+        by_route[s['Route']].append(s)
+
+    final_stops = []
+    for r_name, r_stops in by_route.items():
+        r_stops.sort(key=lambda s: to_min(s['Arrival']))
+        circuits = []
+        for s in r_stops:
+            s_arr = to_min(s['Arrival'])
+            placed = False
+            for c in circuits:
+                last_dep = to_min(c[-1]['Departure'])
+                if s_arr >= last_dep:
+                    c.append(s)
+                    placed = True
+                    break
+            if not placed:
+                circuits.append([s])
+
+        if len(circuits) == 1:
+            final_stops.extend(r_stops)
+        else:
+            for idx, c in enumerate(circuits, 1):
+                for s in c:
+                    s['Route'] = f"{r_name} Route {idx}"
+                    final_stops.append(s)
+
+    print(f"Extracted {len(final_stops)} stops across {len(set(s['Route'] for s in final_stops))} routes for Lincolnshire.")
+    create_mobile_library_file('lincolnshire.csv', final_stops)
 
 
 if __name__ == '__main__':
