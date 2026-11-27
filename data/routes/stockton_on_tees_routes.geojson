@@ -658,12 +658,12 @@
             54.576129
           ],
           [
-            -1.337211,
-            54.57591
-          ],
-          [
             -1.337081,
             54.576078
+          ],
+          [
+            -1.337211,
+            54.57591
           ],
           [
             -1.337041,
@@ -2554,6 +2554,10 @@
             54.573608
           ],
           [
+            -1.350013,
+            54.573635
+          ],
+          [
             -1.35019,
             54.573695
           ],
@@ -2572,10 +2576,6 @@
           [
             -1.35019,
             54.573695
-          ],
-          [
-            -1.350013,
-            54.573635
           ],
           [
             -1.349933,
@@ -2971,12 +2971,12 @@
             "duration": 162.7
           },
           {
-            "distance": 3060.6,
-            "duration": 396.8
+            "distance": 3019.5,
+            "duration": 363.4
           },
           {
-            "distance": 1836.2,
-            "duration": 237
+            "distance": 1877.2,
+            "duration": 270.4
           },
           {
             "distance": 2778.4,
@@ -2991,12 +2991,12 @@
             "duration": 493.6
           },
           {
-            "distance": 385.6,
-            "duration": 148.9
+            "distance": 312.9,
+            "duration": 96.9
           },
           {
-            "distance": 1099.8,
-            "duration": 150.3
+            "distance": 1172.6,
+            "duration": 202.3
           },
           {
             "distance": 571.6,
@@ -3006,12 +3006,12 @@
         "way_points": [
           0,
           47,
-          190,
+          188,
           278,
           397,
           477,
           681,
-          724,
+          716,
           738,
           738
         ],
@@ -3019,7 +3019,7 @@
           "distance": 16949.5,
           "duration": 2196.4
         },
-        "mobile": "Mobile",
+        "mobile": "Stockton Mobile Library",
         "route": "Week 2 - Friday Route"
       }
     },
@@ -3948,10 +3948,6 @@
             54.501296
           ],
           [
-            -1.335113,
-            54.501512
-          ],
-          [
             -1.335101,
             54.501518
           ],
@@ -3986,6 +3982,10 @@
           [
             -1.335101,
             54.501518
+          ],
+          [
+            -1.335113,
+            54.501512
           ],
           [
             -1.33559,
@@ -4153,25 +4153,25 @@
             "duration": 296.2
           },
           {
-            "distance": 1311.9,
-            "duration": 164
+            "distance": 1477.4,
+            "duration": 215.4
           },
           {
-            "distance": 1178.4,
-            "duration": 211.5
+            "distance": 1012.9,
+            "duration": 160.1
           }
         ],
         "way_points": [
           0,
           200,
-          250,
+          260,
           278
         ],
         "summary": {
           "distance": 5238.2,
           "duration": 671.7
         },
-        "mobile": "Mobile",
+        "mobile": "Stockton Mobile Library",
         "route": "Week 2 - Monday Route"
       }
     },
@@ -6559,7 +6559,7 @@
           "distance": 12708.3,
           "duration": 1204.8
         },
-        "mobile": "Mobile",
+        "mobile": "Stockton Mobile Library",
         "route": "Week 2 - Thursday Route"
       }
     },
@@ -7170,7 +7170,7 @@
           "distance": 3065.6,
           "duration": 328.7
         },
-        "mobile": "Mobile",
+        "mobile": "Stockton Mobile Library",
         "route": "Week 2 - Tuesday Route"
       }
     },
@@ -8059,10 +8059,6 @@
             54.516133
           ],
           [
-            -1.35222,
-            54.51619
-          ],
-          [
             -1.352218,
             54.516217
           ],
@@ -8153,6 +8149,10 @@
           [
             -1.352218,
             54.516217
+          ],
+          [
+            -1.35222,
+            54.51619
           ],
           [
             -1.352223,
@@ -10176,16 +10176,16 @@
             "duration": 118.4
           },
           {
-            "distance": 1289.3,
-            "duration": 173.4
+            "distance": 1508.4,
+            "duration": 238.7
           },
           {
-            "distance": 1477.3,
-            "duration": 221.2
+            "distance": 1258.2,
+            "duration": 183.3
           },
           {
             "distance": 3647.3,
-            "duration": 392.3
+            "duration": 364.9
           },
           {
             "distance": 3469.6,
@@ -10196,7 +10196,7 @@
           0,
           61,
           98,
-          240,
+          266,
           427,
           671,
           745
@@ -10205,7 +10205,7 @@
           "distance": 11865.2,
           "duration": 1442.6
         },
-        "mobile": "Mobile",
+        "mobile": "Stockton Mobile Library",
         "route": "Week 2 - Wednesday Route"
       }
     },
@@ -13169,7 +13169,7 @@
           "distance": 19520.9,
           "duration": 1649.1
         },
-        "mobile": "Mobile",
+        "mobile": "Stockton Mobile Library",
         "route": "Week 3 - Friday Route"
       }
     },
@@ -14003,7 +14003,7 @@
           "distance": 5507.1,
           "duration": 438
         },
-        "mobile": "Mobile",
+        "mobile": "Stockton Mobile Library",
         "route": "Week 3 - Monday Route"
       }
     },
@@ -16817,12 +16817,12 @@
             "duration": 61.7
           },
           {
-            "distance": 1514.9,
-            "duration": 163.2
+            "distance": 1623.3,
+            "duration": 206.2
           },
           {
-            "distance": 4265,
-            "duration": 510.7
+            "distance": 4156.6,
+            "duration": 467.7
           },
           {
             "distance": 10215.2,
@@ -16833,7 +16833,7 @@
           0,
           42,
           67,
-          134,
+          137,
           377,
           697
         ],
@@ -16841,7 +16841,7 @@
           "distance": 17574,
           "duration": 1561
         },
-        "mobile": "Mobile",
+        "mobile": "Stockton Mobile Library",
         "route": "Week 3 - Thursday Route"
       }
     },
@@ -17766,12 +17766,12 @@
             54.602378
           ],
           [
-            -1.42026,
-            54.601915
-          ],
-          [
             -1.420335,
             54.601832
+          ],
+          [
+            -1.42026,
+            54.601915
           ],
           [
             -1.41984,
@@ -18502,6 +18502,10 @@
             54.589333
           ],
           [
+            -1.388875,
+            54.589375
+          ],
+          [
             -1.388922,
             54.589422
           ],
@@ -18536,10 +18540,6 @@
           [
             -1.388922,
             54.589422
-          ],
-          [
-            -1.388875,
-            54.589375
           ],
           [
             -1.388833,
@@ -19475,16 +19475,16 @@
       "properties": {
         "segments": [
           {
-            "distance": 9497.8,
-            "duration": 822
+            "distance": 9518.7,
+            "duration": 852.4
           },
           {
-            "distance": 4861.6,
-            "duration": 533.7
+            "distance": 4770.6,
+            "duration": 458.9
           },
           {
-            "distance": 1517.6,
-            "duration": 160.5
+            "distance": 1587.8,
+            "duration": 204.9
           },
           {
             "distance": 206.4,
@@ -19497,17 +19497,17 @@
         ],
         "way_points": [
           0,
-          244,
-          452,
+          246,
+          442,
           530,
           547,
           654
         ],
         "summary": {
-          "distance": 20395.4,
+          "distance": 20395.5,
           "duration": 1955.2
         },
-        "mobile": "Mobile",
+        "mobile": "Stockton Mobile Library",
         "route": "Week 3 - Tuesday Route"
       }
     },
@@ -19592,6 +19592,10 @@
             54.541104
           ],
           [
+            -1.414615,
+            54.541014
+          ],
+          [
             -1.415285,
             54.540742
           ],
@@ -19634,10 +19638,6 @@
           [
             -1.415285,
             54.540742
-          ],
-          [
-            -1.414615,
-            54.541014
           ],
           [
             -1.414392,
@@ -20372,12 +20372,12 @@
             54.563859
           ],
           [
-            -1.374707,
-            54.563967
-          ],
-          [
             -1.374788,
             54.56404
+          ],
+          [
+            -1.374707,
+            54.563967
           ],
           [
             -1.374588,
@@ -20957,29 +20957,29 @@
       "properties": {
         "segments": [
           {
-            "distance": 762,
-            "duration": 130.2
+            "distance": 531.6,
+            "duration": 69.6
           },
           {
-            "distance": 6547.5,
-            "duration": 438.3
+            "distance": 6797.2,
+            "duration": 531.1
           },
           {
-            "distance": 6120.5,
-            "duration": 452.2
+            "distance": 6101.1,
+            "duration": 420
           }
         ],
         "way_points": [
           0,
-          37,
-          236,
+          25,
+          238,
           358
         ],
         "summary": {
-          "distance": 13430,
+          "distance": 13429.9,
           "duration": 1020.7
         },
-        "mobile": "Mobile",
+        "mobile": "Stockton Mobile Library",
         "route": "Week 3 - Wednesday Route"
       }
     }

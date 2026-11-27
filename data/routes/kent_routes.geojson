@@ -3614,6 +3614,10 @@
             51.025923
           ],
           [
+            0.565088,
+            51.025759
+          ],
+          [
             0.56499,
             51.025415
           ],
@@ -3640,10 +3644,6 @@
           [
             0.56499,
             51.025415
-          ],
-          [
-            0.565088,
-            51.025759
           ],
           [
             0.565135,
@@ -8527,12 +8527,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 27535.3,
-            "duration": 1697.6
+            "distance": 27152.1,
+            "duration": 1578.4
           },
           {
-            "distance": 40337.5,
-            "duration": 2242.1
+            "distance": 40720.7,
+            "duration": 2361.3
           },
           {
             "distance": 5070.7,
@@ -8541,7 +8541,7 @@
         ],
         "way_points": [
           0,
-          938,
+          930,
           2001,
           2128
         ],
@@ -8549,7 +8549,7 @@
           "distance": 72943.5,
           "duration": 4307.3
         },
-        "mobile": "Mobile",
+        "mobile": "Ashford Mobile Library",
         "route": "Ashford Mobile Library Blue Route - Friday"
       }
     },
@@ -12070,12 +12070,12 @@
             51.065165
           ],
           [
-            1.057307,
-            51.065063
-          ],
-          [
             1.057381,
             51.065022
+          ],
+          [
+            1.057307,
+            51.065063
           ],
           [
             1.057126,
@@ -12823,12 +12823,12 @@
             "duration": 246.5
           },
           {
-            "distance": 12643,
-            "duration": 785.6
+            "distance": 12656.8,
+            "duration": 816.2
           },
           {
-            "distance": 2801,
-            "duration": 311
+            "distance": 2787.2,
+            "duration": 280.4
           }
         ],
         "way_points": [
@@ -12836,14 +12836,14 @@
           153,
           328,
           479,
-          929,
+          931,
           1061
         ],
         "summary": {
           "distance": 29261.3,
           "duration": 1905.4
         },
-        "mobile": "Mobile",
+        "mobile": "Ashford Mobile Library",
         "route": "Ashford Mobile Library Blue Route - Thursday"
       }
     },
@@ -15456,8 +15456,8 @@
             51.009647
           ],
           [
-            0.976689,
-            51.009853
+            0.976686,
+            51.009851
           ],
           [
             0.976476,
@@ -19005,12 +19005,12 @@
             "duration": 764.1
           },
           {
-            "distance": 1533.2,
-            "duration": 146.1
+            "distance": 1533.8,
+            "duration": 173.7
           },
           {
-            "distance": 7252.1,
-            "duration": 619
+            "distance": 7251.5,
+            "duration": 591.4
           },
           {
             "distance": 2479.5,
@@ -19033,7 +19033,7 @@
           "distance": 40356.9,
           "duration": 2680.1
         },
-        "mobile": "Mobile",
+        "mobile": "Ashford Mobile Library",
         "route": "Ashford Mobile Library Blue Route - Tuesday"
       }
     },
@@ -20886,10 +20886,6 @@
             51.064536
           ],
           [
-            1.04629,
-            51.064519
-          ],
-          [
             1.046243,
             51.064497
           ],
@@ -20908,6 +20904,10 @@
           [
             1.046243,
             51.064497
+          ],
+          [
+            1.04629,
+            51.064519
           ],
           [
             1.046328,
@@ -21175,26 +21175,26 @@
             "duration": 217.1
           },
           {
-            "distance": 1765.7,
-            "duration": 167.7
+            "distance": 1845.5,
+            "duration": 210.4
           },
           {
-            "distance": 817.2,
-            "duration": 132.8
+            "distance": 737.4,
+            "duration": 90.1
           }
         ],
         "way_points": [
           0,
           180,
           348,
-          490,
+          498,
           529
         ],
         "summary": {
           "distance": 9427.6,
           "duration": 901.4
         },
-        "mobile": "Mobile",
+        "mobile": "Ashford Mobile Library",
         "route": "Ashford Mobile Library Blue Route - Wednesday"
       }
     },
@@ -21655,12 +21655,12 @@
             51.121489
           ],
           [
-            0.979628,
-            51.121921
-          ],
-          [
             0.979524,
             51.121847
+          ],
+          [
+            0.979628,
+            51.121921
           ],
           [
             0.979016,
@@ -25048,12 +25048,12 @@
             "duration": 128.4
           },
           {
-            "distance": 1409.8,
-            "duration": 187.2
+            "distance": 1387.8,
+            "duration": 157.6
           },
           {
-            "distance": 5155.2,
-            "duration": 460.9
+            "distance": 5177.2,
+            "duration": 490.5
           },
           {
             "distance": 7309.2,
@@ -25061,17 +25061,17 @@
           },
           {
             "distance": 3917.9,
-            "duration": 330.6
+            "duration": 303.2
           },
           {
             "distance": 4339.3,
-            "duration": 370.7
+            "duration": 398.1
           }
         ],
         "way_points": [
           0,
           58,
-          132,
+          130,
           366,
           639,
           806,
@@ -25081,7 +25081,7 @@
           "distance": 23436.9,
           "duration": 1953.9
         },
-        "mobile": "Mobile",
+        "mobile": "Ashford Mobile Library",
         "route": "Ashford Mobile Library Red Route - Friday"
       }
     },
@@ -28599,11 +28599,11 @@
           ],
           [
             0.90596,
-            51.13645
+            51.13648
           ],
           [
             0.90596,
-            51.13648
+            51.13645
           ],
           [
             0.90596,
@@ -31124,11 +31124,11 @@
         "segments": [
           {
             "distance": 1311.4,
-            "duration": 153.7
+            "duration": 181.1
           },
           {
             "distance": 4888.8,
-            "duration": 473.3
+            "duration": 445.9
           },
           {
             "distance": 611.9,
@@ -31139,12 +31139,12 @@
             "duration": 612.3
           },
           {
-            "distance": 2681.5,
-            "duration": 269.6
+            "distance": 2688.2,
+            "duration": 298.6
           },
           {
-            "distance": 8240.3,
-            "duration": 633.8
+            "distance": 8233.6,
+            "duration": 604.8
           },
           {
             "distance": 6132.4,
@@ -31161,7 +31161,7 @@
           399,
           443,
           812,
-          956,
+          958,
           1264,
           1506,
           1506
@@ -31170,7 +31170,7 @@
           "distance": 34191.8,
           "duration": 3019.6
         },
-        "mobile": "Mobile",
+        "mobile": "Ashford Mobile Library",
         "route": "Ashford Mobile Library Red Route - Saturday"
       }
     },
@@ -31703,68 +31703,68 @@
             51.067049
           ],
           [
+            0.858264,
+            51.06715
+          ],
+          [
+            0.858315,
+            51.067225
+          ],
+          [
+            0.858331,
+            51.067296
+          ],
+          [
+            0.858334,
+            51.067392
+          ],
+          [
+            0.858333,
+            51.067474
+          ],
+          [
+            0.858365,
+            51.067533
+          ],
+          [
+            0.858557,
+            51.067865
+          ],
+          [
+            0.858635,
+            51.067847
+          ],
+          [
+            0.858557,
+            51.067865
+          ],
+          [
+            0.858365,
+            51.067533
+          ],
+          [
+            0.858333,
+            51.067474
+          ],
+          [
+            0.858334,
+            51.067392
+          ],
+          [
+            0.858331,
+            51.067296
+          ],
+          [
+            0.858315,
+            51.067225
+          ],
+          [
+            0.858264,
+            51.06715
+          ],
+          [
             0.858206,
             51.067087
-          ],
-          [
-            0.858264,
-            51.06715
-          ],
-          [
-            0.858315,
-            51.067225
-          ],
-          [
-            0.858331,
-            51.067296
-          ],
-          [
-            0.858334,
-            51.067392
-          ],
-          [
-            0.858333,
-            51.067474
-          ],
-          [
-            0.858365,
-            51.067533
-          ],
-          [
-            0.858557,
-            51.067865
-          ],
-          [
-            0.85848,
-            51.067882
-          ],
-          [
-            0.858557,
-            51.067865
-          ],
-          [
-            0.858365,
-            51.067533
-          ],
-          [
-            0.858333,
-            51.067474
-          ],
-          [
-            0.858334,
-            51.067392
-          ],
-          [
-            0.858331,
-            51.067296
-          ],
-          [
-            0.858315,
-            51.067225
-          ],
-          [
-            0.858264,
-            51.06715
           ],
           [
             0.858172,
@@ -33011,6 +33011,10 @@
             51.090763
           ],
           [
+            0.946384,
+            51.090698
+          ],
+          [
             0.947056,
             51.090381
           ],
@@ -33045,10 +33049,6 @@
           [
             0.947056,
             51.090381
-          ],
-          [
-            0.946384,
-            51.090698
           ],
           [
             0.946245,
@@ -33464,20 +33464,20 @@
       "properties": {
         "segments": [
           {
-            "distance": 5068,
-            "duration": 336
+            "distance": 5262,
+            "duration": 388.9
           },
           {
-            "distance": 8297,
-            "duration": 489.2
+            "distance": 8103.1,
+            "duration": 436.3
           },
           {
-            "distance": 4184.5,
-            "duration": 301.2
+            "distance": 3891.6,
+            "duration": 229.3
           },
           {
-            "distance": 1135.1,
-            "duration": 96.9
+            "distance": 1428,
+            "duration": 168.8
           },
           {
             "distance": 1404.6,
@@ -33486,17 +33486,17 @@
         ],
         "way_points": [
           0,
-          141,
+          159,
           377,
-          504,
+          492,
           559,
           569
         ],
         "summary": {
-          "distance": 20089.2,
+          "distance": 20089.3,
           "duration": 1343.2
         },
-        "mobile": "Mobile",
+        "mobile": "Ashford Mobile Library",
         "route": "Ashford Mobile Library Red Route - Thursday"
       }
     },
@@ -38624,7 +38624,7 @@
           "distance": 32014.4,
           "duration": 2091.5
         },
-        "mobile": "Mobile",
+        "mobile": "Ashford Mobile Library",
         "route": "Ashford Mobile Library Red Route - Tuesday"
       }
     },
@@ -42117,6 +42117,10 @@
             51.128724
           ],
           [
+            0.752918,
+            51.128573
+          ],
+          [
             0.753075,
             51.128441
           ],
@@ -42199,10 +42203,6 @@
           [
             0.753075,
             51.128441
-          ],
-          [
-            0.752918,
-            51.128573
           ],
           [
             0.752739,
@@ -43290,12 +43290,12 @@
             "duration": 213.9
           },
           {
-            "distance": 7265.3,
-            "duration": 581.5
+            "distance": 6795.8,
+            "duration": 508.1
           },
           {
-            "distance": 6936.5,
-            "duration": 486.3
+            "distance": 7406,
+            "duration": 559.7
           }
         ],
         "way_points": [
@@ -43303,14 +43303,14 @@
           306,
           625,
           705,
-          932,
+          908,
           1159
         ],
         "summary": {
           "distance": 29570,
           "duration": 2041.4
         },
-        "mobile": "Mobile",
+        "mobile": "Ashford Mobile Library",
         "route": "Ashford Mobile Library Red Route - Wednesday"
       }
     },
@@ -43911,10 +43911,6 @@
             51.263577
           ],
           [
-            1.25043,
-            51.26372
-          ],
-          [
             1.24922,
             51.263986
           ],
@@ -43933,6 +43929,10 @@
           [
             1.24922,
             51.263986
+          ],
+          [
+            1.25043,
+            51.26372
           ],
           [
             1.25108,
@@ -44347,10 +44347,6 @@
             51.247616
           ],
           [
-            1.231808,
-            51.247384
-          ],
-          [
             1.231562,
             51.247215
           ],
@@ -44385,6 +44381,10 @@
           [
             1.231562,
             51.247215
+          ],
+          [
+            1.231808,
+            51.247384
           ],
           [
             1.232146,
@@ -44695,80 +44695,96 @@
             51.245242
           ],
           [
-            1.208764,
-            51.245544
+            1.208782,
+            51.245535
           ],
           [
             1.208334,
             51.245675
           ],
           [
-            1.207896,
-            51.24583
+            1.207821,
+            51.245866
           ],
           [
-            1.207492,
-            51.245984
+            1.207435,
+            51.246026
           ],
           [
             1.207224,
             51.246101
           ],
           [
-            1.206726,
-            51.246357
+            1.206714,
+            51.246375
           ],
           [
-            1.206518,
-            51.246435
+            1.206489,
+            51.246463
           ],
           [
-            1.206392,
-            51.24647
+            1.206432,
+            51.246474
           ],
           [
-            1.206437,
-            51.246524
+            1.206466,
+            51.246521
           ],
           [
             1.206188,
             51.246586
           ],
           [
-            1.205294,
-            51.24685
+            1.20541,
+            51.246829
           ],
           [
-            1.204964,
-            51.246935
+            1.205137,
+            51.246904
           ],
           [
-            1.203563,
-            51.247251
+            1.204044,
+            51.247161
+          ],
+          [
+            1.203389,
+            51.247289
           ],
           [
             1.203186,
             51.247311
           ],
           [
-            1.202563,
-            51.247368
+            1.202807,
+            51.247331
           ],
           [
-            1.202211,
-            51.247388
+            1.202379,
+            51.247376
           ],
           [
-            1.201735,
-            51.247352
+            1.2021,
+            51.247377
           ],
           [
-            1.201146,
-            51.247323
+            1.201762,
+            51.247339
           ],
           [
-            1.200566,
-            51.247335
+            1.201469,
+            51.247318
+          ],
+          [
+            1.20114,
+            51.247305
+          ],
+          [
+            1.200857,
+            51.247317
+          ],
+          [
+            1.200487,
+            51.247336
           ],
           [
             1.200093,
@@ -45067,80 +45083,96 @@
             51.247389
           ],
           [
-            1.200566,
-            51.247335
+            1.200487,
+            51.247336
           ],
           [
-            1.201146,
-            51.247323
+            1.200857,
+            51.247317
           ],
           [
-            1.201735,
-            51.247352
+            1.20114,
+            51.247305
           ],
           [
-            1.202211,
-            51.247388
+            1.201469,
+            51.247318
           ],
           [
-            1.202563,
-            51.247368
+            1.201762,
+            51.247339
+          ],
+          [
+            1.2021,
+            51.247377
+          ],
+          [
+            1.202379,
+            51.247376
+          ],
+          [
+            1.202807,
+            51.247331
           ],
           [
             1.203186,
             51.247311
           ],
           [
-            1.203563,
-            51.247251
+            1.203389,
+            51.247289
           ],
           [
-            1.204964,
-            51.246935
+            1.204044,
+            51.247161
           ],
           [
-            1.205294,
-            51.24685
+            1.205137,
+            51.246904
+          ],
+          [
+            1.20541,
+            51.246829
           ],
           [
             1.206188,
             51.246586
           ],
           [
-            1.206437,
-            51.246524
+            1.206466,
+            51.246521
           ],
           [
-            1.206392,
-            51.24647
+            1.206432,
+            51.246474
           ],
           [
-            1.206518,
-            51.246435
+            1.206489,
+            51.246463
           ],
           [
-            1.206726,
-            51.246357
+            1.206714,
+            51.246375
           ],
           [
             1.207224,
             51.246101
           ],
           [
-            1.207492,
-            51.245984
+            1.207435,
+            51.246026
           ],
           [
-            1.207896,
-            51.24583
+            1.207821,
+            51.245866
           ],
           [
             1.208334,
             51.245675
           ],
           [
-            1.208764,
-            51.245544
+            1.208782,
+            51.245535
           ],
           [
             1.209785,
@@ -45784,20 +45816,20 @@
       "properties": {
         "segments": [
           {
-            "distance": 5317.8,
-            "duration": 347.8
+            "distance": 5558.2,
+            "duration": 404.2
           },
           {
-            "distance": 3590.7,
-            "duration": 245.8
+            "distance": 3492.5,
+            "duration": 252.3
           },
           {
-            "distance": 5093.3,
-            "duration": 322.1
+            "distance": 4950.6,
+            "duration": 258.4
           },
           {
-            "distance": 5792.2,
-            "duration": 369.6
+            "distance": 5791.8,
+            "duration": 368.7
           },
           {
             "distance": 4048.5,
@@ -45806,17 +45838,17 @@
         ],
         "way_points": [
           0,
-          157,
-          278,
-          424,
-          588,
-          614
+          165,
+          290,
+          428,
+          596,
+          622
         ],
         "summary": {
-          "distance": 23842.5,
-          "duration": 1571.5
+          "distance": 23841.6,
+          "duration": 1569.8
         },
-        "mobile": "Mobile",
+        "mobile": "Dover Mobile Library",
         "route": "Dover Mobile Library Blue Route - Friday"
       }
     },
@@ -49747,7 +49779,7 @@
           "distance": 39909.9,
           "duration": 2525.8
         },
-        "mobile": "Mobile",
+        "mobile": "Dover Mobile Library",
         "route": "Dover Mobile Library Blue Route - Thursday"
       }
     },
@@ -59025,7 +59057,7 @@
           "distance": 79312.4,
           "duration": 5024.1
         },
-        "mobile": "Mobile",
+        "mobile": "Dover Mobile Library",
         "route": "Dover Mobile Library Blue Route - Tuesday"
       }
     },
@@ -59826,10 +59858,6 @@
             51.181495
           ],
           [
-            1.064819,
-            51.181487
-          ],
-          [
             1.064922,
             51.181424
           ],
@@ -59856,6 +59884,10 @@
           [
             1.064922,
             51.181424
+          ],
+          [
+            1.064819,
+            51.181487
           ],
           [
             1.064806,
@@ -61286,6 +61318,10 @@
             51.203955
           ],
           [
+            1.155729,
+            51.204303
+          ],
+          [
             1.155977,
             51.205354
           ],
@@ -61328,10 +61364,6 @@
           [
             1.155977,
             51.205354
-          ],
-          [
-            1.155729,
-            51.204303
           ],
           [
             1.155647,
@@ -62415,20 +62447,20 @@
             "duration": 231.4
           },
           {
-            "distance": 2466.4,
-            "duration": 176.6
+            "distance": 2539.7,
+            "duration": 221.6
           },
           {
-            "distance": 6054.6,
-            "duration": 424.8
+            "distance": 5981.3,
+            "duration": 379.8
           },
           {
-            "distance": 7268.3,
-            "duration": 466
+            "distance": 6863.6,
+            "duration": 376.2
           },
           {
-            "distance": 10858.3,
-            "duration": 528.9
+            "distance": 11262.9,
+            "duration": 618.7
           },
           {
             "distance": 2753.3,
@@ -62438,17 +62470,17 @@
         "way_points": [
           0,
           131,
-          212,
+          220,
           455,
-          614,
+          602,
           831,
           842
         ],
         "summary": {
-          "distance": 33448,
+          "distance": 33447.9,
           "duration": 2023.9
         },
-        "mobile": "Mobile",
+        "mobile": "Dover Mobile Library",
         "route": "Dover Mobile Library Red Route - Friday"
       }
     },
@@ -65155,11 +65187,11 @@
         "segments": [
           {
             "distance": 5294.6,
-            "duration": 405.8
+            "duration": 433.2
           },
           {
             "distance": 2412.9,
-            "duration": 311.6
+            "duration": 284.2
           },
           {
             "distance": 3471,
@@ -65167,11 +65199,11 @@
           },
           {
             "distance": 801.4,
-            "duration": 155.2
+            "duration": 127.8
           },
           {
             "distance": 10073.5,
-            "duration": 688.8
+            "duration": 716.2
           }
         ],
         "way_points": [
@@ -65186,7 +65218,7 @@
           "distance": 22053.4,
           "duration": 1902.2
         },
-        "mobile": "Mobile",
+        "mobile": "Dover Mobile Library",
         "route": "Dover Mobile Library Red Route - Saturday"
       }
     },
@@ -67106,7 +67138,7 @@
           "distance": 16542,
           "duration": 1256.1
         },
-        "mobile": "Mobile",
+        "mobile": "Dover Mobile Library",
         "route": "Dover Mobile Library Red Route - Thursday"
       }
     },
@@ -68575,10 +68607,6 @@
             51.098679
           ],
           [
-            1.12165,
-            51.098789
-          ],
-          [
             1.121884,
             51.098911
           ],
@@ -68621,6 +68649,10 @@
           [
             1.121884,
             51.098911
+          ],
+          [
+            1.12165,
+            51.098789
           ],
           [
             1.12144,
@@ -71048,12 +71080,12 @@
             "duration": 367.1
           },
           {
-            "distance": 4043.6,
-            "duration": 371.3
+            "distance": 4112.6,
+            "duration": 408.9
           },
           {
-            "distance": 8653.9,
-            "duration": 601.3
+            "distance": 8584.8,
+            "duration": 563.7
           },
           {
             "distance": 6649.9,
@@ -71063,15 +71095,15 @@
         "way_points": [
           0,
           202,
-          394,
+          406,
           813,
           980
         ],
         "summary": {
-          "distance": 22878.8,
+          "distance": 22878.7,
           "duration": 1709.1
         },
-        "mobile": "Mobile",
+        "mobile": "Dover Mobile Library",
         "route": "Dover Mobile Library Red Route - Tuesday"
       }
     },
@@ -72542,7 +72574,7 @@
           },
           {
             "distance": 3983.2,
-            "duration": 214.8
+            "duration": 242.2
           },
           {
             "distance": 0,
@@ -72550,7 +72582,7 @@
           },
           {
             "distance": 2535.3,
-            "duration": 210.2
+            "duration": 182.8
           },
           {
             "distance": 215,
@@ -72570,7 +72602,7 @@
           "distance": 13075.4,
           "duration": 812.2
         },
-        "mobile": "Mobile",
+        "mobile": "Dover Mobile Library",
         "route": "Dover Mobile Library Red Route - Wednesday"
       }
     },
@@ -75995,8 +76027,8 @@
             51.281504
           ],
           [
-            0.540218,
-            51.281627
+            0.540217,
+            51.281626
           ],
           [
             0.540043,
@@ -77080,25 +77112,25 @@
             "duration": 311.1
           },
           {
-            "distance": 28278.8,
-            "duration": 1566.6
+            "distance": 28128.2,
+            "duration": 1509.9
           },
           {
-            "distance": 4811,
-            "duration": 534.6
+            "distance": 4961.5,
+            "duration": 591.3
           }
         ],
         "way_points": [
           0,
           159,
-          902,
+          892,
           1122
         ],
         "summary": {
-          "distance": 38228.3,
+          "distance": 38228.2,
           "duration": 2412.3
         },
-        "mobile": "Mobile",
+        "mobile": "Maidstone Mobile Library",
         "route": "Maidstone Mobile Library Blue Route - Friday"
       }
     },
@@ -78175,10 +78207,6 @@
             51.246959
           ],
           [
-            0.560849,
-            51.24695
-          ],
-          [
             0.560674,
             51.246912
           ],
@@ -78197,6 +78225,10 @@
           [
             0.560674,
             51.246912
+          ],
+          [
+            0.560849,
+            51.24695
           ],
           [
             0.560893,
@@ -79772,12 +79804,12 @@
             "duration": 182.9
           },
           {
-            "distance": 2210.7,
-            "duration": 169.4
+            "distance": 2287.5,
+            "duration": 204
           },
           {
-            "distance": 3984.5,
-            "duration": 435.6
+            "distance": 3907.7,
+            "duration": 401
           },
           {
             "distance": 1202,
@@ -79793,7 +79825,7 @@
           31,
           60,
           200,
-          302,
+          308,
           470,
           531,
           661
@@ -79802,7 +79834,7 @@
           "distance": 13259.4,
           "duration": 1507.8
         },
-        "mobile": "Mobile",
+        "mobile": "Maidstone Mobile Library",
         "route": "Maidstone Mobile Library Blue Route - Thursday"
       }
     },
@@ -86947,6 +86979,10 @@
             51.272817
           ],
           [
+            0.552551,
+            51.272887
+          ],
+          [
             0.5527,
             51.273281
           ],
@@ -86973,10 +87009,6 @@
           [
             0.5527,
             51.273281
-          ],
-          [
-            0.552551,
-            51.272887
           ],
           [
             0.552524,
@@ -87420,12 +87452,12 @@
             "duration": 811.5
           },
           {
-            "distance": 10305.9,
-            "duration": 788
+            "distance": 10082.4,
+            "duration": 728
           },
           {
-            "distance": 2454.6,
-            "duration": 240.6
+            "distance": 2678.1,
+            "duration": 300.6
           }
         ],
         "way_points": [
@@ -87434,14 +87466,14 @@
           311,
           977,
           1527,
-          1856,
+          1846,
           1896
         ],
         "summary": {
           "distance": 57445.5,
           "duration": 3835.2
         },
-        "mobile": "Mobile",
+        "mobile": "Maidstone Mobile Library",
         "route": "Maidstone Mobile Library Blue Route - Tuesday"
       }
     },
@@ -90674,7 +90706,7 @@
           "distance": 23764.9,
           "duration": 2030.2
         },
-        "mobile": "Mobile",
+        "mobile": "Maidstone Mobile Library",
         "route": "Maidstone Mobile Library Blue Route - Wednesday"
       }
     },
@@ -103984,7 +104016,7 @@
           "distance": 109813.7,
           "duration": 6287.1
         },
-        "mobile": "Mobile",
+        "mobile": "Maidstone Mobile Library",
         "route": "Maidstone Mobile Library Red Route - Friday"
       }
     },
@@ -105145,12 +105177,12 @@
             51.211396
           ],
           [
-            0.594337,
-            51.211207
-          ],
-          [
             0.594141,
             51.211278
+          ],
+          [
+            0.594337,
+            51.211207
           ],
           [
             0.593814,
@@ -106214,12 +106246,12 @@
             "duration": 299.1
           },
           {
-            "distance": 4714.5,
-            "duration": 374.1
+            "distance": 4682.9,
+            "duration": 339.1
           },
           {
-            "distance": 457.4,
-            "duration": 62.2
+            "distance": 489,
+            "duration": 97.2
           },
           {
             "distance": 4570.9,
@@ -106230,7 +106262,7 @@
           0,
           20,
           138,
-          321,
+          319,
           360,
           551
         ],
@@ -106238,7 +106270,7 @@
           "distance": 14388.2,
           "duration": 1182.4
         },
-        "mobile": "Mobile",
+        "mobile": "Maidstone Mobile Library",
         "route": "Maidstone Mobile Library Red Route - Saturday"
       }
     },
@@ -107571,10 +107603,6 @@
             51.330607
           ],
           [
-            0.578309,
-            51.330561
-          ],
-          [
             0.578558,
             51.330475
           ],
@@ -107593,6 +107621,10 @@
           [
             0.578558,
             51.330475
+          ],
+          [
+            0.578309,
+            51.330561
           ],
           [
             0.578174,
@@ -111872,12 +111904,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 11990.3,
-            "duration": 640.9
+            "distance": 12106.8,
+            "duration": 703.4
           },
           {
-            "distance": 6702.7,
-            "duration": 851.5
+            "distance": 6586.2,
+            "duration": 789
           },
           {
             "distance": 4429.8,
@@ -111898,7 +111930,7 @@
         ],
         "way_points": [
           0,
-          350,
+          358,
           615,
           826,
           1020,
@@ -111909,7 +111941,7 @@
           "distance": 33652.9,
           "duration": 2579.7
         },
-        "mobile": "Mobile",
+        "mobile": "Maidstone Mobile Library",
         "route": "Maidstone Mobile Library Red Route - Thursday"
       }
     },
@@ -115074,10 +115106,6 @@
             51.34614
           ],
           [
-            0.463022,
-            51.346076
-          ],
-          [
             0.463015,
             51.34601
           ],
@@ -115112,6 +115140,10 @@
           [
             0.463015,
             51.34601
+          ],
+          [
+            0.463022,
+            51.346076
           ],
           [
             0.463029,
@@ -115603,12 +115635,12 @@
             "duration": 992
           },
           {
-            "distance": 2083.6,
-            "duration": 345.7
+            "distance": 2179.8,
+            "duration": 396.3
           },
           {
-            "distance": 2528,
-            "duration": 409
+            "distance": 2431.8,
+            "duration": 358.4
           },
           {
             "distance": 1709.9,
@@ -115621,7 +115653,7 @@
           130,
           163,
           691,
-          860,
+          870,
           915,
           915
         ],
@@ -115629,7 +115661,7 @@
           "distance": 25542.7,
           "duration": 2471.8
         },
-        "mobile": "Mobile",
+        "mobile": "Maidstone Mobile Library",
         "route": "Maidstone Mobile Library Red Route - Tuesday"
       }
     },
@@ -118006,10 +118038,6 @@
             51.284184
           ],
           [
-            0.695081,
-            51.284063
-          ],
-          [
             0.695236,
             51.283935
           ],
@@ -118028,6 +118056,10 @@
           [
             0.695236,
             51.283935
+          ],
+          [
+            0.695081,
+            51.284063
           ],
           [
             0.694933,
@@ -122959,12 +122991,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 21056.2,
-            "duration": 1019.4
+            "distance": 21181.9,
+            "duration": 1065
           },
           {
-            "distance": 7092.9,
-            "duration": 483
+            "distance": 6967.3,
+            "duration": 437.4
           },
           {
             "distance": 5228.5,
@@ -122972,31 +123004,31 @@
           },
           {
             "distance": 7421.3,
-            "duration": 437.7
+            "duration": 465.1
           },
           {
-            "distance": 10693.2,
-            "duration": 679.2
+            "distance": 10605.6,
+            "duration": 603.4
           },
           {
-            "distance": 7325.4,
-            "duration": 551.8
+            "distance": 7413,
+            "duration": 600.2
           }
         ],
         "way_points": [
           0,
-          616,
+          622,
           865,
           1058,
           1244,
-          1624,
+          1599,
           1828
         ],
         "summary": {
-          "distance": 58817.5,
+          "distance": 58817.6,
           "duration": 3490.6
         },
-        "mobile": "Mobile",
+        "mobile": "Maidstone Mobile Library",
         "route": "Maidstone Mobile Library Red Route - Wednesday"
       }
     },
@@ -124682,7 +124714,7 @@
           "distance": 11889.4,
           "duration": 1023.7
         },
-        "mobile": "Mobile",
+        "mobile": "Northfleet Mobile Library",
         "route": "Northfleet Mobile Library Blue Route - Friday"
       }
     },
@@ -126599,10 +126631,6 @@
             51.141699
           ],
           [
-            0.18594,
-            51.141748
-          ],
-          [
             0.185746,
             51.142182
           ],
@@ -126669,6 +126697,10 @@
           [
             0.185746,
             51.142182
+          ],
+          [
+            0.18594,
+            51.141748
           ],
           [
             0.185962,
@@ -127904,12 +127936,12 @@
             "duration": 531.3
           },
           {
-            "distance": 4011.2,
-            "duration": 363.8
+            "distance": 4331.4,
+            "duration": 468
           },
           {
-            "distance": 4929.1,
-            "duration": 450.2
+            "distance": 4609,
+            "duration": 346
           },
           {
             "distance": 4033.2,
@@ -127920,15 +127952,15 @@
           0,
           244,
           380,
-          503,
+          521,
           705,
           799
         ],
         "summary": {
-          "distance": 22968.8,
+          "distance": 22968.9,
           "duration": 2279.6
         },
-        "mobile": "Mobile",
+        "mobile": "Northfleet Mobile Library",
         "route": "Northfleet Mobile Library Blue Route - Saturday"
       }
     },
@@ -131011,7 +131043,7 @@
         "segments": [
           {
             "distance": 1459.2,
-            "duration": 130.3
+            "duration": 132.3
           },
           {
             "distance": 6915,
@@ -131030,9 +131062,9 @@
         ],
         "summary": {
           "distance": 15328.7,
-          "duration": 1456.9
+          "duration": 1458.9
         },
-        "mobile": "Mobile",
+        "mobile": "Northfleet Mobile Library",
         "route": "Northfleet Mobile Library Blue Route - Thursday"
       }
     },
@@ -133809,7 +133841,7 @@
           "distance": 16466.1,
           "duration": 1822
         },
-        "mobile": "Mobile",
+        "mobile": "Northfleet Mobile Library",
         "route": "Northfleet Mobile Library Blue Route - Tuesday"
       }
     },
@@ -138463,7 +138495,7 @@
           "distance": 24446.3,
           "duration": 2292.9
         },
-        "mobile": "Mobile",
+        "mobile": "Northfleet Mobile Library",
         "route": "Northfleet Mobile Library Blue Route - Wednesday"
       }
     },
@@ -143826,7 +143858,7 @@
           "distance": 31182.7,
           "duration": 2759.5
         },
-        "mobile": "Mobile",
+        "mobile": "Northfleet Mobile Library",
         "route": "Northfleet Mobile Library Red Route - Friday"
       }
     },
@@ -145687,12 +145719,12 @@
             51.236365
           ],
           [
-            0.186795,
-            51.236268
-          ],
-          [
             0.186959,
             51.236201
+          ],
+          [
+            0.186795,
+            51.236268
           ],
           [
             0.186558,
@@ -147148,25 +147180,25 @@
             "duration": 733.2
           },
           {
-            "distance": 6166.9,
-            "duration": 636.4
+            "distance": 6194.2,
+            "duration": 670.2
           },
           {
-            "distance": 13733.2,
-            "duration": 1005.5
+            "distance": 13705.8,
+            "duration": 971.7
           }
         ],
         "way_points": [
           0,
           248,
-          496,
+          498,
           825
         ],
         "summary": {
-          "distance": 27178.7,
+          "distance": 27178.6,
           "duration": 2375.1
         },
-        "mobile": "Mobile",
+        "mobile": "Northfleet Mobile Library",
         "route": "Northfleet Mobile Library Red Route - Thursday"
       }
     },
@@ -151210,7 +151242,7 @@
           "distance": 29995.3,
           "duration": 2045
         },
-        "mobile": "Mobile",
+        "mobile": "Northfleet Mobile Library",
         "route": "Northfleet Mobile Library Red Route - Tuesday"
       }
     },
@@ -159771,7 +159803,7 @@
           "distance": 61349.9,
           "duration": 3886.1
         },
-        "mobile": "Mobile",
+        "mobile": "Northfleet Mobile Library",
         "route": "Northfleet Mobile Library Red Route - Wednesday"
       }
     },
@@ -161336,6 +161368,10 @@
             51.269928
           ],
           [
+            1.055686,
+            51.270229
+          ],
+          [
             1.055684,
             51.270342
           ],
@@ -161386,10 +161422,6 @@
           [
             1.055684,
             51.270342
-          ],
-          [
-            1.055686,
-            51.270229
           ],
           [
             1.055693,
@@ -162568,6 +162600,10 @@
             51.248316
           ],
           [
+            1.028014,
+            51.248289
+          ],
+          [
             1.028492,
             51.248248
           ],
@@ -162726,10 +162762,6 @@
           [
             1.028492,
             51.248248
-          ],
-          [
-            1.028014,
-            51.248289
           ],
           [
             1.027691,
@@ -163201,24 +163233,24 @@
             "duration": 316.1
           },
           {
-            "distance": 2171.5,
-            "duration": 256.9
+            "distance": 1989.2,
+            "duration": 185.7
           },
           {
-            "distance": 3410.1,
-            "duration": 280.2
+            "distance": 3592.4,
+            "duration": 351.4
           },
           {
             "distance": 1442.9,
             "duration": 146.9
           },
           {
-            "distance": 2134.5,
-            "duration": 249.4
+            "distance": 1346.3,
+            "duration": 147.1
           },
           {
-            "distance": 2325.1,
-            "duration": 222.8
+            "distance": 3113.3,
+            "duration": 325.1
           }
         ],
         "way_points": [
@@ -163226,17 +163258,17 @@
           95,
           186,
           316,
-          442,
+          428,
           563,
           664,
-          811,
+          767,
           850
         ],
         "summary": {
           "distance": 22344.3,
           "duration": 2097
         },
-        "mobile": "Mobile",
+        "mobile": "Sturry Mobile Library",
         "route": "Sturry Mobile Library Blue Route - Friday"
       }
     },
@@ -166270,7 +166302,7 @@
           "distance": 19571.6,
           "duration": 1539.5
         },
-        "mobile": "Mobile",
+        "mobile": "Sturry Mobile Library",
         "route": "Sturry Mobile Library Blue Route - Saturday"
       }
     },
@@ -168557,11 +168589,11 @@
           },
           {
             "distance": 2024.9,
-            "duration": 229.8
+            "duration": 257.2
           },
           {
             "distance": 1779.3,
-            "duration": 185.6
+            "duration": 158.2
           }
         ],
         "way_points": [
@@ -168577,7 +168609,7 @@
           "distance": 15893.4,
           "duration": 1563.5
         },
-        "mobile": "Mobile",
+        "mobile": "Sturry Mobile Library",
         "route": "Sturry Mobile Library Blue Route - Thursday"
       }
     },
@@ -170406,6 +170438,10 @@
             51.244991
           ],
           [
+            0.966095,
+            51.244945
+          ],
+          [
             0.966079,
             51.244914
           ],
@@ -170480,10 +170516,6 @@
           [
             0.966079,
             51.244914
-          ],
-          [
-            0.966095,
-            51.244945
           ],
           [
             0.966118,
@@ -172558,12 +172590,12 @@
             51.268948
           ],
           [
-            0.886132,
-            51.269266
-          ],
-          [
             0.886191,
             51.269197
+          ],
+          [
+            0.886132,
+            51.269266
           ],
           [
             0.886404,
@@ -174139,20 +174171,20 @@
             "duration": 693.2
           },
           {
-            "distance": 871,
-            "duration": 138.2
+            "distance": 651,
+            "duration": 90
           },
           {
-            "distance": 10115.8,
-            "duration": 564.6
+            "distance": 10335.8,
+            "duration": 612.8
           },
           {
-            "distance": 5267.3,
-            "duration": 321.6
+            "distance": 5249.9,
+            "duration": 290.2
           },
           {
-            "distance": 7817.2,
-            "duration": 422
+            "distance": 7834.6,
+            "duration": 453.4
           },
           {
             "distance": 5741.9,
@@ -174163,9 +174195,9 @@
           0,
           124,
           441,
-          509,
+          489,
           866,
-          1062,
+          1060,
           1302,
           1384
         ],
@@ -174173,7 +174205,7 @@
           "distance": 47214.6,
           "duration": 2848.9
         },
-        "mobile": "Mobile",
+        "mobile": "Sturry Mobile Library",
         "route": "Sturry Mobile Library Blue Route - Tuesday"
       }
     },
@@ -174286,10 +174318,6 @@
             51.347361
           ],
           [
-            1.016378,
-            51.347511
-          ],
-          [
             1.016499,
             51.347584
           ],
@@ -174388,6 +174416,10 @@
           [
             1.016499,
             51.347584
+          ],
+          [
+            1.016378,
+            51.347511
           ],
           [
             1.016126,
@@ -176531,12 +176563,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 694.4,
-            "duration": 77.6
+            "distance": 1224.5,
+            "duration": 162.3
           },
           {
-            "distance": 4346.5,
-            "duration": 463.8
+            "distance": 3816.4,
+            "duration": 379.1
           },
           {
             "distance": 160.7,
@@ -176553,7 +176585,7 @@
         ],
         "way_points": [
           0,
-          32,
+          60,
           223,
           230,
           374,
@@ -176563,7 +176595,7 @@
           "distance": 13961.7,
           "duration": 1220.6
         },
-        "mobile": "Mobile",
+        "mobile": "Sturry Mobile Library",
         "route": "Sturry Mobile Library Blue Route - Wednesday"
       }
     },
@@ -177761,7 +177793,7 @@
           "distance": 9839.5,
           "duration": 615.1
         },
-        "mobile": "Mobile",
+        "mobile": "Sturry Mobile Library",
         "route": "Sturry Mobile Library Red Route - Friday"
       }
     },
@@ -179852,7 +179884,7 @@
           "distance": 13940.2,
           "duration": 943.6
         },
-        "mobile": "Mobile",
+        "mobile": "Sturry Mobile Library",
         "route": "Sturry Mobile Library Red Route - Thursday"
       }
     },
@@ -180321,12 +180353,12 @@
             51.293949
           ],
           [
-            0.957452,
-            51.2939
-          ],
-          [
             0.957363,
             51.293633
+          ],
+          [
+            0.957452,
+            51.2939
           ],
           [
             0.957468,
@@ -181305,6 +181337,10 @@
             51.283151
           ],
           [
+            1.057729,
+            51.283235
+          ],
+          [
             1.057322,
             51.283408
           ],
@@ -181323,10 +181359,6 @@
           [
             1.057322,
             51.283408
-          ],
-          [
-            1.057729,
-            51.283235
           ],
           [
             1.057925,
@@ -182473,6 +182505,10 @@
             51.308495
           ],
           [
+            1.044583,
+            51.308505
+          ],
+          [
             1.044375,
             51.308513
           ],
@@ -182515,10 +182551,6 @@
           [
             1.044375,
             51.308513
-          ],
-          [
-            1.044583,
-            51.308505
           ],
           [
             1.044843,
@@ -182618,54 +182650,54 @@
       "properties": {
         "segments": [
           {
-            "distance": 3602.8,
-            "duration": 218.2
+            "distance": 3663.5,
+            "duration": 251.2
           },
           {
-            "distance": 2104.8,
-            "duration": 229.5
+            "distance": 2044.1,
+            "duration": 196.5
           },
           {
             "distance": 3998,
             "duration": 227.4
           },
           {
-            "distance": 3486.5,
-            "duration": 359.7
+            "distance": 3360.7,
+            "duration": 314.7
           },
           {
-            "distance": 1362,
-            "duration": 177.6
+            "distance": 1487.7,
+            "duration": 222.6
           },
           {
             "distance": 1944,
             "duration": 171
           },
           {
-            "distance": 3072.1,
-            "duration": 331.9
+            "distance": 2752.3,
+            "duration": 274.9
           },
           {
-            "distance": 255,
-            "duration": 28.6
+            "distance": 574.8,
+            "duration": 85.6
           }
         ],
         "way_points": [
           0,
-          125,
+          127,
           188,
           278,
-          407,
+          401,
           489,
           588,
           687,
           687
         ],
         "summary": {
-          "distance": 19825.2,
+          "distance": 19825.1,
           "duration": 1743.9
         },
-        "mobile": "Mobile",
+        "mobile": "Sturry Mobile Library",
         "route": "Sturry Mobile Library Red Route - Tuesday"
       }
     },
@@ -186123,7 +186155,7 @@
           "distance": 27646,
           "duration": 2197.8
         },
-        "mobile": "Mobile",
+        "mobile": "Sturry Mobile Library",
         "route": "Sturry Mobile Library Red Route - Wednesday"
       }
     }

@@ -7894,10 +7894,6 @@
             55.94691
           ],
           [
-            -4.542693,
-            55.946683
-          ],
-          [
             -4.542654,
             55.946631
           ],
@@ -7972,6 +7968,10 @@
           [
             -4.542654,
             55.946631
+          ],
+          [
+            -4.542693,
+            55.946683
           ],
           [
             -4.542863,
@@ -8783,12 +8783,12 @@
             "duration": 318.7
           },
           {
-            "distance": 928,
-            "duration": 132
+            "distance": 1195.3,
+            "duration": 202.4
           },
           {
-            "distance": 2663.8,
-            "duration": 352.7
+            "distance": 2396.4,
+            "duration": 282.3
           },
           {
             "distance": 2669.6,
@@ -8804,15 +8804,15 @@
           1630,
           1988,
           2071,
-          2102,
+          2123,
           2185,
           2185
         ],
         "summary": {
-          "distance": 72498.9,
+          "distance": 72498.8,
           "duration": 5340.7
         },
-        "mobile": "Mobile",
+        "mobile": "West Dunbartonshire Mobile Library",
         "route": "Friday - Dalmuir, Faifley, Drumry Duntocher and Dumbarton East"
       }
     },
@@ -9081,12 +9081,12 @@
             55.981109
           ],
           [
-            -4.55693,
-            55.981113
-          ],
-          [
             -4.556893,
             55.981114
+          ],
+          [
+            -4.55693,
+            55.981113
           ],
           [
             -4.557168,
@@ -12086,12 +12086,12 @@
             "duration": 151.4
           },
           {
-            "distance": 895.6,
-            "duration": 148.9
+            "distance": 900.3,
+            "duration": 176.9
           },
           {
-            "distance": 2889.6,
-            "duration": 375.3
+            "distance": 2885,
+            "duration": 347.3
           },
           {
             "distance": 3962,
@@ -12122,7 +12122,7 @@
           0,
           4,
           48,
-          84,
+          86,
           213,
           386,
           527,
@@ -12132,10 +12132,10 @@
           812
         ],
         "summary": {
-          "distance": 31612.4,
+          "distance": 31612.5,
           "duration": 2534.5
         },
-        "mobile": "Mobile",
+        "mobile": "West Dunbartonshire Mobile Library",
         "route": "Monday - Bonhill, Haldane, Gartocharn and Lomondgate"
       }
     },
@@ -14200,10 +14200,6 @@
             55.94691
           ],
           [
-            -4.542693,
-            55.946683
-          ],
-          [
             -4.542654,
             55.946631
           ],
@@ -14278,6 +14274,10 @@
           [
             -4.542654,
             55.946631
+          ],
+          [
+            -4.542693,
+            55.946683
           ],
           [
             -4.542863,
@@ -19733,12 +19733,12 @@
             "duration": 801
           },
           {
-            "distance": 9977.8,
-            "duration": 612.6
+            "distance": 10245.1,
+            "duration": 683
           },
           {
-            "distance": 12494.4,
-            "duration": 883.3
+            "distance": 12227.1,
+            "duration": 812.9
           },
           {
             "distance": 10766.7,
@@ -19768,7 +19768,7 @@
         "way_points": [
           0,
           316,
-          553,
+          574,
           971,
           1341,
           1422,
@@ -19781,7 +19781,7 @@
           "distance": 66826.1,
           "duration": 4679.1
         },
-        "mobile": "Mobile",
+        "mobile": "West Dunbartonshire Mobile Library",
         "route": "Thursday - Alexandria/Dumbarton Sheltered Housing and Renton"
       }
     },
@@ -21314,8 +21314,8 @@
             55.955584
           ],
           [
-            -4.546906,
-            55.95588
+            -4.546901,
+            55.955876
           ],
           [
             -4.547175,
@@ -22223,12 +22223,12 @@
             "duration": 164.8
           },
           {
-            "distance": 4395.4,
-            "duration": 544.1
+            "distance": 4253.2,
+            "duration": 496.3
           },
           {
-            "distance": 3182.2,
-            "duration": 357.7
+            "distance": 3324.4,
+            "duration": 405.5
           },
           {
             "distance": 3222,
@@ -22246,7 +22246,7 @@
           124,
           188,
           243,
-          436,
+          431,
           556,
           601,
           601
@@ -22255,7 +22255,7 @@
           "distance": 15355,
           "duration": 1892.1
         },
-        "mobile": "Mobile",
+        "mobile": "West Dunbartonshire Mobile Library",
         "route": "Tuesday - Dumbarton - Brucehill, Castlehill and Bellsmyre"
       }
     },
@@ -30988,6 +30988,10 @@
             55.939391
           ],
           [
+            -4.578973,
+            55.939377
+          ],
+          [
             -4.579138,
             55.93933
           ],
@@ -31014,10 +31018,6 @@
           [
             -4.579138,
             55.93933
-          ],
-          [
-            -4.578973,
-            55.939377
           ],
           [
             -4.578922,
@@ -32613,12 +32613,12 @@
             "duration": 54.5
           },
           {
-            "distance": 9291.8,
-            "duration": 806.9
+            "distance": 9119.2,
+            "duration": 755.3
           },
           {
-            "distance": 8453.8,
-            "duration": 772.4
+            "distance": 8626.4,
+            "duration": 824
           },
           {
             "distance": 0,
@@ -32635,7 +32635,7 @@
           1580,
           1861,
           1912,
-          2317,
+          2309,
           2577,
           2577
         ],
@@ -32643,7 +32643,7 @@
           "distance": 71886.2,
           "duration": 5404.3
         },
-        "mobile": "Mobile",
+        "mobile": "West Dunbartonshire Mobile Library",
         "route": "Wednesday - Whitecrook, Clydebank and Old Kilpatrick"
       }
     }

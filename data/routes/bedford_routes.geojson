@@ -2398,10 +2398,6 @@
             52.177585
           ],
           [
-            -0.315954,
-            52.177572
-          ],
-          [
             -0.315962,
             52.177554
           ],
@@ -2468,6 +2464,10 @@
           [
             -0.315962,
             52.177554
+          ],
+          [
+            -0.315954,
+            52.177572
           ],
           [
             -0.315949,
@@ -4155,12 +4155,12 @@
             "duration": 0
           },
           {
-            "distance": 10893.9,
-            "duration": 1025.7
+            "distance": 11105,
+            "duration": 1098.4
           },
           {
-            "distance": 378.4,
-            "duration": 105.3
+            "distance": 167.3,
+            "duration": 32.6
           },
           {
             "distance": 7944.9,
@@ -4180,7 +4180,7 @@
           133,
           301,
           305,
-          627,
+          647,
           661,
           825,
           863,
@@ -4190,7 +4190,7 @@
           "distance": 37649.5,
           "duration": 3809.4
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Friday Week 1"
       }
     },
@@ -6791,10 +6791,6 @@
             52.289243
           ],
           [
-            -0.517966,
-            52.289179
-          ],
-          [
             -0.517978,
             52.289167
           ],
@@ -6829,6 +6825,10 @@
           [
             -0.517978,
             52.289167
+          ],
+          [
+            -0.517966,
+            52.289179
           ],
           [
             -0.5179,
@@ -7420,12 +7420,12 @@
             "duration": 371.3
           },
           {
-            "distance": 5435,
-            "duration": 539
+            "distance": 5527,
+            "duration": 593.3
           },
           {
-            "distance": 5384.9,
-            "duration": 542.2
+            "distance": 5292.9,
+            "duration": 487.9
           }
         ],
         "way_points": [
@@ -7439,14 +7439,14 @@
           442,
           446,
           583,
-          705,
+          717,
           794
         ],
         "summary": {
           "distance": 32230.3,
           "duration": 2786.8
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Friday Week 2"
       }
     },
@@ -13571,6 +13571,10 @@
             52.116476
           ],
           [
+            -0.46859,
+            52.116547
+          ],
+          [
             -0.468256,
             52.116669
           ],
@@ -13597,10 +13601,6 @@
           [
             -0.468256,
             52.116669
-          ],
-          [
-            -0.46859,
-            52.116547
           ],
           [
             -0.468784,
@@ -14836,12 +14836,12 @@
             "duration": 0
           },
           {
-            "distance": 8389.2,
-            "duration": 550.3
+            "distance": 8210.4,
+            "duration": 501.5
           },
           {
-            "distance": 12539.4,
-            "duration": 704.5
+            "distance": 12718.2,
+            "duration": 753.3
           },
           {
             "distance": 413.9,
@@ -14853,11 +14853,11 @@
           },
           {
             "distance": 2534,
-            "duration": 454.7
+            "duration": 482.1
           },
           {
             "distance": 596.5,
-            "duration": 99.5
+            "duration": 72.1
           }
         ],
         "way_points": [
@@ -14866,7 +14866,7 @@
           1278,
           1282,
           1286,
-          1621,
+          1611,
           1839,
           1839,
           1839,
@@ -14877,7 +14877,7 @@
           "distance": 115795.5,
           "duration": 6127.9
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Monday Week 1"
       }
     },
@@ -18579,7 +18579,7 @@
           "distance": 33897.6,
           "duration": 2988.1
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Saturday Week 1"
       }
     },
@@ -19464,8 +19464,8 @@
             52.254959
           ],
           [
-            -0.474286,
-            52.254215
+            -0.474292,
+            52.254213
           ],
           [
             -0.474566,
@@ -20537,12 +20537,12 @@
             "duration": 58
           },
           {
-            "distance": 6922.3,
-            "duration": 511.4
+            "distance": 7307.8,
+            "duration": 586.5
           },
           {
-            "distance": 1065.4,
-            "duration": 143.3
+            "distance": 679.8,
+            "duration": 68.2
           },
           {
             "distance": 1396.7,
@@ -20573,7 +20573,7 @@
           0,
           25,
           49,
-          235,
+          246,
           271,
           334,
           338,
@@ -20583,10 +20583,10 @@
           483
         ],
         "summary": {
-          "distance": 18986.1,
+          "distance": 18986,
           "duration": 1712.7
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Saturday Week 2"
       }
     },
@@ -25129,7 +25129,7 @@
           "distance": 40055.1,
           "duration": 3074.8
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Thursday Week 1"
       }
     },
@@ -25766,7 +25766,7 @@
             52.138568
           ],
           [
-            -0.50792,
+            -0.507921,
             52.138501
           ],
           [
@@ -27390,6 +27390,10 @@
             52.193438
           ],
           [
+            -0.51201,
+            52.193426
+          ],
+          [
             -0.512027,
             52.193415
           ],
@@ -27440,10 +27444,6 @@
           [
             -0.512027,
             52.193415
-          ],
-          [
-            -0.51201,
-            52.193426
           ],
           [
             -0.511992,
@@ -27731,12 +27731,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 3636.3,
-            "duration": 291.9
+            "distance": 3792.5,
+            "duration": 358
           },
           {
-            "distance": 1134,
-            "duration": 253.4
+            "distance": 977.8,
+            "duration": 187.3
           },
           {
             "distance": 7704.2,
@@ -27751,29 +27751,29 @@
             "duration": 37.6
           },
           {
-            "distance": 3327.4,
-            "duration": 260.7
+            "distance": 3162.5,
+            "duration": 211.3
           },
           {
-            "distance": 2758,
-            "duration": 192.1
+            "distance": 2922.9,
+            "duration": 241.5
           }
         ],
         "way_points": [
           0,
-          172,
+          193,
           249,
           485,
           509,
           523,
-          642,
+          626,
           646
         ],
         "summary": {
           "distance": 19352.8,
           "duration": 1632.6
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Thursday Week 2"
       }
     },
@@ -31029,7 +31029,7 @@
           "distance": 14569.8,
           "duration": 1731.6
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Tuesday Week 1"
       }
     },
@@ -31994,8 +31994,8 @@
             52.183181
           ],
           [
-            -0.397048,
-            52.18307
+            -0.397044,
+            52.183075
           ],
           [
             -0.397232,
@@ -35187,12 +35187,12 @@
             "duration": 76
           },
           {
-            "distance": 4406.1,
-            "duration": 436.4
+            "distance": 4342.1,
+            "duration": 400
           },
           {
-            "distance": 4502.1,
-            "duration": 409
+            "distance": 4566,
+            "duration": 445.4
           },
           {
             "distance": 0,
@@ -35220,7 +35220,7 @@
           4,
           64,
           101,
-          262,
+          257,
           411,
           415,
           728,
@@ -35229,10 +35229,10 @@
           1032
         ],
         "summary": {
-          "distance": 27306.4,
+          "distance": 27306.3,
           "duration": 2476.5
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Tuesday Week 2"
       }
     },
@@ -36717,10 +36717,6 @@
             52.089218
           ],
           [
-            -0.404171,
-            52.089441
-          ],
-          [
             -0.40338,
             52.089859
           ],
@@ -36763,6 +36759,10 @@
           [
             -0.40338,
             52.089859
+          ],
+          [
+            -0.404171,
+            52.089441
           ],
           [
             -0.404592,
@@ -37365,6 +37365,10 @@
             52.082025
           ],
           [
+            -0.450673,
+            52.081891
+          ],
+          [
             -0.450688,
             52.081875
           ],
@@ -37383,10 +37387,6 @@
           [
             -0.450688,
             52.081875
-          ],
-          [
-            -0.450673,
-            52.081891
           ],
           [
             -0.450552,
@@ -37501,6 +37501,10 @@
             52.081207
           ],
           [
+            -0.436779,
+            52.081477
+          ],
+          [
             -0.436718,
             52.081488
           ],
@@ -37519,10 +37523,6 @@
           [
             -0.436718,
             52.081488
-          ],
-          [
-            -0.436779,
-            52.081477
           ],
           [
             -0.438342,
@@ -37653,12 +37653,12 @@
             52.078108
           ],
           [
-            -0.450063,
-            52.078197
-          ],
-          [
             -0.451154,
             52.078577
+          ],
+          [
+            -0.450063,
+            52.078197
           ],
           [
             -0.449806,
@@ -37730,37 +37730,37 @@
             "duration": 0
           },
           {
-            "distance": 9549.4,
-            "duration": 1283.5
+            "distance": 10462.6,
+            "duration": 1968.5
           },
           {
-            "distance": 5851.1,
-            "duration": 1643.2
+            "distance": 4937.9,
+            "duration": 958.2
           },
           {
-            "distance": 418.4,
-            "duration": 77.9
+            "distance": 350.8,
+            "duration": 40.5
           },
           {
-            "distance": 1272.7,
-            "duration": 173.1
+            "distance": 1131.9,
+            "duration": 143.4
           },
           {
-            "distance": 1290.6,
-            "duration": 143.2
+            "distance": 1670.9,
+            "duration": 262.5
           },
           {
-            "distance": 616,
-            "duration": 119.4
+            "distance": 444.1,
+            "duration": 67.2
           }
         ],
         "way_points": [
           0,
           31,
           35,
-          404,
+          416,
           563,
-          587,
+          581,
           618,
           618,
           618
@@ -37769,7 +37769,7 @@
           "distance": 20050.1,
           "duration": 3586.7
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Wednesday Week 1"
       }
     },
@@ -39267,7 +39267,7 @@
           "distance": 11740.2,
           "duration": 1162.7
         },
-        "mobile": "Mobile",
+        "mobile": "Bedford Borough Mobile Library",
         "route": "Wednesday Week 2"
       }
     }

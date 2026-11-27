@@ -18558,7 +18558,7 @@
           "distance": 125999.4,
           "duration": 8094.9
         },
-        "mobile": "Mobile",
+        "mobile": "Pembrokeshire Mobile Library",
         "route": "Route A: Brynberian - Glandwr"
       }
     },
@@ -27659,8 +27659,8 @@
             51.840928
           ],
           [
-            -4.730332,
-            51.840551
+            -4.73032,
+            51.840552
           ],
           [
             -4.730003,
@@ -28540,12 +28540,12 @@
             "duration": 871.4
           },
           {
-            "distance": 3229.7,
-            "duration": 324.9
+            "distance": 3185.9,
+            "duration": 291.3
           },
           {
-            "distance": 6220.1,
-            "duration": 453.1
+            "distance": 6264,
+            "duration": 486.7
           }
         ],
         "way_points": [
@@ -28555,14 +28555,14 @@
           1078,
           1364,
           2162,
-          2334,
+          2330,
           2486
         ],
         "summary": {
-          "distance": 51087.9,
+          "distance": 51088,
           "duration": 4096.2
         },
-        "mobile": "Mobile",
+        "mobile": "Pembrokeshire Mobile Library",
         "route": "Route B: Spittal - Llanddewi Velfrey"
       }
     },
@@ -41607,6 +41607,10 @@
             52.081913
           ],
           [
+            -4.681434,
+            52.0819
+          ],
+          [
             -4.681395,
             52.081772
           ],
@@ -41649,10 +41653,6 @@
           [
             -4.681395,
             52.081772
-          ],
-          [
-            -4.681434,
-            52.0819
           ],
           [
             -4.681438,
@@ -42944,12 +42944,12 @@
             "duration": 0
           },
           {
-            "distance": 43876.5,
-            "duration": 2522.4
+            "distance": 43716.5,
+            "duration": 2473
           },
           {
-            "distance": 6364,
-            "duration": 608.9
+            "distance": 6524,
+            "duration": 658.3
           },
           {
             "distance": 470.7,
@@ -42961,7 +42961,7 @@
           592,
           1637,
           1641,
-          3333,
+          3321,
           3588,
           3588
         ],
@@ -42969,7 +42969,7 @@
           "distance": 97028.9,
           "duration": 6144.9
         },
-        "mobile": "Mobile",
+        "mobile": "Pembrokeshire Mobile Library",
         "route": "Route C: Letterston - Cilgerran"
       }
     },
@@ -47512,7 +47512,7 @@
           "distance": 26440.1,
           "duration": 2341.4
         },
-        "mobile": "Mobile",
+        "mobile": "Pembrokeshire Mobile Library",
         "route": "Route D: Jeffreyston - Amroth"
       }
     },
@@ -50257,8 +50257,8 @@
             51.647689
           ],
           [
-            -4.790942,
-            51.647675
+            -4.790946,
+            51.647681
           ],
           [
             -4.790963,
@@ -53797,6 +53797,10 @@
             51.629897
           ],
           [
+            -4.914876,
+            51.629883
+          ],
+          [
             -4.91432,
             51.629761
           ],
@@ -53823,10 +53827,6 @@
           [
             -4.91432,
             51.629761
-          ],
-          [
-            -4.914876,
-            51.629883
           ],
           [
             -4.914941,
@@ -56970,20 +56970,20 @@
             "duration": 577.4
           },
           {
-            "distance": 6400.5,
-            "duration": 501.5
+            "distance": 6116.7,
+            "duration": 423.7
           },
           {
-            "distance": 8438.4,
-            "duration": 533.4
+            "distance": 8722.3,
+            "duration": 611.2
           },
           {
-            "distance": 9920.3,
-            "duration": 880.6
+            "distance": 9639.3,
+            "duration": 812.4
           },
           {
-            "distance": 4359.3,
-            "duration": 388.1
+            "distance": 4640.3,
+            "duration": 456.3
           },
           {
             "distance": 14974.1,
@@ -56993,17 +56993,17 @@
         "way_points": [
           0,
           368,
-          717,
+          703,
           1154,
-          1617,
+          1609,
           1834,
           2359
         ],
         "summary": {
-          "distance": 51282.9,
+          "distance": 51283,
           "duration": 3860.2
         },
-        "mobile": "Mobile",
+        "mobile": "Pembrokeshire Mobile Library",
         "route": "Route E: St Florence - Angle"
       }
     },
@@ -60305,7 +60305,7 @@
           "distance": 28577.1,
           "duration": 2569.1
         },
-        "mobile": "Mobile",
+        "mobile": "Pembrokeshire Mobile Library",
         "route": "Route F: Herbrandston - Broad Haven"
       }
     },
@@ -61735,7 +61735,7 @@
           "distance": 18524.2,
           "duration": 2025.3
         },
-        "mobile": "Mobile",
+        "mobile": "Pembrokeshire Mobile Library",
         "route": "Route G: Freystrop - Johnston"
       }
     },
@@ -68092,10 +68092,6 @@
             51.874047
           ],
           [
-            -5.197267,
-            51.874107
-          ],
-          [
             -5.197304,
             51.874115
           ],
@@ -68146,6 +68142,10 @@
           [
             -5.197304,
             51.874115
+          ],
+          [
+            -5.197267,
+            51.874107
           ],
           [
             -5.196984,
@@ -69116,6 +69116,14 @@
             51.848139
           ],
           [
+            -5.08269,
+            51.848141
+          ],
+          [
+            -5.08269,
+            51.848141
+          ],
+          [
             -5.081966,
             51.848198
           ],
@@ -69206,14 +69214,6 @@
           [
             -5.081966,
             51.848198
-          ],
-          [
-            -5.08269,
-            51.848141
-          ],
-          [
-            -5.08269,
-            51.848141
           ],
           [
             -5.082722,
@@ -69513,20 +69513,20 @@
             "duration": 1699
           },
           {
-            "distance": 20040.1,
-            "duration": 1286.3
+            "distance": 20222.6,
+            "duration": 1359
           },
           {
-            "distance": 11231.5,
-            "duration": 892.1
+            "distance": 10350.1,
+            "duration": 675.8
           },
           {
             "distance": 0,
             "duration": 0
           },
           {
-            "distance": 3943.6,
-            "duration": 294.2
+            "distance": 4642.6,
+            "duration": 437.8
           }
         ],
         "way_points": [
@@ -69534,16 +69534,16 @@
           200,
           341,
           1179,
-          1640,
-          1933,
-          1937,
+          1658,
+          1906,
+          1910,
           1937
         ],
         "summary": {
-          "distance": 79320.7,
+          "distance": 79320.8,
           "duration": 5281.9
         },
-        "mobile": "Mobile",
+        "mobile": "Pembrokeshire Mobile Library",
         "route": "Route H: Hayscastle Cross - Keeston"
       }
     }

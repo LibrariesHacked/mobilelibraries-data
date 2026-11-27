@@ -2201,7 +2201,7 @@
           "distance": 10398.3,
           "duration": 985.8
         },
-        "mobile": "Mobile",
+        "mobile": "North Somerset Mobile Library",
         "route": "Week 1 - Friday"
       }
     },
@@ -5798,7 +5798,7 @@
           "distance": 23229.8,
           "duration": 2324.5
         },
-        "mobile": "Mobile",
+        "mobile": "North Somerset Mobile Library",
         "route": "Week 1 - Monday"
       }
     },
@@ -9297,7 +9297,7 @@
           "distance": 20263.5,
           "duration": 1578.6
         },
-        "mobile": "Mobile",
+        "mobile": "North Somerset Mobile Library",
         "route": "Week 1 - Thursday"
       }
     },
@@ -10466,6 +10466,10 @@
             51.352166
           ],
           [
+            -2.698606,
+            51.352138
+          ],
+          [
             -2.698673,
             51.352084
           ],
@@ -10476,10 +10480,6 @@
           [
             -2.698673,
             51.352084
-          ],
-          [
-            -2.698606,
-            51.352138
           ],
           [
             -2.698571,
@@ -11731,12 +11731,12 @@
             "duration": 409.1
           },
           {
-            "distance": 5027.7,
-            "duration": 772.3
+            "distance": 4997,
+            "duration": 737.3
           },
           {
-            "distance": 4347.5,
-            "duration": 492.2
+            "distance": 4378.2,
+            "duration": 527.2
           },
           {
             "distance": 4367.4,
@@ -11746,7 +11746,7 @@
         "way_points": [
           0,
           148,
-          316,
+          312,
           470,
           603
         ],
@@ -11754,7 +11754,7 @@
           "distance": 18685.5,
           "duration": 2081.1
         },
-        "mobile": "Mobile",
+        "mobile": "North Somerset Mobile Library",
         "route": "Week 1 - Wednesday"
       }
     },
@@ -14767,10 +14767,6 @@
             51.334235
           ],
           [
-            -2.911272,
-            51.334283
-          ],
-          [
             -2.911218,
             51.334295
           ],
@@ -14989,6 +14985,10 @@
           [
             -2.911218,
             51.334295
+          ],
+          [
+            -2.911272,
+            51.334283
           ],
           [
             -2.911485,
@@ -17668,12 +17668,12 @@
             "duration": 643.1
           },
           {
-            "distance": 6718.4,
-            "duration": 673.1
+            "distance": 6928.8,
+            "duration": 744.8
           },
           {
-            "distance": 2658.2,
-            "duration": 332.2
+            "distance": 2447.8,
+            "duration": 260.5
           },
           {
             "distance": 6128.3,
@@ -17687,16 +17687,16 @@
         "way_points": [
           0,
           233,
-          788,
-          1080,
-          1384,
+          846,
+          1079,
+          1383,
           1473
         ],
         "summary": {
           "distance": 24468.7,
           "duration": 2532.6
         },
-        "mobile": "Mobile",
+        "mobile": "North Somerset Mobile Library",
         "route": "Week 2 - Friday"
       }
     },
@@ -19581,10 +19581,6 @@
             51.388322
           ],
           [
-            -2.7045,
-            51.38832
-          ],
-          [
             -2.704451,
             51.388318
           ],
@@ -19595,6 +19591,10 @@
           [
             -2.704451,
             51.388318
+          ],
+          [
+            -2.7045,
+            51.38832
           ],
           [
             -2.704538,
@@ -21938,12 +21938,12 @@
             "duration": 714.3
           },
           {
-            "distance": 2138.2,
-            "duration": 221.3
+            "distance": 2164.1,
+            "duration": 261.5
           },
           {
-            "distance": 7296.3,
-            "duration": 708.4
+            "distance": 7270.5,
+            "duration": 668.2
           },
           {
             "distance": 9874.6,
@@ -21953,15 +21953,15 @@
         "way_points": [
           0,
           350,
-          495,
+          501,
           721,
           1055
         ],
         "summary": {
-          "distance": 27922.5,
+          "distance": 27922.6,
           "duration": 2587.5
         },
-        "mobile": "Mobile",
+        "mobile": "North Somerset Mobile Library",
         "route": "Week 2 - Monday"
       }
     },
@@ -24550,7 +24550,7 @@
           "distance": 18820.7,
           "duration": 1576.9
         },
-        "mobile": "Mobile",
+        "mobile": "North Somerset Mobile Library",
         "route": "Week 2 - Thursday"
       }
     },
@@ -27580,7 +27580,7 @@
           "distance": 17882.8,
           "duration": 1503.4
         },
-        "mobile": "Mobile",
+        "mobile": "North Somerset Mobile Library",
         "route": "Week 2 - Tuesday"
       }
     }

@@ -895,7 +895,7 @@
           "distance": 5893.6,
           "duration": 551.7
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 1"
       }
     },
@@ -7635,7 +7635,7 @@
           "distance": 46216.8,
           "duration": 3075
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 1: Blaenwaun - Trelech - Alma - Meidrim"
       }
     },
@@ -11577,7 +11577,7 @@
           "distance": 51218,
           "duration": 2894
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 1: Llanwrda - Llangadog - Tumble"
       }
     },
@@ -15248,7 +15248,7 @@
           "distance": 28843.9,
           "duration": 1933.7
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 1: Pendine - Llansadurnen - Laugharne - Llanddawror - Red Roses"
       }
     },
@@ -17398,7 +17398,7 @@
           "distance": 24920.8,
           "duration": 1219.6
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 1: Pendine - Llansadurnen - Laugharne - Red Roses"
       }
     },
@@ -21165,7 +21165,7 @@
           "distance": 36532.5,
           "duration": 2803.9
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 1: Trimsaran - Mynyddygarreg - Ferryside"
       }
     },
@@ -22056,6 +22056,10 @@
           [
             -4.148979,
             51.822666
+          ],
+          [
+            -4.148925,
+            51.822692
           ],
           [
             -4.148888,
@@ -27570,6 +27574,10 @@
             52.024059
           ],
           [
+            -4.399412,
+            52.024111
+          ],
+          [
             -4.399398,
             52.024154
           ],
@@ -27660,10 +27668,6 @@
           [
             -4.399398,
             52.024154
-          ],
-          [
-            -4.399412,
-            52.024111
           ],
           [
             -4.399429,
@@ -33423,12 +33427,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 46092.1,
-            "duration": 3308.5
+            "distance": 45736.5,
+            "duration": 3210.9
           },
           {
-            "distance": 45110.3,
-            "duration": 2784.9
+            "distance": 45465.9,
+            "duration": 2882.6
           },
           {
             "distance": 2038.9,
@@ -33437,15 +33441,15 @@
         ],
         "way_points": [
           0,
-          1651,
-          3060,
-          3060
+          1624,
+          3061,
+          3061
         ],
         "summary": {
           "distance": 93241.3,
-          "duration": 6334.4
+          "duration": 6334.5
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 1: Tumble - Drefach"
       }
     },
@@ -36412,7 +36416,7 @@
           "distance": 18389.3,
           "duration": 1570.4
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 2: Cwmann - Llanybydder - Gwyddgrug - Alltwalis"
       }
     },
@@ -38383,7 +38387,7 @@
           "distance": 15243.9,
           "duration": 1044.3
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 2: Ffarmers - Pumsaint - Crug Y Bar - Talley"
       }
     },
@@ -39561,7 +39565,7 @@
           "distance": 5293.4,
           "duration": 520.2
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 2: Llanglydwen - Llanboidy - Llangynin - Llanddawror"
       }
     },
@@ -48761,7 +48765,7 @@
           "distance": 58728.5,
           "duration": 5295.9
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 3: Blaen Y Coed - Capel Iwan - Drefach Felindre - Cynwyl Elfed"
       }
     },
@@ -52636,7 +52640,7 @@
           "distance": 48562.1,
           "duration": 3660.5
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 3: Cynghordy - Cilycwm - Llanfynydd - Nantgaredig"
       }
     },
@@ -54538,7 +54542,7 @@
           "distance": 10048.1,
           "duration": 799.8
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 3: Llangain Hall - Llangain Ger-Y-Capel - Llansteffan Square - Llansteffan Y Wesle - Llanybri Hen Gapel - Llanybri Ger Y Marbell"
       }
     },
@@ -57118,7 +57122,7 @@
           "distance": 27125.8,
           "duration": 2170
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 3: Peniel - Llanpumsaint 1 - Pencader - Llanllwni"
       }
     },
@@ -58421,7 +58425,7 @@
           "distance": 10891,
           "duration": 635.6
         },
-        "mobile": "Mobile",
+        "mobile": "Carmarthenshire Mobile Library",
         "route": "Route 3: Rhydcymerau - Llansawel - Abergorlech"
       }
     }

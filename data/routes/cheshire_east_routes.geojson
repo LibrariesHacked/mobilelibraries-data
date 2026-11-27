@@ -1554,10 +1554,6 @@
             53.017295
           ],
           [
-            -2.574056,
-            53.017693
-          ],
-          [
             -2.573583,
             53.017848
           ],
@@ -1592,6 +1588,10 @@
           [
             -2.573583,
             53.017848
+          ],
+          [
+            -2.574056,
+            53.017693
           ],
           [
             -2.575272,
@@ -2683,16 +2683,16 @@
             "duration": 442.2
           },
           {
-            "distance": 6194.6,
-            "duration": 360.2
+            "distance": 6374.5,
+            "duration": 424.6
           },
           {
-            "distance": 3478.1,
-            "duration": 402.7
+            "distance": 3298.1,
+            "duration": 365.7
           },
           {
             "distance": 2080.3,
-            "duration": 249.9
+            "duration": 222.5
           },
           {
             "distance": 2212.6,
@@ -2703,16 +2703,16 @@
           0,
           78,
           257,
-          413,
+          425,
           550,
           639,
           665
         ],
         "summary": {
-          "distance": 23194.7,
+          "distance": 23194.6,
           "duration": 1944.1
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 1 Friday"
       }
     },
@@ -3225,10 +3225,6 @@
             53.074113
           ],
           [
-            -2.61175,
-            53.074329
-          ],
-          [
             -2.611796,
             53.07435
           ],
@@ -3239,6 +3235,10 @@
           [
             -2.611796,
             53.07435
+          ],
+          [
+            -2.61175,
+            53.074329
           ],
           [
             -2.611266,
@@ -4477,12 +4477,12 @@
             53.049557
           ],
           [
-            -2.668184,
-            53.050324
-          ],
-          [
             -2.668438,
             53.049782
+          ],
+          [
+            -2.668184,
+            53.050324
           ],
           [
             -2.668543,
@@ -6306,20 +6306,20 @@
       "properties": {
         "segments": [
           {
-            "distance": 6434.4,
-            "duration": 480.5
+            "distance": 6451.5,
+            "duration": 512.1
           },
           {
-            "distance": 1370.7,
-            "duration": 113.6
+            "distance": 1353.7,
+            "duration": 82
           },
           {
-            "distance": 10611.2,
-            "duration": 633
+            "distance": 10485.8,
+            "duration": 575.6
           },
           {
-            "distance": 6231.7,
-            "duration": 474.2
+            "distance": 6357.1,
+            "duration": 531.6
           },
           {
             "distance": 9175.4,
@@ -6336,19 +6336,19 @@
         ],
         "way_points": [
           0,
-          132,
+          136,
           173,
-          462,
+          460,
           602,
           821,
           867,
           894
         ],
         "summary": {
-          "distance": 37379.2,
+          "distance": 37379.3,
           "duration": 2846.1
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 1 Thursday"
       }
     },
@@ -15965,7 +15965,7 @@
           "distance": 97243.4,
           "duration": 6268.9
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 1 Tuesday"
       }
     },
@@ -21748,11 +21748,11 @@
           },
           {
             "distance": 2996.5,
-            "duration": 471.4
+            "duration": 444
           },
           {
             "distance": 8239.1,
-            "duration": 880.1
+            "duration": 907.5
           },
           {
             "distance": 32458.5,
@@ -21774,7 +21774,7 @@
           "distance": 53157.2,
           "duration": 4535.7
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 1 Wednesday"
       }
     },
@@ -25141,10 +25141,6 @@
           [
             -2.538889,
             53.238669
-          ],
-          [
-            -2.542275,
-            53.238739
           ],
           [
             -2.542559,
@@ -29950,18 +29946,18 @@
         ],
         "way_points": [
           0,
-          1028,
-          1704,
-          1735,
-          1931,
-          1935,
-          2033
+          1027,
+          1703,
+          1734,
+          1930,
+          1934,
+          2032
         ],
         "summary": {
           "distance": 76963.8,
           "duration": 4884.2
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 2 Friday"
       }
     },
@@ -30841,7 +30837,7 @@
           "distance": 6689.9,
           "duration": 658.7
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 2 Monday"
       }
     },
@@ -31550,6 +31546,10 @@
             53.195609
           ],
           [
+            -2.167573,
+            53.195607
+          ],
+          [
             -2.167745,
             53.195598
           ],
@@ -31792,10 +31792,6 @@
           [
             -2.167745,
             53.195598
-          ],
-          [
-            -2.167573,
-            53.195607
           ],
           [
             -2.167539,
@@ -32250,6 +32246,14 @@
             53.190601
           ],
           [
+            -2.124828,
+            53.190596
+          ],
+          [
+            -2.124828,
+            53.190596
+          ],
+          [
             -2.124776,
             53.190587
           ],
@@ -32292,14 +32296,6 @@
           [
             -2.124776,
             53.190587
-          ],
-          [
-            -2.124828,
-            53.190596
-          ],
-          [
-            -2.124828,
-            53.190596
           ],
           [
             -2.124861,
@@ -45543,24 +45539,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 7872.6,
-            "duration": 827.4
+            "distance": 5796.8,
+            "duration": 475.6
           },
           {
-            "distance": 3870.9,
-            "duration": 339.3
+            "distance": 5808.8,
+            "duration": 642.6
           },
           {
             "distance": 0,
             "duration": 0
           },
           {
-            "distance": 5362,
-            "duration": 348.5
+            "distance": 5499.9,
+            "duration": 424.4
           },
           {
             "distance": 1524.5,
-            "duration": 220.8
+            "duration": 193.4
           },
           {
             "distance": 2093,
@@ -45577,20 +45573,20 @@
         ],
         "way_points": [
           0,
-          250,
-          386,
-          390,
-          517,
-          605,
-          752,
-          1099,
+          183,
+          371,
+          375,
+          516,
+          604,
+          751,
+          1098,
           3671
         ],
         "summary": {
           "distance": 144918.4,
           "duration": 9155
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 2 Thursday"
       }
     },
@@ -45963,10 +45959,6 @@
             53.06524
           ],
           [
-            -2.452388,
-            53.065491
-          ],
-          [
             -2.453054,
             53.066065
           ],
@@ -45993,6 +45985,10 @@
           [
             -2.453054,
             53.066065
+          ],
+          [
+            -2.452388,
+            53.065491
           ],
           [
             -2.452096,
@@ -46707,10 +46703,6 @@
             53.045498
           ],
           [
-            -2.453032,
-            53.045341
-          ],
-          [
             -2.45303,
             53.045282
           ],
@@ -46737,6 +46729,10 @@
           [
             -2.45303,
             53.045282
+          ],
+          [
+            -2.453032,
+            53.045341
           ],
           [
             -2.453036,
@@ -49184,24 +49180,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 2543.5,
-            "duration": 267.8
+            "distance": 2736.6,
+            "duration": 323
           },
           {
-            "distance": 972.4,
-            "duration": 164.7
+            "distance": 779.4,
+            "duration": 109.5
           },
           {
             "distance": 1040.8,
             "duration": 115.9
           },
           {
-            "distance": 3083,
-            "duration": 270.1
+            "distance": 3247.6,
+            "duration": 337.5
           },
           {
-            "distance": 4272.6,
-            "duration": 423.1
+            "distance": 4108,
+            "duration": 355.7
           },
           {
             "distance": 8647,
@@ -49214,19 +49210,19 @@
         ],
         "way_points": [
           0,
-          101,
+          109,
           139,
           182,
-          310,
+          319,
           450,
           711,
           894
         ],
         "summary": {
-          "distance": 28962.9,
+          "distance": 28963,
           "duration": 2645.9
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 2 Tuesday"
       }
     },
@@ -49859,12 +49855,12 @@
             53.113247
           ],
           [
-            -2.215394,
-            53.113221
-          ],
-          [
             -2.215369,
             53.113165
+          ],
+          [
+            -2.215394,
+            53.113221
           ],
           [
             -2.215406,
@@ -51624,12 +51620,12 @@
             "duration": 178.5
           },
           {
-            "distance": 167.9,
-            "duration": 28.1
+            "distance": 180.8,
+            "duration": 58.7
           },
           {
-            "distance": 4413.8,
-            "duration": 560.3
+            "distance": 4400.9,
+            "duration": 529.7
           },
           {
             "distance": 689.9,
@@ -51644,7 +51640,7 @@
           0,
           66,
           157,
-          177,
+          179,
           369,
           418,
           593
@@ -51653,7 +51649,7 @@
           "distance": 15661.7,
           "duration": 1570.8
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 2 Wednesday"
       }
     },
@@ -52886,6 +52882,14 @@
             53.313771
           ],
           [
+            -2.32977,
+            53.313593
+          ],
+          [
+            -2.329796,
+            53.313548
+          ],
+          [
             -2.329991,
             53.313204
           ],
@@ -52954,10 +52958,6 @@
             53.311687
           ],
           [
-            -2.330302,
-            53.311597
-          ],
-          [
             -2.330251,
             53.311584
           ],
@@ -52976,6 +52976,10 @@
           [
             -2.330251,
             53.311584
+          ],
+          [
+            -2.330302,
+            53.311597
           ],
           [
             -2.330657,
@@ -53063,25 +53067,25 @@
             "duration": 263.2
           },
           {
-            "distance": 6054.9,
-            "duration": 567.5
+            "distance": 6135.7,
+            "duration": 606.5
           },
           {
-            "distance": 321.2,
-            "duration": 80.7
+            "distance": 240.4,
+            "duration": 41.7
           }
         ],
         "way_points": [
           0,
           110,
-          337,
-          347
+          345,
+          349
         ],
         "summary": {
           "distance": 10633.5,
           "duration": 911.4
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 3 Friday"
       }
     },
@@ -55046,6 +55050,10 @@
             53.313085
           ],
           [
+            -2.536231,
+            53.313053
+          ],
+          [
             -2.536164,
             53.313028
           ],
@@ -55096,10 +55104,6 @@
           [
             -2.536164,
             53.313028
-          ],
-          [
-            -2.536231,
-            53.313053
           ],
           [
             -2.536318,
@@ -58219,12 +58223,12 @@
             "duration": 456.6
           },
           {
-            "distance": 11058,
-            "duration": 596.9
+            "distance": 10910.4,
+            "duration": 549.9
           },
           {
-            "distance": 6744.7,
-            "duration": 395.6
+            "distance": 6892.4,
+            "duration": 442.6
           },
           {
             "distance": 16305.8,
@@ -58234,15 +58238,15 @@
         "way_points": [
           0,
           250,
-          529,
+          513,
           767,
           1279
         ],
         "summary": {
-          "distance": 43265.7,
+          "distance": 43265.8,
           "duration": 2583.2
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 3 Monday"
       }
     },
@@ -60851,6 +60855,10 @@
             53.077027
           ],
           [
+            -2.456735,
+            53.076818
+          ],
+          [
             -2.456671,
             53.076721
           ],
@@ -60967,8 +60975,8 @@
             53.077583
           ],
           [
-            -2.454051,
-            53.07761
+            -2.454046,
+            53.077604
           ],
           [
             -2.454208,
@@ -61408,7 +61416,7 @@
             "duration": 617.3
           },
           {
-            "distance": 712.1,
+            "distance": 712.2,
             "duration": 83.2
           },
           {
@@ -61422,14 +61430,14 @@
           374,
           412,
           684,
-          730,
-          783
+          731,
+          784
         ],
         "summary": {
-          "distance": 22007.7,
+          "distance": 22007.8,
           "duration": 1913.8
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 3 Thursday"
       }
     },
@@ -67762,7 +67770,7 @@
           "distance": 35063.8,
           "duration": 3008.5
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 3 Tuesday"
       }
     },
@@ -71335,7 +71343,7 @@
             52.917576
           ],
           [
-            -2.59786,
+            -2.597849,
             52.917381
           ],
           [
@@ -76071,10 +76079,6 @@
             53.097887
           ],
           [
-            -2.39433,
-            53.097886
-          ],
-          [
             -2.3947,
             53.097877
           ],
@@ -76085,6 +76089,10 @@
           [
             -2.3947,
             53.097877
+          ],
+          [
+            -2.39433,
+            53.097886
           ],
           [
             -2.394287,
@@ -76156,30 +76164,30 @@
             "duration": 222.8
           },
           {
-            "distance": 27859.4,
-            "duration": 2236.4
+            "distance": 27668.8,
+            "duration": 2176.1
           },
           {
-            "distance": 35494.2,
-            "duration": 2495.9
+            "distance": 35684.8,
+            "duration": 2556.2
           },
           {
             "distance": 3417.8,
             "duration": 340.4
           },
           {
-            "distance": 2057.9,
-            "duration": 194.3
+            "distance": 2126.7,
+            "duration": 241
           },
           {
-            "distance": 490.5,
-            "duration": 106.8
+            "distance": 421.7,
+            "duration": 60.1
           }
         ],
         "way_points": [
           0,
           90,
-          927,
+          912,
           1946,
           2082,
           2093,
@@ -76189,7 +76197,7 @@
           "distance": 71766.9,
           "duration": 5596.6
         },
-        "mobile": "Mobile",
+        "mobile": "Cheshire East Mobile Library",
         "route": "Week 3 Wednesday"
       }
     }

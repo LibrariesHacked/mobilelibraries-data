@@ -1172,7 +1172,7 @@
           "distance": 6543.2,
           "duration": 518.5
         },
-        "mobile": "Mobile",
+        "mobile": "Armagh Mobile",
         "route": "Armagh Mobile - Week 1 - Friday"
       }
     },
@@ -3858,7 +3858,7 @@
           "distance": 22792.8,
           "duration": 1219.4
         },
-        "mobile": "Mobile",
+        "mobile": "Armagh Mobile",
         "route": "Armagh Mobile - Week 1 - Monday"
       }
     },
@@ -3972,7 +3972,7 @@
           "distance": 305.4,
           "duration": 29.7
         },
-        "mobile": "Mobile",
+        "mobile": "Armagh Mobile",
         "route": "Armagh Mobile - Week 1 - Tuesday"
       }
     },
@@ -4370,7 +4370,7 @@
           "distance": 3216.7,
           "duration": 205.8
         },
-        "mobile": "Mobile",
+        "mobile": "Armagh Mobile",
         "route": "Armagh Mobile - Week 1 - Wednesday"
       }
     },
@@ -5605,7 +5605,7 @@
           "distance": 9137.1,
           "duration": 695
         },
-        "mobile": "Mobile",
+        "mobile": "Armagh Mobile",
         "route": "Armagh Mobile - Week 2 - Thursday"
       }
     },
@@ -6107,7 +6107,7 @@
           "distance": 4629.7,
           "duration": 243.4
         },
-        "mobile": "Mobile",
+        "mobile": "Armagh Mobile",
         "route": "Armagh Mobile - Week 2 - Tuesday"
       }
     },
@@ -7965,7 +7965,7 @@
           "distance": 13625.3,
           "duration": 698.4
         },
-        "mobile": "Mobile",
+        "mobile": "Armagh Mobile",
         "route": "Armagh Mobile - Week 2 - Wednesday"
       }
     },
@@ -12879,7 +12879,7 @@
           "distance": 45630.2,
           "duration": 2890.8
         },
-        "mobile": "Mobile",
+        "mobile": "Ballymena Mobile",
         "route": "Ballymena Mobile - Week 1 - Thursday"
       }
     },
@@ -21074,7 +21074,7 @@
           "distance": 71405,
           "duration": 4311.1
         },
-        "mobile": "Mobile",
+        "mobile": "Ballymena Mobile",
         "route": "Ballymena Mobile - Week 1 - Wednesday"
       }
     },
@@ -22449,7 +22449,7 @@
           "distance": 15836.9,
           "duration": 1010.4
         },
-        "mobile": "Mobile",
+        "mobile": "Ballymena Mobile",
         "route": "Ballymena Mobile - Week 2 - Tuesday"
       }
     },
@@ -23643,7 +23643,7 @@
           "distance": 8122.8,
           "duration": 514
         },
-        "mobile": "Mobile",
+        "mobile": "Ballymena Mobile",
         "route": "Ballymena Mobile - Week 2 - Wednesday"
       }
     },
@@ -24321,7 +24321,7 @@
           "distance": 5340.1,
           "duration": 338.7
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 1 - Friday"
       }
     },
@@ -26547,7 +26547,7 @@
           "distance": 17333.5,
           "duration": 1016.5
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 1 - Monday"
       }
     },
@@ -26706,7 +26706,7 @@
           "distance": 490,
           "duration": 74.2
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 1 - Thursday"
       }
     },
@@ -27515,12 +27515,12 @@
             54.482203
           ],
           [
-            -5.652206,
-            54.482071
-          ],
-          [
             -5.652463,
             54.481801
+          ],
+          [
+            -5.652206,
+            54.482071
           ],
           [
             -5.652081,
@@ -29356,12 +29356,12 @@
             "duration": 312.6
           },
           {
-            "distance": 2833.6,
-            "duration": 244.1
+            "distance": 2902.3,
+            "duration": 281.3
           },
           {
-            "distance": 14222.5,
-            "duration": 926.5
+            "distance": 14153.8,
+            "duration": 889.3
           },
           {
             "distance": 3329,
@@ -29371,7 +29371,7 @@
         "way_points": [
           0,
           120,
-          214,
+          216,
           605,
           657
         ],
@@ -29379,7 +29379,7 @@
           "distance": 25453.5,
           "duration": 1660.6
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 1 - Tuesday"
       }
     },
@@ -29789,7 +29789,7 @@
           "distance": 2652.5,
           "duration": 144.2
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 1 - Wednesday"
       }
     },
@@ -30675,7 +30675,7 @@
           "distance": 5223.1,
           "duration": 273
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 2 - Friday"
       }
     },
@@ -32741,7 +32741,7 @@
           "distance": 14178,
           "duration": 788.5
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 2 - Monday"
       }
     },
@@ -33475,7 +33475,7 @@
           "distance": 3138.8,
           "duration": 316.5
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 2 - Wednesday"
       }
     },
@@ -34658,7 +34658,7 @@
           "distance": 6064.9,
           "duration": 557.7
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 3 - Friday"
       }
     },
@@ -39759,12 +39759,12 @@
             54.482203
           ],
           [
-            -5.652206,
-            54.482071
-          ],
-          [
             -5.652463,
             54.481801
+          ],
+          [
+            -5.652206,
+            54.482071
           ],
           [
             -5.652081,
@@ -45728,12 +45728,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 42242.1,
-            "duration": 2639.1
+            "distance": 42310.9,
+            "duration": 2676.3
           },
           {
-            "distance": 43906.3,
-            "duration": 2674.3
+            "distance": 43837.6,
+            "duration": 2637.1
           },
           {
             "distance": 3469.1,
@@ -45742,15 +45742,15 @@
         ],
         "way_points": [
           0,
-          1302,
+          1304,
           2670,
           2763
         ],
         "summary": {
-          "distance": 89617.5,
+          "distance": 89617.6,
           "duration": 5633.9
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 3 - Monday"
       }
     },
@@ -57077,7 +57077,7 @@
           "distance": 167382.3,
           "duration": 8013.5
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 3 - Thursday"
       }
     },
@@ -65826,6 +65826,10 @@
             54.593365
           ],
           [
+            -5.690291,
+            54.593362
+          ],
+          [
             -5.689332,
             54.593348
           ],
@@ -68101,14 +68105,14 @@
         ],
         "way_points": [
           0,
-          2500,
-          2749
+          2501,
+          2750
         ],
         "summary": {
           "distance": 106334.3,
           "duration": 5439.4
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 3 - Tuesday"
       }
     },
@@ -69135,7 +69139,7 @@
           "distance": 6849.3,
           "duration": 704.4
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 4 - Friday"
       }
     },
@@ -69845,7 +69849,7 @@
           "distance": 3042.5,
           "duration": 272.8
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 4 - Tuesday"
       }
     },
@@ -70647,7 +70651,7 @@
           "distance": 6884.6,
           "duration": 370.7
         },
-        "mobile": "Mobile",
+        "mobile": "Bangor and Lisburn Mobile",
         "route": "Bangor and Lisburn Mobile - Week 4 - Wednesday"
       }
     },
@@ -71405,7 +71409,7 @@
           "distance": 3398,
           "duration": 241.7
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 1 - Friday"
       }
     },
@@ -71895,7 +71899,7 @@
           "distance": 2585.3,
           "duration": 289
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 1 - Monday"
       }
     },
@@ -72125,7 +72129,7 @@
           "distance": 1224.9,
           "duration": 173.2
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 1 - Tuesday"
       }
     },
@@ -72547,7 +72551,7 @@
           "distance": 1469.6,
           "duration": 157
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 1 - Wednesday"
       }
     },
@@ -74134,11 +74138,11 @@
         "segments": [
           {
             "distance": 4473.8,
-            "duration": 506.9
+            "duration": 534.3
           },
           {
             "distance": 4150.7,
-            "duration": 540.8
+            "duration": 513.4
           }
         ],
         "way_points": [
@@ -74150,7 +74154,7 @@
           "distance": 8624.5,
           "duration": 1047.7
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 2 - Monday"
       }
     },
@@ -74325,6 +74329,10 @@
           [
             -5.936712,
             54.634898
+          ],
+          [
+            -5.936864,
+            54.634919
           ],
           [
             -5.936972,
@@ -74531,6 +74539,10 @@
             54.644305
           ],
           [
+            -5.935228,
+            54.644305
+          ],
+          [
             -5.934797,
             54.644304
           ],
@@ -74557,6 +74569,10 @@
           [
             -5.934797,
             54.644304
+          ],
+          [
+            -5.935228,
+            54.644305
           ],
           [
             -5.935349,
@@ -74765,23 +74781,23 @@
         "segments": [
           {
             "distance": 2281.8,
-            "duration": 287.4
+            "duration": 314.9
           },
           {
             "distance": 1238.4,
-            "duration": 170.1
+            "duration": 142.7
           }
         ],
         "way_points": [
           0,
-          108,
-          149
+          110,
+          152
         ],
         "summary": {
           "distance": 3520.2,
-          "duration": 457.5
+          "duration": 457.6
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 2 - Tuesday"
       }
     },
@@ -75422,10 +75438,6 @@
             54.608054
           ],
           [
-            -5.983309,
-            54.608503
-          ],
-          [
             -5.983323,
             54.608721
           ],
@@ -75484,6 +75496,10 @@
           [
             -5.983323,
             54.608721
+          ],
+          [
+            -5.983309,
+            54.608503
           ],
           [
             -5.983279,
@@ -76223,25 +76239,25 @@
             "duration": 157.4
           },
           {
-            "distance": 1491.5,
-            "duration": 197.3
+            "distance": 1738.6,
+            "duration": 260.6
           },
           {
-            "distance": 2854.5,
-            "duration": 374.2
+            "distance": 2607.5,
+            "duration": 310.9
           }
         ],
         "way_points": [
           0,
           86,
-          177,
+          195,
           355
         ],
         "summary": {
-          "distance": 5757.3,
+          "distance": 5757.4,
           "duration": 728.9
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 2 - Wednesday"
       }
     },
@@ -78177,7 +78193,7 @@
           "distance": 8432,
           "duration": 923.3
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 3 - Friday"
       }
     },
@@ -79212,7 +79228,7 @@
           "distance": 3654.8,
           "duration": 391.5
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 3 - Monday"
       }
     },
@@ -82226,12 +82242,12 @@
             "duration": 201.4
           },
           {
-            "distance": 1874.4,
-            "duration": 219.1
+            "distance": 2022.1,
+            "duration": 267.9
           },
           {
-            "distance": 7404.9,
-            "duration": 857.1
+            "distance": 7257.2,
+            "duration": 808.3
           },
           {
             "distance": 1067.8,
@@ -82245,7 +82261,7 @@
         "way_points": [
           0,
           62,
-          163,
+          180,
           643,
           718,
           748
@@ -82254,7 +82270,7 @@
           "distance": 12833.1,
           "duration": 1593.3
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 3 - Tuesday"
       }
     },
@@ -82852,7 +82868,7 @@
           "distance": 2708,
           "duration": 289.7
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 3 - Wednesday"
       }
     },
@@ -83257,6 +83273,10 @@
             54.545792
           ],
           [
+            -5.939339,
+            54.545779
+          ],
+          [
             -5.939354,
             54.545737
           ],
@@ -83315,10 +83335,6 @@
           [
             -5.939354,
             54.545737
-          ],
-          [
-            -5.939339,
-            54.545779
           ],
           [
             -5.939334,
@@ -83978,24 +83994,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 1926.3,
-            "duration": 187.3
+            "distance": 1744.3,
+            "duration": 136
           },
           {
-            "distance": 2848.6,
-            "duration": 232.6
+            "distance": 3030.6,
+            "duration": 283.9
           }
         ],
         "way_points": [
           0,
-          127,
+          109,
           277
         ],
         "summary": {
           "distance": 4774.9,
           "duration": 419.9
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 4 - Friday"
       }
     },
@@ -84590,7 +84606,7 @@
           "distance": 3083.1,
           "duration": 399.1
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 4 - Monday"
       }
     },
@@ -85133,7 +85149,7 @@
           "distance": 3577.9,
           "duration": 431.5
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 4 - Thursday"
       }
     },
@@ -85861,7 +85877,7 @@
           "distance": 3844.7,
           "duration": 432.8
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 4 - Tuesday"
       }
     },
@@ -87220,7 +87236,7 @@
           "distance": 5803.6,
           "duration": 639.2
         },
-        "mobile": "Mobile",
+        "mobile": "Belfast Mobile",
         "route": "Belfast Mobile - Week 4 - Wednesday"
       }
     },
@@ -88878,7 +88894,7 @@
           "distance": 9736.7,
           "duration": 515.8
         },
-        "mobile": "Mobile",
+        "mobile": "Carrickfergus Mobile",
         "route": "Carrickfergus Mobile - Week 1 - Monday"
       }
     },
@@ -90084,7 +90100,7 @@
           "distance": 8132.9,
           "duration": 467.2
         },
-        "mobile": "Mobile",
+        "mobile": "Carrickfergus Mobile",
         "route": "Carrickfergus Mobile - Week 1 - Tuesday"
       }
     },
@@ -90182,7 +90198,7 @@
           "distance": 510.2,
           "duration": 63.3
         },
-        "mobile": "Mobile",
+        "mobile": "Carrickfergus Mobile",
         "route": "Carrickfergus Mobile - Week 2 - Monday"
       }
     },
@@ -93667,7 +93683,7 @@
           "distance": 23489.6,
           "duration": 1524.7
         },
-        "mobile": "Mobile",
+        "mobile": "Carrickfergus Mobile",
         "route": "Carrickfergus Mobile - Week 2 - Thursday"
       }
     },
@@ -95610,7 +95626,7 @@
           "distance": 11153,
           "duration": 1260.1
         },
-        "mobile": "Mobile",
+        "mobile": "Carrickfergus Mobile",
         "route": "Carrickfergus Mobile - Week 2 - Wednesday"
       }
     },
@@ -97741,11 +97757,11 @@
         "segments": [
           {
             "distance": 19697.8,
-            "duration": 1262.9
+            "duration": 1290.3
           },
           {
             "distance": 2785,
-            "duration": 236.3
+            "duration": 208.9
           }
         ],
         "way_points": [
@@ -97757,7 +97773,7 @@
           "distance": 22482.8,
           "duration": 1499.2
         },
-        "mobile": "Mobile",
+        "mobile": "Causeway Mobile",
         "route": "Causeway Mobile - Week 1 - Friday"
       }
     },
@@ -99997,7 +100013,7 @@
           "distance": 19840.5,
           "duration": 1162.2
         },
-        "mobile": "Mobile",
+        "mobile": "Causeway Mobile",
         "route": "Causeway Mobile - Week 1 - Monday"
       }
     },
@@ -101508,7 +101524,7 @@
           "distance": 19117.2,
           "duration": 1015.7
         },
-        "mobile": "Mobile",
+        "mobile": "Causeway Mobile",
         "route": "Causeway Mobile - Week 1 - Tuesday"
       }
     },
@@ -105315,6 +105331,14 @@
           [
             -5.951831,
             54.665379
+          ],
+          [
+            -5.952476,
+            54.665636
+          ],
+          [
+            -5.952619,
+            54.665693
           ],
           [
             -5.952668,
@@ -111739,24 +111763,24 @@
           },
           {
             "distance": 10386.9,
-            "duration": 793.4
+            "duration": 766
           },
           {
             "distance": 12966.3,
-            "duration": 842.5
+            "duration": 869.9
           }
         ],
         "way_points": [
           0,
-          2128,
-          2288,
-          2552
+          2130,
+          2290,
+          2554
         ],
         "summary": {
           "distance": 136739.6,
           "duration": 7585.2
         },
-        "mobile": "Mobile",
+        "mobile": "Causeway Mobile",
         "route": "Causeway Mobile - Week 1 - Wednesday"
       }
     },
@@ -112105,16 +112129,16 @@
             55.202848
           ],
           [
-            -6.237488,
-            55.202931
+            -6.237609,
+            55.203006
           ],
           [
-            -6.237744,
-            55.203071
+            -6.237792,
+            55.203105
           ],
           [
-            -6.238037,
-            55.203259
+            -6.238002,
+            55.203235
           ],
           [
             -6.238076,
@@ -112125,12 +112149,20 @@
             55.203425
           ],
           [
+            -6.238324,
+            55.203465
+          ],
+          [
             -6.238456,
             55.20356
           ],
           [
             -6.238759,
             55.20379
+          ],
+          [
+            -6.238912,
+            55.203893
           ],
           [
             -6.239085,
@@ -112141,8 +112173,8 @@
             55.204252
           ],
           [
-            -6.239664,
-            55.204404
+            -6.239687,
+            55.204434
           ],
           [
             -6.239893,
@@ -112213,8 +112245,8 @@
             55.204799
           ],
           [
-            -6.239821,
-            55.204842
+            -6.239844,
+            55.204843
           ],
           [
             -6.239696,
@@ -112237,12 +112269,20 @@
             55.205148
           ],
           [
+            -6.239892,
+            55.205279
+          ],
+          [
             -6.239929,
             55.205312
           ],
           [
             -6.23999,
             55.205362
+          ],
+          [
+            -6.240248,
+            55.205577
           ],
           [
             -6.240312,
@@ -112253,8 +112293,12 @@
             55.2057
           ],
           [
-            -6.240542,
-            55.205822
+            -6.240562,
+            55.205852
+          ],
+          [
+            -6.240799,
+            55.206075
           ],
           [
             -6.240991,
@@ -112265,16 +112309,16 @@
             55.206381
           ],
           [
-            -6.241608,
-            55.206843
+            -6.241625,
+            55.206866
           ],
           [
             -6.241736,
             55.206964
           ],
           [
-            -6.241848,
-            55.207067
+            -6.241857,
+            55.207078
           ],
           [
             -6.241931,
@@ -113779,6 +113823,10 @@
           [
             -6.417416,
             55.230875
+          ],
+          [
+            -6.418133,
+            55.230734
           ],
           [
             -6.418673,
@@ -115553,12 +115601,12 @@
             55.129295
           ],
           [
-            -6.558128,
-            55.129083
-          ],
-          [
             -6.557213,
             55.129242
+          ],
+          [
+            -6.558128,
+            55.129083
           ],
           [
             -6.556909,
@@ -116174,29 +116222,29 @@
       "properties": {
         "segments": [
           {
-            "distance": 13483.3,
-            "duration": 802.7
+            "distance": 13483.2,
+            "duration": 802.8
           },
           {
-            "distance": 22826.1,
-            "duration": 1265.5
+            "distance": 22704.1,
+            "duration": 1220.5
           },
           {
-            "distance": 10088.8,
-            "duration": 679.9
+            "distance": 10210.8,
+            "duration": 724.9
           }
         ],
         "way_points": [
           0,
-          418,
-          972,
-          1100
+          423,
+          976,
+          1106
         ],
         "summary": {
-          "distance": 46398.2,
-          "duration": 2748.1
+          "distance": 46398.1,
+          "duration": 2748.2
         },
-        "mobile": "Mobile",
+        "mobile": "Causeway Mobile",
         "route": "Causeway Mobile - Week 2 - Friday"
       }
     },
@@ -116965,12 +117013,12 @@
             55.129295
           ],
           [
-            -6.558128,
-            55.129083
-          ],
-          [
             -6.557213,
             55.129242
+          ],
+          [
+            -6.558128,
+            55.129083
           ],
           [
             -6.556909,
@@ -125494,24 +125542,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 9734.3,
-            "duration": 671.9
+            "distance": 9612.3,
+            "duration": 626.9
           },
           {
-            "distance": 96284,
-            "duration": 5608.2
+            "distance": 96406,
+            "duration": 5653.2
           }
         ],
         "way_points": [
           0,
-          203,
+          201,
           2320
         ],
         "summary": {
           "distance": 106018.3,
           "duration": 6280.1
         },
-        "mobile": "Mobile",
+        "mobile": "Causeway Mobile",
         "route": "Causeway Mobile - Week 2 - Monday"
       }
     },
@@ -126476,16 +126524,16 @@
             55.204132
           ],
           [
-            -6.608754,
-            55.204179
+            -6.608728,
+            55.204189
           ],
           [
-            -6.608286,
-            55.204153
+            -6.608354,
+            55.204171
           ],
           [
-            -6.608265,
-            55.20415
+            -6.608189,
+            55.204147
           ],
           [
             -6.608028,
@@ -127125,7 +127173,7 @@
       "properties": {
         "segments": [
           {
-            "distance": 9030.5,
+            "distance": 9030.9,
             "duration": 524.6
           },
           {
@@ -127139,10 +127187,10 @@
           399
         ],
         "summary": {
-          "distance": 15184.4,
+          "distance": 15184.8,
           "duration": 871.9
         },
-        "mobile": "Mobile",
+        "mobile": "Causeway Mobile",
         "route": "Causeway Mobile - Week 2 - Thursday"
       }
     },
@@ -129194,7 +129242,7 @@
           "distance": 19981.5,
           "duration": 1305.9
         },
-        "mobile": "Mobile",
+        "mobile": "Causeway Mobile",
         "route": "Causeway Mobile - Week 2 - Wednesday"
       }
     },
@@ -131636,7 +131684,7 @@
           "distance": 14336.9,
           "duration": 776.9
         },
-        "mobile": "Mobile",
+        "mobile": "Craigavon Mobile",
         "route": "Craigavon Mobile - Week 1 - Monday"
       }
     },
@@ -132806,7 +132854,7 @@
           "distance": 7630.5,
           "duration": 477.6
         },
-        "mobile": "Mobile",
+        "mobile": "Craigavon Mobile",
         "route": "Craigavon Mobile - Week 1 - Thursday"
       }
     },
@@ -133316,7 +133364,7 @@
           "distance": 3652.7,
           "duration": 208
         },
-        "mobile": "Mobile",
+        "mobile": "Craigavon Mobile",
         "route": "Craigavon Mobile - Week 1 - Tuesday"
       }
     },
@@ -133625,6 +133673,10 @@
             54.379224
           ],
           [
+            -6.36763,
+            54.379125
+          ],
+          [
             -6.367856,
             54.379082
           ],
@@ -133635,10 +133687,6 @@
           [
             -6.367856,
             54.379082
-          ],
-          [
-            -6.36763,
-            54.379125
           ],
           [
             -6.367102,
@@ -133898,24 +133946,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 1612.8,
-            "duration": 212.9
+            "distance": 1566.5,
+            "duration": 173.4
           },
           {
-            "distance": 1270.3,
-            "duration": 136.8
+            "distance": 1316.6,
+            "duration": 176.3
           }
         ],
         "way_points": [
           0,
-          88,
+          84,
           141
         ],
         "summary": {
           "distance": 2883.1,
           "duration": 349.7
         },
-        "mobile": "Mobile",
+        "mobile": "Craigavon Mobile",
         "route": "Craigavon Mobile - Week 1 - Wednesday"
       }
     },
@@ -134301,7 +134349,7 @@
           "distance": 6644.3,
           "duration": 356
         },
-        "mobile": "Mobile",
+        "mobile": "Craigavon Mobile",
         "route": "Craigavon Mobile - Week 2 - Thursday"
       }
     },
@@ -135227,7 +135275,7 @@
           "distance": 7504,
           "duration": 1035.1
         },
-        "mobile": "Mobile",
+        "mobile": "Cross Border Mobile",
         "route": "Cross Border Mobile - Week 2 - Thursday"
       }
     },
@@ -135769,7 +135817,7 @@
           "distance": 7057.1,
           "duration": 392.4
         },
-        "mobile": "Mobile",
+        "mobile": "Cross Border Mobile",
         "route": "Cross Border Mobile - Week 2 - Tuesday"
       }
     },
@@ -136307,7 +136355,7 @@
           "distance": 4787.9,
           "duration": 244.1
         },
-        "mobile": "Mobile",
+        "mobile": "Cross Border Mobile",
         "route": "Cross Border Mobile - Week 2 - Wednesday"
       }
     },
@@ -136341,7 +136389,7 @@
           "distance": 0,
           "duration": 0
         },
-        "mobile": "Mobile",
+        "mobile": "Cross Border Mobile",
         "route": "Cross Border Mobile - Week 3 - Tuesday"
       }
     },
@@ -138175,7 +138223,7 @@
           "distance": 8102.1,
           "duration": 521.6
         },
-        "mobile": "Mobile",
+        "mobile": "Down Mobile",
         "route": "Down Mobile - Week 1 - Monday"
       }
     },
@@ -138357,7 +138405,7 @@
           "distance": 559.4,
           "duration": 69.6
         },
-        "mobile": "Mobile",
+        "mobile": "Down Mobile",
         "route": "Down Mobile - Week 2 - Friday"
       }
     },
@@ -141522,10 +141570,6 @@
             54.259215
           ],
           [
-            -5.611142,
-            54.25929
-          ],
-          [
             -5.611085,
             54.259306
           ],
@@ -141544,6 +141588,10 @@
           [
             -5.611085,
             54.259306
+          ],
+          [
+            -5.611142,
+            54.25929
           ],
           [
             -5.611412,
@@ -141803,24 +141851,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 20870.8,
-            "duration": 1218.6
+            "distance": 20894.2,
+            "duration": 1258.9
           },
           {
-            "distance": 849.2,
-            "duration": 130.4
+            "distance": 825.9,
+            "duration": 90.1
           }
         ],
         "way_points": [
           0,
-          813,
+          821,
           857
         ],
         "summary": {
-          "distance": 21720,
+          "distance": 21720.1,
           "duration": 1349
         },
-        "mobile": "Mobile",
+        "mobile": "Down Mobile",
         "route": "Down Mobile - Week 2 - Wednesday"
       }
     },
@@ -141854,7 +141902,7 @@
           "distance": 0,
           "duration": 0
         },
-        "mobile": "Mobile",
+        "mobile": "Dungannon Mobile",
         "route": "Dungannon Mobile - Week 1 - Friday"
       }
     },
@@ -146020,7 +146068,7 @@
           "distance": 27919.5,
           "duration": 1933.6
         },
-        "mobile": "Mobile",
+        "mobile": "Dungannon Mobile",
         "route": "Dungannon Mobile - Week 1 - Monday"
       }
     },
@@ -150785,6 +150833,10 @@
             54.54371
           ],
           [
+            -6.927289,
+            54.543754
+          ],
+          [
             -6.927655,
             54.544047
           ],
@@ -151529,10 +151581,6 @@
             54.544047
           ],
           [
-            -6.927289,
-            54.543754
-          ],
-          [
             -6.927234,
             54.54371
           ],
@@ -151950,25 +151998,25 @@
             "duration": 1168.5
           },
           {
-            "distance": 34703.5,
-            "duration": 1773.7
+            "distance": 32196.9,
+            "duration": 1640.5
           },
           {
-            "distance": 3469.6,
-            "duration": 205.6
+            "distance": 5976.2,
+            "duration": 338.8
           }
         ],
         "way_points": [
           0,
           479,
-          1418,
+          1229,
           1477
         ],
         "summary": {
           "distance": 60553.8,
           "duration": 3147.8
         },
-        "mobile": "Mobile",
+        "mobile": "Dungannon Mobile",
         "route": "Dungannon Mobile - Week 1 - Wednesday"
       }
     },
@@ -152742,7 +152790,7 @@
           "distance": 10996.6,
           "duration": 602.4
         },
-        "mobile": "Mobile",
+        "mobile": "Dungannon Mobile",
         "route": "Dungannon Mobile - Week 2 - Friday"
       }
     },
@@ -154481,7 +154529,7 @@
           "distance": 14168.4,
           "duration": 987.6
         },
-        "mobile": "Mobile",
+        "mobile": "Dungannon Mobile",
         "route": "Dungannon Mobile - Week 2 - Monday"
       }
     },
@@ -154664,7 +154712,7 @@
           "distance": 560.8,
           "duration": 72.6
         },
-        "mobile": "Mobile",
+        "mobile": "Dungannon Mobile",
         "route": "Dungannon Mobile - Week 2 - Thursday"
       }
     },
@@ -155114,7 +155162,7 @@
           "distance": 3280.5,
           "duration": 216.9
         },
-        "mobile": "Mobile",
+        "mobile": "Dungannon Mobile",
         "route": "Dungannon Mobile - Week 2 - Tuesday"
       }
     },
@@ -155893,7 +155941,7 @@
           "distance": 3351.7,
           "duration": 220.2
         },
-        "mobile": "Mobile",
+        "mobile": "Newry Mobile",
         "route": "Newry Mobile - Week 1 - Thursday"
       }
     },
@@ -156244,6 +156292,10 @@
           [
             -6.408513,
             54.107136
+          ],
+          [
+            -6.408171,
+            54.107462
           ],
           [
             -6.40808,
@@ -156610,8 +156662,8 @@
             54.127965
           ],
           [
-            -6.392711,
-            54.128366
+            -6.392705,
+            54.128352
           ],
           [
             -6.393408,
@@ -156778,31 +156830,31 @@
             54.14491
           ],
           [
-            -6.403583,
-            54.145195
+            -6.403601,
+            54.145194
           ],
           [
-            -6.403659,
-            54.145267
+            -6.403682,
+            54.145265
           ],
           [
-            -6.403739,
-            54.145343
+            -6.403768,
+            54.145339
           ],
           [
-            -6.403943,
-            54.145492
+            -6.403982,
+            54.145482
           ],
           [
-            -6.404338,
-            54.145758
+            -6.404374,
+            54.145747
           ],
           [
-            -6.404565,
-            54.145891
+            -6.404583,
+            54.14589
           ],
           [
-            -6.404679,
+            -6.404711,
             54.145958
           ],
           [
@@ -156838,16 +156890,16 @@
             54.147256
           ],
           [
-            -6.40637,
-            54.147504
+            -6.406399,
+            54.147498
           ],
           [
-            -6.406412,
-            54.14758
+            -6.406444,
+            54.147576
           ],
           [
-            -6.406519,
-            54.147775
+            -6.406551,
+            54.14777
           ],
           [
             -6.407049,
@@ -156856,6 +156908,10 @@
           [
             -6.407126,
             54.148754
+          ],
+          [
+            -6.407277,
+            54.149003
           ],
           [
             -6.407404,
@@ -157843,19 +157899,19 @@
       "properties": {
         "segments": [
           {
-            "distance": 13288.3,
-            "duration": 773.9
+            "distance": 13287.8,
+            "duration": 773.7
           }
         ],
         "way_points": [
           0,
-          483
+          485
         ],
         "summary": {
-          "distance": 13288.3,
-          "duration": 773.9
+          "distance": 13287.8,
+          "duration": 773.7
         },
-        "mobile": "Mobile",
+        "mobile": "Newry Mobile",
         "route": "Newry Mobile - Week 1 - Wednesday"
       }
     },
@@ -160442,7 +160498,7 @@
           "distance": 14989.8,
           "duration": 816
         },
-        "mobile": "Mobile",
+        "mobile": "Newry Mobile",
         "route": "Newry Mobile - Week 2 - Wednesday"
       }
     },
@@ -160872,7 +160928,7 @@
           "distance": 3160.4,
           "duration": 214.8
         },
-        "mobile": "Mobile",
+        "mobile": "Newry Mobile",
         "route": "Newry Mobile - Week 3 - Tuesday"
       }
     },
@@ -162298,7 +162354,7 @@
           "distance": 9983.3,
           "duration": 568.1
         },
-        "mobile": "Mobile",
+        "mobile": "North West Mobile",
         "route": "North West Mobile - Week 1 - Monday"
       }
     },
@@ -163463,10 +163519,6 @@
             54.892254
           ],
           [
-            -7.019762,
-            54.892289
-          ],
-          [
             -7.01955,
             54.892325
           ],
@@ -163533,6 +163585,10 @@
           [
             -7.01955,
             54.892325
+          ],
+          [
+            -7.019762,
+            54.892289
           ],
           [
             -7.019968,
@@ -163964,25 +164020,25 @@
             "duration": 631.9
           },
           {
-            "distance": 5677.9,
-            "duration": 455.4
+            "distance": 6068.6,
+            "duration": 525.9
           },
           {
-            "distance": 5802.5,
-            "duration": 431.3
+            "distance": 5411.8,
+            "duration": 360.8
           }
         ],
         "way_points": [
           0,
           179,
-          300,
+          321,
           411
         ],
         "summary": {
           "distance": 15858.1,
           "duration": 1518.6
         },
-        "mobile": "Mobile",
+        "mobile": "North West Mobile",
         "route": "North West Mobile - Week 1 - Wednesday"
       }
     },
@@ -165140,7 +165196,7 @@
           "distance": 10022.3,
           "duration": 679
         },
-        "mobile": "Mobile",
+        "mobile": "North West Mobile",
         "route": "North West Mobile - Week 2 - Friday"
       }
     },
@@ -165422,7 +165478,7 @@
           "distance": 1626.2,
           "duration": 154.8
         },
-        "mobile": "Mobile",
+        "mobile": "North West Mobile",
         "route": "North West Mobile - Week 2 - Monday"
       }
     },
@@ -165872,7 +165928,7 @@
           "distance": 5576.9,
           "duration": 382.4
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 1 - Friday"
       }
     },
@@ -166314,7 +166370,7 @@
           "distance": 3504,
           "duration": 206.7
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 1 - Thursday"
       }
     },
@@ -166847,10 +166903,6 @@
             54.484539
           ],
           [
-            -7.201803,
-            54.484555
-          ],
-          [
             -7.201749,
             54.485112
           ],
@@ -166909,6 +166961,10 @@
           [
             -7.201749,
             54.485112
+          ],
+          [
+            -7.201803,
+            54.484555
           ],
           [
             -7.201805,
@@ -167632,24 +167688,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 5760.3,
-            "duration": 328.6
+            "distance": 6389.5,
+            "duration": 582.2
           },
           {
-            "distance": 6555.3,
-            "duration": 582.7
+            "distance": 5926.1,
+            "duration": 329.1
           }
         ],
         "way_points": [
           0,
-          137,
+          153,
           325
         ],
         "summary": {
           "distance": 12315.6,
           "duration": 911.3
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 1 - Tuesday"
       }
     },
@@ -168967,7 +169023,7 @@
           "distance": 14837.7,
           "duration": 739.8
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 2 - Friday"
       }
     },
@@ -170013,7 +170069,7 @@
           "distance": 6601.2,
           "duration": 466.4
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 2 - Thursday"
       }
     },
@@ -171816,7 +171872,7 @@
           "distance": 16233.3,
           "duration": 862.3
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 2 - Tuesday"
       }
     },
@@ -177966,7 +178022,7 @@
           "distance": 63060.2,
           "duration": 3082.3
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 2 - Wednesday"
       }
     },
@@ -179748,7 +179804,7 @@
           "distance": 15484.8,
           "duration": 772.2
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 3 - Tuesday"
       }
     },
@@ -185863,7 +185919,7 @@
           "distance": 64339.4,
           "duration": 3104.6
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 3 - Wednesday"
       }
     },
@@ -188073,7 +188129,7 @@
           "distance": 22008.9,
           "duration": 1103
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 4 - Friday"
       }
     },
@@ -188403,7 +188459,7 @@
           "distance": 5122.8,
           "duration": 298.8
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 4 - Monday"
       }
     },
@@ -189301,7 +189357,7 @@
           "distance": 9217.4,
           "duration": 447.2
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 4 - Thursday"
       }
     },
@@ -190007,7 +190063,7 @@
           "distance": 8499,
           "duration": 498.4
         },
-        "mobile": "Mobile",
+        "mobile": "Tyrone Mobile",
         "route": "Tyrone Mobile - Week 4 - Tuesday"
       }
     }

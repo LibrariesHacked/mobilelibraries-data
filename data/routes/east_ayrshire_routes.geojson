@@ -159,7 +159,7 @@
           "distance": 1018.3,
           "duration": 136.6
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 1 Friday"
       }
     },
@@ -2720,7 +2720,7 @@
           "distance": 28456.2,
           "duration": 1880.6
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 1 Monday"
       }
     },
@@ -5164,7 +5164,7 @@
           "distance": 36533.6,
           "duration": 2277.8
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 1 Thursday"
       }
     },
@@ -6317,6 +6317,10 @@
             55.468974
           ],
           [
+            -4.444333,
+            55.468926
+          ],
+          [
             -4.444335,
             55.468892
           ],
@@ -6383,10 +6387,6 @@
           [
             -4.444335,
             55.468892
-          ],
-          [
-            -4.444333,
-            55.468926
           ],
           [
             -4.444329,
@@ -7314,12 +7314,12 @@
             "duration": 943.5
           },
           {
-            "distance": 4048.7,
-            "duration": 732.2
+            "distance": 2978.8,
+            "duration": 349.8
           },
           {
-            "distance": 8089.4,
-            "duration": 833
+            "distance": 9159.3,
+            "duration": 1215.4
           },
           {
             "distance": 1062,
@@ -7337,7 +7337,7 @@
         "way_points": [
           0,
           262,
-          323,
+          305,
           468,
           532,
           532,
@@ -7347,7 +7347,7 @@
           "distance": 31097.9,
           "duration": 2803.4
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 1 Tuesday"
       }
     },
@@ -10145,7 +10145,7 @@
           "distance": 38082.5,
           "duration": 2358.6
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 1 Wednesday"
       }
     },
@@ -13701,7 +13701,7 @@
           "distance": 47451.9,
           "duration": 3023.4
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 2 Friday"
       }
     },
@@ -16134,7 +16134,7 @@
           "distance": 36067.5,
           "duration": 2286.4
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 2 Monday"
       }
     },
@@ -19137,7 +19137,7 @@
           "distance": 35164.6,
           "duration": 2379.5
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 2 Tuesday"
       }
     },
@@ -21921,7 +21921,7 @@
           "distance": 32091,
           "duration": 1917.2
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 2 Wednesday"
       }
     },
@@ -24949,7 +24949,7 @@
           "distance": 33893.5,
           "duration": 1900.7
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 3 Friday"
       }
     },
@@ -25847,7 +25847,7 @@
           "distance": 5155,
           "duration": 494.6
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 3 Monday"
       }
     },
@@ -27539,7 +27539,7 @@
           "distance": 11526.3,
           "duration": 1096.2
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 3 Thursday"
       }
     },
@@ -27816,8 +27816,8 @@
             55.587117
           ],
           [
-            -4.484039,
-            55.58705
+            -4.48404,
+            55.587055
           ],
           [
             -4.484033,
@@ -29608,12 +29608,12 @@
             55.654407
           ],
           [
-            -4.446444,
-            55.654517
-          ],
-          [
             -4.446488,
             55.654585
+          ],
+          [
+            -4.446444,
+            55.654517
           ],
           [
             -4.446373,
@@ -30957,12 +30957,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 2712.8,
-            "duration": 315.5
+            "distance": 2824.4,
+            "duration": 369.7
           },
           {
-            "distance": 984.9,
-            "duration": 177.1
+            "distance": 873.3,
+            "duration": 122.9
           },
           {
             "distance": 877,
@@ -30973,12 +30973,12 @@
             "duration": 11.8
           },
           {
-            "distance": 10647.3,
-            "duration": 760.1
+            "distance": 10663.5,
+            "duration": 791.5
           },
           {
-            "distance": 5472.4,
-            "duration": 588
+            "distance": 5456.2,
+            "duration": 556.6
           },
           {
             "distance": 2327.7,
@@ -30987,11 +30987,11 @@
         ],
         "way_points": [
           0,
-          74,
+          84,
           113,
           135,
           144,
-          563,
+          565,
           848,
           850
         ],
@@ -30999,7 +30999,7 @@
           "distance": 23092.7,
           "duration": 2161
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 3 Tuesday"
       }
     },
@@ -32283,7 +32283,7 @@
           "distance": 9425.4,
           "duration": 599.8
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 4 Friday"
       }
     },
@@ -34172,10 +34172,6 @@
             55.632385
           ],
           [
-            -4.405616,
-            55.632402
-          ],
-          [
             -4.405638,
             55.632414
           ],
@@ -34242,6 +34238,10 @@
           [
             -4.405638,
             55.632414
+          ],
+          [
+            -4.405616,
+            55.632402
           ],
           [
             -4.405585,
@@ -41305,12 +41305,12 @@
             "duration": 41.4
           },
           {
-            "distance": 10027.5,
-            "duration": 936.3
+            "distance": 10113.5,
+            "duration": 976.1
           },
           {
-            "distance": 45111,
-            "duration": 2462.2
+            "distance": 45025,
+            "duration": 2422.4
           },
           {
             "distance": 45925.2,
@@ -41328,7 +41328,7 @@
         "way_points": [
           0,
           12,
-          493,
+          511,
           1456,
           2250,
           2250,
@@ -41338,7 +41338,7 @@
           "distance": 101325.4,
           "duration": 5746.1
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 4 Monday"
       }
     },
@@ -43399,7 +43399,7 @@
           "distance": 13633,
           "duration": 1320.4
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 4 Thursday"
       }
     },
@@ -45484,7 +45484,7 @@
           "distance": 15035.7,
           "duration": 1378.3
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 4 Tuesday"
       }
     },
@@ -48225,10 +48225,6 @@
             55.605965
           ],
           [
-            -4.481781,
-            55.60556
-          ],
-          [
             -4.482115,
             55.60462
           ],
@@ -48239,6 +48235,10 @@
           [
             -4.482115,
             55.60462
+          ],
+          [
+            -4.481781,
+            55.60556
           ],
           [
             -4.481637,
@@ -49138,26 +49138,26 @@
             "duration": 919.2
           },
           {
-            "distance": 5510.9,
-            "duration": 490.1
+            "distance": 5793.5,
+            "duration": 558.3
           },
           {
-            "distance": 6866.6,
-            "duration": 651.8
+            "distance": 6584,
+            "duration": 583.6
           }
         ],
         "way_points": [
           0,
           144,
           549,
-          727,
+          731,
           907
         ],
         "summary": {
           "distance": 31947.9,
           "duration": 2376.1
         },
-        "mobile": "Mobile",
+        "mobile": "East Ayrshire Mobile Library",
         "route": "Week 4 Wednesday"
       }
     }

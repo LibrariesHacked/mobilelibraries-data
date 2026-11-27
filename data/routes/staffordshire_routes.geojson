@@ -3958,10 +3958,6 @@
             52.826762
           ],
           [
-            -2.299894,
-            52.826748
-          ],
-          [
             -2.300209,
             52.826347
           ],
@@ -4012,6 +4008,10 @@
           [
             -2.300209,
             52.826347
+          ],
+          [
+            -2.299894,
+            52.826748
           ],
           [
             -2.299883,
@@ -12363,12 +12363,12 @@
             "duration": 759.1
           },
           {
-            "distance": 12217.2,
-            "duration": 872.9
+            "distance": 12420,
+            "duration": 929.4
           },
           {
-            "distance": 3043.1,
-            "duration": 318.4
+            "distance": 2840.3,
+            "duration": 261.9
           },
           {
             "distance": 40814,
@@ -12384,7 +12384,7 @@
           391,
           418,
           649,
-          1030,
+          1044,
           1144,
           2343,
           3084
@@ -12393,7 +12393,7 @@
           "distance": 107550.4,
           "duration": 7430.2
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile 1",
         "route": "Mobile 1 - Week 1 - Friday"
       }
     },
@@ -21797,7 +21797,7 @@
           "distance": 84505.9,
           "duration": 6397.3
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile 1",
         "route": "Mobile 1 - Week 1 - Monday"
       }
     },
@@ -26586,12 +26586,12 @@
             53.138412
           ],
           [
-            -1.984362,
-            53.138228
-          ],
-          [
             -1.984184,
             53.138394
+          ],
+          [
+            -1.984362,
+            53.138228
           ],
           [
             -1.984164,
@@ -28611,12 +28611,12 @@
             "duration": 1170.1
           },
           {
-            "distance": 10953,
-            "duration": 900.6
+            "distance": 10909,
+            "duration": 862.6
           },
           {
-            "distance": 14625.3,
-            "duration": 1024.4
+            "distance": 14669.3,
+            "duration": 1062.4
           },
           {
             "distance": 2392.7,
@@ -28628,7 +28628,7 @@
           254,
           830,
           977,
-          1239,
+          1237,
           1656,
           1696
         ],
@@ -28636,7 +28636,7 @@
           "distance": 60733.5,
           "duration": 5901.1
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile 1",
         "route": "Mobile 1 - Week 1 - Thursday"
       }
     },
@@ -28856,7 +28856,7 @@
           "distance": 1080.6,
           "duration": 172.5
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile 1",
         "route": "Mobile 1 - Week 1 - Tuesday"
       }
     },
@@ -30561,10 +30561,6 @@
             52.942151
           ],
           [
-            -2.16938,
-            52.942151
-          ],
-          [
             -2.16927,
             52.942151
           ],
@@ -30606,6 +30602,10 @@
           ],
           [
             -2.16927,
+            52.942151
+          ],
+          [
+            -2.16938,
             52.942151
           ],
           [
@@ -34906,24 +34906,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 12238.5,
-            "duration": 713.9
+            "distance": 12338.7,
+            "duration": 769.7
           },
           {
-            "distance": 34025.5,
-            "duration": 2142.4
+            "distance": 33925.3,
+            "duration": 2086.6
           }
         ],
         "way_points": [
           0,
-          443,
+          459,
           1508
         ],
         "summary": {
           "distance": 46264,
           "duration": 2856.3
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile 1",
         "route": "Mobile 1 - Week 1 - Wednesday"
       }
     },
@@ -38170,15 +38170,15 @@
           },
           {
             "distance": 13376.9,
-            "duration": 850.5
+            "duration": 877.9
           },
           {
             "distance": 8147.1,
-            "duration": 611.2
+            "duration": 556.4
           },
           {
             "distance": 2779.3,
-            "duration": 208.6
+            "duration": 236
           },
           {
             "distance": 785.8,
@@ -38197,7 +38197,7 @@
           "distance": 35726.6,
           "duration": 2330
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile 1",
         "route": "Mobile 1 - Week 2 - Friday"
       }
     },
@@ -48762,6 +48762,10 @@
             52.86358
           ],
           [
+            -1.909764,
+            52.863497
+          ],
+          [
             -1.909677,
             52.863463
           ],
@@ -48788,10 +48792,6 @@
           [
             -1.909677,
             52.863463
-          ],
-          [
-            -1.909764,
-            52.863497
           ],
           [
             -1.909979,
@@ -58087,12 +58087,12 @@
             "duration": 2189.4
           },
           {
-            "distance": 12604.5,
-            "duration": 972.6
+            "distance": 12482.4,
+            "duration": 927.4
           },
           {
-            "distance": 35018.9,
-            "duration": 2384.9
+            "distance": 35141.1,
+            "duration": 2430.1
           },
           {
             "distance": 30641.3,
@@ -58110,16 +58110,16 @@
           337,
           1320,
           2424,
-          2744,
+          2736,
           3791,
           4519,
           4963
         ],
         "summary": {
-          "distance": 209323.3,
+          "distance": 209323.4,
           "duration": 12836.7
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile 1",
         "route": "Mobile 1 - Week 2 - Monday"
       }
     },
@@ -58486,7 +58486,7 @@
           "distance": 1635.7,
           "duration": 164.8
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile 1",
         "route": "Mobile 1 - Week 2 - Thursday"
       }
     },
@@ -60855,12 +60855,12 @@
             52.590543
           ],
           [
-            -2.262482,
-            52.590352
-          ],
-          [
             -2.262024,
             52.590488
+          ],
+          [
+            -2.262482,
+            52.590352
           ],
           [
             -2.26184,
@@ -64928,12 +64928,12 @@
             "duration": 194.6
           },
           {
-            "distance": 18135.2,
-            "duration": 1267.4
+            "distance": 18066.1,
+            "duration": 1230.2
           },
           {
-            "distance": 20590.1,
-            "duration": 1343.7
+            "distance": 20659.2,
+            "duration": 1380.9
           },
           {
             "distance": 9293.7,
@@ -64943,7 +64943,7 @@
         "way_points": [
           0,
           78,
-          628,
+          626,
           1327,
           1605
         ],
@@ -64951,7 +64951,7 @@
           "distance": 50021.4,
           "duration": 3400.8
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile 1",
         "route": "Mobile 1 - Week 2 - Tuesday"
       }
     },
@@ -64985,7 +64985,7 @@
           "distance": 0,
           "duration": 0
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile 2",
         "route": "Mobile 2 - Week 1 - Monday"
       }
     }

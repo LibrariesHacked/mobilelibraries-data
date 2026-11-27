@@ -7331,12 +7331,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 21698.4,
-            "duration": 1286.3
+            "distance": 21643.9,
+            "duration": 1246.1
           },
           {
-            "distance": 7632.9,
-            "duration": 559.9
+            "distance": 7687.4,
+            "duration": 600.1
           },
           {
             "distance": 60334.3,
@@ -7349,7 +7349,7 @@
         ],
         "way_points": [
           0,
-          348,
+          337,
           515,
           1829,
           1829
@@ -7358,7 +7358,7 @@
           "distance": 89665.6,
           "duration": 5268.9
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library East",
         "route": "Mobile Library East - Friday 3 Route 1"
       }
     },
@@ -25766,7 +25766,7 @@
           "distance": 125198.9,
           "duration": 7696.8
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library East",
         "route": "Mobile Library East - Friday 4"
       }
     },
@@ -26791,10 +26791,6 @@
             53.466565
           ],
           [
-            -0.055741,
-            53.46652
-          ],
-          [
             -0.055746,
             53.466454
           ],
@@ -26853,6 +26849,10 @@
           [
             -0.055746,
             53.466454
+          ],
+          [
+            -0.055741,
+            53.46652
           ],
           [
             -0.055737,
@@ -27623,6 +27623,10 @@
             53.471668
           ],
           [
+            0.047828,
+            53.471659
+          ],
+          [
             0.047649,
             53.471107
           ],
@@ -27673,10 +27677,6 @@
           [
             0.047649,
             53.471107
-          ],
-          [
-            0.047828,
-            53.471659
           ],
           [
             0.047831,
@@ -32907,12 +32907,12 @@
             53.33898
           ],
           [
-            -0.581023,
-            53.338686
-          ],
-          [
             -0.581111,
             53.338954
+          ],
+          [
+            -0.581023,
+            53.338686
           ],
           [
             -0.58112,
@@ -36196,34 +36196,34 @@
       "properties": {
         "segments": [
           {
-            "distance": 11202.2,
-            "duration": 698.6
+            "distance": 11648.2,
+            "duration": 785.8
           },
           {
-            "distance": 8794.7,
-            "duration": 664.9
+            "distance": 7957.2,
+            "duration": 480.9
           },
           {
-            "distance": 57430.6,
-            "duration": 3680.3
+            "distance": 57761.4,
+            "duration": 3735.1
           },
           {
-            "distance": 34878.7,
-            "duration": 2256.6
+            "distance": 34939.5,
+            "duration": 2298.6
           }
         ],
         "way_points": [
           0,
-          266,
-          502,
-          1856,
+          284,
+          486,
+          1854,
           2603
         ],
         "summary": {
-          "distance": 112306.2,
+          "distance": 112306.3,
           "duration": 7300.4
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library East",
         "route": "Mobile Library East - Monday 1"
       }
     },
@@ -41040,12 +41040,12 @@
             53.322751
           ],
           [
-            -0.191529,
-            53.322818
-          ],
-          [
             -0.191291,
             53.322884
+          ],
+          [
+            -0.191529,
+            53.322818
           ],
           [
             -0.191771,
@@ -46597,12 +46597,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 41270.6,
-            "duration": 2411.9
+            "distance": 41305.6,
+            "duration": 2444.5
           },
           {
-            "distance": 34207.1,
-            "duration": 2184.4
+            "distance": 34172.1,
+            "duration": 2151.8
           },
           {
             "distance": 987,
@@ -46615,7 +46615,7 @@
         ],
         "way_points": [
           0,
-          1233,
+          1235,
           2571,
           2589,
           2589
@@ -46624,7 +46624,7 @@
           "distance": 76700,
           "duration": 4759.9
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library East",
         "route": "Mobile Library East - Thursday 2"
       }
     },
@@ -90431,7 +90431,7 @@
           "distance": 272177.5,
           "duration": 15480.6
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library East",
         "route": "Mobile Library East - Thursday 4"
       }
     },
@@ -106620,6 +106620,10 @@
             53.079576
           ],
           [
+            0.199233,
+            53.079418
+          ],
+          [
             0.19911,
             53.079352
           ],
@@ -106630,10 +106634,6 @@
           [
             0.19911,
             53.079352
-          ],
-          [
-            0.199233,
-            53.079418
           ],
           [
             0.199531,
@@ -108465,12 +108465,12 @@
             "duration": 3150.7
           },
           {
-            "distance": 50542.5,
-            "duration": 3025
+            "distance": 50488.3,
+            "duration": 2989.8
           },
           {
-            "distance": 11435.1,
-            "duration": 1508.2
+            "distance": 11489.3,
+            "duration": 1543.4
           },
           {
             "distance": 6607.6,
@@ -108480,7 +108480,7 @@
         "way_points": [
           0,
           2523,
-          4113,
+          4109,
           4396,
           4503
         ],
@@ -108488,7 +108488,7 @@
           "distance": 124608.4,
           "duration": 8776.3
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library East",
         "route": "Mobile Library East - Tuesday 1 Route 1"
       }
     },
@@ -108729,6 +108729,10 @@
             53.34732
           ],
           [
+            0.100588,
+            53.347261
+          ],
+          [
             0.100503,
             53.347169
           ],
@@ -108827,10 +108831,6 @@
           [
             0.100503,
             53.347169
-          ],
-          [
-            0.100588,
-            53.347261
           ],
           [
             0.100643,
@@ -126078,12 +126078,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 2703.6,
-            "duration": 353.2
+            "distance": 1911.2,
+            "duration": 173.7
           },
           {
-            "distance": 1304.1,
-            "duration": 154.1
+            "distance": 2096.5,
+            "duration": 333.6
           },
           {
             "distance": 49812.1,
@@ -126096,7 +126096,7 @@
         ],
         "way_points": [
           0,
-          91,
+          63,
           149,
           2250,
           4393
@@ -126105,7 +126105,7 @@
           "distance": 107859.5,
           "duration": 6558.4
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library East",
         "route": "Mobile Library East - Tuesday 3"
       }
     },
@@ -126753,7 +126753,7 @@
           "distance": 3209.8,
           "duration": 394.3
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library East",
         "route": "Mobile Library East - Wednesday 1"
       }
     },
@@ -147782,7 +147782,7 @@
           "distance": 143934.4,
           "duration": 8501.8
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library East",
         "route": "Mobile Library East - Wednesday 2"
       }
     },
@@ -165337,7 +165337,7 @@
           },
           {
             "distance": 85184.3,
-            "duration": 4783
+            "duration": 4782.9
           }
         ],
         "way_points": [
@@ -165347,9 +165347,9 @@
         ],
         "summary": {
           "distance": 149090.9,
-          "duration": 8360.6
+          "duration": 8360.5
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library East",
         "route": "Mobile Library East - Wednesday 3"
       }
     },
@@ -169526,10 +169526,6 @@
             53.031432
           ],
           [
-            -0.73004,
-            53.031397
-          ],
-          [
             -0.730151,
             53.03113
           ],
@@ -169572,6 +169568,10 @@
           [
             -0.730151,
             53.03113
+          ],
+          [
+            -0.73004,
+            53.031397
           ],
           [
             -0.730025,
@@ -179671,12 +179671,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 38828,
-            "duration": 2299.6
+            "distance": 39019.1,
+            "duration": 2357
           },
           {
-            "distance": 39027.9,
-            "duration": 2359.4
+            "distance": 38836.8,
+            "duration": 2302
           },
           {
             "distance": 51585.8,
@@ -179685,7 +179685,7 @@
         ],
         "way_points": [
           0,
-          1068,
+          1082,
           2153,
           3576
         ],
@@ -179693,7 +179693,7 @@
           "distance": 129441.7,
           "duration": 7575.2
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Friday 1"
       }
     },
@@ -180947,7 +180947,7 @@
           "distance": 7357.4,
           "duration": 798.6
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Friday 2&4"
       }
     },
@@ -186734,11 +186734,11 @@
           },
           {
             "distance": 29146.6,
-            "duration": 1599.5
+            "duration": 1626.9
           },
           {
             "distance": 6182.1,
-            "duration": 452
+            "duration": 424.6
           },
           {
             "distance": 6535,
@@ -186761,7 +186761,7 @@
           "distance": 44637.8,
           "duration": 2874.3
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Friday 3"
       }
     },
@@ -189585,7 +189585,7 @@
           "distance": 29120.4,
           "duration": 2363.9
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Monday 4"
       }
     },
@@ -201522,7 +201522,7 @@
           "distance": 127308.6,
           "duration": 7343
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Thursday 2"
       }
     },
@@ -208919,7 +208919,7 @@
           "distance": 65573.9,
           "duration": 4297.7
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Thursday 4"
       }
     },
@@ -211632,10 +211632,6 @@
             53.298916
           ],
           [
-            -0.54455,
-            53.298914
-          ],
-          [
             -0.543228,
             53.298897
           ],
@@ -211646,6 +211642,10 @@
           [
             -0.543228,
             53.298897
+          ],
+          [
+            -0.54455,
+            53.298914
           ],
           [
             -0.544672,
@@ -213161,12 +213161,12 @@
             "duration": 199.2
           },
           {
-            "distance": 19454.6,
-            "duration": 1151.7
+            "distance": 19655.1,
+            "duration": 1235.4
           },
           {
-            "distance": 19436.6,
-            "duration": 1178.1
+            "distance": 19236.1,
+            "duration": 1094.4
           }
         ],
         "way_points": [
@@ -213174,14 +213174,14 @@
           337,
           341,
           428,
-          718,
+          724,
           1053
         ],
         "summary": {
           "distance": 59980.2,
           "duration": 3820.6
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Tuesday 2"
       }
     },
@@ -215294,6 +215294,10 @@
             53.0794
           ],
           [
+            -0.387011,
+            53.079421
+          ],
+          [
             -0.386984,
             53.079556
           ],
@@ -215320,10 +215324,6 @@
           [
             -0.386984,
             53.079556
-          ],
-          [
-            -0.387011,
-            53.079421
           ],
           [
             -0.387015,
@@ -216499,12 +216499,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 11258.5,
-            "duration": 688.1
+            "distance": 11154.5,
+            "duration": 663.2
           },
           {
-            "distance": 15110.4,
-            "duration": 999.8
+            "distance": 15214.5,
+            "duration": 1024.7
           },
           {
             "distance": 3938,
@@ -216513,15 +216513,15 @@
         ],
         "way_points": [
           0,
-          548,
+          540,
           786,
           825
         ],
         "summary": {
-          "distance": 30306.9,
+          "distance": 30307,
           "duration": 1978.1
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Tuesday 3"
       }
     },
@@ -236084,7 +236084,7 @@
           "distance": 180023.3,
           "duration": 10073.6
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Tuesday 4"
       }
     },
@@ -252038,7 +252038,7 @@
           "distance": 181355.9,
           "duration": 10064.7
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Wednesday 2 Route 1"
       }
     },
@@ -252615,10 +252615,6 @@
             53.371636
           ],
           [
-            -0.694956,
-            53.371617
-          ],
-          [
             -0.694978,
             53.371459
           ],
@@ -252645,6 +252641,10 @@
           [
             -0.694978,
             53.371459
+          ],
+          [
+            -0.694956,
+            53.371617
           ],
           [
             -0.694953,
@@ -252772,25 +252772,25 @@
             "duration": 215.1
           },
           {
-            "distance": 4334.4,
-            "duration": 324.3
+            "distance": 4432.1,
+            "duration": 375.3
           },
           {
-            "distance": 1317.9,
-            "duration": 170.3
+            "distance": 1220.2,
+            "duration": 119.3
           }
         ],
         "way_points": [
           0,
           62,
-          154,
+          162,
           178
         ],
         "summary": {
           "distance": 8328.6,
           "duration": 709.7
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Wednesday 3"
       }
     },
@@ -258257,7 +258257,7 @@
           "distance": 72768.6,
           "duration": 3871.7
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library North",
         "route": "Mobile Library North - Wednesday 4"
       }
     },
@@ -258606,6 +258606,10 @@
             52.986261
           ],
           [
+            0.037679,
+            52.986255
+          ],
+          [
             0.037606,
             52.986249
           ],
@@ -258616,10 +258620,6 @@
           [
             0.037606,
             52.986249
-          ],
-          [
-            0.037679,
-            52.986255
           ],
           [
             0.037764,
@@ -262511,12 +262511,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 3481.6,
-            "duration": 266.6
+            "distance": 3433.6,
+            "duration": 232.6
           },
           {
-            "distance": 9613.5,
-            "duration": 627.1
+            "distance": 9661.5,
+            "duration": 661.2
           },
           {
             "distance": 19719,
@@ -262525,15 +262525,15 @@
         ],
         "way_points": [
           0,
-          94,
+          90,
           479,
           1059
         ],
         "summary": {
           "distance": 32814.1,
-          "duration": 2273.9
+          "duration": 2274
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Friday 1"
       }
     },
@@ -265588,7 +265588,7 @@
           "distance": 30080.4,
           "duration": 1783.7
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Friday 2"
       }
     },
@@ -270787,7 +270787,7 @@
           "distance": 36711.8,
           "duration": 2085
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Friday 3"
       }
     },
@@ -286504,10 +286504,6 @@
             52.734547
           ],
           [
-            -0.440701,
-            52.7347
-          ],
-          [
             -0.44069,
             52.73472
           ],
@@ -286518,6 +286514,10 @@
           [
             -0.44069,
             52.73472
+          ],
+          [
+            -0.440701,
+            52.7347
           ],
           [
             -0.440786,
@@ -300253,12 +300253,12 @@
             "duration": 3145.1
           },
           {
-            "distance": 59459,
-            "duration": 3249.5
+            "distance": 59522.2,
+            "duration": 3285.9
           },
           {
-            "distance": 59075,
-            "duration": 3206.8
+            "distance": 59011.7,
+            "duration": 3170.4
           },
           {
             "distance": 47741.5,
@@ -300268,15 +300268,15 @@
         "way_points": [
           0,
           2059,
-          3999,
+          4003,
           5906,
           7361
         ],
         "summary": {
-          "distance": 223291.4,
+          "distance": 223291.3,
           "duration": 12217.7
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Friday 4 Route 1"
       }
     },
@@ -302473,7 +302473,7 @@
           "distance": 26489.9,
           "duration": 1732.4
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Monday 1"
       }
     },
@@ -307100,7 +307100,7 @@
           "distance": 61650,
           "duration": 3473.4
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Monday 2"
       }
     },
@@ -324517,7 +324517,7 @@
           "distance": 140274.4,
           "duration": 8236.3
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Monday 3"
       }
     },
@@ -329554,7 +329554,7 @@
           "distance": 24372.3,
           "duration": 1663.3
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Monday 4 Route 1"
       }
     },
@@ -343281,7 +343281,7 @@
           "distance": 125354.5,
           "duration": 6832.2
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Thursday 1"
       }
     },
@@ -353637,7 +353637,7 @@
           "distance": 94977,
           "duration": 5181.2
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Thursday 2"
       }
     },
@@ -359930,76 +359930,204 @@
             52.806687
           ],
           [
-            0.064804,
-            52.806668
+            0.06447,
+            52.806617
           ],
           [
-            0.065096,
-            52.806644
+            0.064471,
+            52.806541
           ],
           [
-            0.065552,
-            52.806602
+            0.064381,
+            52.806405
           ],
           [
-            0.066313,
-            52.80652
+            0.06437,
+            52.80618
           ],
           [
-            0.067281,
-            52.806382
-          ],
-          [
-            0.068516,
-            52.806147
-          ],
-          [
-            0.068937,
+            0.064361,
             52.806045
           ],
           [
-            0.069211,
-            52.805968
+            0.064331,
+            52.805715
           ],
           [
-            0.06933,
-            52.805938
+            0.064306,
+            52.805526
           ],
           [
-            0.069478,
-            52.805891
+            0.064266,
+            52.805402
           ],
           [
-            0.069964,
-            52.805738
+            0.064231,
+            52.805319
           ],
           [
-            0.070428,
-            52.805585
+            0.064183,
+            52.805246
           ],
           [
-            0.070781,
-            52.805449
+            0.064126,
+            52.805158
           ],
           [
-            0.07126,
-            52.805253
+            0.064055,
+            52.805073
           ],
           [
-            0.071646,
-            52.805088
+            0.064212,
+            52.805023
           ],
           [
-            0.072275,
-            52.804792
+            0.064287,
+            52.804998
           ],
           [
-            0.073138,
-            52.804352
+            0.064372,
+            52.804981
           ],
           [
-            0.073527,
-            52.804158
+            0.064463,
+            52.80497
+          ],
+          [
+            0.064665,
+            52.804956
+          ],
+          [
+            0.064728,
+            52.804954
+          ],
+          [
+            0.064887,
+            52.804949
+          ],
+          [
+            0.0651,
+            52.804939
+          ],
+          [
+            0.065254,
+            52.804928
+          ],
+          [
+            0.065312,
+            52.804922
+          ],
+          [
+            0.065592,
+            52.804894
+          ],
+          [
+            0.065923,
+            52.804853
+          ],
+          [
+            0.066307,
+            52.804808
+          ],
+          [
+            0.066855,
+            52.804743
+          ],
+          [
+            0.06703,
+            52.804721
+          ],
+          [
+            0.067455,
+            52.804672
+          ],
+          [
+            0.068025,
+            52.804607
+          ],
+          [
+            0.068812,
+            52.804515
+          ],
+          [
+            0.069228,
+            52.804468
+          ],
+          [
+            0.069402,
+            52.804445
+          ],
+          [
+            0.07,
+            52.804367
+          ],
+          [
+            0.070407,
+            52.804309
+          ],
+          [
+            0.070684,
+            52.804263
+          ],
+          [
+            0.070849,
+            52.80423
+          ],
+          [
+            0.071023,
+            52.804183
+          ],
+          [
+            0.071142,
+            52.804144
+          ],
+          [
+            0.071404,
+            52.804058
+          ],
+          [
+            0.071763,
+            52.803928
+          ],
+          [
+            0.072079,
+            52.803823
+          ],
+          [
+            0.07218,
+            52.8038
+          ],
+          [
+            0.072328,
+            52.80377
+          ],
+          [
+            0.07289,
+            52.803655
+          ],
+          [
+            0.073157,
+            52.8036
+          ],
+          [
+            0.073706,
+            52.803485
+          ],
+          [
+            0.07377,
+            52.803561
+          ],
+          [
+            0.073855,
+            52.803653
+          ],
+          [
+            0.073943,
+            52.803782
+          ],
+          [
+            0.074032,
+            52.80385
           ],
           [
             0.074077,
@@ -360890,10 +361018,6 @@
             52.745372
           ],
           [
-            0.130668,
-            52.74531
-          ],
-          [
             0.13065,
             52.745286
           ],
@@ -360904,6 +361028,10 @@
           [
             0.13065,
             52.745286
+          ],
+          [
+            0.130668,
+            52.74531
           ],
           [
             0.130714,
@@ -361751,47 +361879,103 @@
           ],
           [
             0.072275,
-            52.804792
+            52.804782
           ],
           [
-            0.071646,
-            52.805088
+            0.07206,
+            52.804887
           ],
           [
-            0.07126,
-            52.805253
+            0.071841,
+            52.804991
           ],
           [
-            0.070781,
-            52.805449
+            0.071683,
+            52.805061
           ],
           [
-            0.070428,
-            52.805585
+            0.071449,
+            52.805163
           ],
           [
-            0.069964,
-            52.805738
+            0.071215,
+            52.805264
           ],
           [
-            0.069478,
-            52.805891
+            0.07105,
+            52.805335
           ],
           [
-            0.06933,
-            52.805938
+            0.070867,
+            52.805408
           ],
           [
-            0.069211,
-            52.805968
+            0.070678,
+            52.805484
           ],
           [
-            0.068937,
-            52.806045
+            0.070503,
+            52.805552
           ],
           [
-            0.068516,
-            52.806147
+            0.070255,
+            52.805639
+          ],
+          [
+            0.070049,
+            52.805708
+          ],
+          [
+            0.069757,
+            52.805799
+          ],
+          [
+            0.069515,
+            52.805873
+          ],
+          [
+            0.06947,
+            52.805887
+          ],
+          [
+            0.069356,
+            52.805923
+          ],
+          [
+            0.069213,
+            52.805961
+          ],
+          [
+            0.069076,
+            52.805998
+          ],
+          [
+            0.068915,
+            52.80604
+          ],
+          [
+            0.068707,
+            52.806091
+          ],
+          [
+            0.068612,
+            52.806113
+          ],
+          [
+            0.068479,
+            52.806143
+          ],
+          [
+            0.068284,
+            52.806185
+          ],
+          [
+            0.068059,
+            52.806233
+          ],
+          [
+            0.067825,
+            52.80628
           ],
           [
             0.067281,
@@ -369494,6 +369678,10 @@
             53.234007
           ],
           [
+            -0.61441,
+            53.23388
+          ],
+          [
             -0.614591,
             53.233817
           ],
@@ -369560,10 +369748,6 @@
           [
             -0.614591,
             53.233817
-          ],
-          [
-            -0.61441,
-            53.23388
           ],
           [
             -0.614045,
@@ -375270,56 +375454,136 @@
             52.90233
           ],
           [
-            -0.094244,
-            52.902679
+            -0.094259,
+            52.902689
           ],
           [
-            -0.093849,
-            52.90291
+            -0.094078,
+            52.902789
           ],
           [
-            -0.093893,
-            52.90294
+            -0.094047,
+            52.902812
           ],
           [
-            -0.093921,
-            52.902977
+            -0.094012,
+            52.902838
+          ],
+          [
+            -0.093974,
+            52.902871
           ],
           [
             -0.09393,
-            52.903017
+            52.902916
           ],
           [
-            -0.093921,
-            52.903057
+            -0.093892,
+            52.902958
+          ],
+          [
+            -0.09387,
+            52.902983
+          ],
+          [
+            -0.093873,
+            52.902986
+          ],
+          [
+            -0.093876,
+            52.902992
+          ],
+          [
+            -0.093882,
+            52.903005
+          ],
+          [
+            -0.093886,
+            52.903025
           ],
           [
             -0.093884,
-            52.903101
+            52.903044
           ],
           [
-            -0.093826,
-            52.903135
+            -0.093878,
+            52.903064
           ],
           [
-            -0.093751,
-            52.903155
+            -0.093867,
+            52.903082
           ],
           [
-            -0.09367,
-            52.903158
+            -0.093851,
+            52.903099
           ],
           [
-            -0.093592,
-            52.903144
-          ],
-          [
-            -0.093527,
+            -0.093831,
             52.903115
           ],
           [
-            -0.093174,
-            52.903307
+            -0.093823,
+            52.90312
+          ],
+          [
+            -0.093808,
+            52.903128
+          ],
+          [
+            -0.093781,
+            52.903139
+          ],
+          [
+            -0.093751,
+            52.903148
+          ],
+          [
+            -0.093723,
+            52.903153
+          ],
+          [
+            -0.093693,
+            52.903156
+          ],
+          [
+            -0.093663,
+            52.903156
+          ],
+          [
+            -0.093655,
+            52.903155
+          ],
+          [
+            -0.093588,
+            52.903168
+          ],
+          [
+            -0.093536,
+            52.90318
+          ],
+          [
+            -0.093482,
+            52.903193
+          ],
+          [
+            -0.093435,
+            52.903206
+          ],
+          [
+            -0.093391,
+            52.903218
+          ],
+          [
+            -0.093357,
+            52.903229
+          ],
+          [
+            -0.093326,
+            52.90324
+          ],
+          [
+            -0.09329,
+            52.903254
           ],
           [
             -0.092298,
@@ -375343,29 +375607,29 @@
       "properties": {
         "segments": [
           {
-            "distance": 62631.4,
-            "duration": 3361.1
+            "distance": 62901.1,
+            "duration": 3472.7
           },
           {
-            "distance": 94832.4,
-            "duration": 4707.7
+            "distance": 94422.9,
+            "duration": 4550.1
           },
           {
-            "distance": 67194.5,
-            "duration": 3273.1
+            "distance": 67500.7,
+            "duration": 3368.2
           }
         ],
         "way_points": [
           0,
-          1844,
-          4058,
-          5422
+          1886,
+          4090,
+          5488
         ],
         "summary": {
-          "distance": 224658.3,
-          "duration": 11341.9
+          "distance": 224824.7,
+          "duration": 11391
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Thursday 3"
       }
     },
@@ -375562,16 +375826,20 @@
             52.983736
           ],
           [
-            0.066993,
-            52.984187
+            0.066972,
+            52.984227
           ],
           [
-            0.06718,
-            52.984455
+            0.067157,
+            52.984469
           ],
           [
-            0.067807,
-            52.984946
+            0.067526,
+            52.984771
+          ],
+          [
+            0.067832,
+            52.98499
           ],
           [
             0.068176,
@@ -376914,10 +377182,6 @@
             53.051647
           ],
           [
-            0.069727,
-            53.051631
-          ],
-          [
             0.070128,
             53.051368
           ],
@@ -376936,6 +377200,10 @@
           [
             0.070128,
             53.051368
+          ],
+          [
+            0.069727,
+            53.051631
           ],
           [
             0.069702,
@@ -383268,19 +383536,19 @@
         "segments": [
           {
             "distance": 5317.8,
-            "duration": 530.6
+            "duration": 530.8
           },
           {
             "distance": 3601.9,
             "duration": 279.1
           },
           {
-            "distance": 3298,
-            "duration": 230.7
+            "distance": 3484.4,
+            "duration": 299.8
           },
           {
-            "distance": 40116.7,
-            "duration": 2333.8
+            "distance": 39930.3,
+            "duration": 2264.7
           },
           {
             "distance": 31633.1,
@@ -383289,17 +383557,17 @@
         ],
         "way_points": [
           0,
-          190,
-          292,
-          411,
-          1329,
-          1971
+          191,
+          293,
+          420,
+          1330,
+          1972
         ],
         "summary": {
           "distance": 83967.5,
-          "duration": 5240.7
+          "duration": 5240.9
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Thursday 4"
       }
     },
@@ -402760,7 +403028,7 @@
           "distance": 221058.5,
           "duration": 12028
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Tuesday 1"
       }
     },
@@ -410073,6 +410341,10 @@
             52.741019
           ],
           [
+            -0.12844,
+            52.74064
+          ],
+          [
             -0.128454,
             52.740592
           ],
@@ -410099,10 +410371,6 @@
           [
             -0.128454,
             52.740592
-          ],
-          [
-            -0.12844,
-            52.74064
           ],
           [
             -0.12833,
@@ -410286,12 +410554,12 @@
             "duration": 847
           },
           {
-            "distance": 1324.1,
-            "duration": 214.4
+            "distance": 1183.5,
+            "duration": 159.1
           },
           {
-            "distance": 1319.4,
-            "duration": 163.3
+            "distance": 1460,
+            "duration": 218.6
           }
         ],
         "way_points": [
@@ -410306,7 +410574,7 @@
           "distance": 92439.9,
           "duration": 5300.4
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Tuesday 2 Route 1"
       }
     },
@@ -412522,7 +412790,7 @@
           "distance": 19030.8,
           "duration": 1179.7
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Tuesday 3"
       }
     },
@@ -427291,7 +427559,7 @@
           "distance": 94285.4,
           "duration": 5337.7
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Tuesday 4"
       }
     },
@@ -434202,7 +434470,7 @@
           "distance": 55338.2,
           "duration": 3335.5
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Wednesday 1"
       }
     },
@@ -443155,7 +443423,7 @@
           "distance": 64728.8,
           "duration": 3731.8
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Wednesday 2"
       }
     },
@@ -457673,7 +457941,7 @@
           "distance": 152061.2,
           "duration": 8586.2
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Wednesday 3 Route 1"
       }
     },
@@ -463343,7 +463611,7 @@
           "distance": 42860.5,
           "duration": 2533.8
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Wednesday 3 Route 2"
       }
     },
@@ -467527,7 +467795,7 @@
           "distance": 19269.2,
           "duration": 1207.8
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library South",
         "route": "Mobile Library South - Wednesday 4"
       }
     }

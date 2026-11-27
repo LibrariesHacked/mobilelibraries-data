@@ -204,7 +204,7 @@ def generate_routes_for_authority(
     with open(stop_file, mode="r", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            mobile = row.get("Mobile name") or row.get("mobile") or "Mobile"
+            mobile = row.get("mobile_name") or row.get("Mobile name") or row.get("mobile") or row.get("Mobile") or "Mobile"
             route = row.get("Route") or row.get("route") or "Default"
             routes[(mobile, route)].append(row)
 

@@ -3834,10 +3834,6 @@
             58.98098
           ],
           [
-            -2.959957,
-            58.98098
-          ],
-          [
             -2.959917,
             58.980916
           ],
@@ -3848,6 +3844,10 @@
           [
             -2.959917,
             58.980916
+          ],
+          [
+            -2.959957,
+            58.98098
           ],
           [
             -2.959957,
@@ -4648,11 +4648,11 @@
         "segments": [
           {
             "distance": 6382.4,
-            "duration": 446.8
+            "duration": 419.4
           },
           {
             "distance": 518.8,
-            "duration": 50.8
+            "duration": 78.2
           },
           {
             "distance": 0,
@@ -4663,16 +4663,16 @@
             "duration": 393.1
           },
           {
-            "distance": 29168,
-            "duration": 1733.2
+            "distance": 29269.4,
+            "duration": 1785
           },
           {
             "distance": 0,
             "duration": 0
           },
           {
-            "distance": 10343.7,
-            "duration": 601.6
+            "distance": 10242.3,
+            "duration": 549.8
           }
         ],
         "way_points": [
@@ -4681,15 +4681,15 @@
           239,
           243,
           361,
-          995,
-          999,
+          1000,
+          1004,
           1158
         ],
         "summary": {
           "distance": 52538.2,
           "duration": 3225.5
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Burray, South Ronaldsay & Holm"
       }
     },
@@ -5286,10 +5286,6 @@
             58.922706
           ],
           [
-            -2.830439,
-            58.92274
-          ],
-          [
             -2.830107,
             58.922953
           ],
@@ -5300,6 +5296,10 @@
           [
             -2.830107,
             58.922953
+          ],
+          [
+            -2.830439,
+            58.92274
           ],
           [
             -2.830492,
@@ -6339,24 +6339,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 7194.4,
-            "duration": 492.1
+            "distance": 7273.7,
+            "duration": 531.1
           },
           {
-            "distance": 10855.8,
-            "duration": 650.1
+            "distance": 10776.6,
+            "duration": 611.1
           }
         ],
         "way_points": [
           0,
-          153,
+          157,
           408
         ],
         "summary": {
-          "distance": 18050.2,
+          "distance": 18050.3,
           "duration": 1142.2
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Deerness"
       }
     },
@@ -10477,6 +10477,10 @@
             58.792562
           ],
           [
+            -2.973187,
+            58.792433
+          ],
+          [
             -2.973238,
             58.792406
           ],
@@ -10511,10 +10515,6 @@
           [
             -2.973238,
             58.792406
-          ],
-          [
-            -2.973187,
-            58.792433
           ],
           [
             -2.972948,
@@ -17969,10 +17969,6 @@
             58.98098
           ],
           [
-            -2.959957,
-            58.98098
-          ],
-          [
             -2.959917,
             58.980916
           ],
@@ -17983,6 +17979,10 @@
           [
             -2.959917,
             58.980916
+          ],
+          [
+            -2.959957,
+            58.98098
           ],
           [
             -2.959957,
@@ -19818,24 +19818,24 @@
       "properties": {
         "segments": [
           {
-            "distance": 49589,
-            "duration": 2889.2
+            "distance": 49221.7,
+            "duration": 2798.9
           },
           {
-            "distance": 58711.2,
-            "duration": 3495.8
+            "distance": 59078.6,
+            "duration": 3586.1
           },
           {
-            "distance": 31910.7,
-            "duration": 2029.2
+            "distance": 32012,
+            "duration": 2081
           },
           {
             "distance": 0,
             "duration": 0
           },
           {
-            "distance": 22658.8,
-            "duration": 1336.2
+            "distance": 22557.4,
+            "duration": 1284.4
           },
           {
             "distance": 0,
@@ -19844,10 +19844,10 @@
         ],
         "way_points": [
           0,
-          1053,
+          1041,
           2280,
-          2946,
-          2950,
+          2951,
+          2955,
           3361,
           3361
         ],
@@ -19855,7 +19855,7 @@
           "distance": 162869.7,
           "duration": 9750.4
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Dounby, Sandwick & Birsay"
       }
     },
@@ -19889,7 +19889,7 @@
           "distance": 0,
           "duration": 0
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Eday"
       }
     },
@@ -20954,10 +20954,6 @@
             59.121214
           ],
           [
-            -3.123809,
-            59.121204
-          ],
-          [
             -3.127309,
             59.119508
           ],
@@ -21032,6 +21028,10 @@
           [
             -3.127309,
             59.119508
+          ],
+          [
+            -3.123809,
+            59.121204
           ],
           [
             -3.123789,
@@ -21206,6 +21206,10 @@
             59.112336
           ],
           [
+            -3.104963,
+            59.112273
+          ],
+          [
             -3.105087,
             59.112236
           ],
@@ -21216,10 +21220,6 @@
           [
             -3.105087,
             59.112236
-          ],
-          [
-            -3.104963,
-            59.112273
           ],
           [
             -3.104751,
@@ -22755,16 +22755,16 @@
             "duration": 740.1
           },
           {
-            "distance": 2993.4,
-            "duration": 273.2
+            "distance": 3903.2,
+            "duration": 434.8
           },
           {
-            "distance": 2463,
-            "duration": 313.4
+            "distance": 1525.1,
+            "duration": 117.8
           },
           {
-            "distance": 8512.3,
-            "duration": 946.8
+            "distance": 8540.4,
+            "duration": 980.8
           },
           {
             "distance": 13535.7,
@@ -22778,8 +22778,8 @@
         "way_points": [
           0,
           164,
-          277,
-          353,
+          299,
+          349,
           557,
           711,
           711
@@ -22788,7 +22788,7 @@
           "distance": 39448.2,
           "duration": 3361.4
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Evie, Rendall & Firth"
       }
     },
@@ -24346,7 +24346,7 @@
           "distance": 18351,
           "duration": 1049.2
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Harray & Quoyloo"
       }
     },
@@ -24381,6 +24381,10 @@
           [
             -3.333343,
             58.914404
+          ],
+          [
+            -3.333367,
+            58.914399
           ],
           [
             -3.334819,
@@ -24545,10 +24549,6 @@
           [
             -3.334819,
             58.914099
-          ],
-          [
-            -3.333367,
-            58.914399
           ],
           [
             -3.333343,
@@ -28808,12 +28808,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 809.1,
-            "duration": 208.6
+            "distance": 152.4,
+            "duration": 24
           },
           {
-            "distance": 14713.7,
-            "duration": 1006.5
+            "distance": 15370.5,
+            "duration": 1191.1
           },
           {
             "distance": 27800.5,
@@ -28822,15 +28822,15 @@
         ],
         "way_points": [
           0,
-          60,
+          12,
           581,
           1111
         ],
         "summary": {
-          "distance": 43323.3,
+          "distance": 43323.4,
           "duration": 9203.4
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Hoy & Flotta"
       }
     },
@@ -30827,7 +30827,7 @@
           "distance": 13938.9,
           "duration": 1091.9
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Longhope"
       }
     },
@@ -31873,7 +31873,7 @@
           "distance": 14221,
           "duration": 802.8
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Orphir & Stenness"
       }
     },
@@ -31943,7 +31943,7 @@
           "distance": 0,
           "duration": 0
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Rousay & Egilsay"
       }
     },
@@ -31995,7 +31995,7 @@
           "distance": 0,
           "duration": 0
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Sanday"
       }
     },
@@ -32428,7 +32428,7 @@
           "distance": 8002.1,
           "duration": 5001.2
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Shapinsay"
       }
     },
@@ -32480,7 +32480,7 @@
           "distance": 0,
           "duration": 0
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Stronsay"
       }
     },
@@ -33736,7 +33736,7 @@
           "distance": 44013.6,
           "duration": 23263.6
         },
-        "mobile": "Mobile",
+        "mobile": "Booky McBookface",
         "route": "Westray"
       }
     }

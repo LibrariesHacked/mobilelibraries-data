@@ -1386,7 +1386,7 @@
             51.086744
           ],
           [
-            -3.514999,
+            -3.514995,
             51.086793
           ],
           [
@@ -3159,16 +3159,16 @@
             "duration": 394.2
           },
           {
-            "distance": 3334.4,
-            "duration": 361.8
+            "distance": 3334.9,
+            "duration": 389.4
           },
           {
-            "distance": 3330.9,
-            "duration": 479.8
+            "distance": 3330.4,
+            "duration": 479.6
           },
           {
             "distance": 3824.1,
-            "duration": 381.9
+            "duration": 354.5
           },
           {
             "distance": 8141.8,
@@ -3188,7 +3188,7 @@
           "distance": 24867.5,
           "duration": 2838.5
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route A - Tuesday"
       }
     },
@@ -3537,10 +3537,6 @@
             51.012997
           ],
           [
-            -2.426973,
-            51.012831
-          ],
-          [
             -2.426745,
             51.012645
           ],
@@ -3559,6 +3555,10 @@
           [
             -2.426745,
             51.012645
+          ],
+          [
+            -2.426973,
+            51.012831
           ],
           [
             -2.427178,
@@ -9210,12 +9210,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 1826.6,
-            "duration": 189.8
+            "distance": 1922.9,
+            "duration": 230.8
           },
           {
-            "distance": 7482.2,
-            "duration": 582.6
+            "distance": 7386,
+            "duration": 541.6
           },
           {
             "distance": 10658.9,
@@ -9240,7 +9240,7 @@
         ],
         "way_points": [
           0,
-          94,
+          100,
           369,
           653,
           1030,
@@ -9249,10 +9249,10 @@
           1501
         ],
         "summary": {
-          "distance": 46378.9,
+          "distance": 46379,
           "duration": 4079.9
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route B - Wednesday"
       }
     },
@@ -13567,7 +13567,7 @@
           "distance": 32673.1,
           "duration": 3312.9
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route C - Thursday"
       }
     },
@@ -21998,11 +21998,11 @@
           },
           {
             "distance": 13964.9,
-            "duration": 1111.1
+            "duration": 1083.7
           },
           {
             "distance": 7409.7,
-            "duration": 584
+            "duration": 611.4
           },
           {
             "distance": 10656.3,
@@ -22022,7 +22022,7 @@
           "distance": 57562.4,
           "duration": 5181.9
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route D - Friday"
       }
     },
@@ -23411,10 +23411,6 @@
             50.911809
           ],
           [
-            -2.796724,
-            50.911707
-          ],
-          [
             -2.797535,
             50.911514
           ],
@@ -23457,6 +23453,10 @@
           [
             -2.797535,
             50.911514
+          ],
+          [
+            -2.796724,
+            50.911707
           ],
           [
             -2.796297,
@@ -25739,10 +25739,6 @@
             50.934647
           ],
           [
-            -2.705269,
-            50.934426
-          ],
-          [
             -2.705258,
             50.934413
           ],
@@ -25777,6 +25773,10 @@
           [
             -2.705258,
             50.934413
+          ],
+          [
+            -2.705269,
+            50.934426
           ],
           [
             -2.705469,
@@ -26620,40 +26620,40 @@
             "duration": 276.9
           },
           {
-            "distance": 5997.2,
-            "duration": 605.2
+            "distance": 6234.7,
+            "duration": 673.9
           },
           {
-            "distance": 3700.7,
-            "duration": 492.4
+            "distance": 3463.2,
+            "duration": 423.7
           },
           {
             "distance": 3754.2,
             "duration": 609.4
           },
           {
-            "distance": 5985.7,
-            "duration": 525.1
+            "distance": 6189.8,
+            "duration": 581.9
           },
           {
-            "distance": 6305.2,
-            "duration": 733.2
+            "distance": 6101,
+            "duration": 676.4
           }
         ],
         "way_points": [
           0,
           112,
-          369,
+          383,
           560,
           756,
-          982,
+          992,
           1144
         ],
         "summary": {
-          "distance": 28246.4,
+          "distance": 28246.3,
           "duration": 3242.2
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route E - Tuesday"
       }
     },
@@ -27634,10 +27634,6 @@
             50.919079
           ],
           [
-            -3.151192,
-            50.918996
-          ],
-          [
             -3.151612,
             50.918881
           ],
@@ -27792,6 +27788,10 @@
           [
             -3.151612,
             50.918881
+          ],
+          [
+            -3.151192,
+            50.918996
           ],
           [
             -3.150889,
@@ -32462,6 +32462,10 @@
             50.853435
           ],
           [
+            -2.893236,
+            50.853412
+          ],
+          [
             -2.893269,
             50.853398
           ],
@@ -32488,10 +32492,6 @@
           [
             -2.893269,
             50.853398
-          ],
-          [
-            -2.893236,
-            50.853412
           ],
           [
             -2.893182,
@@ -33415,39 +33415,39 @@
       "properties": {
         "segments": [
           {
-            "distance": 6936.1,
-            "duration": 359.4
+            "distance": 8013.4,
+            "duration": 556
           },
           {
-            "distance": 5294.9,
-            "duration": 478.6
+            "distance": 4217.6,
+            "duration": 282
           },
           {
             "distance": 23163.6,
             "duration": 1515.6
           },
           {
-            "distance": 5650.8,
-            "duration": 447
+            "distance": 5513.7,
+            "duration": 396.7
           },
           {
-            "distance": 7485.4,
-            "duration": 573.8
+            "distance": 7622.4,
+            "duration": 624.1
           }
         ],
         "way_points": [
           0,
-          250,
+          291,
           399,
           1295,
-          1514,
+          1504,
           1686
         ],
         "summary": {
-          "distance": 48530.8,
+          "distance": 48530.7,
           "duration": 3374.4
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route F - Wednesday"
       }
     },
@@ -34236,10 +34236,6 @@
             51.174395
           ],
           [
-            -3.060876,
-            51.174577
-          ],
-          [
             -3.060962,
             51.174652
           ],
@@ -34266,6 +34262,10 @@
           [
             -3.060962,
             51.174652
+          ],
+          [
+            -3.060876,
+            51.174577
           ],
           [
             -3.060667,
@@ -37757,12 +37757,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 3474.6,
-            "duration": 313.4
+            "distance": 3692.6,
+            "duration": 372.2
           },
           {
-            "distance": 677.8,
-            "duration": 110.7
+            "distance": 459.8,
+            "duration": 51.9
           },
           {
             "distance": 3753.1,
@@ -37787,7 +37787,7 @@
         ],
         "way_points": [
           0,
-          205,
+          213,
           260,
           462,
           720,
@@ -37799,7 +37799,7 @@
           "distance": 21898,
           "duration": 2397.7
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route G - Thursday"
       }
     },
@@ -37834,6 +37834,14 @@
           [
             -2.948906,
             51.24552
+          ],
+          [
+            -2.948181,
+            51.244954
+          ],
+          [
+            -2.948084,
+            51.244878
           ],
           [
             -2.947406,
@@ -44618,7 +44626,7 @@
         "segments": [
           {
             "distance": 6958.7,
-            "duration": 535.9
+            "duration": 535.8
           },
           {
             "distance": 4249.3,
@@ -44651,20 +44659,20 @@
         ],
         "way_points": [
           0,
-          256,
-          437,
-          560,
-          906,
-          1243,
-          1437,
-          1567,
-          1700
+          258,
+          439,
+          562,
+          908,
+          1245,
+          1439,
+          1569,
+          1702
         ],
         "summary": {
           "distance": 49532.6,
-          "duration": 4475.3
+          "duration": 4475.2
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route H - Friday"
       }
     },
@@ -49737,12 +49745,12 @@
             51.08429
           ],
           [
-            -3.246097,
-            51.084336
-          ],
-          [
             -3.245958,
             51.084373
+          ],
+          [
+            -3.246097,
+            51.084336
           ],
           [
             -3.246275,
@@ -52938,12 +52946,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 27157.3,
-            "duration": 1728.7
+            "distance": 27178.4,
+            "duration": 1761.3
           },
           {
-            "distance": 9243.6,
-            "duration": 639.7
+            "distance": 9222.4,
+            "duration": 607.1
           },
           {
             "distance": 5253.2,
@@ -52952,15 +52960,15 @@
         ],
         "way_points": [
           0,
-          1299,
-          1822,
+          1301,
+          1823,
           2064
         ],
         "summary": {
-          "distance": 41654.1,
+          "distance": 41654,
           "duration": 2779.7
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route I - Tuesday"
       }
     },
@@ -55926,7 +55934,7 @@
           "distance": 21114.3,
           "duration": 2324.4
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route J - Wednesday"
       }
     },
@@ -57039,10 +57047,6 @@
             51.173711
           ],
           [
-            -2.625823,
-            51.173784
-          ],
-          [
             -2.625701,
             51.174033
           ],
@@ -57189,6 +57193,10 @@
           [
             -2.625701,
             51.174033
+          ],
+          [
+            -2.625823,
+            51.173784
           ],
           [
             -2.625859,
@@ -61624,20 +61632,20 @@
       "properties": {
         "segments": [
           {
-            "distance": 8872.8,
-            "duration": 813.8
+            "distance": 9412.6,
+            "duration": 931.2
           },
           {
-            "distance": 11744.1,
-            "duration": 1101
+            "distance": 11204.3,
+            "duration": 983.6
           },
           {
             "distance": 6354.1,
-            "duration": 619.9
+            "duration": 592.5
           },
           {
             "distance": 12883.2,
-            "duration": 1081.2
+            "duration": 1108.6
           },
           {
             "distance": 1450.1,
@@ -61646,7 +61654,7 @@
         ],
         "way_points": [
           0,
-          290,
+          330,
           745,
           996,
           1420,
@@ -61656,7 +61664,7 @@
           "distance": 41304.3,
           "duration": 3810.4
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route K - Thursday"
       }
     },
@@ -65703,7 +65711,7 @@
           "distance": 33483.6,
           "duration": 2338.9
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route L - Friday"
       }
     },
@@ -73262,11 +73270,11 @@
           },
           {
             "distance": 4522.9,
-            "duration": 377.5
+            "duration": 404.9
           },
           {
             "distance": 1987.1,
-            "duration": 260
+            "duration": 232.6
           }
         ],
         "way_points": [
@@ -73284,7 +73292,7 @@
           "distance": 51329,
           "duration": 4908.8
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route M - Tuesday"
       }
     },
@@ -79637,10 +79645,6 @@
             51.047721
           ],
           [
-            -3.015581,
-            51.047632
-          ],
-          [
             -3.015585,
             51.047531
           ],
@@ -79659,6 +79663,10 @@
           [
             -3.015585,
             51.047531
+          ],
+          [
+            -3.015581,
+            51.047632
           ],
           [
             -3.015578,
@@ -81334,12 +81342,12 @@
             "duration": 928.2
           },
           {
-            "distance": 11150.8,
-            "duration": 1071
+            "distance": 11241,
+            "duration": 1120.4
           },
           {
-            "distance": 2254.5,
-            "duration": 222.1
+            "distance": 2164.3,
+            "duration": 172.7
           },
           {
             "distance": 4365.3,
@@ -81355,7 +81363,7 @@
           342,
           817,
           1165,
-          1639,
+          1645,
           1729,
           1898,
           2005
@@ -81364,7 +81372,7 @@
           "distance": 43877.6,
           "duration": 4889.3
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route N - Wednesday"
       }
     },
@@ -83741,6 +83749,10 @@
             50.950877
           ],
           [
+            -2.93117,
+            50.95093
+          ],
+          [
             -2.931299,
             50.950981
           ],
@@ -84007,10 +84019,6 @@
           [
             -2.931299,
             50.950981
-          ],
-          [
-            -2.93117,
-            50.95093
           ],
           [
             -2.931035,
@@ -86718,12 +86726,12 @@
             "duration": 588.6
           },
           {
-            "distance": 5176.1,
-            "duration": 682.5
+            "distance": 3764.1,
+            "duration": 438.9
           },
           {
-            "distance": 4016.5,
-            "duration": 588.6
+            "distance": 5428.4,
+            "duration": 832.2
           },
           {
             "distance": 3244.3,
@@ -86738,16 +86746,16 @@
           0,
           228,
           464,
-          689,
+          620,
           851,
           1007,
           1332
         ],
         "summary": {
-          "distance": 33997.9,
+          "distance": 33997.8,
           "duration": 3956.2
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route O - Thursday"
       }
     },
@@ -90044,7 +90052,7 @@
           "distance": 22136,
           "duration": 2108.9
         },
-        "mobile": "Mobile",
+        "mobile": "Somerset Mobile Library",
         "route": "Route P - Friday"
       }
     }

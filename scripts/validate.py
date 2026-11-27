@@ -26,6 +26,76 @@ EXCEPTIONS_RE = re.compile(
 COORD_5DP_RE = re.compile(r"^-?\d+\.\d{5}$")
 
 
+def _first_value(row: dict[str, str], *names: str) -> str:
+    for name in names:
+        value = (row.get(name) or "").strip()
+        if value:
+            return value
+    return ""
+
+
+def _stop_coordinate(row: dict[str, str]) -> tuple[float, float] | None:
+    latitude = _first_value(row, "geoy", "GeoY", "Latitude")
+    longitude = _first_value(row, "geox", "GeoX", "Longitude")
+    try:
+        return round(float(latitude), 5), round(float(longitude), 5)
+    except ValueError:
+        return None
+
+
+def validate_route_trip_files(data_dir: Path) -> list[str]:
+    """Check each authority's route trips against its stop rows."""
+    issues = []
+    routes_dir = data_dir / "routes"
+
+    for route_file in sorted(routes_dir.glob("*_routes.csv")):
+        if route_file.name.startswith("uk_"):
+            continue
+
+        authority = route_file.name.removesuffix("_routes.csv")
+        stop_file = data_dir / f"{authority}.csv"
+        if not stop_file.exists():
+            issues.append(f"{route_file.name}: no matching stop file {stop_file.name}")
+            continue
+
+        stop_routes = set()
+        stop_locations = set()
+        with stop_file.open(mode="r", encoding="utf-8", newline="") as file:
+            for stop in csv.DictReader(file):
+                mobile = _first_value(stop, "mobile_name", "Mobile name", "mobile", "Mobile")
+                route = _first_value(stop, "route", "Route")
+                name = _first_value(stop, "stop", "Stop")
+                coordinate = _stop_coordinate(stop)
+                if mobile and route:
+                    stop_routes.add((mobile, route))
+                if name and coordinate:
+                    stop_locations.add((name, *coordinate))
+
+        with route_file.open(mode="r", encoding="utf-8", newline="") as file:
+            for row_number, trip in enumerate(csv.DictReader(file), start=2):
+                mobile = _first_value(trip, "mobile")
+                route = _first_value(trip, "route")
+                if (mobile, route) not in stop_routes:
+                    issues.append(
+                        f"{route_file.name}:{row_number}: route ({authority}, {mobile}, {route}) does not match stop data"
+                    )
+
+                for endpoint in ("origin", "destination"):
+                    name = _first_value(trip, f"{endpoint}_stop")
+                    latitude = _first_value(trip, f"{endpoint}_stop_latitude")
+                    longitude = _first_value(trip, f"{endpoint}_stop_longitude")
+                    try:
+                        location = (name, round(float(latitude), 5), round(float(longitude), 5))
+                    except ValueError:
+                        location = None
+                    if location not in stop_locations:
+                        issues.append(
+                            f"{route_file.name}:{row_number}: {endpoint} stop ({name}, {latitude}, {longitude}) does not match stop data"
+                        )
+
+    return issues
+
+
 def main() -> int:
     errors = 0
     print("=" * 60)
@@ -193,6 +263,16 @@ def main() -> int:
         errors += 1
     else:
         print(f"✓ All stop and community names have balanced parentheses and clean text.")
+
+    print("\n4. Checking route-trip relationships...")
+    route_issues = validate_route_trip_files(Path("data"))
+    if route_issues:
+        for issue in route_issues[:10]:
+            print(f"  [Route Error] {issue}")
+        print(f"❌ Found {len(route_issues)} route-trip relationship issues.")
+        errors += 1
+    else:
+        print("✓ All route trips match known authority routes and stop locations.")
 
     print("\n" + "=" * 60)
     if errors == 0:

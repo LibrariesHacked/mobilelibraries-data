@@ -414,10 +414,6 @@
             55.969594
           ],
           [
-            -3.181629,
-            55.969539
-          ],
-          [
             -3.181611,
             55.969524
           ],
@@ -428,6 +424,10 @@
           [
             -3.181611,
             55.969524
+          ],
+          [
+            -3.181629,
+            55.969539
           ],
           [
             -3.181695,
@@ -5331,12 +5331,12 @@
       "properties": {
         "segments": [
           {
-            "distance": 2280.4,
-            "duration": 289.1
+            "distance": 2291.7,
+            "duration": 318.1
           },
           {
-            "distance": 2174.8,
-            "duration": 360.3
+            "distance": 2163.5,
+            "duration": 331.3
           },
           {
             "distance": 505.1,
@@ -5361,7 +5361,7 @@
         ],
         "way_points": [
           0,
-          109,
+          113,
           240,
           269,
           696,
@@ -5373,7 +5373,7 @@
           "distance": 25987.4,
           "duration": 3051.6
         },
-        "mobile": "Mobile",
+        "mobile": "Edinburgh Mobile Library",
         "route": "Friday Route"
       }
     },
@@ -7358,6 +7358,10 @@
             55.948653
           ],
           [
+            -3.178008,
+            55.948579
+          ],
+          [
             -3.178055,
             55.948489
           ],
@@ -7448,10 +7452,6 @@
           [
             -3.178055,
             55.948489
-          ],
-          [
-            -3.178008,
-            55.948579
           ],
           [
             -3.17797,
@@ -9631,12 +9631,12 @@
             "duration": 403
           },
           {
-            "distance": 5023.7,
-            "duration": 673.7
+            "distance": 4627.5,
+            "duration": 590.7
           },
           {
-            "distance": 3241.2,
-            "duration": 459.9
+            "distance": 3637.4,
+            "duration": 542.9
           },
           {
             "distance": 2694.7,
@@ -9655,7 +9655,7 @@
           0,
           52,
           240,
-          545,
+          521,
           760,
           941,
           1015,
@@ -9665,7 +9665,7 @@
           "distance": 18129.6,
           "duration": 2432.4
         },
-        "mobile": "Mobile",
+        "mobile": "Edinburgh Mobile Library",
         "route": "Monday Route"
       }
     },
@@ -13282,7 +13282,7 @@
           "distance": 29072.5,
           "duration": 2970.3
         },
-        "mobile": "Mobile",
+        "mobile": "Edinburgh Mobile Library",
         "route": "Thursday Route"
       }
     },
@@ -16990,7 +16990,7 @@
           "distance": 15781.1,
           "duration": 2200.1
         },
-        "mobile": "Mobile",
+        "mobile": "Edinburgh Mobile Library",
         "route": "Tuesday Route"
       }
     },
@@ -17143,12 +17143,12 @@
             55.906188
           ],
           [
-            -3.28635,
-            55.906249
-          ],
-          [
             -3.285831,
             55.906417
+          ],
+          [
+            -3.28635,
+            55.906249
           ],
           [
             -3.286538,
@@ -18251,10 +18251,6 @@
             55.918265
           ],
           [
-            -3.316355,
-            55.918253
-          ],
-          [
             -3.317407,
             55.918063
           ],
@@ -18281,6 +18277,10 @@
           [
             -3.317407,
             55.918063
+          ],
+          [
+            -3.316355,
+            55.918253
           ],
           [
             -3.316291,
@@ -19956,20 +19956,20 @@
       "properties": {
         "segments": [
           {
-            "distance": 485.2,
-            "duration": 75.4
+            "distance": 560.1,
+            "duration": 120.8
           },
           {
-            "distance": 7399.1,
-            "duration": 617.6
+            "distance": 7324.2,
+            "duration": 572.2
           },
           {
-            "distance": 2055.5,
-            "duration": 157
+            "distance": 2506.5,
+            "duration": 281.8
           },
           {
-            "distance": 8197.9,
-            "duration": 699.3
+            "distance": 7746.9,
+            "duration": 574.5
           },
           {
             "distance": 4492.3,
@@ -19982,9 +19982,9 @@
         ],
         "way_points": [
           0,
-          42,
+          44,
           275,
-          335,
+          345,
           553,
           703,
           737
@@ -19993,7 +19993,7 @@
           "distance": 24548,
           "duration": 2207.2
         },
-        "mobile": "Mobile",
+        "mobile": "Edinburgh Mobile Library",
         "route": "Wednesday Route"
       }
     }

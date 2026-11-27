@@ -975,7 +975,7 @@
           "distance": 7894.3,
           "duration": 757.8
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 1 Monday"
       }
     },
@@ -2502,7 +2502,7 @@
           "distance": 13714.8,
           "duration": 1158.8
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 1 Thursday"
       }
     },
@@ -7315,6 +7315,10 @@
             51.653331
           ],
           [
+            -3.787159,
+            51.653341
+          ],
+          [
             -3.787352,
             51.65343
           ],
@@ -7349,10 +7353,6 @@
           [
             -3.787352,
             51.65343
-          ],
-          [
-            -3.787159,
-            51.653341
           ],
           [
             -3.787137,
@@ -7548,12 +7548,12 @@
             "duration": 0
           },
           {
-            "distance": 496.9,
-            "duration": 100.1
+            "distance": 169.7,
+            "duration": 26.9
           },
           {
-            "distance": 829.4,
-            "duration": 121.3
+            "distance": 1156.6,
+            "duration": 194.5
           },
           {
             "distance": 659.9,
@@ -7574,7 +7574,7 @@
           "distance": 37913.7,
           "duration": 3508.3
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 1 Tuesday"
       }
     },
@@ -8435,18 +8435,6 @@
             51.657616
           ],
           [
-            -3.85194,
-            51.657616
-          ],
-          [
-            -3.85194,
-            51.657616
-          ],
-          [
-            -3.85194,
-            51.657616
-          ],
-          [
             -3.85207,
             51.657618
           ],
@@ -8565,6 +8553,18 @@
           [
             -3.85207,
             51.657618
+          ],
+          [
+            -3.85194,
+            51.657616
+          ],
+          [
+            -3.85194,
+            51.657616
+          ],
+          [
+            -3.85194,
+            51.657616
           ],
           [
             -3.851916,
@@ -9304,8 +9304,8 @@
             "duration": 0
           },
           {
-            "distance": 6818.4,
-            "duration": 509
+            "distance": 7910.9,
+            "duration": 629.1
           },
           {
             "distance": 0,
@@ -9316,23 +9316,23 @@
             "duration": 0
           },
           {
-            "distance": 6118.1,
-            "duration": 522.7
+            "distance": 5025.6,
+            "duration": 402.6
           }
         ],
         "way_points": [
           0,
           4,
-          229,
-          233,
-          237,
+          264,
+          268,
+          272,
           427
         ],
         "summary": {
           "distance": 12936.5,
           "duration": 1031.7
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 1 Wednesday"
       }
     },
@@ -11722,7 +11722,7 @@
           "distance": 36920.6,
           "duration": 1866.3
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 2 Monday"
       }
     },
@@ -11947,6 +11947,10 @@
             51.780699
           ],
           [
+            -3.677364,
+            51.780711
+          ],
+          [
             -3.677239,
             51.780761
           ],
@@ -11977,10 +11981,6 @@
           [
             -3.677239,
             51.780761
-          ],
-          [
-            -3.677364,
-            51.780711
           ],
           [
             -3.677393,
@@ -12931,10 +12931,6 @@
             51.729675
           ],
           [
-            -3.74711,
-            51.729643
-          ],
-          [
             -3.746459,
             51.729614
           ],
@@ -12945,6 +12941,10 @@
           [
             -3.746459,
             51.729614
+          ],
+          [
+            -3.74711,
+            51.729643
           ],
           [
             -3.747805,
@@ -14328,12 +14328,12 @@
             "duration": 0
           },
           {
-            "distance": 2399.3,
-            "duration": 343.4
+            "distance": 2220.8,
+            "duration": 299.9
           },
           {
-            "distance": 4706.3,
-            "duration": 539.7
+            "distance": 4884.7,
+            "duration": 583.2
           },
           {
             "distance": 0,
@@ -14344,29 +14344,29 @@
             "duration": 301.2
           },
           {
-            "distance": 1401.9,
-            "duration": 173.6
+            "distance": 1499.4,
+            "duration": 215
           },
           {
-            "distance": 16250.5,
-            "duration": 1040
+            "distance": 16153,
+            "duration": 998.6
           }
         ],
         "way_points": [
           0,
           4,
-          75,
+          66,
           200,
           204,
           279,
-          339,
+          343,
           646
         ],
         "summary": {
-          "distance": 28129.2,
+          "distance": 28129.1,
           "duration": 2397.9
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 2 Thursday"
       }
     },
@@ -15052,7 +15052,7 @@
           "distance": 9942.4,
           "duration": 667.5
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 2 Tuesday"
       }
     },
@@ -17061,7 +17061,7 @@
           "distance": 16224.5,
           "duration": 1778.1
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 2 Wednesday"
       }
     },
@@ -19191,7 +19191,7 @@
           "distance": 23382.6,
           "duration": 1602.1
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 3 Monday"
       }
     },
@@ -23936,7 +23936,7 @@
           "distance": 50716.2,
           "duration": 4037.8
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 3 Thursday"
       }
     },
@@ -29048,7 +29048,7 @@
           "distance": 79145.4,
           "duration": 4093.8
         },
-        "mobile": "Mobile",
+        "mobile": "Neath Port Talbot Mobile Library",
         "route": "Week 3 Wednesday"
       }
     }

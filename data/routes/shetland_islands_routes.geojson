@@ -17918,7 +17918,7 @@
           "distance": 198882,
           "duration": 26475.7
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "Aith & Bixter"
       }
     },
@@ -22691,7 +22691,7 @@
           "distance": 63208.2,
           "duration": 4377.6
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "Hillswick - Brae - Mossbank"
       }
     },
@@ -25022,7 +25022,7 @@
           "distance": 32810.1,
           "duration": 2716.4
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "Nesting - Vidlin - Voe"
       }
     },
@@ -29425,11 +29425,11 @@
           },
           {
             "distance": 544.7,
-            "duration": 75.8
+            "duration": 103.2
           },
           {
             "distance": 723.2,
-            "duration": 156
+            "duration": 128.6
           },
           {
             "distance": 22362.9,
@@ -29448,7 +29448,7 @@
           "distance": 36529.7,
           "duration": 2795
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "North Roe - Ollaberry"
       }
     },
@@ -33150,7 +33150,7 @@
           "distance": 37752,
           "duration": 2662.8
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "Sandness & Walls"
       }
     },
@@ -35823,7 +35823,7 @@
           "distance": 21643.5,
           "duration": 1662
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "Sandwick"
       }
     },
@@ -49357,26 +49357,26 @@
             "duration": 759.6
           },
           {
-            "distance": 15078.4,
-            "duration": 1220.8
+            "distance": 14777.6,
+            "duration": 1135
           },
           {
-            "distance": 90906.6,
-            "duration": 9870.3
+            "distance": 91207.3,
+            "duration": 9956.1
           }
         ],
         "way_points": [
           0,
           443,
           863,
-          1465,
+          1454,
           3377
         ],
         "summary": {
-          "distance": 124698.4,
+          "distance": 124698.3,
           "duration": 12632.8
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "Staneyhill - Scalloway - Burra"
       }
     },
@@ -55385,7 +55385,7 @@
           "distance": 46139.9,
           "duration": 3206.4
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "Sumburgh"
       }
     },
@@ -56310,8 +56310,8 @@
             60.804824
           ],
           [
-            -0.805524,
-            60.804886
+            -0.805534,
+            60.804883
           ],
           [
             -0.806596,
@@ -58107,12 +58107,12 @@
             "duration": 200.9
           },
           {
-            "distance": 2426.9,
-            "duration": 163.9
+            "distance": 2592.2,
+            "duration": 233.9
           },
           {
-            "distance": 5367.9,
-            "duration": 452.3
+            "distance": 5202.5,
+            "duration": 382.3
           },
           {
             "distance": 17006.6,
@@ -58123,15 +58123,15 @@
           0,
           43,
           146,
-          235,
+          255,
           393,
           674
         ],
         "summary": {
-          "distance": 31182,
+          "distance": 31181.9,
           "duration": 2237.1
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "Unst"
       }
     },
@@ -64959,7 +64959,7 @@
           "distance": 95082.3,
           "duration": 23950
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "Whalsay"
       }
     },
@@ -70360,7 +70360,7 @@
           "distance": 42370.8,
           "duration": 2644.8
         },
-        "mobile": "Mobile",
+        "mobile": "Mobile Library (Big Van)",
         "route": "Yell"
       }
     }
